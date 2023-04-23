@@ -247,6 +247,10 @@ export default withPwa(defineConfig({
     search: {
       provider: 'local',
     },
+    carbonAds: {
+      code: 'CESI4K3W',
+      placement: 'iconifydesign',
+    },
     sidebar: {
       '/guide/': SidebarGuide,
       '/integrations/': SidebarGuide,
