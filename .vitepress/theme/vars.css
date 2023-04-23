@@ -35,12 +35,9 @@
 }
 
 .dark {
-  --vp-c-brand: #307594;
-  /*
-  --vp-c-brand: #2e90fc;
-  --vp-c-brand-dark: #69b6ff;
-  --vp-c-brand-darker: #99deff;
-  */
+  --vp-c-brand: #0d8fc9;
+  --vp-c-brand-light: #69b6ff;
+  --vp-c-brand-lighter: #99deff;
   --vp-code-block-bg: rgba(0,0,0,0.2);
   --vp-c-text-code: #c0cec0;
   --vp-code-tab-text-color: var(--vp-c-text-dark-2);
@@ -67,6 +64,10 @@
   --vp-button-brand-active-bg: var(--vp-button-brand-bg);
 }
 
+.dark {
+  --vp-button-brand-text: #111;
+  --vp-button-brand-hover-text: #111;
+}
 /**
  * Component: Home
  * -------------------------------------------------------------------------- */

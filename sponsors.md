@@ -1,8 +1,6 @@
 <script setup>
-const logos = import.meta.glob('./public/*-logo.svg', { as: 'raw', eager: true })
-console.log(logos)
+const logos = import.meta.glob('./public/around-logo.svg', { as: 'raw', eager: true })
 const around = logos['./public/around-logo.svg']
-console.log(around)
 </script>
 
 # Supporting Iconify
@@ -24,17 +22,10 @@ If you represent a company and are willing to help or interested in sponsoring I
 
 ## Around.co support!
 
-<div class="inline-block">
-    <a href="https://around.co/?utm_source=iconify&amp;utm_medium=partnership" target="_blank" rel="noreferrer">
-        <span class="block i-iconify:around w-1em h-51px"></span>
-    </a>
+<div class="w-6.25em h-1em">
+    <a href="https://around.co/?utm_source=iconify&amp;utm_medium=partnership" 
+       target="_blank" rel="noreferrer" class="font-size-51px lh-1em " v-html="around" />
 </div>
-
-<p style="font-size: 51px; line-height: 1em">
-    <a href="https://around.co/?utm_source=iconify&amp;utm_medium=partnership" target="_blank" rel="noreferrer">
-        <iconify-icon :icon="aroundLogo"></iconify-icon>
-    </a>
-</p>
 
 Thanks to [Around](https://around.co/?utm_source=iconify&utm_medium=partnership) for sponsoring Iconify plugin for Figma!
 
