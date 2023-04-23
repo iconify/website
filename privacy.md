@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Privacy policy for `[url]iconify.design` and sub-domains.
+Privacy policy for `iconify.design` and sub-domains.
 
 This website is intended for IT professionals who understand how internet works, so this document avoids unnecessary long explanations.
 
@@ -8,7 +8,7 @@ This website is intended for IT professionals who understand how internet works,
 
 Iconify website does not store any private data. There are currently no login or sign up forms, no user accounts.
 
-Website uses simple open source analytics software `[str]Ackee` to approximately know how many people are visiting websites and where visitors are coming from. It is a very basic software that does not track anything and does not store any private data.
+Website uses simple open source analytics software `Ackee` to approximately know how many people are visiting websites and where visitors are coming from. It is a very basic software that does not track anything and does not store any private data.
 
 ## Cookies
 
