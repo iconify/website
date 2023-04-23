@@ -223,7 +223,7 @@ export default withPwa(defineConfig({
     ['meta', { name: 'twitter:title', content: title }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: ogImage }],
-    ['meta', { name: 'twitter:site', content: '@slava_trushkin' }],
+    ['meta', { name: 'twitter:site', content: '@iconify_design' }],
     ['meta', { name: 'twitter:url', content: ogUrl }],
   ],
   lastUpdated: false,
@@ -260,7 +260,7 @@ export default withPwa(defineConfig({
     },
     socialLinks: [
       { icon: 'discord', link: 'https://iconify.design/discord' },
-      { icon: 'twitter', link: 'https://twitter.com/slava_trushkin' },
+      { icon: 'twitter', link: 'https://twitter.com/iconify_design' },
       { icon: 'mastodon', link: 'https://fosstodon.org/@cyberalien' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/trushkin/' },
       { icon: 'github', link: 'https://github.com/iconify' },
