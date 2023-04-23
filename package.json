@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "iconify-desing",
+  "version": "3.0.0",
+  "type": "module",
+  "packageManager": "pnpm@8.3.1",
+  "scripts": {
+    "dev": "vitepress dev",
+    "dev:pwa": "SW_DEV=true vitepress dev",
+    "build": "vitepress build",
+    "preview": "pnpm build && vitepress preview",
+    "https": "pnpm build && serve dist"
+  },
+  "dependencies": {
+    "iconify-icon": "^1.0.7"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.5",
+    "@antfu/ni": "^0.21.3",
+    "@iconify/utils": "^2.1.5",
+    "@types/node": "^18.15.13",
+    "@vite-pwa/vitepress": "^0.0.5",
+    "eslint": "^8.39.0",
+    "https-localhost": "^4.7.1",
+    "typescript": "^5.0.4",
+    "unocss": "^0.51.6",
+    "unplugin-auto-import": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1",
+    "vitepress": "^1.0.0-alpha.73"
+  }
+}
