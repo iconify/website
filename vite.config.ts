@@ -20,7 +20,7 @@ export default defineConfig({
   },
   plugins: [
     Components({
-      dts: 'src/components.d.ts',
+      dts: 'components.d.ts',
     }),
     AutoImport({
       imports: [
@@ -28,7 +28,7 @@ export default defineConfig({
         'vue/macros',
         '@vueuse/core',
       ],
-      dts: 'src/auto-imports.d.ts',
+      dts: 'auto-imports.d.ts',
     }),
     UnoCSS(),
     navbar(),
