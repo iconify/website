@@ -12,6 +12,9 @@ devDependencies:
   '@antfu/ni':
     specifier: ^0.21.3
     version: 0.21.3
+  '@iconify-json/entypo-social':
+    specifier: ^1.1.4
+    version: 1.1.4
   '@iconify-json/logos':
     specifier: ^1.1.25
     version: 1.1.25
@@ -1732,6 +1735,12 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/entypo-social@1.1.4:
+    resolution: {integrity: sha512-i/DMR+LDyqufjkEJRfJtTBdo8gEabFN0HzE+dTWMrm1ZHEuJNpLY0y86TdAsHKmpnW59OlGUzGJ/hH4Xg0CHuQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify-json/logos@1.1.25:

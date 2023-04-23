@@ -15,8 +15,16 @@ Then there is development time. Iconify has become a full time project, which re
 If you are using Iconify in your projects, please consider supporting the project.
 
 There are several ways to help:
-- [GitHub sponsors](https://github.com/sponsors/cyberalien).
-- [You can help out a bit via PayPal](https://paypal.me/cyberalien).
+<ul>
+    <li flex="~ row gap-x-8px items-center">
+        <span class="inline-block i-logos:github-icon?mask w-1.2em h-1.2em"></span>
+        <a href="https://github.com/sponsors/cyberalien" target="_blank" rel="noreferrer">GitHub sponsors</a>
+    </li>
+    <li flex="~ row gap-x-8px items-center">
+        <span class="inline-block i-entypo-social:paypal w-1.2em h-1.2em"></span>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/slava_trushkin">You can help out a bit via PayPal.</a>
+    </li>
+</ul>
 
 If you represent a company and are willing to help or interested in sponsoring Iconify, Iconify OÜ can provide invoices and other paperwork you might want. See contact information below.
 
@@ -52,7 +60,20 @@ Around is an excellent collaboration tool designed for developers. [Check them o
 ## Contact information
 
 Iconify OÜ is a registered company in Estonia, registration number 14973677.
-- <span class="inline-block i-logos:twitter"></span> [Linked.in](https://www.linkedin.com/in/trushkin/) profile.
-- <span class="inline-block i-logos:linkedin-icon"></span> [Twitter](https://twitter.com/slava_trushkin).
-- <span class="inline-block i-logos:mastodon-icon"></span> [Fosstodon (Mastodon for open source software)](https://fosstodon.org/@cyberalien).
-- <span class="inline-block i-logos:whatsapp-icon"></span> +372-58141572.
+<ul>
+    <li flex="~ row gap-x-8px items-center">
+        <span class="inline-block i-logos:twitter w-1.2em h-1.2em"></span>
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/trushkin/">Linked.in profile.</a>
+    </li>
+    <li flex="~ row gap-x-8px items-center">
+        <span class="inline-block i-logos:linkedin-icon"></span>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/slava_trushkin">Twitter.</a>
+    </li>
+    <li flex="~ row gap-x-8px items-center">
+        <span class="inline-block i-logos:mastodon-icon"></span>
+        <a target="_blank" rel="noreferrer" href="https://fosstodon.org/@cyberalien">Fosstodon (Mastodon for open source software).</a>
+    </li>
+    <li flex="~ row gap-x-8px items-center">
+        <span class="inline-block i-logos:whatsapp-icon"></span>+372-58141572.
+    </li>
+</ul>
