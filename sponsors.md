@@ -16,12 +16,12 @@ If you are using Iconify in your projects, please consider supporting the projec
 
 There are several ways to help:
 <ul>
-    <li flex="~ row gap-x-8px items-center">
-        <span class="inline-block i-logos:github-icon?mask w-1.2em h-1.2em"></span>
+    <li li-entry>
+        <span class="li-icon i-logos:github-icon?mask"></span>
         <a href="https://github.com/sponsors/cyberalien" target="_blank" rel="noreferrer">GitHub sponsors</a>
     </li>
-    <li flex="~ row gap-x-8px items-center">
-        <span class="inline-block i-entypo-social:paypal w-1.2em h-1.2em"></span>
+    <li li-entry>
+        <span class="li-icon i-entypo-social:paypal"></span>
         <a target="_blank" rel="noreferrer" href="https://twitter.com/slava_trushkin">You can help out a bit via PayPal.</a>
     </li>
 </ul>
@@ -61,19 +61,19 @@ Around is an excellent collaboration tool designed for developers. [Check them o
 
 Iconify OÜ is a registered company in Estonia, registration number 14973677.
 <ul>
-    <li flex="~ row gap-x-8px items-center">
-        <span class="inline-block i-logos:twitter w-1.2em h-1.2em"></span>
+    <li li-entry>
+        <span class="li-icon i-logos:twitter"></span>
         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/trushkin/">Linked.in profile.</a>
     </li>
-    <li flex="~ row gap-x-8px items-center">
-        <span class="inline-block i-logos:linkedin-icon"></span>
+    <li li-entry>
+        <span class="li-icon i-logos:linkedin-icon"></span>
         <a target="_blank" rel="noreferrer" href="https://twitter.com/slava_trushkin">Twitter.</a>
     </li>
-    <li flex="~ row gap-x-8px items-center">
-        <span class="inline-block i-logos:mastodon-icon"></span>
+    <li li-entry>
+        <span class="li-icon inline-block i-logos:mastodon-icon"></span>
         <a target="_blank" rel="noreferrer" href="https://fosstodon.org/@cyberalien">Fosstodon (Mastodon for open source software).</a>
     </li>
-    <li flex="~ row gap-x-8px items-center">
-        <span class="inline-block i-logos:whatsapp-icon"></span>+372-58141572.
+    <li li-entry>
+        <span class="li-icon inline-block i-logos:whatsapp-icon"></span>+372-58141572.
     </li>
 </ul>
