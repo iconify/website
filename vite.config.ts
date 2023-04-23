@@ -20,6 +20,13 @@ export default defineConfig({
   },
   plugins: [
     Components({
+      dirs: [
+        '.vitepress/theme/components',
+      ],
+      // allow auto load markdown components under `./src/components/`
+      extensions: ['vue', 'md'],
+      // allow auto import and register components used in markdown
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       dts: 'components.d.ts',
     }),
     AutoImport({
