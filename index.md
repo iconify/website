@@ -11,14 +11,13 @@ hero_:
   actions:
     - theme: brand
       text: Getting Started
-      link: /guide/
+      link: /guide
     - theme: alt
-      text: Interactive Docs
-      link: https://unocss.dev/interactive/
-      target: _blank
+      text: Documentation
+      link: /docs/
     - theme: alt
-      text: Playground
-      link: https://unocss.dev/play/
+      text: Drowse Icons
+      link: https://icon-sets.iconify.design/
       target: _blank
 
 ---
