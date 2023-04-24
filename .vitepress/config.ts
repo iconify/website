@@ -28,12 +28,16 @@ const Sidebar: DefaultTheme.SidebarItem[] = [
     link: '/sponsors',
   },
   {
+    text: 'About Iconify',
+    link: '/about/',
+  },
+  {
     text: 'Iconify Support',
     link: '/support/',
   },
   {
-    text: 'About Iconify',
-    link: '/about/',
+    text: 'History',
+    link: '/about/history',
   },
   {
     text: 'Privacy',
