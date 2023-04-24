@@ -28,8 +28,7 @@ table {
   .VPNavBarMenuLink.VPNavBarMenuLink.active,
   .link.link:hover,
   .link.link.active,
-  .edit-link-button.edit-link-button,
-  .pager-link .title {
+  .edit-link-button.edit-link-button {
     color: var(--vp-c-brand-lighter);
   }
   .vp-doc a:not(.VPSocialLink):hover,
@@ -39,6 +38,31 @@ table {
   }
 }
 
+/* Pager */
+a.pager-link[class] {
+  span {
+    transition: none;
+  }
+  &:hover {
+    background: var(--vp-c-primary-button-hover);
+    border-color: var(--vp-c-primary-button-hover);
+    color: var(--vp-c-neutral-inverse);
+    span {
+      color: inherit;
+    }
+    .desc {
+      opacity: 0.7;
+    }
+  }
+}
+
+/* Links hover */
+a.edit-link-button[class], .vp-doc a {
+  &:hover {
+    color: var(--vp-c-brand-accent);
+    transition: none;
+  }
+}
 
 /* Transition by color instead of opacity */
 /*.dark .vp-doc .custom-block a {

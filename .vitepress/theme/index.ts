@@ -4,8 +4,7 @@
 import { h } from 'vue'
 import { disableCache } from 'iconify-icon'
 import Theme from 'vitepress/theme'
-import './vars.css'
-import './overrides.scss'
+import './style.scss'
 import 'uno.css'
 
 import HomePage from './components/HomePage.vue'

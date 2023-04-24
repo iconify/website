@@ -1,0 +1,108 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+@use 'palette' as palette;
+
+
+@function gray($shade) {
+  @return palette.palette('gray', $shade);
+}
+@function primary($shade) {
+  @return palette.palette('light-blue', $shade);
+}
+@function accent($shade) {
+  @return palette.palette('red', $shade);
+}
+
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-c-bg: #{gray(0)};
+  --vp-c-bg-alt: #{gray(25)};
+  --vp-c-bg-alt2: #{gray(75)};
+  --vp-c-border: #{gray(150)};
+  --vp-c-divider: #{gray(150)};
+
+  --vp-c-brand: #{primary(600)};
+  --vp-c-brand-light: #{primary(550)};
+  --vp-c-brand-lighter: #{primary(500)};
+  --vp-c-brand-dark: #{primary(650)};
+  --vp-c-brand-darker: #{primary(700)};
+  --vp-c-brand-accent: #{accent(600)};
+
+  --vp-c-primary-button: #{primary(500)};
+  --vp-c-primary-button-hover: #{accent(500)};
+  --vp-c-alt-button-hover: #{accent(450)};
+}
+
+.dark {
+  --vp-c-bg: #{gray(950)};
+  --vp-c-bg-alt: #{gray(925)};
+  --vp-c-bg-alt2: #{gray(875)};
+  --vp-c-border: #{gray(800)};
+  --vp-c-divider: #{gray(800)};
+
+  --vp-c-brand: #{primary(400)};
+  --vp-c-brand-light: #{primary(450)};
+  --vp-c-brand-dark: #{primary(350)};
+  --vp-c-brand-darker: #{primary(300)};
+  --vp-c-brand-accent: #{accent(400)};
+
+  --vp-c-alt-button-hover: #{accent(550)};
+}
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+:root {
+  // Brand
+  --vp-button-brand-border: var(--vp-c-primary-button);
+  --vp-button-brand-text: var(--vp-c-neutral-inverse);
+  --vp-button-brand-bg: var(--vp-c-primary-button);
+  --vp-button-brand-hover-border: var(--vp-c-primary-button-hover);
+  --vp-button-brand-hover-text: var(--vp-c-neutral-inverse);
+  --vp-button-brand-hover-bg: var(--vp-c-primary-button-hover);
+  --vp-button-brand-active-border: var(--vp-c-primary-button-hover);
+  --vp-button-brand-active-text: var(--vp-c-neutral-inverse);
+  --vp-button-brand-active-bg: var(--vp-c-primary-button-hover);
+
+  // Alt
+  --vp-button-alt-hover-border: var(--vp-c-alt-button-hover);
+  //--vp-button-alt-hover-text: var(--vp-c-neutral-inverse);
+  --vp-button-alt-hover-bg: var(--vp-c-alt-button-hover);
+  --vp-button-alt-active-border: var(--vp-c-alt-button-hover);
+  //--vp-button-alt-active-text: var(--vp-c-neutral-inverse);
+  --vp-button-alt-active-bg: var(--vp-c-alt-button-hover);
+}
+
+.dark {
+
+}
+
+/**
+ * Code
+ */
+
+:root {
+  --vp-code-block-bg: var(--vp-c-bg-alt);
+  --vp-code-tab-divider: var(--vp-c-divider);
+  --vp-code-copy-code-bg: var(--vp-c-bg-alt2);
+  --vp-code-copy-code-border-color: var(--vp-c-bg-alt2);
+  --vp-code-copy-code-hover-bg: var(--vp-c-bg);
+  --vp-code-copy-code-hover-border-color: var(--vp-c-alt-button-hover);
+  --vp-code-tab-text-color: var(--vp-c-text-2);
+  --vp-code-tab-active-text-color: var(--vp-c-text-1);
+  --vp-code-tab-hover-text-color: var(--vp-c-text-1);
+  --vp-code-copy-code-active-text: var(--vp-c-text-2);
+}
+
+.dark {
+  --vp-code-tab-text-color: var(--vp-c-text-dark-2);
+  --vp-code-tab-active-text-color: var(--vp-c-text-dark-1);
+  --vp-code-tab-hover-text-color: var(--vp-c-text-dark-1);
+  --vp-code-copy-code-active-text: var(--vp-c-text-dark-2);
+}
