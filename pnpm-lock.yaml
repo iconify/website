@@ -15,9 +15,42 @@ devDependencies:
   '@iconify-json/entypo-social':
     specifier: ^1.1.4
     version: 1.1.4
+  '@iconify-json/fluent-emoji':
+    specifier: ^1.1.13
+    version: 1.1.13
+  '@iconify-json/fxemoji':
+    specifier: ^1.1.4
+    version: 1.1.4
+  '@iconify-json/gg':
+    specifier: ^1.1.4
+    version: 1.1.4
+  '@iconify-json/heroicons':
+    specifier: ^1.1.10
+    version: 1.1.10
+  '@iconify-json/iconoir':
+    specifier: ^1.1.26
+    version: 1.1.26
+  '@iconify-json/line-md':
+    specifier: ^1.1.24
+    version: 1.1.24
   '@iconify-json/logos':
     specifier: ^1.1.25
     version: 1.1.25
+  '@iconify-json/mdi':
+    specifier: ^1.1.50
+    version: 1.1.50
+  '@iconify-json/mdi-light':
+    specifier: ^1.1.6
+    version: 1.1.6
+  '@iconify-json/ph':
+    specifier: ^1.1.5
+    version: 1.1.5
+  '@iconify-json/pixelarticons':
+    specifier: ^1.1.6
+    version: 1.1.6
+  '@iconify-json/tabler':
+    specifier: ^1.1.74
+    version: 1.1.74
   '@iconify/utils':
     specifier: ^2.1.5
     version: 2.1.5
@@ -1746,8 +1779,74 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
+  /@iconify-json/fluent-emoji@1.1.13:
+    resolution: {integrity: sha512-9tyClxWzrLwbfItv10/oUp3G7s5X+MUa0VN5P8nN2gmVg9Uy87HoZnDt3IRKNwbyqncXRr3p0VoWuv/Tg2jUCg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/fxemoji@1.1.4:
+    resolution: {integrity: sha512-G9YyFR/QWlxV4ogF0TQm/wTGlK3VBp+2Bnm6mlzztb9Q2bDP6J+uD9aQdPoraVE8uiFKuQXBcEirBLhNKtiqvg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/gg@1.1.4:
+    resolution: {integrity: sha512-Y37OSfiSTNJNn8pk7g5nYeARE9r6jzG1c1Q3EbMh9rIssKtUSerqCok55tGmMZ1k3b3dbUOduXk+OLYDbzdiAQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/heroicons@1.1.10:
+    resolution: {integrity: sha512-BQNQIQEL6QZ4FoPxJzLrTBAz7OHQezFFdEEl3gyDOZK8rawIIaPl7AtOZrvyOoSgtkU/Xp8V9pJ5JekdREEsQA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/iconoir@1.1.26:
+    resolution: {integrity: sha512-MSIPBJTN1xiXfKKwNj0/bVZnAkivCwGJDV90z39sq/hxp3JeW3tZKLI4DkuPjx5rmK72f01fBaxfLDFGAJANTg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/line-md@1.1.24:
+    resolution: {integrity: sha512-vHQnRZ3ZVDnrFoj8BMU0iTYR9404TrePP4UhCjkfOqkH4gibFoyM6JGO5OiIHv5m/GQvu4nteTICjklsRFUKpA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify-json/logos@1.1.25:
     resolution: {integrity: sha512-wmShOx+1Hg3ObawFzmE0C/T6R8m7okxQjjd6RCqjTAAC4ZfYNf3LuP/0XszTrIHnobS5kU6SoDCUKXIXWgr0aw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mdi-light@1.1.6:
+    resolution: {integrity: sha512-rEw60ImpDd1AWZso5EnRu0WtJnwp4ZkVLt56tpSKfXH+VH0Tb/fl766nZnbFOBrhyowPhEJEEIle9u4VklBnZg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mdi@1.1.50:
+    resolution: {integrity: sha512-SgbT5w5eHCdOG74ZWPz7HlTGk6VsifIJhNi6lAsxj/5Nlqt6Cz4LlQmSa9eecU9p075Jub2aAx/o7YI+GCahRQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/ph@1.1.5:
+    resolution: {integrity: sha512-iLXq3nohfGge22gL2tZmQ2WHBKkKkIbGWrkuyC8arckS4PWaONyh4A+uDPtSek9QbYDvi9AE2+NxWkNZhANotA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/pixelarticons@1.1.6:
+    resolution: {integrity: sha512-lnTyP0K1EbPmaOXo507ulD4W0wvNRrlXNRaU9NKICA8f0hccMfXjnM5V/ss8h4tnzC21R1h8A270mKxbuEe7fw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/tabler@1.1.74:
+    resolution: {integrity: sha512-dDlEXoTrSBH5+mV2IT/BUKisvxletRIW43aHs6cL4uCZSfk8HTNtXohbbxzEOdbw+wS+9JPGVIM9j8BLTpXWug==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

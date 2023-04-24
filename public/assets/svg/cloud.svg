@@ -1,0 +1,123 @@
+<svg
+	width="256"
+	height="96"
+	viewBox="0 0 256 96"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g fill="#cacaca">
+		<circle cx="202" cy="47" r="30">
+			<animate
+				attributeName="cx"
+				values="201;203;201"
+				dur="20s"
+				repeatCount="indefinite"
+			/>
+		</circle>
+		<ellipse cx="160" cy="56" rx="48" ry="34">
+			<animate
+				attributeName="cy"
+				values="57;53;57"
+				dur="15s"
+				repeatCount="indefinite"
+			/>
+		</ellipse>
+		<ellipse cx="154" cy="36" rx="50" ry="34">
+			<animateMotion
+				path="M0 0v-1h2v2h-3z"
+				dur="11s"
+				repeatCount="indefinite"
+			/>
+		</ellipse>
+		<ellipse cx="102" cy="43" rx="48" ry="34">
+			<animate
+				attributeName="cy"
+				values="45;41;45"
+				dur="17s"
+				repeatCount="indefinite"
+			/>
+		</ellipse>
+		<ellipse cx="94" cy="60" rx="44" ry="34">
+			<animateMotion
+				path="M0 0h2v2h-2z"
+				dur="13s"
+				repeatCount="indefinite"
+			/>
+		</ellipse>
+		<circle cx="54" cy="49" r="30">
+			<animate
+				attributeName="cx"
+				values="55;53;55"
+				dur="20s"
+				repeatCount="indefinite"
+			/>
+		</circle>
+	</g>
+	<g fill="white">
+		<circle cx="202" cy="47" r="28">
+			<animate
+				attributeName="cx"
+				values="201;203;201"
+				dur="20s"
+				repeatCount="indefinite"
+			/>
+		</circle>
+		<ellipse cx="160" cy="56" rx="46" ry="32">
+			<animate
+				attributeName="cy"
+				values="57;53;57"
+				dur="15s"
+				repeatCount="indefinite"
+			/>
+		</ellipse>
+		<ellipse cx="154" cy="36" rx="48" ry="32">
+			<!-- <animate attributeName="cx" values="156;152;156" dur="17s" repeatCount="indefinite" /> -->
+			<animateMotion
+				path="M0 0v-1h2v2h-3z"
+				dur="11s"
+				repeatCount="indefinite"
+			/>
+		</ellipse>
+		<ellipse cx="102" cy="43" rx="46" ry="32">
+			<animate
+				attributeName="cy"
+				values="45;41;45"
+				dur="17s"
+				repeatCount="indefinite"
+			/>
+		</ellipse>
+		<ellipse cx="94" cy="60" rx="42" ry="32">
+			<!-- <animate attributeName="cx" values="96;92;96" dur="13s" repeatCount="indefinite" /> -->
+			<animateMotion
+				path="M0 0h2v2h-2z"
+				dur="13s"
+				repeatCount="indefinite"
+			/>
+		</ellipse>
+		<circle cx="54" cy="49" r="28">
+			<animate
+				attributeName="cx"
+				values="55;53;55"
+				dur="20s"
+				repeatCount="indefinite"
+			/>
+		</circle>
+	</g>
+
+	<path
+		d="m14 41-7 7M14 55l-7-7"
+		stroke="#979797"
+		stroke-width="2"
+		stroke-linecap="round"
+	>
+		<animateMotion path="M0 0h2z" dur="1.5s" repeatCount="indefinite" />
+	</path>
+	<path
+		d="m242 41 7 7M242 55l7-7"
+		stroke="#979797"
+		stroke-width="2"
+		stroke-linecap="round"
+	>
+		<animateMotion path="M0 0h-2z" dur="1.5s" repeatCount="indefinite" />
+	</path>
+</svg>

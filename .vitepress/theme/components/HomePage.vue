@@ -11,7 +11,7 @@ interface ButtonData {
   primary?: true
 }
 const actions: ButtonData[] = [{
-  link: '/guide',
+  link: '/getting-started',
   text: 'Getting Started',
   primary: true,
 }, {
@@ -86,8 +86,8 @@ const actions: ButtonData[] = [{
   </div>
 </template>
 
-<style lang="scss">
-section:not(.VPSidebarItem) {
+<style lang="scss" scoped>
+section {
   margin: 64px 16px 0;
   @media (min-width: 976px) {
     margin-inline: auto;

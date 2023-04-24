@@ -1,0 +1,107 @@
+<svg
+	width="32"
+	height="32"
+	viewBox="0 0 32 32"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g fill="currentColor" opacity="0">
+		<path d="M10.5 11C13 11 13 16 10.5 16C8 16 8 11 10.5 11Z">
+			<animate
+				id="heartStart"
+				attributeName="d"
+				values="M10.5 11C13 11 13 16 10.5 16C8 16 8 11 10.5 11Z;M9.51163 10.1325C11.0374 7.28471 17.5506 9.89252 11.4154 17C2.42456 13.8082 6.716 8.40463 9.51163 10.1325Z"
+				begin="2s;heartEnd.begin+2s"
+				dur="0.2s"
+				fill="freeze"
+			/>
+			<animate
+				id="heartEnd"
+				attributeName="d"
+				values="M9.51163 10.1325C11.0374 7.28471 17.5506 9.89252 11.4154 17C2.42456 13.8082 6.716 8.40463 9.51163 10.1325Z;M10.5 11C13 11 13 16 10.5 16C8 16 8 11 10.5 11Z"
+				begin="heartStart.begin+2s"
+				dur="0.4s"
+				fill="freeze"
+			/>
+		</path>
+		<path d="M21.5 11C24 11 24 16 21.5 16C19 16 19 11 21.5 11Z">
+			<animate
+				attributeName="d"
+				values="M21.5 11C24 11 24 16 21.5 16C19 16 19 11 21.5 11Z;M22.4878 10.1325C25.2839 8.40463 29.576 13.8082 20.5837 17C14.4496 9.89252 20.9638 7.28471 22.4878 10.1325Z"
+				begin="heartStart.begin"
+				dur="0.2s"
+				fill="freeze"
+			/>
+			<animate
+				attributeName="d"
+				values="M22.4878 10.1325C25.2839 8.40463 29.576 13.8082 20.5837 17C14.4496 9.89252 20.9638 7.28471 22.4878 10.1325Z;M21.5 11C24 11 24 16 21.5 16C19 16 19 11 21.5 11Z"
+				begin="heartEnd.begin"
+				dur="0.4s"
+				fill="freeze"
+			/>
+		</path>
+		<animate
+			attributeName="opacity"
+			values="0;1"
+			begin="0.6s"
+			dur="0.2s"
+			fill="freeze"
+		/>
+		<animate
+			attributeName="fill"
+			values="currentColor;#E13E31"
+			begin="heartStart.begin"
+			dur="0.2s"
+			fill="freeze"
+		/>
+		<animate
+			attributeName="fill"
+			values="#E13E31;currentColor"
+			begin="heartEnd.begin"
+			dur="0.2s"
+			fill="freeze"
+		/>
+	</g>
+	<path
+		d="M16 26C21.1562 26 25.4909 21.2412 24.9582 20.1898C24.423 19.1334 22.134 22.8308 16 22.8308C9.86596 22.8308 7.5544 19.1334 7.04323 20.1898C6.53206 21.2462 10.8437 26 16 26Z"
+		fill="currentColor"
+		opacity="0"
+	>
+		<animate
+			attributeName="opacity"
+			values="0;1"
+			begin="0.8s"
+			dur="0.2s"
+			fill="freeze"
+		/>
+		<animate
+			attributeName="d"
+			values="M16 26C21.1562 26 25.4909 21.2412 24.9582 20.1898C24.423 19.1334 22.134 22.8308 16 22.8308C9.86596 22.8308 7.5544 19.1334 7.04323 20.1898C6.53206 21.2462 10.8437 26 16 26Z;M16 26C21.1563 26 24.5327 21.2412 24 20.1898C23.4648 19.1334 21 21.9998 16 21.9998C11 21.9998 8.51117 19.1334 8 20.1898C7.48883 21.2462 10.8438 26 16 26Z"
+			begin="heartStart.begin"
+			dur="0.4s"
+			fill="freeze"
+		/>
+		<animate
+			attributeName="d"
+			values="M16 26C21.1563 26 24.5327 21.2412 24 20.1898C23.4648 19.1334 21 21.9998 16 21.9998C11 21.9998 8.51117 19.1334 8 20.1898C7.48883 21.2462 10.8438 26 16 26Z;M16 26C21.1562 26 25.4909 21.2412 24.9582 20.1898C24.423 19.1334 22.134 22.8308 16 22.8308C9.86596 22.8308 7.5544 19.1334 7.04323 20.1898C6.53206 21.2462 10.8437 26 16 26Z"
+			begin="heartEnd.begin+0.4s"
+			dur="0.4s"
+			fill="freeze"
+		/>
+	</path>
+	<path
+		d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-dasharray="96"
+		stroke-dashoffset="96"
+	>
+		<animate
+			attributeName="stroke-dashoffset"
+			values="96;0"
+			dur="0.6s"
+			fill="freeze"
+		/>
+	</path>
+</svg>

@@ -13,7 +13,7 @@ const DocumentationNav: DefaultTheme.NavItemWithLink[] = [
 ]
 
 const DocumentationSidebar: DefaultTheme.SidebarItem[] = [
-  { text: 'Getting Started', link: '/guide' },
+  { text: 'Getting Started', link: '/getting-started' },
   { text: 'Iconify documentation', link: '/docs/' },
   { text: 'Iconify API', link: '/docs/api/' },
   { text: 'Articles', link: '/docs/articles/' },
@@ -59,7 +59,7 @@ const AboutNav: DefaultTheme.NavItemWithLink[] = [
 const DefaultSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: 'Getting Started',
-    link: '/guide',
+    link: '/getting-started',
   },
   {
     text: 'News',
@@ -117,7 +117,7 @@ export const Nav: DefaultTheme.NavItem[] = [
 ]
 
 export const GlobalSidebar: DefaultTheme.Sidebar = {
-  '/guide': DefaultSidebar,
+  '/getting-started': DefaultSidebar,
   '/news/': DefaultSidebar,
   '/icon-sets/': DefaultSidebar,
   '/docs/': DocumentationSidebars['/docs/']!,
