@@ -1,97 +1,8 @@
 import { defineConfig } from 'vitepress'
-import type { DefaultTheme } from 'vitepress/types'
 import { withPwa } from '@vite-pwa/vitepress'
 import { pwa } from './pwa'
 import { description, ogImage, ogUrl, title } from './constants'
-
-const Documentation: DefaultTheme.NavItemWithLink[] = [
-  { text: 'Iconify documentation', link: '/docs/' },
-  { text: 'Iconify API', link: '/docs/api/' },
-  { text: 'Articles', link: '/docs/articles/' },
-  { text: 'Icons on demand', link: '/docs/icon-components/' },
-  { text: 'Iconify Icon Web Component', link: '/docs/iconify-icon/' },
-  { text: 'Icons', link: '/docs/icons/' },
-  { text: 'Tools for Developers', link: '/docs/tools/' },
-  { text: 'Iconify Types', link: '/docs/types/' },
-  { text: 'How to use icons', link: '/docs/usage/' },
-]
-
-const SidebarDocumentation: DefaultTheme.SidebarItem[] = [
-  { text: 'Iconify documentation', link: '/docs/' },
-  { text: 'Iconify API', link: '/docs/api/' },
-  { text: 'Articles', link: '/docs/articles/' },
-  { text: 'Icons on demand', link: '/docs/icon-components/' },
-  { text: 'Iconify Icon Web Component', link: '/docs/iconify-icon/' },
-  { text: 'Icons', link: '/docs/icons/' },
-  { text: 'Tools for Developers', link: '/docs/tools/' },
-  { text: 'Iconify Types', link: '/docs/types/' },
-  { text: 'How to use icons', link: '/docs/usage/' },
-]
-
-const About: DefaultTheme.NavItemWithLink[] = [
-  { text: 'About Iconify', link: '/about/' },
-  { text: 'Support', link: '/support/' },
-  { text: 'History', link: '/about/history' },
-]
-
-const Sidebar: DefaultTheme.SidebarItem[] = [
-  {
-    text: 'Getting Started',
-    link: '/guide',
-  },
-  {
-    text: 'News',
-    link: '/news/',
-  },
-  {
-    text: 'Documentation',
-    items: Documentation,
-  },
-  {
-    text: 'Sponsor Iconify',
-    link: '/sponsors',
-  },
-  {
-    text: 'About Iconify',
-    link: '/about/',
-  },
-  {
-    text: 'Iconify Support',
-    link: '/support/',
-  },
-  {
-    text: 'History',
-    link: '/about/history',
-  },
-  {
-    text: 'Privacy',
-    link: '/privacy',
-  },
-]
-
-const Nav: DefaultTheme.NavItem[] = [
-  {
-    text: 'News',
-    link: '/news/',
-  },
-  {
-    text: 'Icons',
-    link: 'https://icon-sets.iconify.design/',
-  },
-  {
-    text: 'Docs',
-    items: Documentation,
-  },
-  {
-    text: 'Sponsor',
-    link: '/sponsors',
-  },
-  {
-    text: 'About',
-    items: About,
-    activeMatch: '^/(about|support)/',
-  },
-]
+import { GlobalSidebar, Nav } from './navigation'
 
 export default withPwa(defineConfig({
   lang: 'en-US',
@@ -141,16 +52,7 @@ export default withPwa(defineConfig({
       code: 'CESI4K3W',
       placement: 'iconifydesign',
     },
-    sidebar: {
-      '/guide': Sidebar,
-      '/news/': Sidebar,
-      '/icon-sets/': Sidebar,
-      '/docs/': SidebarDocumentation,
-      '/sponsors': Sidebar,
-      '/support/': Sidebar,
-      '/about/': Sidebar,
-      '/privacy': Sidebar,
-    },
+    sidebar: GlobalSidebar,
     editLink: {
       pattern: 'https://github.com/userquin/iconify-website/edit/master/:path',
       text: 'Suggest changes to this page',
