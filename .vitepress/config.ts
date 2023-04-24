@@ -242,7 +242,7 @@ export default withPwa(defineConfig({
   },
 
   themeConfig: {
-    logo: '/iconify-logo.svg',
+    logo: '/assets/images/iconify-logo.svg',
     nav: Nav,
     search: {
       provider: 'local',

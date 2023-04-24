@@ -13,7 +13,7 @@ export default defineConfig({
     presetIcons({
       collections: {
         iconify: {
-          around: () => readFile('./public/around-logo.svg', 'utf8'),
+          around: () => readFile('./public/images/around-logo.svg', 'utf8'),
         },
       },
     }),

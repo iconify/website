@@ -4,7 +4,7 @@ title: "Iconify Design: All popular icon sets, one framework."
 
 hero:
   image:
-    src: /iconify-logo.svg
+    src: /assets/images/iconify-logo.svg
     alt: Iconify Design Logo
   name: "Iconify Design"
   text: Freedom to choose icons
