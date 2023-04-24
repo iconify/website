@@ -1,6 +1,5 @@
 <script setup>
-const logos = import.meta.glob('./public/around-logo.svg', { as: 'raw', eager: true })
-const around = logos['./public/around-logo.svg']
+import around from '/assets/images/around-logo.svg?raw'
 </script>
 
 # Supporting Iconify
@@ -30,9 +29,9 @@ If you represent a company and are willing to help or interested in sponsoring I
 
 ## Around.co support!
 
-<div class="w-6.25em h-1em">
+<div class="inline-block h-51px">
     <a href="https://around.co/?utm_source=iconify&amp;utm_medium=partnership" 
-       target="_blank" rel="noreferrer" class="font-size-51px lh-1em " v-html="around" />
+       target="_blank" rel="noreferrer" v-html="around" />
 </div>
 
 Thanks to [Around](https://around.co/?utm_source=iconify&utm_medium=partnership) for sponsoring Iconify plugin for Figma!
