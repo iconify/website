@@ -34,8 +34,8 @@
   --vp-c-brand-darker: #{primary(700)};
   --vp-c-brand-accent: #{accent(600)};
 
-  --vp-c-primary-button: #{primary(500)};
-  --vp-c-primary-button-hover: #{accent(500)};
+  --vp-c-primary-button: #{primary(600)};
+  --vp-c-primary-button-hover: #{accent(600)};
   --vp-c-alt-button-hover: #{accent(450)};
 }
 
@@ -52,6 +52,8 @@
   --vp-c-brand-darker: #{primary(300)};
   --vp-c-brand-accent: #{accent(400)};
 
+  --vp-c-primary-button: #{primary(400)};
+  --vp-c-primary-button-hover: #{accent(400)};
   --vp-c-alt-button-hover: #{accent(550)};
 }
 
@@ -71,12 +73,12 @@
   --vp-button-brand-active-bg: var(--vp-c-primary-button-hover);
 
   // Alt
-  --vp-button-alt-hover-border: var(--vp-c-alt-button-hover);
-  //--vp-button-alt-hover-text: var(--vp-c-neutral-inverse);
-  --vp-button-alt-hover-bg: var(--vp-c-alt-button-hover);
-  --vp-button-alt-active-border: var(--vp-c-alt-button-hover);
-  //--vp-button-alt-active-text: var(--vp-c-neutral-inverse);
-  --vp-button-alt-active-bg: var(--vp-c-alt-button-hover);
+  --vp-button-alt-hover-border: var(--vp-c-primary-button-hover);
+  --vp-button-alt-hover-text: var(--vp-c-neutral-inverse);
+  --vp-button-alt-hover-bg: var(--vp-c-primary-button-hover);
+  --vp-button-alt-active-border: var(--vp-c-primary-button-hover);
+  --vp-button-alt-active-text: var(--vp-c-neutral-inverse);
+  --vp-button-alt-active-bg: var(--vp-c-primary-button-hover);
 }
 
 .dark {
