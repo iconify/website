@@ -226,7 +226,7 @@ export default withPwa(defineConfig({
     ['meta', { name: 'twitter:site', content: '@slava_trushkin' }],
     ['meta', { name: 'twitter:url', content: ogUrl }],
   ],
-  lastUpdated: false,
+  lastUpdated: true,
   cleanUrls: true,
   ignoreDeadLinks: [
     /^\/docs\/icon-bundles/,
@@ -236,8 +236,8 @@ export default withPwa(defineConfig({
 
   markdown: {
     theme: {
-      light: 'vitesse-light',
-      dark: 'vitesse-dark',
+      light: 'github-light',
+      dark: 'github-dark',
     },
   },
 
@@ -261,6 +261,10 @@ export default withPwa(defineConfig({
       '/extractors/': SidebarPresets,
 
       '/config/': SidebarConfig,
+    },
+    editLink: {
+      pattern: 'https://github.com/userquin/iconify-website/edit/master/:path',
+      text: 'Suggest changes to this page',
     },
     socialLinks: [
       { icon: 'discord', link: 'https://iconify.design/discord' },

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # Iconify Updates
 
 <!--@include: ./2020/1598467823.md-->
