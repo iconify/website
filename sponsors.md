@@ -31,7 +31,7 @@ If you represent a company and are willing to help or interested in sponsoring I
 
 <div class="inline-block h-51px">
     <a href="https://around.co/?utm_source=iconify&amp;utm_medium=partnership" 
-       target="_blank" rel="noreferrer" v-html="around" />
+       target="_blank" rel="noreferrer" aria-label="Around.co" v-html="around" />
 </div>
 
 Thanks to [Around](https://around.co/?utm_source=iconify&utm_medium=partnership) for sponsoring Iconify plugin for Figma!
