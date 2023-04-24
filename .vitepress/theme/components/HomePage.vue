@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vue'
+import { VPTeamMembers } from 'vitepress/theme'
 
-// import { VPTeamMembers } from 'vitepress/theme'
-// import { teamMembers } from '../../team'
+import { teamMembers } from '../../team'
 
 interface ButtonData {
   link: string
@@ -26,7 +26,7 @@ const actions: ButtonData[] = [{
 <template>
   <div class="content">
     <div class="content-container">
-      <section class="container hero">
+      <section class="hero">
         <h1>Freedom to choose icons</h1>
         <p>All popular icon sets, one framework.</p>
         <p>Over 150,000 open source vector icons.</p>
@@ -43,63 +43,81 @@ const actions: ButtonData[] = [{
         </div>
       </section>
       <main class="main">
-        <div class="vp-doc" flex flex-col items-center mt-10>
-          <!--
-          <h2 id="meet-the-team" op70 font-normal p="t-10 b-2">
-            Meet The Team
-          </h2>
-          <div w-full p-10>
+        <!--
+        <section id="meet-the-team">
+          <h1>
+            The Team
+          </h1>
+          <div class="team-wrapper">
             <VPTeamMembers size="small" :members="teamMembers" />
           </div>
--->
-          <h2 id="sponsored-by" op70 font-normal pt-5 pb-2>
+        </section>
+        -->
+
+        <section id="sponsored-by">
+          <h1>
             Sponsored by
-          </h2>
-          <div grid="~ cols-1" w-full text-center mt-10>
-            <div class="flex flex-col">
-              <a href="https://github.com/sponsors/cyberalien" target="_blank" rel="noopener noreferrer">
-                <img
-                  crossorigin="anonymous"
-                  inline-block
-                  width="800" height="288"
-                  class="resizable-img"
-                  loading="lazy"
-                  src="https://cyberalien.github.io/static/sponsors.svg"
-                  alt="Vjacheslav Trushkin's sponsors"
-                >
-              </a>
-            </div>
+          </h1>
+          <div class="sponsors">
+            <a href="https://github.com/sponsors/cyberalien" target="_blank" rel="noopener noreferrer" title="Support Iconify!">
+              <img
+                crossorigin="anonymous"
+                class="resizable-img"
+                loading="lazy"
+                src="https://cyberalien.github.io/static/sponsors.svg"
+                alt="Vjacheslav Trushkin's sponsors"
+              >
+            </a>
           </div>
-          <h2 id="meet-the-team" op70 font-normal p="t-10 b-2">
+        </section>
+
+        <section id="license">
+          <h1>
             License
-          </h2>
-          <div max-w-65ch text-center p-10 whitespace-pre-wrap fw-500 class="text-$vp-c-text-2">
+          </h1>
+          <div>
             <p>Iconify is an open source project.</p>
             <p>Almost all parts of the project use MIT license. Some older packages use Apache 2.0 and/or GPL 2.0 licenses.</p>
             <p>This license does not apply to icons. Icon sets use various open source licenses, see each icon set for details.</p>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   </div>
 </template>
 
 <style lang="scss">
+section {
+  margin: 64px 16px 0;
+  @media (min-width: 976px) {
+    margin-inline: auto;
+    max-width: 976px;
+  }
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+  color: var(--vp-c-dimmed);
+}
+
 .hero {
   text-align: center;
-  padding-top: 64px;
+  padding: 32px;
 
   h1 {
     font-size: 48px;
     line-height: 56px;
-    margin: 16px;
     font-weight: bold;
     color: var(--vp-c-brand);
   }
   p {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 12px;
     color: var(--vp-c-dimmed);
   }
 
@@ -111,9 +129,27 @@ const actions: ButtonData[] = [{
     }
   }
   .action {
-    flex-shrink: 0;
+    display: inline-block;
+    margin: 4px;
     padding: 6px;
   }
+}
 
+.team-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors {
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+  }
 }
 </style>
