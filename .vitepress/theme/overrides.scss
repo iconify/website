@@ -11,6 +11,11 @@ table {
   color: var(--vp-c-brand);
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1104px;
+}
+
 /**
  * VitePress: Custom fix
  * -------------------------------------------------------------------------- */

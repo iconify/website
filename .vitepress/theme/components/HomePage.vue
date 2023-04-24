@@ -1,11 +1,47 @@
 <script setup lang="ts">
+import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vue'
+
 // import { VPTeamMembers } from 'vitepress/theme'
 // import { teamMembers } from '../../team'
+
+interface ButtonData {
+  link: string
+  text: string
+  target?: string
+  primary?: true
+}
+const actions: ButtonData[] = [{
+  link: '#',
+  text: 'Getting Started',
+  primary: true,
+}, {
+  link: '/docs/',
+  text: 'Documentation',
+}, {
+  link: 'https://icon-sets.iconify.design/',
+  text: 'Browse Icons',
+}]
 </script>
 
 <template>
   <div class="content">
     <div class="content-container">
+      <section class="container hero">
+        <h1>Freedom to choose icons</h1>
+        <p>All popular icon sets, one framework.</p>
+        <p>Over 150,000 open source vector icons.</p>
+        <div class="actions">
+          <span v-for="action in actions" :key="action.link" class="action">
+            <VPButton
+              tag="a"
+              size="medium"
+              :theme="action.primary ? 'brand' : 'alt'"
+              :text="action.text"
+              :href="action.link"
+            />
+          </span>
+        </div>
+      </section>
       <main class="main">
         <div class="vp-doc" flex flex-col items-center mt-10>
           <!--
@@ -47,3 +83,37 @@
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.hero {
+  text-align: center;
+  padding-top: 64px;
+
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 16px;
+    font-weight: bold;
+    color: var(--vp-c-brand);
+  }
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    color: var(--vp-c-dimmed);
+  }
+
+  .actions {
+    margin: 0 auto;
+    padding-top: 24px;
+    @media (min-width: 640px) {
+      padding-top: 32px;
+    }
+  }
+  .action {
+    flex-shrink: 0;
+    padding: 6px;
+  }
+
+}
+</style>

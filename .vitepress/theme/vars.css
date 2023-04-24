@@ -28,6 +28,8 @@
 
   --vp-c-highlight-bg: var(--vp-c-brand-light);
   --vp-c-highlight-text: var(--vp-c-bg);
+
+  --vp-c-dimmed: #626262;
 }
 
 .dark {
@@ -42,6 +44,8 @@
   --vp-code-tab-hover-text-color: var(--vp-c-text-dark-1);
   --vp-code-copy-code-active-text: var(--vp-c-text-dark-2);
   --vp-c-text-dark-3: var(--vp-c-text-dark-2);
+
+  --vp-c-dimmed: #a0a0a0;
 }
 
 

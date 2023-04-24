@@ -2,10 +2,7 @@
 layout: home
 title: "Iconify Design: All popular icon sets, one framework."
 
-hero:
-  image:
-    src: /assets/images/iconify-logo.svg
-    alt: Iconify Design Logo
+hero_:
   name: "Iconify Design"
   text: Freedom to choose icons
   tagline: |
