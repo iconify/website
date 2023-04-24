@@ -11,22 +11,6 @@ table {
   color: var(--vp-c-brand);
 }
 
-@media (min-width: 960px) {
-  .VPHero .image-container .VPImage {
-    transform: translate(-30%, -100%);
-  }
-}
-
-.VPHero .image-container .VPImage {
-  min-width: 320px;
-}
-
-@media (max-width: 350px) {
-  .VPHero .image-container .VPImage {
-    min-width: unset;
-  }
-}
-
 /**
  * VitePress: Custom fix
  * -------------------------------------------------------------------------- */
@@ -36,21 +20,24 @@ table {
   Also specify some classes twice to have higher specificity
   over scoped class data attribute.
 */
-.dark .vp-doc a:not(.VPSocialLink),
-.dark .vp-doc a > code,
-.dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
-.dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
-.dark .link.link:hover,
-.dark .link.link.active,
-.dark .edit-link-button.edit-link-button,
-.dark .pager-link .title {
-  color: var(--vp-c-brand-lighter);
+.dark {
+  .vp-doc a:not(.VPSocialLink),
+  .vp-doc a > code,
+  .VPNavBarMenuLink.VPNavBarMenuLink:hover,
+  .VPNavBarMenuLink.VPNavBarMenuLink.active,
+  .link.link:hover,
+  .link.link.active,
+  .edit-link-button.edit-link-button,
+  .pager-link .title {
+    color: var(--vp-c-brand-lighter);
+  }
+  .vp-doc a:not(.VPSocialLink):hover,
+  .vp-doc a > code:hover {
+    color: var(--vp-c-brand-lightest);
+    opacity: 1;
+  }
 }
-.dark .vp-doc a:not(.VPSocialLink):hover,
-.dark .vp-doc a > code:hover {
-  color: var(--vp-c-brand-lightest);
-  opacity: 1;
-}
+
 
 /* Transition by color instead of opacity */
 /*.dark .vp-doc .custom-block a {

@@ -24,6 +24,7 @@
     "@vite-pwa/vitepress": "^0.0.5",
     "eslint": "^8.39.0",
     "https-localhost": "^4.7.1",
+    "sass": "^1.62.0",
     "typescript": "^5.0.4",
     "unocss": "^0.51.6",
     "unplugin-auto-import": "^0.15.3",
