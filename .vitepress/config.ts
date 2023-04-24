@@ -229,7 +229,7 @@ export default withPwa(defineConfig({
   lastUpdated: false,
   cleanUrls: true,
   ignoreDeadLinks: [
-    /^\/play/,
+    /^\/docs\/icon-bundles/,
     /^\/interactive/,
     /:\/\/localhost/,
   ],

@@ -9,6 +9,7 @@
 
 :root {
   --vp-c-brand: #307594;
+  --vp-c-brand-dark: #06415b;
   --vp-c-brand-light: #1c5870;
   --vp-c-brand-lighter: #06415b;
   --vp-c-brand-next: #e95ca2;
@@ -31,6 +32,7 @@
 
 .dark {
   --vp-c-brand: #0d8fc9;
+  --vp-c-brand-dark: #99deff;
   --vp-c-brand-light: #69b6ff;
   --vp-c-brand-lighter: #99deff;
   --vp-code-block-bg: rgba(0,0,0,0.2);
