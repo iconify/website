@@ -35,6 +35,7 @@ const plainTeamMembers: CoreTeam[] = [
     discord: 'https://iconify.design/discord',
     mastodon: 'https://fosstodon.org/@cyberalien',
     twitter: 'slava_trushkin',
+    youtube: 'webdevstuff',
     sponsor: 'https://github.com/sponsors/cyberalien',
   },
   {

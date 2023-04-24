@@ -164,6 +164,7 @@ export default withPwa(defineConfig({
       { icon: 'mastodon', link: 'https://fosstodon.org/@cyberalien' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/trushkin/' },
       { icon: 'github', link: 'https://github.com/iconify' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@webdevstuff' },
     ],
     footer: {
       message: 'Released under the MIT License.',
