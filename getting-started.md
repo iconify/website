@@ -1,4 +1,4 @@
-<script setup lant="ts">
+<script setup>
 import lock from '/assets/svg/lock.svg?raw'
 const icons = [
     'i-line-md:sun-rising-loop text-$vp-c-primary-button-hover',
