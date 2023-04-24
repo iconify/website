@@ -50,7 +50,7 @@ Then you need to add records for each server you have in your CDN. Click `[str]C
 
 If you are running script on AWS service, instead of entering IP select click `[str]Yes` for `[str]Alias` option and select AWS instance.
 
-![Adding a new record to Route53](hosting/route53-new-record.png)
+![Adding a new record to Route53](/assets/images/hosting/route53-new-record.png)
 
 Click `[str]Create` button to add that record.
 
@@ -58,7 +58,7 @@ Create several more records for your other servers. For each record enter the sa
 
 By the time you are finished it should look like this:
 
-![Route53 records](hosting/route53-records.png)
+![Route53 records](/assets/images/hosting/route53-records.png)
 
 Notice there are 3 records for `[str]icons.simplesvg.com` pointing to different IP addresses with different region set up.
 
