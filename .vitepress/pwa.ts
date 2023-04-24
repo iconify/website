@@ -38,12 +38,12 @@ export const pwa: Partial<VitePWAOptions> = {
 
   injectManifest: {
     rollupFormat: 'iife',
-    globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2,json}'],
+    globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
     globIgnores: ['images/news/**'],
   },
   devOptions: {
     enabled: process.env.SW_DEV === 'true',
-    /* when using generateSW the PWA plugin will switch to classic */
+    /* when building, the PWA plugin will switch to classic */
     type: 'module',
     navigateFallback: 'index.html',
   },
