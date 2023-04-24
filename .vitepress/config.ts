@@ -36,16 +36,12 @@ const About: DefaultTheme.NavItemWithLink[] = [
 
 const Sidebar: DefaultTheme.SidebarItem[] = [
   {
-    text: 'Guide',
-    link: '/guide/',
+    text: 'Getting Started',
+    link: '/guide',
   },
   {
     text: 'News',
     link: '/news/',
-  },
-  {
-    text: 'Browse Icons',
-    link: '/icons-set/',
   },
   {
     text: 'Documentation',
@@ -80,7 +76,7 @@ const Nav: DefaultTheme.NavItem[] = [
   },
   {
     text: 'Icons',
-    link: '/icon-sets/',
+    link: 'https://icon-sets.iconify.design/',
   },
   {
     text: 'Docs',
@@ -145,7 +141,7 @@ export default withPwa(defineConfig({
       placement: 'iconifydesign',
     },
     sidebar: {
-      '/guide/': Sidebar,
+      '/guide': Sidebar,
       '/news/': Sidebar,
       '/icon-sets/': Sidebar,
       '/docs/': SidebarDocumentation,
