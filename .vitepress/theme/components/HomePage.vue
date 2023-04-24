@@ -75,7 +75,7 @@ const actions: ButtonData[] = [{
           <h1>
             License
           </h1>
-          <div>
+          <div class="licenses">
             <p>Iconify is an open source project.</p>
             <p>Almost all parts of the project use MIT license. Some older packages use Apache 2.0 and/or GPL 2.0 licenses.</p>
             <p>This license does not apply to icons. Icon sets use various open source licenses, see each icon set for details.</p>
@@ -152,5 +152,11 @@ h1 {
     width: 100%;
     max-width: 800px;
   }
+}
+
+.licenses p {
+  max-width: 480px;
+  margin: 16px auto;
+  text-align: center;
 }
 </style>
