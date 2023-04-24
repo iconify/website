@@ -87,7 +87,7 @@ const actions: ButtonData[] = [{
 </template>
 
 <style lang="scss">
-section {
+section:not(.VPSidebarItem) {
   margin: 64px 16px 0;
   @media (min-width: 976px) {
     margin-inline: auto;
