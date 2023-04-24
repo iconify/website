@@ -1,0 +1,3 @@
+```yaml
+redirect: ./svg/
+```

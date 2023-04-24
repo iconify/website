@@ -4,6 +4,30 @@ import { withPwa } from '@vite-pwa/vitepress'
 import { pwa } from './pwa'
 import { description, ogImage, ogUrl, title } from './constants'
 
+const Documentation: DefaultTheme.NavItemWithLink[] = [
+  { text: 'Iconify documentation', link: '/docs/' },
+  { text: 'Iconify API', link: '/docs/api/' },
+  { text: 'Articles', link: '/docs/articles/' },
+  { text: 'Icons on demand', link: '/docs/icon-components/' },
+  { text: 'Iconify Icon Web Component', link: '/docs/iconify-icon/' },
+  { text: 'Icons', link: '/docs/icons/' },
+  { text: 'Tools for Developers', link: '/docs/tools/' },
+  { text: 'Iconify Types', link: '/docs/types/' },
+  { text: 'How to use icons', link: '/docs/usage/' },
+]
+
+const SidebarDocumentation: DefaultTheme.SidebarItem[] = [
+  { text: 'Iconify documentation', link: '/docs/' },
+  { text: 'Iconify API', link: '/docs/api/' },
+  { text: 'Articles', link: '/docs/articles/' },
+  { text: 'Icons on demand', link: '/docs/icon-components/' },
+  { text: 'Iconify Icon Web Component', link: '/docs/iconify-icon/' },
+  { text: 'Icons', link: '/docs/icons/' },
+  { text: 'Tools for Developers', link: '/docs/tools/' },
+  { text: 'Iconify Types', link: '/docs/types/' },
+  { text: 'How to use icons', link: '/docs/usage/' },
+]
+
 const About: DefaultTheme.NavItemWithLink[] = [
   { text: 'About Iconify', link: '/about/' },
   { text: 'Support', link: '/support/' },
@@ -22,6 +46,10 @@ const Sidebar: DefaultTheme.SidebarItem[] = [
   {
     text: 'Browse Icons',
     link: '/icons-set/',
+  },
+  {
+    text: 'Documentation',
+    items: Documentation,
   },
   {
     text: 'Sponsor Iconify',
@@ -51,8 +79,12 @@ const Nav: DefaultTheme.NavItem[] = [
     link: '/news/',
   },
   {
-    text: 'Browse Icons',
+    text: 'Icons',
     link: '/icon-sets/',
+  },
+  {
+    text: 'Docs',
+    items: Documentation,
   },
   {
     text: 'Sponsor',
@@ -116,7 +148,7 @@ export default withPwa(defineConfig({
       '/guide/': Sidebar,
       '/news/': Sidebar,
       '/icon-sets/': Sidebar,
-      '/docs/': Sidebar,
+      '/docs/': SidebarDocumentation,
       '/sponsors': Sidebar,
       '/support/': Sidebar,
       '/about/': Sidebar,
