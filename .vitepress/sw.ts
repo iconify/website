@@ -1,8 +1,12 @@
+/// <reference types="vite/client" />
 /// <reference lib="webworker" />
 import { cleanupOutdatedCaches, createHandlerBoundToURL, precacheAndRoute } from 'workbox-precaching'
 import { cacheNames, clientsClaim } from 'workbox-core'
 import { NavigationRoute, registerRoute } from 'workbox-routing'
 import { getIcons } from '@iconify/utils'
+import { ExpirationPlugin } from 'workbox-expiration'
+import { CacheableResponsePlugin } from 'workbox-cacheable-response'
+import { StaleWhileRevalidate } from 'workbox-strategies'
 
 declare let self: ServiceWorkerGlobalScope
 
@@ -106,3 +110,21 @@ self.addEventListener('fetch', (e) => {
     ))
   }
 })
+
+if (import.meta.env.PROD) {
+  registerRoute(
+    ({ sameOrigin, url }) =>
+      sameOrigin && url.pathname.startsWith('/images/news/'),
+    new StaleWhileRevalidate({
+      cacheName: 'iconify-news-images.cache',
+      plugins: [
+        new CacheableResponsePlugin({ statuses: [200] }),
+        new ExpirationPlugin({
+          purgeOnQuotaError: true,
+          maxAgeSeconds: 60 * 60 * 24 * 365, // 365 days
+          maxEntries: 100,
+        }),
+      ],
+    }),
+  )
+}

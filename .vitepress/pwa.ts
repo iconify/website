@@ -37,6 +37,7 @@ export const pwa: Partial<VitePWAOptions> = {
   },
   injectManifest: {
     globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2,json}'],
+    globIgnores: ['images/news/**'],
   },
   devOptions: {
     enabled: process.env.SW_DEV === 'true',

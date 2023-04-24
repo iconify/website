@@ -32,7 +32,7 @@ In 2018 I have created proof of concept for [SVG framework](https://docs.iconify
 
 In 2020 part time experiment turned into a proper full time project and all real development work started.
 
-For more detailed history, [check out Iconify history page](/about/history.html).
+For more detailed history, [check out Iconify history page](/about/history).
 
 ## Iconify purpose
 
@@ -62,6 +62,6 @@ Iconify is not monetised.
 
 Originally, the plan was to eventually offer premium icon sets that would pay for servers and development. In mid 2022 that plan changed, thanks to people showing interest in sponsoring open source development. New plan is to open source everything and rely on sponsors to finance development. Current sponsorship level is nowhere near enough, but every bit helps and gives hope for the future of the project.
 
-If you are using Iconify in your projects, [please consider sponsoring Iconify development](/sponsors/).
+If you are using Iconify in your projects, [please consider sponsoring Iconify development](/sponsors).
 
 <ContactInfo />
