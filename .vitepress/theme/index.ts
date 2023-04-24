@@ -17,11 +17,10 @@ export default {
       'home-features-after': () => h(HomePage),
     })
   },
-  enhanceApp({ app }) {
+  enhanceApp() {
     if (typeof window === 'undefined')
       return
 
-    app.regi
     if (PWA) {
       disableCache('all')
       import('virtual:pwa-register').then(({ registerSW }) => registerSW({ immediate: true }))

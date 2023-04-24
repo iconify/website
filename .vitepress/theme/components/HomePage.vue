@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vue'
-import { VPTeamMembers } from 'vitepress/theme'
 
-import { teamMembers } from '../../team'
+// import { VPTeamMembers } from 'vitepress/theme'
+// import { teamMembers } from '../../team'
 
 interface ButtonData {
   link: string
@@ -118,6 +118,7 @@ h1 {
     font-size: 24px;
     line-height: 32px;
     margin: 12px;
+    font-weight: 500;
     color: var(--vp-c-dimmed);
   }
 
