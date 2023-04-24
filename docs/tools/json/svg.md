@@ -36,7 +36,7 @@ extra:
     title: PHP
 ```
 
-## Getting <svg> {#get-svg}
+## Getting &lt;svg&gt; {#get-svg}
 
 The `[class]SVG` class has one function: `[func]getSVG()`. It returns `[tag]svg` string.
 
