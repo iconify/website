@@ -4,6 +4,7 @@ import type { Plugin } from 'vite'
 // Load logo and replace palette
 const logo = readFileSync('public/assets/svg/logo-iconify.svg', 'utf8')
   .replaceAll('#979797', 'var(--vp-c-brand-gray)')
+  .replaceAll('#AEAEAE', 'var(--vp-c-brand-gray2)')
   .replaceAll('#307594', 'var(--vp-c-brand)')
   .replaceAll('#E13E31', 'var(--vp-c-brand-accent-logo)')
 
