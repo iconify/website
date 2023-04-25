@@ -1,3 +1,7 @@
+<script setup>
+import heart from '/assets/svg/heart.svg?raw'
+</script>
+
 ## Support Iconify
 
 <section class="flex flex-row items-start mb-4 gap-x-6">

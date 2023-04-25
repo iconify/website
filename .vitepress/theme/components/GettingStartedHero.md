@@ -1,6 +1,9 @@
+<script setup>
+import { hero } from '../../constants'
+</script>
 
 <section class="home hero getting-started">
-    <h1>Freedom to choose icons</h1>
-    <p>All popular icon sets, one framework.</p>
-    <p>Over 150,000 open source vector icons.</p>
+    <h1>{{ hero.title }}</h1>
+    <p>{{ hero.p1 }}</p>
+    <p>{{ hero.p2 }}</p>
 </section>
