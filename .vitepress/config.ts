@@ -10,7 +10,7 @@ export default withPwa(defineConfig({
   titleTemplate: title,
   description,
   outDir: './dist',
-  srcExclude: ['news/*/*.md'],
+  srcExclude: ['news/*/*.md', 'content/**'],
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/png', sizes: 'any' }],

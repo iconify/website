@@ -4,6 +4,8 @@ import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vu
 // import { VPTeamMembers } from 'vitepress/theme'
 // import { teamMembers } from '../../team'
 
+import { hero, license } from '../../constants'
+
 interface ButtonData {
   link: string
   text: string
@@ -27,9 +29,9 @@ const actions: ButtonData[] = [{
   <div class="content">
     <div class="content-container">
       <section class="home hero">
-        <h1>Freedom to choose icons</h1>
-        <p>All popular icon sets, one framework.</p>
-        <p>Over 150,000 open source vector icons.</p>
+        <h1>{{ hero.title }}</h1>
+        <p>{{ hero.p1 }}</p>
+        <p>{{ hero.p2 }}</p>
         <div class="actions">
           <span v-for="action in actions" :key="action.link" class="action">
             <VPButton
@@ -72,13 +74,11 @@ const actions: ButtonData[] = [{
         </section>
 
         <section id="license" class="home">
-          <h1>
-            License
-          </h1>
+          <h1>{{ license.title }}</h1>
           <div class="licenses">
-            <p>Iconify is an open source project.</p>
-            <p>Almost all parts of the project use MIT license. Some older packages use Apache 2.0 and/or GPL 2.0 licenses.</p>
-            <p>This license does not apply to icons. Icon sets use various open source licenses, see each icon set for details.</p>
+            <p>{{ license.p1 }}</p>
+            <p>{{ license.p2 }}</p>
+            <p>{{ license.p3 }}</p>
           </div>
         </section>
       </main>
