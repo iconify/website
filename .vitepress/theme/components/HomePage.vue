@@ -156,6 +156,7 @@ h1 {
         font-size: 32px;
       }
       p {
+        margin: 12px;
         font-size: 20px;
         line-height: 24px;
       }
