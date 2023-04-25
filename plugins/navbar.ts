@@ -1,12 +1,19 @@
+import { readFileSync } from 'node:fs'
 import type { Plugin } from 'vite'
 
+// Load logo and replace palette
+const logo = readFileSync('public/assets/svg/logo-iconify.svg', 'utf8')
+  .replaceAll('#979797', 'var(--vp-c-brand-gray)')
+  .replaceAll('#307594', 'var(--vp-c-brand)')
+  .replaceAll('#E13E31', 'var(--vp-c-brand-accent-logo)')
+
 export default function NavbarFix(): Plugin {
-    return {
-        name: 'vitepress-sidebar-navbar',
-        enforce: 'pre',
-        transform(code, id) {
-            if (id.includes('VPNavBarTitle.vue') && !id.endsWith('.css') && !id.includes('&setup=')) {
-                return `
+  return {
+    name: 'vitepress-sidebar-navbar',
+    enforce: 'pre',
+    transform(code, id) {
+      if (id.includes('VPNavBarTitle.vue') && !id.endsWith('.css') && !id.includes('&setup=')) {
+        return `
 <script setup lang="ts">
 import { useData } from '../composables/data'
 import { useSidebar } from '../composables/sidebar'
@@ -23,7 +30,7 @@ const { currentLang } = useLangs()
   <div class="VPNavBarTitle" :class="{ 'has-sidebar': hasSidebar }">
     <a class="title" :href="normalizeLink(currentLang.link)" :aria-label="theme.siteTitle ?? site.title">
       <slot name="nav-bar-title-before" />
-      <VPImage v-if="theme.logo" class="logo" :image="theme.logo" />
+      ${logo}
     </a>
   </div>
 </template>
@@ -66,7 +73,7 @@ const { currentLang } = useLangs()
 }
 </style>
 `
-            }
-        },
-    }
+      }
+    },
+  }
 }
