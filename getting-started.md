@@ -19,7 +19,7 @@ const icons = [
 </script>
 
 <section class="flex flex-row items-center mb-4 mt-unset gap-x-6">
-    <span class="inline-block" v-html="lock"></span>
+    <span class="inline-block lock-icon" v-html="lock"></span>
 	<p>
 		Iconify makes it easy to <a href="https://docs.iconify.design/articles/vendor-lock-in.html" target="_blank">avoid vendor lock-in</a>. 
         You can use many open source icon sets with a large choice of open
