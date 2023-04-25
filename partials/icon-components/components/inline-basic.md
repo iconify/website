@@ -1,0 +1,1 @@
+Instead of adding `[prop]vertical-align` to each icon, icon component has a property `[prop]inline`. Adding `[prop]inline` property to icon component is identical to setting `[html]style="vertical-align: -0.125em"`:

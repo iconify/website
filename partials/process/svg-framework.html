@@ -1,0 +1,71 @@
+<div class="docs-process">
+	<dl>
+		<dt>
+			<code data-wrap="block">
+				&lt;p&gt;<span class="hljs-string"
+					>&lt;span class="iconify-inline"
+					data-icon="mdi:home"&gt;&lt;/span&gt;</span
+				>
+				Home&lt;/p&gt;<br />
+				&lt;div class="alert"&gt;<br />
+				&nbsp;
+				<span class="hljs-string"
+					>&lt;span class="iconify" data-icon="mdi:alert"&gt;&lt;/span&gt;</span
+				>
+				Important alert!<br />
+				&lt;/div&gt;
+			</code>
+			<p>
+				<code data-wrap="inline">mdi:home</code>
+				<code data-wrap="inline">mdi:alert</code>
+			</p>
+		</dt>
+		<dd>
+			SVG Framework looks for icon placeholders and retrieves list of used
+			icons.
+		</dd>
+	</dl>
+	<dl>
+		<dt data-partial="process/animation0"></dt>
+		<dd>
+			<p>SVG framework requests data for icons from Iconify API.</p>
+		</dd>
+	</dl>
+	<dl>
+		<dt data-partial="process/animation1"></dt>
+		<dd>
+			<p>API sends data for requested icons.</p>
+			<p>
+				API hosts thousands of icons, but sends only data for icons that SVG
+				Framework has requested.
+			</p>
+		</dd>
+	</dl>
+	<dl>
+		<dt>
+			<code data-wrap="block">
+				&lt;p&gt;<span class="hljs-string"
+					>&lt;svg class="iconify iconify-inline" data-icon="mdi:home"
+					style="vertical-align: -0.125em" height="1em"
+					<span class="hljs-comment">...</span>&gt;<span class="hljs-comment"
+						>...</span
+					>&lt;/svg&gt;</span
+				>
+				Home&lt;/p&gt;<br />
+				&lt;div class="alert"&gt;<br />
+				&nbsp;
+				<span class="hljs-string"
+					>&lt;svg class="iconify" data-icon="mdi:alert" height="1em"
+					<span class="hljs-comment">...</span>&gt;<span class="hljs-comment"
+						>...</span
+					>&lt;/svg&gt;</span
+				>
+				Important alert!<br />
+				&lt;/div&gt;
+			</code>
+		</dt>
+		<dd>
+			SVG Framework replaces placeholders with SVG.
+		</dd>
+	</dl>
+</div>

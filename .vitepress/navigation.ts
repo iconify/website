@@ -96,6 +96,7 @@ export const Nav: DefaultTheme.NavItem[] = [
   {
     text: 'News',
     link: '/news/',
+    activeMatch: '^/news/',
   },
   {
     text: 'Icons',
@@ -104,7 +105,7 @@ export const Nav: DefaultTheme.NavItem[] = [
   {
     text: 'Docs',
     items: DocumentationNav,
-    activeMatch: '^/(docs)/',
+    activeMatch: '^/docs/',
   },
   {
     text: 'Sponsor',

@@ -1,10 +1,6 @@
-```yaml
-title: 'Iconify for React Function: setFetch'
-```
-
 # Iconify for React function: setFetch
 
-This tutorial is part of [Iconify for React functions tutorial](./index.md#functions).
+This tutorial is part of [Iconify for React functions tutorial](./index#functions).
 
 `include icon-components/functions/set-fetch/intro-component`
 
