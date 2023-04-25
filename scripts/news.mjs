@@ -15,7 +15,7 @@ async function findLatestNews(newsFolder, year) {
       }
       else {
         const [day, month] = n.split('.')
-        const name = `${Date.UTC(year, month, day, 0, 0, 0, 0)}.md`
+        const name = `${Date.UTC(+year, +month, +day, 0, 0, 0, 0)}.md`
         entriesMap.set(name, n)
         return name
       }
@@ -34,7 +34,6 @@ editLink: false
 
 ${entries.map(n => `<!--@include: ./${year}/${entriesMap.get(n)}-->`).join('\n')}
 `
-
   await writeFile(resolve(newsFolder, `${year}.md`), newsContent, 'utf-8')
 }
 
