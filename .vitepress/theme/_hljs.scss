@@ -1,0 +1,182 @@
+@use 'sass:color' as color;
+@use 'palette' as palette;
+
+:root {
+  // syntax highlight
+  --hljs-comment: #{palette.palette('gray', 300)};
+  --hljs-literal: #{palette.palette('teal', 600)};
+  --hljs-string: #{palette.palette('red', 600)};
+  --hljs-selector-id: #{palette.palette('red', 700)};
+  --hljs-type: #{palette.palette('blue', 700)};
+  --hljs-tag: #{palette.palette('indigo', 700)};
+  --hljs-regexp: #{palette.palette('green', 600)};
+  --hljs-symbol: #{palette.palette('purple', 600)};
+  --hljs-built-in: #{palette.palette('light-blue', 600)};
+  --hljs-meta: #{palette.palette('gray', 400)};
+
+  // custom
+  --hljs-icon-name: #{palette.palette('deep-orange', 500)};
+  --hljs-package-name: #{palette.palette('indigo', 650)};
+  --hljs-inline-tag: #{palette.palette('cyan', 600)};
+  --hljs-inline-type: #{palette.palette('blue', 650)};
+  --hljs-inline-file: #{color.mix(palette.palette('blue', 600), palette.palette('blue-gray', 650))};
+  --hljs-inline-var: #{palette.palette('light-blue', 550)};
+  --hljs-border-inline-link: rgba(0, 0, 0, 0.3);
+
+  // backgrounds
+  --hljs-bg-deletion: #{palette.palette('red', 100)};
+  --hljs-bg-addition: #{palette.palette('green', 100)};
+}
+
+.dark {
+  // syntax highlight
+  --hljs-comment: #{palette.palette('gray', 600)};
+  --hljs-literal: #{palette.palette('teal', 300)};
+  --hljs-string: #{palette.palette('red', 300)};
+  --hljs-selector-id: #{palette.palette('red', 200)};
+  --hljs-type: #{palette.palette('blue', 200)};
+  --hljs-tag: #{palette.palette('indigo', 200)};
+  --hljs-regexp: #{palette.palette('green', 300)};
+  --hljs-symbol: #{palette.palette('purple', 300)};
+  --hljs-built-in: #{palette.palette('light-blue', 300)};
+  --hljs-meta: #{palette.palette('gray', 550)};
+
+  // custom
+  //--hljs-icon-name: #{palette.palette('deep-orange', 500)};
+  --hljs-package-name: #{palette.palette('indigo', 250)};
+  --hljs-inline-tag: #{palette.palette('cyan', 300)};
+  --hljs-inline-type: #{palette.palette('blue', 250)};
+  --hljs-inline-file: #{color.mix(palette.palette('blue', 300), palette.palette('blue-gray', 250))};
+  --hljs-inline-var: #{palette.palette('light-blue', 400)};
+  --hljs-border-inline-link: rgba(255, 255, 255, 0.3);
+
+  // backgrounds
+  --hljs-bg-deletion: #{palette.palette('red', 850)};
+  --hljs-bg-addition: #{palette.palette('green', 850)};
+}
+
+$font-weight-bold: 600;
+
+.hljs-comment,
+.hljs-quote {
+  color: var(--hljs-comment);
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  font-weight: $font-weight-bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: var(--hljs-literal);
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: var(--hljs-string);
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: var(--hljs-selector-id);
+  // font-weight: $font-weight-bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: var(--hljs-type);
+  font-weight: $font-weight-bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute,
+.hljs-function,
+.hljs-class {
+  color: var(--hljs-tag);
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: var(--hljs-regexp);
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: var(--hljs-symbol);
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: var(--hljs-built-in);
+}
+
+.hljs-meta {
+  color: var(--hljs-meta);
+  font-weight: $font-weight-bold;
+}
+
+.hljs-deletion {
+  background: var(--hljs-bg-deletion);
+}
+
+.hljs-addition {
+  background: var(--hljs-bg-addition);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: $font-weight-bold;
+}
+
+.hljs-inline-icon {
+  color: var(--hljs-icon-name);
+}
+
+.hljs-inline-package {
+  color: var(--hljs-package-name);
+}
+
+.hljs-inline-tag {
+  color: var(--hljs-inline-tag);
+}
+
+.hljs-inline-type {
+  color: var(--hljs-inline-type);
+}
+
+.hljs-inline-attr, .hljs-inline-prop {
+  color: var(--hljs-regexp);
+}
+
+.hljs-inline-file,
+.hljs-inline-link {
+  color: var(--hljs-inline-file);
+}
+
+.hljs-inline-link {
+  border-bottom: 1px dotted var(--hljs-border-inline-link);
+  a & {
+    color: inherit;
+    border-bottom-width: 0;
+  }
+}
+
+.hljs-inline-var {
+  color: var(--hljs-inline-var);
+}

@@ -1,3 +1,4 @@
+import hljs from 'highlight.js'
 import type { MarkdownRenderer } from 'vitepress'
 import { escapeHtml } from 'markdown-it/lib/common/utils'
 
@@ -183,6 +184,31 @@ export function customInlineCodeMD(md: MarkdownRenderer) {
         return wrap(
           'object',
           `<span class="hljs-literal">${escapedContent}</span>`,
+        )
+
+        // Language
+      case 'ts':
+      case 'js':
+      case 'bash':
+      case 'json':
+      case 'php':
+      case 'css':
+      case 'html':
+        return (
+          `<span class="inline-code inline-code--${
+             type
+             }">${
+             (() => {
+              if (!hljs.getLanguage(type)) {
+                throw new Error(
+                    `Bad language for inline code block: ${type}`,
+                )
+              }
+              return hljs.highlight(rawContent, {
+                language: type,
+              }).value
+            })()
+             }</span>`
         )
 
         // Domain / URL
