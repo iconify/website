@@ -26,7 +26,7 @@ const actions: ButtonData[] = [{
 <template>
   <div class="content">
     <div class="content-container">
-      <section class="hero">
+      <section class="home hero">
         <h1>Freedom to choose icons</h1>
         <p>All popular icon sets, one framework.</p>
         <p>Over 150,000 open source vector icons.</p>
@@ -54,7 +54,7 @@ const actions: ButtonData[] = [{
         </section>
         -->
 
-        <section id="sponsored-by">
+        <section id="sponsored-by" class="home">
           <h1>
             Sponsored by
           </h1>
@@ -71,7 +71,7 @@ const actions: ButtonData[] = [{
           </div>
         </section>
 
-        <section id="license">
+        <section id="license" class="home">
           <h1>
             License
           </h1>
@@ -86,8 +86,8 @@ const actions: ButtonData[] = [{
   </div>
 </template>
 
-<style lang="scss" scoped>
-section {
+<style lang="scss">
+section.home {
   margin: 64px 16px 0;
   @media (min-width: 976px) {
     margin-inline: auto;
@@ -133,6 +133,33 @@ h1 {
     display: inline-block;
     margin: 4px;
     padding: 6px;
+  }
+
+  &.home.getting-started {
+    margin: 0 0 28px 0;
+    padding: 0;
+    h1 {
+      letter-spacing: -0.02em;
+      line-height: 40px;
+      font-size: 28px;
+    }
+    p {
+      margin: 0;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    @media (min-width: 768px) {
+      margin: 20px;
+      padding: 0;
+      h1 {
+        line-height: 40px;
+        font-size: 32px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
   }
 }
 
