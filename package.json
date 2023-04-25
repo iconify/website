@@ -40,6 +40,6 @@
     "unocss": "^0.51.6",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
-    "vitepress": "^1.0.0-alpha.73"
+    "vitepress": "1.0.0-alpha.74"
   }
 }
