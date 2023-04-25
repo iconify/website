@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
 import { pwa } from './pwa'
+import { mdConfig } from './md'
 import { description, ogImage, ogUrl, title } from './constants'
 import { GlobalSidebar, Nav } from './navigation'
 
@@ -40,6 +41,7 @@ export default withPwa(defineConfig({
       light: 'github-light',
       dark: 'github-dark',
     },
+    config: mdConfig,
   },
 
   themeConfig: {
