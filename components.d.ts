@@ -12,12 +12,10 @@ declare module '@vue/runtime-core' {
     ContactInfo: typeof import('./.vitepress/theme/components/ContactInfo.md')['default']
     GettingStartedFreedom: typeof import('./.vitepress/theme/components/GettingStartedFreedom.md')['default']
     GettingStartedHero: typeof import('./.vitepress/theme/components/GettingStartedHero.md')['default']
-    GettingStartedIcons: typeof import('./.vitepress/theme/components/GettingStartedIcons.md')['default']
     GettingStartedIconSets: typeof import('./.vitepress/theme/components/GettingStartedIconSets.md')['default']
     GettingStartedIntro: typeof import('./.vitepress/theme/components/GettingStartedIntro.md')['default']
     GettingStartedLicense: typeof import('./.vitepress/theme/components/GettingStartedLicense.md')['default']
     GettingStartedSponsor: typeof import('./.vitepress/theme/components/GettingStartedSponsor.md')['default']
     HomePage: typeof import('./.vitepress/theme/components/HomePage.vue')['default']
-    License: typeof import('./.vitepress/theme/components/License.vue')['default']
   }
 }

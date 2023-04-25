@@ -7,9 +7,11 @@
   "scripts": {
     "dev": "vitepress dev",
     "dev:pwa": "SW_DEV=true vitepress dev",
-    "build": "vitepress build",
+    "build": "pnpm prepare-news && vitepress build",
     "preview": "pnpm build && vitepress preview",
-    "https": "pnpm build && serve dist"
+    "https": "pnpm build && serve dist",
+    "prepare-news": "node scripts/news.mjs",
+    "postinstall": "pnpm prepare-news"
   },
   "dependencies": {
     "iconify-icon": "^1.0.7"

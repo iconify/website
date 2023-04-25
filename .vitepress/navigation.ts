@@ -1,4 +1,5 @@
 import type { DefaultTheme } from 'vitepress'
+import { NewsSidebar } from './news-navigation'
 
 const DocumentationNav: DefaultTheme.NavItemWithLink[] = [
   { text: 'Iconify documentation', link: '/docs/' },
@@ -118,7 +119,7 @@ export const Nav: DefaultTheme.NavItem[] = [
 
 export const GlobalSidebar: DefaultTheme.Sidebar = {
   '/getting-started': DefaultSidebar,
-  '/news/': DefaultSidebar,
+  '/news/': NewsSidebar,
   '/icon-sets/': DefaultSidebar,
   '/docs/': DocumentationSidebars['/docs/']!,
   '/docs/api/': sideBarForDocumentation('/docs/api/'),
