@@ -37,10 +37,6 @@ export default withPwa(defineConfig({
   ],
 
   markdown: {
-    theme: {
-      light: 'github-light',
-      dark: 'github-dark',
-    },
     config: mdConfig,
   },
 
@@ -72,5 +68,5 @@ export default withPwa(defineConfig({
       copyright: 'Copyright © 2020-PRESENT Iconify OÜ',
     },
   },
-  pwa,
+  // pwa,
 }))

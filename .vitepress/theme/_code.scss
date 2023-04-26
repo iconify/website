@@ -1,3 +1,4 @@
+// Inline code
 .inline-code {
   display: inline-block;
   margin: -1px 2px;
@@ -6,4 +7,92 @@
   background: var(--vp-c-bg-alt);
   border: 1px dashed var(--vp-c-border);
   border-radius: 6px;
+}
+
+// Wrapper for code blocks
+.code-blocks {
+  margin: 4px 0 8px;
+  padding: 0;
+
+  code {
+    display: block;
+    margin: 0;
+    padding: 0;
+    //font-family: $code-font-family;
+    //font-size: $code-font-size;
+    //line-height: $code-line-height;
+    color: var(--vp-c-text-1);
+    word-wrap: break-word;
+  }
+}
+
+// Blocks inside code blocks wrapper
+.code-block {
+  &-title,
+  &-content,
+  &-hint {
+    border: 1px solid var(--vp-c-mute); //var(--vp-c-divider);
+  }
+
+
+  &-title {
+    padding: 8px 16px;
+    //color: $code-title-color;
+    //background: $code-title-background;
+    //font-size: $medium-font-size;
+    //line-height: $medium-line-height;
+    border-bottom-width: 0;
+  }
+
+  &-content {
+    padding: 8px 12px;
+    background: var(--vp-c-mute);
+    border-top-width: 0;
+    border-bottom-width: 0;
+    position: relative;
+    @media (max-width: 600px) {
+      padding: 8px;
+    }
+  }
+
+
+  &-hint {
+    padding: 8px 16px;
+    //color: $code-hint-color;
+    //background: $code-hint-background;
+    //font-size: $small-font-size;
+    //line-height: $small-line-height;
+    border-top-style: dashed;
+    border-bottom-width: 0;
+  }
+
+  // Borders on top and bottom
+  &:first-child {
+    .code-block-title,
+    .code-block-content--without-title {
+      border-top-width: 1px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  }
+
+  .code-block-content--without-title {
+    border-top-width: 1px;
+  }
+
+
+  &:last-child {
+    .code-block-content--without-hint,
+    .code-block-hint {
+      border-bottom-width: 1px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+
+  &--demo {
+    p {
+      margin: 4px 0;
+    }
+  }
 }
