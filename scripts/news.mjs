@@ -71,7 +71,10 @@ function generateNewsIndex(newsFolder, years) {
 
 Iconify updates can be found in the following pages:
 
-${years.sort().reverse().map(y => `- [Year ${y}](./${y})`).join('\n')}`
+${years.sort().reverse().map(y => `- [Year ${y}](./${y})`).join('\n')}
+
+<LatestNews />
+`
 
   return writeFile(resolve(newsFolder, 'index.md'), newsList, 'utf-8')
 }
@@ -83,7 +86,7 @@ const months = {
   3: 'Mar',
   4: 'Apr',
   5: 'May',
-  6: 'June',
+  6: 'Jun',
   7: 'July',
   8: 'Aug',
   9: 'Sep',
@@ -99,7 +102,6 @@ const months = {
  * @return {{date:string,link:string}}
  */
 function generateDateAndLink(year, dateString, title) {
-  console.log(dateString)
   /** @type {string} */
   let date
   if (dateString.length === 1) {

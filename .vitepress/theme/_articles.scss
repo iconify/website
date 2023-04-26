@@ -5,14 +5,15 @@
 }
 */
 #latest-updates + .latest-news {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
   p {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 10ch 1fr;
     gap: 0.5rem;
-    margin-top: 1rem;
-    align-items: center;
+    margin: 0.5rem;
+    align-items: start;
+    @media (max-width: 480px) {
+      gap: 0;
+      grid-template-columns: 1fr;
+    }
   }
 }

@@ -8,3 +8,5 @@ Iconify updates can be found in the following pages:
 - [Year 2021](./2021)
 - [Year 2020](./2020)
 - [Year 2019](./2019)
+
+<LatestNews />
