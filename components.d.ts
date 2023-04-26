@@ -17,5 +17,6 @@ declare module '@vue/runtime-core' {
     GettingStartedLicense: typeof import('./.vitepress/theme/components/GettingStartedLicense.md')['default']
     GettingStartedSponsor: typeof import('./.vitepress/theme/components/GettingStartedSponsor.md')['default']
     HomePage: typeof import('./.vitepress/theme/components/HomePage.vue')['default']
+    LatestNews: typeof import('./.vitepress/theme/components/LatestNews.md')['default']
   }
 }

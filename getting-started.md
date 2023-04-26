@@ -12,6 +12,8 @@ title: Getting Started
 
 <GettingStartedSponsor />
 
+<LatestNews />
+
 <GettingStartedLicense />
 
 

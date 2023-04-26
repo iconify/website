@@ -4,3 +4,15 @@
   color: var(--vp-c-text-2);
 }
 */
+#latest-updates + .latest-news {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  p {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;
+  }
+}
