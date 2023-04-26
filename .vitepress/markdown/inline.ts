@@ -28,6 +28,127 @@ function wrap(type: string, text: string): string {
         + (!wrappers[type] ? '' : wrappers[type].footer)
   )
 }
+
+/**
+ * Wrap type
+ */
+const midSeparators: string[] = [',', '[]', '|', ' or ', '(', ')']
+const typeSeparators: string[] = midSeparators.concat(['Record', '<', '>'])
+function wrapType(raw: string, escaped: string): string {
+  function split(type: string): string[] {
+    // Attempt to split types
+    let typesStart: string[] = []
+    let typesEnd: string[] = []
+    let changed = false
+
+    function checkSpaces() {
+      // Space at start
+      while (type.slice(0, 1) === ' ') {
+        typesStart.push(' ')
+        type = type.slice(1)
+        changed = true
+      }
+
+      // Space at the end
+      while (type.slice(-1) === ' ') {
+        typesEnd.unshift(' ')
+        type = type.slice(0, type.length - 1)
+        changed = true
+      }
+    }
+
+    checkSpaces()
+    if (type === '')
+      return typesStart.concat(typesEnd)
+
+    // Check separators
+    for (let i = 0; i < typeSeparators.length; i++) {
+      const separator = typeSeparators[i]
+
+      // At start
+      if (type.slice(0, separator.length) === separator) {
+        typesStart.push(separator)
+        type = type.slice(separator.length)
+        changed = true
+
+        // Space after separator
+        checkSpaces()
+      }
+
+      // At the end
+      if (type.slice(0 - separator.length) === separator) {
+        typesEnd.unshift(separator)
+        type = type.slice(0, type.length - separator.length)
+        changed = true
+
+        // Space before separator
+        checkSpaces()
+      }
+    }
+
+    // Remaining part
+    if (changed) {
+      // Run it again on content
+      return typesStart.concat(split(type), typesEnd)
+    }
+
+    // Find separators in the middle
+    for (let i = 0; i < midSeparators.length; i++) {
+      const separator = midSeparators[i]
+      const index = type.indexOf(separator)
+      if (index !== -1) {
+        const firstChunk = type.slice(0, index)
+        const lastChunk = type.slice(index + separator.length)
+        if (firstChunk.length)
+          typesStart = typesStart.concat(split(firstChunk))
+
+        typesStart.push(separator)
+        if (lastChunk.length)
+          typesEnd = split(lastChunk).concat(typesEnd)
+
+        return typesStart.concat(typesEnd)
+      }
+    }
+
+    // Merge start, remaining chunk, end
+    return typesStart.concat([type], typesEnd)
+  }
+  const types = split(raw)
+
+  // Merge list and escape contents
+  return (
+    `<span class="hljs-inline-type hljs-linkable">${
+       types
+        .map((type) => {
+          switch (type) {
+            case '<':
+              return '&lt;'
+
+              case '>':
+              return '&gt;'
+
+              case ' ':
+              return type
+            }
+          if (midSeparators.includes(type))
+              return type
+
+          return (
+            `<span class="hljs-inline-type hljs-linkable">${type}</span>`
+          )
+        })
+        .join('')
+       }</span>`
+  )
+
+  /*
+  return wrap(
+      'type',
+      '<span class="hljs-inline-type hljs-linkable">' + escaped + '</span>'
+  );
+  */
+}
+
 export function customInlineCodeMD(md: MarkdownRenderer) {
   const oldParser = md.renderer.rules.code_inline
   if (!oldParser)
@@ -123,8 +244,8 @@ export function customInlineCodeMD(md: MarkdownRenderer) {
         )
 
         // Type: IconifyIcon
-        // case 'type':
-        // return wrapType(rawContent, escapedContent)
+      case 'type':
+        return wrapType(rawContent, escapedContent)
 
         // Function
       case 'func':
