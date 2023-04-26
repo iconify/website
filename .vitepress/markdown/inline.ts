@@ -1,6 +1,7 @@
 import hljs from 'highlight.js'
 import type { MarkdownRenderer } from 'vitepress'
 import { escapeHtml } from 'markdown-it/lib/common/utils'
+import './highlight'
 
 /**
  * Code sample wrappers
@@ -29,6 +30,9 @@ function wrap(type: string, text: string): string {
 }
 export function customInlineCodeMD(md: MarkdownRenderer) {
   const oldParser = md.renderer.rules.code_inline
+  if (!oldParser)
+    throw new Error('Missing default parser for code_inline')
+
   md.renderer.rules.code_inline = (...params) => {
     const [tokens, idx] = params
     const token = tokens[idx]
@@ -47,9 +51,8 @@ export function customInlineCodeMD(md: MarkdownRenderer) {
     }
 
     // Check for custom token
-    if (rawContent.slice(0, 1) !== '[') {
-      //
-    }
+    if (rawContent.slice(0, 1) !== '[')
+      return oldParser(...params)
 
     // Get and remove [type]
     rawContent = rawContent.slice(1)

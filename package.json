@@ -33,6 +33,7 @@
     "@iconify-json/pixelarticons": "^1.1.6",
     "@iconify-json/tabler": "^1.1.74",
     "@iconify/utils": "^2.1.5",
+    "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.15.13",
     "@vite-pwa/vitepress": "^0.0.5",
     "eslint": "^8.39.0",
