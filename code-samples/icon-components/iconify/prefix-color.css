@@ -1,0 +1,14 @@
+/* Target icon by full name */
+.iconify[data-icon='mdi:home'] {
+	color: red;
+}
+
+/* Target icon by prefix */
+.iconify--mdi {
+	color: red;
+}
+
+/* Target icon by extr class */
+.red-icon {
+	color: red;
+}

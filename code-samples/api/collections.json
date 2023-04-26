@@ -1,0 +1,133 @@
+{
+	"fa6-solid": {
+		"name": "Font Awesome Solid",
+		"total": 1388,
+		"version": "6.2.0",
+		"author": {
+			"name": "Dave Gandy",
+			"url": "https://github.com/FortAwesome/Font-Awesome"
+		},
+		"license": {
+			"title": "CC BY 4.0",
+			"spdx": "CC-BY-4.0",
+			"url": "https://creativecommons.org/licenses/by/4.0/"
+		},
+		"samples": ["location-pin", "gem", "folder"],
+		"height": 32,
+		"displayHeight": 16,
+		"category": "General",
+		"palette": false
+	},
+	"fa6-regular": {
+		"name": "Font Awesome Regular",
+		"total": 163,
+		"version": "6.2.0",
+		"author": {
+			"name": "Dave Gandy",
+			"url": "https://github.com/FortAwesome/Font-Awesome"
+		},
+		"license": {
+			"title": "CC BY 4.0",
+			"spdx": "CC-BY-4.0",
+			"url": "https://creativecommons.org/licenses/by/4.0/"
+		},
+		"samples": ["message", "clock", "folder"],
+		"height": 32,
+		"displayHeight": 16,
+		"category": "General",
+		"palette": false
+	},
+	"fa6-brands": {
+		"name": "Font Awesome Brands",
+		"total": 465,
+		"version": "6.2.0",
+		"author": {
+			"name": "Dave Gandy",
+			"url": "https://github.com/FortAwesome/Font-Awesome"
+		},
+		"license": {
+			"title": "CC BY 4.0",
+			"spdx": "CC-BY-4.0",
+			"url": "https://creativecommons.org/licenses/by/4.0/"
+		},
+		"samples": ["strava", "css3", "y-combinator"],
+		"height": 32,
+		"displayHeight": 16,
+		"category": "Brands / Social",
+		"palette": false
+	},
+	"fa-solid": {
+		"name": "Font Awesome 5 Solid",
+		"total": 1001,
+		"version": "5.15.4",
+		"author": {
+			"name": "Dave Gandy",
+			"url": "https://github.com/FortAwesome/Font-Awesome"
+		},
+		"license": {
+			"title": "CC BY 4.0",
+			"spdx": "CC-BY-4.0",
+			"url": "https://creativecommons.org/licenses/by/4.0/"
+		},
+		"samples": ["search-plus", "paste", "comment-dots"],
+		"height": 32,
+		"displayHeight": 16,
+		"category": "Archive / Unmaintained",
+		"palette": false
+	},
+	"fa-regular": {
+		"name": "Font Awesome 5 Regular",
+		"total": 151,
+		"version": "5.15.4",
+		"author": {
+			"name": "Dave Gandy",
+			"url": "https://github.com/FortAwesome/Font-Awesome"
+		},
+		"license": {
+			"title": "CC BY 4.0",
+			"spdx": "CC-BY-4.0",
+			"url": "https://creativecommons.org/licenses/by/4.0/"
+		},
+		"samples": ["bell", "comment", "hand-point-left"],
+		"height": 32,
+		"displayHeight": 16,
+		"category": "Archive / Unmaintained",
+		"palette": false
+	},
+	"fa-brands": {
+		"name": "Font Awesome 5 Brands",
+		"total": 457,
+		"version": "5.15.4",
+		"author": {
+			"name": "Dave Gandy",
+			"url": "https://github.com/FortAwesome/Font-Awesome"
+		},
+		"license": {
+			"title": "CC BY 4.0",
+			"spdx": "CC-BY-4.0",
+			"url": "https://creativecommons.org/licenses/by/4.0/"
+		},
+		"samples": ["amazon", "cc-visa", "chrome"],
+		"height": 32,
+		"displayHeight": 16,
+		"category": "Archive / Unmaintained",
+		"palette": false
+	},
+	"fa": {
+		"name": "Font Awesome 4",
+		"total": 678,
+		"version": "4.7.0",
+		"author": {
+			"name": "Dave Gandy",
+			"url": "https://github.com/FortAwesome/Font-Awesome/tree/fa-4"
+		},
+		"license": {
+			"title": "Open Font License",
+			"spdx": "OFL-1.1",
+			"url": "https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
+		},
+		"samples": ["wrench", "bell-o", "user-o"],
+		"category": "Archive / Unmaintained",
+		"palette": false
+	}
+}

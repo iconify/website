@@ -1,0 +1,65 @@
+.icon-types {
+	&--padding {
+		iconify-icon {
+			box-shadow: 0 0 2px currentColor;
+			background-color: $code-background;
+		}
+	}
+
+	iconify-icon {
+		vertical-align: -0.125em;
+		color: palette('blue', 400);
+		transition: color 0.3s ease;
+
+		&:nth-child(3n + 1) {
+			color: palette('green', 400);
+		}
+		&:nth-child(3n + 2) {
+			color: palette('purple', 400);
+		}
+		&:last-of-type {
+			margin-right: 4px;
+		}
+	}
+
+	&-18 {
+		iconify-icon {
+			font-size: 18px;
+			vertical-align: -4px;
+		}
+	}
+	&-24 {
+		iconify-icon {
+			font-size: 24px;
+			line-height: 24px;
+			vertical-align: -6px;
+		}
+	}
+
+	&:hover {
+		iconify-icon {
+			color: palette($link-hover-palette, $link-hover-shade);
+		}
+	}
+
+	&--grid {
+		display: flex;
+		gap: 8px;
+		div {
+			width: 96px;
+			height: 96px;
+			background: url('./images/common/guides-grid1.png') no-repeat;
+			background-size: contain;
+		}
+		div:nth-child(2) {
+			background-image: url('./images/common/guides-grid2.png');
+		}
+
+		@media (min-width: 600px) {
+			div {
+				width: 192px;
+				height: 192px;
+			}
+		}
+	}
+}

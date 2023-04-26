@@ -1,0 +1,116 @@
+{
+	"icons": [
+		"material-symbols:add-home",
+		"material-symbols:add-home-outline",
+		"material-symbols:add-home-outline-rounded",
+		"material-symbols:add-home-rounded",
+		"material-symbols:add-home-work",
+		"material-symbols:add-home-work-outline",
+		"material-symbols:add-home-work-outline-rounded",
+		"material-symbols:add-home-work-rounded",
+		"material-symbols:add-to-home-screen",
+		"material-symbols:add-to-home-screen-outline",
+		"material-symbols:add-to-home-screen-outline-rounded",
+		"material-symbols:add-to-home-screen-outline-sharp",
+		"material-symbols:add-to-home-screen-rounded",
+		"material-symbols:add-to-home-screen-sharp",
+		"material-symbols:broadcast-on-home",
+		"material-symbols:broadcast-on-home-outline",
+		"material-symbols:broadcast-on-home-outline-rounded",
+		"material-symbols:broadcast-on-home-outline-sharp",
+		"material-symbols:broadcast-on-home-rounded",
+		"material-symbols:broadcast-on-home-sharp",
+		"material-symbols:digital-out-of-home",
+		"material-symbols:emergency-home",
+		"material-symbols:emergency-home-outline",
+		"material-symbols:emergency-home-outline-rounded",
+		"material-symbols:emergency-home-rounded",
+		"material-symbols:garage-home",
+		"material-symbols:garage-home-outline",
+		"material-symbols:home",
+		"material-symbols:home-app-logo",
+		"material-symbols:home-iot-device",
+		"material-symbols:home-iot-device-outline",
+		"material-symbols:home-max",
+		"material-symbols:home-max-dots",
+		"material-symbols:home-max-dots-outline",
+		"material-symbols:home-max-outline",
+		"material-symbols:home-max-outline-rounded",
+		"material-symbols:home-max-rounded",
+		"material-symbols:home-mini",
+		"material-symbols:home-mini-outline",
+		"material-symbols:home-outline",
+		"material-symbols:home-outline-rounded",
+		"material-symbols:home-pin",
+		"material-symbols:home-repair-service",
+		"material-symbols:home-repair-service-outline",
+		"material-symbols:home-repair-service-outline-rounded",
+		"material-symbols:home-repair-service-outline-sharp",
+		"material-symbols:home-repair-service-rounded",
+		"material-symbols:home-repair-service-sharp",
+		"material-symbols:home-rounded",
+		"material-symbols:home-speaker",
+		"material-symbols:home-speaker-outline",
+		"material-symbols:home-storage",
+		"material-symbols:home-storage-outline",
+		"material-symbols:home-storage-outline-rounded",
+		"material-symbols:home-storage-outline-sharp",
+		"material-symbols:home-storage-rounded",
+		"material-symbols:home-storage-sharp",
+		"material-symbols:home-work",
+		"material-symbols:home-work-outline",
+		"material-symbols:home-work-outline-rounded",
+		"material-symbols:home-work-rounded",
+		"material-symbols:in-home-mode",
+		"material-symbols:location-home",
+		"ic:baseline-add-home"
+	],
+	"total": 64,
+	"limit": 64,
+	"start": 0,
+	"collections": {
+		"material-symbols": {
+			"name": "Material Symbols",
+			"total": 8413,
+			"author": {
+				"name": "Google",
+				"url": "https://github.com/google/material-design-icons"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/google/material-design-icons/blob/master/LICENSE"
+			},
+			"samples": ["downloading", "privacy-tip", "filter-drama-outline"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"ic": {
+			"name": "Google Material Icons",
+			"total": 10955,
+			"version": "1.0.32",
+			"author": {
+				"name": "Material Design Authors",
+				"url": "https://github.com/material-icons/material-icons"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/material-icons/material-icons/blob/master/LICENSE"
+			},
+			"samples": [
+				"baseline-notifications-active",
+				"outline-person-outline",
+				"twotone-videocam-off"
+			],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		}
+	},
+	"request": {
+		"query": "home",
+		"pretty": "1"
+	}
+}

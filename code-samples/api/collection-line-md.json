@@ -1,0 +1,61 @@
+{
+	"prefix": "line-md",
+	"total": 395,
+	"title": "Material Line Icons",
+	"categories": {
+		"Account": [
+			"account",
+			"account-add",
+			"account-alert",
+			"account-delete",
+			"account-remove",
+			"account-small"
+		],
+		"Alerts": [
+			"alert",
+			"alert-circle",
+			"alert-circle-twotone",
+			"alert-twotone",
+			"bell",
+			"bell-twotone",
+			"question",
+			"question-circle",
+			"question-circle-twotone"
+		],
+		"Food and Drink": [
+			"beer",
+			"beer-alt-filled",
+			"beer-alt-filled-loop",
+			"beer-alt-twotone",
+			"beer-alt-twotone-loop",
+			"beer-filled",
+			"beer-loop",
+			"beer-twotone",
+			"beer-twotone-loop",
+			"coffee",
+			"coffee-arrow",
+			"coffee-arrow-filled",
+			"coffee-arrow-twotone",
+			"coffee-filled",
+			"coffee-half-empty-twotone-loop",
+			"coffee-loop",
+			"coffee-twotone",
+			"coffee-twotone-loop"
+		]
+	},
+	"hidden": ["iconify2"],
+	"aliases": {
+		"beer-alt-solid": "beer-alt-filled",
+		"beer-alt-solid-loop": "beer-alt-filled-loop",
+		"beer-solid": "beer-filled",
+		"check-list-3-solid": "check-list-3-filled",
+		"grid-3-solid": "grid-3-filled",
+		"list-3-solid": "list-3-filled"
+	},
+	"suffixes": {
+		"": "Outline Animation",
+		"out": "Erase Animation",
+		"loop": "Looping Animation",
+		"transition": "Transition Between Icons"
+	}
+}

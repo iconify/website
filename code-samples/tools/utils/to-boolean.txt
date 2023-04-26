@@ -1,0 +1,8 @@
+Testing hFlip={true}: true
+Testing hFlip="true": true
+Testing hFlip="hFlip": true
+Testing hFlip={1}: true
+Testing hFlip={false}: false
+Testing hFlip={0}: false
+Testing hFlip="false": false
+Testing hFlip="": false

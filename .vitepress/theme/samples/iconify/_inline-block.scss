@@ -1,0 +1,21 @@
+p {
+	position: relative;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+// Borders above and below text to highlight icon alignment
+p:after,
+p:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-bottom: 1px dotted #ccc;
+}
+p:before {
+	top: 6px;
+}
+p:after {
+	bottom: 7px;
+}

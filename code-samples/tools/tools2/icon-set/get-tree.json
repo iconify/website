@@ -1,0 +1,7 @@
+{
+	"bar": [],
+	"baz": ["bar"],
+	"baz2": ["baz", "bar"],
+	"bad": null,
+	"whatever": null
+}

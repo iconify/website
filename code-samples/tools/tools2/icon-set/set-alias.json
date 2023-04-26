@@ -1,0 +1,22 @@
+{
+	"prefix": "test-prefix",
+	"icons": {
+		"add": {
+			"body": "<path d=\"M17 15V8h-2v7H8v2h7v7h2v-7h7v-2z\" fill=\"currentColor\"/>"
+		},
+		"caret-down": {
+			"body": "<path d=\"M24 12l-8 10l-8-10z\" fill=\"currentColor\"/>"
+		}
+	},
+	"aliases": {
+		"caret-up": {
+			"parent": "caret-down",
+			"vFlip": true
+		},
+		"plus": {
+			"parent": "add"
+		}
+	},
+	"width": 32,
+	"height": 32
+}

@@ -1,0 +1,16 @@
+.sample:after {
+	padding-left: 4px;
+}
+.rotation-0:after {
+	content: url('https://api.iconify.design/noto/spiral-calendar.svg?height=32');
+}
+.rotation-90:after {
+	content: url('https://api.iconify.design/noto/spiral-calendar.svg?height=32&rotate=90deg');
+}
+.rotation-180:after {
+	content: url('https://api.iconify.design/noto/spiral-calendar.svg?height=32&rotate=180deg');
+}
+.rotation-270:after {
+	/* 270deg = 3 */
+	content: url('https://api.iconify.design/noto/spiral-calendar.svg?height=32&rotate=3');
+}

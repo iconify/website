@@ -1,0 +1,16 @@
+// Change text color for ".orange-block" to #e70
+.orange-block {
+	color: #e70;
+}
+// Change all icons inside ".light-blue-block" to #08f
+.light-blue-block .iconify {
+	color: #08f;
+}
+// Change icon "bx:bx-home" to #e00
+.iconify[data-icon='bx:bx-home'] {
+	color: #e00;
+}
+// Failed attempt to change icon "noto:paintbrush" to #0e0
+.iconify[data-icon='noto:paintbrush'] {
+	color: #0e0;
+}

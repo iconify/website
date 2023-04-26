@@ -1,0 +1,16 @@
+{
+	"prefix": "carbon",
+	"icons": {
+		"arrow": {
+			"body": "<path d=\"M14 26l1.41-1.41L7.83 17H28v-2H7.83l7.58-7.59L14 6L4 16l10 10z\" fill=\"currentColor\"/>"
+		},
+		"plus": {
+			"body": "<path d=\"M17 15V8h-2v7H8v2h7v7h2v-7h7v-2z\" fill=\"currentColor\"/>"
+		}
+	},
+	"aliases": {
+		"arrow-right": { "parent": "arrow", "hFlip": true }
+	},
+	"width": 32,
+	"height": 32
+}

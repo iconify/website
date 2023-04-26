@@ -1,0 +1,28 @@
+p {
+	position: relative;
+	font-size: 18px;
+	line-height: 24px;
+	color: $text-dimmed-color;
+	&:has(+ p) {
+		margin-bottom: 0;
+	}
+	+ p {
+		margin-top: 0;
+	}
+}
+
+// Borders above and below text to highlight icon alignment
+p:after,
+p:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-bottom: 1px dotted #ccc;
+}
+p:before {
+	top: 4px;
+}
+p:after {
+	bottom: 5px;
+}

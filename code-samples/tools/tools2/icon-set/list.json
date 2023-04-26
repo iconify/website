@@ -1,0 +1,23 @@
+{
+	"prefix": "codicon",
+	"icons": {
+		"add": {
+			"body": "<g fill=\"red\"><path d=\"M14 7v1H8v6H7V8H1V7h6V1h1v6h6z\"/></g>"
+		},
+		"debug-pause": {
+			"body": "<g fill=\"red\"><path d=\"M4.5 3H6v10H4.5V3zm7 0v10H10V3h1.5z\"/></g>",
+			"hidden": true
+		},
+		"triangle-left": {
+			"body": "<g fill=\"red\"><path d=\"M10.44 2l.56.413v11.194l-.54.393L5 8.373v-.827L10.44 2z\"/></g>"
+		},
+		"triangle-right": {
+			"body": "<g transform=\"translate(16 0) scale(-1 1)\"><g fill=\"red\"><path d=\"M10.44 2l.56.413v11.194l-.54.393L5 8.373v-.827L10.44 2z\"/></g></g>"
+		}
+	},
+	"aliases": {
+		"plus": {
+			"parent": "add"
+		}
+	}
+}

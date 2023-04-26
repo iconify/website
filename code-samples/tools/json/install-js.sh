@@ -1,0 +1,1 @@
+npm install @iconify/json-tools --save

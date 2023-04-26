@@ -1,0 +1,37 @@
+{
+	"prefix": "mdi-light",
+	"total": 267,
+	"title": "Material Design Light",
+	"uncategorized": [
+		"account",
+		"account-alert",
+		"alarm",
+		"alarm-plus",
+		"alert",
+		"alert-circle",
+		"alert-octagon",
+		"arrange-bring-forward",
+		"arrange-bring-to-front",
+		"arrange-send-backward",
+		"arrange-send-to-back",
+		"arrow-down",
+		"arrow-down-circle",
+		"arrow-left",
+		"arrow-left-circle",
+		"arrow-right",
+		"arrow-right-circle",
+		"arrow-up",
+		"arrow-up-circle",
+
+		"view-dashboard",
+		"view-module",
+		"volume",
+		"volume-minus",
+		"volume-mute",
+		"volume-off",
+		"volume-plus",
+		"wallet",
+		"wifi",
+		"xml"
+	]
+}

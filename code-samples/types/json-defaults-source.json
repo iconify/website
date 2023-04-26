@@ -1,0 +1,23 @@
+{
+	"prefix": "mdi",
+	"icons": {
+		"square": {
+			"body": "<path d=\"M3 3v18h18V3\" fill=\"currentColor\"/>"
+		},
+		"triangle": {
+			"body": "<path d=\"M1 21h22L12 2\" fill=\"currentColor\"/>"
+		},
+		"rectangle": {
+			"body": "<path d=\"M4 6v13h16V6H4z\" fill=\"currentColor\"/>"
+		},
+		"small-circle": {
+			"body": "<circle cx=\"8\" cy=\"8\" r=\"8\" fill=\"currentColor\"/>",
+			// Custom values override default values
+			"width": 16,
+			"height": 16
+		}
+	},
+	// Default width and height for icons that do not have width or height
+	"width": 24,
+	"height": 24
+}

@@ -1,0 +1,9 @@
+// Show icon size using box-shadow
+iconify-icon {
+	box-shadow: 0 0 0 1px #e00;
+}
+
+// Rotate icon by 90 degrees
+.rotate {
+	transform: rotate(90deg) !important;
+}

@@ -1,0 +1,14 @@
+.background-demo {
+	/* Add dimentions to span */
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	/* Add background image */
+	background-image: url('https://api.iconify.design/fluent-emoji-flat/alarm-clock.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.background-demo--2 {
+	background-image: url('https://api.iconify.design/fluent-emoji-flat/memo.svg');
+}

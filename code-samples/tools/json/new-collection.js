@@ -1,0 +1,1 @@
+let collection = new Collection();

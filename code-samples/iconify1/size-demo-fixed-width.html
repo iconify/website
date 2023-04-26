@@ -1,0 +1,36 @@
+<p>Sample wide icon: "fa-battery-3". Default dimensions: 2304x1280.</p>
+<p>Sample square icon: "ion-ios-refresh". Default dimensions: 512x512.</p>
+<p>Sample thin icon: "whh-business". Default dimensions: 386x1024.</p>
+<p>
+	1em height:
+	<iconify-icon data-icon="fa-battery-3"></iconify-icon>
+	<iconify-icon data-icon="ion-ios-refresh"></iconify-icon>
+	<iconify-icon data-icon="whh-business"></iconify-icon>
+</p>
+<!-- 
+  Correct usage: using data-width to set width to 48px, height to dynamic value.
+-->
+<br />
+<p>
+	48px width (attribute):
+	<iconify-icon data-icon="fa-battery-3" data-width="48"></iconify-icon>
+	<iconify-icon data-icon="ion-ios-refresh" data-width="48"></iconify-icon>
+	<iconify-icon data-icon="whh-business" data-width="48"></iconify-icon>
+</p>
+<!--
+  Incorrect usage: setting width with inline style or stylesheet, but not setting height.
+-->
+<br />
+<p>Examples of incorrect usage:</p>
+<p>
+	48px width (inline style):
+	<iconify-icon data-icon="fa-battery-3" style="width: 48px"></iconify-icon>
+	<iconify-icon data-icon="ion-ios-refresh" style="width: 48px"></iconify-icon>
+	<iconify-icon data-icon="whh-business" style="width: 48px"></iconify-icon>
+</p>
+<p>
+	48px width (css):
+	<iconify-icon class="width-48" data-icon="fa-battery-3"></iconify-icon>
+	<iconify-icon class="width-48" data-icon="ion-ios-refresh"></iconify-icon>
+	<iconify-icon class="width-48" data-icon="whh-business"></iconify-icon>
+</p>
