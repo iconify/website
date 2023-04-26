@@ -25,7 +25,7 @@ async function findLatestNews(newsFolder, year) {
   // remove excluded files
   return {
     entriesMap,
-    entries: entries.filter(n => n[0] !== '_').filter(n => n[0] !== '_').map((n) => {
+    entries: entries.filter(n => n[0] !== '_').map((n) => {
       if (/^[0-9]+\.md$/.test(n)) {
         entriesMap.set(n, n)
         return n

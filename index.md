@@ -16,8 +16,8 @@ hero_:
       text: Documentation
       link: /docs/
     - theme: alt
-      text: Latest News
-      link: /getting-started#latest-news
+      text: Latest Updates
+      link: /news/
     - theme: alt
       text: Drowse Icons
       link: https://icon-sets.iconify.design/
