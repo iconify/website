@@ -36,6 +36,8 @@
     "@types/node": "^18.15.13",
     "@vite-pwa/vitepress": "^0.0.5",
     "eslint": "^8.39.0",
+    "highlight.js": "^11.7.0",
+    "highlightjs-svelte": "^1.0.6",
     "https-localhost": "^4.7.1",
     "markdown-it": "^13.0.1",
     "sass": "^1.62.0",
@@ -43,6 +45,7 @@
     "unocss": "^0.51.6",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
-    "vitepress": "1.0.0-alpha.74"
+    "vitepress": "1.0.0-alpha.74",
+    "yaml": "^2.2.2"
   }
 }
