@@ -1,0 +1,18 @@
+.height-32 {
+	padding: 8px 0;
+}
+.font-32 {
+	font-size: 32px;
+}
+.icon-24 {
+	width: 24px;
+	height: 24px;
+}
+
+// Boxes to show icon dimensions
+iconify-icon {
+	box-shadow: 0 0 0 1px #2d9cf4;
+}
+iconify-icon:hover {
+	box-shadow: 0 0 0 1px #f55b50;
+}

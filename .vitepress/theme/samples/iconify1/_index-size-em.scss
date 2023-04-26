@@ -1,0 +1,11 @@
+// Change font-size for second line
+.bigger-sample {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+// Change font-size only for icon inside third line
+.big-icon .iconify {
+	font-size: 48px;
+	line-height: 1em;
+}

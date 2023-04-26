@@ -1,0 +1,19 @@
+{
+	"prefix": "mdi",
+	"icons": {
+		"house": {
+			"body": "<path d=\"M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8h5z\" fill=\"currentColor\"/>",
+			"width": 24,
+			"height": 24
+		}
+	},
+	"aliases": {
+		"house-32": {
+			"parent": "house",
+			"width": 32,
+			"height": 32,
+			"left": -4,
+			"top": -4
+		}
+	}
+}

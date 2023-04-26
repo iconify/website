@@ -1,0 +1,6 @@
+For height="1em", width value is "0.75em"
+For height="24", width value is "18"
+For height="calc(1em + 8px)", width value is "calc(0.75em + 6px)"
+For height="3.25rem", width value is "2.44rem"
+For width="2em", height value is "2.67em"
+For width="20", height value is "26.67"

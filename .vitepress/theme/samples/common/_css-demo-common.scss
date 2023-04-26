@@ -1,0 +1,25 @@
+.demo-notice {
+	color: $text-muted-color;
+}
+p + .demo-notice {
+	margin-top: 8px;
+}
+
+/* Change paragraph color on hover */
+.demo-hover-color {
+	color: #ba3329;
+}
+.demo-hover-color:hover {
+	color: #026c9c;
+}
+
+/* Align samples below baseline, similar to glyphs rendered by icon fonts */
+.pseudo-test:after,
+.background-test,
+.mask-test {
+	vertical-align: -0.125em;
+}
+
+small {
+	color: $text-muted-color;
+}

@@ -1,0 +1,855 @@
+{
+	"icons": [
+		"ph:arrows-horizontal",
+		"ph:arrows-horizontal-bold",
+		"ph:arrows-horizontal-duotone",
+		"ph:arrows-horizontal-fill",
+		"ph:arrows-horizontal-light",
+		"ph:arrows-horizontal-thin",
+		"carbon:arrows-horizontal",
+		"tabler:arrows-horizontal",
+		"pixelarticons:arrows-horizontal",
+		"humbleicons:arrows-horizontal",
+		"nimbus:arrows-horizontal",
+		"line-md:arrows-horizontal",
+		"line-md:arrows-horizontal-alt"
+	],
+	"total": 13,
+	"limit": 999,
+	"start": 0,
+	"collections": {
+		"material-symbols": {
+			"name": "Material Symbols",
+			"total": 8413,
+			"author": {
+				"name": "Google",
+				"url": "https://github.com/google/material-design-icons"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/google/material-design-icons/blob/master/LICENSE"
+			},
+			"samples": ["downloading", "privacy-tip", "filter-drama-outline"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"ic": {
+			"name": "Google Material Icons",
+			"total": 10955,
+			"version": "1.0.32",
+			"author": {
+				"name": "Material Design Authors",
+				"url": "https://github.com/material-icons/material-icons"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/material-icons/material-icons/blob/master/LICENSE"
+			},
+			"samples": [
+				"baseline-notifications-active",
+				"outline-person-outline",
+				"twotone-videocam-off"
+			],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"mdi": {
+			"name": "Material Design Icons",
+			"total": 7134,
+			"author": {
+				"name": "Austin Andrews",
+				"url": "https://github.com/Templarian/MaterialDesign"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/Templarian/MaterialDesign/blob/master/LICENSE"
+			},
+			"samples": ["account-check", "bell-alert-outline", "calendar-edit"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"ph": {
+			"name": "Phosphor",
+			"total": 6282,
+			"version": "1.4.2",
+			"author": {
+				"name": "Phosphor Icons",
+				"url": "https://github.com/phosphor-icons/phosphor-icons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/phosphor-icons/phosphor-icons/blob/master/LICENSE"
+			},
+			"samples": [
+				"folder-notch-open-duotone",
+				"check-square-offset-thin",
+				"pencil-line-fill"
+			],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"carbon": {
+			"name": "Carbon",
+			"total": 1859,
+			"version": "11.10.0",
+			"author": {
+				"name": "IBM",
+				"url": "https://github.com/carbon-design-system/carbon/tree/main/packages/icons"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0"
+			},
+			"samples": ["user-certification", "humidity", "edit-off"],
+			"height": 32,
+			"displayHeight": 16,
+			"category": "General",
+			"palette": false
+		},
+		"bi": {
+			"name": "Bootstrap Icons",
+			"total": 1851,
+			"version": "1.9.1",
+			"author": {
+				"name": "The Bootstrap Authors",
+				"url": "https://github.com/twbs/icons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/twbs/icons/blob/main/LICENSE.md"
+			},
+			"samples": ["graph-up", "card-image", "code-slash"],
+			"height": 16,
+			"category": "General",
+			"palette": false
+		},
+		"tabler": {
+			"name": "Tabler Icons",
+			"total": 2925,
+			"version": "1.109.0",
+			"author": {
+				"name": "Paweł Kuna",
+				"url": "https://github.com/tabler/tabler-icons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/tabler/tabler-icons/blob/master/LICENSE"
+			},
+			"samples": ["alien", "device-desktop", "photo"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"uil": {
+			"name": "Unicons",
+			"total": 1206,
+			"version": "4.0.1",
+			"author": {
+				"name": "Iconscout",
+				"url": "https://github.com/Iconscout/unicons"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/Iconscout/unicons/blob/master/LICENSE"
+			},
+			"samples": ["arrow-circle-right", "chat-bubble-user", "edit-alt"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"clarity": {
+			"name": "Clarity",
+			"total": 1103,
+			"author": {
+				"name": "VMware",
+				"url": "https://github.com/vmware/clarity"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/vmware/clarity-assets/blob/master/LICENSE"
+			},
+			"samples": [
+				"help-outline-badged",
+				"heart-broken-solid",
+				"shield-outline-alerted"
+			],
+			"height": 36,
+			"displayHeight": 18,
+			"category": "General",
+			"palette": false
+		},
+		"majesticons": {
+			"name": "Majesticons",
+			"total": 760,
+			"version": "2.1.2",
+			"author": {
+				"name": "Gerrit Halfmann",
+				"url": "https://github.com/halfmage/majesticons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/halfmage/majesticons/blob/main/LICENSE"
+			},
+			"samples": ["chats-line", "home", "edit-pen-4-line"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"ant-design": {
+			"name": "Ant Design Icons",
+			"total": 789,
+			"version": "4.2.1",
+			"author": {
+				"name": "HeskeyBaozi",
+				"url": "https://github.com/ant-design/ant-design-icons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/ant-design/ant-design-icons/blob/master/LICENSE"
+			},
+			"samples": ["pushpin-filled", "pie-chart-outlined", "shopping-twotone"],
+			"height": 16,
+			"category": "General",
+			"palette": false
+		},
+		"gg": {
+			"name": "css.gg",
+			"total": 704,
+			"version": "2.0.0",
+			"author": {
+				"name": "Astrit",
+				"url": "https://github.com/astrit/css.gg"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/astrit/css.gg/blob/master/LICENSE"
+			},
+			"samples": ["align-left", "server", "overflow"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"pixelarticons": {
+			"name": "Pixelarticons",
+			"total": 480,
+			"version": "1.7.0",
+			"author": {
+				"name": "Gerrit Halfmann",
+				"url": "https://github.com/halfmage/pixelarticons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/halfmage/pixelarticons/blob/master/LICENSE"
+			},
+			"samples": ["drag-and-drop", "arrows-horizontal", "heart"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"humbleicons": {
+			"name": "Humbleicons",
+			"total": 235,
+			"version": "1.9.0",
+			"author": {
+				"name": "Jiří Zralý",
+				"url": "https://github.com/zraly/humbleicons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/zraly/humbleicons/blob/master/license"
+			},
+			"samples": ["aid", "droplet", "rss"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"uim": {
+			"name": "Unicons Monochrome",
+			"total": 296,
+			"version": "4.0.1",
+			"author": {
+				"name": "Iconscout",
+				"url": "https://github.com/Iconscout/unicons"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/Iconscout/unicons/blob/master/LICENSE"
+			},
+			"samples": ["airplay", "circle-layer", "lock-access"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"uit": {
+			"name": "Unicons Thin Line",
+			"total": 214,
+			"version": "4.0.1",
+			"author": {
+				"name": "Iconscout",
+				"url": "https://github.com/Iconscout/unicons"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/Iconscout/unicons/blob/master/LICENSE"
+			},
+			"samples": ["circuit", "favorite", "toggle-on"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"uis": {
+			"name": "Unicons Solid",
+			"total": 189,
+			"version": "4.0.1",
+			"author": {
+				"name": "Iconscout",
+				"url": "https://github.com/Iconscout/unicons"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/Iconscout/unicons/blob/master/LICENSE"
+			},
+			"samples": ["analysis", "check", "user-md"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"fluent": {
+			"name": "Fluent UI System Icons",
+			"total": 11814,
+			"version": "1.1.179",
+			"author": {
+				"name": "Microsoft Corporation",
+				"url": "https://github.com/microsoft/fluentui-system-icons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/microsoft/fluentui-system-icons/blob/master/LICENSE"
+			},
+			"samples": [
+				"zoom-out-24-filled",
+				"drink-coffee-24-regular",
+				"photo-filter-24-regular"
+			],
+			"displayHeight": 24,
+			"category": "General",
+			"palette": false
+		},
+		"icon-park-outline": {
+			"name": "IconPark Outline",
+			"total": 2658,
+			"version": "1.4.2",
+			"author": {
+				"name": "ByteDance",
+				"url": "https://github.com/bytedance/IconPark"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
+			},
+			"samples": ["add-one", "english-mustache", "basketball-clothes"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"icon-park-solid": {
+			"name": "IconPark Solid",
+			"total": 1965,
+			"version": "1.4.2",
+			"author": {
+				"name": "ByteDance",
+				"url": "https://github.com/bytedance/IconPark"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
+			},
+			"samples": ["add-one", "english-mustache", "basketball-clothes"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"icon-park-twotone": {
+			"name": "IconPark TwoTone",
+			"total": 1944,
+			"version": "1.4.2",
+			"author": {
+				"name": "ByteDance",
+				"url": "https://github.com/bytedance/IconPark"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
+			},
+			"samples": ["add-one", "english-mustache", "basketball-clothes"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"icon-park": {
+			"name": "IconPark",
+			"total": 2658,
+			"version": "1.4.2",
+			"author": {
+				"name": "ByteDance",
+				"url": "https://github.com/bytedance/IconPark"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/bytedance/IconPark/blob/master/LICENSE"
+			},
+			"samples": ["add-one", "english-mustache", "basketball-clothes"],
+			"height": 24,
+			"category": "General",
+			"palette": true
+		},
+		"jam": {
+			"name": "Jam Icons",
+			"total": 940,
+			"author": {
+				"name": "Michael Amprimo",
+				"url": "https://github.com/michaelampr/jam"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/michaelampr/jam/blob/master/LICENSE"
+			},
+			"samples": ["chevrons-square-up-right", "luggage-f", "rubber"],
+			"height": 24,
+			"category": "General",
+			"palette": false
+		},
+		"heroicons": {
+			"name": "HeroIcons",
+			"total": 876,
+			"version": "2.0.13",
+			"author": {
+				"name": "Refactoring UI Inc",
+				"url": "https://github.com/tailwindlabs/heroicons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
+			},
+			"samples": ["camera", "building-library", "receipt-refund"],
+			"height": [24, 20],
+			"category": "General",
+			"palette": false
+		},
+		"fa6-solid": {
+			"name": "Font Awesome Solid",
+			"total": 1388,
+			"version": "6.2.0",
+			"author": {
+				"name": "Dave Gandy",
+				"url": "https://github.com/FortAwesome/Font-Awesome"
+			},
+			"license": {
+				"title": "CC BY 4.0",
+				"spdx": "CC-BY-4.0",
+				"url": "https://creativecommons.org/licenses/by/4.0/"
+			},
+			"samples": ["location-pin", "gem", "folder"],
+			"height": 32,
+			"displayHeight": 16,
+			"category": "General",
+			"palette": false
+		},
+		"nimbus": {
+			"name": "Nimbus",
+			"total": 140,
+			"version": "0.2.9",
+			"author": {
+				"name": "Linkedstore S.A.",
+				"url": "https://github.com/TiendaNube/nimbus-icons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/TiendaNube/nimbus-icons/blob/develop/LICENSE"
+			},
+			"samples": ["barcode", "mail", "calendar"],
+			"height": 16,
+			"category": "General",
+			"palette": false
+		},
+		"line-md": {
+			"name": "Material Line Icons",
+			"total": 395,
+			"version": "0.2.7",
+			"author": {
+				"name": "Vjacheslav Trushkin",
+				"url": "https://github.com/cyberalien/line-md"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/cyberalien/line-md/blob/master/license.txt"
+			},
+			"samples": [
+				"loading-twotone-loop",
+				"beer-alt-twotone-loop",
+				"image-twotone"
+			],
+			"height": 24,
+			"category": "Animated Icons",
+			"palette": false
+		},
+		"openmoji": {
+			"name": "OpenMoji",
+			"total": 4064,
+			"author": {
+				"name": "OpenMoji",
+				"url": "https://github.com/hfg-gmuend/openmoji"
+			},
+			"license": {
+				"title": "CC BY-SA 4.0",
+				"spdx": "CC-BY-SA-4.0",
+				"url": "https://creativecommons.org/licenses/by-sa/4.0/"
+			},
+			"samples": ["bicycle", "bow-and-arrow", "full-moon-face"],
+			"height": 18,
+			"category": "Emoji",
+			"palette": true
+		},
+		"twemoji": {
+			"name": "Twitter Emoji",
+			"total": 3668,
+			"author": {
+				"name": "Twitter",
+				"url": "https://github.com/twitter/twemoji"
+			},
+			"license": {
+				"title": "CC BY 4.0",
+				"spdx": "CC-BY-4.0",
+				"url": "https://creativecommons.org/licenses/by/4.0/"
+			},
+			"samples": ["anguished-face", "duck", "crossed-swords"],
+			"height": 36,
+			"displayHeight": 18,
+			"category": "Emoji",
+			"palette": true
+		},
+		"noto": {
+			"name": "Noto Emoji",
+			"total": 3449,
+			"author": {
+				"name": "Google Inc",
+				"url": "https://github.com/googlefonts/noto-emoji"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/googlefonts/noto-emoji/blob/main/LICENSE"
+			},
+			"samples": ["beaming-face-with-smiling-eyes", "computer-mouse", "dove"],
+			"height": 16,
+			"category": "Emoji",
+			"palette": true
+		},
+		"fluent-emoji": {
+			"name": "Fluent Emoji",
+			"total": 2980,
+			"author": {
+				"name": "Microsoft Corporation",
+				"url": "https://github.com/microsoft/fluentui-emoji"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE"
+			},
+			"samples": ["avocado", "ticket", "yin-yang"],
+			"height": 32,
+			"displayHeight": 24,
+			"category": "Emoji",
+			"palette": true
+		},
+		"fluent-emoji-flat": {
+			"name": "Fluent Emoji Flat",
+			"total": 2980,
+			"author": {
+				"name": "Microsoft Corporation",
+				"url": "https://github.com/microsoft/fluentui-emoji"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE"
+			},
+			"samples": ["avocado", "ticket", "yin-yang"],
+			"height": 32,
+			"displayHeight": 24,
+			"category": "Emoji",
+			"palette": true
+		},
+		"fluent-emoji-high-contrast": {
+			"name": "Fluent Emoji High Contrast",
+			"total": 1545,
+			"author": {
+				"name": "Microsoft Corporation",
+				"url": "https://github.com/microsoft/fluentui-emoji"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE"
+			},
+			"samples": ["avocado", "ticket", "yin-yang"],
+			"height": 32,
+			"displayHeight": 24,
+			"category": "Emoji",
+			"palette": false
+		},
+		"noto-v1": {
+			"name": "Noto Emoji (v1)",
+			"total": 2162,
+			"author": {
+				"name": "Google Inc",
+				"url": "https://github.com/googlefonts/noto-emoji"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://github.com/googlefonts/noto-emoji/blob/main/LICENSE"
+			},
+			"samples": ["face-with-open-mouth", "no-littering", "scissors"],
+			"height": 16,
+			"category": "Emoji",
+			"palette": true
+		},
+		"emojione": {
+			"name": "Emoji One (Colored)",
+			"total": 1834,
+			"version": "2.3.0",
+			"author": {
+				"name": "Emoji One",
+				"url": "https://github.com/EmojiTwo/emojitwo"
+			},
+			"license": {
+				"title": "CC BY 4.0",
+				"spdx": "CC-BY-4.0",
+				"url": "https://creativecommons.org/licenses/by/4.0/"
+			},
+			"samples": [
+				"anxious-face-with-sweat",
+				"cloud-with-snow",
+				"studio-microphone"
+			],
+			"height": 32,
+			"displayHeight": 16,
+			"category": "Emoji",
+			"palette": true
+		},
+		"emojione-monotone": {
+			"name": "Emoji One (Monotone)",
+			"total": 1403,
+			"version": "2.2.7",
+			"author": {
+				"name": "Emoji One",
+				"url": "https://github.com/EmojiTwo/emojitwo"
+			},
+			"license": {
+				"title": "CC BY 4.0",
+				"spdx": "CC-BY-4.0",
+				"url": "https://creativecommons.org/licenses/by/4.0/"
+			},
+			"samples": ["face-with-tongue", "envelope", "frog-face"],
+			"height": 32,
+			"displayHeight": 16,
+			"category": "Emoji",
+			"palette": false
+		},
+		"emojione-v1": {
+			"name": "Emoji One (v1)",
+			"total": 1262,
+			"version": "1.5.2",
+			"author": {
+				"name": "Emoji One",
+				"url": "https://github.com/joypixels/emojione-legacy"
+			},
+			"license": {
+				"title": "CC BY-SA 4.0",
+				"spdx": "CC-BY-SA-4.0",
+				"url": "https://creativecommons.org/licenses/by-sa/4.0/"
+			},
+			"samples": ["face-savoring-food", "panda-face", "artist-palette"],
+			"height": 32,
+			"displayHeight": 16,
+			"category": "Emoji",
+			"palette": true
+		},
+		"game-icons": {
+			"name": "Game Icons",
+			"total": 4046,
+			"author": {
+				"name": "GameIcons",
+				"url": "https://github.com/game-icons/icons"
+			},
+			"license": {
+				"title": "CC BY 3.0",
+				"spdx": "CC-BY-3.0",
+				"url": "https://github.com/game-icons/icons/blob/master/license.txt"
+			},
+			"samples": ["diamond-trophy", "thrown-spear", "rank-3"],
+			"height": 32,
+			"displayHeight": 16,
+			"category": "Thematic",
+			"palette": false
+		},
+		"la": {
+			"name": "Line Awesome",
+			"total": 1544,
+			"version": "1.2.1",
+			"author": {
+				"name": "Icons8",
+				"url": "https://github.com/icons8/line-awesome"
+			},
+			"license": {
+				"title": "Apache 2.0",
+				"spdx": "Apache-2.0",
+				"url": "https://www.apache.org/licenses/LICENSE-2.0"
+			},
+			"samples": ["archive-solid", "female-solid", "check-circle"],
+			"category": "Archive / Unmaintained",
+			"palette": false
+		},
+		"entypo": {
+			"name": "Entypo+",
+			"total": 321,
+			"author": {
+				"name": "Daniel Bruce",
+				"url": "https://github.com/chancancode/entypo-plus"
+			},
+			"license": {
+				"title": "CC BY-SA 4.0",
+				"spdx": "CC-BY-SA-4.0",
+				"url": "https://creativecommons.org/licenses/by-sa/4.0/"
+			},
+			"samples": ["bell", "image", "erase"],
+			"height": 20,
+			"category": "Archive / Unmaintained",
+			"palette": false
+		},
+		"foundation": {
+			"name": "Foundation",
+			"total": 283,
+			"version": "3.0.0",
+			"author": {
+				"name": "Zurb",
+				"url": "https://github.com/zurb/foundation-icon-fonts"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT"
+			},
+			"samples": ["graph-trend", "indent-more", "lock"],
+			"height": 20,
+			"category": "Archive / Unmaintained",
+			"palette": false
+		},
+		"icons8": {
+			"name": "Icons8 Windows 10 Icons",
+			"total": 234,
+			"version": "1.0.0",
+			"author": {
+				"name": "Icons8",
+				"url": "https://github.com/icons8/windows-10-icons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT"
+			},
+			"samples": ["checked", "create-new", "group"],
+			"category": "Archive / Unmaintained",
+			"palette": false
+		},
+		"heroicons-outline": {
+			"name": "HeroIcons v1 Outline",
+			"total": 230,
+			"version": "1.0.6",
+			"author": {
+				"name": "Refactoring UI Inc",
+				"url": "https://github.com/tailwindlabs/heroicons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
+			},
+			"samples": ["color-swatch", "library", "receipt-refund"],
+			"height": 24,
+			"category": "Archive / Unmaintained",
+			"palette": false
+		},
+		"heroicons-solid": {
+			"name": "HeroIcons v1 Solid",
+			"total": 230,
+			"version": "1.0.6",
+			"author": {
+				"name": "Refactoring UI Inc",
+				"url": "https://github.com/tailwindlabs/heroicons"
+			},
+			"license": {
+				"title": "MIT",
+				"spdx": "MIT",
+				"url": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
+			},
+			"samples": ["color-swatch", "library", "receipt-refund"],
+			"height": 20,
+			"category": "Archive / Unmaintained",
+			"palette": false
+		},
+		"fa-solid": {
+			"name": "Font Awesome 5 Solid",
+			"total": 1001,
+			"version": "5.15.4",
+			"author": {
+				"name": "Dave Gandy",
+				"url": "https://github.com/FortAwesome/Font-Awesome"
+			},
+			"license": {
+				"title": "CC BY 4.0",
+				"spdx": "CC-BY-4.0",
+				"url": "https://creativecommons.org/licenses/by/4.0/"
+			},
+			"samples": ["search-plus", "paste", "comment-dots"],
+			"height": 32,
+			"displayHeight": 16,
+			"category": "Archive / Unmaintained",
+			"palette": false
+		}
+	},
+	"request": {
+		"query": "arrows-horizontal",
+		"pretty": "1",
+		"limit": "999"
+	}
+}

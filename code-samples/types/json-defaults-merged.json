@@ -1,0 +1,25 @@
+{
+	"prefix": "mdi",
+	"icons": {
+		"square": {
+			"body": "<path d=\"M3 3v18h18V3\" fill=\"currentColor\"/>",
+			"width": 24,
+			"height": 24
+		},
+		"triangle": {
+			"body": "<path d=\"M1 21h22L12 2\" fill=\"currentColor\"/>",
+			"width": 24,
+			"height": 24
+		},
+		"rectangle": {
+			"body": "<path d=\"M4 6v13h16V6H4z\" fill=\"currentColor\"/>",
+			"width": 24,
+			"height": 24
+		},
+		"small-circle": {
+			"body": "<circle cx=\"8\" cy=\"8\" r=\"8\" fill=\"currentColor\"/>",
+			"width": 16,
+			"height": 16
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"prefix": "mdi-light",
+	"icons": {
+		"alarm": {
+			"body": "<path d=\"M11.5 6a7.5 7.5 0 1 1 0 15a7.5 7.5 0 0 1 0-15zm0 1a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13zM11 9h1v4.363l3.048 1.421l-.423.906L11 14V9zm4.25-3.75l.643-.766l3.83 3.214l-.643.766l-3.83-3.214zm-7.5 0L3.92 8.464l-.643-.766l3.83-3.214l.643.766z\" fill=\"currentColor\"/>"
+		},
+		"arrow-down": {
+			"body": "<path d=\"M12 5v12.25L17.25 12l.75.664l-6.5 6.5l-6.5-6.5l.75-.664L11 17.25V5h1z\" fill=\"currentColor\"/>"
+		},
+		"home": {
+			"body": "<path d=\"M16 8.414l-4.5-4.5L4.414 11H6v8h3v-6h5v6h3v-8h1.586L17 9.414V6h-1v2.414zM2 12l9.5-9.5L15 6V5h3v4l3 3h-3v7.998h-5v-6h-3v6H5V12H2z\" fill=\"currentColor\"/>"
+		}
+	},
+	"width": 24,
+	"height": 24
+}

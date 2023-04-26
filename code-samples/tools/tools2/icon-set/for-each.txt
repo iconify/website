@@ -1,0 +1,13 @@
+Starting synchronous forEach()
+Renaming: add
+Renaming: debug-pause
+Renaming: triangle-left
+Renaming: plus
+Renaming: triangle-right
+Completed synchronous forEach()
+Starting async forEach()
+Cleaning up: renamed-add
+End of code... (this code is executed before icons are cleaned up, this is why async anonymous function is needed)
+Cleaning up: renamed-debug-pause
+Cleaning up: renamed-triangle-left
+Completed async forEach()

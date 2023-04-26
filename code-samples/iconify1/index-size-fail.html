@@ -1,0 +1,18 @@
+<div>
+	These icons are supposed to be square, but only one attribute is set in
+	stylesheet:
+	<span class="iconify set-height" data-icon="mdi:eyedropper"></span>
+	<span class="iconify set-width" data-icon="mdi:eyedropper"></span>
+</div>
+<div>
+	If both attributes are set in stylesheet, icon scales correctly:
+	<span class="iconify set-height set-width" data-icon="mdi:eyedropper"></span>
+</div>
+<div>
+	These icons are square in modern browsers, but fail in Internet Explorer,
+	which is unfortunately still used by enough people to support it (update: this
+	is irrelevant now, demo was written a while ago). You can use this method, but
+	better just avoid it:
+	<span class="iconify" data-icon="mdi:eyedropper" height="48"></span>
+	<span class="iconify" data-icon="mdi:eyedropper" width="48"></span>
+</div>

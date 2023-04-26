@@ -1,0 +1,18 @@
+.sample:after {
+	padding-left: 4px;
+}
+.original-icon:after {
+	content: url('https://api.iconify.design/noto/spiral-calendar.svg?height=32');
+}
+.flip-horizontal:after {
+	content: url('https://api.iconify.design/noto/spiral-calendar.svg?height=32&flip=horizontal');
+}
+.flip-vertical:after {
+	content: url('https://api.iconify.design/noto/spiral-calendar.svg?height=32&flip=vertical');
+}
+.flip-both:after {
+	content: url('https://api.iconify.design/noto/spiral-calendar.svg?height=32&flip=horizontal,vertical');
+}
+.flip-and-rotate:after {
+	content: url('https://api.iconify.design/noto/spiral-calendar.svg?height=32&rotate=3&flip=horizontal');
+}

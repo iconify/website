@@ -1,0 +1,30 @@
+/* Common styles for mask and background */
+.background-test,
+.mask-test {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+}
+
+/* Pseudo element demo */
+.pseudo-test:after {
+	content: url('https://api.iconify.design/bi/bell-fill.svg?height=16');
+}
+
+/* Background demo */
+.background-test {
+	background-image: url('https://api.iconify.design/bi/bell-fill.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+/* Mask demo */
+.mask-test {
+	background-color: currentColor;
+	-webkit-mask-image: url('https://api.iconify.design/bi/bell-fill.svg');
+	mask-image: url('https://api.iconify.design/bi/bell-fill.svg');
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: 100% 100%;
+	mask-size: 100% 100%;
+}

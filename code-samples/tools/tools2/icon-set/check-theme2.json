@@ -1,0 +1,18 @@
+{
+	"valid": {
+		"regular": [
+			"arrow-down-regular",
+			"arrow-left-regular",
+			"back-to-top-regular",
+			"caret-down-regular",
+			"caret-left-regular",
+			"arrow-up-regular",
+			"arrow-right-regular",
+			"caret-up-regular",
+			"caret-right-regular"
+		],
+		"filled": ["bookmark-filled"],
+		"": ["add"]
+	},
+	"invalid": []
+}

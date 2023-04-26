@@ -1,0 +1,10 @@
+// Red color for alert icon
+.alert .iconify {
+	color: #d00;
+	font-size: 24px; // will not change icon size
+}
+
+// Show icon size using box-shadow
+.highlight-box .iconify {
+	box-shadow: 0 0 0 1px #e00;
+}
