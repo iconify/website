@@ -87,7 +87,7 @@ const months = {
   4: 'Apr',
   5: 'May',
   6: 'Jun',
-  7: 'July',
+  7: 'Jul',
   8: 'Aug',
   9: 'Sep',
   10: 'Oct',
@@ -106,7 +106,6 @@ function generateDateAndLink(year, dateString, title) {
   let date
   if (dateString.length === 1) {
     const newDate = new Date(+dateString[0])
-    console.log(newDate)
     date = `${newDate.getUTCDate()} ${months[newDate.getUTCMonth() + 1]} ${newDate.getUTCFullYear()}`
   }
   else {
