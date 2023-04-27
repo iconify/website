@@ -11,7 +11,7 @@ p:before {
 	position: absolute;
 	left: 0;
 	right: 0;
-	border-bottom: 1px dotted #ccc;
+	border-bottom: 1px dotted var(--c-red);
 }
 p:before {
 	top: 6px;

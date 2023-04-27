@@ -2,7 +2,7 @@ p {
 	position: relative;
 	font-size: 18px;
 	line-height: 24px;
-	color: $text-dimmed-color;
+	color: var(--vp-c-text-2);
 	&:has(+ p) {
 		margin-bottom: 0;
 	}
@@ -18,7 +18,7 @@ p:before {
 	position: absolute;
 	left: 0;
 	right: 0;
-	border-bottom: 1px dotted #ccc;
+	border-bottom: 1px dotted var(--c-red);
 }
 p:before {
 	top: 4px;

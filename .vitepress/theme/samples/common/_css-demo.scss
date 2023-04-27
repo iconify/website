@@ -12,6 +12,9 @@
 }
 .pseudo-test--2:after {
 	content: url('https://api.iconify.design/bi/bell-fill.svg?height=16&color=%23007267');
+	.dark & {
+		content: url('https://api.iconify.design/bi/bell-fill.svg?height=16&color=%2320A397');
+	}
 }
 
 /* Background demo */
@@ -22,6 +25,9 @@
 }
 .background-test--2 {
 	background-image: url('https://api.iconify.design/bi/bell-fill.svg?color=%23007267');
+	.dark & {
+		background-image: url('https://api.iconify.design/bi/bell-fill.svg?color=%2320A397');
+	}
 }
 
 /* Mask demo */

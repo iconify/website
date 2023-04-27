@@ -60,6 +60,16 @@
   --vp-c-primary-button: #{primary(600)};
   --vp-c-primary-button-hover: #{accent(600)};
   --vp-c-alt-button-hover: #{accent(450)};
+
+  --c-gray: #{palette.palette('gray', 600)};
+  --c-red: #{palette.palette('red', 600)};
+  --c-red-dimmed: #{palette.palette('red', 400)};
+  --c-green: #{palette.palette('green', 600)};
+  --c-green-dimmed: #{palette.palette('green', 400)};
+  --c-blue: #{palette.palette('blue', 600)};
+  --c-blue-dimmed: #{palette.palette('blue', 400)};
+  --c-purple: #{palette.palette('purple', 600)};
+  --c-purple-dimmed: #{palette.palette('purple', 400)};
 }
 
 .dark {
@@ -90,6 +100,16 @@
   --vp-c-primary-button: #{primary(400)};
   --vp-c-primary-button-hover: #{accent(400)};
   --vp-c-alt-button-hover: #{accent(550)};
+
+  --c-gray: #{palette.palette('gray', 400)};
+  --c-red: #{palette.palette('red', 400)};
+  --c-red-dimmed: #{palette.palette('red', 600)};
+  --c-green: #{palette.palette('green', 400)};
+  --c-green-dimmed: #{palette.palette('green', 600)};
+  --c-blue: #{palette.palette('blue', 400)};
+  --c-blue-dimmed: #{palette.palette('blue', 600)};
+  --c-purple: #{palette.palette('purple', 400)};
+  --c-purple-dimmed: #{palette.palette('purple', 600)};
 }
 
 /**

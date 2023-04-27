@@ -1,7 +1,7 @@
 /* Big red alert! */
 svg[data-icon='line-md:alert'] {
 	font-size: 48px;
-	color: #ba3329;
+	color: var(--c-red);
 }
 
 /* Different sizes for different paragraphs */

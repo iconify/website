@@ -14,7 +14,7 @@ $small-line-height: 22px;
   margin: -1px 2px;
   padding: 0 3px;
   color: var(--vp-c-text-1);
-  background: var(--vp-c-bg-soft);
+  background: var(--vp-c-mute);
   border: 1px dashed var(--vp-c-border);
   border-radius: 6px;
 }
@@ -23,24 +23,19 @@ $small-line-height: 22px;
 .code-blocks {
   margin: 4px 0 8px;
   padding: 0;
-
-  code {
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-family: $code-font-family;
-    font-size: $code-font-size;
-    line-height: $code-line-height;
-    color: var(--vp-c-text-1);
-    word-wrap: break-word;
-  }
 }
 
 // Override VP style
 div.code-blocks code {
+  display: block;
+  margin: 0;
   padding: 0;
+  font-family: $code-font-family;
+  font-size: $code-font-size;
+  line-height: $code-line-height;
+  color: var(--vp-c-text-1);
+  word-wrap: break-word;
   background: none;
-  color: inherit;
 }
 
 // Blocks inside code blocks wrapper

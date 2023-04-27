@@ -2,20 +2,20 @@
 	&--padding {
 		iconify-icon {
 			box-shadow: 0 0 2px currentColor;
-			background-color: $code-background;
+			background-color: var(--vp-c-mute);
 		}
 	}
 
 	iconify-icon {
 		vertical-align: -0.125em;
-		color: palette('blue', 400);
+		color: var(--c-blue-dimmed);
 		transition: color 0.3s ease;
 
 		&:nth-child(3n + 1) {
-			color: palette('green', 400);
+			color: var(--c-green-dimmed);
 		}
 		&:nth-child(3n + 2) {
-			color: palette('purple', 400);
+			color: var(--c-purple-dimmed);
 		}
 		&:last-of-type {
 			margin-right: 4px;
@@ -38,7 +38,7 @@
 
 	&:hover {
 		iconify-icon {
-			color: palette($link-hover-palette, $link-hover-shade);
+			color: var(--vp-c-brand-accent);
 		}
 	}
 
@@ -48,11 +48,11 @@
 		div {
 			width: 96px;
 			height: 96px;
-			background: url('./images/common/guides-grid1.png') no-repeat;
+			background: url('/assets/images/common/guides-grid1.png') no-repeat;
 			background-size: contain;
 		}
 		div:nth-child(2) {
-			background-image: url('./images/common/guides-grid2.png');
+			background-image: url('/assets/images/common/guides-grid2.png');
 		}
 
 		@media (min-width: 600px) {

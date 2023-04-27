@@ -1,5 +1,5 @@
 .demo-notice {
-	color: $text-muted-color;
+	color: var(--vp-c-text-2);
 }
 p + .demo-notice {
 	margin-top: 8px;
@@ -7,10 +7,10 @@ p + .demo-notice {
 
 /* Change paragraph color on hover */
 .demo-hover-color {
-	color: #ba3329;
+	color: var(--c-red);
 }
 .demo-hover-color:hover {
-	color: #026c9c;
+	color: var(--c-blue);
 }
 
 /* Align samples below baseline, similar to glyphs rendered by icon fonts */
@@ -21,5 +21,5 @@ p + .demo-notice {
 }
 
 small {
-	color: $text-muted-color;
+	color: var(--vp-c-text-2);
 }

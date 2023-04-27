@@ -11,8 +11,8 @@
 
 // Boxes to show icon dimensions
 iconify-icon {
-	box-shadow: 0 0 0 1px #2d9cf4;
+	box-shadow: 0 0 0 1px var(--c-blue-dimmed);
 }
 iconify-icon:hover {
-	box-shadow: 0 0 0 1px #f55b50;
+	box-shadow: 0 0 0 1px var(--c-red-dimmed);
 }

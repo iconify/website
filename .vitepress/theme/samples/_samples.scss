@@ -1,0 +1,237 @@
+.sample-big {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+// Restart animation in code block
+.restart-animation {
+  iconify-icon {
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: -0.25em;
+  }
+  small {
+    padding-left: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--vp-c-text-2);
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  &:hover {
+    color: var(--vp-c-brand-accent);
+    small {
+      opacity: 0;
+    }
+  }
+}
+
+// Rendering delay animation
+.delay-demo-wrapper {
+  iframe {
+    display: block;
+    width: 100%;
+    height: 112px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background: var(--vp-c-mute);
+  }
+  small {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--vp-c-text-2);
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  &.restarting {
+    small {
+      opacity: 0;
+    }
+  }
+
+  &--short {
+    iframe {
+      height: 80px;
+    }
+  }
+}
+
+// Modes demo
+.modes-demo {
+  border-radius: 8px;
+  background: var(--vp-c-mute);
+  padding: 0 16px;
+
+  // animation: 10s infinite modes-demo-color;
+  span {
+    display: inline-block;
+    min-width: 48px;
+  }
+
+  small {
+    color: var(--vp-c-text-2);
+  }
+
+  iconify-icon {
+    font-size: 24px;
+    line-height: 1em;
+    vertical-align: -0.25em;
+    margin: 0 8px;
+    color: var(--c-green);
+
+    &.success {
+      // box-shadow: 0 0 3px var(--c-green);
+    }
+    &.error {
+      box-shadow: 0 0 2px var(--c-red);
+    }
+  }
+
+  &:hover {
+    iconify-icon {
+      color: var(--vp-c-brand-accent);
+    }
+  }
+}
+
+@keyframes modes-demo-color {
+	0% {
+		color: var(--c-blue);
+	}
+	25% {
+		color: var(--c-red);
+	}
+	50% {
+		color: var(--c-green);
+	}
+	75% {
+		color: var(--c-gray);
+	}
+	100% {
+		color: var(--c-blue);
+	}
+}
+
+// Show icon size using box-shadow
+.highlight-box iconify-icon {
+  box-shadow: 0 0 0 1px var(--c-red-dimmed);
+}
+
+
+// Iconify 1 and 2
+.iconify-index-color {
+  @import './iconify/index-color.demo';
+}
+
+.iconify-inline-block {
+  @import './iconify/inline-block';
+}
+
+// Iconify 1
+.iconify1-index-size-attr {
+  @import './iconify1/index-size-attr.demo';
+}
+
+.iconify1-index-size-em {
+  @import './iconify1/index-size-em.demo';
+}
+
+.iconify1-index-size-fail {
+  @import './iconify1/index-size-fail.demo';
+}
+
+.iconify1-index-transform-flip {
+  // @import './iconify1/index-transform-flip';
+}
+
+.iconify1-index-transform-rotate-comparison {
+  @import './iconify1/index-transform-rotate-comparison.demo';
+}
+
+.iconify1-size-demo {
+  @import './iconify1/size-demo.demo';
+}
+
+.iconify1-size-demo-fixed-size {
+  @import './iconify1/size-demo-fixed-dimensions.demo';
+}
+
+// Iconify 2
+.iconify2-size-demo {
+  @import './iconify/size-demo.demo';
+}
+
+// Components
+.components-color {
+  @import './components/color.demo';
+}
+
+.components-size {
+  @import './components/size.demo';
+}
+
+
+// Common
+.css-demo-common {
+  @import './common/css-demo-common';
+}
+.css-demo {
+  @import './common/css-demo';
+}
+.css-demo-monotone {
+  @import './common/css-demo-monotone';
+}
+.css-demo-palette {
+  @import './common/css-demo-palette';
+}
+
+.css-rotation {
+  @import './common/css-rotation';
+}
+
+.css-flip {
+  @import './common/css-flip';
+}
+
+@import './common/icon-types';
+
+
+// Usage
+.usage-css-demo {
+  display: flex;
+  @import './usage/css-demo-bg';
+  @import './usage/css-demo-mask';
+
+  // Set color for main demo, spacing between different types
+  .background-demo + .mask-demo {
+    margin-left: 8px;
+  }
+  span {
+    color: var(--c-blue-dimmed);
+    transition: color 0.3s ease;
+
+    &:nth-child(3n + 1) {
+      color: var(--c-green-dimmed);
+    }
+    &:nth-child(3n + 2) {
+      color: var(--c-purple-dimmed);
+    }
+  }
+  &:hover span {
+    color: var(--vp-c-brand-accent);
+  }
+}
+
+// Icon
+.icon-size {
+  @import './icon/size';
+
+  &--unset.code-demo {
+    display: flex;
+  }
+}
+
+.vertical-align-demo {
+  @import './usage/vertical-align';
+}
