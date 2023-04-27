@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+patchedDependencies:
+  workbox-precaching@6.5.4:
+    hash: uw2iwsscgx53sjovdo23wj2bra
+    path: patches/workbox-precaching@6.5.4.patch
+
 dependencies:
   iconify-icon:
     specifier: ^1.0.7
@@ -63,6 +68,9 @@ devDependencies:
   '@vite-pwa/vitepress':
     specifier: ^0.0.5
     version: 0.0.5(vite-plugin-pwa@0.14.7)
+  async-es:
+    specifier: ^3.2.4
+    version: 3.2.4
   eslint:
     specifier: ^8.39.0
     version: 8.39.0
@@ -2715,6 +2723,10 @@ packages:
       define-properties: 1.2.0
       es-abstract: 1.21.2
       es-shim-unscopables: 1.0.0
+    dev: true
+
+  /async-es@3.2.4:
+    resolution: {integrity: sha512-GFHAAfmW7GzEiHFR6DvE5WMm6+js9pb+RLm+m1UpsyMX+I4j/R4QVw2Te664q+fvDVOz7Y0bORPDNvQS7BJ3Hw==}
     dev: true
 
   /async@3.2.4:
@@ -6301,7 +6313,7 @@ packages:
       workbox-expiration: 6.5.4
       workbox-google-analytics: 6.5.4
       workbox-navigation-preload: 6.5.4
-      workbox-precaching: 6.5.4
+      workbox-precaching: 6.5.4(patch_hash=uw2iwsscgx53sjovdo23wj2bra)
       workbox-range-requests: 6.5.4
       workbox-recipes: 6.5.4
       workbox-routing: 6.5.4
@@ -6346,13 +6358,14 @@ packages:
       workbox-core: 6.5.4
     dev: true
 
-  /workbox-precaching@6.5.4:
+  /workbox-precaching@6.5.4(patch_hash=uw2iwsscgx53sjovdo23wj2bra):
     resolution: {integrity: sha512-hSMezMsW6btKnxHB4bFy2Qfwey/8SYdGWvVIKFaUm8vJ4E53JAY+U2JwLTRD8wbLWoP6OVUdFlXsTdKu9yoLTg==}
     dependencies:
       workbox-core: 6.5.4
       workbox-routing: 6.5.4
       workbox-strategies: 6.5.4
     dev: true
+    patched: true
 
   /workbox-range-requests@6.5.4:
     resolution: {integrity: sha512-Je2qR1NXCFC8xVJ/Lux6saH6IrQGhMpDrPXWZWWS8n/RD+WZfKa6dSZwU+/QksfEadJEr/NfY+aP/CXFFK5JFg==}
@@ -6366,7 +6379,7 @@ packages:
       workbox-cacheable-response: 6.5.4
       workbox-core: 6.5.4
       workbox-expiration: 6.5.4
-      workbox-precaching: 6.5.4
+      workbox-precaching: 6.5.4(patch_hash=uw2iwsscgx53sjovdo23wj2bra)
       workbox-routing: 6.5.4
       workbox-strategies: 6.5.4
     dev: true

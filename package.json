@@ -36,6 +36,7 @@
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.15.13",
     "@vite-pwa/vitepress": "^0.0.5",
+    "async-es": "^3.2.4",
     "eslint": "^8.39.0",
     "highlight.js": "^11.7.0",
     "highlightjs-svelte": "^1.0.6",
@@ -48,5 +49,10 @@
     "unplugin-vue-components": "^0.24.1",
     "vitepress": "1.0.0-alpha.74",
     "yaml": "^2.2.2"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "workbox-precaching@6.5.4": "patches/workbox-precaching@6.5.4.patch"
+    }
   }
 }
