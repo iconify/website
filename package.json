@@ -1,17 +1,20 @@
 {
-  "private": true,
-  "name": "iconify-desing",
-  "version": "3.0.0",
+  "name": "@iconify/website",
   "type": "module",
+  "version": "3.0.0",
+  "private": true,
   "packageManager": "pnpm@8.3.1",
+  "author": "Vjacheslav Trushkin",
   "scripts": {
     "dev": "vitepress dev",
     "dev:pwa": "SW_DEV=true vitepress dev",
-    "build": "pnpm prepare-news && vitepress build",
-    "preview": "pnpm build && vitepress preview",
-    "https": "pnpm build && serve dist",
+    "build": "nr prepare-news && vitepress build",
+    "preview": "nr build && vitepress preview",
+    "https": "nr build && serve dist",
     "prepare-news": "node scripts/news.mjs",
-    "postinstall": "pnpm prepare-news"
+    "postinstall": "nr prepare-news",
+    "lint": "eslint --cache .",
+    "lint:fix": "nr lint --fix"
   },
   "dependencies": {
     "iconify-icon": "^1.0.7"

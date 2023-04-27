@@ -127,7 +127,7 @@ Usage:
 
 ```js
 tools.GetPalette(svg).then(result => {
-    console.log('Colors used in SVG: ' + result.colors.join(', ');
+    console.log('Colors used in SVG: ' + result.colors.join(', '));
     if (result.notices.length) {
         result.notices.forEach(notice => console.warn(notice));
     }
@@ -141,7 +141,7 @@ To use it with entire icon set, use `[class]Collection`'s `[func]promiseAll` fun
 ```js
 collection.promiseAll(svg => tools.GetPalette(svg)).then(result => {
     Object.keys(results).forEach(key => {
-        console.log('Colors found in image ' + key + ': ' + result[key].colors.join(', ');
+        console.log('Colors found in image ' + key + ': ' + result[key].colors.join(', '));
     });
 }).catch(err => {
     console.error(err);

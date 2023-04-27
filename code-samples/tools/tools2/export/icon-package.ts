@@ -1,4 +1,4 @@
-import { exportIconPackage, IconSet, execAsync } from '@iconify/tools';
+import { exportIconPackage, IconSet/* , execAsync */ } from '@iconify/tools';
 
 // Import icon set
 const iconSet = new IconSet({

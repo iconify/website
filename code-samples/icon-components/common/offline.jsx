@@ -1,4 +1,4 @@
-import { Icon, addIcon, addCollection } from '@iconify/react/dist/offline';
+import { Icon, addIcon/* , addCollection */ } from '@iconify/react/dist/offline';
 import bellFill from '@iconify-icons/bi/bell-fill';
 
 // Assign icon data to name "bell" used in first example

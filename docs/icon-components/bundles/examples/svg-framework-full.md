@@ -96,11 +96,11 @@ For example:
 
 ```js
 const sources = {
-    svg: [
+    svg: [{
         dir: 'svg',
         monotone: true,
         prefix: 'custom'
-    ]
+    }]
 }
 ```
 
