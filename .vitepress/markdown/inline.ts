@@ -1,7 +1,7 @@
 import hljs from 'highlight.js'
 import type { MarkdownRenderer } from 'vitepress'
 import { escapeHtml } from 'markdown-it/lib/common/utils'
-import './highlight'
+import { fixHighlightedCode } from './highlight'
 
 /**
  * Code sample wrappers
@@ -116,37 +116,29 @@ function wrapType(raw: string, escaped: string): string {
   const types = split(raw)
 
   // Merge list and escape contents
-  return (
-    `<span class="hljs-inline-type hljs-linkable">${
-       types
-        .map((type) => {
-          switch (type) {
-            case '<':
-              return '&lt;'
+  let isDefaultValue = false
+  const childResults = types
+    .map((type) => {
+      type = type.replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      if (midSeparators.includes(type))
+        return type
 
-              case '>':
-              return '&gt;'
-
-              case ' ':
-              return type
-            }
-          if (midSeparators.includes(type))
-              return type
-
-          return (
+      isDefaultValue = true
+      return (
             `<span class="hljs-inline-type hljs-linkable">${type}</span>`
-          )
-        })
-        .join('')
-       }</span>`
-  )
+      )
+    })
 
-  /*
-  return wrap(
-      'type',
-      '<span class="hljs-inline-type hljs-linkable">' + escaped + '</span>'
-  );
-  */
+  const result = (childResults.length === 1 && isDefaultValue)
+    ? childResults[0]
+    : (
+    `<span class="hljs-inline-type hljs-linkable">${
+        childResults.join('')
+       }</span>`
+      )
+
+  // Return
+  return result
 }
 
 export function customInlineCodeMD(md: MarkdownRenderer) {
@@ -328,9 +320,14 @@ export function customInlineCodeMD(md: MarkdownRenderer) {
                     `Bad language for inline code block: ${type}`,
                 )
               }
-              return hljs.highlight(rawContent, {
+              let code = hljs.highlight(rawContent, {
                 language: type,
               }).value
+
+               // Fix bugs
+               code = fixHighlightedCode(code)
+
+               return code
             })()
              }</span>`
         )
