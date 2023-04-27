@@ -1,4 +1,5 @@
 import hljs from 'highlight.js'
+import { fixHighlightedCode } from '../highlight'
 import { renderCodeEnv } from './env'
 import { replaceAllStrings } from './replace'
 
@@ -109,7 +110,10 @@ export function highlightCode(lang: string, str: string) {
   // Replace tabs, spaces and new lines
   code = code.replace(/\t/g, ' &nbsp; &nbsp;')
   code = code.replace(/ {2}/g, ' &nbsp;')
-  code = code.replace(/\n/g, '<br />\n')
+  code = code.trim().replace(/\n/g, '<br />\n').trim()
+
+  // Fix bugs
+  code = fixHighlightedCode(code)
 
   return codeHeader + code + codeFooter
 }
