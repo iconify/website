@@ -11,34 +11,35 @@ export interface CodeTab {
   replace?: (content: string) => string
 }
 
-interface RenderCodeEnv {
-  filename: string
-  tabs: CodeTab[]
-}
-
 /**
  * Current code parser data
  */
-export const renderCodeEnv: RenderCodeEnv = {
-  filename: '',
-  tabs: [],
-}
+let tabs: CodeTab[] = []
 
 /**
  * Reset code tabs
  */
-export function setRenderCodeEnv(filename: string) {
-  renderCodeEnv.filename = filename
-  renderCodeEnv.tabs = []
+export function resetCodeTabs() {
+  tabs = []
+}
+
+/**
+ * Get current tabs
+ */
+export function getCodeTabs(): CodeTab[] {
+  return tabs
 }
 
 function returnContent(str: string): string {
   return str
 }
 
+/**
+ * Convert tabs content to string
+ */
 export function renderCodeTabs(): string {
   let code = '<div class="code-blocks">'
-  renderCodeEnv.tabs.forEach((tab) => {
+  tabs.forEach((tab) => {
     const replace = tab.replace || returnContent
     let raw = ''
     if (tab.raw !== '') {
@@ -79,7 +80,6 @@ export function renderCodeTabs(): string {
     }
 
     // Close container
-
     code += '</div>'
   })
 

@@ -1,8 +1,9 @@
-import { renderCodeEnv } from './env'
-import type { CodeTabType } from './env'
+import { getCodeTabs } from './tabs'
+import type { CodeTabType } from './tabs'
 import { cleanupCode, highlightCode } from './highlight'
 
 interface RenderTabProps {
+  filename: string
   type: CodeTabType
   src?: string
   title?: string
@@ -13,6 +14,7 @@ interface RenderTabProps {
 }
 
 const defaultProps: Required<RenderTabProps> = {
+  filename: '',
   type: 'src',
   src: '',
   title: '',
@@ -26,6 +28,7 @@ export function addCodeTab(
   params: RenderTabProps,
 ) {
   const {
+    filename,
     type,
     src,
     title,
@@ -42,13 +45,13 @@ export function addCodeTab(
   const raw = cleanupCode(lang, code)
 
   // Add tab
-  renderCodeEnv.tabs.push({
+  getCodeTabs().push({
     type,
     src,
     title,
     lang,
     raw,
-    html: highlightCode(lang, replace(raw)),
+    html: highlightCode(lang, replace(raw), filename),
     hint,
     replace,
   })
@@ -91,7 +94,7 @@ export function addCodeDemoTab(props: RenderDemoProps) {
     css = parts.shift() as string
   }
 
-  renderCodeEnv.tabs.push({
+  getCodeTabs().push({
     type: 'demo',
     src,
     title,

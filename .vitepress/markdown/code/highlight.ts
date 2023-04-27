@@ -1,6 +1,5 @@
 import hljs from 'highlight.js'
 import { fixHighlightedCode } from '../highlight'
-import { renderCodeEnv } from './env'
 import { replaceAllStrings } from './replace'
 
 const codeHeader = '<code class="highlight hljs">'
@@ -29,14 +28,14 @@ export function cleanupCode(lang: string, str: string): string {
 /**
  * Highlight syntax in code
  */
-export function highlightCode(lang: string, str: string) {
+export function highlightCode(lang: string, str: string, filename: string) {
   let code: string
 
   function highlight(lang: string, str: string): string {
     // Check for language
     if (!hljs.getLanguage(lang)) {
       throw new Error(
-                `Bad language for code block in ${renderCodeEnv.filename}: ${lang}`,
+                `Bad language for code block in ${filename}: ${lang}`,
       )
     }
 
@@ -60,7 +59,7 @@ export function highlightCode(lang: string, str: string) {
     }
     catch (err) {
       console.error(err)
-      throw new Error(`Error parsing code block in ${renderCodeEnv.filename}.`)
+      throw new Error(`Error parsing code block in ${filename}.`)
     }
 
     // Fix errors
@@ -92,7 +91,7 @@ export function highlightCode(lang: string, str: string) {
       // Highlight chunks separately
       const chunks = str.split('---')
       if (chunks.length !== 3 || chunks.shift().trim() !== '')
-        throw new Error(`Bad Astro code in ${renderCodeEnv.filename}`)
+        throw new Error(`Bad Astro code in ${filename}`)
 
       const separator = '<span class="hljs-comment">---</span>'
       code = `${separator}\n${highlight(
