@@ -3,8 +3,8 @@
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
 
+@use 'sass:color' as color;
 @use 'palette' as palette;
-
 
 @function gray($shade) {
   @return palette.palette('gray', $shade);
@@ -24,9 +24,21 @@
   --vp-c-bg: #{gray(0)};
   --vp-c-bg-alt: #{gray(25)};
   --vp-c-bg-alt2: #{gray(75)};
+
+  //--vp-c-bg-soft: #{gray(25)};
+  //--vp-c-bg-soft-up: #{color.mix(gray(0), gray(25))};
+  //--vp-c-bg-soft-down: #{gray(50)};
+  //--vp-c-bg-soft-mute: #{gray(100)};
+
   --vp-c-border: #{gray(150)};
   --vp-c-divider: #{gray(150)};
   --vp-c-gray: #{gray(450)};
+
+  --vp-c-mute: #{gray(50)};
+  --vp-c-mute-light: #{gray(25)};
+  --vp-c-mute-lighter: #{gray(0)};
+  --vp-c-mute-dark: #{gray(75)};
+  --vp-c-mute-darker: #{gray(100)};
 
   --vp-c-text-light-1: #{gray(1000)};
   --vp-c-text-light-2: #{gray(600)};
@@ -54,9 +66,16 @@
   --vp-c-bg: #{gray(950)};
   --vp-c-bg-alt: #{gray(925)};
   --vp-c-bg-alt2: #{gray(875)};
+
   --vp-c-border: #{gray(800)};
   --vp-c-divider: #{gray(800)};
   --vp-c-gray: #{gray(550)};
+
+  --vp-c-mute: #{gray(900)};
+  --vp-c-mute-light: #{gray(925)};
+  --vp-c-mute-lighter: #{gray(950)};
+  --vp-c-mute-dark: #{gray(875)};
+  --vp-c-mute-darker: #{gray(850)};
 
   --vp-backdrop-bg-color: rgba(64, 64, 64, 0.6);
 
