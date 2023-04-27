@@ -1,5 +1,5 @@
 import { statSync } from 'node:fs'
-import type { CodeTabType } from './env'
+import type { CodeTabType } from './tabs'
 
 const rawCodePath = 'code-samples'
 const cssCodePath = '.vitepress/theme/samples'

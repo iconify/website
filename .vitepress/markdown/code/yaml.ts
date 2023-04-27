@@ -1,6 +1,5 @@
 import { readFileSync } from 'node:fs'
-import yaml from 'yaml'
-import { renderCodeEnv } from './env'
+import { parse } from 'yaml'
 import { locateCodeSample, validateCodeSource } from './locate'
 import { replaceAllStrings } from './replace'
 import { addCodeDemoTab, addCodeTab } from './tab'
@@ -82,13 +81,14 @@ function getFile(filename: string): string {
 /**
  * Parse YAML code sample
  */
-export function parseYamlCode(code: string) {
-  const data = yaml.parse(code) as Required<CodeSample>
+export function parseYamlCode(code: string, filename: string) {
+  const data = parse(code) as Required<CodeSample>
   const replacements = Object.create(null) as Record<string, string>
 
-  if (typeof data !== 'object' || typeof (data as unknown).src !== 'string') {
+  if (typeof data !== 'object' || typeof (data as Record<string, unknown>).src !== 'string') {
     // Do not treat it as custom code
     addCodeTab({
+      filename,
       type: 'src',
       lang: 'yaml',
       code,
@@ -105,22 +105,22 @@ export function parseYamlCode(code: string) {
 
     if (attr === 'extra') {
       // Handle extra array
-      if ((data as unknown).extra === undefined) {
+      if ((data as Record<string, unknown>).extra === undefined) {
         data.extra = []
         continue
       }
       if (!(Array.isArray(data.extra))) {
         // Wrong type?
         throw new TypeError(
-                    `Invalid value type for "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                    `Invalid value type for "${attr}" in code block in ${filename}.`,
         )
       }
 
       // Validate all entries in extra sources
       data.extra.forEach((source) => {
-        if (typeof source !== 'object' || typeof (source as unknown).src !== 'string') {
+        if (typeof source !== 'object' || typeof (source as unknown as Record<string, unknown>).src !== 'string') {
           throw new TypeError(
-                        `Invalid value type for "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                        `Invalid value type for "${attr}" in code block in ${filename}.`,
           )
         }
 
@@ -133,7 +133,7 @@ export function parseYamlCode(code: string) {
           }
           if (typeof source[attr2] !== typeof defaultCodeSampleChunk[attr2]) {
             throw new TypeError(
-                            `Invalid value for "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                            `Invalid value for "${attr}" in code block in ${filename}.`,
             )
           }
         }
@@ -141,7 +141,7 @@ export function parseYamlCode(code: string) {
         // Validate source
         if (!validateCodeSource(source.src)) {
           throw new Error(
-                        `Invalid value for "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                        `Invalid value for "${attr}" in code block in ${filename}.`,
           )
         }
       })
@@ -164,7 +164,7 @@ export function parseYamlCode(code: string) {
         ) {
           // Wrong type?
           throw new TypeError(
-                        `Invalid value type for "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                        `Invalid value type for "${attr}" in code block in ${filename}.`,
           )
         }
         break
@@ -173,7 +173,7 @@ export function parseYamlCode(code: string) {
         // Validate replacements
         if (!(Array.isArray(data.replacements))) {
           throw new TypeError(
-                        `Invalid value type for "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                        `Invalid value type for "${attr}" in code block in ${filename}.`,
           )
         }
         data.replacements.forEach((item) => {
@@ -185,7 +185,7 @@ export function parseYamlCode(code: string) {
                         || !search.length
           ) {
             throw new Error(
-                            `Invalid value type for "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                            `Invalid value type for "${attr}" in code block in ${filename}.`,
             )
           }
           replacements[search] = replace
@@ -196,7 +196,7 @@ export function parseYamlCode(code: string) {
         if (typeof data[attr] !== typeof defaultCodeSample[attr]) {
           // Wrong type?
           throw new TypeError(
-                        `Invalid value type for "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                        `Invalid value type for "${attr}" in code block in ${filename}.`,
           )
         }
     }
@@ -208,7 +208,7 @@ export function parseYamlCode(code: string) {
       // Validate source
       if (!validateCodeSource(data[attr] as string)) {
         throw new Error(
-                    `Invalid value for "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                    `Invalid value for "${attr}" in code block in ${filename}.`,
         )
       }
     }
@@ -219,7 +219,7 @@ export function parseYamlCode(code: string) {
     const attr = key as keyof CodeSample
     if ((defaultCodeSample as unknown)[attr] === undefined) {
       throw new Error(
-                `Invalid attribute "${attr}" in code block in ${renderCodeEnv.filename}.`,
+                `Invalid attribute "${attr}" in code block in ${filename}.`,
       )
     }
   }
@@ -230,7 +230,7 @@ export function parseYamlCode(code: string) {
     const demoFile = locateCodeSample(demoSource, 'demo')
     if (demoFile === null) {
       throw new Error(
-                `Unable to locate demo file "${demoSource}" in code block in ${renderCodeEnv.filename}. Demo file must match source file, but end with ".demo.html" or ".html"`,
+                `Unable to locate demo file "${demoSource}" in code block in ${filename}. Demo file must match source file, but end with ".demo.html" or ".html"`,
       )
     }
     addCodeDemoTab({
@@ -261,10 +261,11 @@ export function parseYamlCode(code: string) {
     const sourceFile = locateCodeSample(src, 'src')
     if (sourceFile === null) {
       throw new Error(
-          `Unable to locate file "${src}" in code block in ${renderCodeEnv.filename}.`,
+          `Unable to locate file "${src}" in code block in ${filename}.`,
       )
     }
     addCodeTab({
+      filename,
       type: 'src',
       src,
       title: source.title,
@@ -281,10 +282,11 @@ export function parseYamlCode(code: string) {
     const stylesheetFile = locateCodeSample(cssSource, 'css')
     if (stylesheetFile === null) {
       throw new Error(
-          `Unable to locate file "${cssSource}" in code block in ${renderCodeEnv.filename}.`,
+          `Unable to locate file "${cssSource}" in code block in ${filename}.`,
       )
     }
     addCodeTab({
+      filename,
       type: 'css',
       src: cssSource,
       title: data.cssTitle,

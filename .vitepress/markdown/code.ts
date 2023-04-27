@@ -1,6 +1,6 @@
 import type { MarkdownRenderer } from 'vitepress'
-import { renderCodeTabs, setRenderCodeEnv } from './code/env'
 import { addCodeTab } from './code/tab'
+import { renderCodeTabs, resetCodeTabs } from './code/tabs'
 import { parseYamlCode } from './code/yaml'
 
 export function codeMDPlugin(md: MarkdownRenderer) {
@@ -10,19 +10,19 @@ export function codeMDPlugin(md: MarkdownRenderer) {
     const code = token.content
 
     const filename = env?.relativePath || 'unknown'
-    setRenderCodeEnv(filename)
-
     if (!lang) {
       throw new TypeError(
         `Missing language for code block in "${filename}"`,
       )
     }
 
+    resetCodeTabs()
     if (lang === 'yaml') {
-      parseYamlCode(code)
+      parseYamlCode(code, filename)
     }
     else {
       addCodeTab({
+        filename,
         type: 'src',
         lang,
         code,
