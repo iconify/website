@@ -128,7 +128,7 @@ interface MDMetadataResult {
  */
 export function getMDMetadata(code: string, filename: string): MDMetadataResult | undefined {
   // Split lines
-  const lines = code.split('\n')
+  const lines = code.split(/\r?\n/)
 
   // Check for metadata
   const firstLine = lines.shift()
