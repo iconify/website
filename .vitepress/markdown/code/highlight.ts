@@ -111,5 +111,9 @@ export function highlightCode(lang: string, str: string) {
   code = code.replace(/ {2}/g, ' &nbsp;')
   code = code.replace(/\n/g, '<br />\n')
 
+  // Fix VP bug
+  code = code.replace(/{/g, '&#123;')
+  code = code.replace(/}/g, '&#125;')
+
   return codeHeader + code + codeFooter
 }
