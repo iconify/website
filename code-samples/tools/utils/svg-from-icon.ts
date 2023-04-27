@@ -1,5 +1,5 @@
 import type { IconifyIcon } from '@iconify/types';
-import { iconToSVG, replaceIDs } from '@iconify/utils';
+import { iconToSVG/* , replaceIDs */ } from '@iconify/utils';
 
 // Icon data in IconifyIcon format
 const data: IconifyIcon = {

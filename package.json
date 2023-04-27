@@ -1,17 +1,20 @@
 {
-  "private": true,
-  "name": "iconify-desing",
-  "version": "3.0.0",
+  "name": "@iconify/website",
   "type": "module",
+  "version": "3.0.0",
+  "private": true,
   "packageManager": "pnpm@8.3.1",
+  "author": "Vjacheslav Trushkin",
   "scripts": {
     "dev": "vitepress dev",
     "dev:pwa": "SW_DEV=true vitepress dev",
-    "build": "pnpm prepare-news && vitepress build",
-    "preview": "pnpm build && vitepress preview",
-    "https": "pnpm build && serve dist",
+    "build": "nr prepare-news && vitepress build",
+    "preview": "nr build && vitepress preview",
+    "https": "nr build && serve dist",
     "prepare-news": "node scripts/news.mjs",
-    "postinstall": "pnpm prepare-news"
+    "postinstall": "nr prepare-news",
+    "lint": "eslint --cache .",
+    "lint:fix": "nr lint --fix"
   },
   "dependencies": {
     "iconify-icon": "^1.0.7"
@@ -36,6 +39,7 @@
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.15.13",
     "@vite-pwa/vitepress": "^0.0.5",
+    "async-es": "^3.2.4",
     "eslint": "^8.39.0",
     "highlight.js": "^11.7.0",
     "highlightjs-svelte": "^1.0.6",
@@ -48,5 +52,10 @@
     "unplugin-vue-components": "^0.24.1",
     "vitepress": "1.0.0-alpha.74",
     "yaml": "^2.2.2"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "workbox-precaching@6.5.4": "patches/workbox-precaching@6.5.4.patch"
+    }
   }
 }

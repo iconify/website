@@ -114,15 +114,15 @@ self.addEventListener('fetch', (e) => {
 if (import.meta.env.PROD) {
   registerRoute(
     ({ sameOrigin, url }) =>
-      sameOrigin && url.pathname.startsWith('/images/news/'),
+      sameOrigin && url.pathname.startsWith('/assets/images/'),
     new StaleWhileRevalidate({
-      cacheName: 'iconify-news-images.cache',
+      cacheName: 'iconify-website-images-cache',
       plugins: [
         new CacheableResponsePlugin({ statuses: [200] }),
         new ExpirationPlugin({
           purgeOnQuotaError: true,
           maxAgeSeconds: 60 * 60 * 24 * 365, // 365 days
-          maxEntries: 100,
+          maxEntries: 250,
         }),
       ],
     }),

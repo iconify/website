@@ -11,7 +11,7 @@ export default withPwa(defineConfig({
   titleTemplate: title,
   description,
   outDir: './dist',
-  srcExclude: ['news/*/*.md', 'partials/**'],
+  srcExclude: ['news/*/*.md', 'partials/**', 'patches/**'],
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/png', sizes: 'any' }],
@@ -68,5 +68,5 @@ export default withPwa(defineConfig({
       copyright: 'Copyright © 2020-PRESENT Iconify OÜ',
     },
   },
-  // pwa,
+  pwa,
 }))

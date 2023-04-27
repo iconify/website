@@ -13,22 +13,61 @@
   "overrides": [
     {
       "files": [
-        "packages/vscode/**/*.*"
-      ],
-      "rules": {
-        "unicorn/prefer-node-protocol": "off"
-      }
-    },
-    {
-      "files": [
-        "**/*.md/*.*"
+        "**/*.md/*.*",
+        "**/*.js",
+        "code-samples/**/*.json",
+        "code-samples/**/*.[jt]s",
+        "code-samples/**/*.jsx",
+        "code-samples/**/*.vue"
       ],
       "rules": {
         "no-restricted-imports": "off",
         "no-restricted-syntax": "off",
         "no-labels": "off",
+        "jsonc/indent": "off",
+        "vue/html-indent": "off",
+        "vue/padding-line-between-blocks": "off",
+        "vue/component-tags-order": "off",
+        "vue/attribute-hyphenation": "off",
+        "operator-linebreak": "off",
+        "prefer-template": "off",
+        "import/newline-after-import": "off",
+        "yml/plain-scalar": "off",
+        "arrow-parens": "off",
+        "no-void": "off",
+        "prefer-const": "off",
+        "curly": "off",
+        "no-cond-assign": "off",
+        "no-multiple-empty-lines": "off",
+        "eol-last": "off",
+        "quote-props": "off",
+        "unicorn/prefer-includes": "off",
+        "n/no-path-concat": "off",
+        "n/handle-callback-err": "off",
+        "unused-imports/no-unused-vars": "off",
+        "no-undef": "off",
+        "no-console": "off",
+        "prefer-arrow-callback": "off",
+        "one-var": "off",
+        "no-var": "off",
+        "no-useless-return": "off",
+        "sort-imports": "off",
+        "prefer-promise-reject-errors": "off",
+        "promise/param-names": "off",
+        "import/order": "off",
+        "unicorn/prefer-node-protocol": "off",
+        "no-tabs": "off",
+        "no-mixed-operators": "off",
+        "antfu/top-level-function": "off",
+        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/semi": "off",
         "@typescript-eslint/no-unused-vars": "off",
-        "@typescript-eslint/no-var-requires": "off"
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/brace-style": "off",
+        "@typescript-eslint/quotes": "off",
+        "@typescript-eslint/member-delimiter-style": "off",
+        "@typescript-eslint/comma-dangle": "off",
+        "@typescript-eslint/space-before-function-paren": "off"
       }
     }
   ]

@@ -122,7 +122,7 @@ Then there are main functions that are used to manipulate SVG instances in the c
 How to use `[func]forEach()`:
 
 ```js
-collection.forEach((svg, name) {
+collection.forEach((svg, name) => {
     console.log('Found icon ' + name + ': ' + svg.toString());
 });
 ```
@@ -131,7 +131,7 @@ How to use `[func]promiseAll()` and `[func]promiseEach()`:
 
 ```js
 collection.promiseAll((svg, name) => {
-    return new Promise((fulfill, reject) {
+    return new Promise((fulfill, reject) => {
         // do stuff to "svg" variable
         fulfill('Result for icon ' + name);
     });
