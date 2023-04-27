@@ -1,5 +1,11 @@
+import { dummyCodeWrappers } from './code/wrappers'
 import type { MDMetaData } from './metadata'
 import { getMDMetadata } from './metadata'
+
+// Lines to ignore: added to keep compiler happy, but aren't used
+const ignoreLines: Set<string> = new Set([
+  ...Array.from(dummyCodeWrappers),
+])
 
 export function parseMDInclude(src: string, filename: string, env: unknown): string {
   // console.log('Parsing:', filename)
@@ -13,7 +19,7 @@ export function parseMDInclude(src: string, filename: string, env: unknown): str
     metadata = metadataResult.metadata;
     (env as Record<string, unknown>).metadata = metadata
 
-    // Add metadata back for future parsing (due to markdown parser limitation it needs to be parsed again in plugin)
+    // Add metadata back for future parsing (due to md parser limitation it needs to be parsed again in plugin)
     metadataHeader = `\`\`\`yaml\n${metadataResult.raw}\n\`\`\`\n`
 
     // Replace content
@@ -24,8 +30,12 @@ export function parseMDInclude(src: string, filename: string, env: unknown): str
   const parsedLines: string[] = []
   src.split('\n').forEach((line) => {
     const trimmedLine = line.trim()
-    // if (trimmedLine.startsWith('`include '))
+    if (ignoreLines.has(trimmedLine))
+      return
+
+    parsedLines.push(line)
   })
+  src = parsedLines.join('\n')
 
   // TODO: replacements
   if (metadata?.replacements) {

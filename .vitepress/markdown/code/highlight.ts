@@ -1,6 +1,7 @@
 import hljs from 'highlight.js'
 import { fixHighlightedCode } from '../highlight'
 import { replaceAllStrings } from './replace'
+import { dummyCodeWrappers } from './wrappers'
 
 const codeHeader = '<code class="highlight hljs">'
 const codeFooter = '</code>'
@@ -9,6 +10,7 @@ const codeFooter = '</code>'
  * Clean code
  */
 export function cleanupCode(lang: string, str: string): string {
+  // Language specific stuff
   switch (lang) {
     case 'php':
       if (
@@ -22,7 +24,11 @@ export function cleanupCode(lang: string, str: string): string {
       break
   }
 
-  return str
+  // Remove wrappers
+  return str.split('\n').filter((line) => {
+    const trimmedLine = line.trim()
+    return !dummyCodeWrappers.has(trimmedLine)
+  }).join('\n')
 }
 
 /**

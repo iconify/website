@@ -1,3 +1,4 @@
+<JSXWrapper>
 <p>
 	No flip: <InlineIcon icon="bi:check2-circle" />
 </p>
@@ -10,3 +11,4 @@
 <p>
 	Both (or 180° rotation): <InlineIcon icon="bi:check2-circle" flip="horizontal,vertical" />
 </p>
+</JSXWrapper>

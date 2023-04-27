@@ -28,6 +28,7 @@ include: icon-components/components/size-units
 ```
 
 ```jsx
+<JSXWrapper>
 // Number
 <Icon icon="mdi:home" height={24} />
 // String without units
@@ -36,6 +37,7 @@ include: icon-components/components/size-units
 <Icon icon="mdi:home" height="24px" />
 // String with units, font-size is 16px
 <Icon icon="mdi:home" height="1.5em" />
+</JSXWrapper>
 ```
 
 ## Keyword "auto" {#auto}

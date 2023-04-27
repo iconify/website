@@ -1,3 +1,4 @@
+<JSXWrapper>
 <p>
 	No rotation: <InlineIcon icon="bi:check2-circle" />
 </p>
@@ -10,3 +11,4 @@
 <p>
 	270° rotation: <InlineIcon icon="bi:check2-circle" rotate={3} />
 </p>
+</JSXWrapper>
