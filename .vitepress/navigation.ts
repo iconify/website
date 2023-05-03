@@ -54,7 +54,7 @@ function sideBarForDocumentation(link: string) {
 const AboutNav: DefaultTheme.NavItemWithLink[] = [
   { text: 'About Iconify', link: '/about/' },
   { text: 'Support', link: '/support/' },
-  { text: 'History', link: '/about/history' },
+  { text: 'History', link: '/about/history.md' },
 ]
 
 const DefaultSidebar: DefaultTheme.SidebarItem[] = [
@@ -72,7 +72,7 @@ const DefaultSidebar: DefaultTheme.SidebarItem[] = [
   },
   {
     text: 'Sponsor Iconify',
-    link: '/sponsors',
+    link: '/sponsors/',
   },
   {
     text: 'About Iconify',
@@ -88,7 +88,7 @@ const DefaultSidebar: DefaultTheme.SidebarItem[] = [
   },
   {
     text: 'Privacy',
-    link: '/privacy',
+    link: '/privacy/',
   },
 ]
 
@@ -109,7 +109,7 @@ export const Nav: DefaultTheme.NavItem[] = [
   },
   {
     text: 'Sponsor',
-    link: '/sponsors',
+    link: '/sponsors/',
   },
   {
     text: 'About',

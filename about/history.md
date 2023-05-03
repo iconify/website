@@ -14,7 +14,7 @@ Icon fonts are ugly, hard to customise and once you choose an icon font, you are
 
 In 2018, after a couple of years of experimenting with icons in free time, I came up with a solution: SVG framework that dynamically loads icon data from API.
 
-Finally I could offer my users a huge choice of icons, but without downsides of embedding multiple icon fonts. Unlike fonts, it downloaded data only for icons used on page, rendered pixel perfect SVG.
+Finally, I could offer my users a huge choice of icons, but without downsides of embedding multiple icon fonts. Unlike fonts, it downloaded data only for icons used on page, rendered pixel perfect SVG.
 
 Initially, the project was called SimpleSVG.
 
@@ -34,7 +34,7 @@ Slowly work on Iconify took over, I did not have time to work on forum software.
 
 Iconify was not a simple solution, it had multiple parts that required a lot of time to develop, maintain and improve: SVG framework, maintaining API software and servers, maintaining icon sets and tools for parsing icons, developing icon finder, maintaining plugins for Sketch and Figma.
 
-In 2020 I was invited to AWS Startup Day in Helsinki. At the event I talked to several successful startup owners, learned a lot about startups, it was an amazing experience.
+In 2020, I was invited to AWS Startup Day in Helsinki. At the event I talked to several successful startup owners, learned a lot about startups, it was an amazing experience.
 
 After the AWS Startup event, I have decided to try to turn Iconify into a startup. I have officially registered a company in Estonia. At that time multiple parts of the project were still in development and the project was far from being ready.
 
@@ -58,19 +58,19 @@ My original plan was to finish developing it by the end of 2020. However, later 
 
 So I have decided to take it slowly.
 
-Instead of rushing development, I have decided to take time improving existing code. There was a lot to improve: project required [better documentation](https://docs.iconify.design/), [new tools](https://docs.iconify.design/tools/), better website. Code in all parts of the project was initially written in JavaScript, but could use a full rewrite with TypeScript and ES modules support. My plan was to work on the project without rushing it, so the end product would have high quality code.
+Instead of rushing development, I have decided to take time improving existing code. There was a lot to improve: project required [better documentation](/docs/index.md), [new tools](/docs/tools/index.md), better website. Code in all parts of the project was initially written in JavaScript, but could use a full rewrite with TypeScript and ES modules support. My plan was to work on the project without rushing it, so the end product would have high quality code.
 
 This was a good idea. Now, there are several third party icon components, which would be hard to create without proper documentation and tools. Project code is modern, ready for future.
 
 ### Icon components
 
-Originally, Iconify was focused on the [SVG framework](https://docs.iconify.design/icon-components/svg-framework/), which was a good idea, but developers were asking for different solutions.
+Originally, Iconify was focused on the [SVG framework](/docs/icon-components/svg-framework/index.md), which was a good idea, but developers were asking for different solutions.
 
-In addition to the SVG framework, in 2021 I published [native icon components for multiple frameworks](https://docs.iconify.design/icon-components/components/) (React, Svelte, Vue) that had load on demand functionality, similar to the SVG framework.
+In addition to the SVG framework, in 2021 I published [native icon components for multiple frameworks](/docs/icon-components/components/index.md) (React, Svelte, Vue) that had load on demand functionality, similar to the SVG framework.
 
 ### Web component
 
-In mid 2022, new [web component](https://docs.iconify.design/iconify-icon/) was created, which is an even better solution than SVG framework.
+In mid 2022, new [web component](/docs/iconify-icon/index.md) was created, which is an even better solution than SVG framework.
 
 When project was in development, web components were not usable because browsers did not support them, so SVG framework and components native to UI frameworks were the best solutions. Internet Explorer did not support shadow DOM until the very end. But today all modern browsers support web components. Internet Explorer, last browser to cause problems, moved to Chromium.
 
@@ -80,7 +80,7 @@ Web component will eventually replace all other icon components.
 
 In addition to components mentioned above, there are now several third party components, developed by various authors.
 
-It became possible [with creation of detailed documentation](https://docs.iconify.design/) and [tools to work with icon data](https://docs.iconify.design/tools/) in late 2021.
+It became possible [with creation of detailed documentation](/docs/index.md) and [tools to work with icon data](/docs/tools/index.md) in late 2021.
 
 ## Open source
 
@@ -91,4 +91,4 @@ New plan is to:
 -   Open source everything, encourage developers to create their own open source solutions that use Iconify.
 -   Rely on sponsors to finance development.
 
-If you are using Iconify in your projects, [please consider sponsoring Iconify development](/sponsors).
+If you are using Iconify in your projects, [please consider sponsoring Iconify development](/sponsors/index.md).
