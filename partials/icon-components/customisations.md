@@ -2,7 +2,7 @@
 
 Vertical alignment:
 
-- `[prop]inline`, `[type]boolean`. If enabled, adds `[html]vertical-align: -0.125em` to style, rendering icon below base line. The default value is `false`.
+- `[prop]inline`, `[type]boolean`. If enabled, adds `[html]vertical-align: -0.125em` to style, rendering icon below baseline. The default value is `false`.
 
 Icon dimensions:
 

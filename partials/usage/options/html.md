@@ -1,3 +1,3 @@
-- [You can add icons to CSS](/usage/css/index.md).
-- [You can add SVG to HTML](/usage/svg/index.md).
-- [Iconify offers unique components that render icons on demand](/icon-components/index.md).
+- [You can add icons to CSS](/docs/usage/css/index.md).
+- [You can add SVG to HTML](/docs/usage/svg/index.md).
+- [Iconify offers unique components that render icons on demand](/docs/icon-components/index.md).

@@ -8,4 +8,4 @@ replacements:
     value: '${counters.sets} icon sets'
 ```
 
-All icon sets available with [Iconify API](/api/index.md) are available as standalone icon packages. There are over 60,000 icons from more than 80 icon sets.
+All icon sets available with [Iconify API](/docs/api/index.md) are available as standalone icon packages. There are over 60,000 icons from more than 80 icon sets.

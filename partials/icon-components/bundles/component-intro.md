@@ -1,4 +1,4 @@
-This tutorial is a part of [Iconify icon bundles tutorial](./index.md) and [Iconify for React documentation](/icon-components/react/index.md).
+This tutorial is a part of [Iconify icon bundles tutorial](./index.md) and [Iconify for React documentation](/docs/icon-components/react/index.md).
 
 Icon bundle is the easiest way to make Iconify components work without internet access. Instead of loading icon data from Iconify API, you can provide icon by loading icon bundle.
 

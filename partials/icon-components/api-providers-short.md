@@ -2,4 +2,4 @@ API providers allow using icons from multiple API in the same document. For exam
 
 `include api/namespaces/animation`
 
-See [API providers documentation](/api/providers.md) for details.
+See [API providers documentation](/docs/api/providers.md) for details.

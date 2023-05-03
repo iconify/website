@@ -22,4 +22,4 @@ Exceptions:
 
 There are over 60,000 icons available from 80+ icon sets. [Browse icons sets](https://icon-sets.iconify.design/) to see all available icons.
 
-You can also add custom API providers for more icon choices. See [API providers documentation](/api/providers.md).
+You can also add custom API providers for more icon choices. See [API providers documentation](/docs/api/providers.md).

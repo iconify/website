@@ -1,9 +1,9 @@
 import type { MarkdownRenderer } from 'vitepress'
 import { codeMDPlugin } from './markdown/code'
-import { parseMDInclude } from './markdown/include'
 import { disableFenceMD } from './markdown/fence'
 import { customInlineCodeMD } from './markdown/inline'
 import { metadataMDPlugin } from './markdown/metadata'
+import { customMDParser } from './markdown/partial'
 
 export function mdConfig(md: MarkdownRenderer): MarkdownRenderer {
   // Add custom plugins
@@ -12,11 +12,10 @@ export function mdConfig(md: MarkdownRenderer): MarkdownRenderer {
   metadataMDPlugin(md)
   codeMDPlugin(md)
 
-  // Override render to handle dynamic includes
-  const oldRender = md.render
-  md.render = (src, env) => {
-    const filename = env?.relativePath
-    return oldRender(filename ? parseMDInclude(src, filename, env) : src, env)
+  // Override parser to handle imported content and replacements
+  const oldParse = md.parse
+  md.parse = (src, env) => {
+    return oldParse.call(md, customMDParser(src, env?.relativePath ?? 'unknown'), env)
   }
 
   return md

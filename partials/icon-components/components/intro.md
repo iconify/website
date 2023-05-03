@@ -6,7 +6,7 @@ replacements:
     value: '${counters.sets}+'
 ```
 
-In addition to [SVG framework](/icon-components/svg-framework/index.md), Iconify offers native components for several popular UI frameworks. Iconify for React is one of such components.
+In addition to [SVG framework](/docs/icon-components/svg-framework/index.md), Iconify offers native components for several popular UI frameworks. Iconify for React is one of such components.
 
 Yet another icon component? What are advantages over other icon components?
 

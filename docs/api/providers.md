@@ -94,7 +94,7 @@ Components also support it, but components are usually bundled, so you should be
 
 After you add configuration for API provider, which is one simple function call, you can use icons from that API provider.
 
-All you have to do is add provider to icon name. Provider in icon name must match first paramter to `[func]addAPIProvider()`:
+All you have to do is add provider to icon name. Provider in icon name must match first parameter to `[func]addAPIProvider()`:
 
 ```html
 <span class="iconify" data-icon="@icons8:ios-glyphs:color-dropper"></span>

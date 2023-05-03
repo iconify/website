@@ -2,4 +2,4 @@
 - `[func]loadIcon(icon)`. Loads one icon from API, returns `[type]Promise`.
 - `[func]enableCache()`. Enables caching in `[prop]localStorage` and `[prop]sessionStorage`.
 - `[func]disableCache()`. Disables caching in `[prop]localStorage` and `[prop]sessionStorage`.
-- `[func]addAPIProvider()`. Adds custom API provider. See [API providers documentation](/api/providers.md).
+- `[func]addAPIProvider()`. Adds custom API provider. See [API providers documentation](/docs/api/providers.md).
