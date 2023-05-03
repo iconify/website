@@ -29,7 +29,7 @@ export default withPwa(defineConfig({
     ['meta', { name: 'twitter:url', content: ogUrl }],
   ],
   lastUpdated: true,
-  cleanUrls: true,
+  cleanUrls: false,
   ignoreDeadLinks: [
     /^\/docs\/icon-bundles/,
     /^\/interactive/,

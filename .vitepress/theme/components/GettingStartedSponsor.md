@@ -12,7 +12,7 @@ import heart from '/assets/svg/heart.svg?raw'
         </p>
         <p>
             If you are using Iconify in your projects,
-            <a href="/sponsors"
+            <a href="/sponsors.md"
                 >please consider sponsoring Iconify development</a
             >.
         </p>

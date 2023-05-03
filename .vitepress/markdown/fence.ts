@@ -1,4 +1,6 @@
 import type { MarkdownRenderer } from 'vitepress'
+
+// @ts-expect-error Default export from old code
 import type Token from 'markdown-it/lib/token'
 
 function changeTokens(tokens: Token[], nested = false) {

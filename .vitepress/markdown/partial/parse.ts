@@ -141,8 +141,6 @@ export function parseMDContent(src: string, filename: string): ParsedContent {
 export function parseHTMLContent(src: string, filename: string): ParsedContent {
   if (src.includes('data-partial'))
     throw new Error(`Unsupported "data-partial" in "${filename}"`)
-  // if (src.includes('.md"'))
-  //   throw new Error(`Links to .md file in "${filename}"`)
 
   // Split to metadata/content
   let { content, metadata } = splitHTMLMetadata(cleanupMDContent(src), filename)

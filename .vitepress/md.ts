@@ -1,6 +1,7 @@
 import type { MarkdownRenderer } from 'vitepress'
 import { codeMDPlugin } from './markdown/code'
 import { disableFenceMD } from './markdown/fence'
+import { htmlMDPlugin } from './markdown/html'
 import { customInlineCodeMD } from './markdown/inline'
 import { metadataMDPlugin } from './markdown/metadata'
 import { customMDParser } from './markdown/partial'
@@ -11,6 +12,7 @@ export function mdConfig(md: MarkdownRenderer): MarkdownRenderer {
   customInlineCodeMD(md)
   metadataMDPlugin(md)
   codeMDPlugin(md)
+  htmlMDPlugin(md)
 
   // Override parser to handle imported content and replacements
   const oldParse = md.parse

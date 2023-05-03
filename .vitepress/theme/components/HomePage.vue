@@ -13,7 +13,7 @@ interface ButtonData {
   primary?: true
 }
 const actions: ButtonData[] = [{
-  link: '/getting-started',
+  link: '/getting-started/',
   text: 'Getting Started',
   primary: true,
 }, {
