@@ -5,7 +5,6 @@ types:
   IconifyJSON: '../../../types/iconify-json.md'
   IconifyInfo: '../../../types/iconify-info.md'
   FullIconifyIcon: '../../utils/full-iconify-icon.md'
-  IconifyIconName: '../icon-name.md'
   Color: '../../utils/color.md'
   FullIconCustomisations: '../../utils/icon-customisations.md'
   IconCustomisations: '../../utils/icon-customisations.md'

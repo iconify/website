@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify for React Function: loadIcons'
-functions:
-  scan: './scan.md'
 types:
   IconifyIconName: './icon-name.md'
 ```
