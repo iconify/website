@@ -2,7 +2,7 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const NewsSidebar: DefaultTheme.SidebarItem[] = [
-  { text: 'Getting Started', link: '/getting-started' },
+  { text: 'Getting Started', link: '/getting-started/' },
   {
     text: 'Iconify Updates',
     link: '/news/',

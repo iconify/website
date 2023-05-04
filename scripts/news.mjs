@@ -73,7 +73,7 @@ Iconify updates can be found in the following pages:
 
 ${years.sort().reverse().map(y => `- [Year ${y}](./${y})`).join('\n')}
 
-<LatestNews />
+<latest-news />
 `
 
   return writeFile(resolve(newsFolder, 'index.md'), newsList, 'utf-8')
@@ -181,7 +181,7 @@ function generateNewsNavbar(rootFolder, years) {
 import type { DefaultTheme } from 'vitepress'
 
 export const NewsSidebar: DefaultTheme.SidebarItem[] = [
-  { text: 'Getting Started', link: '/getting-started' },
+  { text: 'Getting Started', link: '/getting-started/' },
   {
     text: 'Iconify Updates',
     link: '/news/',

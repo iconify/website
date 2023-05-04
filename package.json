@@ -52,11 +52,12 @@
     "unocss": "^0.51.6",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
-    "vitepress": "1.0.0-alpha.74",
+    "vitepress": "1.0.0-alpha.75",
     "yaml": "^2.2.2"
   },
   "pnpm": {
     "patchedDependencies": {
+      "vite-plugin-pwa@0.14.7": "patches/vite-plugin-pwa@0.14.7.patch",
       "workbox-precaching@6.5.4": "patches/workbox-precaching@6.5.4.patch"
     }
   }

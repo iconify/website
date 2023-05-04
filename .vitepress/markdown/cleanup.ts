@@ -1,5 +1,6 @@
 import { load } from 'cheerio'
 import type { MarkdownRenderer } from 'vitepress'
+import { excludeTransform } from '../md-env'
 import { fixHTMLBug } from './fix-html'
 import { fixHTMLLinks } from './links/fix'
 import { applyLinksInHTML } from './links/metadata'
@@ -7,7 +8,7 @@ import { applyLinksForTypes } from './links/types'
 import type { MDEnv } from './metadata/types'
 
 export function cleanupRenderedHTML(content: string, md: MarkdownRenderer, env?: MDEnv): string {
-  if (!env)
+  if (!env || excludeTransform(env))
     return content
 
   // Get metadata

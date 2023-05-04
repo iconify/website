@@ -64,4 +64,4 @@ Originally, the plan was to eventually offer premium icon sets that would pay fo
 
 If you are using Iconify in your projects, [please consider sponsoring Iconify development](/sponsors/index.md).
 
-<ContactInfo />
+<contact-info />

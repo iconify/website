@@ -2,18 +2,18 @@
 title: Getting Started
 ---
 
-<GettingStartedHero />
+<getting-started-hero />
 
-<GettingStartedFreedom />
+<getting-started-freedom />
 
-<GettingStartedIconSets />
+<getting-started-icon-sets />
 
-<GettingStartedIntro />
+<getting-started-intro />
 
-<GettingStartedSponsor />
+<getting-started-sponsor />
 
-<LatestNews />
+<latest-news />
 
-<GettingStartedLicense />
+<getting-started-license />
 
 
