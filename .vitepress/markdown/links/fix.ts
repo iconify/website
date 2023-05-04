@@ -1,5 +1,6 @@
 import type { MarkdownRenderer } from 'vitepress'
 import type { MDEnv } from '../metadata/types'
+import { getAbsoluteLink } from './relative'
 import { validateAbsoluteLink } from './validate'
 
 const fixedLinksCache = Object.create(null) as Record<string, string>
@@ -27,12 +28,17 @@ function checkSimpleLink(href: string, env: MDEnv): string | undefined {
 
 export function fixHTMLLink(href: string, md: MarkdownRenderer, env: MDEnv): string {
   // Split to link and params
-  const target = href.split(/[#?]/).shift() as string
+  let target = href.split(/[#?]/).shift() as string
   const params = href.slice(target.length)
 
   // Convert to absolute link
-  if (!target.startsWith('/'))
-    throw new Error('TODO: convert to absolute')
+  if (!target.startsWith('/')) {
+    const filename = env?.relativePath
+    if (!filename)
+      throw new Error('Cannot parse relative link when env.relativePath is missing')
+
+    target = getAbsoluteLink(target, filename)
+  }
 
   // Validate it
   validateAbsoluteLink(target, env?.relativePath)
@@ -58,4 +64,9 @@ export function fixHTMLLink(href: string, md: MarkdownRenderer, env: MDEnv): str
   fixedLinksCache[target] = fixedLink
 
   return fixedLink + params
+}
+
+export function fixHTMLLinks(links: Record<string, string>, md: MarkdownRenderer, env: MDEnv) {
+  for (const key in links)
+    links[key] = fixHTMLLink(links[key], md, env)
 }

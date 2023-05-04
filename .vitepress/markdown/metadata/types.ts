@@ -6,6 +6,7 @@ export interface MDEnv {
   excerpt?: string
   title?: string
   links?: string[]
+  metadata?: MDMetaData
 }
 
 interface TextReplacement {

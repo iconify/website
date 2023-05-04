@@ -1,4 +1,5 @@
 import type { MarkdownRenderer } from 'vitepress'
+import { cleanupRenderedHTML } from './markdown/cleanup'
 import { codeMDPlugin } from './markdown/code'
 import { disableFenceMD } from './markdown/fence'
 import { htmlMDPlugin } from './markdown/html'
@@ -18,6 +19,13 @@ export function mdConfig(md: MarkdownRenderer): MarkdownRenderer {
   const oldParse = md.parse
   md.parse = (src, env) => {
     return oldParse.call(md, customMDParser(src, env?.relativePath ?? 'unknown'), env)
+  }
+
+  // Handle rendered HTML
+  const oldRender = md.render
+  md.render = (src, env) => {
+    const result = oldRender.call(md, src, env)
+    return cleanupRenderedHTML(result, md, env)
   }
 
   return md

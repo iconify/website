@@ -1,5 +1,6 @@
 import type { MarkdownRenderer } from 'vitepress'
 import { load } from 'cheerio'
+import { fixHTMLBug } from './fix-html'
 import { fixHTMLLink } from './links/fix'
 
 export function htmlMDPlugin(md: MarkdownRenderer) {
@@ -24,7 +25,7 @@ export function htmlMDPlugin(md: MarkdownRenderer) {
       $link.attr('href', fixedLink)
     })
 
-    token.content = $html.html()
+    token.content = fixHTMLBug($html.html())
     return oldHTMLBlock(...params)
   }
 }

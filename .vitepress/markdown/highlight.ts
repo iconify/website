@@ -1,5 +1,6 @@
 import hljs from 'highlight.js'
 import hljs_svelte from 'highlightjs-svelte'
+import { fixHTMLBug } from './fix-html'
 import { hljsDefineVue } from './highlight-vue'
 
 // Import additional syntax highlight modules
@@ -11,9 +12,7 @@ export function fixHighlightedCode(code: string): string {
   code = code.replaceAll('</span', '</span>').replaceAll('</span>>', '</span>')
 
   // Fix VP bug
-  code = code.replace(/{/g, '&#123;') // cannot handle '{' in code
-  code = code.replace(/}/g, '&#125;') // cannot handle '}' in code
+  code = fixHTMLBug(code)
 
   return code
 }
-
