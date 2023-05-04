@@ -65,6 +65,16 @@ a.edit-link-button[class], .vp-doc a {
   }
 }
 
+/* VPNavBarTitle */
+.VPNavBarTitle.has-sidebar {
+  .title:hover {
+    opacity: 1;
+    svg {
+      transform: scale(1.1);
+    }
+  }
+}
+
 /* Transition by color instead of opacity */
 /*.dark .vp-doc .custom-block a {
   transition: color 0.25s;

@@ -1,19 +1,21 @@
-import { readFileSync } from 'node:fs'
+import { readFile } from 'node:fs/promises'
 import type { Plugin } from 'vite'
 
-// Load logo and replace palette
-const logo = readFileSync('public/assets/svg/logo-iconify.svg', 'utf8')
-  .replaceAll('#979797', 'var(--vp-c-brand-gray)')
-  .replaceAll('#AEAEAE', 'var(--vp-c-brand-gray2)')
-  .replaceAll('#307594', 'var(--vp-c-brand)')
-  .replaceAll('#E13E31', 'var(--vp-c-brand-accent-logo)')
-
 export default function NavbarFix(): Plugin {
+  // Load logo and replace palette
+  const logoPromise = readFile('public/assets/svg/logo-iconify.svg', 'utf8')
+    .then(logo => logo
+      .replaceAll('#979797', 'var(--vp-c-brand-gray)')
+      .replaceAll('#AEAEAE', 'var(--vp-c-brand-gray2)')
+      .replaceAll('#307594', 'var(--vp-c-brand)')
+      .replaceAll('#E13E31', 'var(--vp-c-brand-accent-logo)'),
+    )
   return {
     name: 'vitepress-sidebar-navbar',
     enforce: 'pre',
-    transform(code, id) {
+    async transform(code, id) {
       if (id.includes('VPNavBarTitle.vue') && !id.endsWith('.css') && !id.includes('&setup=')) {
+        const logo = await logoPromise
         return `
 <script setup lang="ts">
 import { useData } from '../composables/data'
