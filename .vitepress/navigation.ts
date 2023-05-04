@@ -3,27 +3,27 @@ import { NewsSidebar } from './news-navigation'
 
 const DocumentationNav: DefaultTheme.NavItemWithLink[] = [
   { text: 'Iconify documentation', link: '/docs/' },
+  { text: 'Icons', link: '/docs/icons/', activeMatch: '^/docs/icons/' },
+  { text: 'How to use icons', link: '/docs/usage/', activeMatch: '^/docs/usage/' },
   { text: 'Iconify API', link: '/docs/api/' },
   { text: 'Articles', link: '/docs/articles/' },
   { text: 'Icons on demand', link: '/docs/icon-components/' },
   { text: 'Iconify Icon Web Component', link: '/docs/iconify-icon/' },
-  { text: 'Icons', link: '/docs/icons/' },
   { text: 'Tools for Developers', link: '/docs/tools/' },
   { text: 'Iconify Types', link: '/docs/types/' },
-  { text: 'How to use icons', link: '/docs/usage/' },
 ]
 
 const DocumentationSidebar: DefaultTheme.SidebarItem[] = [
   { text: 'Getting Started', link: '/getting-started/' },
   { text: 'Iconify documentation', link: '/docs/' },
+  { text: 'Icons', link: '/docs/icons/' },
+  { text: 'How to use icons', link: '/docs/usage/' },
   { text: 'Iconify API', link: '/docs/api/' },
   { text: 'Articles', link: '/docs/articles/' },
   { text: 'Icons on demand', link: '/docs/icon-components/' },
   { text: 'Iconify Icon Web Component', link: '/docs/iconify-icon/' },
-  { text: 'Icons', link: '/docs/icons/' },
   { text: 'Tools for Developers', link: '/docs/tools/' },
   { text: 'Iconify Types', link: '/docs/types/' },
-  { text: 'How to use icons', link: '/docs/usage/' },
 ]
 
 // TODO: add each sidebar item to the sidebar for that section
@@ -33,10 +33,34 @@ const DocumentationSidebars: Record<string, DefaultTheme.SidebarItem[]> = {
   '/docs/articles/': [],
   '/docs/icon-components/': [],
   '/docs/iconify-icon/': [],
-  '/docs/icons/': [],
+  '/docs/icons/': [{
+    text: 'Icon Basics',
+    link: '/docs/icons/icon-basics',
+  }, {
+    text: 'Icon Set Basics',
+    link: '/docs/icons/icon-set-basics',
+  }, {
+    text: 'Icon Data',
+    link: '/docs/icons/icon-data',
+  }, {
+    text: 'Custom Icon Sets',
+    link: '/docs/icons/custom',
+  }],
   '/docs/tools/': [],
   '/docs/types/': [],
-  '/docs/usage/': [],
+  '/docs/usage/': [{
+    text: 'SVG in CSS',
+    link: '/docs/usage/css/',
+  }, {
+    text: 'SVG in HTML',
+    link: '/docs/usage/svg/',
+  }, {
+    text: 'Icons on Demand',
+    link: '/docs/icon-components/',
+  }, {
+    text: 'UI Design',
+    link: '/docs/design/',
+  }],
 }
 
 function sideBarForDocumentation(link: string) {
