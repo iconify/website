@@ -22,7 +22,8 @@ table {
   over scoped class data attribute.
 */
 .dark {
-  .vp-doc a:not(.VPSocialLink),
+  /* todo: review this if team included */
+  /*.vp-doc a:not(.VPSocialLink),*/
   .vp-doc a > code,
   .VPNavBarMenuLink.VPNavBarMenuLink:hover,
   .VPNavBarMenuLink.VPNavBarMenuLink.active,
