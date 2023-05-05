@@ -4,6 +4,7 @@ import { pwa } from './pwa'
 import { mdConfig } from './md'
 import { description, ogImage, ogUrl, title } from './constants'
 import { GlobalSidebar, Nav } from './navigation'
+import { buildEnd, transformHtml } from './sitemap'
 
 export default withPwa(defineConfig({
   lang: 'en-US',
@@ -13,10 +14,12 @@ export default withPwa(defineConfig({
   outDir: './dist',
   srcExclude: ['news/*/*.md', 'partials/**', 'patches/**'],
   head: [
+    ['link', { rel: 'preconnect', href: 'https://srv.carbonads.net' }],
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/png', sizes: 'any' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
     ['meta', { name: 'author', content: 'Iconify OÜ' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { name: 'og:title', content: title }],
@@ -32,7 +35,6 @@ export default withPwa(defineConfig({
   cleanUrls: false,
   ignoreDeadLinks: [
     /^\/docs\/icon-bundles/,
-    /^\/interactive/,
     /:\/\/localhost/,
   ],
 
@@ -68,5 +70,7 @@ export default withPwa(defineConfig({
       copyright: 'Copyright © 2020-PRESENT Iconify OÜ',
     },
   },
+  transformHtml,
+  buildEnd,
   pwa,
 }))
