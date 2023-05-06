@@ -3,9 +3,7 @@ import { description, title } from './constants'
 
 export const pwa: Partial<VitePWAOptions> = {
   outDir: 'dist',
-  strategies: 'injectManifest',
-  srcDir: '.vitepress',
-  filename: 'sw.ts',
+  strategies: 'generateSW',
   registerType: 'autoUpdate',
   includeManifestIcons: false,
   injectRegister: false,
@@ -35,16 +33,47 @@ export const pwa: Partial<VitePWAOptions> = {
       },
     ],
   },
-
-  injectManifest: {
-    // rollupFormat: 'iife',
+  workbox: {
+    cleanupOutdatedCaches: true,
+    clientsClaim: true,
+    skipWaiting: true,
     globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2,xml,txt}'],
-    globIgnores: ['images/news/**'],
+    globIgnores: ['assets/images/**', 'assets/icons/**', 'assets/svg/**'],
+    runtimeCaching: [{
+      urlPattern: ({ sameOrigin, url }) =>
+        sameOrigin && (url.pathname.startsWith('/assets/images/') || url.pathname.startsWith('/assets/icons/') || url.pathname.startsWith('/assets/svg/')),
+      handler: 'StaleWhileRevalidate',
+      options: {
+        cacheName: 'iconify-website-images-cache',
+        expiration: {
+          purgeOnQuotaError: true,
+          maxEntries: 256,
+          maxAgeSeconds: 60 * 60 * 24 * 7, // <== 7 days
+        },
+        cacheableResponse: {
+          statuses: [200],
+        },
+      },
+    }, {
+      urlPattern: /^https:\/\/cyberalien.github.io\/.*/i,
+      handler: 'NetworkFirst',
+      options: {
+        cacheName: 'cyberalien-gh-images-cache',
+        expiration: {
+          maxEntries: 10,
+          maxAgeSeconds: 60 * 60 * 24, // <== 1 day
+        },
+        cacheableResponse: {
+          // don't remove 0, handling opaque responses (CORS)
+          statuses: [0, 200],
+        },
+      },
+    }],
   },
   devOptions: {
     enabled: process.env.SW_DEV === 'true',
     /* when building, the PWA plugin will switch to classic */
-    type: 'module',
+    // type: 'module',
     navigateFallback: 'index.html',
   },
 }

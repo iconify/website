@@ -56,4 +56,4 @@ Around is an excellent collaboration tool designed for developers. [Check them o
     </div>
 </div>
 
-<ContactInfo />
+<contact-info />

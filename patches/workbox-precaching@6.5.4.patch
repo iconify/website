@@ -17,7 +17,7 @@ index e00975e3762dc6382c39bebee04a89a651aae3d0..f2df7d7cfac6648a4f0df18bfe5957dd
 -            // Cache entries one at a time.
              // See https://github.com/GoogleChrome/workbox/issues/2528
 -            for (const [url, cacheKey] of this._urlsToCacheKeys) {
-+            await eachLimit(this._urlsToCacheKeys, 10, async ([url, cacheKey]) => {
++            await eachLimit(this._urlsToCacheKeys, 5, async ([url, cacheKey]) => {
                  const integrity = this._cacheKeysToIntegrities.get(cacheKey);
                  const cacheMode = this._urlsToCacheModes.get(url);
                  const request = new Request(url, {

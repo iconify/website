@@ -60,7 +60,6 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "vite-plugin-pwa@0.14.7": "patches/vite-plugin-pwa@0.14.7.patch",
       "workbox-precaching@6.5.4": "patches/workbox-precaching@6.5.4.patch"
     }
   }

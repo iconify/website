@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import UnoCSS from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import { isCI, isDevelopment } from 'std-env'
 import navbar from './plugins/navbar'
 
 export default defineConfig({
@@ -16,7 +17,7 @@ export default defineConfig({
     },
   },
   define: {
-    PWA: process.env.NODE_ENV === 'production' || process.env.SW_DEV === 'true',
+    PWA: isCI || !isDevelopment || process.env.SW_DEV === 'true',
   },
   plugins: [
     Components({
@@ -32,7 +33,6 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        'vue/macros',
         '@vueuse/core',
       ],
       dts: 'auto-imports.d.ts',
