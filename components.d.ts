@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ContactInfo: typeof import('./.vitepress/theme/components/ContactInfo.md')['default']
     CopyToClipboard: typeof import('./.vitepress/theme/components/CopyToClipboard.vue')['default']
+    DelayDemoWrapper: typeof import('./.vitepress/theme/components/DelayDemoWrapper.vue')['default']
     GettingStartedFreedom: typeof import('./.vitepress/theme/components/GettingStartedFreedom.md')['default']
     GettingStartedHero: typeof import('./.vitepress/theme/components/GettingStartedHero.md')['default']
     GettingStartedIconSets: typeof import('./.vitepress/theme/components/GettingStartedIconSets.md')['default']
