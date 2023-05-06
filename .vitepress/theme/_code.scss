@@ -109,8 +109,9 @@ div.code-blocks code {
   &-copy {
     display: none;
     position: absolute;
-    right: 8px;
-    top: 3px;
+    right: 0;
+    top: 0;
+    padding: 3px 8px;
     color: var(--vp-c-brand);
     transition: color 0.2s linear;
     &:hover {
