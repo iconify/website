@@ -5,12 +5,12 @@ const DocumentationNav: DefaultTheme.NavItemWithLink[] = [
   { text: 'Iconify documentation', link: '/docs/' },
   { text: 'Icons', link: '/docs/icons/', activeMatch: '^/docs/icons/' },
   { text: 'How to use icons', link: '/docs/usage/', activeMatch: '^/docs/usage/' },
-  { text: 'Iconify API', link: '/docs/api/' },
-  { text: 'Articles', link: '/docs/articles/' },
-  { text: 'Icons on demand', link: '/docs/icon-components/' },
+  { text: 'Iconify Types', link: '/docs/types/', activeMatch: '^/docs/types/' },
+  { text: 'Tools for Developers', link: '/docs/tools/', activeMatch: '^/docs/tools/' },
+  { text: 'Iconify API', link: '/docs/api/', activeMatch: '^/docs/api/' },
+  { text: 'Articles', link: '/docs/articles/', activeMatch: '^/docs/articles/' },
+  { text: 'Icons on demand', link: '/docs/icon-components/', activeMatch: '^/docs/icon-components/' },
   { text: 'Iconify Icon Web Component', link: '/docs/iconify-icon/' },
-  { text: 'Tools for Developers', link: '/docs/tools/' },
-  { text: 'Iconify Types', link: '/docs/types/' },
 ]
 
 const DocumentationSidebar: DefaultTheme.SidebarItem[] = [
@@ -18,20 +18,103 @@ const DocumentationSidebar: DefaultTheme.SidebarItem[] = [
   { text: 'Iconify documentation', link: '/docs/' },
   { text: 'Icons', link: '/docs/icons/' },
   { text: 'How to use icons', link: '/docs/usage/' },
+  { text: 'Iconify Types', link: '/docs/types/' },
+  { text: 'Tools for Developers', link: '/docs/tools/' },
   { text: 'Iconify API', link: '/docs/api/' },
   { text: 'Articles', link: '/docs/articles/' },
   { text: 'Icons on demand', link: '/docs/icon-components/' },
   { text: 'Iconify Icon Web Component', link: '/docs/iconify-icon/' },
-  { text: 'Tools for Developers', link: '/docs/tools/' },
-  { text: 'Iconify Types', link: '/docs/types/' },
+]
+
+const SVGInCssSidebar: DefaultTheme.SidebarItem[] = [
+  { text: 'Getting Started', link: '/getting-started/' },
+  { text: 'Iconify documentation', link: '/docs/' },
+  { text: 'How to use icons', link: '/docs/usage/' },
+  {
+    text: 'SVG in CSS',
+    items: [
+      {
+        text: 'CSS for icons without coding',
+        link: '/docs/usage/css/no-code/',
+      }, {
+        text: 'Iconify for Tailwind CSS',
+        link: '/docs/usage/css/tailwind/',
+      }, {
+        text: 'Iconify in UnoCSS',
+        link: '/docs/usage/css/unocss/',
+      }, {
+        text: 'Generate CSS for icons with Iconify Utils',
+        link: '/docs/usage/css/utils/',
+      },
+    ],
+  },
+]
+const SVGInHtmlSidebar: DefaultTheme.SidebarItem[] = [
+  { text: 'Getting Started', link: '/getting-started/' },
+  { text: 'Iconify documentation', link: '/docs/' },
+  { text: 'How to use icons', link: '/docs/usage/' },
+  {
+    text: 'SVG in HTML',
+    items: [
+      {
+        text: 'SVG for icons without coding',
+        link: '/docs/usage/svg/no-code/',
+      }, {
+        text: 'Unplugin Icons',
+        link: '/docs/usage/svg/unplugin/',
+      }, {
+        text: 'Generate SVG with Iconify Utils',
+        link: '/docs/usage/svg/utils/',
+      },
+    ],
+  },
 ]
 
 // TODO: add each sidebar item to the sidebar for that section
 const DocumentationSidebars: Record<string, DefaultTheme.SidebarItem[]> = {
   '/docs/': DocumentationSidebar,
-  '/docs/api/': [],
-  '/docs/articles/': [],
-  '/docs/icon-components/': [],
+  '/docs/api/': [{
+    text: 'API Queries',
+    link: '/docs/api/queries',
+  }, {
+    text: 'Hosted API',
+    link: '/docs/api/hosting',
+  }, {
+    text: 'API Providers',
+    link: '/docs/api/providers',
+  }, {
+    text: 'Components Config',
+    link: '/docs/api/config',
+  }],
+  '/docs/articles/': [{
+    text: 'How Iconify works',
+    link: '/docs/articles/how-iconify-works',
+  }],
+  '/docs/icon-components/': [{
+    text: 'Vue 2',
+    link: '/docs/icon-components/vue2/',
+  }, {
+    text: 'Vue 3',
+    link: '/docs/icon-components/vue/',
+  }, {
+    text: 'Svelte',
+    link: '/docs/icon-components/svelte/',
+  }, {
+    text: 'Ember',
+    link: '/docs/icon-components/ember/',
+  }, {
+    text: 'React',
+    link: '/docs/icon-components/react/',
+  }, {
+    text: 'React with API',
+    link: '/docs/icon-components/react-with-api/',
+  }, {
+    text: 'Iconify SVG Framework',
+    link: '/docs/icon-components/svg-framework/',
+  }, {
+    text: 'Iconify Icon Bundles',
+    link: '/docs/icon-components/bundles/',
+  }],
   '/docs/iconify-icon/': [],
   '/docs/icons/': [{
     text: 'Icon Basics',
@@ -46,8 +129,23 @@ const DocumentationSidebars: Record<string, DefaultTheme.SidebarItem[]> = {
     text: 'Custom Icon Sets',
     link: '/docs/icons/custom',
   }],
-  '/docs/tools/': [],
-  '/docs/types/': [],
+  '/docs/tools/': [{
+    text: 'Iconify Tools',
+    link: '/docs/tools/tools2/',
+  }, {
+    text: 'Iconify Utils',
+    link: '/docs/tools/utils/',
+  }],
+  '/docs/types/': [{
+    text: 'IconifyIcon',
+    link: '/docs/types/iconify-icon',
+  }, {
+    text: 'IconifyJSON',
+    link: '/docs/types/iconify-json',
+  }, {
+    text: 'IconifyInfo',
+    link: '/docs/types/iconify-info',
+  }],
   '/docs/usage/': [{
     text: 'SVG in CSS',
     link: '/docs/usage/css/',
@@ -155,6 +253,8 @@ export const GlobalSidebar: DefaultTheme.Sidebar = {
   '/docs/tools/': sideBarForDocumentation('/docs/tools/'),
   '/docs/types/': sideBarForDocumentation('/docs/types/'),
   '/docs/usage/': sideBarForDocumentation('/docs/usage/'),
+  '/docs/usage/css/': SVGInCssSidebar,
+  '/docs/usage/svg/': SVGInHtmlSidebar,
   '/sponsors': DefaultSidebar,
   '/support/': DefaultSidebar,
   '/about/': DefaultSidebar,
