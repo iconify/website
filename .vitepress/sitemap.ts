@@ -1,18 +1,29 @@
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { writeFile } from 'node:fs/promises'
-import type { SiteConfig, TransformContext } from 'vitepress/dist/node'
+import type { HeadConfig, SiteConfig, TransformContext } from 'vitepress/dist/node'
 import { SitemapStream } from 'sitemap'
 import { isCI } from 'std-env'
+
+export const preloadLinks: HeadConfig[] = [
+  ['link', { rel: 'preconnect', href: 'https://srv.carbonads.net' }],
+  ['link', { rel: 'preconnect', href: 'https://cdn.carbonads.net' }],
+]
 
 interface SitemapEntry {
   url: string
   lastmod?: number
 }
 
+const cyberalienGithub = 'https://cyberalien.github.io'
+
 const links: SitemapEntry[] = []
 
-const hostname: string = isCI ? 'https://iconify.design/' : (process.env.HTTPS ? 'https://localhost/' : 'http://localhost:4173/')
+const hostname: string = isCI
+  ? 'https://iconify.design/'
+  : (
+      process.env.HTTPS ? 'https://localhost/' : 'http://localhost:4173/'
+    )
 
 export function transformHtml(code: string, id: string, { pageData }: TransformContext): string | void {
   if (!/[\\/]404\.html$/.test(id)) {
@@ -21,15 +32,24 @@ export function transformHtml(code: string, id: string, { pageData }: TransformC
       url,
       lastmod: pageData.lastUpdated,
     })
+
     // homepage
     if (url === '/' || url === '') {
       return code.replace('<meta charset="utf-8">', `<meta charset="utf-8">
 <link rel="canonical" href="${hostname}index.html">
+<link rel="preconnect" href="${cyberalienGithub}">
 `)
     }
 
     // section entry
     if (url[url.length - 1] === '/') {
+      if (url === 'sponsors/') {
+        return code.replace('<meta charset="utf-8">', `<meta charset="utf-8">
+<link rel="canonical" href="${hostname}${url}index.html">
+<link rel="preconnect" href="${cyberalienGithub}">
+`)
+      }
+
       return code.replace('<meta charset="utf-8">', `<meta charset="utf-8">
 <link rel="canonical" href="${hostname}${url}index.html">
 `)

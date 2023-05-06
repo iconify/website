@@ -1,8 +1,8 @@
+/// <reference types="vite/client" />
 /// <reference types="vite-plugin-pwa/client" />
 /// <reference types="../../shims" />
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
-import { disableCache } from 'iconify-icon'
 import Theme from 'vitepress/theme'
 import './style.scss'
 import 'uno.css'
@@ -17,12 +17,10 @@ export default {
     })
   },
   enhanceApp() {
-    if (typeof window === 'undefined')
+    if (import.meta.env.SSR)
       return
 
-    if (PWA) {
-      disableCache('all')
+    if (PWA)
       import('virtual:pwa-register').then(({ registerSW }) => registerSW({ immediate: true }))
-    }
   },
 }

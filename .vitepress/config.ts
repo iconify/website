@@ -4,7 +4,7 @@ import { pwa } from './pwa'
 import { mdConfig } from './md'
 import { description, ogImage, ogUrl, title } from './constants'
 import { GlobalSidebar, Nav } from './navigation'
-import { buildEnd, transformHtml } from './sitemap'
+import { buildEnd, preloadLinks, transformHtml } from './sitemap'
 
 export default withPwa(defineConfig({
   lang: 'en-US',
@@ -14,7 +14,7 @@ export default withPwa(defineConfig({
   outDir: './dist',
   srcExclude: ['news/*/*.md', 'partials/**', 'patches/**'],
   head: [
-    ['link', { rel: 'preconnect', href: 'https://srv.carbonads.net' }],
+    ...preloadLinks,
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/png', sizes: 'any' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
