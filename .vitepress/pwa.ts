@@ -37,8 +37,8 @@ export const pwa: Partial<VitePWAOptions> = {
   },
 
   injectManifest: {
-    rollupFormat: 'iife',
-    globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
+    // rollupFormat: 'iife',
+    globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2,xml,txt}'],
     globIgnores: ['images/news/**'],
   },
   devOptions: {

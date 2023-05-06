@@ -71,11 +71,16 @@ a.edit-link-button[class], .vp-doc a {
 }
 
 /* VPNavBarTitle */
-.VPNavBarTitle.has-sidebar {
-  .title:hover {
-    opacity: 1;
+.VPNavBarTitle {
+  .title {
     svg {
-      transform: scale(1.1);
+      transition: all .2s ease-in-out;
+    }
+    &:hover {
+      opacity: 1;
+      svg {
+        transform: scale(1.1);
+      }
     }
   }
 }

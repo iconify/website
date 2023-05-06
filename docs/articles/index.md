@@ -21,6 +21,6 @@ Icons about icon design and usage:
 
 ## Other
 
-Other artickes:
+Other articles:
 
 - [Avoid vendor lock-in](./vendor-lock-in.md).
