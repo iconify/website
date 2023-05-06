@@ -61,16 +61,19 @@ export function renderCodeTabs(): string {
                 += `<div class="code-block-title">${replace(tab.title)}</div>`
     }
 
+    // HTML
+    let html = tab.html
+    if (raw !== '')
+      html = `<copy-to-clipboard raw="${raw}">${html}</copy-to-clipboard>`
+
     // Content
     code
             += `<div class="code-block-content code-block-content--with${
              tab.title === '' ? 'out' : ''
              }-title code-block-content--with${
              tab.hint === '' ? 'out' : ''
-             }-hint"${
-             raw === '' ? '' : ` data-raw-code="${raw}"`
-             }>${
-             tab.html
+             }-hint">${
+             html
              }</div>`
 
     // Hint

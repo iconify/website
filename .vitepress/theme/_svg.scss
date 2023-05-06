@@ -1,0 +1,106 @@
+.animate-fill {
+  fill-opacity: 0;
+  animation: animate-fill 0.5s linear forwards;
+}
+
+.animate-line-6 {
+  stroke-dasharray: 6;
+  stroke-dashoffset: 6;
+  animation: animate-line-6 0.2s linear forwards;
+}
+.animate-line-10 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: animate-line-10 0.2s linear forwards;
+}
+.animate-line-12 {
+  stroke-dasharray: 12;
+  stroke-dashoffset: 12;
+  animation: animate-line-12 0.2s linear forwards;
+}
+.animate-line-16 {
+  stroke-dasharray: 16;
+  stroke-dashoffset: 16;
+  animation: animate-line-16 0.2s linear forwards;
+}
+.animate-line-20 {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  animation: animate-line-20 0.4s linear forwards;
+}
+.animate-line-44 {
+  stroke-dasharray: 44;
+  stroke-dashoffset: 44;
+  animation: animate-line-44 0.4s linear forwards;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+.animate-delay-7 {
+  animation-delay: 0.7s;
+}
+.animate-delay-10 {
+  animation-delay: 1s;
+}
+.animate-delay-12 {
+  animation-delay: 1.2s;
+}
+
+@keyframes animate-fill {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes animate-line-6 {
+  from {
+    stroke-dashoffset: 6;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate-line-10 {
+  from {
+    stroke-dashoffset: 10;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate-line-12 {
+  from {
+    stroke-dashoffset: 12;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate-line-16 {
+  from {
+    stroke-dashoffset: 16;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate-line-20 {
+  from {
+    stroke-dashoffset: 20;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate-line-44 {
+  from {
+    stroke-dashoffset: 44;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

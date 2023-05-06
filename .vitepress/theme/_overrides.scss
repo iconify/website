@@ -11,6 +11,11 @@ table {
   color: var(--vp-c-brand);
 }
 
+// Underline for links in content
+.vp-doc a {
+  text-decoration: underline;
+}
+
 
 /**
  * VitePress: Custom fix

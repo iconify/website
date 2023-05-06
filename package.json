@@ -11,6 +11,7 @@
     "build": "nr prepare-news && vitepress build",
     "preview": "nr build && vitepress preview",
     "https": "nr build && serve dist",
+    "prepare-icons": "node scripts/icons.mjs",
     "prepare-news": "node scripts/news.mjs",
     "postinstall": "nr prepare-news",
     "lint": "eslint --cache .",

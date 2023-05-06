@@ -41,8 +41,9 @@ div.code-blocks code {
 // Blocks inside code blocks wrapper
 .code-block {
   margin: 6px 0;
+  position: relative;
 
-  & > div {
+  > div {
     border-top: 1px solid var(--vp-c-divider);
     &.code-block-hint {
       border-top-width: 0;
@@ -68,6 +69,10 @@ div.code-blocks code {
     @media (max-width: 600px) {
       padding: 8px;
     }
+  }
+
+  &--demo &-content {
+    background: var(--vp-c-bg-alt);
   }
 
 
@@ -99,4 +104,38 @@ div.code-blocks code {
       margin: 4px 0;
     }
   }
+
+  // Copy to clipboard
+  &-copy {
+    display: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: var(--vp-c-brand);
+    transition: color 0.2s linear;
+    &:hover {
+      color: var(--vp-c-brand-accent)
+    }
+
+    .copied, .hidden {
+      visibility: hidden;
+    }
+
+    &--copied {
+      color: var(--c-gray-dimmed);
+      .not-copied {
+        visibility: hidden;
+      }
+      .copied {
+        visibility: visible;
+      }
+    }
+  }
+
+  &:hover {
+    .code-block-copy {
+      display: block;
+    }
+  }
+
 }
