@@ -6,6 +6,7 @@ import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './style.scss'
 import 'uno.css'
+import 'iconify-icon'
 
 import HomePage from './components/HomePage.vue'
 
