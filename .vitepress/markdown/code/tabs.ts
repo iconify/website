@@ -11,6 +11,11 @@ export interface CodeTab {
   replace?: (content: string) => string
 }
 
+// Replacements for language hint
+const langReplacements: Record<string, string> = {
+  scss: 'css',
+}
+
 /**
  * Current code parser data
  */
@@ -63,8 +68,11 @@ export function renderCodeTabs(): string {
 
     // HTML
     let html = tab.html
-    if (raw !== '')
-      html = `<copy-to-clipboard raw="${raw}">${html}</copy-to-clipboard>`
+    if (raw !== '') {
+      const baseLang = tab.lang
+      const lang = langReplacements[baseLang] ?? baseLang
+      html = `<copy-to-clipboard raw="${raw}" lang="${lang}">${html}</copy-to-clipboard>`
+    }
 
     // Content
     code
