@@ -332,7 +332,7 @@ export const GlobalSidebar: DefaultTheme.Sidebar = {
   '/docs/usage/': sideBarForDocumentation('/docs/usage/'),
   '/docs/usage/css/': SVGInCssSidebar,
   '/docs/usage/svg/': SVGInHtmlSidebar,
-  '/sponsors': DefaultSidebar,
+  '/sponsors/': DefaultSidebar,
   '/support/': DefaultSidebar,
   '/about/': DefaultSidebar,
   '/privacy': DefaultSidebar,
