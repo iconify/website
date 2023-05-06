@@ -32,6 +32,10 @@ const SVGInCssSidebar: DefaultTheme.SidebarItem[] = [
     text: 'SVG in CSS',
     items: [
       {
+        text: 'How to use icons in CSS',
+        link: '/docs/usage/css/',
+      },
+      {
         text: 'CSS for icons without coding',
         link: '/docs/usage/css/no-code/',
       }, {
@@ -56,6 +60,9 @@ const SVGInHtmlSidebar: DefaultTheme.SidebarItem[] = [
     text: 'SVG in HTML',
     items: [
       {
+        text: 'How to embed SVG in HTML',
+        link: '/docs/usage/svg/',
+      }, {
         text: 'SVG for icons without coding',
         link: '/docs/usage/svg/no-code/',
       }, {
@@ -75,72 +82,74 @@ const WebComponentSidebar: DefaultTheme.SidebarItem[] = [
   { text: 'Icons on demand', link: '/docs/icon-components/' },
   {
     text: 'Web Component',
-    items: [
-      {
-        text: 'Wrappers for:',
-        items: [{
-          text: 'React',
-          link: '/docs/iconify-icon/react',
-        }, {
-          text: 'Solid',
-          link: '/docs/iconify-icon/solid',
-        }],
+    items: [{
+      text: 'Iconify Icon web component',
+      link: '/docs/iconify-icon/',
+    }, {
+      text: 'Wrappers for:',
+      items: [{
+        text: 'React',
+        link: '/docs/iconify-icon/react',
       }, {
-        text: 'Attributes:',
-        items: [{
-          text: 'Icon Color',
-          link: '/docs/iconify-icon/color',
-        }, {
-          text: 'Icon Dimensions',
-          link: '/docs/iconify-icon/dimensions',
-        }, {
-          text: 'Transformations',
-          link: '/docs/iconify-icon/transform',
-        }, {
-          text: 'Vertical Alignment',
-          link: '/docs/iconify-icon/inline',
-        }, {
-          text: 'Rendering Modes',
-          link: '/docs/iconify-icon/modes',
-        }],
+        text: 'Solid',
+        link: '/docs/iconify-icon/solid',
+      }],
+    }, {
+      text: 'Attributes:',
+      items: [{
+        text: 'Icon Color',
+        link: '/docs/iconify-icon/color',
       }, {
-        text: 'Use Without API',
-        link: '/docs/iconify-icon/without-api',
+        text: 'Icon Dimensions',
+        link: '/docs/iconify-icon/dimensions',
       }, {
-        text: 'Functions:',
-        collapsed: true,
-        items: [{
-          text: 'iconExists()',
-          link: '/docs/iconify-icon/icon-exists',
-        }, {
-          text: 'listIcons()',
-          link: '/docs/iconify-icon/list-icons',
-        }, {
-          text: 'getIcon()',
-          link: '/docs/iconify-icon/get-icon',
-        }, {
-          text: 'addCollection()',
-          link: '/docs/iconify-icon/add-collection',
-        }, {
-          text: 'loadIcons()',
-          link: '/docs/iconify-icon/load-icons',
-        }, {
-          text: 'loadIcon()',
-          link: '/docs/iconify-icon/load-icon',
-        }, {
-          text: 'enableCache()',
-          link: '/docs/iconify-icon/enabled-cache',
-        }, {
-          text: 'disableCache()',
-          link: '/docs/iconify-icon/disabled-cache',
-        }, {
-          text: 'buildIcon()',
-          link: '/docs/iconify-icon/build-icon',
-        }, {
-          text: 'setFetch()',
-          link: '/docs/iconify-icon/set-fetch',
-        }],
-      },
+        text: 'Transformations',
+        link: '/docs/iconify-icon/transform',
+      }, {
+        text: 'Vertical Alignment',
+        link: '/docs/iconify-icon/inline',
+      }, {
+        text: 'Rendering Modes',
+        link: '/docs/iconify-icon/modes',
+      }],
+    }, {
+      text: 'Use Without API',
+      link: '/docs/iconify-icon/without-api',
+    }, {
+      text: 'Functions:',
+      collapsed: true,
+      items: [{
+        text: 'iconExists()',
+        link: '/docs/iconify-icon/icon-exists',
+      }, {
+        text: 'listIcons()',
+        link: '/docs/iconify-icon/list-icons',
+      }, {
+        text: 'getIcon()',
+        link: '/docs/iconify-icon/get-icon',
+      }, {
+        text: 'addCollection()',
+        link: '/docs/iconify-icon/add-collection',
+      }, {
+        text: 'loadIcons()',
+        link: '/docs/iconify-icon/load-icons',
+      }, {
+        text: 'loadIcon()',
+        link: '/docs/iconify-icon/load-icon',
+      }, {
+        text: 'enableCache()',
+        link: '/docs/iconify-icon/enabled-cache',
+      }, {
+        text: 'disableCache()',
+        link: '/docs/iconify-icon/disabled-cache',
+      }, {
+        text: 'buildIcon()',
+        link: '/docs/iconify-icon/build-icon',
+      }, {
+        text: 'setFetch()',
+        link: '/docs/iconify-icon/set-fetch',
+      }],
+    },
     ],
   },
 ]
