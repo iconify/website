@@ -105,6 +105,32 @@ div.code-blocks code {
     }
   }
 
+  // Language
+  &-lang {
+    position: absolute;
+    right: -8px;
+    top: -4px;
+    padding: 0 8px;
+    border-radius: 6px;
+    background: var(--c-blue-gray);
+    color: var(--vp-c-bg);
+    opacity: 0.9;
+    pointer-events: none;
+    transition: opacity 0.2s;
+
+    &--html, &--php {
+      background: var(--c-green);
+    }
+    &--js, &--ts {
+      background: var(--c-purple);
+    }
+
+    .code-block-title + div & {
+      top: 4px;
+      right: 4px;
+    }
+  }
+
   // Copy to clipboard
   &-copy {
     display: none;
@@ -133,10 +159,12 @@ div.code-blocks code {
     }
   }
 
-  &:hover {
+  &:hover, &:focus-within {
     .code-block-copy {
       display: block;
     }
+    .code-block-lang {
+      opacity: 0;
+    }
   }
-
 }
