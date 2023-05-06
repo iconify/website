@@ -60,8 +60,19 @@
 // Modes demo
 .modes-demo {
   border-radius: 8px;
-  background: var(--vp-c-mute);
-  padding: 0 16px;
+  padding: 4px 16px;
+  background-color: var(--vp-c-mute);
+  //background-image: var(--icon-grid);
+  //background-size: 8px;
+
+  .dark & {
+    background-color: var(--vp-c-mute-darker);
+  }
+
+  p {
+    margin: 0;
+    padding: 4px 0;
+  }
 
   // animation: 10s infinite modes-demo-color;
   span {
