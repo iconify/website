@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Delay Demo</title>
+		<style>
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				font: normal 16px / 24px 'Source Sans Pro', 'Open Sans', 'Droid Sans',
+					sans-serif;
+				background: transparent;
+				color: #000;
+			}
+
+			p {
+				margin: 8px;
+				padding: 0;
+			}
+			#loading {
+				color: #959595;
+			}
+
+			.icon {
+				display: inline-block;
+				font-size: 24px;
+				line-height: 1em;
+				vertical-align: -0.25em;
+				box-shadow: 0 0 0 1px #e00;
+			}
+
+			span.icon {
+				--svg: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2012a9%209%2090%200%201%209%20-9%22%20stroke%3D%22currentColor%22%20fill%3D%22none%22%20stroke-width%3D%222%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20values%3D%220%2012%2012%3B360%2012%2012%22%20dur%3D%223s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+				width: 1em;
+				height: 1em;
+				background-color: transparent;
+				background-image: var(--svg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			window.addEventListener('DOMContentLoaded', () => {
+				document.getElementById('loading').style.display = 'none';
+			});
+		</script>
+		<p>
+			SVG:
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				viewBox="0 0 24 24"
+				class="icon"
+			>
+				<path
+					d="M3 12a9 9 90 0 1 9 -9"
+					stroke="currentColor"
+					fill="none"
+					stroke-width="2"
+				>
+					<animateTransform
+						attributeName="transform"
+						type="rotate"
+						values="0 12 12;360 12 12"
+						dur="3s"
+						repeatCount="indefinite"
+					></animateTransform>
+				</path>
+			</svg>
+		</p>
+		<p>Background: <span class="icon"></span></p>
+		<p id="loading">Loading script...</p>
+		<script src="https://iconify.design/delay.php?delay=1"></script>
+	</body>
+</html>
