@@ -1,7 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const APISidebar: DefaultTheme.SidebarItem[] = [
-  { text: 'Iconify API', link: '/docs/api/' },
   {
     text: 'API Queries',
     collapsed: true,

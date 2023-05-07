@@ -1,7 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const IconComponentsSidebar: DefaultTheme.SidebarItem[] = [
-  { text: 'Icons on demand', link: '/docs/icon-components/' },
   {
     text: 'SVG Framework',
     link: '/docs/icon-components/svg-framework/',
@@ -26,10 +25,8 @@ export const IconComponentsSidebar: DefaultTheme.SidebarItem[] = [
   } */ {
     text: 'Icon Bundles',
     collapsed: true,
+    link: '/docs/icon-components/bundles/',
     items: [{
-      text: 'Icon Bundles',
-      link: '/docs/icon-components/bundles/',
-    }, {
       text: 'Wrapper Function',
       link: '/docs/icon-components/bundles/wrapper',
     }, {

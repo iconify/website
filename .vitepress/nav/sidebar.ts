@@ -11,6 +11,7 @@ export const GlobalSidebar: DefaultTheme.SidebarItem[] = [
     text: 'Documentation',
     collapsed: true,
     items: DocumentationSidebar,
+    link: '/docs/',
   },
   {
     text: 'Sponsor Iconify',
@@ -28,6 +29,7 @@ export const GlobalSidebar: DefaultTheme.SidebarItem[] = [
     text: 'News',
     collapsed: true,
     items: NewsSidebar,
+    link: '/news/',
   },
   {
     text: 'History',
