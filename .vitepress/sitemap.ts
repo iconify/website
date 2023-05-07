@@ -1,13 +1,25 @@
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { writeFile } from 'node:fs/promises'
-import type { HeadConfig, SiteConfig, TransformContext } from 'vitepress/dist/node'
+import type { DefaultTheme, HeadConfig, SiteConfig, TransformContext } from 'vitepress/dist/node'
 import { SitemapStream } from 'sitemap'
 import { isCI } from 'std-env'
+import { ogUrl } from './constants'
 
-export const preloadLinks: HeadConfig[] = [
+export const preconnectLinks: HeadConfig[] = [
   ['link', { rel: 'preconnect', href: 'https://srv.carbonads.net' }],
   ['link', { rel: 'preconnect', href: 'https://cdn.carbonads.net' }],
+]
+
+export const editPageLinkPattern = 'https://github.com/userquin/iconify-website/edit/master/:path'
+
+export const socialLinks: DefaultTheme.SocialLink[] = [
+  { icon: 'discord', link: 'https://iconify.design/discord' },
+  { icon: 'twitter', link: 'https://twitter.com/slava_trushkin' },
+  { icon: 'mastodon', link: 'https://fosstodon.org/@cyberalien' },
+  { icon: 'linkedin', link: 'https://www.linkedin.com/in/trushkin/' },
+  { icon: 'github', link: 'https://github.com/iconify' },
+  { icon: 'youtube', link: 'https://www.youtube.com/@webdevstuff' },
 ]
 
 interface SitemapEntry {
@@ -19,11 +31,7 @@ const cyberalienGithub = 'https://cyberalien.github.io'
 
 const links: SitemapEntry[] = []
 
-const hostname: string = isCI
-  ? 'https://iconify.design/'
-  : (
-      process.env.HTTPS ? 'https://localhost/' : 'http://localhost:4173/'
-    )
+const hostname: string = isCI ? ogUrl : (process.env.HTTPS ? 'https://localhost/' : 'http://localhost:4173/')
 
 export function transformHtml(code: string, id: string, { pageData }: TransformContext): string | void {
   if (!/[\\/]404\.html$/.test(id)) {

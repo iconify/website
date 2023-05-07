@@ -4,9 +4,10 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
+import 'iconify-icon'
+
 import './style.scss'
 import 'uno.css'
-import 'iconify-icon'
 
 import HomePage from './components/HomePage.vue'
 

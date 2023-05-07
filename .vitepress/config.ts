@@ -4,7 +4,7 @@ import { pwa } from './pwa'
 import { mdConfig } from './md'
 import { description, ogImage, ogUrl, title } from './constants'
 import { GlobalSidebar, Nav } from './navigation'
-import { buildEnd, preloadLinks, transformHtml } from './sitemap'
+import { buildEnd, editPageLinkPattern, preconnectLinks, socialLinks, transformHtml } from './sitemap'
 
 export default withPwa(defineConfig({
   lang: 'en-US',
@@ -14,7 +14,7 @@ export default withPwa(defineConfig({
   outDir: './dist',
   srcExclude: ['news/*/*.md', 'partials/**', 'patches/**'],
   head: [
-    ...preloadLinks,
+    ...preconnectLinks,
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/png', sizes: 'any' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
@@ -54,17 +54,10 @@ export default withPwa(defineConfig({
     },
     sidebar: GlobalSidebar,
     editLink: {
-      pattern: 'https://github.com/userquin/iconify-website/edit/master/:path',
+      pattern: editPageLinkPattern,
       text: 'Suggest changes to this page',
     },
-    socialLinks: [
-      { icon: 'discord', link: 'https://iconify.design/discord' },
-      { icon: 'twitter', link: 'https://twitter.com/slava_trushkin' },
-      { icon: 'mastodon', link: 'https://fosstodon.org/@cyberalien' },
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/trushkin/' },
-      { icon: 'github', link: 'https://github.com/iconify' },
-      { icon: 'youtube', link: 'https://www.youtube.com/@webdevstuff' },
-    ],
+    socialLinks,
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2020-PRESENT Iconify OÜ',

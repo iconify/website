@@ -7,9 +7,9 @@ const rootFolder = process.cwd()
 const iconsFolder = resolve(rootFolder, '.vitepress/theme/icons')
 const cssFolder = resolve(rootFolder, '.vitepress/theme')
 
-
 async function generateIconsCSS() {
     // Find icons
+    /** @type {string[]} */
     const icons = await fg('*.svg', { cwd: iconsFolder, deep: 1 })
 
     // Generate CSS
@@ -29,6 +29,5 @@ async function generateIconsCSS() {
     // Write CSS
     await writeFile(cssFolder + '/_icons.scss', css.join('\n'), 'utf8')
 }
-
 
 await generateIconsCSS()

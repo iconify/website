@@ -77,7 +77,7 @@ So there are issues with SVG animations when used as background or mask too. Web
 
 ## Which mode to use? {#choices}
 
-Web component will automatically use best mode:
+Web component will automatically use the best mode:
 
 - If icon has SVG animations, `[str]style` to render animations immediately.
 - Otherwise `[str]svg`, which renders slightly faster in most browsers.
