@@ -16,7 +16,8 @@
         "**/*.md/*.*",
         "**/*.js",
         "code-samples/**/*.json",
-        "code-samples/**/*.[jt]s",
+        "code-samples/**/*.js",
+        "code-samples/**/*.ts",
         "code-samples/**/*.jsx",
         "code-samples/**/*.vue"
       ],

@@ -34,7 +34,7 @@ function wrap(type: string, text: string): string {
  */
 const midSeparators: string[] = [',', '[]', '|', ' or ', '(', ')']
 const typeSeparators: string[] = midSeparators.concat(['Record', '<', '>'])
-function wrapType(raw: string, escaped: string): string {
+function wrapType(raw: string, _escaped: string): string {
   function split(type: string): string[] {
     // Attempt to split types
     let typesStart: string[] = []

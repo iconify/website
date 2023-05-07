@@ -97,6 +97,7 @@ export function splitMDContent(content: string, filename: string): MDChunk[] {
 
       // Sanity check: code block should not contain '```'
       if (line.startsWith(codeEndHeader)) {
+        // eslint-disable-next-line no-console
         console.log('--- failed content ---\n', content)
         throw new Error(`Bad code block in "${filename}"`)
       }

@@ -47,7 +47,7 @@ export function splitMDMetadata(content: string, filename: string): SplitMDMetad
   }
 }
 
-export function splitHTMLMetadata(content: string, filename: string): SplitMDMetadata {
+export function splitHTMLMetadata(content: string, _filename: string): SplitMDMetadata {
   // Split lines
   const lines = content.split(/\r?\n/)
 

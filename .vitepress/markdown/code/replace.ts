@@ -15,6 +15,7 @@ export function replaceAllStrings(
 
       let start = 0
       let pos: number
+      // eslint-disable-next-line no-cond-assign
       while ((pos = text.indexOf(search, start)) !== -1) {
         text = text.slice(0, pos) + replace + text.slice(pos + search.length)
         start = pos + replace.length

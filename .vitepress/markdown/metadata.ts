@@ -8,7 +8,7 @@ export const parsedMetadata = Object.create(null) as Record<string, Required<MDM
  * Get metadata from markdown
  */
 export function metadataMDPlugin(md: MarkdownRenderer) {
-  md.renderer.rules.metadata = (tokens, idx, options, env: MDEnv, md) => {
+  md.renderer.rules.metadata = (tokens, idx, options, env: MDEnv, _md) => {
     const filename = env.relativePath
     const token = tokens[idx]
     const metadata = parsedMetadata[filename] || parseMDMetadata(token.content)
