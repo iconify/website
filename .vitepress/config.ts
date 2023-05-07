@@ -12,7 +12,7 @@ export default withPwa(defineConfig({
   titleTemplate: title,
   description,
   outDir: './dist',
-  srcExclude: ['news/*/*.md', 'partials/**', 'patches/**'],
+  srcExclude: ['news/*/*.md', 'partials/**', 'patches/**', 'README.md', 'CONTRIBUTING.md', 'TODO.md'],
   head: [
     ...preconnectLinks,
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
