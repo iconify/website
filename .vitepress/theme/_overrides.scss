@@ -16,6 +16,16 @@ table {
   text-decoration: underline;
 }
 
+// Sidebar item: hide collapse button for active section
+.VPSidebarItem {
+  &.has-active {
+    > .item > .caret {
+      pointer-events: none;
+      color: var(--vp-c-text-3);
+    }
+  }
+}
+
 
 /**
  * VitePress: Custom fix

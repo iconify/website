@@ -4,6 +4,7 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { isCI, isDevelopment } from 'std-env'
 import navbar from './plugins/navbar'
+import sidebar from './plugins/sidebar'
 
 export default defineConfig({
   optimizeDeps: {
@@ -39,5 +40,6 @@ export default defineConfig({
     }),
     UnoCSS(),
     navbar(),
+    sidebar(),
   ],
 })
