@@ -1,6 +1,6 @@
-import type { DefaultTheme } from 'vitepress'
+import type { SidebarItem } from '../siderbar-item'
 
-export const UsageSidebar: DefaultTheme.SidebarItem[] = [
+export const UsageSidebar: SidebarItem[] = [
   {
     text: 'SVG in CSS',
     collapsed: true,

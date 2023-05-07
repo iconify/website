@@ -1,6 +1,6 @@
-import type { DefaultTheme } from 'vitepress'
+import type { SidebarItem } from '../siderbar-item'
 
-export const IconsSidebar: DefaultTheme.SidebarItem[] = [
+export const IconsSidebar: SidebarItem[] = [
   {
     text: 'Icon Basics',
     link: '/docs/icons/icon-basics',

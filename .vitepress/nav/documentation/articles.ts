@@ -1,6 +1,6 @@
-import type { DefaultTheme } from 'vitepress'
+import type { SidebarItem } from '../siderbar-item'
 
-export const ArticlesSidebar: DefaultTheme.SidebarItem[] = [
+export const ArticlesSidebar: SidebarItem[] = [
   {
     text: 'How icons are validated and cleaned up in Iconify',
     collapsed: true,
