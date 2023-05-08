@@ -1,20 +1,22 @@
-# Iconify Documentation
+# Iconify Website
 
-This repository contains source code for documentation for Iconify.
+This repository contains source code for Iconify website, built with Vitepress.
 
-Website is available at https://docs.iconify.design/
+It is currently work in progress, not deployed yet on main website.
+
+Preview is available at https://preview.iconify.design/
 
 ## Build process
 
 Read out [contributing guidelines](./CONTRIBUTING.md) before making any changes.
 
-To build documentation, first install dependencies:
+To build website, first install dependencies:
 
 ```bash
 pnpm install
 ```
 
-Then you can build documentation:
+Then you can build website:
 
 ```bash
 nr build
@@ -22,10 +24,16 @@ nr build
 
 Build process will put all HTML files in directory `dist`.
 
-Do not commit changes that aren't ready for production. To build production documentation, which will include Google Analytics code, run this:
+Do not commit changes that aren't ready for production. To build production code, run this:
 
 ```bash
 nr build
+```
+
+If you want to preview website without building, run this:
+
+```bash
+nr dev
 ```
 
 ## Sources
