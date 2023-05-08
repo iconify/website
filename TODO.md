@@ -9,3 +9,4 @@
 - [ ] cleanup unused pages?
 - [ ] create website root source folder: ALMOST IMPOSSIBLE
 - [ ] prepare scripts for navbar and sidebar generation
+- [ ] review images links, right now using absolute links, should be relative
