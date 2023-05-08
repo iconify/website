@@ -180,3 +180,12 @@ $font-weight-bold: 600;
 .hljs-inline-var {
   color: var(--hljs-inline-var);
 }
+
+// Change color on hover when highlight is inside a link
+a {
+  &.hljs-linkable, & > .hljs-linkable {
+    &:hover {
+      color: var(--vp-c-brand-accent);
+    }
+  }
+}

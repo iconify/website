@@ -14,6 +14,8 @@ export interface CodeTab {
 // Replacements for language hint
 const langReplacements: Record<string, string> = {
   scss: 'css',
+  bash: '',
+  sh: '',
 }
 
 /**

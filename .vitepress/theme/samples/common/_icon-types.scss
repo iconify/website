@@ -1,8 +1,11 @@
 .icon-types {
 	&--padding {
 		iconify-icon {
+			margin-right: 6px;
 			box-shadow: 0 0 2px currentColor;
-			background-color: var(--vp-c-mute);
+			background-color: var(--vp-c-bg);
+			background-image: var(--icon-grid);
+			background-size: 8px;
 		}
 	}
 

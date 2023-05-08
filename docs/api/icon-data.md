@@ -18,7 +18,7 @@ Instead of bundling icons, developer passes icon name to icon component, data fo
 
 How does loading icon data on demand work?
 
-`include process/api`
+<icon-loading-process></icon-loading-process>
 
 ## Query
 

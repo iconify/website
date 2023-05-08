@@ -28,12 +28,7 @@ class: sample-big
 
 Unlike [regular icon components](../usage/svg/index.md), Iconify icon components do not bundle icon data. They load only data for icons used on currently viewed page at run time.
 
-```yaml
-include: process/api
-replacements:
-  - search: '"./"'
-    replace: '"#components"'
-```
+<icon-loading-process link="#components"></icon-loading-process>
 
 ### Advantages
 
