@@ -10,6 +10,7 @@ interface RenderTabProps {
   lang: string
   code: string
   hint?: string
+  copy?: boolean
   replace?: (code: string) => string
 }
 
@@ -21,6 +22,7 @@ const defaultProps: Required<RenderTabProps> = {
   lang: '',
   code: '',
   hint: '',
+  copy: true,
   replace: (code: string) => code,
 }
 
@@ -35,6 +37,7 @@ export function addCodeTab(
     lang,
     code,
     hint,
+    copy,
     replace,
   } = {
     ...defaultProps,
@@ -50,7 +53,7 @@ export function addCodeTab(
     src,
     title,
     lang,
-    raw,
+    raw: copy ? raw : '', // Do not pass raw code if copy to clipboard is disabled
     html: highlightCode(lang, replace(raw), filename),
     hint,
     replace,

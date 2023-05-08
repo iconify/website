@@ -21,9 +21,6 @@ function copy(code: string) {
 
 <template>
   <div>
-    <small v-if="lang" :class="`code-block-lang code-block-lang--${lang}`">
-      {{ lang }}
-    </small>
     <button :class="copied ? copiedClassName : baseClassName" title="Copy to clipboard" @click="copy(raw)">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-4 -4 32 32">
         <path d="M5 3h14v18H5z" fill="var(--vp-c-bg)" class="animate-fill animate-delay-12" />
@@ -44,6 +41,9 @@ function copy(code: string) {
         </g>
       </svg>
     </button>
+    <small v-if="lang" :class="`code-block-lang code-block-lang--${lang}`">
+      {{ lang }}
+    </small>
     <slot />
   </div>
 </template>

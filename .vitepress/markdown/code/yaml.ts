@@ -12,6 +12,7 @@ interface CodeSampleChunk {
   src: string
   title: string
   hint: string
+  copy: boolean
 }
 
 interface InlineCodeReplacement {
@@ -24,6 +25,7 @@ interface CodeSample {
   src: string // Source file
   title?: string // Tab text
   hint?: string // Hint
+  copy?: boolean // If false, disables copy to clipboard
 
   // Extra code
   extra: CodeSampleChunk[]
@@ -48,12 +50,14 @@ const defaultCodeSampleChunk: Required<CodeSampleChunk> = {
   src: '',
   title: '',
   hint: '',
+  copy: true,
 }
 
 const defaultCodeSample: Required<CodeSample> = {
   src: '',
   title: '',
   hint: '',
+  copy: true,
   extra: [],
   css: '',
   cssTitle: '',
@@ -128,6 +132,7 @@ export function parseYamlCode(code: string, filename: string) {
         for (const key2 in defaultCodeSampleChunk) {
           const attr2 = key2 as keyof CodeSampleChunk
           if ((source as unknown)[attr2] === undefined) {
+            // @ts-expect-error Works, TS cannot figure it out, but logic is solid
             source[attr2] = defaultCodeSampleChunk[attr2]
             continue
           }
@@ -253,6 +258,7 @@ export function parseYamlCode(code: string, filename: string) {
       src: data.src,
       title: data.title,
       hint: data.hint,
+      copy: data.copy,
     },
   ].concat(data.extra)
 
@@ -272,6 +278,7 @@ export function parseYamlCode(code: string, filename: string) {
       lang: source.src.split('.').pop()!,
       code: getFile(sourceFile),
       hint: source.hint,
+      copy: source.copy,
       replace: replaceContent,
     })
   })
@@ -293,6 +300,7 @@ export function parseYamlCode(code: string, filename: string) {
       lang: 'scss',
       code: getFile(stylesheetFile),
       hint: data.cssHint,
+      copy: data.copy,
       replace: replaceContent,
     })
   }

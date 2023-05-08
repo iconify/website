@@ -70,11 +70,12 @@ export function renderCodeTabs(): string {
 
     // HTML
     let html = tab.html
-    if (raw !== '') {
-      const baseLang = tab.lang
-      const lang = langReplacements[baseLang] ?? baseLang
+    const baseLang = tab.lang
+    const lang = langReplacements[baseLang] ?? baseLang
+    if (raw !== '')
       html = `<copy-to-clipboard raw="${raw}" lang="${lang}">${html}</copy-to-clipboard>`
-    }
+    else if (lang)
+      html = `<small class="code-block-lang code-block-lang--${lang}">${lang}</small>${html}`
 
     // Content
     code

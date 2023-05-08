@@ -163,7 +163,7 @@ div.code-blocks code {
     .code-block-copy {
       display: block;
     }
-    .code-block-lang {
+    button + .code-block-lang {
       opacity: 0;
     }
   }
