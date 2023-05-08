@@ -15,10 +15,10 @@ export const editPageLinkPattern = 'https://github.com/iconify/website/edit/main
 
 export const socialLinks: DefaultTheme.SocialLink[] = [
   { icon: 'discord', link: 'https://iconify.design/discord' },
-  { icon: 'twitter', link: 'https://twitter.com/slava_trushkin' },
   { icon: 'mastodon', link: 'https://fosstodon.org/@cyberalien' },
-  { icon: 'linkedin', link: 'https://www.linkedin.com/in/trushkin/' },
+  { icon: 'twitter', link: 'https://twitter.com/slava_trushkin' },
   { icon: 'github', link: 'https://github.com/iconify' },
+  { icon: 'linkedin', link: 'https://www.linkedin.com/in/trushkin/' },
   { icon: 'youtube', link: 'https://www.youtube.com/@webdevstuff' },
 ]
 
