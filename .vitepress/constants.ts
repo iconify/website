@@ -1,6 +1,6 @@
-export const ogUrl = 'https://iconify.design/'
-export const ogImage = `${ogUrl}og.png#1`
-export const title = 'Iconify Design'
+export const ogUrl = 'https://preview.iconify.design/'
+export const ogImage = `${ogUrl}og-image.png`
+export const title = 'Iconify'
 export const description = 'All popular icon sets, one framework'
 
 export const hero = {
