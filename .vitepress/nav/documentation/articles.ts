@@ -1,7 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const ArticlesSidebar: DefaultTheme.SidebarItem[] = [
-  { text: 'Articles', link: '/docs/articles/' },
   {
     text: 'How icons are validated and cleaned up in Iconify',
     collapsed: true,

@@ -3,7 +3,7 @@ import { withPwa } from '@vite-pwa/vitepress'
 import { pwa } from './pwa'
 import { mdConfig } from './md'
 import { description, ogImage, ogUrl, title } from './constants'
-import { GlobalSidebar, Nav } from './navigation'
+import { GlobalSidebar, Nav } from './nav'
 import { buildEnd, editPageLinkPattern, preconnectLinks, socialLinks, transformHtml } from './sitemap'
 
 export default withPwa(defineConfig({

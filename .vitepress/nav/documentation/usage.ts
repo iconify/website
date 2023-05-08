@@ -4,50 +4,54 @@ export const UsageSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: 'SVG in CSS',
     collapsed: true,
+    link: '/docs/usage/css/',
     items: [
       {
-        text: 'How to use icons in CSS',
-        link: '/docs/usage/css/',
-      },
-      {
-        text: 'CSS for icons without coding',
+        text: 'No Code',
         link: '/docs/usage/css/no-code/',
       }, {
-        text: 'Iconify for Tailwind CSS',
+        text: 'Tailwind CSS',
         link: '/docs/usage/css/tailwind/',
+        collapsed: true,
+        items: [{
+          text: 'Plugin Options',
+          link: '/docs/usage/css/tailwind/options',
+        }, {
+          text: 'Clean Class Names',
+          link: '/docs/usage/css/tailwind/clean',
+        }],
       }, {
-        text: 'Iconify in UnoCSS',
+        text: 'UnoCSS',
         link: '/docs/usage/css/unocss/',
       }, {
-        text: 'Generate CSS for icons with Iconify Utils',
+        text: 'Iconify Utils',
         link: '/docs/usage/css/utils/',
       },
     ],
   }, {
     text: 'SVG in HTML',
     collapsed: true,
+    link: '/docs/usage/svg/',
     items: [
       {
-        text: 'How to embed SVG in HTML',
-        link: '/docs/usage/svg/',
-      }, {
-        text: 'SVG for icons without coding',
+        text: 'No Code',
         link: '/docs/usage/svg/no-code/',
       }, {
         text: 'Unplugin Icons',
         link: '/docs/usage/svg/unplugin/',
       }, {
-        text: 'Generate SVG with Iconify Utils',
+        text: 'Iconify Utils',
         link: '/docs/usage/svg/utils/',
+      }, {
+        text: 'Astro Icon',
+        link: '/docs/usage/svg/astro/',
       },
     ],
   }, {
     text: 'UI Design',
     collapsed: true,
+    link: '/docs/design/',
     items: [{
-      text: 'Iconify for designers',
-      link: '/docs/design/',
-    }, {
       text: 'Figma Plugin',
       link: '/docs/design/figma/',
     }, {

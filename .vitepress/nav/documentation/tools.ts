@@ -3,9 +3,9 @@ import type { DefaultTheme } from 'vitepress'
 export const ToolsSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: 'Iconify Tools',
+    link: '/docs/tools/tools2/',
     collapsed: true,
     items: [
-      { text: 'Iconify Tools', link: '/docs/tools/tools2/' },
       {
         text: 'SVG Class',
         link: '/docs/tools/tools2/svg/',
@@ -30,10 +30,8 @@ export const ToolsSidebar: DefaultTheme.SidebarItem[] = [
       }, {
         text: 'Examples',
         collapsed: true,
+        link: '/docs/tools/tools2/examples/',
         items: [{
-          text: 'Iconify Tools code examples',
-          link: '/docs/tools/tools2/examples/',
-        }, {
           text: 'Convert Material Design Icons to Iconify JSON format',
           link: '/docs/tools/tools2/examples/import-mdi',
         }, {
@@ -54,10 +52,8 @@ export const ToolsSidebar: DefaultTheme.SidebarItem[] = [
       {
         text: 'Examples',
         collapsed: true,
+        link: '/docs/tools/utils/examples/',
         items: [{
-          text: 'Code examples for Iconify Utils',
-          link: '/docs/tools/utils/examples/',
-        }, {
           text: 'Export icon set',
           link: '/docs/tools/utils/examples/export-svgs-from-icon-set',
         }, {

@@ -1,7 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const TypesSidebar: DefaultTheme.SidebarItem[] = [
-  { text: 'Iconify types', link: '/docs/types/' },
   {
     text: 'IconifyIcon',
     link: '/docs/types/iconify-icon',
