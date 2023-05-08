@@ -1,6 +1,6 @@
-import type { DefaultTheme } from 'vitepress'
+import type { SidebarItem } from '../siderbar-item'
 
-export const IconComponentsSidebar: DefaultTheme.SidebarItem[] = [
+export const IconComponentsSidebar: SidebarItem[] = [
   {
     text: 'SVG Framework',
     link: '/docs/icon-components/svg-framework/',

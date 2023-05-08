@@ -1,6 +1,6 @@
-import type { DefaultTheme } from 'vitepress'
+import type { SidebarItem } from '../siderbar-item'
 
-export const ToolsSidebar: DefaultTheme.SidebarItem[] = [
+export const ToolsSidebar: SidebarItem[] = [
   {
     text: 'Iconify Tools',
     link: '/docs/tools/tools2/',

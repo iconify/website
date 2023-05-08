@@ -1,6 +1,6 @@
-import type { DefaultTheme } from 'vitepress'
+import type { SidebarItem } from '../siderbar-item'
 
-export const APISidebar: DefaultTheme.SidebarItem[] = [
+export const APISidebar: SidebarItem[] = [
   {
     text: 'API Queries',
     collapsed: true,

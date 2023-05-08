@@ -1,8 +1,8 @@
-import type { DefaultTheme } from 'vitepress'
 import { DocumentationSidebar } from './documentation'
 import { NewsSidebar } from './news'
+import type { SidebarItem } from './siderbar-item'
 
-export const GlobalSidebar: DefaultTheme.SidebarItem[] = [
+export const GlobalSidebar: SidebarItem[] = [
   {
     text: 'Getting Started',
     link: '/getting-started/',
