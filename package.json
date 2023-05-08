@@ -7,7 +7,7 @@
   "author": "Iconify OÜ",
   "license": "Apache 2.0",
   "engines": {
-    "node": "^14.18.0 || >=16.10.0 || >= 18.0.0"
+    "node": "^14.18.0 || >=16.10.0"
   },
   "scripts": {
     "dev": "vitepress dev",
