@@ -11,7 +11,7 @@ export const preconnectLinks: HeadConfig[] = [
   ['link', { rel: 'preconnect', href: 'https://cdn.carbonads.net' }],
 ]
 
-export const editPageLinkPattern = 'https://github.com/userquin/iconify-website/edit/master/:path'
+export const editPageLinkPattern = 'https://github.com/userquin/iconify-website/edit/main/:path'
 
 export const socialLinks: DefaultTheme.SocialLink[] = [
   { icon: 'discord', link: 'https://iconify.design/discord' },
