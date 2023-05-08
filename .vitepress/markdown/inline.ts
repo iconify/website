@@ -116,29 +116,22 @@ function wrapType(raw: string, _escaped: string): string {
   const types = split(raw)
 
   // Merge list and escape contents
-  let isDefaultValue = false
   const childResults = types
     .map((type) => {
       type = type.replace(/</g, '&lt;').replace(/>/g, '&gt;')
       if (midSeparators.includes(type))
         return type
 
-      isDefaultValue = true
       return (
             `<span class="hljs-inline-type hljs-linkable">${type}</span>`
       )
     })
 
-  const result = (childResults.length === 1 && isDefaultValue)
-    ? childResults[0]
-    : (
+  return (
     `<span class="hljs-inline-type hljs-linkable">${
         childResults.join('')
        }</span>`
-      )
-
-  // Return
-  return result
+  )
 }
 
 export function customInlineCodeMD(md: MarkdownRenderer) {

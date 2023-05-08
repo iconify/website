@@ -9,6 +9,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AnimationArrow: typeof import('./.vitepress/theme/components/AnimationArrow.vue')['default']
     ContactInfo: typeof import('./.vitepress/theme/components/ContactInfo.md')['default']
     CopyToClipboard: typeof import('./.vitepress/theme/components/CopyToClipboard.vue')['default']
     DelayDemoWrapper: typeof import('./.vitepress/theme/components/DelayDemoWrapper.vue')['default']
@@ -19,6 +20,7 @@ declare module '@vue/runtime-core' {
     GettingStartedLicense: typeof import('./.vitepress/theme/components/GettingStartedLicense.md')['default']
     GettingStartedSponsor: typeof import('./.vitepress/theme/components/GettingStartedSponsor.md')['default']
     HomePage: typeof import('./.vitepress/theme/components/HomePage.vue')['default']
+    IconLoadingProcess: typeof import('./.vitepress/theme/components/IconLoadingProcess.vue')['default']
     LatestNews: typeof import('./.vitepress/theme/components/LatestNews.md')['default']
   }
 }

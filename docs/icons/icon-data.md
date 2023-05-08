@@ -80,7 +80,7 @@ Other sources are various packages you can use during build time. Using them req
 
 API is intended to be used when you don't know which icons you need. [Several icon components](../icon-components/index.md) retrieve icon data from API as needed, then render icon.
 
-`include process/api`
+<icon-loading-process></icon-loading-process>
 
 There are several downsides of using API to get icon data:
 

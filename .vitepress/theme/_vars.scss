@@ -73,6 +73,8 @@
   --c-purple-dimmed: #{palette.palette('purple', 400)};
   --c-blue-gray: #{palette.palette('blue-gray', 600)};
   --c-blue-gray-dimmed: #{palette.palette('blue-gray', 400)};
+  --c-cyan: #{palette.palette('cyan', 600)};
+  --c-cyan-dimmed: #{palette.palette('cyan', 400)};
 }
 
 .dark {
@@ -116,6 +118,8 @@
   --c-purple-dimmed: #{palette.palette('purple', 600)};
   --c-blue-gray: #{palette.palette('blue-gray', 400)};
   --c-blue-gray-dimmed: #{palette.palette('blue-gray', 600)};
+  --c-cyan: #{palette.palette('cyan', 400)};
+  --c-cyan-dimmed: #{palette.palette('cyan', 600)};
 }
 
 /**
