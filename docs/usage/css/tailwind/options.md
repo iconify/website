@@ -54,10 +54,10 @@ This can be used, in combination with default selectors to swap icon on hover wi
 
 ```yaml
 src: usage/tailwind/override.js
-title: 'Tailwind config:'
+hint: 'tailwind.config.js'
 extra:
   - src: usage/tailwind/override.html
-    title: 'HTML:'
+    title: 'Usage example:'
 ```
 
 ### iconSets

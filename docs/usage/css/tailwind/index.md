@@ -26,10 +26,10 @@ For example, here is syntax to use `[icon]mdi-light:home` in HTML:
 
 ```yaml
 src: usage/tailwind/syntax-iconify.html
-title: 'With @iconify/tailwind:'
+hint: 'Usage with @iconify/tailwind'
 extra:
   - src: usage/tailwind/syntax-egoist.html
-    title: 'With @egoist/tailwindcss-icons:'
+    hint: 'Usage with @egoist/tailwindcss-icons'
 ```
 
 Both plugins can be used with custom icon sets.

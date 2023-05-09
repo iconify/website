@@ -45,7 +45,7 @@ For more information see [README file in preset-icons package](https://github.co
 
 ## Icon size
 
-Be aware that by default, UnoCSS scales icons to 1.2em
+Be aware that by default, UnoCSS scales icons to `[num]1.2em`.
 
 You can change that by changing `[prop]scale` option.
 

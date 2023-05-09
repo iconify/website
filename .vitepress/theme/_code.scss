@@ -126,8 +126,10 @@ div.code-blocks code {
     }
 
     .code-block-title + div & {
-      top: 4px;
-      right: 4px;
+      // Move to title
+      top: -32px;
+      right: 8px;
+      opacity: 1 !important; // Show even when copy to clipboard is shown
     }
   }
 

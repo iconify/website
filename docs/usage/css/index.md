@@ -40,9 +40,7 @@ Icons with hardcoded palette are rendered as background images:
 
 ```yaml
 src: usage/css-demo-bg.html
-title: 'HTML:'
 css: usage/css-demo-bg.scss
-cssTitle: 'Stylesheet:'
 demo: true
 demoFirst: true
 class: usage-css-demo
@@ -54,9 +52,7 @@ Monotone icons are rendered as mask images with background color set to `[prop]c
 
 ```yaml
 src: usage/css-demo-mask.html
-title: 'HTML:'
 css: usage/css-demo-mask.scss
-cssTitle: 'Stylesheet:'
 demo: true
 demoFirst: true
 class: usage-css-demo

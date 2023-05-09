@@ -21,7 +21,6 @@
   --hljs-inline-type: #{palette.palette('blue', 650)};
   --hljs-inline-file: #{color.mix(palette.palette('blue', 600), palette.palette('blue-gray', 650))};
   --hljs-inline-var: #{palette.palette('light-blue', 550)};
-  --hljs-border-inline-link: rgba(0, 0, 0, 0.3);
 
   // backgrounds
   --hljs-bg-deletion: #{palette.palette('red', 100)};
@@ -48,7 +47,6 @@
   --hljs-inline-type: #{palette.palette('blue', 250)};
   --hljs-inline-file: #{color.mix(palette.palette('blue', 300), palette.palette('blue-gray', 250))};
   --hljs-inline-var: #{palette.palette('light-blue', 400)};
-  --hljs-border-inline-link: rgba(255, 255, 255, 0.3);
 
   // backgrounds
   --hljs-bg-deletion: #{palette.palette('red', 850)};
@@ -170,7 +168,7 @@ $font-weight-bold: 600;
 }
 
 .hljs-inline-link {
-  border-bottom: 1px dotted var(--hljs-border-inline-link);
+  border-bottom: 1px dotted var(--vp-c-gray);
   a & {
     color: inherit;
     border-bottom-width: 0;

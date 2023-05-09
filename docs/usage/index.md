@@ -42,10 +42,9 @@ See [how to use icons in CSS](./css/index.md) for various tools and plug-ins tha
 
 Icons can be embedded in HTML as `[tag]svg` elements:
 
-```svg
-<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-    <path fill="currentColor" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/>
-</svg>
+```yaml
+src: usage/sample.svg
+copy: false
 ```
 
 See [how to add SVG to HTML](./svg/index.md) for various tools and components that make it easy to add icons to HTML.
@@ -60,8 +59,9 @@ Iconify icon components are perfect for complex projects like theme or website c
 
 Iconify icon components are very easy to use. All developer has to specify is an icon name:
 
-```html
-<iconify-icon icon="mdi-light:home"></iconify-icon>
+```yaml
+src: icon-components/icon/usage.html
+copy: false
 ```
 
 See [how to use Iconify icon components](../icon-components/index.md).

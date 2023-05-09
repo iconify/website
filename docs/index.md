@@ -1,3 +1,16 @@
+```yaml
+title: Iconify Documentation
+replacements:
+  - code: '60k'
+    value: '${counters.icons-short}'
+  - code: '60,000'
+    value: '${counters.icons}'
+  - code: '80 icon sets'
+    value: '${counters.sets} icon sets'
+  - code: '80 open source'
+    value: '${counters.sets} open source'
+```
+
 # Iconify documentation
 
 Iconify is a set of tools for developers and designers, created to make it easy to work with different icon sets in a consistent way.
