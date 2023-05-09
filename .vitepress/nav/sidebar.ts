@@ -8,6 +8,12 @@ export const GlobalSidebar: SidebarItem[] = [
     link: '/getting-started/',
   },
   {
+    text: 'News',
+    collapsed: true,
+    items: NewsSidebar,
+    link: '/news/',
+  },
+  {
     text: 'Documentation',
     collapsed: true,
     items: DocumentationSidebar,
@@ -24,12 +30,6 @@ export const GlobalSidebar: SidebarItem[] = [
   {
     text: 'Iconify Support',
     link: '/support/',
-  },
-  {
-    text: 'News',
-    collapsed: true,
-    items: NewsSidebar,
-    link: '/news/',
   },
   {
     text: 'History',

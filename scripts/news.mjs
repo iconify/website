@@ -181,18 +181,11 @@ function generateNewsNavbar(rootFolder, years) {
 import type { DefaultTheme } from 'vitepress'
 
 export const NewsSidebar: DefaultTheme.SidebarItem[] = [
-  { text: 'Getting Started', link: '/getting-started/' },
-  {
-    text: 'Iconify Updates',
-    link: '/news/',
-    items: [
-      ${years.sort().reverse().map(y => `{ text: 'Year ${y}', link: '/news/${y}.md' }`).join(',\n      ')},
-    ],
-  },
+  ${years.sort().reverse().map(y => `{ text: 'Year ${y}', link: '/news/${y}.md' }`).join(',\n  ')},
 ]
 `
 
-  return writeFile(resolve(rootFolder, '.vitepress/news-navigation.ts'), newsNavigationContent, 'utf-8')
+  return writeFile(resolve(rootFolder, '.vitepress/nav/news.ts'), newsNavigationContent, 'utf-8')
 }
 
 const rootFolder = process.cwd()

@@ -17,7 +17,7 @@ const actions: ButtonData[] = [{
   text: 'Getting Started',
   primary: true,
 }, {
-  link: '/news/',
+  link: '/news/#latest-updates',
   text: 'Latest Updates',
 }, {
   link: '/docs/',
