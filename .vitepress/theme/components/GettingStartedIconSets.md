@@ -41,17 +41,17 @@ const icons = [
     </p>
     <ul>
         <li>
-            <a href="/docs/iconify-icon/index.md">Iconify Icon web component</a>
+            <a href="/docs/iconify-icon/">Iconify Icon web component</a>
             (HTML with or without UI frameworks. Works great with SSR).
         </li>
         <li>
-            <a href="/docs/icon-components/index.md">Iconify framework native components</a>
+            <a href="/docs/icon-components/">Iconify framework native components</a>
             (React, Vue, Svelte, Ember).
         </li>
     </ul>
     <p>
         You can also get raw SVG
-        <a href="/docs/tools/tools2/index.md">using various tools</a>
+        <a href="/docs/tools/tools2/">using various tools</a>
         and embed them in your pages without any components.
     </p>
     <p>
@@ -69,7 +69,7 @@ const icons = [
             (supports many UI frameworks).
         </li>
         <li>
-            <a href="/docs/icon-components/unocss.md">UnoCSS</a>
+            <a href="/docs/icon-components/unocss.html">UnoCSS</a>
             (icons in CSS).
         </li>
         <li>
