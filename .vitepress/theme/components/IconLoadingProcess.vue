@@ -104,10 +104,10 @@ const props = withDefaults(defineProps<{
       </dt>
       <dd>
         <p>API sends data for requested icons.</p>
-        <p>
+        <small>
           API hosts thousands of icons, but sends only data for icons that were
           requested.
-        </p>
+        </small>
       </dd>
     </dl>
     <dl>
@@ -210,6 +210,10 @@ dd {
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  small {
+    color: var(--vp-c-text-2)
   }
 }
 
