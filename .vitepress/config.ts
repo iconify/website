@@ -6,6 +6,10 @@ import { description, ogImage, ogUrl, title } from './constants'
 import { GlobalSidebar, Nav } from './nav'
 import { buildEnd, editPageLinkPattern, preconnectLinks, socialLinks, transformHtml } from './sitemap'
 
+// import { isCI, isDevelopment } from 'std-env'
+
+const enablePWA = false // isCI || !isDevelopment || process.env.SW_DEV === 'true'
+
 export default withPwa(defineConfig({
   lang: 'en-US',
   title,
@@ -13,6 +17,11 @@ export default withPwa(defineConfig({
   description,
   outDir: './dist',
   srcExclude: ['news/*/*.md', 'partials/**', 'patches/**', 'README.md', 'CONTRIBUTING.md', 'TODO.md'],
+  vite: {
+    define: {
+      PWA: enablePWA,
+    },
+  },
   head: [
     ...preconnectLinks,
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
@@ -65,5 +74,5 @@ export default withPwa(defineConfig({
   },
   transformHtml,
   buildEnd,
-  pwa,
+  pwa: pwa(enablePWA),
 }))

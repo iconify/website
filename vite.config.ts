@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import UnoCSS from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { isCI, isDevelopment } from 'std-env'
 import navbar from './plugins/navbar'
 import sidebar from './plugins/sidebar'
 
@@ -16,9 +15,6 @@ export default defineConfig({
     hmr: {
       overlay: false,
     },
-  },
-  define: {
-    PWA: isCI || !isDevelopment || process.env.SW_DEV === 'true',
   },
   plugins: [
     Components({
