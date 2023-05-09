@@ -165,7 +165,7 @@ async function generateLatestNews(rootFolder, newsFolder, years) {
 ## Latest updates
 
 <div class="latest-news">
-${latestNews.map(n => `<p><span>${n.date}</span><a href="/news/${n.year}.md#${n.link}">${n.title}</a></p>`).join('\n')}
+${latestNews.map(n => `<p><span>${n.date}</span><a href="/news/${n.year}.html#${n.link}">${n.title}</a></p>`).join('\n')}
 </div>
 `
   await writeFile(resolve(rootFolder, '.vitepress/theme/components/LatestNews.md'), latestNewsContent, 'utf-8')
