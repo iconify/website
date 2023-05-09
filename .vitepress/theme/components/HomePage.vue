@@ -67,6 +67,8 @@ const actions: ButtonData[] = [{
             <a href="https://github.com/sponsors/cyberalien" target="_blank" rel="noopener noreferrer" title="Support Iconify!">
               <img
                 crossorigin="anonymous"
+                width="800"
+                height="288"
                 class="resizable-img"
                 loading="lazy"
                 src="https://cyberalien.github.io/static/sponsors.svg"
