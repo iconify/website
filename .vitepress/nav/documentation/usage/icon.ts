@@ -1,4 +1,4 @@
-import type { SidebarItem } from '../siderbar-item'
+import type { SidebarItem } from '../../siderbar-item'
 
 export const IconifyIconSidebar: SidebarItem[] = [
   {

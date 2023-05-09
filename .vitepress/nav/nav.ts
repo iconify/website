@@ -1,15 +1,11 @@
 import type { DefaultTheme } from 'vitepress'
 
 const DocumentationNav: DefaultTheme.NavItemWithLink[] = [
-  { text: 'Iconify documentation', link: '/docs/' },
-  { text: 'Icons', link: '/docs/icons/', activeMatch: '^/docs/icons/' },
-  { text: 'How to use icons', link: '/docs/usage/', activeMatch: '^/docs/(usage|design)/' },
-  { text: 'Iconify Types', link: '/docs/types/', activeMatch: '^/docs/types/' },
-  { text: 'Tools for Developers', link: '/docs/tools/', activeMatch: '^/docs/tools/' },
+  { text: 'Documentation', link: '/docs/' },
+  { text: 'Icons and Icon Sets', link: '/docs/icons/', activeMatch: '^/docs/icons/' },
+  { text: 'How to Use Icons', link: '/docs/usage/', activeMatch: '^/docs/(usage|design|iconify-icon|icon-components)/' },
+  { text: 'Libraries for Developers', link: '/docs/tools/', activeMatch: '^/docs/(tools|types)/' },
   { text: 'Iconify API', link: '/docs/api/', activeMatch: '^/docs/api/' },
-  { text: 'Icons on demand', link: '/docs/icon-components/', activeMatch: '^/docs/icon-components/' },
-  { text: 'Iconify Icon', link: '/docs/iconify-icon/', activeMatch: '^/docs/iconify-icon/' },
-  { text: 'Articles', link: '/docs/articles/', activeMatch: '^/docs/articles/' },
 ]
 
 const AboutNav: DefaultTheme.NavItemWithLink[] = [
