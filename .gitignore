@@ -8,6 +8,7 @@
 *.vsix
 coverage
 dist
+dev-dist
 node_modules
 .eslintcache
 vite.config.ts.timestamp-*
