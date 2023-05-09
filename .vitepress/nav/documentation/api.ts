@@ -4,10 +4,8 @@ export const APISidebar: SidebarItem[] = [
   {
     text: 'API Queries',
     collapsed: true,
+    link: '/docs/api/queries',
     items: [{
-      text: 'Iconify API queries',
-      link: '/docs/api/queries',
-    }, {
       text: 'Generate SVG',
       link: '/docs/api/svg',
     }, {
@@ -38,22 +36,22 @@ export const APISidebar: SidebarItem[] = [
   }, {
     text: 'Hosting API',
     collapsed: true,
+    link: '/docs/api/hosting',
     items: [{
-      text: 'Hosting API',
-      link: '/docs/api/hosting',
-    }, {
       text: 'Node.js API',
       collapsed: true,
+      link: '/docs/api/hosting-js/',
       items: [{
-        text: 'Hosting Node.js API',
-        link: '/docs/api/hosting-js/',
-      }, {
         text: 'Configuration',
         link: '/docs/api/hosting-js/config',
       }, {
         text: 'HTTP Headers',
         link: '/docs/api/hosting-js/headers',
       }],
+    }, {
+      text: 'Custom CDN',
+      link: '/docs/api/cdn',
+      hidden: true,
     }],
   }, {
     text: 'API Providers',

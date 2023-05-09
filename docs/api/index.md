@@ -10,7 +10,9 @@ replacements:
 
 # Iconify API
 
-Iconify API is an open source hosted (or self-hosted) service for developers. What is Iconify API for?
+Iconify API is an open source hosted (or self-hosted) service for developers. 
+
+What is it for?
 
 - API provides icon data, which made it possible to create [Iconify icon components](../icon-components/index.md) that load icons demand.
 - API [generates SVG](./svg.md), which developers can link to in HTML or stylesheet.
