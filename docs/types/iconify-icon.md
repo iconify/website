@@ -31,10 +31,9 @@ Type `[type]IconifyIcon` is a simple object. It has two parts:
 
 Example of a basic icon:
 
-```json
-{
-	"body": "<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3z\"/>"
-}
+```yaml
+src: types/icon-basic.json
+copy: false
 ```
 
 ## Body
@@ -55,12 +54,9 @@ There are several properties that are shared in multiple types. They are describ
 
 Example of typical icon data:
 
-```json
-{
-	"body": "<path d=\"M7 6v12l10-6z\" fill=\"currentColor\"/>",
-	"width": 24,
-	"height": 24
-}
+```yaml
+src: types/icon-basic2.json
+copy: false
 ```
 
 In your code you can get default values from `[var]defaultIconProps` constant from [Iconify Utils](../tools/utils/index.md).

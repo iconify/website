@@ -61,23 +61,15 @@ const icons = [
     </p>
     <ul>
         <li>
-            <a
-                href="https://github.com/antfu/unplugin-icons"
-                target="_blank"
-                >Unplugin Icons</a
-            >
+            <a href="/docs/usage/svg/unplugin/">Unplugin Icons</a>
             (supports many UI frameworks).
         </li>
         <li>
-            <a href="/docs/icon-components/unocss.html">UnoCSS</a>
+            <a href="/docs/usage/css/unocss/">UnoCSS</a>
             (icons in CSS).
         </li>
         <li>
-            <a
-                href="https://github.com/natemoo-re/astro-icon"
-                target="_blank"
-                >Astro Icon</a
-            >
+            <a href="/docs/usage/svg/astro/">Astro Icon</a>
             (Astro).
         </li>
         <li>

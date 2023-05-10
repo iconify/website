@@ -117,18 +117,24 @@ Logic for resolving properties of alias:
 
 ```yaml
 src: types/alias-json.json
-title: 'IconifyJSON:'
+title: 'Source icon set:'
+hint: 'Icon set as IconifyJSON'
 extra:
   - src: types/alias-merged.json
-    title: 'Merged "arrow-right" icon as IconifyIcon:'
+    title: 'Extracted alias:'
+    hint: 'Merged "arrow-right" icon as IconifyIcon'
 ```
+
+Another example:
 
 ```yaml
 src: types/alias3-json.json
-title: 'IconifyJSON:'
+title: 'Source icon set:'
+hint: 'Icon set as IconifyJSON'
 extra:
   - src: types/alias3-merged.json
-    title: 'Merged "house-32" icon as IconifyIcon:'
+    title: 'Extracted alias:'
+    hint: 'Merged "house-32" icon as IconifyIcon'
 ```
 
 ### Default dimensions

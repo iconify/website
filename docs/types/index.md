@@ -31,8 +31,9 @@ Type `[type]unknown` means value can be any type.
 
 ### extends
 
-```ts
-interface Foo extends Bar, Baz {}
+```yaml
+src: types/interface.ts
+copy: false
 ```
 
 This means one type extends another type. In the example above, type `[type]Foo` has all properties of types `[type]Bar` and `[type]Baz`.
