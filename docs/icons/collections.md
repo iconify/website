@@ -1,7 +1,7 @@
 ```yaml
 title: Icon Sets List
 types:
-  IconifyInfo: '../types/iconify-json-metadata.md'
+  IconifyInfo: '/docs/types/iconify-json-metadata.md'
 ```
 
 # Available icon sets list

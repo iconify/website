@@ -4,24 +4,24 @@ replacements:
   - code: '60k'
     value: '${counters.icons-short}'
 types:
-  IconifyJSON: '../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 functions:
-  getIcons: '../../tools/utils/get-icons.md'
+  getIcons: '/docs/libraries/utils/get-icons.md'
 ```
 
 # Generating icon bundles with Iconify Utils
 
 This tutorial is a part of [Iconify icon bundles tutorial](./index.md).
 
-You can use [Iconify Utils](../../tools/utils/index.md) to generate data for icon bundles. This method requires some coding, but it can be used to automate bundle creation.
+You can use [Iconify Utils](/docs/libraries/utils/index.md) to generate data for icon bundles. This method requires some coding, but it can be used to automate bundle creation.
 
 ## Requirements
 
-This method requires [Iconify Utils](../../tools/utils/index.md) that is currently available only in Node.js.
+This method requires [Iconify Utils](/docs/libraries/utils/index.md) that is currently available only in Node.js.
 
 ## Steps
 
-Logic of creating bundle with Iconify JSON Tools:
+Logic of creating a bundle with Iconify Utils:
 
 1. Load icon set.
 2. Filter icons.
@@ -79,7 +79,7 @@ const mdiIconSet = require('@iconify-json/mdi/icons.json');
 
 After loading icon set, you need to filter icon data.
 
-Use `[func]getIcons` function. See [getIcons() documentation](../../tools/utils/get-icons.md).
+Use `[func]getIcons` function. See [getIcons() documentation](/docs/libraries/utils/get-icons.md).
 
 ```js
 import { getIcons } from '@iconify/utils/lib/icon-set/get-icons';

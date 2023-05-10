@@ -11,7 +11,7 @@ replacements:
 
 Iconify plugin for Tailwind CSS makes it easy to use icons in Tailwind CSS.
 
-You can use [over 60,000 open source icons](../../../icons/icon-data.md) and custom icons with minimal code.
+You can use [over 60,000 open source icons](/docs/icons/icon-data.md) and custom icons with minimal code.
 
 ## Options
 
@@ -76,7 +76,7 @@ module.exports = {
 
 You also need to install icon sets as dev dependencies. You can install either full package `[npm]@iconify/json` or packages for icon sets you want to use `[npm]@iconify-json/{prefix}`.
 
-See [icon data documentation](../../../icons/icon-data.md).
+See [icon data documentation](/docs/icons/icon-data.md).
 
 For example, if you want to use icon `[icon]mdi-light:home`, install `[npm]@iconify-json/mdi-light` package.
 

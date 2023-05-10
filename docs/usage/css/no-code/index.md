@@ -10,7 +10,7 @@ replacements:
   - code: '70 open source'
     value: '${counters.sets} open source'
 functions:
-  getIconsCSS: '../../../tools/utils/get-icons-css.md'
+  getIconsCSS: '/docs/libraries/utils/get-icons-css.md'
 ```
 
 # CSS for icons without coding
@@ -72,4 +72,4 @@ src: api/mdi.css
 
 API query has optional params that you can use to get different results.
 
-See [API query documentation](../../../api/css.md) for more details.
+See [API query documentation](/docs/api/css.md) for more details.

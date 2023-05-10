@@ -1,10 +1,10 @@
 ```yaml
 title: Clean Class Names in Iconify for Tailwind CSS
 types:
-  IconifyJSON: '../../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 functions:
   addDynamicIconSelectors: './index.md'
-  getIconsCSS: '../../../tools/utils/get-icons-css.md'
+  getIconsCSS: '/docs/libraries/utils/get-icons-css.md'
 ```
 
 # Clean class names for Tailwind CSS

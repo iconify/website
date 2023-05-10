@@ -1,8 +1,8 @@
 ```yaml
 title: How to use icons in CSS
 functions:
-  getIconsCSS: '../../tools/utils/get-icons-css.md'
-  getIconCSS: '../../tools/utils/get-icon-css.md'
+  getIconsCSS: '/docs/libraries/utils/get-icons-css.md'
+  getIconCSS: '/docs/libraries/utils/get-icon-css.md'
 ```
 
 # How to use icons in CSS
@@ -75,7 +75,7 @@ There are several ways to do it:
 
 Want to build a custom plugin that generates CSS?
 
-[Iconify Utils](../../tools/utils/index.md) package includes all functions you need. Process of generating CSS is simple:
+[Iconify Utils](/docs/libraries/utils/index.md) package includes all functions you need. Process of generating CSS is simple:
 
 - Locate icon set file.
 - Read it and parse JSON.

@@ -9,9 +9,9 @@ replacements:
 
 # Icons on demand
 
-Iconify ecosystem has a unique feature: [Iconify API](../api/index.md).
+Iconify ecosystem has a unique feature: [Iconify API](/docs/api/index.md).
 
-It can be used to [load icon data on demand](../api/icon-data.md) and is used by Iconify icon components.
+It can be used to [load icon data on demand](/docs/api/icon-data.md) and is used by Iconify icon components.
 
 [Skip to list of available components](#components) if you want to skip long explanation of how it all works.
 
@@ -26,13 +26,13 @@ demoFirst: false
 class: sample-big
 ```
 
-Unlike [regular icon components](../usage/svg/index.md), Iconify icon components do not bundle icon data. They load only data for icons used on currently viewed page at run time.
+Unlike [regular icon components](/docs/usage/svg/index.md), Iconify icon components do not bundle icon data. They load only data for icons used on currently viewed page at run time.
 
 <icon-loading-process link="#components"></icon-loading-process>
 
 ### Advantages
 
-Loading icon data on demand has its advantages and disadvantages over using [regular icon components](../usage/svg/index.md).
+Loading icon data on demand has its advantages and disadvantages over using [regular icon components](/docs/usage/svg/index.md).
 
 Advantages:
 
@@ -64,7 +64,7 @@ Usage is very simple:
 <iconify-icon icon="mdi:home"></iconify-icon>
 ```
 
-See [Iconify icon web component documentation](../iconify-icon/index.md).
+See [Iconify icon web component documentation](/docs/iconify-icon/index.md).
 
 #### Shadow DOM
 
@@ -76,7 +76,7 @@ Advantages:
 
 - Separates icon from main DOM, so main DOM doesn't become bloated.
 - No conflicts with unique ids, which are used in some icons in masks, clip paths, animations and few other elements.
-- Works wonderfully with SSR, much better than UI framework native components: no ID conflicts, render is independant from framework rendering, so it doesn't cause any issues with hydration.
+- Works wonderfully with SSR, much better than UI framework native components: no ID conflicts, render is independent of framework rendering, so it doesn't cause any issues with hydration.
 
 Disadvantages:
 
@@ -121,5 +121,5 @@ Usage is as any other component:
 
 These components behave differently than web component:
 
-- To avoid SSR errors, icons are rendered only after component is mounted. Otherwise it breaks hydration.
+- To avoid SSR errors, icons are rendered only after component is mounted. Otherwise, it breaks hydration.
 - Icons can be rendered without `[prop]width` and `[prop]height` attributes, making it easy to style in CSS.

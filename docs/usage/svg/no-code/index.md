@@ -10,7 +10,7 @@ replacements:
   - code: '70 open source'
     value: '${counters.sets} open source'
 functions:
-  getIconsCSS: '../../../tools/utils/get-icons-css.md'
+  getIconsCSS: '/docs/libraries/utils/get-icons-css.md'
 ```
 
 # SVG for icons without coding
@@ -26,7 +26,7 @@ If you would rather generate SVG programmatically, [consider using Iconify Utils
 
 ## Websites
 
-You can browse all available icons and copy code or SVG on the following webites:
+You can browse all available icons and copy code or SVG on the following websites:
 
 `include usage/options/websites`
 
@@ -58,4 +58,4 @@ Process:
 - Download and save it.
 - Copy it to clipboard, paste in your HTML.
 
-See [Iconify API documentation](../../../api/svg.md) for details and more parameters.
+See [Iconify API documentation](/docs/api/svg.md) for details and more parameters.

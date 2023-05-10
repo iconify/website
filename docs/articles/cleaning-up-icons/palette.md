@@ -1,7 +1,7 @@
 ```yaml
 title: Changing icon palette
 functions:
-  parseColors: ../../tools/tools2/icon/colors.md
+  parseColors: '/docs/libraries/tools/icon/colors.md'
 ```
 
 # Changing icon palette
@@ -109,4 +109,4 @@ Also such icons assume that `[prop]currentColor` is either light or dark or cann
 
 ## Code
 
-Palette is parsed using the `[func]parseColors()` function from [Iconify Tools](../../tools/tools2/index.md).
+Palette is parsed using the `[func]parseColors()` function from [Iconify Tools](/docs/libraries/tools/index.md).

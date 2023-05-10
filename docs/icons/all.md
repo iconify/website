@@ -8,13 +8,13 @@ replacements:
   - code: '80 icon sets'
     value: '${counters.sets} icon sets'
 types:
-  IconifyJSON: '../types/iconify-json.md'
-  IconifyInfo: '../types/iconify-json-metadata.md'
-  LegacyIconifyInfo: '../types/iconify-json-metadata.md'
-  IconifyChars: '../types/iconify-json-metadata.md#chars'
-  IconifyMetaData: '../types/iconify-json-metadata.md#iconify-categories'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyInfo: '/docs/types/iconify-json-metadata.md'
+  LegacyIconifyInfo: '/docs/types/iconify-json-metadata.md'
+  IconifyChars: '/docs/types/iconify-json-metadata.md#chars'
+  IconifyMetaData: '/docs/types/iconify-json-metadata.md#iconify-categories'
 functions:
-  exportJSONPackage: '../tools/tools2/export/json-package.md'
+  exportJSONPackage: '/docs/libraries/tools/export/json-package.md'
 ```
 
 # Iconify icon sets package
@@ -34,7 +34,7 @@ Package contains:
 - List of icon sets in `[file]collections.json`.
 - Icon sets in `[file]json/{prefix}.json`, where `[str]{prefix}` is icon set prefix, such as `[file]json/mdi-light.json`.
 - Helper functions for PHP and Node.js
-- Misc files, such as package definition files, README, human readable list of icon sets.
+- Misc files, such as package definition files, README, human-readable list of icon sets.
 
 ## Icon sets list
 
@@ -42,7 +42,7 @@ Icon sets list is stored in `[file]collections.json`.
 
 Contents are a simple object, where key is icon set prefix, value is icon set information in `[type]IconifyInfo` format. Information includes icon set name, author information, license, number of files and 3 sample files to display.
 
-Additionally, `[file]collections.md` contains the same data, but in human readable format.
+Additionally, `[file]collections.md` contains the same data, but in human-readable format.
 
 ## Icon sets
 
@@ -62,8 +62,8 @@ If you are using [Iconify API](../api/index.md), you do not need to do anything 
 
 For reading icon sets, you can use:
 
-- [Iconify Utils](../tools/utils/index.md) for JavaScript.
-- [Iconify JSON Tools](../tools/json/index.md) for PHP, deprecated and unmaintained.
+- [Iconify Utils](/docs/libraries/utils/index.md) for JavaScript.
+- [Iconify JSON Tools](https://github.com/iconify/json-tools.php) for PHP, deprecated and unmaintained.
 
 ## Helper functions {#helpers}
 
@@ -106,7 +106,7 @@ extra:
 
 These helper functions only list and locate icon sets.
 
-For reading icon sets, you can use [Iconify Utils](../tools/utils/index.md) or [Iconify JSON Tools](../tools/json/index.md).
+For reading icon sets, you can use [Iconify Utils](/docs/libraries/utils/index.md).
 
 ## Adding icon sets {#submit}
 

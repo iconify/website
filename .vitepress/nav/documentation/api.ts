@@ -1,4 +1,4 @@
-import type { SidebarItem } from '../siderbar-item'
+import type { SidebarItem } from '../sidebar-item'
 
 export const APISidebar: SidebarItem[] = [
   {

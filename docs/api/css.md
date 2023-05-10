@@ -1,7 +1,7 @@
 ```yaml
 title: Generating CSS for icons
 functions:
-  getIconsCSS: '../tools/utils/get-icons-css.md'
+  getIconsCSS: '/docs/libraries/utils/get-icons-css.md'
 ```
 
 # CSS for icons
@@ -58,7 +58,7 @@ Optional parameters:
 - `[prop]mode`: `[str]mask` or `[str]background`. Forces icon to render as mask image or background image. If not set, mode will be detected from icon content: icons that contain `[prop]currentColor` will be rendered as mask image, other icons as background image.
 - `[prop]format`. Stylesheet formatting option. Matches options used in Sass. Supported values: `[str]expanded`, `[str]compact`, `[str]compressed`.
 
-Other optional parameters are the same as in `[func]getIconsCSS()` function of [Iconify Utils](../tools/utils/index.md).
+Other optional parameters are the same as in `[func]getIconsCSS()` function of [Iconify Utils](/docs/libraries/utils/index.md).
 
 ### Color and mode
 
@@ -90,7 +90,7 @@ You can also use `[prop]color` parameter to convert monotone icons to icons with
 #### CSS variables
 
 ```yaml
-include: tools/utils/css-color
+include: libraries/utils/css-color
 ```
 
 ```html
@@ -122,7 +122,7 @@ hint: /material-symbols.css?icons=check-box-outline-rounded&selector=.checkbox-c
 src: api/checkbox-color.css
 ```
 
-CSS for mutliple icons with pseudo selectors requires multiple parameters. It requires using at least `[prop]icon` and `[prop]pseudo` parameters, optionally with `[prop]common` and `[prop]override` parameters:
+CSS for multiple icons with pseudo selectors requires multiple parameters. It requires using at least `[prop]icon` and `[prop]pseudo` parameters, optionally with `[prop]common` and `[prop]override` parameters:
 
 ```yaml
 hint: /line-md.css?icons=account-add,account-delete&selector=.icon--{prefix}--{name}::after&pseudo=1
@@ -148,4 +148,4 @@ hint: /line-md.css?icons=account-add,account-delete&var=null
 src: api/line-md-novar.css
 ```
 
-See `[func]getIconsCSS()` function of [Iconify Utils](../tools/utils/index.md) for more examples.
+See `[func]getIconsCSS()` function of [Iconify Utils](/docs/libraries/utils/index.md) for more examples.

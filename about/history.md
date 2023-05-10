@@ -58,7 +58,7 @@ My original plan was to finish developing it by the end of 2020. However, later 
 
 So I have decided to take it slowly.
 
-Instead of rushing development, I have decided to take time improving existing code. There was a lot to improve: project required [better documentation](/docs/index.md), [new tools](/docs/tools/index.md), better website. Code in all parts of the project was initially written in JavaScript, but could use a full rewrite with TypeScript and ES modules support. My plan was to work on the project without rushing it, so the end product would have high quality code.
+Instead of rushing development, I have decided to take time improving existing code. There was a lot to improve: project required [better documentation](/docs/index.md), [new tools](/docs/libraries/index.md), better website. Code in all parts of the project was initially written in JavaScript, but could use a full rewrite with TypeScript and ES modules support. My plan was to work on the project without rushing it, so the end product would have high quality code.
 
 This was a good idea. Now, there are several third party icon components, which would be hard to create without proper documentation and tools. Project code is modern, ready for future.
 
@@ -66,7 +66,7 @@ This was a good idea. Now, there are several third party icon components, which 
 
 Originally, Iconify was focused on the [SVG framework](/docs/icon-components/svg-framework/index.md), which was a good idea, but developers were asking for different solutions.
 
-In addition to the SVG framework, in 2021 I published [native icon components for multiple frameworks](/docs/icon-components/components/index.md) (React, Svelte, Vue) that had load on demand functionality, similar to the SVG framework.
+In addition to the SVG framework, in 2021 I published [native icon components for multiple frameworks](/docs/icon-components/index.md) (React, Svelte, Vue) that had load on demand functionality, similar to the SVG framework.
 
 ### Web component
 
@@ -80,7 +80,7 @@ Web component will eventually replace all other icon components.
 
 In addition to components mentioned above, there are now several third party components, developed by various authors.
 
-It became possible [with creation of detailed documentation](/docs/index.md) and [tools to work with icon data](/docs/tools/index.md) in late 2021.
+It became possible [with creation of detailed documentation](/docs/index.md) and [tools to work with icon data](/docs/libraries/index.md) in late 2021.
 
 ## Open source
 

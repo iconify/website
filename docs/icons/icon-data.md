@@ -6,8 +6,8 @@ replacements:
   - code: '60k'
     value: '${counters.icons-short}'
 types:
-  IconifyJSON: '../types/iconify-json.md'
-  IconifyIcon: '../types/iconify-icon.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 ```
 
 # Icon data
@@ -33,7 +33,7 @@ In addition to git repository, icon sets are available as:
 - NPM package `[npm]@iconify/collections` that contains only list of available icon sets (file `[file]collections.json` from big package).
 - Smaller NPM packages `[npm]@iconify-json/*` that contain only one icon set per package in `[type]IconifyJSON` format.
 - Smaller NPM packages `[npm]@iconify-icons/*` and `[npm]@iconify/icons-*` that contain only one icon set per package, data for each icon in separate file in `[type]IconifyIcon` format.
-- [Iconify API](../api/index.md) that can be used to retrieve icon data on demand.
+- [Iconify API](/docs/api/index.md) that can be used to retrieve icon data on demand.
 
 Below is description of each of those sources.
 
@@ -78,7 +78,7 @@ See [individual icon packages](./icons.md) for details.
 
 Other sources are various packages you can use during build time. Using them requires knowing which icons you are using, so build tools would extract data only for icons that you need. You cannot use them at run time because they are too big.
 
-API is intended to be used when you don't know which icons you need. [Several icon components](../icon-components/index.md) retrieve icon data from API as needed, then render icon.
+API is intended to be used when you don't know which icons you need. [Several icon components](/docs/icon-components/index.md) retrieve icon data from API as needed, then render icon.
 
 <icon-loading-process></icon-loading-process>
 

@@ -51,7 +51,7 @@ const icons = [
     </ul>
     <p>
         You can also get raw SVG
-        <a href="/docs/tools/tools2/">using various tools</a>
+        <a href="/docs/libraries/tools/">using various tools</a>
         and embed them in your pages without any components.
     </p>
     <p>

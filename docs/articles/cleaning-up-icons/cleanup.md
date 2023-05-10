@@ -1,7 +1,7 @@
 ```yaml
 title: Cleaning up SVG code
 functions:
-  cleanupSVG: ../../tools/tools2/icon/cleanup.md
+  cleanupSVG: '/docs/libraries/tools/icon/cleanup.md'
 ```
 
 # Cleaning up SVG code
@@ -38,6 +38,6 @@ Clean up process does not optimise the icon. It only does the following:
 - Converts style to attributes.
 - [Validates icon](./validate.md).
 
-It is done with the `[func]cleanupSVG()` function from [Iconify Tools](../../tools/tools2/index.md).
+It is done with the `[func]cleanupSVG()` function from [Iconify Tools](/docs/libraries/tools/index.md).
 
 [Optimisation is done later](./optimise.md), after [parsing palette](./palette.md).

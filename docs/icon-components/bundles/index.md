@@ -4,7 +4,7 @@ replacements:
   - code: '60k'
     value: '${counters.icons-short}'
 types:
-  IconifyJSON: '../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Icon bundles
@@ -13,7 +13,7 @@ types:
 
 ## Offline use
 
-Icon bundle is the easiest way to make [Iconify icon component](../../icon-components/index.md) work without relying on API. Instead of loading icon data from Iconify API, you can provide icon by loading icon bundle.
+Icon bundle is the easiest way to make [Iconify icon component](/docs/icon-components/index.md) work without relying on API. Instead of loading icon data from Iconify API, you can provide icon by loading icon bundle.
 
 ## Advantages
 
@@ -29,7 +29,7 @@ This also allows rendering icons when internet access is not available and you a
 
 ### Smaller bundle size {#size}
 
-Compares to [individual icon packages](../../icons/icons.md) that contain data for each icon separately, icon bundles import multiple icons at the same time. This reduces bundle size.
+Compares to [individual icon packages](/docs/icons/icons.md) that contain data for each icon separately, icon bundles import multiple icons at the same time. This reduces bundle size.
 
 ## How to create icons bundle? {#create}
 
@@ -52,7 +52,6 @@ There are several ways to generate data for icon bundles:
 
 - [Using Iconify API to generate bundle](./api.md).
 - [Using Iconify Utils to generate bundle](./utils.md).
-- [Using Iconify JSON Tools to generate bundle](./json-tools.md).
 
 ### Wrapping data in callback {#callbacks}
 

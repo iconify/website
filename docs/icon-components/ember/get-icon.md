@@ -1,7 +1,7 @@
 ```yaml
 title: 'Iconify for Ember Function: getIcon'
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 ```
 
 # Iconify for Ember function: getIcon

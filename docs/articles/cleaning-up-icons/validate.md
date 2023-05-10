@@ -1,7 +1,7 @@
 ```yaml
 title: Validating SVG
 functions:
-  cleanupSVG: ../../tools/tools2/icon/cleanup.md
+  cleanupSVG: '/docs/libraries/tools/icon/cleanup.md'
 ```
 
 # Validating SVG
@@ -84,4 +84,4 @@ They are not allowed. Why?
 
 Validation is done during [clean up process](./cleanup.md).
 
-It is done with the `[func]cleanupSVG()` function from [Iconify Tools](../../tools/tools2/index.md).
+It is done with the `[func]cleanupSVG()` function from [Iconify Tools](/docs/libraries/tools/index.md).

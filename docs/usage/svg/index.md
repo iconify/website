@@ -6,10 +6,10 @@ replacements:
   - code: '60k'
     value: '${counters.icons-short}'
 functions:
-  iconToSVG: '../../tools/utils/icon-to-svg.md'
-  iconToHTML: '../../tools/utils/icon-to-html.md'
-  parseIconSet: '../../tools/utils/parse-icon-set.md'
-  getIconData: '../../tools/utils/get-icon-data.md'
+  iconToSVG: '/docs/libraries/utils/icon-to-svg.md'
+  iconToHTML: '/docs/libraries/utils/icon-to-html.md'
+  parseIconSet: '/docs/libraries/utils/parse-icon-set.md'
+  getIconData: '/docs/libraries/utils/get-icon-data.md'
 ```
 
 # How to embed SVG in HTML
@@ -66,7 +66,7 @@ For many frameworks there are components that handle embedding SVG in HTML:
 
 Not using any frameworks, but want to automate process?
 
-[Iconify Utils](../../tools/utils/index.md) offers easy to use functions that generate SVG.
+[Iconify Utils](/docs/libraries/utils/index.md) offers easy to use functions that generate SVG.
 
 See [how to export SVG with Iconify Utils](./utils/index.md).
 
@@ -86,7 +86,7 @@ Currently you'll need to use JavaScript for that. There are no usable libraries 
 
 ### JavaScript
 
-[Iconify Utils](../../tools/utils/index.md) package includes all functions you need. Process of generating SVG is simple:
+[Iconify Utils](/docs/libraries/utils/index.md) package includes all functions you need. Process of generating SVG is simple:
 
 - Locate icon set file.
 - Read it and parse JSON.
@@ -126,7 +126,7 @@ return React.createElement('svg', {
 
 For other frameworks that use native ways to create elements, use similar framework specific code.
 
-If framework does not have some way to set `[prop]innerHTML`, which is required to set contents of `[tag]svg`, this code cannot be used. You'll need to find a way to to convert HTML string to tree of components.
+If framework does not have some way to set `[prop]innerHTML`, which is required to set contents of `[tag]svg`, this code cannot be used. You'll need to find a way to convert HTML string to tree of components.
 
 If you want to create full `[tag]svg` element as string, you can use `[func]iconToHTML()` function to convert result of `[func]iconToSVG()` to string:
 

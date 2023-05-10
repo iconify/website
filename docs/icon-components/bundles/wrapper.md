@@ -1,7 +1,7 @@
 ```yaml
 title: Wrapper Function for Icon Bundles
 types:
-  IconifyJSON: '../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Wrapper function for icon bundles

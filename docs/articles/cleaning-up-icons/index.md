@@ -1,10 +1,10 @@
 ```yaml
 title: Cleaning up icons
 types:
-  IconifyJSON: '../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 functions:
-  importDirectory: ../../tools/tools2/import/directory.md
-  forEach: ../../tools/tools2/icon-set/for-each.md
+  importDirectory: '/docs/libraries/tools/import/directory.md'
+  forEach: '/docs/libraries/tools/icon-set/for-each.md'
 ```
 
 # Cleaning up icons
@@ -19,7 +19,7 @@ Icons can even contain malicious code, such as scripts, event listeners and link
 
 When working with monotone icons (icons that have only one color, which supposed to be changeable), some icons use `[attr]fill`, some `[attr]stroke`, some rely on system default colors, some use `[prop]black` color, some use seemingly random colors.
 
-All the tools you need are available in [Iconify Tools](../../tools/tools2/index.md) package.
+All the tools you need are available in [Iconify Tools](/docs/libraries/tools/index.md) package.
 
 ## Process
 
@@ -57,7 +57,7 @@ See [a very short article explaining icon optimisation](./optimise.md).
 
 ## Code
 
-Want to try it with your icons? All functions you need are available in [Iconify Tools](../../tools/tools2/index.md).
+Want to try it with your icons? All functions you need are available in [Iconify Tools](/docs/libraries/tools/index.md).
 
 Below are several examples.
 
@@ -68,7 +68,7 @@ This code sample parses one monotone icon. Icon uses black color, which is repla
 Icon is loaded from one file, output is stored in another file.
 
 ```yaml
-src: tools/tools2/examples/cleanup-one-icon.ts
+src: libraries/tools/examples/cleanup-one-icon.ts
 ```
 
 ### Parsing an entire icon set
@@ -78,5 +78,5 @@ This code sample parses an entire icon set and returns icon set in `[type]Iconif
 It is similar to the example above, but uses `[func]importDirectory()` to import all SVG files in a directory, then stores the result in a JSON file. Each icon is parsed in asynchronous `[func]forEach()` callback.
 
 ```yaml
-src: tools/tools2/examples/cleanup-directory.ts
+src: libraries/tools/examples/cleanup-directory.ts
 ```

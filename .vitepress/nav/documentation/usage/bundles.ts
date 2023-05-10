@@ -1,4 +1,4 @@
-import type { SidebarItem } from '../../siderbar-item'
+import type { SidebarItem } from '../../sidebar-item'
 
 export const IconBundlesSidebar: SidebarItem[] = [{
   text: 'Wrapper Function',
@@ -10,8 +10,8 @@ export const IconBundlesSidebar: SidebarItem[] = [{
   text: 'Using Iconify Utils',
   link: '/docs/icon-components/bundles/utils',
 }, {
-  text: 'Using JSON Tools',
-  link: '/docs/icon-components/bundles/json-tools',
+  text: 'Using Iconify Tools',
+  link: '/docs/icon-components/bundles/tools',
 }, {
   text: 'Examples',
   link: '/docs/icon-components/bundles/examples/',

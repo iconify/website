@@ -1,7 +1,7 @@
 ```yaml
 title: Generating Iconify Icon Bundles with API
 types:
-  IconifyJSON: '../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Generating icon bundles with API
@@ -10,7 +10,7 @@ This tutorial is a part of [Iconify icon bundles tutorial](./index.md).
 
 You can use Iconify API to generate data for icon bundles. Icon bundles use the same `[type]IconifyJSON` format that is used to retrieve icon data from API.
 
-This method can be used to generate small bundles, where you do not need to automate anything. If you want to automate bundle generation, for example, make it a part of your build process, you should use [Iconify JSON Tools](./json-tools.md) instead.
+This method can be used to generate small bundles, where you do not need to automate anything. If you want to automate bundle generation, for example, make it a part of your build process, you should use [Iconify Tools](./tools.md) instead.
 
 ## Retrieving icon data
 

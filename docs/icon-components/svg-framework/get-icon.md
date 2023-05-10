@@ -1,7 +1,7 @@
 ```yaml
 title: 'Iconify SVG Framework Function: getIcon'
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 ```
 
 # SVG framework function: getIcon

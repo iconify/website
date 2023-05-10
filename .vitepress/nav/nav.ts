@@ -4,7 +4,7 @@ const DocumentationNav: DefaultTheme.NavItemWithLink[] = [
   { text: 'Documentation', link: '/docs/' },
   { text: 'Icons and Icon Sets', link: '/docs/icons/', activeMatch: '^/docs/icons/' },
   { text: 'How to Use Icons', link: '/docs/usage/', activeMatch: '^/docs/(usage|design|iconify-icon|icon-components)/' },
-  { text: 'Libraries for Developers', link: '/docs/tools/', activeMatch: '^/docs/(tools|types)/' },
+  { text: 'Libraries for Developers', link: '/docs/libraries/', activeMatch: '^/docs/(libraries|types)/' },
   { text: 'Iconify API', link: '/docs/api/', activeMatch: '^/docs/api/' },
 ]
 

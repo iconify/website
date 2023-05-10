@@ -4,14 +4,14 @@ replacements:
   - code: '/2/2.0.0/'
     value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
 types:
-  IconifyJSON: '../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Icon bundles for Iconify SVG framework
 
 This tutorial is a part of [Iconify icon bundles tutorial](./index.md).
 
-[Iconify SVG framework](../../icon-components/svg-framework/index.md) supports 2 ways of adding icon bundles:
+[Iconify SVG framework](/docs/icon-components/svg-framework/index.md) supports 2 ways of adding icon bundles:
 
 - Loading icon bundles before loading Iconify.
 - Loading icon bundles after loading Iconify.

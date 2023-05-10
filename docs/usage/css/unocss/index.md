@@ -9,9 +9,9 @@ replacements:
 
 # Icons with UnoCSS
 
-If you are using [UnoCSS](https://github.com/unocss/unocss), you can easily use [over 60,000 open source icons](../../../icons/icon-data.md) and custom icons with minimal code.
+If you are using [UnoCSS](https://github.com/unocss/unocss), you can easily use [over 60,000 open source icons](/docs/icons/icon-data.md) and custom icons with minimal code.
 
-Among other features, UnoCSS has `[npm]@unocss/preset-icons` package that dynamically generates icons. It uses [icon data from Iconify](../../../icons/icon-data.md).
+Among other features, UnoCSS has `[npm]@unocss/preset-icons` package that dynamically generates icons. It uses [icon data from Iconify](/docs/icons/icon-data.md).
 
 ## Usage
 
@@ -51,6 +51,6 @@ You can change that by changing `[prop]scale` option.
 
 ## Custom icons
 
-You can use UnoCSS with custom icons. During build process you can import, clean up and optimise icons using [Iconify Tools](../../../tools/tools2/index.md).
+You can use UnoCSS with custom icons. During build process you can import, clean up and optimise icons using [Iconify Tools](/docs/libraries/tools/index.md).
 
 See [demo from Iconify Tools package](https://github.com/iconify/tools/tree/main/%40iconify-demo/unocss). Configuration is in `[file]unocss.config.ts`.

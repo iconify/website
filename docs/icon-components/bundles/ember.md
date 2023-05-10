@@ -1,7 +1,7 @@
 ```yaml
 title: Icon Bundles for Iconify for Ember
 types:
-  IconifyJSON: '../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Icon bundles for Iconify for Ember

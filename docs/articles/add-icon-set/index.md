@@ -10,7 +10,7 @@ If you have created an icon set, please consider sharing it with Iconify communi
 
 What are the benefits of publishing an icon set to Iconify?
 
-- Icons become available to thousands of users that [use projects that get icon data from Iconify](../../usage/index.md).
+- Icons become available to thousands of users that [use projects that get icon data from Iconify](/docs/usage/index.md).
 - Iconify is open source, all icon sets are also open source and they are used by many open source projects. Do you feel like contributing to open source projects?
 - Each icon set has an information section, which includes author name and link to repository. It is shown on websites that list icons, it is shown in Figma and Sketch plugin. It might get you some visitors, followers and links for search engines.
 

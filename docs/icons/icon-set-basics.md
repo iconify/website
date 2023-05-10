@@ -1,12 +1,12 @@
 ```yaml
 title: 'Getting Started: Icon Sets'
 types:
-  IconifyJSON: '../types/iconify-json.md'
-  IconifyIcon: '../types/iconify-icon.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 functions:
-  getIconData: '../tools/utils/get-icon-data.md'
-  parseIconSet: '../tools/utils/parse-icon-set.md'
-  defaultIconProps: '../tools/utils/default-icon-props.md'
+  getIconData: '/docs/libraries/utils/get-icon-data.md'
+  parseIconSet: '/docs/libraries/utils/parse-icon-set.md'
+  defaultIconProps: '/docs/libraries/utils/default-icon-props.md'
 ```
 
 # Icon Sets
@@ -56,9 +56,9 @@ Examples of valid prefixes: `[str]mdi`, `[str]mdi-light`, `[str]fluent-emoji-fla
 
 ## Functions
 
-To parse icon sets, [Iconify Utils](../tools/utils/index.md) offers the following functions:
+To parse icon sets, [Iconify Utils](/docs/libraries/utils/index.md) offers the following functions:
 
 - `[func]parseIconSet()` parses an entire icon set, calling custom function for every icon.
 - `[func]getIconData()` extracts data for an icon in `[type]IconifyIcon` format.
 
-To create convert icons to icon sets, use [Iconify Tools](../tools/tools2/index.md).
+To create convert icons to icon sets, use [Iconify Tools](/docs/libraries/tools/index.md).

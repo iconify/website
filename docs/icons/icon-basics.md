@@ -1,12 +1,12 @@
 ```yaml
 title: 'Getting Started: Icons'
 types:
-  IconifyJSON: '../types/iconify-json.md'
-  IconifyIcon: '../types/iconify-icon.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 functions:
-  getIconData: '../tools/utils/get-icon-data.md'
-  parseIconSet: '../tools/utils/parse-icon-set.md'
-  defaultIconProps: '../tools/utils/default-icon-props.md'
+  getIconData: '/docs/libraries/utils/get-icon-data.md'
+  parseIconSet: '/docs/libraries/utils/parse-icon-set.md'
+  defaultIconProps: '/docs/libraries/utils/default-icon-props.md'
 ```
 
 # Icon Basics
@@ -74,11 +74,11 @@ Icons that contain the following are not allowed:
 
 Additionally, everything that does not affect icon rendering is removed. Many bad editors leave a lot of junk code in generated SVG, all of that is removed.
 
-This is done during import process for open source icon sets using [Iconify Tools](../tools/index.md). Custom icon sets might not follow same guidelines.
+This is done during import process for open source icon sets using [Iconify Tools](/docs/libraries/index.md). Custom icon sets might not follow same guidelines.
 
 ### Icon cleanup
 
-For more details about icon cleanup and code samples, see [icons clean up process](../articles/cleaning-up-icons/index.md).
+For more details about icon cleanup and code samples, see [icons clean up process](/docs/articles/cleaning-up-icons/index.md).
 
 ## Padding
 

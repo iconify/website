@@ -1,8 +1,8 @@
 ```yaml
 title: Options in Iconify for Tailwind CSS
 types:
-  IconifyJSON: '../../../types/iconify-json.md'
-  IconifyInfo: '../../../types/iconify-info.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyInfo: '/docs/types/iconify-info.md'
 ```
 
 # Options for Tailwind CSS

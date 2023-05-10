@@ -4,8 +4,8 @@ types:
   IconifyAlias: './iconify-alias.md'
   IconifyJSON: './iconify-json.md'
 functions:
-  getIconData: '../tools/utils/get-icon-data.md'
-  defaultIconProps: '../tools/utils/default-icon-props.md'
+  getIconData: '../libraries/utils/get-icon-data.md'
+  defaultIconProps: '../libraries/utils/default-icon-props.md'
 ```
 
 # IconifyIcon type
@@ -59,4 +59,4 @@ src: types/icon-basic2.json
 copy: false
 ```
 
-In your code you can get default values from `[var]defaultIconProps` constant from [Iconify Utils](../tools/utils/index.md).
+In your code you can get default values from `[var]defaultIconProps` constant from [Iconify Utils](/docs/libraries/utils/index.md).

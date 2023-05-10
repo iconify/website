@@ -20,7 +20,7 @@ You can use it to render icons if you are building app using one of the followin
 - Astro
 - Qwik
 
-With Unplugin Icons you can easily use [over 60,000 open source icons](../../../icons/icon-data.md) and custom icons with minimal code.
+With Unplugin Icons you can easily use [over 60,000 open source icons](/docs/icons/icon-data.md) and custom icons with minimal code.
 
 ## How does it work? {#process}
 

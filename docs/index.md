@@ -68,7 +68,7 @@ See [Iconify types documentation](./types/index.md).
 
 #### Utils
 
-[Iconify Utils](./tools/utils/index.md) contains reusable functions for:
+[Iconify Utils](./libraries/utils/index.md) contains reusable functions for:
 
 - working with icon sets
 - working with icons
@@ -80,7 +80,7 @@ This package is designed to work in any environment. It is used by all Iconify p
 
 #### Tools
 
-[Iconify Tools](./tools/tools2/index.md) is designed to import, export and process icon data.
+[Iconify Tools](./libraries/tools/index.md) is designed to import, export and process icon data.
 
 It is used to maintain available open source icon sets.
 

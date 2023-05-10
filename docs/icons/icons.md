@@ -1,9 +1,9 @@
 ```yaml
 title: Split Icon Packages
 types:
-  IconifyIcon: '../types/iconify-icon.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 functions:
-  exportIconPackage: '../tools/tools2/export/icon-package.md'
+  exportIconPackage: '/docs/libraries/tools/export/icon-package.md'
 ```
 
 # Split icon packages
@@ -61,7 +61,7 @@ const mdiHome = require('@iconify/icons-mdi/home');
 
 ## Creating packages
 
-If you want to create a package for your icon set, see `[func]exportIconPackage()` of [Iconify Tools](../tools/tools2/index.md).
+If you want to create a package for your icon set, see `[func]exportIconPackage()` of [Iconify Tools](/docs/libraries/tools/index.md).
 
 ## Icon sets list
 

@@ -1,7 +1,7 @@
 ```yaml
 title: 'Iconify for Svelte Function: getIcon'
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 ```
 
 # Iconify for Svelte function: getIcon

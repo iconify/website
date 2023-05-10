@@ -1,8 +1,8 @@
 ```yaml
 title: Optimising icon code
 functions:
-  deOptimisePaths: ../../tools/tools2/icon/paths.md
-  runSVGO: ../../tools/tools2/icon/svgo.md
+  deOptimisePaths: '/docs/libraries/tools/icon/paths.md'
+  runSVGO: '/docs/libraries/tools/icon/svgo.md'
 ```
 
 # Optimising icon
@@ -15,4 +15,4 @@ Optimisation is done by SVGO. Not much to write about it, [you can try SVGO opti
 
 ## Code
 
-Optimisation is done using `[func]runSVGO()` function from [Iconify Tools](../../tools/tools2/index.md), followed by `[func]deOptimisePaths()` to make sure icons are usable everywhere.
+Optimisation is done using `[func]runSVGO()` function from [Iconify Tools](/docs/libraries/tools/index.md), followed by `[func]deOptimisePaths()` to make sure icons are usable everywhere.

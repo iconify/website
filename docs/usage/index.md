@@ -51,9 +51,9 @@ See [how to add SVG to HTML](./svg/index.md) for various tools and components th
 
 ### Icons on demand
 
-Iconify ecosystem has a unique feature: [Iconify API](../api/index.md).
+Iconify ecosystem has a unique feature: [Iconify API](/docs/api/index.md).
 
-It is used by various icon components to [load icon data on demand](../api/icon-data.md). Iconify icon components only load icon data for icons used on the page visitor is viewing, at run time, instead of bundling icons.
+It is used by various icon components to [load icon data on demand](/docs/api/icon-data.md). Iconify icon components only load icon data for icons used on the page visitor is viewing, at run time, instead of bundling icons.
 
 Iconify icon components are perfect for complex projects like theme or website customisers, customisable admin panels or any similar projects, where icons can be customised by user.
 
@@ -64,7 +64,7 @@ src: icon-components/icon/usage.html
 copy: false
 ```
 
-See [how to use Iconify icon components](../icon-components/index.md).
+See [how to use Iconify icon components](/docs/icon-components/index.md).
 
 ## Design
 

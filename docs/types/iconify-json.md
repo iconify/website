@@ -4,9 +4,9 @@ types:
   IconifyIcon: './iconify-icon.md'
   IconifyAlias: './iconify-alias.md'
 functions:
-  getIconData: '../tools/utils/get-icon-data.md'
-  parseIconSet: '../tools/utils/parse-icon-set.md'
-  defaultIconProps: '../tools/utils/default-icon-props.md'
+  getIconData: '/docs/libraries/utils/get-icon-data.md'
+  parseIconSet: '/docs/libraries/utils/parse-icon-set.md'
+  defaultIconProps: '/docs/libraries/utils/default-icon-props.md'
 ```
 
 # IconifyJSON type
@@ -21,9 +21,9 @@ This article describes `[type]IconifyJSON` type.
 
 Icon set in `[type]IconifyJSON` is created by Iconify Tools or loaded from pre-parsed JSON file.
 
-See [Iconify Utils documentation](../tools/utils/index.md) for parsing icon sets and [icon sets package documentation](../icons/all.md).
+See [Iconify Utils documentation](/docs/libraries/utils/index.md) for parsing icon sets and [icon sets package documentation](/docs/icons/all.md).
 
-See [Iconify Tools documentation](../tools/tools2/index.md) for creating custom icon sets.
+See [Iconify Tools documentation](/docs/libraries/tools/index.md) for creating custom icon sets.
 
 ## Structure
 
@@ -59,7 +59,7 @@ Key is icon name. Value is icon data, where `[prop]body` is required and other p
 
 `include types/iconify-optional`
 
-In your code you can get default values from `[var]defaultIconProps` constant from [Iconify Utils](../tools/utils/index.md).
+In your code you can get default values from `[var]defaultIconProps` constant from [Iconify Utils](/docs/libraries/utils/index.md).
 
 ### Alias
 
@@ -237,9 +237,9 @@ See [IconifyJSON metadata](./iconify-json-metadata.md) for details.
 
 ## Functions
 
-To parse icon sets, [Iconify Utils](../tools/utils/index.md) offers the following functions:
+To parse icon sets, [Iconify Utils](/docs/libraries/utils/index.md) offers the following functions:
 
 - `[func]parseIconSet()` parses an entire icon set, calling custom function for every icon.
 - `[func]getIconData()` extracts data for an icon in `[type]IconifyIcon` format.
 
-To create convert icons to icon sets, use [Iconify Tools](../tools/tools2/index.md).
+To create convert icons to icon sets, use [Iconify Tools](/docs/libraries/tools/index.md).

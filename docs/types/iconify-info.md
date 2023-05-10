@@ -33,14 +33,14 @@ Then it has many optional properties, most of these properties are intended for 
 
 ## Author
 
-`[prop]author` property is an object with folowing properties:
+`[prop]author` property is an object with following properties:
 
 - `[prop]name`, `[type]string`. Author name, mandatory.
 - `[prop]url`, `[type]string`. Optional link to icon set website. Usually links to GitHub repository.
 
 ## License
 
-`[prop]license` property is an object with folowing properties:
+`[prop]license` property is an object with following properties:
 
 - `[prop]title`, `[type]string`. Human readable license, mandatory.
 - `[prop]spdx`, `[type]string`. Optional SPDX license identifier.

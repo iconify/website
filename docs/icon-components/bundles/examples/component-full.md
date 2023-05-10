@@ -3,7 +3,7 @@ title: 'Icon Bundle Examples: Components'
 navigation: ./index.md
 standalone: true
 types:
-  IconifyJSON: '../../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Bundling everything for Iconify components
@@ -137,7 +137,7 @@ title: 'create-bundle.ts'
 src: icon-components/bundles/bundle-component-full.ts
 ```
 
-Part of code is taken from [Iconify Tools import examples](../../../tools/tools2/examples/import-mdi.md).
+Part of code is taken from [Iconify Tools import examples](/docs/libraries/tools/examples/import-mdi.md).
 
 ## Importing bundle
 

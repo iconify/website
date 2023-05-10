@@ -6,7 +6,7 @@ replacements:
   - code: '60k'
     value: '${counters.icons-short}'
 functions:
-  getIconsCSS: '../../../tools/utils/get-icons-css.md'
+  getIconsCSS: '/docs/libraries/utils/get-icons-css.md'
 ```
 
 # Generate CSS for icons with Iconify Utils
@@ -28,8 +28,8 @@ There are plenty tutorials on how Node.js works, short version of steps:
 
 You need to install 2 dependencies:
 
-- `[npm]@iconify/utils` to install [Iconify Utils](../../../tools/utils/index.md) that have function to generate CSS.
-- `[npm]@iconify/json` to install [data for all open source icon sets](../../../icons/icon-data.md).
+- `[npm]@iconify/utils` to install [Iconify Utils](/docs/libraries/utils/index.md) that have function to generate CSS.
+- `[npm]@iconify/json` to install [data for all open source icon sets](/docs/icons/icon-data.md).
 
 To install them, run
 
@@ -63,4 +63,4 @@ To use those icons in HTML, use `[tag]span` elements with 2 class names: class n
 
 There are options for `[func]getIconsCSS()` that you can use to customise generated CSS.
 
-See [getIconsCSS() documentation](../../../tools/utils/get-icons-css.md).
+See [getIconsCSS() documentation](/docs/libraries/utils/get-icons-css.md).

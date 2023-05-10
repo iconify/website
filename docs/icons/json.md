@@ -1,12 +1,12 @@
 ```yaml
 title: Individual Icon Sets
 types:
-  IconifyJSON: '../types/iconify-json.md'
-  IconifyInfo: '../types/iconify-json-metadata.md'
-  IconifyChars: '../types/iconify-json-metadata.md#chars'
-  IconifyMetaData: '../types/iconify-json-metadata.md#iconify-categories'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyInfo: '/docs/types/iconify-json-metadata.md'
+  IconifyChars: '/docs/types/iconify-json-metadata.md#chars'
+  IconifyMetaData: '/docs/types/iconify-json-metadata.md#iconify-categories'
 functions:
-  exportJSONPackage: '../tools/tools2/export/json-package.md'
+  exportJSONPackage: '/docs/libraries/tools/export/json-package.md'
 ```
 
 # Individual icon sets
@@ -21,7 +21,7 @@ These packages are available only on NPM. They are automatically generated from 
 
 ## Contents
 
-Unlike full package, where all data for icon set is stored in one file, indivudual icon sets split data in several files, so you can load only data you need:
+Unlike full package, where all data for icon set is stored in one file, individual icon sets split data in several files, so you can load only data you need:
 
 - `[file]icons.json` contains icon set in `[type]IconifyJSON` format, without any metadata.
 - `[file]info.json` contains icon set information in `[type]IconifyInfo` format.
@@ -46,7 +46,7 @@ const mdiLightIcons = require('@iconify-json/mdi-light/icons.json');
 
 ## Creating packages
 
-If you want to create a package for your icon set, see `[func]exportJSONPackage()` of [Iconify Tools](../tools/tools2/index.md).
+If you want to create a package for your icon set, see `[func]exportJSONPackage()` of [Iconify Tools](/docs/libraries/tools/index.md).
 
 ## Difference from big icon sets package
 
@@ -62,5 +62,5 @@ If you need to get list of available open source icon sets, see [icon sets list 
 
 For reading icon sets, you can use:
 
-- [Iconify Utils](../tools/utils/index.md) for JavaScript.
-- [Iconify JSON Tools](../tools/json/index.md) for PHP (also available for JavaScript, but deprecated).
+- [Iconify Utils](/docs/libraries/utils/index.md) for JavaScript.
+- [Iconify JSON Tools](https://github.com/iconify/json-tools.php) for PHP (deprecated).

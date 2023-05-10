@@ -1,10 +1,10 @@
 ```yaml
 title: Generate SVG with Iconify Utils
 functions:
-  parseIconSetAsync: '../../../tools/utils/parse-icon-set.md'
-  getIconData: '../../../tools/utils/get-icon-data.md'
-  iconToSVG: '../../../tools/utils/icon-to-svg.md'
-  iconToHTML: '../../../tools/utils/icon-to-html.md'
+  parseIconSetAsync: '/docs/libraries/utils/parse-icon-set.md'
+  getIconData: '/docs/libraries/utils/get-icon-data.md'
+  iconToSVG: '/docs/libraries/utils/icon-to-svg.md'
+  iconToHTML: '/docs/libraries/utils/icon-to-html.md'
 ```
 
 # Generate SVG with Iconify Utils
@@ -37,8 +37,8 @@ There are plenty tutorials on how Node.js works, short version of steps:
 
 You need to install 2 dependencies:
 
-- `[npm]@iconify/utils` to install [Iconify Utils](../../../tools/utils/index.md) that have function to generate CSS.
-- `[npm]@iconify/json` to install [data for all open source icon sets](../../../icons/icon-data.md).
+- `[npm]@iconify/utils` to install [Iconify Utils](/docs/libraries/utils/index.md) that have function to generate CSS.
+- `[npm]@iconify/json` to install [data for all open source icon sets](/docs/icons/icon-data.md).
 
 To install them, run
 
@@ -69,7 +69,7 @@ src: usage/svg-utils.js
 
 Change options, run it to export SVG files.
 
-Functions from [Iconify Utils](../../../tools/utils/index.md) used in sample:
+Functions from [Iconify Utils](/docs/libraries/utils/index.md) used in sample:
 
 - `[func]parseIconSetAsync()` to parse icon set.
 - `[func]iconToSVG()` and `[func]iconToHTML()` to generate SVG.
@@ -90,7 +90,7 @@ Process of generating SVG:
 src: usage/svg-func-utils.js
 ```
 
-Functions from [Iconify Utils](../../../tools/utils/index.md) used in sample:
+Functions from [Iconify Utils](/docs/libraries/utils/index.md) used in sample:
 
 - `[func]getIconData()` to extract icon data from icon set.
 - `[func]iconToSVG()` and `[func]iconToHTML()` to generate SVG.

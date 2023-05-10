@@ -5,7 +5,7 @@ functions:
   loadIcons: './load-icons.md'
 types:
   IconifyIconName: './icon-name.md'
-  FullIconifyIcon: '../../tools/utils/full-iconify-icon.md'
+  FullIconifyIcon: '/docs/libraries/utils/full-iconify-icon.md'
 replacements:
   - code: '/2/2.0.0/'
     value: '/${svg-framework.version.major}/${svg-framework.version.full}/'

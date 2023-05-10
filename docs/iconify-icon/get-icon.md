@@ -1,7 +1,7 @@
 ```yaml
 title: 'Iconify Icon Web Component Function: getIcon'
 types:
-  IconifyIcon: '../types/iconify-icon.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 ```
 
 # Web component function: getIcon

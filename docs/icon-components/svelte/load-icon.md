@@ -2,7 +2,7 @@
 title: 'Iconify for Svelte Function: loadIcon'
 types:
   IconifyIconName: './icon-name.md'
-  FullIconifyIcon: '../../tools/utils/full-iconify-icon.md'
+  FullIconifyIcon: '/docs/libraries/utils/full-iconify-icon.md'
 functions:
   loadIcons: './load-icons.md'
 ```

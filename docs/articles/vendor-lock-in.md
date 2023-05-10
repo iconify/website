@@ -73,8 +73,8 @@ Everything is open source!
 
 Icon data is available for everyone. You are not forced to use Iconify icon components.
 
-- There are [many ways to use icons, including third party components](../usage/index.md).
-- You can create your own components that use [icon data from Iconify](../icons/index.md). [All types are documented](../types/index.md), [tools for working with data are open source](../tools/utils/index.md).
+- There are [many ways to use icons, including third party components](/docs/usage/index.md).
+- You can create your own components that use [icon data from Iconify](/docs/icons/index.md). [All types are documented](/docs/types/index.md), [tools for working with data are open source](/docs/libraries/utils/index.md).
 
 Furthermore, third party icon components are very welcome... as long as it is high quality and maintained!
 

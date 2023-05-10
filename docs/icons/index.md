@@ -10,8 +10,8 @@ replacements:
   - code: '80 open source'
     value: '${counters.sets} open source'
 types:
-  IconifyJSON: '../types/iconify-json.md'
-  IconifyIcon: '../types/iconify-icon.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 ```
 
 # Icons
@@ -37,7 +37,7 @@ All icons are:
 
 See [how to get icon data](./icon-data.md) for list of packages and repositories where you can get icon data.
 
-Iconify ecosystem offers [many tools to help developers use these icons](../usage/index.md).
+Iconify ecosystem offers [many tools to help developers use these icons](/docs/usage/index.md).
 
 ## Custom icons {#custom}
 

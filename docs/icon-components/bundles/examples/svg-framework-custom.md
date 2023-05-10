@@ -6,7 +6,7 @@ replacements:
   - code: '/2/2.0.0/'
     value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
 types:
-  IconifyJSON: '../../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Bundling custom icons for SVG Framework

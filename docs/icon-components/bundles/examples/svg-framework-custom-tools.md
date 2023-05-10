@@ -6,14 +6,14 @@ replacements:
   - code: '/2/2.0.0/'
     value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
 types:
-  IconifyJSON: '../../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Bundling custom icons for SVG Framework
 
 This article is a part of [Iconify icon bundles code examples](./index.md).
 
-This example show how to create icon bundles for SVG framework from SVG files. It uses [Iconify Tools](../../../tools/tools2/index.md) to import SVG, clean them up, optimize and export to bundle.
+This example show how to create icon bundles for SVG framework from SVG files. It uses [Iconify Tools](/docs/libraries/tools/index.md) to import SVG, clean them up, optimize and export to bundle.
 
 ## Instructions
 

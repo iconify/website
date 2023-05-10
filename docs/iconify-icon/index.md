@@ -61,7 +61,7 @@ Web component will retrieve icon data from [Iconify API](../api/index.md), then 
 
 There are over 60k icons available from many open source icon sets.
 
-Don't want to rely on third party API servers? You can [use web component without API](./without-api.md) or you can [host your own Iconify API](../api/hosting.md). You can also use it with your own icons.
+Don't want to rely on third party API servers? You can [use web component without API](./without-api.md) or you can [host your own Iconify API](/docs/api/hosting.md). You can also use it with your own icons.
 
 ## Shadow DOM
 
@@ -89,7 +89,7 @@ There are several issues with hydrating icons:
 Shadow DOM used by web components solves hydration problems. When UI framework renders icon on server, it only renders `[tag]iconify-icon` element. During hydration process, UI framework only checks `[tag]iconify-icon` element, but not actual icon. This means:
 
 - Server side can generate only `[html]<iconify-icon icon="mdi:home"></iconify-icon>`, reducing document size.
-- Web component can load icon data and render it immediately and independant from UI framework, not waiting for UI framework to mount component.
+- Web component can load icon data and render it immediately and independent of UI framework, not waiting for UI framework to mount component.
 - No issues with duplicate unique IDs. Each icon has its own document, so no need to change IDs of icon elements.
 - Faster hydration. Icons can be complex, not checking icon content means less work for UI framework.
 
@@ -189,7 +189,7 @@ Required attribute:
 
 Optional attributes:
 
-- `[prop]mode`, `[type]string` sets icon rendering mode. Seee [rendering modes](./modes.md).
+- `[prop]mode`, `[type]string` sets icon rendering mode. See [rendering modes](./modes.md).
 - `[prop]inline`, `[type]boolean` changes vertical alignment. See [vertical alignment](./inline.md).
 - `[prop]width`, `[type]string | number` icon width. See [icon dimensions](./dimensions.md).
 - `[prop]height`, `[type]string | number` icon height. See [icon dimensions](./dimensions.md).
@@ -221,7 +221,7 @@ loadIcon(name)
 	.catch(console.error);
 ```
 
-For second method, class can be retrieved from custom elements registry:
+For second method, class can be retrieved from custom elements' registry:
 
 ```js
 const IconifyIcon = window.customElements.get('iconify-icon');

@@ -1,3 +1,0 @@
-```yaml
-redirect: ./objects.html
-```

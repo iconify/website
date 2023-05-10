@@ -11,7 +11,7 @@ replacements:
 
 Astro Icon is a simple icon component for [Astro](https://astro.build/).
 
-With Astro Icon you can easily use [over 60,000 open source icons](../../../icons/icon-data.md) and custom icons with minimal code.
+With Astro Icon you can easily use [over 60,000 open source icons](/docs/icons/icon-data.md) and custom icons with minimal code.
 
 ## Installation
 

@@ -8,7 +8,7 @@ replacements:
   - code: '@iconify/iconify@2'
     value: '${svg-framework.import}'
 types:
-  IconifyJSON: '../../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Bundling everything for SVG Framework
@@ -165,7 +165,7 @@ title: 'create-bundle.ts'
 src: icon-components/bundles/bundle-svg-full.ts
 ```
 
-Part of code is taken from [Iconify Tools import examples](../../../tools/tools2/examples/import-mdi.md).
+Part of code is taken from [Iconify Tools import examples](/docs/libraries/tools/examples/import-mdi.md).
 
 ## Importing bundle
 

@@ -1,7 +1,7 @@
 ```yaml
 title: 'Iconify for Vue Function: getIcon'
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 ```
 
 # Iconify for Vue function: getIcon

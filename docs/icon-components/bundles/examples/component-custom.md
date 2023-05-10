@@ -3,7 +3,7 @@ title: 'Icon Bundle Examples: Components'
 navigation: ./index.md
 standalone: true
 types:
-  IconifyJSON: '../../../types/iconify-json.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
 ```
 
 # Bundling custom icons for Iconify components
