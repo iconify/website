@@ -54,10 +54,10 @@ export const IconifyIconSidebar: SidebarItem[] = [
       link: '/docs/iconify-icon/load-icon',
     }, {
       text: 'enableCache()',
-      link: '/docs/iconify-icon/enabled-cache',
+      link: '/docs/iconify-icon/enable-cache',
     }, {
       text: 'disableCache()',
-      link: '/docs/iconify-icon/disabled-cache',
+      link: '/docs/iconify-icon/disable-cache',
     }, {
       text: 'buildIcon()',
       link: '/docs/iconify-icon/build-icon',

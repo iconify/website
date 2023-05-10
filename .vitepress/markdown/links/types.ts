@@ -13,12 +13,11 @@ export function applyLinksForTypes(
       return
 
     const type = $node.text()
-    const link = types[type]
-    if (!link)
+    if (typeof types[type] !== 'string')
       return
 
     $node.wrap(
-      `<a href="${link}" title="${type} documentation" />`,
+      `<a href="${types[type]}" title="${type} documentation" />`,
     )
   })
 }

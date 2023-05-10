@@ -12,11 +12,12 @@
   "scripts": {
     "dev": "vitepress dev",
     "dev:pwa": "SW_DEV=true vitepress dev",
-    "build": "nr prepare-news && vitepress build",
+    "build": "nr prepare-news && nr prepare-icons && vitepress build && nr validate-links",
     "preview": "nr build && vitepress preview",
     "https": "HTTPS=true nr build && serve dist",
     "prepare-icons": "node scripts/icons.mjs",
     "prepare-news": "node scripts/news.mjs",
+    "validate-links": "node scripts/validate-links.mjs",
     "postinstall": "nr prepare-news",
     "lint": "eslint --cache .",
     "lint:fix": "nr lint --fix"

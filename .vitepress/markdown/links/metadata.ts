@@ -20,7 +20,7 @@ export function applyLinksInHTML(
 
     const text = $node.text()
     const item = text.split('(').shift() as string
-    if (!(item in items))
+    if (typeof items[item] !== 'string')
       return
     const href = items[item]
 
