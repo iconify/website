@@ -23,13 +23,13 @@ If you are publishing icons, you can host your own Iconify API server that inclu
 
 How is it done?
 
-`include api/namespaces/animation`
+<namespaces-animation></namespaces-animation>
 
 ## Provider in icon name
 
 Icon names in Iconify icon components have 3 parts:
 
-`include api/namespaces/name`
+<namespaces-name></namespaces-name>
 
 All parts are separated by `[str]:`, provider is optional and can be skipped if empty.
 
@@ -40,7 +40,7 @@ Examples:
 
 Provider naming rules are the same as for prefix and name, but with exception that it can be empty:
 
-```js
+```txt
 /^[a-z0-9]+(-[a-z0-9]+)*$/;
 ```
 

@@ -8,7 +8,7 @@ replacements:
 
 Icon name is a string, which has 3 parts:
 
-`include api/namespaces/name`
+<namespaces-name></namespaces-name>
 
 Examples of valid icon names:
 

@@ -51,7 +51,6 @@ export const APISidebar: SidebarItem[] = [
     }, {
       text: 'Custom CDN',
       link: '/docs/api/cdn',
-      hidden: true,
     }],
   }, {
     text: 'API Providers',

@@ -16,7 +16,13 @@ const langReplacements: Record<string, string> = {
   scss: 'css',
   bash: '',
   sh: '',
+  txt: '',
+  regex: '',
+  apache: 'httpd.conf',
+  nginx: 'nginx.conf',
 }
+
+const disableCopy: Set<string> = new Set(['txt'])
 
 /**
  * Current code parser data
@@ -73,7 +79,7 @@ export function renderCodeTabs(): string {
     if (tab.type !== 'demo') {
       const baseLang = tab.lang
       const lang = langReplacements[baseLang] ?? baseLang
-      if (raw !== '')
+      if (raw !== '' && !disableCopy.has(baseLang))
         html = `<copy-to-clipboard raw="${raw}" lang="${lang}">${html}</copy-to-clipboard>`
       else if (lang)
         html = `<small class="code-block-lang code-block-lang--${lang}">${lang}</small>${html}`

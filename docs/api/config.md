@@ -7,11 +7,11 @@ replacements:
 
 # Configuring custom Iconify API
 
-This article explains who to confugure [Iconify icon components](../icon-components/index.md) to use custom API server.
+This article explains who to configure [Iconify icon components](../icon-components/index.md) to use custom API server.
 
 All Iconify icon components can connect to multiple Iconify API servers. It is done via [API providers](./providers.md).
 
-`include api/namespaces/animation`
+<namespaces-animation></namespaces-animation>
 
 If you are hosting Iconify API server, there are 2 ways to use your icons:
 

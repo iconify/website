@@ -22,5 +22,8 @@ declare module '@vue/runtime-core' {
     HomePage: typeof import('./.vitepress/theme/components/HomePage.vue')['default']
     IconLoadingProcess: typeof import('./.vitepress/theme/components/IconLoadingProcess.vue')['default']
     LatestNews: typeof import('./.vitepress/theme/components/LatestNews.md')['default']
+    LongArrow: typeof import('./.vitepress/theme/components/LongArrow.vue')['default']
+    NamespacesAnimation: typeof import('./.vitepress/theme/components/NamespacesAnimation.vue')['default']
+    NamespacesName: typeof import('./.vitepress/theme/components/NamespacesName.vue')['default']
   }
 }

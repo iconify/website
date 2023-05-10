@@ -15,12 +15,12 @@
   --hljs-meta: #{palette.palette('gray', 400)};
 
   // custom
-  --hljs-icon-name: #{palette.palette('deep-orange', 500)};
+  --hljs-icon-name: #{palette.palette('deep-orange', 600)};
   --hljs-package-name: #{palette.palette('indigo', 650)};
   --hljs-inline-tag: #{palette.palette('cyan', 600)};
   --hljs-inline-type: #{palette.palette('blue', 650)};
   --hljs-inline-file: #{color.mix(palette.palette('blue', 600), palette.palette('blue-gray', 650))};
-  --hljs-inline-var: #{palette.palette('light-blue', 550)};
+  --hljs-inline-var: #{palette.palette('light-blue', 600)};
 
   // backgrounds
   --hljs-bg-deletion: #{palette.palette('red', 100)};
@@ -41,12 +41,12 @@
   --hljs-meta: #{palette.palette('gray', 550)};
 
   // custom
-  //--hljs-icon-name: #{palette.palette('deep-orange', 500)};
+  --hljs-icon-name: #{palette.palette('deep-orange', 300)};
   --hljs-package-name: #{palette.palette('indigo', 250)};
   --hljs-inline-tag: #{palette.palette('cyan', 300)};
   --hljs-inline-type: #{palette.palette('blue', 250)};
   --hljs-inline-file: #{color.mix(palette.palette('blue', 300), palette.palette('blue-gray', 250))};
-  --hljs-inline-var: #{palette.palette('light-blue', 400)};
+  --hljs-inline-var: #{palette.palette('light-blue', 300)};
 
   // backgrounds
   --hljs-bg-deletion: #{palette.palette('red', 850)};
