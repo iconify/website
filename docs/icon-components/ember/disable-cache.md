@@ -29,6 +29,8 @@ replacements:
     replace: '@iconify/ember/components/iconify-icon'
 ```
 
+Another example:
+
 ```yaml
 src: icon-components/common/disable-cache2.js
 replacements:

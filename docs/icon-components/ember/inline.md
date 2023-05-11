@@ -14,10 +14,7 @@ Instead of adding `[prop]vertical-align` to each icon, icon component has a prop
 
 ```yaml
 src: icon-components/ember/inline.hbs
-title: 'HTML:'
 demo: icon-components/common/inline.html
-demoFirst: false
-demoTitle: 'Demo:'
 class: iconify-inline-block
 ```
 

@@ -12,12 +12,8 @@ include: icon-components/components/color-intro
 
 ```yaml
 src: icon-components/common/color.jsx
-title: 'JSX:'
 css: components/color.scss
-cssTitle: 'Stylesheet:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: components-color
 ```
 

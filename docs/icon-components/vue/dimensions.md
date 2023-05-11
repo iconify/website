@@ -12,12 +12,8 @@ include: icon-components/components/size-intro
 
 ```yaml
 src: icon-components/common/size.vue
-title: 'JSX:'
 css: components/size.scss
-cssTitle: 'Stylesheet:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: components-size
 ```
 
@@ -54,7 +50,6 @@ include: icon-components/components/size-unset
 ```yaml
 src: icon-components/common/size-unset.vue
 demo: true
-demoFirst: false
 class: 'icon-size icon-size--unset'
 ```
 
@@ -79,7 +74,6 @@ In an example above, all icons only use `[prop]height`.
 ```yaml
 src: icon-components/common/alignment.vue
 demo: true
-demoFirst: false
 demoHint: Using box-shadow to show icon dimensions
 class: highlight-box
 ```

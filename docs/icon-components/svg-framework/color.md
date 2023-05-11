@@ -12,12 +12,8 @@ To change color of a monotone icon simply change text color.
 
 ```yaml
 src: icon-components/iconify/index-color.html
-title: 'HTML:'
 css: iconify/index-color.scss
-cssTitle: 'Stylesheet:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: iconify-index-color
 ```
 
@@ -87,12 +83,11 @@ Then you can target icon by that class name:
 
 ```yaml
 src: icon-components/iconify/prefix-color.html
-title: 'HTML:'
+hint: 'Placeholder HTML'
 extra:
   - src: icon-components/iconify/prefix-color-svg.html
-    title: 'Rendered SVG:'
+    hint: 'Rendered SVG'
   - src: icon-components/iconify/prefix-color.css
-    title: 'CSS:'
 ```
 
 ## RGBA and HSLA colors {#opacity}

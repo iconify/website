@@ -18,7 +18,6 @@ This tutorial is part of [Iconify for Svelte functions tutorial](./index.md#func
 
 ```yaml
 src: icon-components/common/get-icon.js
-title: 'Code:'
 extra:
   - src: icon-components/iconify/get-icon.json
     title: 'Result:'
@@ -27,9 +26,10 @@ replacements:
     replace: svelte
 ```
 
+Another example:
+
 ```yaml
 src: icon-components/common/get-icon2.js
-title: 'Code:'
 extra:
   - src: icon-components/iconify/get-icon2.json
     title: 'Result:'
@@ -37,6 +37,8 @@ replacements:
   - search: react
     replace: svelte
 ```
+
+Example with bad icon name, returns `null`:
 
 ```yaml
 src: icon-components/common/get-icon-null.js

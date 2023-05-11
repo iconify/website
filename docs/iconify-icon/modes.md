@@ -28,13 +28,13 @@ What do these modes actually look like in DOM?
 Examples for `[icon]mdi:home` (used in modes demo above) icon:
 
 ```yaml
-title: 'svg mode:'
+hint: 'svg mode'
 src: icon-components/common/modes-svg.html
 extra:
   - src: icon-components/common/modes-bg.html
-    title: 'bg mode:'
+    hint: 'bg mode'
   - src: icon-components/common/modes-mask.html
-    title: 'mask mode:'
+    hint: 'mask mode'
 ```
 
 ## Why not just render SVG? {#why}

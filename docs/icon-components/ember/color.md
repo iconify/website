@@ -12,12 +12,8 @@ include: icon-components/components/color-intro
 
 ```yaml
 src: icon-components/ember/color.hbs
-title: 'Template:'
 css: components/color.scss
-cssTitle: 'Stylesheet:'
 demo: icon-components/common/color.html
-demoFirst: false
-demoTitle: 'Demo:'
 class: components-color
 ```
 

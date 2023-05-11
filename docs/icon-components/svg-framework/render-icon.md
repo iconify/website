@@ -45,11 +45,12 @@ It will make sure elements inside each icon have unique IDs.
 
 ```yaml
 src: icon-components/iconify/render-icon.js
-title: 'Code:'
 extra:
   - src: icon-components/iconify/render-icon.json
     title: 'Result:'
 ```
+
+Another example:
 
 ```js
 // Get icon data

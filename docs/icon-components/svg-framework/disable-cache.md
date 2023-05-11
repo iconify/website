@@ -32,6 +32,8 @@ replacements:
 Iconify.disableCache('local');
 ```
 
+Another example:
+
 ```js
 // Disable all caching
 Iconify.disableCache('all');

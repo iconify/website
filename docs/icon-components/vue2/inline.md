@@ -14,10 +14,7 @@ This tutorial is part of [Iconify for Vue 2 tutorial](./index.md).
 
 ```yaml
 src: icon-components/common/inline.vue
-title: 'HTML:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: iconify-inline-block
 replacements:
   - search: iconify/vue

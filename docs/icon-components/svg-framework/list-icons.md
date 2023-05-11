@@ -19,6 +19,8 @@ This tutorial is part of [Iconify SVG Framework functions tutorial](./functions.
 console.log(Iconify.listIcons());
 ```
 
+Another example:
+
 ```js
 // List all loaded Material Design Icons
 console.log(Iconify.listIcons('', 'mdi'));

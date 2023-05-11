@@ -3,13 +3,13 @@
 - [-] add README.md - partially done
 - [-] add CONTRIBUTING.md - partially done
 - [x] fix node version to use latest 16 or 18 LTS (.npmrc and/or package.json): right now using latest 18 LTS
-- [ ] fix lint errors
+- [x] fix lint errors
 - [x] update pnpm to 8.4.* (current latest 8.4.0)
 - [ ] check for unused pages
 - [ ] create website root source folder: ALMOST IMPOSSIBLE
 - [ ] redo articles as blog, move them out of documentation
 - [ ] check for unused partials documents and code samples
-- [ ] Iconify icon components - check for mentions of offline package, remove them
+- [x] Iconify icon components - check for mentions of offline package, remove them
 
 ## New documentation
 

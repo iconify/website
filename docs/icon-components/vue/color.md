@@ -12,12 +12,8 @@ include: icon-components/components/color-intro
 
 ```yaml
 src: icon-components/common/color.vue
-title: 'Vue:'
 css: components/color.scss
-cssTitle: 'Stylesheet:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: components-color
 ```
 

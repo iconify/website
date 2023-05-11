@@ -37,7 +37,6 @@ For more details about transformations see [icon transformations documentation](
 
 ```yaml
 src: icon-components/common/build-icon.js
-title: 'Code:'
 extra:
   - src: icon-components/common/build-icon.json
     title: 'Result:'

@@ -28,6 +28,8 @@ if (Iconify.iconExists('mdi:home')) {
 }
 ```
 
+Another example:
+
 ```js
 const node = document.createElement('div');
 node.innerHTML = Iconify.renderHTML('bi:stopwatch', {

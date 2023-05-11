@@ -23,10 +23,7 @@ To add `[prop]vertical-align` to icon, there are has several options:
 
 ```yaml
 src: icon-components/common/inline.html
-title: 'HTML:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: iconify-inline-block
 ```
 

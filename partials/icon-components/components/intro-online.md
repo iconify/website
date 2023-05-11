@@ -8,7 +8,7 @@ replacements:
 
 Component will automatically retrieve data for `[icon]mdi-light:home` from Iconify API and render it. There are over 60,000 icons available on Iconify API from various free and open source icon sets, including all the most popular icon sets.
 
-Avaliability of Iconify API is the biggest feature that makes Iconify components different from alternatives.
+Availability of Iconify API is the biggest feature that makes Iconify components different from alternatives.
 
 API sends data for icons on demand. Loading icons on demand has massive advantages over other methods:
 

@@ -26,6 +26,8 @@ This tutorial is part of [Iconify for React functions tutorial](./index.md#funct
 src: icon-components/common/disable-cache.js
 ```
 
+Another example:
+
 ```yaml
 src: icon-components/common/disable-cache2.js
 ```

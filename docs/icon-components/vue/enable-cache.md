@@ -20,7 +20,7 @@ This tutorial is part of [Iconify for Vue functions tutorial](./index.md#functio
 
 `include icon-components/functions/cache/storage-types`
 
-## Examples
+## Example
 
 ```yaml
 src: icon-components/common/enable-cache.js

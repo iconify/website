@@ -18,6 +18,8 @@ This tutorial is part of [Iconify for React functions tutorial](./index.md#funct
 src: icon-components/common/list-icons.js
 ```
 
+Another example:
+
 ```yaml
 src: icon-components/common/list-icons2.js
 ```

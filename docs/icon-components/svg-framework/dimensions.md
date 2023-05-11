@@ -12,12 +12,8 @@ This makes it easy to change icon size by changing `[attr]font-size` in the styl
 
 ```yaml
 src: icon-components/iconify/size-demo.html
-title: 'HTML:'
 css: iconify/size-demo.scss
-cssTitle: 'Stylesheet:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: iconify2-size-demo
 ```
 
@@ -27,10 +23,7 @@ You can also set dimensions by using `[attr]data-width` and `[attr]data-height` 
 
 ```yaml
 src: icon-components/iconify/size-demo-data.html
-title: 'HTML:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 ```
 
 In this example, first icon has height of `[num]24px`, second icon has height of `[num]36px` (`[num]2 * 18px`), third icon has height `[num]72px`.
@@ -44,7 +37,6 @@ include: icon-components/components/size-unset
 ```yaml
 src: icon-components/iconify/size-unset.html
 demo: icon-components/common/size-unset.html
-demoFirst: false
 class: 'icon-size icon-size--unset'
 ```
 
@@ -71,7 +63,6 @@ In examples above, all icons only use `[prop]height`.
 ```yaml
 src: icon-components/common/alignment.html
 demo: true
-demoFirst: false
 demoHint: Using box-shadow to show icon dimensions
 class: highlight-box
 ```

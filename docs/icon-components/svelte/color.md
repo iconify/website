@@ -12,10 +12,7 @@ include: icon-components/components/color-intro
 
 ```yaml
 src: icon-components/common/color.svelte
-title: 'Svelte:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: components-color
 ```
 

@@ -21,6 +21,8 @@ replacements:
     replace: '@iconify/ember/components/iconify-icon'
 ```
 
+Another example:
+
 ```yaml
 src: icon-components/common/list-icons2.js
 replacements:

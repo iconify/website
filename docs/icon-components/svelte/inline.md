@@ -14,10 +14,7 @@ This tutorial is part of [Iconify for Svelte tutorial](./index.md).
 
 ```yaml
 src: icon-components/common/inline.svelte
-title: 'HTML:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: iconify-inline-block
 ```
 

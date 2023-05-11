@@ -56,9 +56,8 @@ title: 'Browser:'
 extra:
   - src: icon-components/iconify/load-icon-promise.js
     title: 'Node.js:'
-  - src: icon-components/iconify/load-icon-await.js
-    title: 'async/await syntax:'
 ```
+
 
 Even if you use bundle (method shown in second example), `[var]Iconify` global is also available because SVG framework exports functions and creates a global variable regardless of how you use it. That means you can use method shown in first example regardless of how you import SVG framework.
 

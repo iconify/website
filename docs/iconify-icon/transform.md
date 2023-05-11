@@ -17,7 +17,6 @@ Example:
 ```yaml
 src: icon-components/icon/rotate-comparison.html
 demo: true
-demoFirst: false
 demoHint: Using box-shadow to show icon dimensions
 class: highlight-box
 ```
@@ -32,7 +31,6 @@ class: highlight-box
 src: icon-components/icon/flip.html
 hint: Using "flip" attribute
 demo: true
-demoFirst: false
 ```
 
 ## Rotation
@@ -42,7 +40,6 @@ demoFirst: false
 ```yaml
 src: icon-components/icon/rotate.html
 demo: true
-demoFirst: false
 ```
 
 ## Rotate and flip

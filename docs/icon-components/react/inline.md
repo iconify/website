@@ -14,10 +14,7 @@ This tutorial is part of [Iconify for React tutorial](./index.md).
 
 ```yaml
 src: icon-components/common/inline.jsx
-title: 'HTML:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: iconify-inline-block
 ```
 

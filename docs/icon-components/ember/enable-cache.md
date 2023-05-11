@@ -20,7 +20,7 @@ This tutorial is part of [Iconify for Ember functions tutorial](./index.md#funct
 
 `include icon-components/functions/cache/storage-types`
 
-## Examples
+## Example
 
 ```yaml
 src: icon-components/common/enable-cache.js

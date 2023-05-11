@@ -37,6 +37,8 @@ Iconify.addCollection({
 });
 ```
 
+Another example:
+
 ```js
 Iconify.addCollection({
 	prefix: 'mdi',

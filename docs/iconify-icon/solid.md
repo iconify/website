@@ -6,7 +6,7 @@ title: 'Iconify Icon Web Component with SolidJS'
 
 This tutorial is part of [Iconify Icon web component tutorial](./index.md).
 
-Currently SolidJS has poor support for web components. It is caused by issues in web components standard. When setting property to a web component, it sometimes does not work as expected.
+Currently, SolidJS has poor support for web components. It is caused by issues in web components standard. When setting property to a web component, it sometimes does not work as expected.
 
 ## Workaround
 

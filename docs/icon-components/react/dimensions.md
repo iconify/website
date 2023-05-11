@@ -12,12 +12,8 @@ include: icon-components/components/size-intro
 
 ```yaml
 src: icon-components/common/size.jsx
-title: 'JSX:'
 css: components/size.scss
-cssTitle: 'Stylesheet:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: components-size
 ```
 
@@ -61,7 +57,6 @@ include: icon-components/components/size-unset
 ```yaml
 src: icon-components/common/size-unset.jsx
 demo: true
-demoFirst: false
 class: 'icon-size icon-size--unset'
 ```
 
@@ -86,7 +81,6 @@ In an example above, all icons only use `[prop]height`.
 ```yaml
 src: icon-components/common/alignment.jsx
 demo: true
-demoFirst: false
 demoHint: Using box-shadow to show icon dimensions
 class: highlight-box
 ```

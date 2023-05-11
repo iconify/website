@@ -45,6 +45,8 @@ setTimeout(() => {
 }, 1000);
 ```
 
+Another example:
+
 ```js
 // Create element, start watching it.
 function createNode() {

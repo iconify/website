@@ -24,14 +24,13 @@ Function returns `[tag]svg` element, `null` if icon is not available.
 
 ```yaml
 src: icon-components/iconify/render-svg.js
-title: 'Code:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 extra:
   - src: icon-components/iconify/render-svg.html
-    title: 'HTML:'
+    hint: 'Generated HTML'
 ```
+
+Another example:
 
 ```js
 const node = document.createElement('div');

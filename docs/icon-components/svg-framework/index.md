@@ -16,7 +16,7 @@ functions:
 
 `include notices/iconify2`
 
-Iconify SVG framework is an easy to use JavaScript library that renders icons.
+Iconify SVG framework is an easy-to-use JavaScript library that renders icons.
 
 It combines the pixel-perfect rendering of SVG with ease of use of glyph fonts while offering more choice than any glyph font or SVG framework.
 

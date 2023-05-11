@@ -6,7 +6,6 @@ This is data for `[icon]fa-regular:address-book`:
 
 ```yaml
 src: common/fa-address-book.json
-title: 'fa-regular:address-book'
 hint: Icon size is 448 x 512
 ```
 

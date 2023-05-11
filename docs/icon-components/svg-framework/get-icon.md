@@ -18,19 +18,21 @@ This tutorial is part of [Iconify SVG Framework functions tutorial](./functions.
 
 ```yaml
 src: icon-components/iconify/get-icon.js
-title: 'Code:'
 extra:
   - src: icon-components/iconify/get-icon.json
     title: 'Result:'
 ```
 
+Another example:
+
 ```yaml
 src: icon-components/iconify/get-icon2.js
-title: 'Code:'
 extra:
   - src: icon-components/iconify/get-icon2.json
     title: 'Result:'
 ```
+
+Example with bad icon name, returns `null`:
 
 ```js
 // null

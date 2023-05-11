@@ -14,10 +14,7 @@ This tutorial is part of [Iconify Icon web component tutorial](./index.md).
 
 ```yaml
 src: icon-components/icon/inline.html
-title: 'HTML:'
 demo: true
-demoFirst: false
-demoTitle: 'Demo:'
 class: iconify-inline-block
 ```
 

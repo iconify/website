@@ -13,6 +13,7 @@ export const SVGFrameworkSidebar: SidebarItem[] = [
   ...commonComponentAttributes(root),
   {
     text: 'Functions',
+    link: `${root}functions`,
     items: [
       // Internal
       ...commonInternalFunctions(root),
