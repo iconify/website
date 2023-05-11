@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify Icon Web Component Function: addAPIProvider'
-standalone: true
-navigation: './index.md'
 ```
 
 # Web component function: addAPIProvider

@@ -1,6 +1,5 @@
 ```yaml
 title: Icon Attribute in Iconify Icon Web Component
-standalone: true
 navigation: './index.md'
 functions:
   addIcon: './add-icon.md'
@@ -42,7 +41,7 @@ function renderLeftArrow() {
 
 ## Serialising data
 
-Web component also supports stringified objects for `[prop]icon` attribute:
+Web component also supports serialised objects for `[prop]icon` attribute:
 
 ```js
 import arrowLeft from '@iconify-icons/bi/arrow-left';
