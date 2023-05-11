@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify SVG Framework Type: IconifyIconName'
-standalone: true
-navigation: './functions.md'
 ```
 
 # IconifyIconName type

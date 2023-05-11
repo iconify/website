@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify SVG Framework Function: addAPIProvider'
-standalone: true
-navigation: './functions.md'
 ```
 
 # SVG framework function: addAPIProvider

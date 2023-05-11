@@ -1,93 +1,58 @@
 import type { SidebarItem } from '../../sidebar-item'
+import { commonAPIFunctions, commonIconFunctions, commonInternalFunctions } from './common'
+
+const root = '/docs/iconify-icon/'
 
 export const IconifyIconSidebar: SidebarItem[] = [
   {
     text: 'IconifyIconName type',
-    link: '/docs/iconify-icon/icon-name',
+    link: `${root}icon-name`,
     hidden: true,
   },
   {
     text: 'Wrappers for',
     items: [{
       text: 'React',
-      link: '/docs/iconify-icon/react',
+      link: `${root}react`,
     }, {
       text: 'Solid',
-      link: '/docs/iconify-icon/solid',
+      link: `${root}solid`,
     }],
   }, {
     text: 'Attributes',
     items: [{
       text: 'Icon',
-      link: '/docs/iconify-icon/icon',
+      link: `${root}icon`,
       hidden: true,
     }, {
       text: 'Icon Color',
-      link: '/docs/iconify-icon/color',
+      link: `${root}color`,
     }, {
       text: 'Icon Dimensions',
-      link: '/docs/iconify-icon/dimensions',
+      link: `${root}dimensions`,
     }, {
       text: 'Transformations',
-      link: '/docs/iconify-icon/transform',
+      link: `${root}transform`,
     }, {
       text: 'Vertical Alignment',
-      link: '/docs/iconify-icon/inline',
+      link: `${root}inline`,
     }, {
       text: 'Rendering Modes',
-      link: '/docs/iconify-icon/modes',
+      link: `${root}modes`,
     }],
   }, {
     text: 'Functions',
     items: [
       // Internal functions
-      {
-        text: 'addAPIProvider()',
-        link: '/docs/iconify-icon/add-api-provider',
-        hidden: true,
-      },
-      {
-        text: 'setFetch()',
-        link: '/docs/iconify-icon/set-fetch',
-        hidden: true,
-      },
-      // Getting icons
-      {
-        text: 'iconExists()',
-        link: '/docs/iconify-icon/icon-exists',
-      }, {
-        text: 'listIcons()',
-        link: '/docs/iconify-icon/list-icons',
-      }, {
-        text: 'getIcon()',
-        link: '/docs/iconify-icon/get-icon',
-      },
-      // Adding icons
-      {
-        text: 'addIcon()',
-        link: '/docs/iconify-icon/add-icon',
-      }, {
-        text: 'addCollection()',
-        link: '/docs/iconify-icon/add-collection',
-      },
+      ...commonInternalFunctions(root),
+      // Getting/adding icons
+      ...commonIconFunctions(root),
       // API
-      {
-        text: 'loadIcons()',
-        link: '/docs/iconify-icon/load-icons',
-      }, {
-        text: 'loadIcon()',
-        link: '/docs/iconify-icon/load-icon',
-      }, {
-        text: 'enableCache()',
-        link: '/docs/iconify-icon/enable-cache',
-      }, {
-        text: 'disableCache()',
-        link: '/docs/iconify-icon/disable-cache',
-      },
+      ...commonAPIFunctions(root),
       // Rendering icons
       {
         text: 'buildIcon()',
-        link: '/docs/iconify-icon/build-icon',
+        link: `${root}build-icon`,
       }],
   },
 ]

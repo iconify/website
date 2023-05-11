@@ -1,5 +1,6 @@
 import type { SidebarItem } from '../../sidebar-item'
 import { IconifyIconSidebar } from './icon'
+import { SVGFrameworkIconSidebar } from './svg-framework'
 
 export const IconifyUsageSidebar: SidebarItem[] = [{
   text: 'Web Component',
@@ -8,7 +9,9 @@ export const IconifyUsageSidebar: SidebarItem[] = [{
   items: IconifyIconSidebar,
 }, {
   text: 'SVG Framework',
+  collapsed: true,
   link: '/docs/icon-components/svg-framework/',
+  items: SVGFrameworkIconSidebar,
 }, {
   text: 'React',
   link: '/docs/icon-components/react/',
