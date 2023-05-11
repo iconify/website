@@ -67,8 +67,12 @@
   --c-red-dimmed: #{palette.palette('red', 400)};
   --c-green: #{palette.palette('green', 600)};
   --c-green-dimmed: #{palette.palette('green', 400)};
+  --c-light-green: #{palette.palette('light-green', 600)};
+  --c-light-green-dimmed: #{palette.palette('light-green', 400)};
   --c-blue: #{palette.palette('blue', 600)};
   --c-blue-dimmed: #{palette.palette('blue', 400)};
+  --c-light-blue: #{palette.palette('light-blue', 600)};
+  --c-light-blue-dimmed: #{palette.palette('light-blue', 400)};
   --c-purple: #{palette.palette('purple', 600)};
   --c-purple-dimmed: #{palette.palette('purple', 400)};
   --c-blue-gray: #{palette.palette('blue-gray', 600)};
@@ -77,6 +81,8 @@
   --c-cyan-dimmed: #{palette.palette('cyan', 400)};
   --c-teal: #{palette.palette('teal', 600)};
   --c-teal-dimmed: #{palette.palette('teal', 400)};
+  --c-orange: #{palette.palette('orange', 600)};
+  --c-orange-dimmed: #{palette.palette('orange', 400)};
 }
 
 .dark {
@@ -114,8 +120,12 @@
   --c-red-dimmed: #{palette.palette('red', 600)};
   --c-green: #{palette.palette('green', 400)};
   --c-green-dimmed: #{palette.palette('green', 600)};
+  --c-light-green: #{palette.palette('light-green', 400)};
+  --c-light-green-dimmed: #{palette.palette('light-green', 600)};
   --c-blue: #{palette.palette('blue', 400)};
   --c-blue-dimmed: #{palette.palette('blue', 600)};
+  --c-light-blue: #{palette.palette('light-blue', 400)};
+  --c-light-blue-dimmed: #{palette.palette('light-blue', 600)};
   --c-purple: #{palette.palette('purple', 400)};
   --c-purple-dimmed: #{palette.palette('purple', 600)};
   --c-blue-gray: #{palette.palette('blue-gray', 400)};
@@ -124,6 +134,8 @@
   --c-cyan-dimmed: #{palette.palette('cyan', 600)};
   --c-teal: #{palette.palette('teal', 400)};
   --c-teal-dimmed: #{palette.palette('teal', 600)};
+  --c-orange: #{palette.palette('orange', 400)};
+  --c-orange-dimmed: #{palette.palette('orange', 600)};
 }
 
 /**

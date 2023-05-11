@@ -137,367 +137,391 @@ const props = withDefaults(defineProps<{
 </template>
 
 <style lang="scss">
-.icon-loading-process {
-  margin: 24px 0 16px;
-}
-
-dl {
-  display: block;
-  margin: 0;
-  padding: 0 0 16px 24px;
-  position: relative;
-  clear: both;
-  counter-increment: docs-process;
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    border-left: 2px solid var(--vp-c-mute-darker);
-  }
-  &:last-child {
-    padding-bottom: 0;
-    margin-bottom: 32px;
-  }
-  &:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-}
-
-dt {
-  margin: 0;
-  padding: 0 0 8px;
-  position: relative;
-  &:before {
-    content: counter(docs-process);
-    position: absolute;
-    left: -24px;
-    top: 0;
-    width: 24px;
-    text-align: center;
-    font-size: 16px;
-    font-family: var(--vp-font-family-mono);
-    line-height: 24px;
-    margin-top: 0;
-    margin-left: -11px;
-    background: var(--c-purple);
-    color: var(--vp-c-bg);
-    box-shadow: 0 0 0 4px var(--vp-c-mute);
-    border-radius: 50%;
-  }
-
-  // Code samples
-  .code-blocks {
-    margin: 0;
-    + .code-blocks {
-      margin-top: 4px;
-    }
-  }
-  .code-block-content {
-    padding: 3px 7px;
-  }
-}
-
-dd {
-  margin: 0 0;
-  padding: 0 0 16px;
-
-  p {
-    margin: 8px 0 0;
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
-  small {
-    color: var(--vp-c-text-2)
-  }
-}
-
-// Counter position and colors
-dl {
-  &:nth-child(4n + 2) dt:before {
-    background: var(--c-blue);
-  }
-  &:nth-child(4n + 3) dt:before {
-    background: var(--c-cyan);
-  }
-  &:nth-child(4n + 4) dt:before {
-    background: var(--c-green);
-  }
-}
-
-// Full width
 $process-full: 640px;
 $process-side: 320px;
 $process-animation-width: $process-side;
 $process-animation-height: 64px;
-
-@media (min-width: $process-full) {
-  dl {
-    padding-left: 0;
-    &:before {
-      left: calc($process-side + 24px);
-    }
-  }
-  dt {
-    float: left;
-    width: $process-side;
-    &:before {
-      left: calc($process-side + 24px);
-    }
-  }
-  dd {
-    margin-left: calc($process-side + 48px);
-  }
-}
-
-// Animation
 $process-arrow-middle-length: 200;
 $process-arrow-sides-length: 10;
 $icon-size: 24px;
 
-.api-animation {
-  // Config
-  $process-icon-spacing: 16px;
-  $process-icon-offset: 4px;
-  $process-icon-set-width: calc($process-icon-spacing * 2 + $icon-size -
-    $process-icon-offset);
-  $computers-left: calc($process-animation-width - $process-icon-set-width);
+.icon-loading-process {
+  margin: 24px 0 16px;
 
-  $process-arrow-width: 192px;
-  $process-arrow-height: 16px;
-  $process-arrow-top: 8px;
-
-  $icon-animation-step: 0.1s; // from line-md
-  $icon-2-animation-delay: 0.4s; // delay for top icon
-  $set-2-animation-delay: 0.8s; // delay for all icons in second set
-  $set-animation-breakpoints: (0, 2, 4, 6, 8); // breakpoints used in icons
-
-  $api-animations: (0, 1); // available animation sets
-  $api-animations-delay: 3s; // delay for second animation block
-
-  $process-arrow-middle-duration: 0.8s;
-  $process-arrow-sides-duration: 0.2s;
-  $process-arrow-delay: 1.6s;
-  $process-arrow-2-delay: calc($process-arrow-delay + 0.4s);
-
-  $process-text-duration: 0.5s;
-  $process-text-set-delay: 0.6s;
-  $process-text-arrows-delay: 0.8s;
-
-  // Main
-  position: relative;
-  width: $process-animation-width;
-  height: $process-animation-height;
-
-  .clouds,
-  .computers {
-    position: relative;
-  }
-
-  .animated-set {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: $process-icon-set-width;
-    &--computers {
-      left: $computers-left;
-    }
-    iconify-icon {
-      font-size: $icon-size;
-      line-height: 1em;
-      position: absolute;
-      color: var(--c-gray);
-
-      [fill-opacity] {
-        fill: var(--vp-c-bg);
-        fill-opacity: 1;
-      }
-    }
-    p {
-      top: calc($icon-size * 2 - $process-icon-offset);
-    }
-  }
-
-  // Text
-  p {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    white-space: nowrap;
+  dl {
+    display: block;
     margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--vp-c-text-2);
-    opacity: 0;
-    animation: process-text $process-text-duration forwards;
-  }
+    padding: 0 0 16px 24px;
+    position: relative;
+    clear: both;
+    counter-increment: docs-process;
 
-  // Icon positions
-  .icon1 {
-    top: calc($process-icon-spacing + $process-icon-offset);
-    left: 0;
-  }
-  .icon2 {
-    top: 0;
-    left: calc($process-icon-spacing - $process-icon-offset);
-  }
-  .icon3 {
-    top: $process-icon-spacing;
-    left: calc($process-icon-spacing * 2 - $process-icon-offset);
-  }
-
-  // Icon colors
-  .animated-set--clouds {
-    .icon1 {
-      color: var(--c-blue);
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-left: 2px solid var(--vp-c-mute-darker);
     }
-    .icon3 {
-      color: var(--c-green);
+
+    &:last-child {
+      padding-bottom: 0;
+      margin-bottom: 32px;
+    }
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
     }
   }
 
-  .animated-set--computers {
-    .icon1 {
-      color: var(--c-blue-gray);
-    }
-    .icon3 {
-      color: var(--c-cyan);
-    }
-  }
+  dt {
+    margin: 0;
+    padding: 0 0 8px;
+    position: relative;
 
-  // Arrows
-  .animated-arrows {
-    position: absolute;
-    left: calc(($process-side - $process-arrow-width) / 2);
-    width: $process-arrow-width;
-    top: 0;
-    p {
-      top: calc($process-arrow-top + $process-arrow-height * 2 - 4px);
+    &:before {
+      content: counter(docs-process);
+      position: absolute;
+      left: -24px;
+      top: 0;
+      width: 24px;
+      text-align: center;
+      font-size: 16px;
+      font-family: var(--vp-font-family-mono);
+      line-height: 24px;
+      margin-top: 0;
+      margin-left: -11px;
+      background: var(--c-purple);
+      color: var(--vp-c-bg);
+      box-shadow: 0 0 0 4px var(--vp-c-mute);
+      border-radius: 50%;
     }
-  }
-  &--1 {
-    .animated-arrows {
-      top: 12px;
-      p {
-        top: -12px;
+
+    // Code samples
+    .code-blocks {
+      margin: 0;
+
+      + .code-blocks {
+        margin-top: 4px;
       }
     }
+
+    .code-block-content {
+      padding: 3px 7px;
+    }
   }
 
-  .animated-arrow {
-    color: var(--vp-c-text-3);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: $process-arrow-top;
+  dd {
+    margin: 0 0;
+    padding: 0 0 16px;
+
+    p {
+      margin: 8px 0 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    small {
+      color: var(--vp-c-text-2)
+    }
   }
 
-  .arrow-middle {
-    animation: process-arrow-middle $process-arrow-middle-duration forwards;
-    stroke-dasharray: #{$process-arrow-middle-length};
-    stroke-dashoffset: #{$process-arrow-middle-length};
-    opacity: 0;
-  }
-  .arrow-sides {
-    animation: process-arrow-sides $process-arrow-sides-duration forwards;
-    stroke-dasharray: #{$process-arrow-sides-length};
-    stroke-dashoffset: #{$process-arrow-sides-length};
-    opacity: 0;
+  // Counter position and colors
+  dl {
+    &:nth-child(4n + 2) dt:before {
+      background: var(--c-blue);
+    }
+
+    &:nth-child(4n + 3) dt:before {
+      background: var(--c-cyan);
+    }
+
+    &:nth-child(4n + 4) dt:before {
+      background: var(--c-green);
+    }
   }
 
-  .animated-arrow--2 {
-    top: calc($process-arrow-height + $process-arrow-top);
+  // Full width
+  @media (min-width: $process-full) {
+    dl {
+      padding-left: 0;
+
+      &:before {
+        left: calc($process-side + 24px);
+      }
+    }
+    dt {
+      float: left;
+      width: $process-side;
+
+      &:before {
+        left: calc($process-side + 24px);
+      }
+    }
+    dd {
+      margin-left: calc($process-side + 48px);
+    }
   }
 
-  // Animation delays
-  @each $counter in $api-animations {
-    $prefix: if($counter == 0, #{&}, #{&}--#{$counter});
-    @at-root {
-      #{$prefix} {
-        // Arrows
-        .animated-arrows {
-          p {
-            animation-delay: calc($process-text-arrows-delay + $process-arrow-delay +
+  // Animation
+  .api-animation {
+    // Config
+    $process-icon-spacing: 16px;
+    $process-icon-offset: 4px;
+    $process-icon-set-width: calc($process-icon-spacing * 2 + $icon-size -
+    $process-icon-offset);
+    $computers-left: calc($process-animation-width - $process-icon-set-width);
+
+    $process-arrow-width: 192px;
+    $process-arrow-height: 16px;
+    $process-arrow-top: 8px;
+
+    $icon-animation-step: 0.1s; // from line-md
+    $icon-2-animation-delay: 0.4s; // delay for top icon
+    $set-2-animation-delay: 0.8s; // delay for all icons in second set
+    $set-animation-breakpoints: (0, 2, 4, 6, 8); // breakpoints used in icons
+
+    $api-animations: (0, 1); // available animation sets
+    $api-animations-delay: 3s; // delay for second animation block
+
+    $process-arrow-middle-duration: 0.8s;
+    $process-arrow-sides-duration: 0.2s;
+    $process-arrow-delay: 1.6s;
+    $process-arrow-2-delay: calc($process-arrow-delay + 0.4s);
+
+    $process-text-duration: 0.5s;
+    $process-text-set-delay: 0.6s;
+    $process-text-arrows-delay: 0.8s;
+
+    // Main
+    position: relative;
+    width: $process-animation-width;
+    height: $process-animation-height;
+
+    .clouds,
+    .computers {
+      position: relative;
+    }
+
+    .animated-set {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: $process-icon-set-width;
+
+      &--computers {
+        left: $computers-left;
+      }
+
+      iconify-icon {
+        font-size: $icon-size;
+        line-height: 1em;
+        position: absolute;
+        color: var(--c-gray);
+
+        [fill-opacity] {
+          fill: var(--vp-c-bg);
+          fill-opacity: 1;
+        }
+      }
+
+      p {
+        top: calc($icon-size * 2 - $process-icon-offset);
+      }
+    }
+
+    // Text
+    p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      white-space: nowrap;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--vp-c-text-2);
+      opacity: 0;
+      animation: process-text $process-text-duration forwards;
+    }
+
+    // Icon positions
+    .icon1 {
+      top: calc($process-icon-spacing + $process-icon-offset);
+      left: 0;
+    }
+
+    .icon2 {
+      top: 0;
+      left: calc($process-icon-spacing - $process-icon-offset);
+    }
+
+    .icon3 {
+      top: $process-icon-spacing;
+      left: calc($process-icon-spacing * 2 - $process-icon-offset);
+    }
+
+    // Icon colors
+    .animated-set--clouds {
+      .icon1 {
+        color: var(--c-blue);
+      }
+
+      .icon3 {
+        color: var(--c-green);
+      }
+    }
+
+    .animated-set--computers {
+      .icon1 {
+        color: var(--c-blue-gray);
+      }
+
+      .icon3 {
+        color: var(--c-cyan);
+      }
+    }
+
+    // Arrows
+    .animated-arrows {
+      position: absolute;
+      left: calc(($process-side - $process-arrow-width) / 2);
+      width: $process-arrow-width;
+      top: 0;
+
+      p {
+        top: calc($process-arrow-top + $process-arrow-height * 2 - 4px);
+      }
+    }
+
+    &--1 {
+      .animated-arrows {
+        top: 12px;
+
+        p {
+          top: -12px;
+        }
+      }
+    }
+
+    .animated-arrow {
+      color: var(--vp-c-text-3);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: $process-arrow-top;
+    }
+
+    .arrow-middle {
+      animation: process-arrow-middle $process-arrow-middle-duration forwards;
+      stroke-dasharray: #{$process-arrow-middle-length};
+      stroke-dashoffset: #{$process-arrow-middle-length};
+      opacity: 0;
+    }
+
+    .arrow-sides {
+      animation: process-arrow-sides $process-arrow-sides-duration forwards;
+      stroke-dasharray: #{$process-arrow-sides-length};
+      stroke-dashoffset: #{$process-arrow-sides-length};
+      opacity: 0;
+    }
+
+    .animated-arrow--2 {
+      top: calc($process-arrow-height + $process-arrow-top);
+    }
+
+    // Animation delays
+    @each $counter in $api-animations {
+      $prefix: if($counter == 0, #{&}, #{&}--#{$counter});
+      @at-root {
+        #{$prefix} {
+          // Arrows
+          .animated-arrows {
+            p {
+              animation-delay: calc($process-text-arrows-delay + $process-arrow-delay +
               $api-animations-delay * $counter);
+            }
           }
-        }
 
-        .arrow-middle {
-          animation-delay: calc($process-arrow-delay + $api-animations-delay *
-            $counter);
-        }
-        .arrow-sides {
-          animation-delay: calc($process-arrow-middle-duration + $process-arrow-delay +
-            $api-animations-delay * $counter);
-        }
-
-        .animated-arrow--2 {
           .arrow-middle {
-            animation-delay: calc($process-arrow-2-delay + $api-animations-delay *
-              $counter);
+            animation-delay: calc($process-arrow-delay + $api-animations-delay *
+            $counter);
           }
+
           .arrow-sides {
-            animation-delay: calc($process-arrow-middle-duration +
-              $process-arrow-2-delay + $api-animations-delay * $counter);
+            animation-delay: calc($process-arrow-middle-duration + $process-arrow-delay +
+            $api-animations-delay * $counter);
           }
-        }
 
-        // Icons
-        .animated-set {
-          p {
-            animation-delay: calc($process-text-set-delay + $api-animations-delay *
+          .animated-arrow--2 {
+            .arrow-middle {
+              animation-delay: calc($process-arrow-2-delay + $api-animations-delay *
               $counter);
+            }
+
+            .arrow-sides {
+              animation-delay: calc($process-arrow-middle-duration +
+              $process-arrow-2-delay + $api-animations-delay * $counter);
+            }
           }
-          &--second p {
-            animation-delay: calc($set-2-animation-delay + $process-text-set-delay +
+
+          // Icons
+          .animated-set {
+            p {
+              animation-delay: calc($process-text-set-delay + $api-animations-delay *
+              $counter);
+            }
+
+            &--second p {
+              animation-delay: calc($set-2-animation-delay + $process-text-set-delay +
               $api-animations-delay * $counter);
-          }
-        }
-
-        @each $bp in $set-animation-breakpoints {
-          @if ($counter > 0) {
-            .il-md-delay-#{$bp} {
-              animation-delay: calc($icon-animation-step *
-                $bp +
-                $api-animations-delay *
-                $counter);
             }
           }
 
-          .icon2 {
-            .il-md-delay-#{$bp} {
-              animation-delay: calc($icon-2-animation-delay +
-                $icon-animation-step *
+          @each $bp in $set-animation-breakpoints {
+            @if ($counter > 0) {
+              .il-md-delay-#{$bp} {
+                animation-delay: calc($icon-animation-step *
                 $bp +
                 $api-animations-delay *
                 $counter);
-            }
-          }
-
-          .animated-set--second {
-            .il-md-delay-#{$bp} {
-              animation-delay: calc($set-2-animation-delay +
-                $icon-animation-step *
-                $bp +
-                $api-animations-delay *
-                $counter);
+              }
             }
 
             .icon2 {
               .il-md-delay-#{$bp} {
+                animation-delay: calc($icon-2-animation-delay +
+                $icon-animation-step *
+                $bp +
+                $api-animations-delay *
+                $counter);
+              }
+            }
+
+            .animated-set--second {
+              .il-md-delay-#{$bp} {
                 animation-delay: calc($set-2-animation-delay +
+                $icon-animation-step *
+                $bp +
+                $api-animations-delay *
+                $counter);
+              }
+
+              .icon2 {
+                .il-md-delay-#{$bp} {
+                  animation-delay: calc($set-2-animation-delay +
                   $icon-2-animation-delay +
                   $icon-animation-step *
                   $bp +
                   $api-animations-delay *
                   $counter);
+                }
               }
             }
           }

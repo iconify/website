@@ -9,7 +9,7 @@ types:
 
 # Icon bundles
 
-`include visual-blocks/bundle`
+<bundles-intro></bundles-intro>
 
 ## Offline use
 
