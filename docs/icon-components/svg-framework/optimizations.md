@@ -50,31 +50,18 @@ Iconify SVG framework is fast, but you can make it even faster by helping Iconif
 
 There are several ways to improve icon loading:
 
-### Pre-loading icons
+### Preloading icons
 
 If your page is likely to display additional icons after initial page load, such as AJAX forms or React/Angular application, you can tell Iconify SVG framework to pre-load those icons. Then, when your script will display those icons, Iconify would already have data for those icons retrieved from API.
 
 This also helps to reduce number of API queries. Loading icons in bulk is faster than loading them one by one.
 
-To pre-load icons add this code anywhere after including Iconify script:
+To preload icons add this code anywhere after including Iconify script:
 
 ```yaml
-src: iconify1/preload.html
-title: 'For Iconify SVG Framework 1.0:'
-hint: Function preloadImages was renamed to loadIcons in 2.0. See <a href="./functions.html">functions list</a>.
-extra:
-  - src: icon-components/iconify/preload.html
-    title: 'For Iconify SVG Framework 2.0:'
+src: icon-components/iconify/preload.html
 ```
 
-Argument to `[func]loadIcons` (or `[func]preloadImages` for version 1.0) is an array of icons you want to load.
+Argument to `[func]loadIcons` is an array of icons you want to load.
 
-To use this function, make sure either Iconify is placed in footer before `[tag]</body>` or put it in bundle with SVG framework. Otherwise, SVG framework might be loaded faster than your script, scan DOM and get shorter list of icons to retrieve, splitting it into multiple API queries.
-
-### Bundle icons
-
-If in your development process you are creating script bundles, where you put everything you need, including Iconify SVG framework, you should consider adding icon data to your bundle.
-
-This will reduce number of HTTP queries and it will make sure icon data is available instantly.
-
-See [bundled icons page](../../icon-components/bundles/index.md) for details.
+To use this function, make sure either Iconify is placed in footer before `[tag]</body>` or put it in a bundle with SVG framework. Otherwise, SVG framework might be loaded faster than your script, scan DOM and get shorter list of icons to retrieve, splitting it into multiple API queries.

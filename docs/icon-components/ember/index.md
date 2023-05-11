@@ -56,14 +56,6 @@ In template use `[var]IconifyIcon` component with imported icon name as `[prop]i
 <IconifyIcon @icon='mdi-light:home' />
 ```
 
-### Offline use
-
-```yaml
-include: icon-components/components/intro-offline
-```
-
-See [icon bundles for Iconify for Ember](../../icon-components/bundles/ember.md) documentation.
-
 ## Properties
 
 In Ember, all component properties start with `[prop]@`, such as `[prop]@icon`.

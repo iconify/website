@@ -8,8 +8,6 @@ navigation: './functions.md'
 
 This tutorial is part of [Iconify SVG Framework functions tutorial](./functions.md#api).
 
-This function is part of API module and is not available in [bundle without API support](./without-api.md).
-
 ```yaml
 include: icon-components/functions/add-api-provider/intro
 replacements:

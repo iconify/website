@@ -101,7 +101,7 @@ All you have to do is add provider to icon name. Provider in icon name must matc
 ```
 
 ```yaml
-src: icon-components/react-with-api/provider.jsx
+src: icon-components/common/add-api-provider.jsx
 ```
 
 ## Authentication

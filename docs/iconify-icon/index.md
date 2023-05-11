@@ -61,7 +61,7 @@ Web component will retrieve icon data from [Iconify API](../api/index.md), then 
 
 There are over 60k icons available from many open source icon sets.
 
-Don't want to rely on third party API servers? You can [use web component without API](./without-api.md) or you can [host your own Iconify API](/docs/api/hosting.md). You can also use it with your own icons.
+Don't want to rely on third party API servers? You can [host your own Iconify API](/docs/api/hosting.md). You can also use it with your own icons.
 
 ## Shadow DOM
 

@@ -60,13 +60,9 @@ import Iconify from '@iconify/iconify';
 
 Iconify SVG framework retrieves icon data from Iconify API. That makes it very easy to use because developer does not need to prepare the icon data. Downside is, visitor must be online to retrieve icon data.
 
-However, SVG framework can also work without API. It allows using Iconify SVG framework in offline web applications.
-
-See [using SVG framework without API](./without-api.md) tutorial.
-
 ## How does it work?
 
-Iconify SVG framework works by locating icon placeholders, retrieving icon name from placeholder, retrieving icon data from [Iconify API](../../api/index.md), then replacing the placeholder with SVG. This is done very quickly in a fraction of a second.
+Iconify SVG framework works by locating icon placeholders, retrieving icon name from placeholder, retrieving icon data from [Iconify API](/docs/api/index.md), then replacing the placeholder with SVG. This is done very quickly in a fraction of a second.
 
 What are the advantages of this approach?
 
@@ -76,8 +72,10 @@ What are the advantages of this approach?
 
 What are the disadvantages?
 
-- It requires an internet connection. However, there is a solution for offline use, see [using SVG framework without API bundles](./without-api.md).
-- By using public API, you rely on a third party service. However, there is an option to host your own Iconify API, see [Iconify API hosting tutorial](../../api/hosting.md).
+- It requires an internet connection.
+- By using public API, you rely on a third party service. However, there is an option to host your own Iconify API, see [Iconify API hosting tutorial](/docs/api/hosting.md).
+
+If you need to render icons without relying on Iconify API, [use a different icon component](/docs/usage/index.md).
 
 ## Icon syntax
 

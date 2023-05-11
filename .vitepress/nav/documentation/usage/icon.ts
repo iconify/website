@@ -29,9 +29,6 @@ export const IconifyIconSidebar: SidebarItem[] = [
       link: '/docs/iconify-icon/modes',
     }],
   }, {
-    text: 'Use Without API',
-    link: '/docs/iconify-icon/without-api',
-  }, {
     text: 'Functions',
     collapsed: true,
     items: [{

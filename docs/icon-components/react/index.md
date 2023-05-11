@@ -63,21 +63,13 @@ Then use `[var]Icon` component with icon name as `[prop]icon` parameter:
 include: icon-components/components/intro-online
 ```
 
-### Offline use
-
-```yaml
-include: icon-components/components/intro-offline
-```
-
-See [icon bundles for Iconify for React](../../icon-components/bundles/react.md) documentation.
-
 ### Next.js {#ssr}
 
 Component is compatible with Next.js.
 
 Component does not retrieve icon data until it is mounted. For server side rendering it means HTML will not include SVGs, they will be dynamically added only when hydrating DOM on client side.
 
-If you do want to render SVGs on server side, use either [offline bundle](./offline.md) or provide icon data as parameter instead of icon name.
+If you do want to render SVGs on server side, provide icon data as parameter instead of icon name or [use a different icon component](/docs/usage/index.md).
 
 #### API support in Next.js {#ssr-api}
 

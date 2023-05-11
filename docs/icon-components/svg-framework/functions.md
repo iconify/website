@@ -130,8 +130,6 @@ Few helper functions that are exposed because they might be useful when creating
 
 ## API functions {#api}
 
-These functions are not available in module without API.
-
 ```yaml
 include: icon-components/components/functions-list/api
 ```
