@@ -1,5 +1,26 @@
 import type { SidebarItem } from '../../sidebar-item'
 
+export function commonComponentAttributes(root: string): SidebarItem[] {
+  return [
+    {
+      text: 'Icon Color',
+      link: `${root}color`,
+    },
+    {
+      text: 'Icon Dimensions',
+      link: `${root}dimensions`,
+    },
+    {
+      text: 'Transformations',
+      link: `${root}transform`,
+    },
+    {
+      text: 'Vertical Alignment',
+      link: `${root}inline`,
+    },
+  ]
+}
+
 export function commonInternalFunctions(root: string): SidebarItem[] {
   return [{
     text: 'addAPIProvider()',

@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify for Svelte Function: addAPIProvider'
-standalone: true
-navigation: './index.md'
 ```
 
 # Iconify for Svelte function: addAPIProvider

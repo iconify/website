@@ -1,5 +1,5 @@
 import type { SidebarItem } from '../../sidebar-item'
-import { commonAPIFunctions, commonIconFunctions, commonInternalFunctions } from './common'
+import { commonAPIFunctions, commonComponentAttributes, commonIconFunctions, commonInternalFunctions } from './common'
 
 const root = '/docs/iconify-icon/'
 
@@ -24,19 +24,9 @@ export const IconifyIconSidebar: SidebarItem[] = [
       text: 'Icon',
       link: `${root}icon`,
       hidden: true,
-    }, {
-      text: 'Icon Color',
-      link: `${root}color`,
-    }, {
-      text: 'Icon Dimensions',
-      link: `${root}dimensions`,
-    }, {
-      text: 'Transformations',
-      link: `${root}transform`,
-    }, {
-      text: 'Vertical Alignment',
-      link: `${root}inline`,
-    }, {
+    },
+    ...commonComponentAttributes(root),
+    {
       text: 'Rendering Modes',
       link: `${root}modes`,
     }],

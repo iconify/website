@@ -1,31 +1,16 @@
 import type { SidebarItem } from '../../sidebar-item'
-import { commonAPIFunctions, commonIconFunctions, commonInternalFunctions } from './common'
+import { commonAPIFunctions, commonComponentAttributes, commonIconFunctions, commonInternalFunctions } from './common'
 
 const root = '/docs/icon-components/svg-framework/'
 
-export const SVGFrameworkIconSidebar: SidebarItem[] = [
+export const SVGFrameworkSidebar: SidebarItem[] = [
   {
     text: 'IconifyIconName type',
     link: `${root}icon-name`,
     hidden: true,
   },
   // Attributes
-  {
-    text: 'Icon Color',
-    link: `${root}color`,
-  },
-  {
-    text: 'Icon Dimensions',
-    link: `${root}dimensions`,
-  },
-  {
-    text: 'Transformations',
-    link: `${root}transform`,
-  },
-  {
-    text: 'Vertical Alignment',
-    link: `${root}inline`,
-  },
+  ...commonComponentAttributes(root),
   {
     text: 'Functions',
     items: [
@@ -47,12 +32,12 @@ export const SVGFrameworkIconSidebar: SidebarItem[] = [
         link: `${root}render-icon`,
       },
       {
-        text: 'replaceIDs()',
-        link: `${root}replace-ids`,
-      },
-      {
         text: 'buildIcon()',
         link: `${root}build-icon`,
+      },
+      {
+        text: 'replaceIDs()',
+        link: `${root}replace-ids`,
       },
       // Observer
       {

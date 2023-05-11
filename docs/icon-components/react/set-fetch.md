@@ -1,3 +1,7 @@
+```yaml
+title: 'Iconify for React Function: setFetch'
+```
+
 # Iconify for React function: setFetch
 
 This tutorial is part of [Iconify for React functions tutorial](./index#functions).

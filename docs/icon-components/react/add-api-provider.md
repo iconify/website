@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify for React Function: addAPIProvider'
-standalone: true
-navigation: './index.md'
 ```
 
 # Iconify for React function: addAPIProvider

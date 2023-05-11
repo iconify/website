@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify for Vue 2 Function: addAPIProvider'
-standalone: true
-navigation: './index.md'
 ```
 
 # Iconify for Vue 2 function: addAPIProvider

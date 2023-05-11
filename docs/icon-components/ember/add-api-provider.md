@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify for Ember Function: addAPIProvider'
-standalone: true
-navigation: './index.md'
 ```
 
 # Iconify for Ember function: addAPIProvider
