@@ -22,6 +22,13 @@ export default withPwa(defineConfig({
       PWA: enablePWA,
     },
   },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: tag => tag === 'iconify-icon',
+      },
+    },
+  },
   head: [
     ...preconnectLinks,
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
