@@ -9,8 +9,8 @@
     Cache-Control = "public, max-age=604800"
 
 [[redirects]]
- from = "/icon-sets/:prefix/:name.:ext"
- to = "https://icon-sets.iconify.design/:prefix/:name/"
+ from = "/icon-sets/*"
+ to = "https://301.iconify.design/icon-sets/:slug"
  status = 301
  force = true
 
