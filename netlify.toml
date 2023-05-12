@@ -9,14 +9,8 @@
     Cache-Control = "public, max-age=604800"
 
 [[redirects]]
- from = "/icon-sets/*.html"
- to = "https://icon-sets.iconify.design/:splat"
- status = 301
- force = true
-
-[[redirects]]
- from = "/icon-sets/*"
- to = "https://icon-sets.iconify.design/:splat"
+ from = "/icon-sets/:prefix/:name.:ext"
+ to = "https://icon-sets.iconify.design/:prefix/:name/"
  status = 301
  force = true
 
