@@ -7,3 +7,21 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+[[redirects]]
+ from = "/icon-sets/*.html"
+ to = "https://icon-sets.iconify.design/:splat"
+ status = 301
+ force = true
+
+[[redirects]]
+ from = "/icon-sets/*"
+ to = "https://icon-sets.iconify.design/:splat"
+ status = 301
+ force = true
+
+[[redirects]]
+ from = "/discord/"
+ to = "https://discord.gg/bhEYcgNBUW"
+ status = 301
+ force = true
