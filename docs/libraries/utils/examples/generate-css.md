@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify Utils Code Examples: Generate CSS'
-navigation: ./index.md
-standalone: true
 functions:
   getIconsCSS: '../get-icons-css.md'
 types:
@@ -34,4 +32,4 @@ For icon data source, this example uses `[npm]@iconify/json` package.
 
 ## Output
 
-Example writes CSS to a file.
+This example writes CSS to a file.

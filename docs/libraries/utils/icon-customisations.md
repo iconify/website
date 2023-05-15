@@ -1,7 +1,5 @@
 ```yaml
 title: IconifyIconCustomisations Type
-standalone: true
-navigation: './index.md'
 types:
   IconifyIconSize: './icon-customisations.md#icon-size'
 functions:

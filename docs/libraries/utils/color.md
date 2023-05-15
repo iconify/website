@@ -1,7 +1,5 @@
 ```yaml
 title: Color Type
-standalone: true
-navigation: './index.md'
 ```
 
 # Color type
@@ -19,8 +17,8 @@ RGB color, usually converted from hexadecimal color like `[str]#ff8080`, color k
 It has the following properties:
 
 - `[prop]type` = `[str]rgb`.
-- `[prop]r`, `[prop]g`, `[prop]b` red, green and blue color components (0 - 255).
-- `[prop]alpha` alpha (0 - 1).
+- `[prop]r`, `[prop]g`, `[prop]b` red, green and blue color components (`[num]0` - `[num]255`).
+- `[prop]alpha` alpha (`[num]0` - `[num]1`).
 
 ## HSL
 
@@ -29,9 +27,9 @@ HSL color, usually converted from HSL or HSLA color like `[str]hsla(90, 50%, 50%
 It has the following properties:
 
 - `[prop]type` = `[str]hsl`.
-- `[prop]h` hue that can be any number, but usually is in 0 - 360 range.
-- `[prop]s`, `[prop]l` saturation and lightness components (0 - 100).
-- `[prop]alpha` alpha (0 - 1).
+- `[prop]h` hue that can be any number, but usually is in `[num]0` - `[num]360` range.
+- `[prop]s`, `[prop]l` saturation and lightness components (`[num]0` - `[num]100`).
+- `[prop]alpha` alpha (`[num]0` - `[num]1`).
 
 ## LAB
 
@@ -40,9 +38,9 @@ Lab color, currently being implemented by browsers, is converted from color stri
 It has the following properties:
 
 - `[prop]type` = `[str]lab`.
-- `[prop]l` lightness (0 - 100).
+- `[prop]l` lightness (`[num]0` - `[num]100`).
 - `[prop]a`, `[prop]b` are distances along `[prop]a` and `[prop]b` axis in Lab color space.
-- `[prop]alpha` alpha (0 - 1).
+- `[prop]alpha` alpha (`[num]0` - `[num]1`).
 
 ## LCH
 
@@ -51,10 +49,10 @@ LCH color, currently being implemented by browsers, is converted from color stri
 It has the following properties:
 
 - `[prop]type` = `[str]lab`.
-- `[prop]l` lightness (0 - 100).
-- `[prop]c` chroma, usually in 0 - 230 range, but it can be higher.
+- `[prop]l` lightness (`[num]0` - `[num]100`).
+- `[prop]c` chroma, usually in `[num]0` - `[num]230` range, but it can be higher.
 - `[prop]h` hue angle.
-- `[prop]alpha` alpha (0 - 1).
+- `[prop]alpha` alpha (`[num]0` - `[num]1`).
 
 ## Keywords
 
@@ -64,21 +62,22 @@ They exist because functions for parsing colors can be used for cleaning up and 
 
 ### transparent
 
-Transparent color has special type with only one property:
+Transparent color has a special type with only one property:
 
 - `[prop]type` = `[str]transparent`.
 
-When converting transparent colors like `[str]rgba(0, 0, 0, 0)`, convertion function will return `[prop]transparent` type, making it easier to compare various colors.
+When converting transparent colors like `[str]rgba(0, 0, 0, 0)`,
+conversion function will return `[prop]transparent` type, making it easier to compare various colors.
 
 ### none
 
-`[str]none` also has special type with only one property:
+`[str]none` also has a special type with only one property:
 
 - `[prop]type` = `[str]none`.
 
 ### currentColor
 
-`[str]currentColor` also has special type with only one property:
+`[str]currentColor` also has a special type with only one property:
 
 - `[prop]type` = `[str]current`.
 

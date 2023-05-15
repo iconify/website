@@ -43,7 +43,9 @@ import { blankIconSet } from '@iconify/tools';
 const iconSet = blankIconSet('some-prefix');
 ```
 
-Constructor does not validate icon set. If you are not sure about source, you need to validate it using `[func]validateIconSet()` from [Iconify Utils](../../utils/index.md).
+Constructor does not validate the icon set. 
+If you are not sure about the source,
+you need to validate it using `[func]validateIconSet()` from [Iconify Utils](../../utils/index.md).
 
 ## Functions
 

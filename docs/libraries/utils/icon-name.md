@@ -1,7 +1,5 @@
 ```yaml
 title: IconifyIconName Type
-standalone: true
-navigation: './index.md'
 ```
 
 # IconifyIconName type

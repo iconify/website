@@ -1,7 +1,5 @@
 ```yaml
 title: 'Importing SVG from Figma: Types'
-standalone: true
-navigation: './index.md'
 types:
   IconSet: '../../icon-set/index.md'
   FigmaImportResult: './types.md#result'

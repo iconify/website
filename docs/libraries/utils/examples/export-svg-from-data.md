@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify Utils Code Examples: Export SVG'
-navigation: ./index.md
-standalone: true
 functions:
   getIconData: '../get-icon-data.md'
   iconToSVG: '../icon-to-svg.md'
@@ -35,10 +33,10 @@ Functions used in this code sample:
 
 For icon data source, this example uses hardcoded `[type]IconifyIcon` data.
 
-You can import individual icon from [split icon set package](../../../icons/icons.md).
+You can import individual icon from [split icon set package](/docs/icons/icons.md).
 
 ## Output
 
-Example outputs SVG to console.
+This example outputs SVG to console.
 
 If you need to write it to a file, use file system function, such as `[func]writeFileSync()` or one of its asynchronous counterparts.

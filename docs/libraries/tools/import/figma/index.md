@@ -24,7 +24,7 @@ It creates `[type]IconSet` instance, which [can be exported to various formats](
 
 ## Requirements
 
-To import Figma file you need to have:
+To import Figma file, you need to have:
 
 - Figma file ID. See [how to get Figma file ID](./file-id.md) article.
 - Access to document.

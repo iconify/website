@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify Utils Code Examples: Export SVG'
-navigation: ./index.md
-standalone: true
 functions:
   parseIconSet: '../parse-icon-set.md'
   iconToSVG: '../icon-to-svg.md'
@@ -17,7 +15,7 @@ This tutorial is part of [code examples for Iconify Utils](./index.md).
 
 ## Export SVGs
 
-This is an example of using Iconify Utils to generate SVGs from icon set:
+This is an example of using Iconify Utils to generate SVGs from the icon set:
 
 ```yaml
 src: libraries/utils/svgs-from-set.ts
@@ -36,8 +34,8 @@ Functions used in this code sample:
 
 For icon set source, this example uses `[file].json` file in `[type]IconifyJSON` format.
 
-You can also use [individual icon set package](../../../icons/json.md) or [full icon sets package](../../../icons/all.md). Point `[var]source` variable to `[file].json` file from one of those packages.
+You can also use [individual icon set package](/docs/icons/json.md) or [full icon sets package](/docs/icons/all.md). Point `[var]source` variable to `[file].json` file from one of those packages.
 
 ## Output
 
-Example writes all SVGs to file system. Change `[var]target` variable to point to different directory.
+This example writes all SVGs to the file system. Change `[var]target` variable to point to different directory.

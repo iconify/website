@@ -1,7 +1,5 @@
 ```yaml
 title: Building Custom Budget Content Delivery Network
-navigation: ./hosting.md
-standalone: true
 ```
 
 # Custom budget CDN

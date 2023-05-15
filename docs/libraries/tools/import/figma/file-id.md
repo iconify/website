@@ -1,7 +1,5 @@
 ```yaml
 title: 'Importing SVG from Figma: Getting file ID'
-standalone: true
-navigation: './index.md'
 functions:
   importFromFigma: ./index.md
 ```
@@ -13,7 +11,7 @@ This article is part of `[func]importFromFigma()` documentation.
 How to get Figma file ID:
 
 1. Open file in Figma.
-2. Click "Share" button in top right corner.
+2. Click the "Share" button in the top right corner.
 3. Click "Copy link".
 
 ![How to get file ID in Figma](https://docs.iconify.design/assets/images/tools/figma_id.png)
@@ -28,7 +26,7 @@ File ID is between `[str]/file/` and next `[str]/`. In example above, file ID is
 
 ## Community files
 
-Community files contain `[str]/community/` in file link:
+Community files contain `[str]/community/` in the file link:
 
 ```txt
 https://www.figma.com/community/file/1034432054377533052/Quill-Iconset

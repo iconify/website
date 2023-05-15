@@ -1,7 +1,5 @@
 ```yaml
 title: 'Iconify Utils Code Examples: Export SVG'
-navigation: ./index.md
-standalone: true
 functions:
   getIconData: '../get-icon-data.md'
   iconToSVG: '../icon-to-svg.md'
@@ -42,13 +40,13 @@ title: 'demo.js'
 
 Functions used in this code sample:
 
-- `[func]getIconData()` to extract data for one icon from icon set.
+- `[func]getIconData()` to extract data for one icon from the icon set.
 - `[func]iconToSVG()` to generate attributes and HTML for SVG.
-- `[func]iconToHTML()` to convert result of `[func]iconToSVG()` to string.
+- `[func]iconToHTML()` to convert the result of `[func]iconToSVG()` to string.
 
 ## Source
 
-For icon set source, this example uses [individual icon set package](../../../icons/json.md).
+For icon set source, this example uses [individual icon set package](/docs/icons/json.md).
 
 If you need to read from a different file, replace that code with something like this:
 

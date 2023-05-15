@@ -1,7 +1,5 @@
 ```yaml
 title: 'Importing SVG from Figma: Getting access token'
-standalone: true
-navigation: './index.md'
 functions:
   importFromFigma: ./index.md
 ```

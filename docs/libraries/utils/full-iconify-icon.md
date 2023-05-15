@@ -1,7 +1,5 @@
 ```yaml
 title: FullIconifyIcon Type
-standalone: true
-navigation: './index.md'
 types:
   IconifyIcon: '/docs/types/iconify-icon.md'
 functions:

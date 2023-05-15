@@ -139,6 +139,10 @@ export const ToolsSidebar: SidebarItem[] = [
     text: 'Cleanup/Validation',
     link: `${iconRoot}cleanup`,
   }, {
+    text: 'ResolvedIconifyIcon',
+    link: `${root}iconify-icon`,
+    hidden: true,
+  }, {
     text: 'Icon Manipulation',
     link: iconRoot,
     collapsed: true,
@@ -171,6 +175,16 @@ export const ToolsSidebar: SidebarItem[] = [
     }, {
       text: 'Figma',
       link: `${root}import/figma/`,
+      items: [{
+        text: 'Getting File ID',
+        link: `${root}import/figma/file-id`,
+      }, {
+        text: 'Getting Access Token',
+        link: `${root}import/figma/token`,
+      }, {
+        text: 'Types',
+        link: `${root}import/figma/types`,
+      }],
     }],
   }, {
     text: 'Export',
