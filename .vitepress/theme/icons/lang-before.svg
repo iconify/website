@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 24">
-    <path d="M4 0h100v24H0z" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24">
+    <path d="M8 0h4v24H4z">
+        <animate attributeName="d" from="M10 0h4v24H10z" to="M8 0h4v24H4z" dur="2s" />
+    </path>
 </svg>

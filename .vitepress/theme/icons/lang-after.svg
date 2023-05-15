@@ -1,3 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 36">
-    <path d="M0 36V0h8z" />
+    <path d="M0 36V0h8z">
+        <animate attributeName="d" from="M0 36V0h0z" to="M0 36V0h8z" dur="2s" />
+    </path>
 </svg>

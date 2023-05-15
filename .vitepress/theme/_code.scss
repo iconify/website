@@ -124,7 +124,6 @@ div.code-blocks code {
       content: '';
       position: absolute;
       top: 0;
-      width: 8px;
       color: var(--c-blue-gray);
       background-color: currentColor;
       -webkit-mask-image: var(--svg);
@@ -136,12 +135,14 @@ div.code-blocks code {
     }
     &:before {
       --svg: var(--icon-lang-before);
-      left: -7px;
+      left: -11px;
+      width: 12px;
       height: 24px;
     }
     &:after {
       --svg: var(--icon-lang-after);
       right: -7px;
+      width: 8px;
       height: 36px;
       transition: transform 0.1s;
       transform-origin: left top;
@@ -201,8 +202,8 @@ div.code-blocks code {
       display: block;
     }
     button + .code-block-lang {
-      opacity: 0;
-      transform: scaleY(0);
+      //opacity: 0;
+      transform: scaleX(0);
       &:after {
         transform: scaleX(0);
       }
