@@ -8,7 +8,7 @@
 - [x] check for unused pages
 - [ ] create website root source folder: ALMOST IMPOSSIBLE
 - [ ] redo articles as blog, move them out of documentation
-- [ ] check for unused partials documents and code samples
+- [x] check for unused partials documents and code samples
 - [x] Iconify icon components - check for mentions of offline package, remove them
 
 ## New documentation
