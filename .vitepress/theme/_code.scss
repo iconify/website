@@ -108,21 +108,56 @@ div.code-blocks code {
   // Language
   &-lang {
     position: absolute;
-    right: -8px;
+    right: 0;
     top: -4px;
-    padding: 0 8px;
-    border-radius: 6px;
+    padding: 0 3px 0 1px;
+    line-height: 24px;
+    height: 24px;
     background: var(--c-blue-gray);
     color: var(--vp-c-bg);
     opacity: 0.9;
     pointer-events: none;
-    transition: opacity 0.2s;
+    transition: opacity 0.4s, transform 0.3s;
+    transform-origin: right 4px;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 8px;
+      color: var(--c-blue-gray);
+      background-color: currentColor;
+      -webkit-mask-image: var(--svg);
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-image: var(--svg);
+      mask-repeat: no-repeat;
+      mask-size: 100% 100%;
+    }
+    &:before {
+      --svg: var(--icon-lang-before);
+      left: -7px;
+      height: 24px;
+    }
+    &:after {
+      --svg: var(--icon-lang-after);
+      right: -7px;
+      height: 36px;
+      transition: transform 0.1s;
+      transform-origin: left top;
+    }
 
     &--html, &--php {
       background: var(--c-green);
+      &:before, &:after {
+        color: var(--c-green);
+      }
     }
     &--js, &--ts {
       background: var(--c-purple);
+      &:before, &:after {
+        color: var(--c-purple);
+      }
     }
 
     .code-block-title + div & {
@@ -167,6 +202,10 @@ div.code-blocks code {
     }
     button + .code-block-lang {
       opacity: 0;
+      transform: scaleY(0);
+      &:after {
+        transform: scaleX(0);
+      }
     }
   }
 }
