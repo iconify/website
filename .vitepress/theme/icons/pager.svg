@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32">
+    <style>
+        path {
+            stroke-dasharray: 20 5;
+            animation: 500s linear infinite reverse move-stroke;
+        }
+        path.line2 {
+            stroke-dasharray: 6 4;
+            animation-duration: 450s;
+            opacity: 0.7;
+        }
+        path.line3 {
+            stroke-dasharray: 4 6;
+            animation-duration: 450s;
+            opacity: 0.3;
+        }
+
+        @keyframes move-stroke {
+            from {
+                stroke-dashoffset: 0;
+            }
+            to {
+                stroke-dashoffset: 1500;
+            }
+        }
+    </style>
+    <g fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 2l14 14M11 30l14 -14" />
+        <path d="M7 6l10 10M7 26l10 -10" class="line2" />
+        <path d="M3 10l6 6M3 22l6 -6" class="line3" />
+    </g>
+</svg>
