@@ -5,7 +5,7 @@
 - [x] fix node version to use latest 16 or 18 LTS (.npmrc and/or package.json): right now using latest 18 LTS
 - [x] fix lint errors
 - [x] update pnpm to 8.4.* (current latest 8.4.0)
-- [ ] check for unused pages
+- [x] check for unused pages
 - [ ] create website root source folder: ALMOST IMPOSSIBLE
 - [ ] redo articles as blog, move them out of documentation
 - [ ] check for unused partials documents and code samples
