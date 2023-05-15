@@ -18,7 +18,7 @@ This tutorial is part of [code examples for Iconify Utils](./index.md).
 
 ## Export SVG
 
-This is an example of using Iconify Utils to generate SVG from icon set:
+This is an example of using Iconify Utils to generate SVG from an icon set:
 
 ```yaml
 src: libraries/utils/svg-from-set.ts

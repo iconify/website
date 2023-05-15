@@ -2,24 +2,6 @@ import type { SidebarItem } from '../../sidebar-item'
 
 export const UtilsSidebar: SidebarItem[] = [
   {
-    text: 'Examples',
-    collapsed: true,
-    link: '/docs/libraries/utils/examples/',
-    items: [{
-      text: 'Export icon set',
-      link: '/docs/libraries/utils/examples/export-svgs-from-icon-set',
-    }, {
-      text: 'Export SVG from icon set',
-      link: '/docs/libraries/utils/examples/export-svg-from-icon-set',
-    }, {
-      text: 'Export SVG from icon data',
-      link: '/docs/libraries/utils/examples/export-svg-from-data',
-    }, {
-      text: 'Export CSS',
-      link: '/docs/libraries/utils/examples/generate-css',
-    }],
-  },
-  {
     text: 'Icon Sets',
     collapsed: true,
     items: [{
@@ -57,10 +39,14 @@ export const UtilsSidebar: SidebarItem[] = [
     }, {
       text: 'defaultIconProps',
       link: '/docs/libraries/utils/default-icon-props',
+    }, {
+      text: 'FullIconifyIcon',
+      link: '/docs/libraries/utils/full-iconify-icon',
+      hidden: true,
     }],
   },
   {
-    text: 'Customisations',
+    text: 'Icon Customisations',
     collapsed: true,
     items: [{
       text: 'mergeCustomisations()',
@@ -77,6 +63,10 @@ export const UtilsSidebar: SidebarItem[] = [
     }, {
       text: 'flipFromString()',
       link: '/docs/libraries/utils/flip-from-string',
+    }, {
+      text: 'IconifyIconCustomisations',
+      link: '/docs/libraries/utils/icon-customisations',
+      hidden: true,
     }],
   },
   {
@@ -119,6 +109,10 @@ export const UtilsSidebar: SidebarItem[] = [
     }, {
       text: 'validateIconName()',
       link: '/docs/libraries/utils/validate-icon',
+    }, {
+      text: 'IconName type',
+      link: '/docs/libraries/utils/icon-name',
+      hidden: true,
     }],
   },
   {
@@ -133,6 +127,30 @@ export const UtilsSidebar: SidebarItem[] = [
     }, {
       text: 'colorToString()',
       link: '/docs/libraries/utils/color-to-string',
+    }, {
+      text: 'Color type',
+      link: '/docs/libraries/utils/color',
+    }],
+  },
+  {
+    text: 'Examples',
+    collapsed: true,
+    link: '/docs/libraries/utils/examples/',
+    items: [{
+      text: 'Icon Set to SVGs',
+      link: '/docs/libraries/utils/examples/export-svgs-from-icon-set',
+    }, {
+      text: 'Export SVG',
+      items: [{
+        text: 'From Icon Set',
+        link: '/docs/libraries/utils/examples/export-svg-from-icon-set',
+      }, {
+        text: 'From Data',
+        link: '/docs/libraries/utils/examples/export-svg-from-data',
+      }],
+    }, {
+      text: 'Export CSS',
+      link: '/docs/libraries/utils/examples/generate-css',
     }],
   },
 ]

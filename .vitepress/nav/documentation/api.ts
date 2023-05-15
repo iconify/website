@@ -44,9 +44,14 @@ export const APISidebar: SidebarItem[] = [
       items: [{
         text: 'Configuration',
         link: '/docs/api/hosting-js/config',
-      }, {
+      },
+      {
         text: 'HTTP Headers',
         link: '/docs/api/hosting-js/headers',
+      },
+      {
+        text: 'Reverse Proxy',
+        link: '/docs/api/hosting-js/reverse-proxy',
       }],
     }, {
       text: 'Custom CDN',
