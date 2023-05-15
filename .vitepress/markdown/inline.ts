@@ -338,6 +338,10 @@ export function customInlineCodeMD(md: MarkdownRenderer) {
           'file',
           `<span class="hljs-inline-file">${escapedContent}</span>`,
         )
+
+      // Time stamp in news
+      case 'news-time':
+        return `<small class="heading-date"><iconify-icon icon="material-symbols:calendar-month-outline-rounded"></iconify-icon>${rawContent}</small>`
     }
 
     return oldParser(...params)

@@ -1,43 +1,224 @@
 import { resolve } from 'node:path'
 import { readFile, writeFile } from 'node:fs/promises'
 import fg from 'fast-glob'
+import { parse } from 'yaml'
+
+/** @type {Record<number,string>} */
+const months = {
+  1: 'Jan',
+  2: 'Feb',
+  3: 'Mar',
+  4: 'Apr',
+  5: 'May',
+  6: 'Jun',
+  7: 'Jul',
+  8: 'Aug',
+  9: 'Sep',
+  10: 'Oct',
+  11: 'Nov',
+  12: 'Dec',
+}
 
 /**
+ * Get date from file
+ *
  * @param {string} file
- * @return {Promise<string|undefined>}
+ * @param {number|string} year
+ * @returns {number}
  */
-async function readMarkdownTitle(file) {
+function getNewsTime(file, year) {
+  // Remove extension
+  file = file.replace(/.(html|md)$/, '')
+
+  // Check for 'dd.mm' format
+  const parts = file.split('.')
+  if (parts.length === 2) {
+    const date = Date.UTC(+year, +parts[1], +parts[0], 0, 0, 0, 0)
+    if (!date)
+      throw new Error(`Cannot detect time from file "${file}"`)
+    return date
+  }
+
+  if (file.length === 10) {
+    // PHP format
+    return parseInt(file) * 1000
+  }
+
+  if (file.length === 14) {
+    // JavaScript format
+    return parseInt(file)
+  }
+
+  throw new Error(`Cannot detect time from file "${file}"`)
+}
+
+/**
+ * Get string from time stamp
+ *
+ * @param {Date|number} date
+ * @param {boolean} includeYear
+ * @returns {string}
+ */
+function timeToString(date, includeYear) {
+  const time = typeof date === 'number' ? new Date(date) : date
+  return `${time.getUTCDate()} ${months[time.getUTCMonth() + 1]}${includeYear ? ' ' + time.getUTCFullYear() : ''}`
+}
+
+/**
+ * Regex to test a link
+ *
+ * @type {RegExp}
+ */
+const idMatch = /^[a-z][a-z0-9-]*[a-z0-9]$/;
+
+/**
+ * Generate link from title
+ *
+ * @param {string} title
+ * @returns {string}
+ */
+function linkFromTitle(title) {
+  const id = title.toLowerCase()
+      .toLowerCase()
+      .replace(/\(\)/g, '')
+      .replace(/[?!]/g, '')
+      .split(/[\s\/.,]+/)
+      .join('-')
+  if (!id.match(idMatch))
+    throw new Error(`Could not convert text to id: "${title}"`)
+  return id
+}
+
+/**
+ * Get title and link from markdown heading
+ *
+ * @param {string} text
+ * @returns {{link: string, title: string}}
+ */
+function getMarkdownTitleLink(text) {
+  // {#custom-id}
+  const pos = text.indexOf('{#')
+  if (pos === -1)
+    return {
+      title: text,
+      link: linkFromTitle(text),
+    }
+
+  if (text.slice(-1) !== '}')
+    throw new Error(`Cannot extract heading id "${text}"`)
+
+  const link = text.slice(pos + 2, text.length - 1)
+  if (!link.match(idMatch))
+    throw new Error(`Cannot extract id from heading "${text}"`)
+
+  return {
+    title: text.slice(0, pos).trim(),
+    link,
+  };
+}
+
+/**
+ * Check if target is a valid news file
+ *
+ * @param {string} file
+ * @returns {boolean}
+ */
+function isValidNewsFile(file) {
+  const name = file.split(/\//).pop()
+  return (!name.startsWith('_') && (name.endsWith('.md') || name.endsWith('.html')))
+}
+
+
+/**
+ * Parse article
+ *
+ * @param {string} file
+ * @returns {Promise<import('./news.d.ts').ParsedNewsItem>}
+ */
+async function parseNewsArticle(file) {
+  // Get time
+  const fileParts = file.split(/\//)
+  const filename = fileParts.pop()
+  const year = parseInt(fileParts.pop())
+  if (!year)
+    throw new Error(`Cannot parse year in "${file}"`)
+  const time = getNewsTime(filename, year)
+
+  // Read file, split into lines
   const content = await readFile(file, 'utf-8')
-  const match = content.match(/^##\s+(.+?)\s*$/m)
-  return match ? match[1] : undefined
+  const lines = content.split(/\r?\n/)
+  const firstLine = lines.shift()
+
+  // Common results
+  const results = {
+    time,
+    year,
+    file,
+    filename,
+  }
+
+  // Check for markdown
+  if (firstLine.startsWith('## ')) {
+    const title = firstLine.slice(3).trim()
+    const content = lines.join('\n').trim()
+    return {
+      ...getMarkdownTitleLink(title),
+      content,
+      ...results,
+    }
+  }
+
+  // Check for HTML with YAML heading
+  if (firstLine.startsWith('<script') && (firstLine.includes('type="text/yaml"') || firstLine.includes('lang="yaml"'))) {
+    const yamlLines = []
+    while (true) {
+      const line = lines.shift()
+      if (!line)
+        throw new Error(`Failed to find title in "${file}`)
+
+      if (line.startsWith('</script')) {
+        // End of yaml
+        const data = parse(yamlLines.join('\n'))
+
+        // Validate data
+        if (typeof data.title !== 'string')
+          throw new Error(`Missing title in "${file}`)
+        if (typeof data.link !== 'string')
+          throw new Error(`Missing link in "${file}`)
+
+        return {
+          ...data,
+          content: lines.join('\n').trim(),
+          ...results,
+        }
+      }
+
+      yamlLines.push(line.trimStart())
+    }
+  }
+
+  // Fail
+  throw new Error(`Failed to parse metadata for "${file}`)
 }
 
 /**
  * @param {string} newsFolder
  * @param {string} year
- * @return {Promise<{ entriesMap: Map<string,string>, entries: string[]}>}
+ * @return {Promise<import('./news.d.ts').ParsedNewsItem[]>}
  */
 async function findLatestNews(newsFolder, year) {
-  /** @type {Map<string,string>} */
-  const entriesMap = new Map()
-  /** @type {string[]} */
-  const entries = await fg('*.md', { cwd: resolve(newsFolder, year), onlyFiles: true })
-  // remove excluded files
-  return {
-    entriesMap,
-    entries: entries.filter(n => n[0] !== '_').map((n) => {
-      if (/^[0-9]+\.md$/.test(n)) {
-        entriesMap.set(n, n)
-        return n
-      }
-      else {
-        const [day, month] = n.split('.')
-        const name = `${Date.UTC(+year, +month, +day, 0, 0, 0, 0)}.md`
-        entriesMap.set(name, n)
-        return name
-      }
-    }).sort().reverse(),
-  }
+  // Find all files
+  const dir = resolve(newsFolder, year)
+  /** @type string[] */
+  const files = (await fg('*.*', { cwd: dir, onlyFiles: true })).filter(isValidNewsFile).map(file => dir + '/' + file)
+
+  // Get data
+  const promises = files.map(file => parseNewsArticle(file))
+  /** @type import('./news.d.ts').ParsedNewsItem[] */
+  const items = await Promise.all(promises)
+  items.sort((a, b) => (a.time - b.time))
+
+  return items
 }
 
 /**
@@ -46,7 +227,7 @@ async function findLatestNews(newsFolder, year) {
  * @return {Promise<void>}
  */
 async function generateYearNews(newsFolder, year) {
-  const { entriesMap, entries } = await findLatestNews(newsFolder, year)
+  const items = await findLatestNews(newsFolder, year)
 
   const newsContent = `---
 editLink: false
@@ -55,7 +236,11 @@ editLink: false
 
 # Iconify Updates ${year}
 
-${entries.map(n => `<!--@include: ./${year}/${entriesMap.get(n)}-->`).join('\n')}
+${items.map(item => `
+## ${item.title} \`[news-time] ${timeToString(item.time, false)}\` {#${item.link}}
+
+${item.content}
+`).join('\n')}
 `
   await writeFile(resolve(newsFolder, `${year}.md`), newsContent, 'utf-8')
 }
@@ -82,57 +267,6 @@ ${years.sort().reverse().map(y => `- [Year ${y}](./${y})`).join('\n')}
   return writeFile(resolve(newsFolder, 'index.md'), newsList, 'utf-8')
 }
 
-/** @type {Record<number,string>} */
-const months = {
-  1: 'Jan',
-  2: 'Feb',
-  3: 'Mar',
-  4: 'Apr',
-  5: 'May',
-  6: 'Jun',
-  7: 'Jul',
-  8: 'Aug',
-  9: 'Sep',
-  10: 'Oct',
-  11: 'Nov',
-  12: 'Dec',
-}
-
-/**
- * @param {string} year
- * @param {string[]} dateString
- * @param {string} title
- * @return {{date:string,link:string}}
- */
-function generateDateAndLink(year, dateString, title) {
-  /** @type {string} */
-  let date
-  if (dateString.length === 1) {
-    const newDate = new Date(+dateString[0])
-    date = `${newDate.getUTCDate()} ${months[newDate.getUTCMonth() + 1]} ${newDate.getUTCFullYear()}`
-  }
-  else {
-    const [day, month] = dateString
-    date = `${day} ${months[parseInt(month)]} ${year}`
-  }
-
-  return {
-    date,
-    /*
-      The IDs are generated from the content of the header according to the following rules:
-          All text is converted to lowercase.
-          All non-word text (e.g., punctuation, HTML) is removed.
-          All spaces are converted to hyphens.
-          Two or more hyphens in a row are converted to one.
-          If a header with the same ID has already been generated, a unique incrementing number is appended, starting at 1.
-     */
-    link: title.toLowerCase()
-      .replace(/ /g, '-')
-      .replace(/[^a-zA-Z0-9-]+/gi, '')
-      .replace(/-+/g, '-'),
-  }
-}
-
 /**
  * @param {string} rootFolder
  * @param {string} newsFolder
@@ -140,7 +274,7 @@ function generateDateAndLink(year, dateString, title) {
  * @return {Promise<void>}
  */
 async function generateLatestNews(rootFolder, newsFolder, years) {
-  /** @type {{title: string,date: string,link: string,year:string}[]} */
+  /** @type {import('./news.d.ts').ParsedNewsItem[]} */
   const latestNews = []
   /** @type {string} */
   let entryName
@@ -148,19 +282,12 @@ async function generateLatestNews(rootFolder, newsFolder, years) {
     if (latestNews.length >= 5)
       break
 
-    const { entriesMap, entries } = await findLatestNews(newsFolder, year)
-    for (const entry of entries) {
-      entryName = entriesMap.get(entry)
-      const title = await readMarkdownTitle(resolve(newsFolder, year, entryName))
-      if (title) {
-        latestNews.push({
-          title,
-          year,
-          ...generateDateAndLink(year, entryName.slice(0, entryName.lastIndexOf('.')).split('.'), title),
-        })
-        if (latestNews.length >= 5)
-          break
-      }
+    const news = await findLatestNews(newsFolder, year)
+    for (let i = 0; i < news.length; i++) {
+      const item = news[i]
+      latestNews.push(item)
+      if (latestNews >= 5)
+        break
     }
   }
 
@@ -168,7 +295,7 @@ async function generateLatestNews(rootFolder, newsFolder, years) {
 ## Latest updates
 
 <div class="latest-news">
-${latestNews.map(n => `<p><span>${n.date}</span><a href="/news/${n.year}.html#${n.link}">${n.title}</a></p>`).join('\n')}
+${latestNews.map(item => `<p><span>${timeToString(item.time, true)}</span><a href="/news/${item.year}.html#${item.link}">${item.title}</a></p>`).join('\n')}
 </div>
 `
   await writeFile(resolve(rootFolder, '.vitepress/theme/components/LatestNews.md'), latestNewsContent, 'utf-8')

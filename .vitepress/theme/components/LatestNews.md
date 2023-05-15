@@ -2,9 +2,10 @@
 ## Latest updates
 
 <div class="latest-news">
-<p><span>21 Feb 2023</span><a href="/news/2023.html#new-iconify-documentation">New Iconify documentation</a></p>
-<p><span>28 Jan 2023</span><a href="/news/2023.html#custom-css-in-iconify-icon-web-component">Custom CSS in Iconify Icon web component</a></p>
-<p><span>27 Jan 2023</span><a href="/news/2023.html#svg-without-width-and-height-with-iconify-components">SVG without width and height with Iconify components</a></p>
-<p><span>11 Jan 2023</span><a href="/news/2023.html#iconify-for-tailwind-css">Iconify for Tailwind CSS</a></p>
-<p><span>09 Jan 2023</span><a href="/news/2023.html#generate-css-for-icons-with-iconify-api">Generate CSS for icons with Iconify API</a></p>
+<p><span>2 Feb 2023</span><a href="/news/2023.html#iconify-utils-css">Generate CSS for icons with Iconify Utils</a></p>
+<p><span>9 Feb 2023</span><a href="/news/2023.html#iconify-api-css">Generate CSS for icons with Iconify API</a></p>
+<p><span>11 Feb 2023</span><a href="/news/2023.html#iconify-tailwind">Iconify for Tailwind CSS</a></p>
+<p><span>27 Feb 2023</span><a href="/news/2023.html#components-size">SVG without width and height with Iconify components</a></p>
+<p><span>28 Feb 2023</span><a href="/news/2023.html#iconify-icon-css">Custom CSS in the Iconify Icon web component</a></p>
+<p><span>21 Mar 2023</span><a href="/news/2023.html#documentation-rewrite">New Iconify documentation</a></p>
 </div>
