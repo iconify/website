@@ -1,51 +1,53 @@
 import type { SidebarItem } from '../sidebar-item'
 import { IconifyUsageSidebar } from './usage/iconify'
 
+const usageRoot = '/docs/usage/'
+
 export const UsageSidebar: SidebarItem[] = [
   {
     text: 'SVG in CSS',
     collapsed: true,
-    link: '/docs/usage/css/',
+    link: `${usageRoot}css/`,
     items: [
       {
         text: 'No Code',
-        link: '/docs/usage/css/no-code/',
+        link: `${usageRoot}css/no-code/`,
       }, {
         text: 'Tailwind CSS',
-        link: '/docs/usage/css/tailwind/',
+        link: `${usageRoot}css/tailwind/`,
         collapsed: true,
         items: [{
           text: 'Plugin Options',
-          link: '/docs/usage/css/tailwind/options',
+          link: `${usageRoot}css/tailwind/options`,
         }, {
           text: 'Clean Class Names',
-          link: '/docs/usage/css/tailwind/clean',
+          link: `${usageRoot}css/tailwind/clean`,
         }],
       }, {
         text: 'UnoCSS',
-        link: '/docs/usage/css/unocss/',
+        link: `${usageRoot}css/unocss/`,
       }, {
         text: 'Iconify Utils',
-        link: '/docs/usage/css/utils/',
+        link: `${usageRoot}css/utils/`,
       },
     ],
   }, {
     text: 'SVG in HTML',
     collapsed: true,
-    link: '/docs/usage/svg/',
+    link: `${usageRoot}svg/`,
     items: [
       {
         text: 'No Code',
-        link: '/docs/usage/svg/no-code/',
+        link: `${usageRoot}svg/no-code/`,
       }, {
         text: 'Unplugin Icons',
-        link: '/docs/usage/svg/unplugin/',
+        link: `${usageRoot}svg/unplugin/`,
       }, {
         text: 'Iconify Utils',
-        link: '/docs/usage/svg/utils/',
+        link: `${usageRoot}svg/utils/`,
       }, {
         text: 'Astro Icon',
-        link: '/docs/usage/svg/astro/',
+        link: `${usageRoot}svg/astro/`,
       },
     ],
   }, {

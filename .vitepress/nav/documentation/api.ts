@@ -1,67 +1,69 @@
 import type { SidebarItem } from '../sidebar-item'
 
+const root = '/docs/api/'
+
 export const APISidebar: SidebarItem[] = [
   {
     text: 'API Queries',
     collapsed: true,
-    link: '/docs/api/queries',
+    link: `${root}queries`,
     items: [{
       text: 'Generate SVG',
-      link: '/docs/api/svg',
+      link: `${root}svg`,
     }, {
       text: 'Generate CSS',
-      link: '/docs/api/css',
+      link: `${root}css`,
     }, {
       text: 'Icon Data',
-      link: '/docs/api/icon-data',
+      link: `${root}icon-data`,
     }, {
       text: 'Last Modified',
-      link: '/docs/api/last-modified',
+      link: `${root}last-modified`,
     }, {
       text: 'List of Icon Sets',
-      link: '/docs/api/collections',
+      link: `${root}collections`,
     }, {
       text: 'List of Icons',
-      link: '/docs/api/collection',
+      link: `${root}collection`,
     }, {
       text: 'Search Icons',
-      link: '/docs/api/search',
+      link: `${root}search`,
     }, {
       text: 'Keywords',
-      link: '/docs/api/keywords',
+      link: `${root}keywords`,
     }, {
       text: 'API Version',
-      link: '/docs/api/version',
+      link: `${root}version`,
     }],
   }, {
     text: 'Hosting API',
     collapsed: true,
-    link: '/docs/api/hosting',
+    link: `${root}hosting`,
     items: [{
       text: 'Node.js API',
       collapsed: true,
-      link: '/docs/api/hosting-js/',
+      link: `${root}hosting-js/`,
       items: [{
         text: 'Configuration',
-        link: '/docs/api/hosting-js/config',
+        link: `${root}hosting-js/config`,
       },
       {
         text: 'HTTP Headers',
-        link: '/docs/api/hosting-js/headers',
+        link: `${root}hosting-js/headers`,
       },
       {
         text: 'Reverse Proxy',
-        link: '/docs/api/hosting-js/reverse-proxy',
+        link: `${root}hosting-js/reverse-proxy`,
       }],
     }, {
       text: 'Custom CDN',
-      link: '/docs/api/cdn',
+      link: `${root}cdn`,
     }],
   }, {
     text: 'API Providers',
-    link: '/docs/api/providers',
+    link: `${root}providers`,
   }, {
     text: 'Components Config',
-    link: '/docs/api/config',
+    link: `${root}config`,
   },
 ]

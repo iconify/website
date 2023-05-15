@@ -1,33 +1,35 @@
 import type { SidebarItem } from '../../sidebar-item'
 
+const root = '/docs/libraries/utils/'
+
 export const UtilsSidebar: SidebarItem[] = [
   {
     text: 'Icon Sets',
     collapsed: true,
     items: [{
       text: 'validateIconSet()',
-      link: '/docs/libraries/utils/validate-icon-set',
+      link: `${root}validate-icon-set`,
     }, {
       text: 'quicklyValidateIconSet()',
-      link: '/docs/libraries/utils/quickly-validate-icon-set',
+      link: `${root}quickly-validate-icon-set`,
     }, {
       text: 'getIcons()',
-      link: '/docs/libraries/utils/get-icons',
+      link: `${root}get-icons`,
     }, {
       text: 'getIconData()',
-      link: '/docs/libraries/utils/get-icon-data',
+      link: `${root}get-icon-data`,
     }, {
       text: 'minifyIconSet()',
-      link: '/docs/libraries/utils/minify-icon-set',
+      link: `${root}minify-icon-set`,
     }, {
       text: 'expandIconSet()',
-      link: '/docs/libraries/utils/expand-icon-set',
+      link: `${root}expand-icon-set`,
     }, {
       text: 'convertIconSetInfo()',
-      link: '/docs/libraries/utils/convert-info',
+      link: `${root}convert-info`,
     }, {
       text: 'parseIconSet()',
-      link: '/docs/libraries/utils/parse-icon-set',
+      link: `${root}parse-icon-set`,
     }],
   },
   {
@@ -35,13 +37,13 @@ export const UtilsSidebar: SidebarItem[] = [
     collapsed: true,
     items: [{
       text: 'mergeIconData()',
-      link: '/docs/libraries/utils/merge-icon-data',
+      link: `${root}merge-icon-data`,
     }, {
       text: 'defaultIconProps',
-      link: '/docs/libraries/utils/default-icon-props',
+      link: `${root}default-icon-props`,
     }, {
       text: 'FullIconifyIcon',
-      link: '/docs/libraries/utils/full-iconify-icon',
+      link: `${root}full-iconify-icon`,
       hidden: true,
     }],
   },
@@ -50,22 +52,22 @@ export const UtilsSidebar: SidebarItem[] = [
     collapsed: true,
     items: [{
       text: 'mergeCustomisations()',
-      link: '/docs/libraries/utils/merge-customisations',
+      link: `${root}merge-customisations`,
     }, {
       text: 'defaultIconCustomisations',
-      link: '/docs/libraries/utils/default-icon-customisations',
+      link: `${root}default-icon-customisations`,
     }, {
       text: 'toBoolean()',
-      link: '/docs/libraries/utils/to-boolean',
+      link: `${root}to-boolean`,
     }, {
       text: 'rotateFromString()',
-      link: '/docs/libraries/utils/rotate-from-string',
+      link: `${root}rotate-from-string`,
     }, {
       text: 'flipFromString()',
-      link: '/docs/libraries/utils/flip-from-string',
+      link: `${root}flip-from-string`,
     }, {
       text: 'IconifyIconCustomisations',
-      link: '/docs/libraries/utils/icon-customisations',
+      link: `${root}icon-customisations`,
       hidden: true,
     }],
   },
@@ -74,16 +76,16 @@ export const UtilsSidebar: SidebarItem[] = [
     collapsed: true,
     items: [{
       text: 'iconToSVG()',
-      link: '/docs/libraries/utils/icon-to-svg',
+      link: `${root}icon-to-svg`,
     }, {
       text: 'iconToHTML()',
-      link: '/docs/libraries/utils/icon-to-html',
+      link: `${root}icon-to-html`,
     }, {
       text: 'calculateSize()',
-      link: '/docs/libraries/utils/calculate-size',
+      link: `${root}calculate-size`,
     }, {
       text: 'replaceIDs()',
-      link: '/docs/libraries/utils/replace-ids',
+      link: `${root}replace-ids`,
     }],
   },
   {
@@ -91,10 +93,10 @@ export const UtilsSidebar: SidebarItem[] = [
     collapsed: true,
     items: [{
       text: 'getIconCSS()',
-      link: '/docs/libraries/utils/get-icon-css',
+      link: `${root}get-icon-css`,
     }, {
       text: 'getIconsCSS()',
-      link: '/docs/libraries/utils/get-icons-css',
+      link: `${root}get-icons-css`,
     }],
   },
   {
@@ -102,16 +104,16 @@ export const UtilsSidebar: SidebarItem[] = [
     collapsed: true,
     items: [{
       text: 'matchName',
-      link: '/docs/libraries/utils/match-name',
+      link: `${root}match-name`,
     }, {
       text: 'stringToIcon()',
-      link: '/docs/libraries/utils/string-to-icon',
+      link: `${root}string-to-icon`,
     }, {
       text: 'validateIconName()',
-      link: '/docs/libraries/utils/validate-icon',
+      link: `${root}validate-icon`,
     }, {
       text: 'IconName type',
-      link: '/docs/libraries/utils/icon-name',
+      link: `${root}icon-name`,
       hidden: true,
     }],
   },
@@ -120,37 +122,37 @@ export const UtilsSidebar: SidebarItem[] = [
     collapsed: true,
     items: [{
       text: 'stringToColor()',
-      link: '/docs/libraries/utils/string-to-color',
+      link: `${root}string-to-color`,
     }, {
       text: 'compareColors()',
-      link: '/docs/libraries/utils/compare-colors',
+      link: `${root}compare-colors`,
     }, {
       text: 'colorToString()',
-      link: '/docs/libraries/utils/color-to-string',
+      link: `${root}color-to-string`,
     }, {
       text: 'Color type',
-      link: '/docs/libraries/utils/color',
+      link: `${root}color`,
     }],
   },
   {
     text: 'Examples',
     collapsed: true,
-    link: '/docs/libraries/utils/examples/',
+    link: `${root}examples/`,
     items: [{
       text: 'Icon Set to SVGs',
-      link: '/docs/libraries/utils/examples/export-svgs-from-icon-set',
+      link: `${root}examples/export-svgs-from-icon-set`,
     }, {
       text: 'Export SVG',
       items: [{
         text: 'From Icon Set',
-        link: '/docs/libraries/utils/examples/export-svg-from-icon-set',
+        link: `${root}examples/export-svg-from-icon-set`,
       }, {
         text: 'From Data',
-        link: '/docs/libraries/utils/examples/export-svg-from-data',
+        link: `${root}examples/export-svg-from-data`,
       }],
     }, {
       text: 'Export CSS',
-      link: '/docs/libraries/utils/examples/generate-css',
+      link: `${root}examples/generate-css`,
     }],
   },
 ]
