@@ -1,5 +1,5 @@
-Function has the following parameter:
+The function has the following parameter:
 
-- `[prop]icon`, `[type]string | IconifyIconName`. Name of icon to load.
+- `[prop]icon`, `[type]string | IconifyIconName`. Name of the icon to load.
 
-Function returns `[type]Promise` instance, which returns `[type]FullIconifyIcon` data for icon on success.
+The function returns `[type]Promise` instance, which returns `[type]FullIconifyIcon` data for icon on success.

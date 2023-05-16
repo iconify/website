@@ -9,7 +9,7 @@ types:
 
 [Iconify plugin for Tailwind CSS](./index.md) has several options.
 
-Options object is passed as parameter to plugin:
+The options object is passed as parameter to plugin:
 
 ```js
 addDynamicIconSelectors({
@@ -24,7 +24,7 @@ Supported options:
 
 - `[prop]prefix`, `[type]string` - prefix for dynamic class names.
 - `[prop]overrideOnly`, `[type]boolean` - if enabled, removes duplicate CSS.
-- `[prop]iconSets` - icon sets, can be used for location of icon sets or custom icon sets.
+- `[prop]iconSets` - icon sets object, can be used for location of icon sets or custom icon sets.
 
 ### prefix
 
@@ -50,7 +50,7 @@ For example, with configuration in code example above, plugin will generate the 
 }
 ```
 
-This can be used, in combination with default selectors to swap icon on hover without duplicating CSS:
+This can be used in combination with default selectors to swap icon on hover without duplicating CSS:
 
 ```yaml
 src: usage/tailwind/override.js
@@ -64,13 +64,13 @@ extra:
 
 With `[prop]iconSets` you can use custom files for icon sets.
 
-Option is an object, where key is icon set prefix and value is one of the following:
+Option is an object, where key is an icon set prefix, and value is one of the following:
 
 - `[type]string`: location of icon set JSON file in `[type]IconifyJSON` format.
 - `[type]IconifyJSON`: loaded icon set.
 - `[type]function`: callback that returns `[type]IconifyJSON` icon set. Due to Tailwind plugin system limitations, callback must be synchronous.
 
-Make sure icon set includes `[prop]info` property with `[prop]palette` set. This is used by plugin to tell if icon set contains icons with hardcoded palette or monotone icons. Mixed icon sets cannot be used. See `[type]IconifyInfo` type.
+Make sure icon set includes `[prop]info` property with `[prop]palette` set. This is used by plugin to tell if an icon set contains icons with hardcoded palette or monotone icons. Mixed icon sets cannot be used. See `[type]IconifyInfo` type.
 
 ```js
 addDynamicIconSelectors({

@@ -1,1 +1,1 @@
-Function `[func]addCollection()` adds icons collection to component's icon storage.
+Function `[func]addCollection()` adds an icon set to component's icon storage.

@@ -34,16 +34,16 @@ Among other features, it can generate CSS for icons. Query for CSS is `[url]/{pr
 
 Getting CSS is easy:
 
-- In your browser create URL for Iconify API with correct icons list, as described above (see examples below).
+- In your browser, create URL for Iconify API with the correct list of icons, as described above (see examples below).
 - Select all generated CSS, copy it to clipboard, paste it to a `[file].css` file.
 
-To use those icons in HTML, use `[tag]span` elements with 2 class names: class name for icon set, class name for icon.
+To use those icons in HTML, use `[tag]span` elements with 2 class names: class name for the icon set, class name for the icon.
 
 ```html
 <span class="icon--mdi-light icon--mdi-light--alert-circle"></span>
 ```
 
-There is a bit of duplication in class names, as both icon set and icon contain same first part. You can change it with options. See below.
+There is a bit of duplication in class names, as both the icon set and the icon contain the same first part. You can change it with options. See below.
 
 ## Examples
 

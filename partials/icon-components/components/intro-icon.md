@@ -17,7 +17,7 @@ Examples of valid icon names:
 
 Exceptions:
 
-- If API provider is empty, it can be skipped (like in examples above).
+- If the API provider is empty, it can be skipped (like in examples above).
 - If prefix does not contain `[str]-`, prefix and icon name can be separated with hyphen. This is to support people migrating from icon fonts. For example, `[icon]fa:arrow-left` and `[icon]fa-arrow-left` are identical because `[str]fa` does not contain hyphen.
 
 There are over 60,000 icons available from 80+ icon sets. [Browse icons sets](https://icon-sets.iconify.design/) to see all available icons.

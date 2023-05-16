@@ -1,13 +1,13 @@
 ```yaml
 title: IconSet Functions
 types:
-  IconifyIcon: '../../../types/iconify-icon.md'
-  IconifyJSON: '../../../types/iconify-json.md'
-  IconifyInfo: '../../../types/iconify-info.md'
-  FullIconifyIcon: '../../utils/full-iconify-icon.md'
-  Color: '../../utils/color.md'
-  FullIconCustomisations: '../../utils/icon-customisations.md'
-  IconCustomisations: '../../utils/icon-customisations.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyInfo: '/docs/types/iconify-info.md'
+  FullIconifyIcon: '/docs/libraries/utils/full-iconify-icon.md'
+  Color: '/docs/libraries/utils/color.md'
+  FullIconCustomisations: '/docs/libraries/utils/icon-customisations.md'
+  IconCustomisations: '/docs/libraries/utils/icon-customisations.md'
   SVG: '../svg/index.md'
   ResolvedIconifyIcon: '../iconify-icon.md'
 functions:
@@ -48,7 +48,7 @@ Working with icons:
 - `[func]list()` lists all icons.
 - `[func]forEach()` runs callback for all icons. Supports asynchronous callbacks.
 - `[func]exists(name)` checks if icon exists.
-- `[func]count()` counts number of icons in icon set.
+- `[func]count()` counts number of icons in the icon set.
 - `[func]remove(name)` removes icon.
 - `[func]rename(oldName, newName)` renames icon.
 - `[func]setItem(name, item)` adds/updates item in `[func]entries` property.
@@ -81,4 +81,4 @@ Functions for working with metadata:
 
 Other:
 
-- `[func]mergeIconSets()` merges two `[type]IconSet` instances, returning new instance. This function is intended to be used to update icon set.
+- `[func]mergeIconSets()` merges two `[type]IconSet` instances, returning new instance. This function is intended to be used to update the icon set.

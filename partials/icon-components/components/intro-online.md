@@ -12,5 +12,5 @@ Availability of Iconify API is the biggest feature that makes Iconify components
 
 API sends data for icons on demand. Loading icons on demand has massive advantages over other methods:
 
-- There can be unlimited number of icons, giving you more choices. Icons you do not use are not loaded.
+- There can be an unlimited number of icons, giving you more choices. Icons you do not use are not loaded.
 - No useless data. Icon sets usually have thousands of icons. Instead of bundling all icons, component retrieves only icons you use.

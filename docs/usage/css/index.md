@@ -62,7 +62,7 @@ Using `[prop]currentColor` as background color makes it easy to change icon colo
 
 ## Tools
 
-How to generate CSS for icons in Iconify ecosystem?
+How to generate CSS for icons in the Iconify ecosystem?
 
 There are several ways to do it:
 

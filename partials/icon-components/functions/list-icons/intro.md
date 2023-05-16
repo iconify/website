@@ -1,1 +1,1 @@
-Function `[func]listIcons()` lists loaded icons.
+The function `[func]listIcons()` lists loaded icons.

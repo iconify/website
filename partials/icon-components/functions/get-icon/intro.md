@@ -1,1 +1,1 @@
-Function `[func]getIcon()` retrieves icon data.
+The function `[func]getIcon()` retrieves icon data.

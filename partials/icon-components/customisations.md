@@ -16,7 +16,7 @@ There are several keywords that can be used for `[prop]width` and `[prop]height`
 
 If neither of dimensions is set, `[prop]height` defaults to `[str]1em`.
 
-It is enough to set one dimension, such as `[prop]height`. Other dimension will be calculated using icon's width/height ratio. In case of keywords, other dimension will be set to the same keyword.
+It is enough to set one dimension, such as `[prop]height`. Another dimension will be calculated using icon's width/height ratio. In the case of keywords, another dimension will be set to the same keyword.
 
 Transformations:
 

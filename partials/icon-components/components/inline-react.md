@@ -1,4 +1,4 @@
-To add `[prop]vertical-align` to icon, icon component has several options:
+To add `[prop]vertical-align` to icon, the icon component has several options:
 
 - Swapping `[var]Icon` component with `[var]InlineIcon`.
 - Adding `[attr]inline` attribute.

@@ -1,4 +1,4 @@
-Function `[func]loadIcon()` retrieves an icon from Iconify API.
+The function `[func]loadIcon()` retrieves an icon from Iconify API.
 
 It returns `[type]Promise` instance, making it very easy to use in asynchronous code.
 

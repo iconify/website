@@ -1,4 +1,4 @@
-Many icons are square. For such icons if you set one dimension, other dimension will have the same value.
+Many icons are square. For such icons if you set one dimension, another dimension will have the same value.
 
 However, there are many icons that are not square. For example, icons imported from icon fonts and Font Awesome.
 

@@ -1,5 +1,5 @@
-Function has the following parameter:
+The function has the following parameter:
 
 - `[prop]name`, `[type]string`. Icon name.
 
-Function returns icon data in `[type]IconifyIcon` format, `null` if icon is not available.
+The function returns icon data in `[type]IconifyIcon` format, `null` if icon is not available.

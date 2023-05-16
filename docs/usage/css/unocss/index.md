@@ -41,7 +41,7 @@ Examples:
 
 It is that simple.
 
-For more information see [README file in preset-icons package](https://github.com/unocss/unocss/tree/main/packages/preset-icons/).
+For more information, see [README file in preset-icons package](https://github.com/unocss/unocss/tree/main/packages/preset-icons/).
 
 ## Icon size
 
@@ -51,6 +51,6 @@ You can change that by changing `[prop]scale` option.
 
 ## Custom icons
 
-You can use UnoCSS with custom icons. During build process you can import, clean up and optimise icons using [Iconify Tools](/docs/libraries/tools/index.md).
+You can use UnoCSS with custom icons. During the build process, you can import, clean up and optimise icons using [Iconify Tools](/docs/libraries/tools/index.md).
 
 See [demo from Iconify Tools package](https://github.com/iconify/tools/tree/main/%40iconify-demo/unocss). Configuration is in `[file]unocss.config.ts`.

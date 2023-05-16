@@ -106,15 +106,15 @@ Possible issues:
 
 ### Errors when building CSS
 
-If icon set is missing or icon is missing, plugin will throw errors.
+If an icon set is missing or icon is missing, the plugin will throw errors.
 
-See error message. If plugin cannot find icon set, install dependency. If plugin cannot find icon, you are using wrong icon name.
+See error message. If the plugin cannot find an icon set, install dependency. If the plugin cannot find icon, you are using the wrong icon name.
 
 ### Selectors do not work
 
 You have added class names, built your CSS, but icons do not work?
 
-First make sure class name is correct. If it is correct, most likely Tailwind CSS is not seeing your class names. If you are familiar with Tailwind CSS, process of fixing it is exactly the same as any other missing class name:
+First, make sure the class name is correct. If it is correct, most likely Tailwind CSS is not seeing your class names. If you are familiar with Tailwind CSS, the process of fixing it is exactly the same as any other missing class name:
 
 - You can check if your files are scanned.
 - You can add it to `[prop]safelist` in config.
@@ -123,16 +123,16 @@ First make sure class name is correct. If it is correct, most likely Tailwind CS
 
 To change icon color, change text color. See [how monotone icons work in CSS](../index.md#monotone).
 
-By default, icon's height is set to `[str]1em`. Width can be different, depending on icon. To change icon size, set `[prop]font-size`.
+By default, icon's height is set to `[str]1em`. Width can be different, depending on an icon. To change icon size, set `[prop]font-size`.
 
 ## Advanced usage
 
 What else can you do with plugin?
 
-Plugin has various options:
+The plugin has various options:
 
 - You can use plugin with custom icon sets.
-- You can change class name.
+- You can change the class name.
 - You can remove duplicate CSS.
 
 See [plugin options documentation](./options.md).
@@ -143,6 +143,6 @@ See [clean classnames documentation](./clean.md).
 
 ## Multiple instances
 
-You can add plugin to plugins list in Tailwind CSS config multiple times, with different options.
+You can add plugin to the plugin list in Tailwind CSS config multiple times, with different options.
 
-Each `[func]addDynamicIconSelectors()` entry in plugins list should have different `[prop]prefix` option to avoid conflicts. Default value for `[prop]prefix` is `[str]icon`.
+Each `[func]addDynamicIconSelectors()` entry in the plugin list should have different `[prop]prefix` option to avoid conflicts. Default value for `[prop]prefix` is `[str]icon`.

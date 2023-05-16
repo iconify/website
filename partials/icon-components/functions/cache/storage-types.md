@@ -1,4 +1,4 @@
-First parameter can be one of the following:
+The first parameter can be one of the following:
 
 - `[str]local` for `[prop]localStorage`.
 - `[str]session` for `[prop]sessionStorage`.

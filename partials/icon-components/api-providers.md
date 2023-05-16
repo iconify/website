@@ -1,8 +1,8 @@
-API providers allow using icons from multiple API in the same document. For example, you can use default Iconify icons and custom icons from IconScout or Icons8 or custom API.
+API providers allow using icons from multiple API servers in the same document. For example, you can use default Iconify icons and custom icons from IconScout or Icons8 or custom API.
 
 <namespaces-animation></namespaces-animation>
 
-To support providers, syntax for icon names have been extended. Icon names in Iconify icon components have 3 parts:
+To support providers, the syntax for icon names has been extended. Icon names in Iconify icon components have 3 parts:
 
 <namespaces-name></namespaces-name>
 

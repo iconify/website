@@ -1,1 +1,1 @@
-There are several internal API functions that are exposed. They are intended to be used by developers that need more control over component. For example, it is used in Sketch and Figma plug-ins. Use them carefully.
+There are several internal API functions that are exposed. They are intended to be used by developers that need more control over the component. For example, it is used in Sketch and Figma plug-ins. Use them carefully.

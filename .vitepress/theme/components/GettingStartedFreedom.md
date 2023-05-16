@@ -7,7 +7,7 @@ import lock from '/assets/svg/lock.svg?raw'
     <p>
         Iconify makes it easy to <a href="/docs/articles/vendor-lock-in.html">avoid vendor lock-in</a>. 
         You can use many open source icon sets with a large choice of open
-        source icon components. Thousands of high quality icons from 100+ icon
+        source icon components. Thousands of high-quality icons from 100+ icon
         sets, all validated, cleaned up, optimised and always up to date.
     </p>
 </section>

@@ -1,6 +1,6 @@
-You can flip icon horizontally and/or vertically.
+You can flip an icon horizontally and/or vertically.
 
-One way to do that is to add `[attr]flip` attribute with comma separated values. Possible values:
+One way to do that is to add `[attr]flip` attribute with comma-separated values. Possible values:
 
 - `[str]horizontal`: flip icon horizontally.
 - `[str]vertical`: flip icon vertically.

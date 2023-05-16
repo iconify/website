@@ -1,7 +1,7 @@
 ```yaml
 types:
-  IconifyIcon: '../../../types/iconify-icon.md'
-  IconifyJSON: '../../../types/iconify-json.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
   IconSet: './index.md'
 ```
 
@@ -25,4 +25,4 @@ Variations make it easy to create clones of icons, such as `[icon]arrow-left` af
 
 - `[prop]parent`, `[type]string`. Name of parent icon.
 
-Aliases can be created to have different name for icon. If you have renamed some icon, alias can be used to allow users use old name.
+Aliases can be created to have different name for icon. If you have renamed some icon, alias can be used to allow users to use old name.
