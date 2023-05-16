@@ -216,3 +216,37 @@ a.edit-link-button[class], .vp-doc a {
     height: 24px;
   }
 }
+
+// List item
+.vp-doc ul.simple-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: block;
+    margin: 8px 0;
+    padding: 0;
+  }
+
+  iconify-icon {
+    font-size: 24px;
+    line-height: 1em;
+    margin-right: 8px;
+    vertical-align: -4px;
+    color: var(--vp-c-text-3);
+    transition: color 0.2s;
+  }
+
+  &:hover {
+    iconify-icon {
+      color: var(--vp-c-brand);
+    }
+  }
+
+  li:hover {
+    iconify-icon {
+      color: var(--vp-c-brand-accent);
+    }
+  }
+}
