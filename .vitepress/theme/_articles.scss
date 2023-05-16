@@ -12,3 +12,26 @@
     }
   }
 }
+
+// Anchor
+div.vp-doc .header-anchor {
+  position: relative;
+  width: 24px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    background-color: currentColor;
+    -webkit-mask-image: var(--icon-hash);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-image: var(--icon-hash);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+}
