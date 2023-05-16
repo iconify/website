@@ -12,6 +12,7 @@ const AboutNav: DefaultTheme.NavItemWithLink[] = [
   { text: 'About Iconify', link: '/about/' },
   { text: 'Support', link: '/support/' },
   { text: 'History', link: '/about/history' },
+  { text: 'Privacy', link: '/privacy/' },
 ]
 
 export const Nav: DefaultTheme.NavItem[] = [
@@ -37,6 +38,6 @@ export const Nav: DefaultTheme.NavItem[] = [
   {
     text: 'About',
     items: AboutNav,
-    activeMatch: '^/(about|support)/',
+    activeMatch: '^/(about|support|privacy)/',
   },
 ]
