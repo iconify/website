@@ -33,7 +33,7 @@ function getNewsTime(file, year) {
   // Check for 'dd.mm' format
   const parts = file.split('.')
   if (parts.length === 2) {
-    const date = Date.UTC(+year, +parts[1], +parts[0], 0, 0, 0, 0)
+    const date = Date.UTC(+year, +parts[1] - 1, +parts[0], 0, 0, 0, 0)
     if (!date)
       throw new Error(`Cannot detect time from file "${file}"`)
     return date
