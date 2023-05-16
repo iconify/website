@@ -108,7 +108,7 @@ div.code-blocks code {
   // Language
   &-lang {
     position: absolute;
-    right: 0;
+    right: -1px;
     top: -4px;
     padding: 0 3px 0 1px;
     line-height: 24px;
@@ -128,16 +128,16 @@ div.code-blocks code {
       background-color: currentColor;
       -webkit-mask-image: var(--svg);
       -webkit-mask-repeat: no-repeat;
-      -webkit-mask-size: 100% 100%;
+      -webkit-mask-size: contain;
       mask-image: var(--svg);
       mask-repeat: no-repeat;
-      mask-size: 100% 100%;
+      mask-size: contain;
     }
     &:before {
       --svg: var(--icon-lang-before);
       left: -11px;
-      width: 12px;
       height: 24px;
+      width: 12px;
     }
     &:after {
       --svg: var(--icon-lang-after);
@@ -163,9 +163,12 @@ div.code-blocks code {
 
     .code-block-title + div & {
       // Move to title
-      top: -32px;
-      right: 8px;
+      top: -24px;
       opacity: 1 !important; // Show even when copy to clipboard is shown
+      transform: none !important;
+      &:after {
+        transform: none !important;
+      }
     }
   }
 
