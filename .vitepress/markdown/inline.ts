@@ -341,7 +341,7 @@ export function customInlineCodeMD(md: MarkdownRenderer) {
 
       // Time stamp in news
       case 'news-time':
-        return `<small class="heading-date"><iconify-icon icon="material-symbols:calendar-month-outline-rounded"></iconify-icon>${rawContent}</small>`
+        return `<small class="heading-date"><iconify-icon icon="line-md:calendar"></iconify-icon>${rawContent}</small>`
     }
 
     return oldParser(...params)

@@ -1,30 +1,27 @@
 <script setup lang="ts">
-import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vue'
-
 // import { VPTeamMembers } from 'vitepress/theme'
 // import { teamMembers } from '../../team'
 
 import { hero, license } from '../../constants'
+import type { HomePageButtonProps } from './HomePageButton.vue'
 
-interface ButtonData {
-  link: string
-  text: string
-  target?: string
-  primary?: true
-}
-const actions: ButtonData[] = [{
+const buttons: HomePageButtonProps[] = [{
   link: '/getting-started/',
   text: 'Getting Started',
   primary: true,
+  icon: 'line-md:iconify1',
 }, {
   link: '/news/#latest-updates',
   text: 'Latest Updates',
+  icon: 'line-md:calendar',
 }, {
   link: '/docs/',
   text: 'Documentation',
+  icon: 'line-md:document-code',
 }, {
   link: 'https://icon-sets.iconify.design/',
   text: 'Browse Icons',
+  icon: 'line-md:image-twotone',
 }]
 </script>
 
@@ -36,14 +33,8 @@ const actions: ButtonData[] = [{
         <p>{{ hero.p1 }}</p>
         <p>{{ hero.p2 }}</p>
         <div class="actions">
-          <span v-for="action in actions" :key="action.link" class="action">
-            <VPButton
-              tag="a"
-              size="medium"
-              :theme="action.primary ? 'brand' : 'alt'"
-              :text="action.text"
-              :href="action.link"
-            />
+          <span v-for="button in buttons" :key="button.link" class="action">
+            <HomePageButton v-bind="button" />
           </span>
         </div>
       </section>
