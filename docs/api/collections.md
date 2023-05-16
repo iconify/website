@@ -14,12 +14,12 @@ API query is `[url]/collections`.
 
 Optional parameters:
 
-- `[prop]prefix`, `[type]string`. Icon set prefix if you want to get result only for one icon set.
+- `[prop]prefix`, `[type]string`. Icon set prefix if you want to get the result only for one icon set.
 - `[prop]prefixes`, `[type]string`. Comma separated list of icon set prefixes. You can use partial prefixes that end with `[str]-`, such as `[str]mdi-` matches `[str]mdi-light`.
 
 Response is an object, where key is icon set prefix, value is `[type]IconifyInfo` object.
 
-Only icon sets that have info will be returned. If you want to hide an icon set, do not set info object when importing it.
+Only icon sets that have info will be returned. If you want to hide an icon set, do not set the info object when importing it.
 
 ```yaml
 hint: /collections?prefixes=fa,fa-,fa6-&pretty=1

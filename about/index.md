@@ -2,7 +2,7 @@
 
 Hello,
 
-My name is Vjacheslav Trushkin, I'm a freelance developer from Estonia and author of Iconify project.
+My name is Vjacheslav Trushkin, I'm a freelance developer from Estonia and author of the Iconify project.
 
 You can reach me on:
 

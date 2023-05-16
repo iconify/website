@@ -2,7 +2,9 @@
 
 Iconify is a very complex project that takes a lot of effort to develop and maintain.
 
-The biggest expense that can be quantified is API. API makes it possible to search icons, browse icons, and serve icon data to visitors that use icon components. It requires maintaining multiple servers that run Iconify API script and get a lot of ever growing traffic.
+The biggest expense that can be quantified is API.
+API makes it possible to search icons, browse icons, and serve icon data to visitors that use icon components.
+It requires maintaining multiple servers that run Iconify API script, and receives a lot of the ever-growing traffic.
 
 Then there is development time. Iconify has become a full time project, which requires endless development and maintenance.
 
@@ -35,7 +37,6 @@ See contact information below.
         crossorigin="anonymous"
         width="800"
         height="288"
-        class="resizable-img"
         loading="lazy"
         src="https://cyberalien.github.io/static/sponsors.svg"
         alt="Vjacheslav Trushkin's sponsors"

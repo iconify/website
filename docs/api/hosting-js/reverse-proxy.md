@@ -25,7 +25,7 @@ It is useful if you want to:
 - Run API on a different port, so you can host multiple websites on the same server instead of only hosting API.
 - Handle HTTPS requests. Web server will handle all SSL stuff.
 - Dealing with bad customers. You can use web server rules to block misbehaving customers and bots.
-- Using API on subdirectory rather than custom sub-domain.
+- Using API on subdirectory rather than a custom subdomain.
 
 ### CloudFlare
 
@@ -62,7 +62,8 @@ Then you can add `[prop]mod_proxy` to virtual host like this:
 
 This configuration will allow you to access API at `[url]http://api.yourdomain.com/`.
 
-Here is alternative solution that you can add to your existing `[prop]VirtualHost` directive that allows you to run API on subdirectory:
+Here is an alternative solution,
+that you can add to your existing `[prop]VirtualHost` directive that allows you to run API on subdirectory:
 
 ```apache
 <VirtualHost *>

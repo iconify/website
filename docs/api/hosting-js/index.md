@@ -21,7 +21,7 @@ npm run start
 
 By default, server will:
 
-- Automatically load latest icons from [`[npm]@iconify/json`](../../icons/all.md).
+- Automatically load the latest icons from [`[npm]@iconify/json`](/docs/icons/all.md).
 - Serve data on port `[num]3000`.
 
 You can customise API to:
@@ -32,11 +32,15 @@ You can customise API to:
 
 ## Port and HTTPS
 
-It is recommended that you do not run API on port `[num]80`. Server can handle pretty much anything, but it is still not as good as a dedicated solution such as nginx.
+It is recommended that you do not run API on port `[num]80`.
+Server can handle pretty much anything, but it is still not as good as a dedicated solution such as nginx.
 
-Run API on obscure port, hidden from outside world with firewall rules, use nginx as reverse proxy.
+Run API on obscure port, hidden from the outside world with firewall rules, use nginx as reverse proxy.
 
-HTTPS is not supported. It is a very resource intensive process, better handled by a dedicated solution such as nginx. Use nginx to run as HTTP and HTTPS server, forward queries to API HTTP server on hidden port such as default port `[num]3000`.
+HTTPS is not supported.
+It is a very resource intensive process, better handled by a dedicated solution such as nginx.
+Use nginx to run as HTTP and HTTPS server,
+forward queries to API HTTP server on hidden port such as default port `[num]3000`.
 
 ## Configuration
 
@@ -60,4 +64,5 @@ npm run start
 
 To make sure API runs without interruption, use [pm2](https://github.com/Unitech/PM2/) or similar Node.js process manager to run application.
 
-It will automatically restart API if something goes wrong and will automatically start API if server is restarted. Sometimes host server might restart for whatever reason, this will make sure API is always running.
+It will automatically restart API if something goes wrong and will automatically start API if the server is restarted.
+Sometimes host server might restart for whatever reason, this will make sure the API is always running.

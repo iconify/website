@@ -7,7 +7,7 @@ replacements:
 
 # Configuring custom Iconify API
 
-This article explains who to configure [Iconify icon components](../icon-components/index.md) to use custom API server.
+This article explains who to configure [Iconify icon components](/docs/icon-components/index.md) to use custom API server.
 
 All Iconify icon components can connect to multiple Iconify API servers. It is done via [API providers](./providers.md).
 
@@ -16,15 +16,18 @@ All Iconify icon components can connect to multiple Iconify API servers. It is d
 If you are hosting Iconify API server, there are 2 ways to use your icons:
 
 - Replace public Iconify API with your API.
-- Use your icons as alternative icons source by using API provider.
+- Use your icons as an alternative icons source by using API provider.
 
-As far as code is concerned, both choices are actually almost identical. The only difference is in first option provider id is empty string `[str]""` so you are overwriting existing configuration instead of adding new one.
+As far as code is concerned, both choices are actually almost identical.
+The only difference is in first option provider id is empty string `[str]""`,
+so you are overwriting existing configuration instead of adding new one.
 
-Your users can do whatever they want: overwrite default API provider or add new API provider. They can use whatever provider id they want for it, as long as they use the same provider id in icon names.
+Your users can do whatever they want: overwrite default API provider or add new API provider.
+They can use whatever provider id they want for it, as long as they use the same provider id in icon names.
 
 ## Example
 
-For example, you have setup your Iconify API server at `[url]https://iconify.myproject.tld`.
+For example, you have set up your Iconify API server at `[url]https://iconify.myproject.tld`.
 
 One of icon sets you host has prefix `[icon]material-icons` and it has icon `[icon]home`.
 
@@ -32,7 +35,7 @@ How can your users configure it?
 
 ### Overwriting default API
 
-Users can overwrite default API provider, like this:
+Users can overwrite the default API provider like this:
 
 ```js
 import { addAPIProvider } from '@iconify/react';
@@ -104,7 +107,7 @@ Instead of using `[func]addAPIProvider()`, users can use global variable `[var]I
 
 This example assumes that `[url]/assets/bundle.min.js` is a bundle that contains all components that use icons and Iconify component.
 
-Similar example for SVG framework:
+Similar example for the SVG framework:
 
 ```html
 <head>
@@ -129,4 +132,4 @@ Similar example for SVG framework:
 </body>
 ```
 
-For more information about API providers see [API providers documentation](./providers.md).
+For more information about API providers, see [API providers documentation](./providers.md).

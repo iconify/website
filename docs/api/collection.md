@@ -7,7 +7,7 @@ types:
 
 # List of icons
 
-You can get list of icon in an icon set sets using `[url]/collection` API query.
+You can get a list of icons in an icon set sets using `[url]/collection` API query.
 
 ## Query
 
@@ -19,8 +19,8 @@ Required parameter:
 
 Optional parameters:
 
-- `[prop]info`, `[type]boolean`. If enabled, response will include icon set information.
-- `[prop]chars`, `[type]boolean`. If enabled, response will include characters map. Characters map exists only in icon sets that were imported from icon fonts.
+- `[prop]info`, `[type]boolean`. If enabled, the response will include icon set information.
+- `[prop]chars`, `[type]boolean`. If enabled, the response will include the character map. The character map exists only in icon sets that were imported from icon fonts.
 
 ## Response
 
@@ -33,22 +33,22 @@ Then there are many optional properties.
 
 ### Icons
 
-Properties that are relevant for list of icons:
+Properties that are relevant for a list of icons:
 
 - `[prop]uncategorized`, `[type]string[]` - list of icon names that aren't in any category.
-- `[prop]categories`, `[type]Record<string, string[]>` - list of icons sorted by categories. Key is category title, value is list of icon names that belong to that category.
-- `[prop]hidden`, `[type]string[]` - list of hidden icons. Usually icons are marked as hidden if at some point they were removed from icon set. To prevent user apps from breaking, icons are never deleted, they are marked as hidden instead, but still can be used in apps.
+- `[prop]categories`, `[type]Record<string, string[]>` - list of icons sorted by categories. Key is category title, value is a list of icon names that belong to that category.
+- `[prop]hidden`, `[type]string[]` - list of hidden icons. Usually icons are marked as hidden if at some point they were removed from the icon set. To prevent user apps from breaking, icons are never deleted, they are marked as hidden instead, but still can be used in apps.
 - `[prop]aliases`, `[type]Record<string, string>` - list of aliases. Key is alias, value is parent icon name.
 
-To get list of all icon names that should be shown, use the following logic:
+To get a list of all icon names that should be shown, use the following logic:
 
-- Get values from `[prop]uncategorized` property, if it exsts.
-- Traverse all categories from `[prop]categories` property, if it exsts. One icon can exist in multiple categories, so check for duplicates, easiest way to do that is to use `[type]Set` class in JavaScript instead of `[type]Array`.
+- Get values from `[prop]uncategorized` property, if it exists.
+- Traverse all categories from `[prop]categories` property, if it exists. One icon can exist in multiple categories, so check for duplicates, the easiest way to do that is to use `[type]Set` class in JavaScript instead of `[type]Array`.
 
-To get all icon names, add to result above:
+To get all icon names, add to the result above:
 
-- Keys of `[prop]aliases` object, if it exists. Should not be displayed in icons list because they are duplicate names for other icons.
-- Values from `[prop]hidden` property, if it exists. Should not be displayed in icons list because these are hidden icons. To prevent user apps from breaking, icons are never deleted, they are marked as hidden instead, but still can be used in apps.
+- Keys of `[prop]aliases` object, if it exists. It should not be displayed in the list of icons because they are duplicate names for other icons.
+- Values from `[prop]hidden` property, if it exists. It should not be displayed in the list of icons because these are hidden icons. To prevent user apps from breaking, icons are never deleted, they are marked as hidden instead, but still can be used in apps.
 
 ### Other properties
 
@@ -56,12 +56,12 @@ Other optional properties:
 
 - `[prop]info`, `[type]IconifyInfo` - icon set information, set if `[prop]info` parameter was enabled.
 - `[prop]title`, `[type]string` - icon set name, usually a duplicate of `[prop]info.name`.
-- `[prop]chars`, `[type]Record<string, string>` - characters map, where key is character as hexadecimal string, value is icon name. It exists only for icon sets that were imported from icon fonts. It can be used to allow user to search icon name by character code.
+- `[prop]chars`, `[type]Record<string, string>` - map of characters, where key is a character as hexadecimal string, value is an icon name. It exists only for icon sets that were imported from icon fonts. It can be used to allow user to search icon name by character code.
 - `[prop]themes`, `[prop]prefixes` and `[prop]suffixes` - icon set themes. Property `[prop]themes` is deprecated, so it can be ignored.
 
 See `[type]IconifyJSON` type and [metadata documentation](../types/iconify-json-metadata.md).
 
-Only icon sets that have info can be browsed. If you want to hide an icon set, do not set info object when importing it.
+Only icon sets that have info can be browsed. If you want to hide an icon set, do not set the info object when importing it.
 
 ## Simple example
 
@@ -92,7 +92,7 @@ Actual API response is a lot bigger. Example was reduced.
 
 ### Error response
 
-If icon set is not found or cannot be browsed, server returns `[num]404` HTTP error.
+If an icon set is not found or cannot be browsed, server returns `[num]404` HTTP error.
 
 If browsing icons is disabled, route is not handled, server returns `[num]404` HTTP error.
 

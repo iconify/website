@@ -44,7 +44,7 @@ For designers, Iconify ecosystem offers several ways to easily import icons in v
 
 `include usage/options/design`
 
-You can browse all available icons and copy code or SVG on the following webites:
+You can browse all available icons and copy code or SVG on the following websites:
 
 `include usage/options/websites`
 
@@ -54,11 +54,13 @@ See [how to use icons](./usage/index.md) for more details.
 
 ## Advanced usage
 
-This section is for advanced usage, getting deeper in Iconify ecosystem.
+This section is for advanced usage, getting deeper in the Iconify ecosystem.
 
 ### Libraries
 
-There are several Node.js packages that Iconify ecosystem is built on. You can use them in your libraries or build process to import/export icon sets, validate and clean up icons, generate SVG and CSS and more.
+There are several Node.js packages that Iconify ecosystem is built on.
+You can use them in your libraries or a build process to import/export icon sets,
+validate and clean up icons, generate SVG and CSS and more.
 
 #### Types
 
@@ -84,7 +86,7 @@ This package is designed to work in any environment. It is used by all Iconify p
 
 It is used to maintain available open source icon sets.
 
-This package is designed to work only in Node.js. It is not usable in browser.
+This package is designed to work only in Node.js. It is not usable in the browser.
 
 ### API
 

@@ -6,7 +6,9 @@ title: Building Custom Budget Content Delivery Network
 
 This tutorial is a part of [Iconify API hosting instructions](./hosting.md).
 
-What is CDN? CDN is short for content delivery network. It is set of servers spread out across the globe, that deliver content to visitor as fast as possible. AnyCast DNS connects visitors to the closest server.
+What is CDN? CDN is short for content delivery network.
+It is a set of servers spread out across the globe that deliver content to a visitor as fast as possible.
+AnyCast DNS connects visitors to the closest server.
 
 This tutorial is intended to be used if you are setting up your custom [Iconify API](./index.md) and want to take advantage of CDN.
 
@@ -14,15 +16,20 @@ This tutorial is intended to be used if you are setting up your custom [Iconify 
 
 This tutorial is intended for stateless CDN.
 
-Stateless means every request does not depend on previous request, so if visitor is connected to different edge server than he visited before, it wouldn't make any difference.
+Stateless means every request does not depend on previous request,
+so if a visitor is connected to a different edge server than he visited before, it wouldn't make any difference.
 
-Iconify API is stateless. It does not allow visitors to store anything, it does not track anything, it does not send any cookies. There is no central server and each API server works separately from other servers.
+Iconify API is stateless.
+It does not allow visitors to store anything, it does not track anything, it does not send any cookies.
+There is no central server, and each API server works separately from other servers.
 
 ## Setting up edge servers
 
 First, you need to create multiple origin servers in various parts of the world.
 
-All servers need to be configured to serve exactly the same data for exactly the same host name. So you need to configure multiple identical servers. There are plenty of tools that can automate this process, however they are not part of this tutorial.
+All servers need to be configured to serve exactly the same data for exactly the same host name.
+So you need to configure multiple identical servers.
+There are plenty of tools that can automate this process; however, they are not part of this tutorial.
 
 For tutorial on how to set up hosting for Iconify API, see [hosting tutorial](./hosting.md).
 
@@ -32,11 +39,14 @@ After setting up multiple servers, you want to direct users to the closest serve
 
 Adding multiple `[str]A` records to your domain won't achieve that. You need AnyCast DNS.
 
-AnyCast DNS is expensive. Very expensive. What if you don't have thousands of dollars to spend? Good news is there is one alternative solution: Amazon's Route53 latency routing.
+AnyCast DNS is expensive. Very expensive. What if you don't have thousands of dollars to spend?
+Good news is there is one alternative solution: Amazon's Route53 latency routing.
 
-Route53 latency routing works by redirecting visitor to the closest Amazon datacenter.
+Route53 latency routing works by redirecting the visitor to the closest Amazon datacenter.
 
-What if you are not hosting your websites at Amazon datacenters? You can host at datacenters not far from Amazon (same country or state), which is more than good enough to redirect visitors to the closest of your servers.
+What if you are not hosting your websites at Amazon datacenters?
+You can host at datacenters not far from Amazon (same country or state),
+which is more than good enough to redirect visitors to the closest of your servers.
 
 ### Setting up Route53
 
@@ -44,7 +54,11 @@ What if you are not hosting your websites at Amazon datacenters? You can host at
 - Go to [Route53 page](https://console.aws.amazon.com/route53/home?region=eu-central-1) (sign in if needed).
 - Click `[str]Hosted Zones` link, click on your domain or create a new zone.
 
-Then you need to add records for each server you have in your CDN. Click `[str]Create Record Set`, enter subdomain name in `[str]Name` field, enter IP address in `[str]Value` field, in `[str]Routing Policy` field select `[str]Latency`. That last part is very important: that makes it possible to redirect visitors to the closest server based on latency. Select region closest to your server's physical location, enter something in `[str]Set ID` field.
+Then you need to add records for each server you have in your CDN.
+Click `[str]Create Record Set`, enter subdomain name in `[str]Name` field,
+enter IP address in `[str]Value` field, in `[str]Routing Policy` field select `[str]Latency`.
+That last part is very important: that makes it possible to redirect visitors to the closest server based on latency.
+Select the region closest to your server's physical location, enter something in `[str]Set ID` field.
 
 If you are running script on AWS service, instead of entering IP select click `[str]Yes` for `[str]Alias` option and select AWS instance.
 
@@ -52,9 +66,10 @@ If you are running script on AWS service, instead of entering IP select click `[
 
 Click `[str]Create` button to add that record.
 
-Create several more records for your other servers. For each record enter the same subdomain, but different IP and different region.
+Create several more records for your other servers.
+For each record enter the same subdomain, but different IP and a different region.
 
-By the time you are finished it should look like this:
+By the time you are finished, it should look like this:
 
 ![Route53 records](/assets/images/hosting/route53-records.png)
 

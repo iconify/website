@@ -21,16 +21,16 @@ Everything you need is available at [Iconify GitHub repositories](https://github
 
 See [Iconify API: Node.js](./hosting-js/index.md) for installation and configuration instructions.
 
-## Servers network
+## API network
 
-Iconify public API is hosted on multiple servers that form custom CDN. They are located in different parts of the world and visitors are always redirected to the closest server.
+Iconify public API is hosted on multiple servers that form custom CDN. They are located in different parts of the world, and visitors are always redirected to the closest server.
 
 Host does CDN help? By connecting visitors to the closest server, latency is greatly reduced:
 
-- Visitors from US are connected to one of servers located on different sides of the US.
-- Visitors from Europe are connected to server in UK or server in Germany.
-- For visitors from Asia there are servers in Singapore and Japan.
-- For visitors from Oceania there is a server in Australia.
+- Visitors from US are connected to one of the servers located on different sides of the US.
+- Visitors from Europe are connected to server in the UK or server in Germany.
+- For visitors from Asia, there are servers in Singapore and Japan.
+- For visitors from Oceania, there is a server in Australia.
 
 Additional servers may be added in other regions when needed.
 

@@ -4,7 +4,8 @@ title: HTTP Headers in Iconify API
 
 # HTTP headers in API
 
-This tutorial is a part of [Iconify API installation instructions](./index.md) for Node.js. This part of tutorial explains how to change HTTP headers that API server sends to visitors.
+This tutorial is a part of [Iconify API installation instructions](./index.md) for Node.js.
+This part of the tutorial explains how to change HTTP headers that API server sends to visitors.
 
 By default, server sends the following HTTP headers:
 
@@ -13,7 +14,8 @@ By default, server sends the following HTTP headers:
 
 To change headers, edit `[prop]httpHeaders` variable in `[file]src/config/app.ts`, then rebuild script:
 
-If you prefer to use reverse proxy to send all extra headers, remove all unnecessary headers in file mentioned above and change configuration in reverse proxy.
+If you prefer to use reverse proxy to send all extra headers,
+remove all unnecessary headers in the file mentioned above and change the configuration in reverse proxy.
 
 ## Configuring CORS in Apache {#cors-apache}
 
@@ -31,7 +33,7 @@ Header always set Cross-Origin-Resource-Policy "cross-origin"
 
 ## Configuring CORS in NGINX {#cors-nginx}
 
-If you are using NGINX as reverse proxy, you can disable CORS in API and enable it in NGINX.
+If you are using NGINX as a reverse proxy, you can disable CORS in API and enable it in NGINX.
 
 To enable CORS in NGINX, add this to NGINX configuration under `[prop]http` -> `[prop]server` -> `[prop]location`:
 
