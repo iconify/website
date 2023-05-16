@@ -55,7 +55,7 @@ const buttons: HomePageButtonProps[] = [{
             Sponsored by
           </h1>
           <div class="sponsors">
-            <a href="https://github.com/sponsors/cyberalien" target="_blank" rel="noopener noreferrer" title="Support Iconify!">
+            <a href="/sponsors/" title="Support Iconify!">
               <img
                 crossorigin="anonymous"
                 width="800"

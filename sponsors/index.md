@@ -1,7 +1,3 @@
-<script setup>
-import around from '/assets/images/around-logo.svg?raw'
-</script>
-
 # Supporting Iconify
 
 Iconify is a very complex project that takes a lot of effort to develop and maintain.
@@ -31,17 +27,6 @@ If you represent a company and are willing to help or interested in sponsoring I
 Iconify OÜ can provide invoices and paperwork you might want.
 See contact information below.
 
-## Around.co support!
-
-<div>
-    <a href="https://around.co/?utm_source=iconify&amp;utm_medium=partnership" 
-       target="_blank" rel="noreferrer" aria-label="Around.co" v-html="around" />
-</div>
-
-Thanks to [Around](https://around.co/?utm_source=iconify&utm_medium=partnership) for sponsoring Iconify plugin for Figma!
-
-Around is an excellent collaboration tool designed for developers. [Check them out](https://around.co/?utm_source=iconify&utm_medium=partnership)!
-
 ## GitHub sponsors
 
 <div class="sponsors">
@@ -57,5 +42,21 @@ Around is an excellent collaboration tool designed for developers. [Check them o
       >
     </a>
 </div>
+
+
+## Figma plug-in banner
+
+If you want something for sponsoring the Iconify project,
+there is a possibility to promote your app or project in Iconify plug-in for Figma.
+
+Iconify plug-in for Figma is used by over 1.6 million users, with about 1.5k new users each week.
+
+Promotion includes:
+- Banner in plug-in header.
+- Section in "about" page.
+- Section on this page (will replace this section).
+
+If your commercial project can be useful for designers, and you would like to promote it, please contact me.
+Contact information is available below.
 
 <contact-info />
