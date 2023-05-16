@@ -1,4 +1,4 @@
-export const ogUrl = 'https://preview.iconify.design/'
+export const ogUrl = 'https://iconify.design/'
 export const ogImage = `${ogUrl}og-image.png`
 export const title = 'Iconify'
 export const description = 'All popular icon sets, one framework'
