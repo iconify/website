@@ -54,6 +54,14 @@ table {
 }
 
 /* Pager */
+div.prev-next {
+  width: 100%;
+  flex-wrap: wrap;
+  > div.pager {
+    flex-grow: 1;
+    width: auto;
+  }
+}
 a.pager-link[class] {
   border: none;
   position: relative;
@@ -86,6 +94,7 @@ a.pager-link[class] {
 
   &.prev {
     padding-left: 36px;
+    padding-right: 0;
     &:after {
       left: 0;
       transform: rotate(180deg);
@@ -93,6 +102,7 @@ a.pager-link[class] {
   }
 
   &.next {
+    padding-left: 0;
     padding-right: 36px;
     &:after {
       right: 0;
