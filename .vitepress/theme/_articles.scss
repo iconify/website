@@ -1,5 +1,5 @@
-// Getting started: lock icon
-.vendor-lock-in {
+// Getting started: lock icon, sponsor
+.vendor-lock-in, .intro-sponsor {
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -11,6 +11,22 @@
   }
   > div:last-child {
     flex: 1;
+  }
+}
+
+.intro-sponsor {
+  > div:first-child {
+    color: var(--vp-c-brand);
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  p:first-child {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
