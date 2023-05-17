@@ -11,7 +11,7 @@ functions:
 
 This method requires a bit of coding, using Node.js.
 
-If you are not using Node.js or not comfortable with code below, [consider other methods of generating CSS for icons](../index.md#tools).
+If you are not using Node.js or not comfortable with the code below, [consider other methods of generating CSS for icons](../index.md#tools).
 
 ## Process
 
@@ -20,7 +20,7 @@ How it works:
 - Load icon set data.
 - Export icons as SVG files.
 
-At the end you'll have thousands of SVG files, which you can embed in HTML.
+In the end, you'll have thousands of SVG files, which you can embed in HTML.
 
 How you embed SVG in HTML depends on your project. If you can't automate it, simply copy/paste code from `[file].svg` file to `[file].html` file where you want to use icon.
 
@@ -28,10 +28,10 @@ How you embed SVG in HTML depends on your project. If you can't automate it, sim
 
 If you do not have a Node.js app, you need to create one to generate CSS.
 
-There are plenty tutorials on how Node.js works, short version of steps:
+There are plenty of tutorials on how Node.js works, short version of steps:
 
 - Install Node.js on your computer.
-- Create directory for project, run `[bash]npm init -y` to create basic project.
+- Create directory for the project, run `[bash]npm init -y` to initialise it.
 
 ## Dependencies
 
@@ -50,7 +50,7 @@ npm install --save-dev @iconify/utils @iconify/json
 
 There are two sample scripts, use whichever works better for your use case:
 
-- Script that exports all icons as `[file].svg` files from icon set.
+- Script that exports all icons as `[file].svg` files from an icon set.
 - Script with function that generates SVG for selected icon.
 
 ### Export all icons

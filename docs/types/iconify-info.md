@@ -22,10 +22,10 @@ It has the following mandatory properties:
 
 Then it has many optional properties, most of these properties are intended for displaying icon set data in list of icon sets:
 
-- `[prop]total`, `[type]number`. Number of icons in icon set (see below).
+- `[prop]total`, `[type]number`. Number of icons in an icon set (see below).
 - `[prop]version`, `[type]string`. Version string.
 - `[prop]samples`, `[type]string[]`. Array of icon names to show as samples.
-- `[prop]height`, `[type]number | number[]`. Icon grid. If icon set has mix of icons with different height values, such as half of icons are `[num]16` pixels high, half are `[num]24` pixels high, value can be array.
+- `[prop]height`, `[type]number | number[]`. Icon grid. If an icon set has mix of icons with different height values, such as half of icons are `[num]16` pixels high, half are `[num]24` pixels high, value can be an array.
 - `[prop]displayHeight`, `[type]number`. Height to use when showing samples. Value should be between `[num]16` and `[num]24`.
 - `[prop]category`, `[type]string`. Category in icon sets list.
 - `[prop]tags`, `[type]string[]`. List of tags, which can be used to filter icon sets (added in version 2).

@@ -43,7 +43,7 @@ This means one type extends another type. In the example above, type `[type]Foo`
 There are two main types that are used in Iconify ecosystem:
 
 - `[type]IconifyIcon` is used for data for one icon.
-- `[type]IconifyJSON` is used for an entire icon set. It stores icon data, aliases and various metadata.
+- `[type]IconifyJSON` is used for an entire icon set. It stores icon data, icon aliases and various metadata.
 
 ## Additional types
 

@@ -11,7 +11,7 @@ replacements:
 
 Unplugin Icons is a plug-in that dynamically generates icon components.
 
-You can use it to render icons if you are building app using one of the following UI frameworks:
+You can use it to render icons if you are building an app using one of the following UI frameworks:
 
 - React, Preact
 - Vue 2.7+, Vue 3
@@ -20,7 +20,7 @@ You can use it to render icons if you are building app using one of the followin
 - Astro
 - Qwik
 
-With Unplugin Icons you can easily use [over 60,000 open source icons](/docs/icons/icon-data.md) and custom icons with minimal code.
+With Unplugin Icons, you can easily use [over 60,000 open source icons](/docs/icons/icon-data.md) and custom icons with minimal code.
 
 ## How does it work? {#process}
 

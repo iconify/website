@@ -19,9 +19,11 @@ Type `[type]IconifyAlias` represents an alias for icon. It is used in Iconify JS
 
 What is an alias? An alias is icon that reuses another icon's properties.
 
-`[icon]arrow-left` could be an alias of `[icon]arrow-right` with horizontal flip enabled. No need to create new shape when existing shape can be reused with a simple transformation.
+`[icon]arrow-left` could be an alias of `[icon]arrow-right` with horizontal flip enabled.
+No need to create new shape when existing shape can be reused with a simple transformation.
 
-`[icon]battery-empty` could be an alias of `[icon]battery-0` without any changes. This makes it possible to assign multiple names to the same icon.
+`[icon]battery-empty` could be an alias of `[icon]battery-0` without any changes.
+This makes it possible to assign multiple names to the same icon.
 
 ## Structure
 
@@ -37,9 +39,13 @@ Other properties are from `[type]IconifyOptional` type, they are shared with `[t
 
 ### Parent icon
 
-Parent icon name should not include icon set prefix and parent icon must be present in icon set.
+Parent icon name should not include icon set prefix, and parent icon must be present in the icon set.
 
-If you use another alias as parent, make sure there are no circular dependencies. For example, if `[icon]arrow-left` is an alias of `[icon]arrow-right` (with horizontal flip), which in turn is an alias of `[icon]arrow-up` (with 90 degrees rotation), which in turn is an alias of `[icon]arrow-down` (with vertical flip), `[icon]arrow-down` could not be an alias of `[icon]arrow-left` because that would create a loop.
+If you use another alias as a parent, make sure there are no circular dependencies.
+For example, if `[icon]arrow-left` is an alias of `[icon]arrow-right` (with horizontal flip),
+which in turn is an alias of `[icon]arrow-up` (with 90 degrees rotation),
+which in turn is an alias of `[icon]arrow-down` (with vertical flip),
+`[icon]arrow-down` could not be an alias of `[icon]arrow-left` because that would create a loop.
 
 To be safe, use only icons as parent, not other aliases.
 
@@ -47,8 +53,8 @@ To be safe, use only icons as parent, not other aliases.
 
 If, when merging properties, an icon alias has a property that parent icon also has, the following rules apply:
 
-- `[prop]hFlip` and `[prop]vFlip`. Result is `[js]icon.hFlip !== alias.hFlip`. That means if both icon and alias are flipped horizontally, result will not be flipped (horizontal flip + horizontal flip cancel each other). If only one of items is flipped horizontally, result will be flipped (horizontal flip + no flip = horizontal flip).
-- `[prop]rotate`. Result is a sum of rotations. That means 90 degrees rotation + 180 degrees rotation = 270 degrees rotation.
+- `[prop]hFlip` and `[prop]vFlip`. Result is `[js]icon.hFlip !== alias.hFlip`. That means if both icon and alias are flipped horizontally, the result will not be flipped (horizontal flip + horizontal flip cancel each other). If only one of the items is flipped horizontally, the result will be flipped (horizontal flip + no flip = horizontal flip).
+- `[prop]rotate`. The result is a sum of rotations. That means 90 degrees rotation + 180 degrees rotation = 270 degrees rotation.
 
 For all other properties alias overrides parent icon's value.
 
@@ -64,7 +70,7 @@ extra:
     title: 'Merged:'
 ```
 
-In the example above, `[js]hFlip + hFlip = false`, `[js]!vFlip /* default value */ + vFlip = true`, other properties were overridden by alias.
+In the example above, `[js]hFlip + hFlip = false`, `[js]!vFlip /* default value */ + vFlip = true`, icon alias overwrote other properties.
 
 ## Examples
 

@@ -63,11 +63,15 @@ In your code you can get default values from `[var]defaultIconProps` constant fr
 
 ### Alias
 
-One optional property of `[type]IconifyJSON` type is `[prop]alias`, which has type `[type]Record<string, IconifyAlias>`. Key is alias name, value is `[type]IconifyAlias` alias data. It represents list of aliases.
+One optional property of `[type]IconifyJSON` type is `[prop]alias`, which has type `[type]Record<string, IconifyAlias>`.
+Key is alias name, value is `[type]IconifyAlias` alias data.
+It represents a list of icon aliases.
 
 What are aliases? They are variations of other icons. Aliases are used to reduce duplications.
 
-For example, if icons `[icon]home` and `[icon]house` are identical, only one of those icons can be present in `[prop]icons` property, other icon can be listed in `[prop]aliases`, pointing to original icon:
+For example, if icons `[icon]home` and `[icon]house` are identical,
+only one of those icons can be present in `[prop]icons` property, another icon can be listed in `[prop]aliases`,
+pointing to original icon:
 
 ```json
 {
@@ -87,7 +91,9 @@ For example, if icons `[icon]home` and `[icon]house` are identical, only one of 
 }
 ```
 
-Aliases can also include transformations: horizontal and/or vertical flip, 90/180/270 degrees rotation. This allows icon variations by reusing other icon, such as creating a right arrow by using left arrow with horizontal flip:
+Aliases can also include transformations: horizontal and/or vertical flip, 90/180/270 degrees rotation.
+This allows icon variations by reusing another icon,
+such as creating a right arrow by using left arrow with horizontal flip:
 
 ```json
 {
@@ -108,7 +114,8 @@ Aliases can also include transformations: horizontal and/or vertical flip, 90/18
 }
 ```
 
-Alias has the same properties as icons, except for `[prop]body`. It also has additional required property `[prop]parent` that points to parent icon.
+Alias has the same properties as icons, except for `[prop]body`.
+It also has additional required property `[prop]parent` that points to parent icon.
 
 Logic for resolving properties of alias:
 
@@ -196,7 +203,8 @@ extra:
     hint: 'Both examples are identical, first example has default values, second example does not.'
 ```
 
-If dimensions in icon are missing and default values in root object are missing, default value for property (see list of properties above) is used:
+If dimensions in an icon are missing, and default values in the root object are missing,
+default value for property (see the list of properties above) is used:
 
 ```yaml
 src: types/json-defaults2-source.json
@@ -207,7 +215,9 @@ extra:
     hint: 'Both examples are identical, first example has default property values, second example has explicit dimensions.'
 ```
 
-In all examples above, `[prop]width` and `[prop]height` are used to demonstrate dimensions. But there are also `[prop]left` and `[prop]top` properties and transformations, which are missing in all examples. This is example above with all properties resolved:
+In all examples above, `[prop]width` and `[prop]height` are used to demonstrate dimensions.
+But there are also `[prop]left` and `[prop]top` properties and transformations, which are missing in all examples.
+This is example above with all properties resolved:
 
 ```json
 {
@@ -229,7 +239,7 @@ In all examples above, `[prop]width` and `[prop]height` are used to demonstrate 
 
 ## Metadata
 
-`[type]IconifyJSON` can also contain additional data that is used for displaying icons list.
+`[type]IconifyJSON` can also contain additional data that is used for displaying list of icons.
 
 This is optional data that has no effect on rendering icons, so it was moved to a separate document.
 

@@ -9,7 +9,7 @@ types:
 
 # IconifyJSON metadata
 
-`[type]IconifyJSON` can also contain additional data that is used for displaying icons list:
+`[type]IconifyJSON` can also contain additional data that is used for displaying a list of icons:
 
 - Last modification time (since version 2).
 - Icon set info.
@@ -19,9 +19,9 @@ types:
 
 ## Last modification time {#last-modified}
 
-Last modification time is used to check if icon set was updated. Icon components use it to invalidate old cache.
+Last modification time is used to check if an icon set was updated. Icon components use it to invalidate old cache.
 
-Value is a number, which needs to be higher than in previously released version of icon set.
+Value is a number, which needs to be higher than in a previously released version of an icon set.
 
 ## Information {#iconify-info}
 
@@ -35,7 +35,7 @@ Categories are stored in `[prop]categories` object.
 
 In TypeScript categories are represented by type `[type]IconifyCategories` that can be imported from `[npm]@iconify/types`.
 
-This is a simple object, where key is category name, value is array of icons names that belong to that category.
+This is a simple object, where key is category name, value is an array of icon names that belong to that category.
 
 Example:
 
@@ -66,7 +66,7 @@ Themes are stored in `[prop]themes` object.
 
 In TypeScript themes are represented by type `[type]IconifyThemes` that can be imported from `[npm]@iconify/types`.
 
-Theme is an object, where key is unique identifier for theme, value contains theme title and either prefix or suffix. Theme cannot contain both prefix and suffix, it must have only one of properties.
+Theme is an object, where key is unique identifier for theme, value contains theme title and either prefix or suffix. Theme cannot contain both prefix and suffix, it must have only one of the properties.
 
 Example of prefixes used in Box Icons:
 
@@ -120,7 +120,7 @@ Suffix must start with `[str]-`.
 
 ## Characters map {#chars}
 
-Characters map is stored in `[prop]chars` object.
+Map of characters is stored in `[prop]chars` object.
 
 In TypeScript characters are represented by type `[type]IconifyChars` that can be imported from `[npm]@iconify/types`.
 

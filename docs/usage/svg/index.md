@@ -45,7 +45,7 @@ All you have to do is insert `[tag]svg` elements in your HTML wherever you want 
 
 One possible solution to deep DOM tree and large document size is linking to external SVG files using `[tag]img` or `[tag]picture` tags.
 
-However, it cannot be used for monotone icons. It is not possible to change color of external image without generating separate images for each used color. That makes external images unusable in Iconify ecosystem.
+However, it cannot be used for monotone icons. It is not possible to change color of external image without generating separate images for each used color. That makes external images unusable in the Iconify ecosystem.
 
 A workaround is to use icons as external mask images in CSS. See [how to use SVG in CSS](../css/index.md).
 
@@ -55,7 +55,7 @@ How to get SVG to add to your documents?
 
 ### Components
 
-For many frameworks there are components that handle embedding SVG in HTML:
+For many frameworks, there are components that handle embedding SVG in HTML:
 
 - [Unplugin Icons](./unplugin/index.md) for React, Vue, Svelte, Solid, Astro, Qwik.
 - [Astro Icon](./astro/index.md) for Astro.
@@ -64,7 +64,7 @@ For many frameworks there are components that handle embedding SVG in HTML:
 
 ### Functions
 
-Not using any frameworks, but want to automate process?
+Not using any frameworks, but want to automate the build process?
 
 [Iconify Utils](/docs/libraries/utils/index.md) offers easy to use functions that generate SVG.
 
@@ -82,7 +82,7 @@ Find icon you want to use, select it, copy SVG to clipboard, paste it to HTML.
 
 Want to build a custom component that generates SVG?
 
-Currently you'll need to use JavaScript for that. There are no usable libraries for other programming languages.
+Currently, you'll need to use JavaScript for that. There are no usable libraries for other programming languages.
 
 ### JavaScript
 
@@ -91,12 +91,12 @@ Currently you'll need to use JavaScript for that. There are no usable libraries 
 - Locate icon set file.
 - Read it and parse JSON.
 - Use `[func]iconToSVG()` to generate SVG content and attributes.
-- Create SVG element from it. See below.
+- Create an SVG element from it. See below.
 
 Code samples that should help you:
 
 - See [Iconify Utils documentation for SVG](./utils/index.md).
-- See `[func]parseIconSet()` or `[func]getIconData()` to extract icon data from icon set.
+- See `[func]parseIconSet()` or `[func]getIconData()` to extract icon data from an icon set.
 - See `[func]iconToSVG()` documentation.
 - Source code for [Iconify for Tailwind CSS](https://github.com/iconify/iconify/tree/main/plugins/tailwind) for code to locate and load icon sets.
 
@@ -104,9 +104,9 @@ Code samples that should help you:
 
 Function `[func]iconToSVG()` does not return full SVG, it returns attributes for `[tag]svg` element and contents.
 
-This is done on purpose. Many frameworks, such as React, expect you to use framework specific code to create elements.
+This is done on purpose. Many frameworks, such as React, expect you to use the framework specific code to create elements.
 
-So, for React, you need to create element like this:
+So, for React, you need to create an element like this:
 
 ```js
 const data = iconToSVG(icon, {});
@@ -126,9 +126,9 @@ return React.createElement('svg', {
 
 For other frameworks that use native ways to create elements, use similar framework specific code.
 
-If framework does not have some way to set `[prop]innerHTML`, which is required to set contents of `[tag]svg`, this code cannot be used. You'll need to find a way to convert HTML string to tree of components.
+If a framework does not have some way to set `[prop]innerHTML`, which is required to set contents of `[tag]svg`, this code cannot be used. You'll need to find a way to convert HTML string to tree of components.
 
-If you want to create full `[tag]svg` element as string, you can use `[func]iconToHTML()` function to convert result of `[func]iconToSVG()` to string:
+If you want to create full `[tag]svg` element as string, you can use `[func]iconToHTML()` function to convert the result of `[func]iconToSVG()` to string:
 
 ```js
 const data = iconToSVG(icon, {});

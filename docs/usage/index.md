@@ -57,7 +57,7 @@ It is used by various icon components to [load icon data on demand](/docs/api/ic
 
 Iconify icon components are perfect for complex projects like theme or website customisers, customisable admin panels or any similar projects, where icons can be customised by user.
 
-Iconify icon components are very easy to use. All developer has to specify is an icon name:
+Iconify icon components are very easy to use. All a developer has to specify is an icon name:
 
 ```yaml
 src: icon-components/icon/usage.html

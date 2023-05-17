@@ -60,7 +60,7 @@ This section is for advanced usage, getting deeper in the Iconify ecosystem.
 
 There are several Node.js packages that Iconify ecosystem is built on.
 You can use them in your libraries or a build process to import/export icon sets,
-validate and clean up icons, generate SVG and CSS and more.
+validate and clean up icons, generate SVG, CSS, and more.
 
 #### Types
 

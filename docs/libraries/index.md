@@ -12,9 +12,10 @@ Available libraries:
 
 ## Utils
 
-[Iconify Utils](./utils/index.md) is a set of reusable functions used by icon components and other packages. Its main purpose is to read `[type]IconifyJSON` icon sets and extract data from it.
+[Iconify Utils](./utils/index.md) is a set of reusable functions used by icon components and other packages.
+Its main purpose is to read `[type]IconifyJSON` icon sets and extract data from it.
 
-Utils package contains the following functions:
+The Iconify Utils package contains the following functions:
 
 - Reading `[type]IconifyJSON` icon sets.
 - Extracting subsets of icons or single icons.
@@ -29,9 +30,10 @@ Package works in any environment: node, browser, deno, and closed JavaScript env
 
 ## Tools
 
-[Iconify Tools](./tools/index.md) is a large package, its main purpose is to retrieve icons from various sources, validate them, clean them up and generate `[type]IconifyJSON` icon sets as well as various NPM packages.
+[Iconify Tools](./tools/index.md) is a large package, its main purpose is to retrieve icons from various sources,
+validate them, clean them up and generate `[type]IconifyJSON` icon sets as well as various NPM packages.
 
-Tools package contains the following functions:
+The Iconify Tools package contains the following functions:
 
 - Importing icons from SVG icon sets, Figma documents.
 - Validating icons, cleaning up content, optimising icons.
