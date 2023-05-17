@@ -1,44 +1,67 @@
-<script setup>
-const icons = [
-    'i-line-md:sun-rising-loop text-$vp-c-primary-button-hover',
-    'i-gg:border-right text-$docsearch-primary-color',
-    'i-tabler:bat text-$vp-c-green-darker',
-    'i-ph:address-book-duotone text-$vp-c-primary-button-hover',
-    'i-mdi:image-edit-outline text-$vp-c-green',
-    'i-fluent-emoji:astonished-face?bg',
-    'i-fxemoji:ghost?bg',
-    'i-fxemoji:foxheart?bg',
-    'i-fxemoji:watch?bg',
-    'i-mdi-light:camera text-$vp-c-primary-button',
-    'i-pixelarticons:alert text-$vp-c-primary-button-hover',
-    'i-iconoir:airplay text-$vp-c-green',
-    'i-heroicons:document-solid text-$vp-c-brand-dark',
-    'i-heroicons:face-smile text-$docsearch-primary-color',
-]
-</script>
-
 <section>
-	<p>
-        Material Design, Phosphor, Remix, Carbon, Bootstrap, Tabler,
-        Feather, Fluent, IconPark, Octicons and many other icon sets.
-        Twitter Emoji, Fluent Emoji, EmojiOne, Noto Emoji are also available
-        as icon sets.
-    </p>
-    <div class="grid grid-cols-1 place-items-center gap-y-4 mb-8">
-        <div class="grid grid-cols-[repeat(5,24px)] gap-x-4">
-            <div v-for="icon of icons.filter((_, i) => i < 5)" :key="icon" :class="icon" class="items-center w-6 h-6"></div>
+    <div class="intro-icons">
+        <div class="intro-icons-icons">
+            <div class="intro-icons-block intro-icons-block--24">
+                <iconify-icon
+                    icon="line-md:sun-rising-loop"
+                    class="icon--red"
+                ></iconify-icon>
+                <iconify-icon
+                    icon="gg:border-right"
+                    class="icon--deep-purple"
+                ></iconify-icon>
+                <iconify-icon icon="tabler:bat" class="icon--teal"></iconify-icon>
+                <iconify-icon
+                    icon="ph:address-book-duotone"
+                    class="icon--red"
+                ></iconify-icon>
+                <iconify-icon
+                    icon="mdi:image-edit-outline"
+                    class="icon--indigo"
+                ></iconify-icon>
+            </div>
+            <div class="intro-icons-block intro-icons-block--32">
+                <iconify-icon icon="fluent-emoji:astonished-face"></iconify-icon>
+                <iconify-icon icon="fxemoji:ghost"></iconify-icon>
+                <iconify-icon icon="fxemoji:foxheart"></iconify-icon>
+                <iconify-icon icon="fxemoji:watch"></iconify-icon>
+            </div>
+            <div class="intro-icons-block intro-icons-block--24">
+                <iconify-icon
+                    icon="mdi-light:camera"
+                    class="icon--light-blue"
+                ></iconify-icon>
+                <iconify-icon
+                    icon="pixelarticons:alert"
+                    class="icon--red"
+                ></iconify-icon>
+                <iconify-icon
+                    icon="iconoir:airplay"
+                    class="icon--green"
+                ></iconify-icon>
+                <iconify-icon
+                    icon="heroicons:document-solid"
+                    class="icon--blue"
+                ></iconify-icon>
+                <iconify-icon
+                    icon="heroicons:face-smile"
+                    class="icon--purple"
+                ></iconify-icon>
+            </div>
         </div>
-        <div class="grid grid-cols-[repeat(4,32px)] gap-x-3">
-            <div v-for="icon of icons.filter((_, i) => i > 4 && i < 9)" :key="icon" :class="icon" class="items-center w-8 h-8"></div>
-        </div>
-        <div class="grid grid-cols-[repeat(5,24px)] gap-x-4">
-            <div v-for="icon of icons.filter((_, i) => i > 8)" :key="icon" :class="icon" class="items-center w-6 h-6"></div>
+        <div class="intro-icons-content">
+            <p>
+                Material Design, Phosphor, Remix, Carbon, Bootstrap, Tabler,
+                Feather, Fluent, IconPark, Octicons and many other icon sets.
+                Twitter Emoji, Fluent Emoji, EmojiOne, Noto Emoji are also available
+                as icon sets.
+            </p>
+            <p>
+                Use them with the same tools, same reusable and customisable icon
+                components:
+            </p>
         </div>
     </div>
-    <p>
-        Use them with the same tools, same reusable and customisable icon
-        components:
-    </p>
     <ul>
         <li>
             <a href="/docs/iconify-icon/">Iconify Icon web component</a>

@@ -1,4 +1,19 @@
 // Getting started: lock icon
+.vendor-lock-in {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  > div:first-child {
+    flex: 0;
+    color: var(--vp-c-text-2);
+    padding-bottom: 8px;
+  }
+  > div:last-child {
+    flex: 1;
+  }
+}
+
 #latest-updates + .latest-news {
   p {
     display: grid;
@@ -9,6 +24,89 @@
     @media (max-width: 480px) {
       gap: 0;
       grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Getting started: icons
+.intro-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 16px;
+
+  &-content {
+    width: 100%;
+  }
+
+  &-icons {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.intro-icons-block {
+  margin: 0 0 8px;
+  line-height: 1em;
+  display: flex;
+  flex-direction: column;
+
+  iconify-icon {
+    display: inline-block;
+    margin: 4px;
+  }
+
+  &--24 {
+    // width: 24px;
+    iconify-icon {
+      font-size: 24px;
+    }
+  }
+  &--32 {
+    // width: 32px;
+    iconify-icon {
+      font-size: 32px;
+    }
+  }
+
+  .icon--light-blue {
+    color: var(--c-light-blue);
+  }
+  .icon--deep-purple {
+    color: var(--c-deep-purple);
+  }
+  .icon--teal {
+    color: var(--c-teal);
+  }
+  .icon--red {
+    color: var(--c-red);
+  }
+  .icon--indigo {
+    color: var(--c-indigo);
+  }
+  .icon--green {
+    color: var(--c-green);
+  }
+  .icon--blue {
+    color: var(--c-blue);
+  }
+  .icon--purple {
+    color: var(--c-purple);
+  }
+}
+
+
+@media (max-width: 650px) {
+  .intro-icons {
+    display: block;
+
+    &-icons {
+      margin: 0 auto;
+      width: fit-content;
+      flex-direction: column;
+    }
+    &-block {
+      flex-direction: row;
     }
   }
 }
