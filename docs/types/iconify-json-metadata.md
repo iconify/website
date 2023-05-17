@@ -14,7 +14,7 @@ types:
 - Last modification time (since version 2).
 - Icon set info.
 - Categories. Each icon can belong to multiple categories.
-- Themes. They are used for variations of the same icon that have different start or end part.
+- Themes. They are used for variations of the same icon that have different start or end parts.
 - Characters map. This is used for icons imported from icon fonts.
 
 ## Last modification time {#last-modified}
@@ -62,61 +62,73 @@ Example:
 
 Themes are used to display variations of the same icon that have different prefix or suffix. It is similar to categories, but instead of listing every icon, data contains only prefixes or suffixes.
 
-Themes are stored in `[prop]themes` object.
+Themes are stored in `[prop]prefixes` and `[prop]suffixes` objects.
 
-In TypeScript themes are represented by type `[type]IconifyThemes` that can be imported from `[npm]@iconify/types`.
+In TypeScript both `[prop]prefixes` and `[prop]suffixes` are simple `[type]Record<string, string>` objects, where:
+- key is prefix or suffix in icon.
+- value is the name of theme.
 
-Theme is an object, where key is unique identifier for theme, value contains theme title and either prefix or suffix. Theme cannot contain both prefix and suffix, it must have only one of the properties.
-
-Example of prefixes used in Box Icons:
+Example of prefixes used in [Google Material Icons](https://icon-sets.iconify.design/ic/):
 
 ```json
 {
-	"themes": {
-		"bxl": {
-			"title": "Logos",
-			"prefix": "bxl-"
-		},
-		"bx": {
-			"title": "Regular",
-			"prefix": "bx-"
-		},
-		"bxs": {
-			"title": "Solid",
-			"prefix": "bxs-"
-		}
-	}
+    "prefixes": {
+        "baseline": "Baseline",
+        "outline": "Outline",
+        "round": "Round",
+        "sharp": "Sharp",
+        "twotone": "Two-Tone"
+    }
 }
 ```
 
-In an example above, all icons that start with `[str]bxl-` belong to `[str]Logos` theme, all icons that start with `[str]bx-` belong to `[str]Regular` theme and all icons that start with `[str]bxs-` belong to `[str]Solid` theme.
+In an example above, all icons that start with `[icon]baseline-` belong to `[str]Baseline` theme and so on.
 
-Prefix must end with `[str]-`.
+When checking if icon belongs to a prefix, add `[str]-` to prefix.
+For example, `[str]baseline-home` belongs to `[str]Baseline` theme in example above,
+`[str]baselinehome` does not, because `[str]-` should separate prefix and icon name.
 
 Example of suffixes used in Ant Design Icons:
 
 ```json
 {
-	"themes": {
-		"filled": {
-			"title": "Filled",
-			"suffix": "-filled"
-		},
-		"outlined": {
-			"title": "Outlined",
-			"suffix": "-outlined"
-		},
-		"twotone": {
-			"title": "TwoTone",
-			"suffix": "-twotone"
-		}
-	}
+    "suffixes": {
+        "filled": "Filled",
+        "outlined": "Outlined",
+        "twotone": "TwoTone"
+    }
 }
 ```
 
-In an example above, all icons that end with `[str]-filled` belong to `[str]Filled` theme, all icons that end with `[str]-outlined` belong to `[str]Outlined` theme and all icons that end with `[str]-twotone` belong to `[str]TwoTone` theme.
+In an example above, all icons that end with `[str]-filled` belong to `[str]Filled` theme,
+all icons that end with `[str]-outlined` belong to `[str]Outlined` theme and all icons that
+end with `[str]-twotone` belong to `[str]TwoTone` theme.
 
-Suffix must start with `[str]-`.
+### Default theme
+
+Both prefixes and suffixes can have default entry, where the key is an empty string.
+Icons that do not fit other themes should be put in that theme.
+
+Example:
+
+```json
+{
+    "suffixes": {
+        "": "Filled",
+        "outline": "Outline",
+        "negative": "Negative"
+    }
+}
+```
+
+Icons that end with `[str]-outline` belong to `[str]Outline` theme, 
+icons that end with `[str]-negative` belong to `[str]Negative` theme,
+all other icons belong to `[str]Filled` theme.
+
+### Legacy themes
+
+In older versions of metadata, themes were stored in `[prop]themes` property.
+This has been deprecated and should be ignored.
 
 ## Characters map {#chars}
 
