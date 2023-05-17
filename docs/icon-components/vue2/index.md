@@ -8,7 +8,7 @@ replacements:
   - code: '@iconify/vue2@1'
     value: '${vue.import-vue2}'
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 functions:
   addCollection: './add-collection.md'
   addIcon: './add-icon.md'

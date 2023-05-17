@@ -1,10 +1,5 @@
 ```yaml
 title: Vertical Alignment in Iconify SVG Framework
-replacements:
-  - code: '/2/2.0.0/'
-    value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
-  - code: '60k'
-    value: '${counters.icons-short}'
 ```
 
 # Vertical alignment

@@ -1,8 +1,8 @@
 ```yaml
 title: 'Iconify SVG Framework Function: addIcon'
 types:
-  IconifyJSON: '../../types/iconify-json.md'
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 functions:
   addCollection: './add-collection.md'
 ```

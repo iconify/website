@@ -1,8 +1,8 @@
 ```yaml
 title: 'Iconify for Vue Function: addCollection'
 types:
-  IconifyJSON: '../../types/iconify-json.md'
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyJSON: '/docs/types/iconify-json.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 functions:
   addIcon: './add-icon.md'
 ```

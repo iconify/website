@@ -6,7 +6,7 @@ title: 'Iconify Icon Web Component with SolidJS'
 
 This tutorial is part of [Iconify Icon web component tutorial](./index.md).
 
-Currently, SolidJS has poor support for web components. It is caused by issues in web components standard. When setting property to a web component, it sometimes does not work as expected.
+Currently, SolidJS has poor support for web components. It is caused by issues in the web components spec. When setting a property to a web component, it sometimes does not work as expected.
 
 ## Workaround
 
@@ -18,9 +18,9 @@ Workaround for Solid usage is to force Solid to use attributes instead of proper
 
 ## Iconify Icon for Solid
 
-Iconify Icon for Solid solves that by mapping properties to attributes in a native Solid component, so you can use web component without any issues.
+Iconify Icon for Solid solves that by mapping properties to attributes in a native Solid component, so you can use the web component without any issues.
 
-It also provides typings for component, making it easier to use in JSX and supports objects for `[prop]icon` property.
+It also provides typings for the component, making it easier to use in JSX and supports objects for `[prop]icon` property.
 
 ## Installation
 
@@ -92,4 +92,4 @@ export default () => {
 };
 ```
 
-See [Iconify Icon web component](./index.md) for list of all attributes, functions and usage examples. `[npm]@iconify-icon/solid` is only a wrapper for `[npm]iconify-icon`, not a different component, it supports all the same properties and functions.
+See [Iconify Icon web component](./index.md) for the list of all attributes, all functions and usage examples. `[npm]@iconify-icon/solid` is only a wrapper for `[npm]iconify-icon`, not a different component, it supports all the same properties and functions.

@@ -1,7 +1,7 @@
 ```yaml
 title: 'Iconify for Vue 2 Function: renderSVG'
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 functions:
   replaceIDs: './replace-ids.md'
   getIcon: './get-icon.md'

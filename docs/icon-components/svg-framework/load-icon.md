@@ -6,9 +6,6 @@ functions:
 types:
   IconifyIconName: './icon-name.md'
   FullIconifyIcon: '/docs/libraries/utils/full-iconify-icon.md'
-replacements:
-  - code: '/2/2.0.0/'
-    value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
 ```
 
 # SVG framework function: loadIcon
@@ -36,6 +33,9 @@ Using `[type]Promise` syntax:
 
 ```yaml
 src: icon-components/iconify/load-icon-global.html
+replacements:
+  - code: '/2/2.0.0/'
+    value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
 ```
 
 Async/await syntax:

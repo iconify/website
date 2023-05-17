@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { parse } from 'yaml'
+import { defaultReplacements } from '../metadata/replacements'
 import { locateCodeSample, validateCodeSource } from './locate'
 import { replaceAllStrings } from './replace'
 import { addCodeDemoTab, addCodeTab } from './tab'
@@ -18,6 +19,10 @@ interface CodeSampleChunk {
 interface InlineCodeReplacement {
   search: string
   replace: string
+}
+interface InlineCodeReplacement2 {
+  code: string
+  value: string
 }
 
 interface CodeSample {
@@ -43,7 +48,7 @@ interface CodeSample {
   class?: string // Class name to wrap demo
 
   // Replacements
-  replacements?: InlineCodeReplacement[]
+  replacements?: (InlineCodeReplacement | InlineCodeReplacement2)[]
 }
 
 const defaultCodeSampleChunk: Required<CodeSampleChunk> = {
@@ -103,12 +108,12 @@ export function parseYamlCode(code: string, filename: string) {
   const replaceContent = (str: string): string =>
     replaceAllStrings(str, replacements)
 
-  // Clean up data
+  // Cleanup data
   for (const key in defaultCodeSample) {
     const attr = key as keyof CodeSample
 
     if (attr === 'extra') {
-      // Handle extra array
+      // Handle an extra array
       if ((data as Record<string, unknown>).extra === undefined) {
         data.extra = []
         continue
@@ -182,8 +187,8 @@ export function parseYamlCode(code: string, filename: string) {
           )
         }
         data.replacements.forEach((item) => {
-          const search = item.search as unknown
-          const replace = item.replace as unknown
+          const search = (item as InlineCodeReplacement).search || (item as InlineCodeReplacement2).code as unknown
+          const replace = (item as InlineCodeReplacement).replace || (item as InlineCodeReplacement2).value as unknown
           if (
             typeof search !== 'string'
                         || typeof replace !== 'string'
@@ -193,7 +198,7 @@ export function parseYamlCode(code: string, filename: string) {
                             `Invalid value type for "${attr}" in code block in ${filename}.`,
             )
           }
-          replacements[search] = replace
+          replacements[search] = replaceAllStrings(replace, defaultReplacements)
         })
         break
 

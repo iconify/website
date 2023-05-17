@@ -1,8 +1,6 @@
 ```yaml
 title: Iconify SVG Framework
 replacements:
-  - code: '/2/2.0.0/'
-    value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
   - code: '60k'
     value: '${counters.icons-short}'
   - code: '@iconify/iconify@2'
@@ -20,18 +18,21 @@ Iconify SVG framework is an easy-to-use JavaScript library that renders icons.
 
 It combines the pixel-perfect rendering of SVG with ease of use of glyph fonts while offering more choice than any glyph font or SVG framework.
 
-Unlike icon fonts, Iconify SVG framework only loads icons that are used on the current page, so visitors do not waste bandwidth loading hundreds or thousands of icons just to show a few icons.
+Unlike icon fonts, the Iconify SVG framework only loads icons that are used on the current page, so visitors do not waste bandwidth loading hundreds or thousands of icons just to show a few icons.
 
 Iconify SVG framework was designed to be as easy to use as possible. You can change icon dimensions and color with CSS, just like icon fonts.
 
 ## Usage
 
-Adding icons to HTML document is very simple:
+Adding icons to the HTML document is easy:
 
-Add script tag to include Iconify SVG framework. You can add it in head section (before `[tag]</head>`) or at the end of page before `[tag]</body>`:
+Add script tag to include the Iconify SVG framework. You can add it in the head section (before `[tag]</head>`) or at the end of page before `[tag]</body>`:
 
 ```yaml
 src: icon-components/iconify/script.html
+replacements:
+  - code: '/2/2.0.0/'
+    value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
 ```
 
 To add an icon, write placeholder `[tag]span` (or it could be any other inline DOM element):

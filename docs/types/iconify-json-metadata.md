@@ -88,7 +88,7 @@ When checking if icon belongs to a prefix, add `[str]-` to prefix.
 For example, `[str]baseline-home` belongs to `[str]Baseline` theme in example above,
 `[str]baselinehome` does not, because `[str]-` should separate prefix and icon name.
 
-Example of suffixes used in Ant Design Icons:
+Example of suffixes used in [Ant Design Icons](https://icon-sets.iconify.design/ant-design/):
 
 ```json
 {

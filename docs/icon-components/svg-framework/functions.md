@@ -1,8 +1,6 @@
 ```yaml
 title: Iconify SVG Framework Functions
 replacements:
-  - code: '/2/2.0.0/'
-    value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
   - code: '"2.0.0"'
     value: '"${svg-framework.version.full}"'
   - code: '@iconify/iconify@2'
@@ -39,7 +37,7 @@ functions:
 
 This tutorial is part of [Iconify SVG Framework tutorial](./index.md).
 
-Iconify SVG framework has many functions that you can use to use SVG framework in your scripts.
+Iconify SVG framework has many functions that you can use to use the SVG framework in your scripts.
 
 ## Usage
 
@@ -53,6 +51,9 @@ Examples of using `[func]loadIcon` function:
 ```yaml
 src: icon-components/iconify/load-icon-global.html
 title: 'Browser:'
+replacements:
+  - code: '/2/2.0.0/'
+    value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
 extra:
   - src: icon-components/iconify/load-icon-promise.js
     title: 'Node.js:'

@@ -1,7 +1,7 @@
 ```yaml
 title: 'Iconify SVG Framework Function: buildIcon'
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 functions:
   renderIcon: './render-icon.md'
   renderSVG: './render-svg.md'
