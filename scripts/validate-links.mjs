@@ -7,7 +7,7 @@ const rootFolder = process.cwd()
 const distFolder = resolve(rootFolder, 'dist')
 
 // Find all HTML files
-fg('**/*.html', { cwd: distFolder }).then(files => {
+fg('**/*.html', { cwd: distFolder }).then(/**string[]*/ files => {
     if (!files.length)
         throw new Error('Build dist package before running links checker')
 

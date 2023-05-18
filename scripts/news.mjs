@@ -137,7 +137,7 @@ function isValidNewsFile(file) {
  */
 async function parseNewsArticle(file) {
   // Get time
-  const fileParts = file.split(/\//)
+  const fileParts = file.replace(/\\/g, '/').split(/\//)
   const filename = fileParts.pop()
   const year = parseInt(fileParts.pop())
   if (!year)
