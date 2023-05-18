@@ -124,7 +124,7 @@ function getMarkdownTitleLink(text) {
  * @returns {boolean}
  */
 function isValidNewsFile(file) {
-  const name = file.split(/\//).pop()
+  const name = file.split(/[\/\\]/).pop()
   return (!name.startsWith('_') && (name.endsWith('.md') || name.endsWith('.html')))
 }
 
@@ -137,7 +137,7 @@ function isValidNewsFile(file) {
  */
 async function parseNewsArticle(file) {
   // Get time
-  const fileParts = file.replace(/\\/g, '/').split(/\//)
+  const fileParts = file.split(/[\/\\]/)
   const filename = fileParts.pop()
   const year = parseInt(fileParts.pop())
   if (!year)
