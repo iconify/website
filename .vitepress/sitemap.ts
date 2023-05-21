@@ -34,7 +34,10 @@ const hostname: string = isCI ? ogUrl : (process.env.HTTPS ? 'https://localhost/
 
 export function transformHtml(code: string, id: string, { pageData }: TransformContext): string | void {
   if (!/[\\/]404\.html$/.test(id)) {
-    const url = pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')
+    let url = pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')
+    if (url.length && !url.endsWith('/'))
+      url += '.html'
+
     links.push({
       url,
       lastmod: pageData.lastUpdated,
@@ -43,28 +46,28 @@ export function transformHtml(code: string, id: string, { pageData }: TransformC
     // homepage
     if (url === '/' || url === '') {
       return code.replace('<meta charset="utf-8">', `<meta charset="utf-8">
-<link rel="canonical" href="${hostname}index.html">
+<link rel="canonical" href="${hostname}/">
 <link rel="preconnect" href="${cyberalienGithub}">
 `)
     }
 
     // section entry
-    if (url[url.length - 1] === '/') {
+    if (url.endsWith('/')) {
       if (url === 'sponsors/') {
         return code.replace('<meta charset="utf-8">', `<meta charset="utf-8">
-<link rel="canonical" href="${hostname}${url}index.html">
+<link rel="canonical" href="${hostname}${url}">
 <link rel="preconnect" href="${cyberalienGithub}">
 `)
       }
 
       return code.replace('<meta charset="utf-8">', `<meta charset="utf-8">
-<link rel="canonical" href="${hostname}${url}index.html">
+<link rel="canonical" href="${hostname}${url}">
 `)
     }
 
     // any page
     return code.replace('<meta charset="utf-8">', `<meta charset="utf-8">
-<link rel="canonical" href="${hostname}${url}.html">
+<link rel="canonical" href="${hostname}${url}">
 `)
   }
 }
