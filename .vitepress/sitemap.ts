@@ -46,7 +46,7 @@ export function transformHtml(code: string, id: string, { pageData }: TransformC
     // homepage
     if (url === '/' || url === '') {
       return code.replace('<meta charset="utf-8">', `<meta charset="utf-8">
-<link rel="canonical" href="${hostname}/">
+<link rel="canonical" href="${hostname}">
 <link rel="preconnect" href="${cyberalienGithub}">
 `)
     }
