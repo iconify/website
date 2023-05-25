@@ -13,7 +13,7 @@ functions:
 
 Cleanup functions are used in [Iconify Tools](../index.md) to validate and clean up imported icons.
 
-Unfortunately many editors leave lots of junk in SVG files, sometimes multiplying icon file size several times.
+Unfortunately, many editors leave lots of junk in SVG files, sometimes multiplying icon file size several times.
 
 SVG files might also contain scripts and links to external resources.
 
@@ -21,15 +21,27 @@ SVG files might also contain scripts and links to external resources.
 
 To clean up and validate icon, run `[func]cleanupSVG()`.
 
-Function has only one parameter:
+Function has one required parameter:
 
 - `[prop]svg`, `[type]SVG`. Icon instance.
 
+and one optional parameter:
+
+- `[prop]options`, `[type]object`. Options, see below.
+
 Function does not return anything, it applies changes to `[type]SVG` instance.
 
-Clean up function is asynchronous. That means you need to handle it as `[class]Promise` instance, usually by adding `[js]await` before function call.
-
 On error function will throw an exception.
+
+### Options
+
+The `[prop]options` parameter has the following properties:
+
+- `[prop]keepTitles`, `[type]boolean`. If set to `true`, titles are not removed.
+
+Titles are removed by default because almost all icons can represent many things,
+therefore, hardcoded titles are not usable for most users.
+The option to keep titles is intended for working with custom icon sets that are specific to one website.
 
 ## Clean up process
 
@@ -41,7 +53,7 @@ Clean up process runs several functions that do various tasks:
 - `[func]checkBadTags()` checks icon for bad tags.
 - `[func]removeBadAttributes()` removes bad attributes.
 
-If you want to, you can run functions listed above, in order listed above. It will be identical to running `[func]cleanupSVG()`. All functions are asynchronous.
+If you want to, you can run functions listed above, in order listed above. It will be identical to running `[func]cleanupSVG()`.
 
 ## Optimisation
 
@@ -51,12 +63,12 @@ Optimisation should be done separately. See [icon manipulation functions](../ico
 
 ## Opinionated validation
 
-Validation is opinionated. It is intended to be used to produce icons that are available to anyone, therefore it is rather strict.
+Validation is opinionated. It is intended to be used to produce icons that are available to anyone, therefore, it is rather strict.
 
 Icon validation fails if icon:
 
 - Contains any scripts. Untrusted scripts are dangerous.
-- Contains any text. This is heavily opinionated. Reasoning is usually icons that use text are exported by designers not realising that they are using fonts that are not installed on every computer, therefore icon will look different than intended. Convert text to shapes before exporting it from your editor.
+- Contains any text. This is heavily opinionated. Reasoning is usually icons that use text are exported by designers not realising that they are using fonts that are not installed on every computer, therefore, icon will look different than intended. Convert text to shapes before exporting it from your editor.
 - Contains any raster images. Raster images in vector shapes are unacceptable because they do not scale. Icons are meant to scale without limitations.
 
 ## Example

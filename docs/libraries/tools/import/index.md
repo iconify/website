@@ -11,6 +11,7 @@ functions:
   parseColors: '../icon/colors.md'
   deOptimisePaths: '../icon/paths.md'
   importDirectory: './directory.md'
+  importDirectorySync: './directory.md'
   importFromFigma: './figma/index.md'
 ```
 
@@ -22,9 +23,11 @@ functions:
 
 All functions listed below are asynchronous. Most functions create `[type]IconSet` instances.
 
-Before using Iconify Tools, you should be aware that package is opinionated. Certain tags are not allowed and will fail import. See [SVG import limitations](../tags.md).
+Before using Iconify Tools, you should be aware that package is opinionated. Certain SVG elements are not allowed and will cause import to fail. See [SVG import limitations](../tags.md).
 
 ### Async
+
+Most functions are asynchronous.
 
 `include libraries/tools/async`
 
@@ -38,7 +41,7 @@ There are several functions for importing icons:
 
 ### importDirectory()
 
-Function `[func]importDirectory()` imports SVG files from directory.
+Functions `[func]importDirectory()` and `[func]importDirectorySync()` import SVG files from directory.
 
 ### importFromFigma()
 
@@ -46,7 +49,7 @@ Function `[func]importFromFigma()` imports icons from Figma document.
 
 ### Importing single icon {#svg}
 
-Making a function for importing single file is redundant. All you have to do is read file and create `[type]SVG` instance.
+Making a function for importing a single file is redundant. All you have to do is read file and create `[type]SVG` instance.
 
 See [importing SVG](./svg.md) documentation.
 

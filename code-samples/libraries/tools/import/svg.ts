@@ -17,7 +17,7 @@ import {
 	const svg = new SVG(content);
 
 	// Clean up icon code
-	await cleanupSVG(svg);
+	cleanupSVG(svg);
 
 	// Assume icon is monotone: replace color with currentColor, add if missing
 	// If icon is not monotone, remove this code
@@ -29,7 +29,7 @@ import {
 	});
 
 	// Optimise
-	await runSVGO(svg);
+	runSVGO(svg);
 
 	// Add icon to icon set
 	iconSet.fromSVG('home', svg);

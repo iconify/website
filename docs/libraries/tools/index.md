@@ -39,7 +39,7 @@ npm install @iconify/tools@2 --save
 
 ## Import
 
-To start working with icon set, you can either create blank icon set or import icon set from some source.
+To start working with an icon set, you can either create blank icon set or import icon set from some source.
 
 Documentation from importing icons:
 
@@ -48,13 +48,13 @@ Documentation from importing icons:
 - [Importing all SVG in directory](./import/directory.md).
 - [Importing icons from Figma](./import/figma/index.md).
 
-Before using Iconify Tools, you should be aware that package is opinionated. Certain tags are not allowed and will fail import. See [SVG import limitations](./tags.md).
+Before using Iconify Tools, you should be aware that package is opinionated. Certain tags are not allowed and will cause import to fail. See [SVG import limitations](./tags.md).
 
 ## Cleanup and validation
 
 Cleaning up and validating icons is the first thing you should do after importing icons if icons come from:
 
-- Image editing software. Often software leave a lot of junk code in icons, which must be removed.
+- Image editing software. Often software leaves a lot of junk code in icons, which must be removed.
 - Third party. You need to make sure icons do not contain scripts, events.
 
 See `[func]cleanupSVG()` documentation.

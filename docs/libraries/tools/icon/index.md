@@ -29,7 +29,7 @@ All functions listed below are asynchronous and work with `[type]SVG` instances.
 
 How to use functions to parse all icons in an icon set?
 
-It can be done by using `[func]forEach()` method:
+It can be done by using `[func]forEach()` and `[func]forEachSync()` methods:
 
 ```yaml
 src: libraries/tools/icon/icon-set.ts
@@ -47,7 +47,7 @@ There are several functions for manipulating icons:
 
 Function `[func]runSVGO()` optimises icon.
 
-Cleaning up icons with `[func]cleanupSVG()` is not enough. That function is very basic, it does bare minimum to get rid of bad stuff. It is mostly for validation.
+Cleaning up icons with `[func]cleanupSVG()` is not enough. That function is very basic; it does bare minimum to get rid of bad stuff. It is mostly for validation.
 
 Use `[func]runSVGO()` to properly clean up and optimise icons.
 

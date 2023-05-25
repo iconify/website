@@ -15,4 +15,4 @@
 
 - [x] UnoCSS: icons cleanup, see [unocss website](https://unocss.dev/presets/icons#advanced-custom-icon-set-cleanup)
 - [ ] Tailwind CSS: tutorial for using custom icons with Iconify Tools v3
-- [ ] Iconify Tools: docs for many missing functions, including synchronous functions added in v3
+- [ ] Iconify Tools: docs for many missing functions

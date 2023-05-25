@@ -10,7 +10,7 @@ types:
 
 This tutorial is part of [import functions documentation](./index.md) in [Iconify Tools](../index.md).
 
-There is no special function for importing icon set because it is redundant. All you have to do is read content from file, parse JSON data and create new `[type]IconSet` instance.
+There is no special function for importing an icon set because it is redundant. All you have to do is read content from file, parse JSON data and create new `[type]IconSet` instance.
 
 ## Example
 

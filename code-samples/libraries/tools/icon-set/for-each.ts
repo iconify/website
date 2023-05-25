@@ -26,12 +26,12 @@ const iconSet = new IconSet({
 });
 
 // Synchronous example: renaming all icons
-console.log('Starting synchronous forEach()');
-iconSet.forEach((name) => {
+console.log('Starting synchronous forEachSync()');
+iconSet.forEachSync((name) => {
 	iconSet.rename(name, 'renamed-' + name);
 	console.log(`Renaming: ${name}`);
 });
-console.log('Completed synchronous forEach()');
+console.log('Completed synchronous forEachSync()');
 
 // Async example: cleaning up icons.
 // Wrap code in anonymous async function for asynchronous use case.

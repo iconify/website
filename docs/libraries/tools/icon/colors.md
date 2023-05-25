@@ -13,7 +13,7 @@ functions:
 
 This function is part of [icon manipulation functions](./index.md) in [Iconify Tools](../index.md).
 
-Function `[func]parseColors()` parses colors in SVG.
+Functions `[func]parseColors()` and  `[func]parseColorsSync()` parse colors in SVG.
 
 It can:
 
@@ -41,7 +41,14 @@ Function has the following parameters:
 
 Function returns array of colors.
 
-Function is asynchronous. That means you need to handle it as `[class]Promise` instance, usually by adding `[js]await` before function call.
+### Async
+
+Function `[func]parseColors()` is asynchronous.
+That means you need to handle it as `[class]Promise` instance, usually by adding `[js]await` before function call.
+
+Function `[func]parseColorsSync()` is identical, but synchronous.
+
+Asynchronous version should be used when you need to do async operations in a callback function.
 
 ## Colors
 
@@ -95,10 +102,11 @@ Callback has the following parameters:
 Callback should return:
 
 - `[type]Color` or `[type]string` to set new color. If you do not want to change color, return color passed to callback (either `[prop]colorStr` or non-null `[prop]color` object).
-- `[str]remove` to remove element. This is used to remove stuff like white background rectangle left by some editors.
+- `[str]remove` to remove the current element. This is used to remove stuff like white background rectangle left by some editors.
 - `[str]unset` to remove color.
 
-Callback can be asynchronous.
+Callback can be asynchronous when used with `[func]parseColors()`.
+If used with `[func]parseColorsSync()`, it should be synchronous.
 
 Example
 

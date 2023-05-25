@@ -116,14 +116,12 @@ const reallyBadIcon = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
   </g>
 </svg>`;
 
-(async () => {
-	const svg = new SVG(reallyBadIcon);
+const svg = new SVG(reallyBadIcon);
 
-	// Clean up and validate icon
-	await cleanupSVG(svg);
+// Clean up and validate icon
+cleanupSVG(svg);
 
-	// Optimise icon
-	runSVGO(svg);
+// Optimise icon
+runSVGO(svg);
 
-	console.log(svg.toMinifiedString());
-})();
+console.log(svg.toMinifiedString());

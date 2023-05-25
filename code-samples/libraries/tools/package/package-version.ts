@@ -14,7 +14,7 @@ const token = process.env.GITHUB_TOKEN || '';
 	});
 
 	// Get version from downloaded package
-	const version = await getPackageVersion(result.actualDir);
+	const version = await getPackageVersion(result.contentsDir);
 
 	// '1.7.0'
 	console.log('Version:', version);

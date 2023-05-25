@@ -1,5 +1,7 @@
 ```yaml
 title: Optimising SVG
+functions:
+  cleanupSVG: './cleanup.md'
 types:
   SVG: '../svg/index.md'
   IconSet: '../icon-set/index.md'
@@ -10,6 +12,11 @@ types:
 This function is part of [icon manipulation functions](./index.md) in [Iconify Tools](../index.md).
 
 Function `[func]runSVGO()` optimises icon using popular SVG optimisation tool SVGO.
+
+It is meant to be used on icons that have already been processed with `[func]cleanupSVG()`, which does most of the cleanup.
+
+This function is used to do advanced stuff that SVGO is good at: converting transformations,
+cleaning up numbers, removing unused SVG elements, and so on.
 
 ## Usage
 
@@ -22,7 +29,7 @@ Function has the following parameters:
 
 There are two ways to set options:
 
-- Using custom list of SVGO plugins.
+- Using a custom list of SVGO plugins.
 - Toggle groups of plugins using several options.
 
 ### Custom plugins list
@@ -40,10 +47,11 @@ runSVGO(svg, {
 
 ### Plugin options
 
-You can also pick from preset list of plugins by setting these options:
+You can also pick from a preset list of plugins by setting these options:
 
-- `[prop]keepShapes`, `[type]boolean`. If `true`, plugins that modify shapes are not ran. This is useful if you need to keep shapes as is, for example, when animating shapes.
-- `[prop]cleanupIDs`, `[type]string | false`. Custom prefix for rewriting IDs, `false` to disable plugins that change IDs.
+- `[prop]animated`, `[type]boolean`. If `true`, SVGO plugins that are known to bug out with animated icons are not ran.
+- `[prop]keepShapes`, `[type]boolean`. If `true`, plugins that modify shapes are not ran. This is useful if you need to keep shapes as-is, for example, when animating shapes, but it is not as strict as setting `[prop]animated` option.
+- `[prop]cleanupIDs`, `[type]string | false | function`. Custom prefix for rewriting IDs, `false` to disable plugins that change IDs. Can be a callback that returns new ID based on old ID.
 
 These options cannot be used together with `[prop]plugins` option.
 
@@ -63,7 +71,7 @@ extra:
     title: 'Result:'
 ```
 
-That example shows running SVGO on icon that has not been cleaned up and validated. Not all useless attributes have been removed and SVGO doesn't check for some content that should not be in icon, such as text, raster images and events.
+That example shows running SVGO on icon that has not been cleaned up and validated. Not all useless attributes have been removed, and SVGO doesn't check for some content that should not be in icon, such as text, raster images and events.
 
 Therefore, all icons must be cleaned up after loading.
 

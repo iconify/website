@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs';
-import { IconSet, validateIconSet, cleanupSVG } from '@iconify/tools';
+import { IconSet, cleanupSVG } from '@iconify/tools';
+import { validateIconSet } from '@iconify/utils';
 
 (async () => {
 	// Read data, parse JSON
@@ -14,8 +15,8 @@ import { IconSet, validateIconSet, cleanupSVG } from '@iconify/tools';
 	const iconSet = new IconSet(validatedData);
 
 	// Clean up icons
-	await iconSet.forEach(
-		async (name) => {
+	iconSet.forEachSync(
+		(name) => {
 			const svg = iconSet.toSVG(name);
 			if (!svg) {
 				// Bad icon
@@ -26,7 +27,7 @@ import { IconSet, validateIconSet, cleanupSVG } from '@iconify/tools';
 			// Wrap in try...catch to catch errors
 			try {
 				// Clean up and validate
-				await cleanupSVG(svg);
+				cleanupSVG(svg);
 
 				// Update icon data in icon set
 				iconSet.fromSVG(name, svg);
