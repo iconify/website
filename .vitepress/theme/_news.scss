@@ -1,3 +1,22 @@
+
+#latest-updates + .latest-news {
+  p {
+    display: grid;
+    grid-template-columns: 10ch 1fr;
+    gap: 0.5rem;
+    margin: 0.5rem;
+    align-items: start;
+    @media (max-width: 480px) {
+      gap: 0;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  span {
+    white-space: nowrap;
+  }
+}
+
 .heading-date {
   float: right;
   position: relative;
