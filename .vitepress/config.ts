@@ -31,8 +31,8 @@ export default withPwa(defineConfig({
   },
   head: [
     ...preconnectLinks,
+    ['link', { rel: 'icon', href: '/favicon.ico', sizes: 'any' }],
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
-    ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/png', sizes: 'any' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
