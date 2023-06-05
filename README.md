@@ -2,9 +2,7 @@
 
 This repository contains source code for Iconify website, built with Vitepress.
 
-It is currently work in progress, not deployed yet on main website.
-
-Preview is available at https://preview.iconify.design/
+Website is live at https://iconify.design/
 
 ## Build process
 
@@ -16,7 +14,7 @@ To build website, first install dependencies:
 pnpm install
 ```
 
-Then you can build website. To build production code, run this:
+Then you can build the website. To build production code, run this:
 
 ```bash
 nr build
@@ -57,14 +55,6 @@ Documentation uses slightly modified Markdown syntax, see "Markdown" section bel
 
 Assets are stored in directory `public`.
 
-Stylesheet is compiled using SASS compiler, JavaScript files from `public/assets/js` are bundled, icons from `public/assets/svg` are also bundled with JavaScript and are embedded in HTML using Iconify SVG Framework.
-
-## Git conflicts
-
-If you have forked this repository, made some changes and built HTML files, Git repository will include compiled HTML files. Repository is hosted on GitHub Pages, therefore it must include HTML files that GitHub Pages can serve.
-
-If you have made modifications to your fork, then tried to merge it with the latest version of original repository, you might have Git merge conflicts in `docs`. Do not bother with resolving them, just resolve all conflicts (if there are any) in previous directories and run `nr build` to overwrite everything in `docs`.
-
 ## Markdown
 
 Documentation uses extended Markdown syntax.
@@ -76,7 +66,7 @@ First big change is in headings. Every Markdown file must have a heading, which 
 Heading properties:
 
 - title. Page title that is used in `<title>` tag in HTML. This is a mandatory property.
-- replacements. This is used to dynamically replace strings in output. For example, to make sure latest version of project is always the same in all documents without updating every document. See "Replacements" section below.
+- replacements. This is used to dynamically replace strings in output. For example, to make sure the latest version of the project is always the same in all documents without updating every document. See "Replacements" section below.
 - types, functions, classes. Links to types, functions and classes that are used in documents.
 
 ### Inline code
@@ -91,9 +81,9 @@ Available types:
 - key, prop: used for keys and object properties. Usually used when describing types: `[prop]hFlip`.
 - var: variable name: `[var]Iconify`.
 - tag: HTML tag: `[tag]svg`. Syntax highlighter will add "<" and ">" to tag if missing.
-- type: variable type: `[type]IconifyIcon`. If heading in document has "types" section with relative link to type documentation, syntax highlighter will wrap type in a link.
-- class: used for class names: `[class]Collection`, `[class]Promise`. If link for class is present in metadata, parser will also convert it to link.
-- func: used for function names: `[func]addIcon`, `[func]addCollection()`. If link for function is present in metadata, parser will also convert it to link.
+- type: variable type: `[type]IconifyIcon`. If heading in a document has "types" section with a relative link to type documentation, syntax highlighter will wrap type in a link.
+- class: used for class names: `[class]Collection`, `[class]Promise`. If a link for class is present in metadata, parser will also convert it to link.
+- func: used for function names: `[func]addIcon`, `[func]addCollection()`. If a link for function is present in metadata, parser will also convert it to link.
 - npm, packagist: used for names of NPM and Packagist packages: `[npm]@iconify/react`.
 - icon: used for icon names: `[icon]mdi:home`.
 - str, bool, num, object, null: used for values: `[str]Hello World`, `[bool]true`, `[num]12345`.
@@ -137,9 +127,9 @@ This will display 3 chunks of code in one contained block. Property "src" points
 
 Code block properties:
 
-- src: source for main code file.
-- title: title for main code file. Displayed above code block.
-- hint: hint for main code file. Displayed below code block.
+- src: source for the main code file.
+- title: title for the main code file. Displayed above code block.
+- hint: hint for the main code file. Displayed below code block.
 - copy: boolean, if set to `false`, disables copy to clipboard function for code sample.
 
 Properties for stylesheet:
@@ -169,7 +159,7 @@ Extra chunks of code are often used to display several code samples that should 
 
 ### Partials
 
-To avoid repeating same text over and over again, parser supports partial documents.
+To avoid repeating the same text over and over again, parser supports partial documents.
 
 Partial documents can be in Markdown and in HTML format, they are located in `partials`.
 
@@ -193,9 +183,9 @@ This will replace all entries of `/1/1.0.3/` with the current data. Syntax `${ic
 
 ## Links
 
-Links in markdown syntax must be links to .md files, not URLs. Vitepress will clean them up and point to correct URL.
+Links in the markdown syntax must be links to .md files, not URLs. Vitepress will clean them up and point to correct URL.
 
-In Vitepress markdown can include HTML code. Links in HTML code are not parsed, so they must link to correct URL, not md file.
+In Vitepress, markdown can include HTML code. Links in HTML code are not parsed, so they must link to correct URL, not md file.
 
 ## Licence
 
@@ -203,4 +193,4 @@ Iconify documentation is dual-licensed under Apache 2.0 licence. You can use thi
 
 `SPDX-License-Identifier: Apache-2.0`
 
-© 2020-PRESENT Iconify OÜ
+© 2020-PRESENT Vjacheslav Trushkin
