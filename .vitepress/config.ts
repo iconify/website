@@ -1,6 +1,4 @@
 import { defineConfig } from 'vitepress'
-import { withPwa } from '@vite-pwa/vitepress'
-import { pwa } from './pwa'
 import { mdConfig } from './md'
 import { description, ogImage, ogUrl, title } from './constants'
 import { GlobalSidebar, Nav } from './nav'
@@ -10,7 +8,7 @@ import { buildEnd, editPageLinkPattern, preconnectLinks, socialLinks, transformH
 
 const enablePWA = false // isCI || !isDevelopment || process.env.SW_DEV === 'true'
 
-export default withPwa(defineConfig({
+export default defineConfig({
   lang: 'en-US',
   title,
   titleTemplate: title,
@@ -81,5 +79,4 @@ export default withPwa(defineConfig({
   },
   transformHtml,
   buildEnd,
-  pwa: pwa(enablePWA),
-}))
+})
