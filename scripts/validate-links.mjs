@@ -7,9 +7,12 @@ const rootFolder = process.cwd()
 const distFolder = resolve(rootFolder, 'dist')
 
 // Find all HTML files
-fg('**/*.html', { cwd: distFolder }).then(/**string[]*/ files => {
-    if (!files.length)
+fg('**/*.html', { cwd: distFolder }).then(/**string[]*/ rawFiles => {
+    if (!rawFiles.length)
         throw new Error('Build dist package before running links checker')
+
+    // Normalise links
+    const files = rawFiles.map(file => file.replace(/\\/g, '/'))
 
     // Convert to set for faster lookup
     const set = new Set(files);
@@ -48,7 +51,7 @@ fg('**/*.html', { cwd: distFolder }).then(/**string[]*/ files => {
 
             // Get absolute link
             if (baseLink.startsWith('.')) {
-                baseLink = '/' + join(dirname(file), baseLink)
+                baseLink = '/' + join(dirname(file), baseLink).replace(/\\/g, '/')
             }
             if (!baseLink.startsWith('/')) {
                 console.error(`Bad link "${href}" in "${file}"`)
