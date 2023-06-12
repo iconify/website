@@ -1,6 +1,3 @@
-/// <reference types="vite/client" />
-/// <reference types="vite-plugin-pwa/client" />
-/// <reference types="../../shims" />
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
@@ -16,12 +13,5 @@ export default {
     return h(Theme.Layout, null, {
       'home-features-after': () => h(HomePage),
     })
-  },
-  enhanceApp() {
-    if (import.meta.env.SSR)
-      return
-
-    if (PWA)
-      import('virtual:pwa-register').then(({ registerSW }) => registerSW({ immediate: true }))
   },
 }
