@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>22 Jun 2023</span><a href="/news/2023.html#require-trusted-types-for">Support for require-trusted-types-for script policy</a></p>
 <p><span>25 May 2023</span><a href="/news/2023.html#tools3">Iconify Tools 3.0</a></p>
 <p><span>19 May 2023</span><a href="/news/2023.html#api-302">Icon search improvements</a></p>
 <p><span>16 May 2023</span><a href="/news/2023.html#vitepress">New Iconify website</a></p>
 <p><span>21 Feb 2023</span><a href="/news/2023.html#documentation-rewrite">New Iconify documentation</a></p>
-<p><span>28 Jan 2023</span><a href="/news/2023.html#iconify-icon-css">Custom CSS in the Iconify Icon web component</a></p>
 </div>

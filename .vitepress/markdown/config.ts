@@ -24,14 +24,14 @@ export const contentReplacements = {
   'svg-framework': {
     'version': {
       major: '3',
-      full: '3.1.0',
+      full: '3.1.1',
     },
     'size': '25kb',
     'size-without-api': '9kb',
     'import': '@iconify/iconify',
   },
   'iconify-icon': {
-    version: '1.0.7',
+    version: '1.0.8',
   },
   'react': {
     import: '@iconify/react',

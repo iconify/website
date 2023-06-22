@@ -38,6 +38,7 @@ functions:
   colorToString: './color-to-string.md'
   getIconCSS: './get-icon-css.md'
   getIconsCSS: './get-icons-css.md'
+  cleanUpInnerHTML: './clean-up-inner-html.md'
 ```
 
 Icon sets are stored in `[type]IconifyJSON` format. Functions for working with icon sets:
@@ -73,6 +74,7 @@ Functions for rendering icon:
 - `[func]replaceIDs(content)` replaces IDs in SVG with unique IDs. IDs used in elements like masks, and they must be unique, so multiple icons displayed on the same page using the same IDs will result in chaos. This function prevents that chaos.
 - `[func]getIconCSS(icon)` generates stylesheet for using icon as background image or mask image.
 - `[func]getIconsCSS(iconSet, names)` generates stylesheet for using multiple icons from the same icon set as background images or mask images.
+- `[func]cleanUpInnerHTML()` allows using `[prop]innerHTML` to assign SVG to an existing DOM element in strict environments.
 
 Functions for working with icon names:
 
