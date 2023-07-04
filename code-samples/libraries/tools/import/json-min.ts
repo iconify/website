@@ -1,5 +1,5 @@
 import { promises as fs } from 'fs';
-import { IconSet, cleanupSVG, exportToDirectory } from '@iconify/tools';
+import { IconSet, exportToDirectory } from '@iconify/tools';
 import { validateIconSet } from '@iconify/utils';
 
 (async () => {
@@ -14,32 +14,7 @@ import { validateIconSet } from '@iconify/utils';
 	// Create new IconSet instance
 	const iconSet = new IconSet(validatedData);
 
-	// Clean up icons (optional step)
-	iconSet.forEachSync(
-		(name) => {
-			const svg = iconSet.toSVG(name);
-			if (!svg) {
-				// Bad icon
-				iconSet.remove(name);
-				return;
-			}
-
-			// Wrap in try...catch to catch errors
-			try {
-				// Clean up and validate
-				cleanupSVG(svg);
-
-				// Update icon data in icon set
-				iconSet.fromSVG(name, svg);
-			} catch (err) {
-				console.error(`Error parsing ${name}:`, err);
-				iconSet.remove(name);
-			}
-		},
-		['icon']
-	);
-
-	// Done. Do other stuff...
+	// Done. Do something with icon set...
 	// For example, export as SVG files
 	await exportToDirectory(iconSet, {
 		target: 'output'
