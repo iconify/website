@@ -54,3 +54,5 @@ You can change that by changing `[prop]scale` option.
 You can use UnoCSS with custom icons. During the build process, you can import, clean up and optimise icons using [Iconify Tools](/docs/libraries/tools/index.md).
 
 See [demo from Iconify Tools package](https://github.com/iconify/tools/tree/main/%40iconify-demo/unocss). Configuration is in `[file]unocss.config.ts`.
+
+Functions used in that config file are documented in [Iconify Tools](/docs/libraries/tools/index.md) section of this documentation. 
