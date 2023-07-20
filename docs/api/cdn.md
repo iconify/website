@@ -28,7 +28,7 @@ There is no central server, and each API server works separately from other serv
 First, you need to create multiple origin servers in various parts of the world.
 
 All servers need to be configured to serve exactly the same data for exactly the same host name.
-So you need to configure multiple identical servers.
+You need to configure multiple identical servers.
 There are plenty of tools that can automate this process; however, they are not part of this tutorial.
 
 For tutorial on how to set up hosting for Iconify API, see [hosting tutorial](./hosting.md).
@@ -76,3 +76,8 @@ By the time you are finished, it should look like this:
 Notice there are 3 records for `[str]icons.simplesvg.com` pointing to different IP addresses with different region set up.
 
 That's it. When visiting `[url]icons.simplesvg.com`, user will be redirected to one of 3 IPs: 1.2.3.4, 2.3.4.5, 3.4.5.6 depending on which AWS datacenter is the closest. It is precise enough to create a budget custom CDN.
+
+## Iconify API
+
+This method is used to host Iconify API, hosted at `[url]api.iconify.design`.
+
