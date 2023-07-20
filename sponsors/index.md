@@ -50,7 +50,7 @@ See contact information below.
 If you want something for sponsoring the Iconify project,
 there is a possibility to promote your app or project in Iconify plug-in for Figma.
 
-Iconify plug-in for Figma is used by over 1.6 million users, with about 1.5k new users each week.
+Iconify plug-in for Figma is used by over 1.6 million users, with about 15k new users each week.
 
 Promotion includes:
 - Banner in plug-in header.
