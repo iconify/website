@@ -1,3 +1,4 @@
+import { replaceAllStrings } from '../code/replace'
 import { applyMetadataReplacements } from '../metadata/replace'
 import type { MDMetaData } from '../metadata/types'
 import { splitHTMLMetadata, splitMDMetadata } from '../metadata/split'
@@ -26,6 +27,7 @@ interface ParsedChunk {
  */
 function parseIncludedChunk(chunk: SplitIncludedChunk): ParsedChunk {
   const { content, type, filename } = chunk.file
+  const replacements = chunk.replacements
 
   switch (type) {
     case 'md': {
@@ -33,7 +35,7 @@ function parseIncludedChunk(chunk: SplitIncludedChunk): ParsedChunk {
       return {
         chunk: {
           type: 'md',
-          content: parsed.content,
+          content: replacements ? replaceAllStrings(parsed.content, replacements) : parsed.content,
         },
         metadata: parsed.metadata,
       }
@@ -44,7 +46,7 @@ function parseIncludedChunk(chunk: SplitIncludedChunk): ParsedChunk {
       return {
         chunk: {
           type: 'html',
-          content: parsed.content,
+          content: replacements ? replaceAllStrings(parsed.content, replacements) : parsed.content,
         },
         metadata: parsed.metadata,
       }
