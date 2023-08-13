@@ -153,7 +153,7 @@ Value is number of layers to reach icons.
 
 For example, if icons are placed directly on page without parent group, depth value is `[num]2`.
 
-![Figma tree depth: 2](https://docs.iconify.design/assets/images/tools/figma_depth_2.png)
+![Figma tree depth: 2](/assets/images/tools/figma_depth_2.png)
 
 If icons are placed using the following tree:
 
@@ -163,7 +163,7 @@ If icons are placed using the following tree:
 
 Then depth value is `[num]3`.
 
-![Figma tree depth: 3](https://docs.iconify.design/assets/images/tools/figma_depth_3.png)
+![Figma tree depth: 3](/assets/images/tools/figma_depth_3.png)
 
 #### pages
 

@@ -14,7 +14,7 @@ How to get Figma file ID:
 2. Click the "Share" button in the top right corner.
 3. Click "Copy link".
 
-![How to get file ID in Figma](https://docs.iconify.design/assets/images/tools/figma_id.png)
+![How to get file ID in Figma](/assets/images/tools/figma_id.png)
 
 In your clipboard you will have a link to Figma file, which looks like this:
 

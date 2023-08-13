@@ -34,21 +34,21 @@ Browse or search icons, select any icon, click `[str]Import Icon` button or drag
 
 After opening plugin you will see main page:
 
-![Iconify for Figma: main page](https://docs.iconify.design/assets/images/plugins/figma_index.png)
+![Iconify for Figma: main page](/assets/images/plugins/figma_index.png)
 
 Click any icon set or search icons. For example, search for "arrow left":
 
-![Iconify for Figma: icon search results](https://docs.iconify.design/assets/images/plugins/figma_search.png)
+![Iconify for Figma: icon search results](/assets/images/plugins/figma_search.png)
 
 Buttons above search results show icon sets, in which matching icons are available. By clicking any icon set button, plugin will show only results from that icon set.
 
 You can drag and drop icon directly from search results:
 
-![Iconify for Figma: drag and drop](https://docs.iconify.design/assets/images/plugins/figma_drag_drop.gif)
+![Iconify for Figma: drag and drop](/assets/images/plugins/figma_drag_drop.gif)
 
 or you can select icon and scroll to footer, where you will see more options:
 
-![Iconify for Figma: drag and drop](https://docs.iconify.design/assets/images/plugins/figma_footer.png)
+![Iconify for Figma: drag and drop](/assets/images/plugins/figma_footer.png)
 
 When importing from footer you can:
 
@@ -65,11 +65,11 @@ By default, those options are not available for icons imported via drag and drop
 
 In footer you can get code for selected icon:
 
-![Iconify for Figma: icon code](https://docs.iconify.design/assets/images/plugins/figma_code.png)
+![Iconify for Figma: icon code](/assets/images/plugins/figma_code.png)
 
 For icons that do not have hardcoded palette, color picker is available, showing recently used colors and document colors:
 
-![Iconify for Figma: color picker](https://docs.iconify.design/assets/images/plugins/figma_color_picker.png)
+![Iconify for Figma: color picker](/assets/images/plugins/figma_color_picker.png)
 
 ### Compact mode
 
@@ -77,21 +77,21 @@ If you have limited window space available, you can make plugin smaller.
 
 Click compact window button in top right corner and plugin window will become much smaller:
 
-![Iconify for Figma: compact mode](https://docs.iconify.design/assets/images/plugins/figma_compact.png)
+![Iconify for Figma: compact mode](/assets/images/plugins/figma_compact.png)
 
 You can also minimize plugin window by clicking button in top right corner. In minimized window you can restore plugin or close it:
 
-![Iconify for Figma: minimized window](https://docs.iconify.design/assets/images/plugins/figma_minimized.png)
+![Iconify for Figma: minimized window](/assets/images/plugins/figma_minimized.png)
 
 When importing an icon, you have option to automatically compact or minimize plugin window, making it easier to work on imported icon without closing plugin:
 
-![Iconify for Figma: window options](https://docs.iconify.design/assets/images/plugins/figma_minimize.png)
+![Iconify for Figma: window options](/assets/images/plugins/figma_minimize.png)
 
 ### Recent icons
 
 Plugin remembers recently imported icons. If you have replaced an icon, but decided to go back to old one, you can find previous icon in recent icons list:
 
-![Iconify for Figma: recent icons](https://docs.iconify.design/assets/images/plugins/figma_recent.png)
+![Iconify for Figma: recent icons](/assets/images/plugins/figma_recent.png)
 
 Recent icons are not specific to current document, so you can see icons recently imported in other documents you have edited.
 
@@ -99,7 +99,7 @@ Recent icons are not specific to current document, so you can see icons recently
 
 Plugin has options:
 
-![Iconify for Figma: options](https://docs.iconify.design/assets/images/plugins/figma_options.png)
+![Iconify for Figma: options](/assets/images/plugins/figma_options.png)
 
 Options are stored in Figma application (or current browser if you are using Figma in browser), so you need to configure plugin only once.
 

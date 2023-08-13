@@ -39,21 +39,21 @@ Browse or search icons, select any icon, click `[str]Import` button. Plug-in wil
 
 Importing icon:
 
-![Iconify for Sketch: footer](https://docs.iconify.design/assets/images/plugins/sketch_footer.png)
+![Iconify for Sketch: footer](/assets/images/plugins/sketch_footer.png)
 
 Big choice of `[str]home` icons:
 
-![Iconify for Sketch: search results](https://docs.iconify.design/assets/images/plugins/sketch_home_grid.png)
+![Iconify for Sketch: search results](/assets/images/plugins/sketch_home_grid.png)
 
 Collections list:
 
-![Iconify for Sketch: browse collections](https://docs.iconify.design/assets/images/plugins/sketch_index.png)
+![Iconify for Sketch: browse collections](/assets/images/plugins/sketch_index.png)
 
-![Iconify for Sketch: browse collections](https://docs.iconify.design/assets/images/plugins/sketch_emoji.png)
+![Iconify for Sketch: browse collections](/assets/images/plugins/sketch_emoji.png)
 
 Importing multiple icons:
 
-![Iconify for Sketch: browsing icons set](https://docs.iconify.design/assets/images/plugins/sketch_select_multiple.png)
+![Iconify for Sketch: browsing icons set](/assets/images/plugins/sketch_select_multiple.png)
 
 ## Available icons
 
