@@ -35,7 +35,7 @@ The `[prop]options` object has the following optional properties:
 - `[prop]prefix`, `[type]string`. Icon set prefix.
 - `[prop]includeSubDirs`, `[type]boolean`. Scans files in subdirectories. Enabled by default.
 - `[prop]keyword`, `[type]function`. Callback that returns keyword for icon based on file name.
-- `[prop]ignoreImportErrors`, `[type]boolean`. Does not throw an error when an icon fails to load. Enabled by default. Disable for strict error checking.
+- `[prop]ignoreImportErrors`, `[type]boolean | "warn"`. Does not throw an error when an icon fails to load. Enabled by default. Disable for strict error checking. If set to `[str]warn`, will log warning, but will not throw an error.
 - `[prop]keepTitles`, `[type]boolean`. If enabled, keeps titles in SVG. Disabled by default.
 
 Keyword callback can be asynchronous in `[func]importDirectory()`,
