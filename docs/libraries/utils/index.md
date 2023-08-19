@@ -10,9 +10,10 @@ types:
 Iconify Utils is a set of reusable functions that are used by various Iconify icon components and related packages:
 
 - Parsing Iconify icon sets in `[type]IconifyJSON` format.
-- Exporting icons from `[type]IconifyIcon` format (can be extracted from icon set) as SVG.
+- Exporting icons from `[type]IconifyIcon` format (can be extracted from an icon set) as SVG.
+- Basic parser for SVG.
 - Parsing and validating icon names.
-- Parsing and validating colors.
+- Parsing and validating basic colors.
 - Parsing emoji sequences, generating regular expressions to find emojis in text.
 
 Library is written in TypeScript, is available as ES modules for modern development and CommonJS for older scripts.

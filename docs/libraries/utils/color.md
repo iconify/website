@@ -10,6 +10,9 @@ You can find this type in `[file]src/colors/types.ts` of [Iconify Utils source c
 
 Type is an object, with `[prop]type` property showing what color type it is, then optional properties for that type.
 
+Browsers support various complex colors, which can contain CSS variables, functions.
+Iconify Utils parser is very basic, it supports only commonly used namespaces that have been supported by all browsers for many years.
+
 ## RGB
 
 RGB color, usually converted from hexadecimal color like `[str]#ff8080`, color keyword `[str]red` or RGBA color like `[str]rgba(255, 128, 128, 0.5)`.
@@ -83,4 +86,5 @@ conversion function will return `[prop]transparent` type, making it easier to co
 
 ## Other colors
 
-This type is meant for parsing colors in SVG, not full color parsing, so it is limited only to simple colors and keywords that are important when parsing icons.
+This type is meant for parsing basic colors in SVG, not full color parsing,
+so it is limited only to simple colors and keywords that are important when parsing icons.

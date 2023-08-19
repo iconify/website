@@ -72,7 +72,7 @@ export const UtilsSidebar: SidebarItem[] = [
     }],
   },
   {
-    text: 'SVG',
+    text: 'Build SVG',
     collapsed: true,
     items: [{
       text: 'iconToSVG()',
@@ -86,6 +86,32 @@ export const UtilsSidebar: SidebarItem[] = [
     }, {
       text: 'replaceIDs()',
       link: `${root}replace-ids`,
+    }],
+  },
+  {
+    text: 'Parse SVG',
+    collapsed: true,
+    items: [{
+      text: 'parseSVGContent()',
+      link: `${root}parse-svg-content`,
+    }, {
+      text: 'buildParsedSVG()',
+      link: `${root}build-parsed-svg`,
+    }, {
+      text: 'convertParsedSVG()',
+      link: `${root}convert-parsed-svg`,
+    }, {
+      text: 'getSVGViewBox()',
+      link: `${root}get-svg-viewbox`,
+    }, {
+      text: 'splitSVGDefs()',
+      link: `${root}split-svg-defs`,
+    }, {
+      text: 'mergeDefsAndContent()',
+      link: `${root}merge-defs-and-content`,
+    }, {
+      text: 'wrapSVGContent()',
+      link: `${root}wrap-svg-content`,
     }],
   },
   {
