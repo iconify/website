@@ -47,6 +47,7 @@
     "@types/node": "^18.17.6",
     "cheerio": "1.0.0-rc.12",
     "eslint": "^8.47.0",
+    "feed": "^4.2.2",
     "highlight.js": "^11.8.0",
     "highlightjs-svelte": "^1.0.6",
     "https-localhost": "^4.7.1",

@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
 import { mdConfig } from './md'
-import { description, ogImage, ogUrl, title } from './constants'
+import { copyright, description, ogImage, ogUrl, title } from './constants'
+import { buildFeed, feedLinks } from './feed'
 import { GlobalSidebar, Nav } from './nav'
-import { buildEnd, editPageLinkPattern, preconnectLinks, socialLinks, transformHtml } from './sitemap'
+import { buildSitemap, editPageLinkPattern, preconnectLinks, socialLinks, transformHtml } from './sitemap'
 
 // import { isCI, isDevelopment } from 'std-env'
 
@@ -28,6 +29,7 @@ export default defineConfig({
     },
   },
   head: [
+    ...feedLinks,
     ...preconnectLinks,
     ['link', { rel: 'icon', href: '/favicon.ico', sizes: 'any' }],
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
@@ -74,9 +76,14 @@ export default defineConfig({
     socialLinks,
     footer: {
       message: 'Released under the Apache 2.0 License.',
-      copyright: 'Copyright © 2020-PRESENT Iconify OÜ',
+      copyright,
     },
   },
   transformHtml,
-  buildEnd,
+  buildEnd: async (siteConfig) => {
+    await Promise.all([
+      buildSitemap(siteConfig),
+      buildFeed(siteConfig),
+    ])
+  },
 })

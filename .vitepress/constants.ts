@@ -1,3 +1,4 @@
+export const copyright = 'Copyright © 2020-PRESENT Iconify OÜ'
 export const ogUrl = 'https://iconify.design/'
 export const ogImage = `${ogUrl}og-image.png`
 export const title = 'Iconify'

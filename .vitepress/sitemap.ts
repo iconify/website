@@ -72,7 +72,7 @@ export function transformHtml(code: string, id: string, { pageData }: TransformC
   }
 }
 
-export async function buildEnd({ outDir }: SiteConfig) {
+export async function buildSitemap({ outDir }: SiteConfig) {
   // TODO: include here frequency and priority
   const sitemap = new SitemapStream({
     hostname,

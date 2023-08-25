@@ -26,7 +26,7 @@ const months = {
  * @param {number|string} year
  * @returns {number}
  */
-function getNewsTime(file, year) {
+export function getNewsTime(file, year) {
   // Remove extension
   file = file.replace(/.(html|md)$/, '')
 
@@ -95,7 +95,7 @@ function linkFromTitle(title) {
  * @param {string} text
  * @returns {{link: string, title: string}}
  */
-function getMarkdownTitleLink(text) {
+export function getMarkdownTitleLink(text) {
   // {#custom-id}
   const pos = text.indexOf('{#')
   if (pos === -1)
