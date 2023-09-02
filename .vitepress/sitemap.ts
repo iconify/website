@@ -30,6 +30,7 @@ const cyberalienGithub = 'https://cyberalien.github.io'
 
 const links: SitemapEntry[] = []
 
+// eslint-disable-next-line n/prefer-global/process
 const hostname: string = isCI ? ogUrl : (process.env.HTTPS ? 'https://localhost/' : 'http://localhost:4173/')
 
 export function transformHtml(code: string, id: string, { pageData }: TransformContext): string | void {
