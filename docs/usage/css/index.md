@@ -13,17 +13,18 @@ Using icons in CSS is easy: set icon as background or mask image, use simple `[t
 
 ## Advantages
 
-It has advantages and disadvantages over [using SVG in HTML](../svg/index.md).
+There are advantages and disadvantages of using SVG in CSS over [using SVG in HTML](../svg/index.md).
 
 Advantages:
 
 - No repeating. Only one entry for each icon.
 - No deep DOM tree.
+- Can use icons from untrusted sources because if there are any scripts in SVG, they are not executed.
 
 However, it also has disadvantages:
 
 - You cannot target elements inside icons, such as changing `[prop]stroke-width`.
-- CSS usually contains all icons, including ones not used on current page.
+- CSS usually contains all icons, including ones not used on the current page.
 
 ## How icons are rendered
 

@@ -20,7 +20,7 @@ Using SVG in HTML requires embedding HTML in documents.
 
 ## Advantages
 
-It has advantages and disadvantages over [using SVG in CSS](../css/index.md).
+There are advantages and disadvantages of using SVG in HTML over [using SVG in CSS](../css/index.md).
 
 Advantages:
 
@@ -30,6 +30,16 @@ However, it also has big disadvantages:
 
 - There can be multiple entries for each icon. While this can be solved with SVG sprites, it is not always possible.
 - Deep DOM tree and large document size.
+
+### Security
+
+Additionally, there could be security concerns.
+
+SVG from untrusted sources should never be embedded in HTML.
+SVG can include scripts, links to external resources (fonts, other images) that could potentially be used for tracking.
+
+All icons in Iconify packages pass very strict validation, so they do not contain any potentially harmful content,
+such as scripts and external resources. 
 
 ## Usage
 
