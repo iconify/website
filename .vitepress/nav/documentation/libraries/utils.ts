@@ -123,6 +123,12 @@ export const UtilsSidebar: SidebarItem[] = [
     }, {
       text: 'getIconsCSS()',
       link: `${root}get-icons-css`,
+    }, {
+      text: 'getIconContentCSS()',
+      link: `${root}get-icon-content-css`,
+    }, {
+      text: 'getIconsContentCSS()',
+      link: `${root}get-icons-content-css`,
     }],
   },
   {

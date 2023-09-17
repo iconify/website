@@ -2,9 +2,9 @@
 title: getIconCSS() in Iconify Utils
 functions:
   getIconsCSS: './get-icons-css.md'
+  getIconContentCSS: './get-icon-content-css.md'
 types:
   IconifyIcon: '/docs/types/iconify-icon.md'
-  IconCSSIconOptions: './get-icon-css.md#options'
 ```
 
 # getIconCSS()
@@ -15,7 +15,11 @@ Function `[func]getIconCSS()` generates stylesheet to render an icon as a backgr
 
 It generates code only for one icon. To generate code for multiple icons at the same time, see `[func]getIconsCSS()`.
 
-To use icon in HTML, all you need to do is create any element, such as `[tag]span` with class name that you passed in `[prop]iconSelector` option.
+If instead of using icon as a background or mask image,
+you want to use icon as content of a pseudo-element, see `[func]getIconContentCSS()`.
+
+To use icon in HTML, all you need to do is create any element,
+such as `[tag]span` with class name that you passed in `[prop]iconSelector` option.
 
 ## Color
 
@@ -36,13 +40,13 @@ You can also use `[prop]color` option to convert monotone icon to icon with pale
 Function has the following parameters:
 
 - `[prop]icon`, `[type]IconifyIcon`. Icon data.
-- `[prop]options`, `[type]IconCSSIconOptions`. Options object, optional.
+- `[prop]options`. Options object, optional.
 
 Function returns `[type]string` with stylesheet for icon.
 
 ## Options
 
-Options object has the following properties:
+The `[prop]options` object has the following properties:
 
 - `[prop]iconSelector`, `[type]string`. Selector for icon, defaults to `[str].icon`.
 - `[prop]pseudoSelector`, `[type]boolean`. Set it to `true` if selector for icon is a pseudo-selector, such as `[str].icon-home:after`.
@@ -51,6 +55,7 @@ Options object has the following properties:
 - `[prop]color`: `[type]string`. Sets color for monotone icons. Also renders icons as background images.
 - `[prop]mode`: `[str]mask` or `[str]background`. Forces icon to render as mask image or background image. If not set, mode will be detected from icon content: icons that contain `[prop]currentColor` will be rendered as mask image, other icons as background image.
 - `[prop]format`. Stylesheet formatting option. Matches options used in Sass. Supported values: `[str]expanded`, `[str]compact`, `[str]compressed`.
+- `[prop]rules`, `[type]Record<string, string>`. Extra rules to add to CSS.
 
 ## Result
 

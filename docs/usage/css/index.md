@@ -37,7 +37,7 @@ You can use both types in CSS.
 
 ### Icons with palette
 
-Icons with hardcoded palette are rendered as background images:
+Icons with hardcoded palette can be rendered as background images:
 
 ```yaml
 src: usage/css-demo-bg.html
@@ -47,9 +47,26 @@ demoFirst: true
 class: usage-css-demo
 ```
 
+#### Rendering as content {#content}
+
+Icons with hardcoded palette can also be rendered as content of pseudo-elements.
+
+It is similar to using icons as background images, but with a difference: icon's size cannot be controlled with CSS.
+You need to set width and height in SVG in pixels.
+
+```yaml
+src: usage/css-demo-content.html
+css: usage/css-demo-content.scss
+demo: true
+demoFirst: true
+class: usage-css-demo
+```
+
+There are no clear advantages of rendering icons as content of pseudo-elements instead of background images.
+
 ### Monotone icons {#monotone}
 
-Monotone icons are rendered as mask images with background color set to `[prop]currentColor`:
+Monotone icons can be rendered as mask images with background color set to `[prop]currentColor`:
 
 ```yaml
 src: usage/css-demo-mask.html

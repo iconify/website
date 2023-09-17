@@ -2,10 +2,10 @@
 title: getIconsCSS() in Iconify Utils
 functions:
   getIconCSS: './get-icon-css.md'
+  getIconsContentCSS: './get-icons-content-css.md'
 types:
   IconifyIcon: '/docs/types/iconify-icon.md'
   IconifyJSON: '/docs/types/iconify-json.md'
-  IconsCSSIconOptions: './get-icons-css.md#options'
 ```
 
 # getIconsCSS()
@@ -14,13 +14,17 @@ This function is part of [Iconify Utils package](./index.md).
 
 Function `[func]getIconsCSS()` generates stylesheet for several icons from an icon set to render them as background or mask images.
 
-It generates code multiple icons from an icon set, splitting common code and icon specific code. To generate code for one icon without splitting code, see `[func]getIconCSS()`.
+It generates code multiple icons from an icon set, splitting common code and icon-specific code.
+To generate code for one icon without splitting code, see `[func]getIconCSS()`.
 
-To use icons in HTML, all you need to do is create any element, such as `[tag]span` with class names for icon set and icon.
+If instead of using icons as background or mask images,
+you want to use icons as content of pseudo-elements, see `[func]getIconsContentCSS()`.
+
+To use icons in HTML, all you need to do is create any element, such as `[tag]span` with class names for an icon set and icon.
 
 ## Color
 
-Monotone icons are rendered as mask image with background color set to `[prop]currentColor`. That means icon will use same color as text.
+Monotone icons are rendered as mask image with background color set to `[prop]currentColor`. That means icon will use the same color as text.
 
 To change icon color, simply change text color.
 
@@ -38,13 +42,13 @@ Function has the following parameters:
 
 - `[prop]iconSet`, `[type]IconifyJSON`. Icon set data.
 - `[prop]names`, `[type]string[]`. Array of icon names.
-- `[prop]options`, `[type]IconsCSSIconOptions`. Options object, optional.
+- `[prop]options`. Options object, optional.
 
 Function returns `[type]string` with stylesheet for icons.
 
 ## Options
 
-Options object has the following properties:
+The `[prop]options` object has the following properties:
 
 - `[prop]iconSelector`, `[type]string`. Selector for icon, defaults to `[str].icon--{prefix}--{name}`. Variable `[str]{prefix}` is replaced with icon set prefix, `[str]{name}` with icon name.
 - `[prop]commonSelector`, `[type]string`. Common selector for icons, defaults to `[str].icon--{prefix}`. Set it to empty to disable common code (see one of examples below). Variable `[str]{prefix}` is replaced with icon set prefix.
@@ -55,6 +59,7 @@ Options object has the following properties:
 - `[prop]color`: `[type]string`. Sets color for monotone icons. Also renders icons as background images.
 - `[prop]mode`: `[str]mask` or `[str]background`. Forces icon to render as mask image or background image. If not set, mode will be detected from icon content: icons that contain `[prop]currentColor` will be rendered as mask image, other icons as background image.
 - `[prop]format`. Stylesheet formatting option. Matches options used in Sass. Supported values: `[str]expanded`, `[str]compact`, `[str]compressed`.
+- `[prop]rules`, `[type]Record<string, string>`. Extra rules to add to CSS.
 
 ## Result
 

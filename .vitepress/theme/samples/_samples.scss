@@ -212,6 +212,7 @@
   display: flex;
   @import './usage/css-demo-bg';
   @import './usage/css-demo-mask';
+  @import './usage/css-demo-content';
 
   // Set color for main demo, spacing between different types
   .background-demo + .mask-demo {

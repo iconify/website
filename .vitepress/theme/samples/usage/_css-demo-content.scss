@@ -1,0 +1,7 @@
+.content-demo::after {
+	content: url('https://api.iconify.design/bi/bell-fill.svg?height=32&color=gray');
+}
+
+.content-demo--2::after {
+	content: url('https://api.iconify.design/fluent-emoji-flat/memo.svg?height=32');
+}

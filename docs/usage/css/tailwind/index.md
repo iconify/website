@@ -15,7 +15,7 @@ You can use [over 60,000 open source icons](/docs/icons/icon-data.md) and custom
 
 ## Options
 
-There are 2 plugins, developed by different developers:
+There are two plugins, developed by different developers:
 
 - [@iconify/tailwind](https://github.com/iconify/iconify/tree/main/plugins/tailwind)
 - [@egoist/tailwindcss-icons](https://github.com/egoist/tailwindcss-icons)
@@ -94,7 +94,7 @@ Examples:
 <span class="icon-[carbon--edit-off]"></span>
 ```
 
-Make sure prefix and icon name are separated with 2 hyphens: `[str]--`.
+Make sure prefix and icon name are separated with two hyphens: `[str]--`.
 
 Why such complex syntax? It is because of Tailwind CSS limitations. It can handle dynamic class names only if they are created in format `[str]rule-[value]`.
 
