@@ -90,3 +90,9 @@ There are several downsides of using API to get icon data:
 - Overhead in icon components that loads icon data on demand.
 
 API also provides list of available icon sets and icons, which can be used to build applications for browsing and searching icons, such as various plugins and icon pickers.
+
+### SVG
+
+There are no special packages for SVG files, but you can generate them yourself using [Iconify Tools](/docs/libraries/tools/index.md).
+
+In Iconify Tools examples, you can find a [simple script that exports all icons as SVGs](/docs/libraries/tools/examples/export-svg.md).

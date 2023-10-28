@@ -267,6 +267,9 @@ export const ToolsSidebar: SidebarItem[] = [
     collapsed: true,
     link: `${root}examples/`,
     items: [{
+      text: 'Export all Iconify icon sets as SVG',
+      link: `${root}examples/export-svg`,
+    }, {
       text: 'Convert Material Design Icons to Iconify JSON format',
       link: `${root}examples/import-mdi`,
     }, {

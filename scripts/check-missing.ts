@@ -1,9 +1,10 @@
+import { cwd } from 'node:process'
 import { resolve } from 'node:path'
 import { lstatSync, readdirSync } from 'node:fs'
 import type { SidebarItem } from '../.vitepress/nav/sidebar-item'
 import { GlobalSidebar } from '../.vitepress/nav/sidebar'
 
-const rootFolder = process.cwd()
+const rootFolder = cwd()
 const distFolder = resolve(rootFolder, 'dist')
 
 const ignoredFiles = new Set([

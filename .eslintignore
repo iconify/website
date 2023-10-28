@@ -2,3 +2,4 @@ build
 node_modules
 !.vitepress
 .vitepress/cache/deps/*.*
+code-samples
