@@ -85,11 +85,12 @@ API is intended to be used when you don't know which icons you need. [Several ic
 
 There are several downsides of using API to get icon data:
 
-- Requires visitor to be online. Not usable in offline applications.
+- Requires a visitor to be online. Not usable in offline applications.
 - Relies on third party service, though you can host your own Iconify API instances.
-- Overhead in icon components that loads icon data on demand.
+- Icon components contain overhead: code that downloads icon data on demand.
 
-API also provides list of available icon sets and icons, which can be used to build applications for browsing and searching icons, such as various plugins and icon pickers.
+API also provides a list of available icon sets and icons, 
+which can be used to build applications for browsing and searching icons, such as various plugins and icon pickers.
 
 ### SVG
 

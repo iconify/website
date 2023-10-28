@@ -18,6 +18,6 @@ title: 'export-svg.mjs'
 Then run that file:
 
 ```bash
-node lib/export-svg.mjs
+node export-svg.mjs
 ```
 
