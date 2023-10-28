@@ -44,7 +44,7 @@ See contact information below.
     </a>
 </div>
 
-
+<!--
 ## Figma plug-in banner
 
 If you want something for sponsoring the Iconify project,
@@ -59,5 +59,7 @@ Promotion includes:
 
 If your commercial project can be useful for designers, and you would like to promote it, please contact me.
 Contact information is available below.
+
+-->
 
 <contact-info />

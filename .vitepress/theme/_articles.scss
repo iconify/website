@@ -114,9 +114,9 @@
 }
 
 // Anchor
-div.vp-doc .header-anchor {
-  position: relative;
+div.vp-doc a.header-anchor {
   width: 24px;
+
   &:before {
     content: '';
     display: block;

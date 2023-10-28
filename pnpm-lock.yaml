@@ -113,8 +113,8 @@ devDependencies:
     specifier: ^0.25.2
     version: 0.25.2(vue@3.3.7)
   vitepress:
-    specifier: 1.0.0-beta.2
-    version: 1.0.0-beta.2(@algolia/client-search@4.19.1)(@types/node@18.18.7)(sass@1.69.5)(search-insights@2.6.0)(typescript@5.2.2)
+    specifier: 1.0.0-rc.24
+    version: 1.0.0-rc.24(@algolia/client-search@4.19.1)(@types/node@18.18.7)(postcss@8.4.31)(sass@1.69.5)(search-insights@2.6.0)(typescript@5.2.2)
   yaml:
     specifier: ^2.3.3
     version: 2.3.3
@@ -1077,6 +1077,13 @@ packages:
       '@types/mdurl': 1.0.2
     dev: true
 
+  /@types/markdown-it@13.0.5:
+    resolution: {integrity: sha512-QhJP7hkq3FCrFNx0szMNCT/79CXfcEgUIA3jc5GBfeXqoKsk3R8JZm2wRXJ2DiyjbPE4VMFOSDemLFcUTZmHEQ==}
+    dependencies:
+      '@types/linkify-it': 3.0.2
+      '@types/mdurl': 1.0.2
+    dev: true
+
   /@types/mdast@3.0.11:
     resolution: {integrity: sha512-Y/uImid8aAwrEA24/1tcRZwpxX3pIFTSilcNDKSPn+Y2iDywSEachzRuvgAYYLR3wpGXAsMbv5lvKLDZLeYPAw==}
     dependencies:
@@ -1866,10 +1873,6 @@ packages:
       unpipe: 1.0.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /body-scroll-lock@4.0.0-beta.0:
-    resolution: {integrity: sha512-a7tP5+0Mw3YlUJcGAKUqIBkYYGlYxk2fnCasq/FUph1hadxlTRjF+gAcZksxANnaMnALjxEddmSi/H3OR8ugcQ==}
     dev: true
 
   /boolbase@1.0.0:
@@ -5280,20 +5283,29 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress@1.0.0-beta.2(@algolia/client-search@4.19.1)(@types/node@18.18.7)(sass@1.69.5)(search-insights@2.6.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-DBXYjtYbm3W1IPPJ2TiCaK/XK+o/2XmL2+jslOGKm+txcbmG0kbeB+vadC5tCUZA9NdA+9Ywj3M4548c7t/SDg==}
+  /vitepress@1.0.0-rc.24(@algolia/client-search@4.19.1)(@types/node@18.18.7)(postcss@8.4.31)(sass@1.69.5)(search-insights@2.6.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-RpnL8cnOGwiRlBbrYQUm9sYkJbtyOt/wYXk2diTcokY4yvks/5lq9LuSt+MURWB6ZqwpSNHvTmxgaSfLoG0/OA==}
     hasBin: true
+    peerDependencies:
+      markdown-it-mathjax3: ^4.3.2
+      postcss: ^8.4.31
+    peerDependenciesMeta:
+      markdown-it-mathjax3:
+        optional: true
+      postcss:
+        optional: true
     dependencies:
       '@docsearch/css': 3.5.2
       '@docsearch/js': 3.5.2(@algolia/client-search@4.19.1)(search-insights@2.6.0)
+      '@types/markdown-it': 13.0.5
       '@vitejs/plugin-vue': 4.3.1(vite@4.5.0)(vue@3.3.7)
       '@vue/devtools-api': 6.5.1
       '@vueuse/core': 10.5.0(vue@3.3.7)
       '@vueuse/integrations': 10.5.0(focus-trap@7.5.4)(vue@3.3.7)
-      body-scroll-lock: 4.0.0-beta.0
       focus-trap: 7.5.4
       mark.js: 8.11.1
       minisearch: 6.1.0
+      postcss: 8.4.31
       shiki: 0.14.5
       vite: 4.5.0(@types/node@18.18.7)(sass@1.69.5)
       vue: 3.3.7(typescript@5.2.2)

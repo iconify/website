@@ -61,7 +61,7 @@ const visible = computed(() => !props.item.hidden || isActiveLink.value || hasAc
         // Add depth parameter, to show prev link on same depth
         code = append(code, 'recursivelyExtractLinks(items', ', depth, parentHidden', file)
         code = append(code, 'for (const item of items) {', ' const hidden = item.hidden ? item : parentHidden;', file)
-        code = append(code, 'links.push({ text: item.text,', ' depth, hidden,', file)
+        code = append(code, 'docFooterText: item.docFooterText', ', depth, hidden', file)
         code = append(code, 'recursivelyExtractLinks(item.items', ', depth + 1, hidden', file)
         code = append(code, 'recursivelyExtractLinks(sidebar', ', 0, null', file)
         return code
