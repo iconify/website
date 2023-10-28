@@ -24,7 +24,7 @@ All these icons are:
 
 To make it easier for developers to work with icons, there are several ways to get data for icons.
 
-Main source of icon sets is [iconify/icon-sets](https://github.com/iconify/icon-sets) repository on GitHub. Icon sets are stored in `[type]IconifyJSON` format.
+The main source of icon sets is [iconify/icon-sets](https://github.com/iconify/icon-sets) repository on GitHub. Icon sets are stored in `[type]IconifyJSON` format.
 
 In addition to git repository, icon sets are available as:
 
@@ -32,10 +32,9 @@ In addition to git repository, icon sets are available as:
 - Packagist package `[packagist]iconify/json` for PHP developers.
 - NPM package `[npm]@iconify/collections` that contains only list of available icon sets (file `[file]collections.json` from big package).
 - Smaller NPM packages `[npm]@iconify-json/*` that contain only one icon set per package in `[type]IconifyJSON` format.
-- Smaller NPM packages `[npm]@iconify-icons/*` and `[npm]@iconify/icons-*` that contain only one icon set per package, data for each icon in separate file in `[type]IconifyIcon` format.
 - [Iconify API](/docs/api/index.md) that can be used to retrieve icon data on demand.
 
-Below is description of each of those sources.
+Below is a description for each of those sources.
 
 ### All icons
 
@@ -45,13 +44,13 @@ You can get the latest version of package from the following sources:
 - From NPM: `[npm]@iconify/json`.
 - From Packagist: `[packagist]iconify/json`.
 
-Package is big and might take a while to download.
+This package is big and might take a while to download.
 
 See [big icons package documentation](./all.md) for list of files, functions and usage examples.
 
 ### Icon set list {#collections}
 
-If you want to get list of all available icon sets, it is:
+If you want to get a list of all available icon sets, it is:
 
 - included in big package listed above as `[file]collections.json`.
 - available icon sets is available as NPM package `[npm]@iconify/collections`.
@@ -64,6 +63,7 @@ Each icon set is also published as a separate NPM package `[npm]@iconify-json/{p
 
 See [split icon sets packages](./json.md) for more details.
 
+<!--
 ### Individual icons {#icons}
 
 There are also packages for each icon set `[npm]@iconify-icons/{prefix}`, where each icon is stored in a separate file `[npm]@iconify-icons/{prefix}/{name}` (where `[str]{prefix}` is icon set prefix, `[str]{name}` is icon name) in `[type]IconifyIcon` format.
@@ -71,6 +71,7 @@ There are also packages for each icon set `[npm]@iconify-icons/{prefix}`, where 
 This makes it easy to bundle data for individual icons or load them from a server one icon at a time.
 
 See [individual icon packages](./icons.md) for details.
+-->
 
 ### API
 

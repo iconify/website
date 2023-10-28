@@ -25,6 +25,7 @@ export const IconsSidebar: SidebarItem[] = [
     }, {
       text: 'Individual Icons',
       link: `${root}icons`,
+      hidden: true,
     }],
   }, {
     text: 'Custom Icon Sets',

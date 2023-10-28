@@ -35,7 +35,7 @@ All icons are:
 - Validated and cleaned up.
 - Automatically kept up to date.
 
-See [how to get icon data](./icon-data.md) for list of packages and repositories where you can get icon data.
+See [how to get icon data](./icon-data.md) for a list of packages and repositories where you can get icon data.
 
 Iconify ecosystem offers [many tools to help developers use these icons](/docs/usage/index.md).
 

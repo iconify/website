@@ -8,9 +8,11 @@ functions:
 
 # Split icon packages
 
-For developer's convenience, [full icon sets package](./all.md) is also available as smaller packages.
+`include notices/split-icons`
 
-This documentation is for packages that contain many files, one per icon. These packages can be used if you need to import only few icons without parsing whole icon set.
+For developer's convenience, [full icon sets package](./all.md) was also available as smaller packages.
+
+This documentation is for packages that contain many files, one per icon. These packages can be used if you need to import only few icons without parsing the whole icon set.
 
 Be aware that some packages might contain many files, which some file systems cannot handle.
 
