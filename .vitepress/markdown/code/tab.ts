@@ -45,7 +45,7 @@ export function addCodeTab(
   }
 
   // Change content
-  const raw = cleanupCode(lang, code)
+  const raw = cleanupCode(lang, replace(code))
 
   // Add tab
   getCodeTabs().push({
