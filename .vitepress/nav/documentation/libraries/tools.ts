@@ -158,6 +158,9 @@ export const ToolsSidebar: SidebarItem[] = [
     }, {
       text: 'scaleSVG()',
       link: `${iconRoot}scale`,
+    }, {
+      text: 'convertSVGToMask()',
+      link: `${iconRoot}mask`,
     }],
   }, {
     text: 'Import',
@@ -269,6 +272,9 @@ export const ToolsSidebar: SidebarItem[] = [
     items: [{
       text: 'Export all Iconify icon sets as SVG',
       link: `${root}examples/export-svg`,
+    }, {
+      text: 'Import icon set from Figma',
+      link: `${root}examples/import-figma`,
     }, {
       text: 'Convert Material Design Icons to Iconify JSON format',
       link: `${root}examples/import-mdi`,

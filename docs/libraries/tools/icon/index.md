@@ -11,11 +11,14 @@ functions:
   parseColors: './colors.md'
   deOptimisePaths: './paths.md'
   scaleSVG: './scale.md'
+  convertSVGToMask: './mask.md'
 ```
 
 # Changing icon content
 
-Before exporting icons, you need to properly fix them. [Iconify Tools](./index.md) offers many functions for manipulating icon content: fixing icons, optimising icons, fixing palette.
+Before exporting icons, you need to properly fix them.
+[Iconify Tools](./index.md) offers many functions for manipulating icon content: fixing various issues, 
+optimising code, changing palette.
 
 ## Usage
 
@@ -68,3 +71,17 @@ All browsers support modern SVG, which include compressed arcs in `[tag]path` el
 ### scaleSVG()
 
 Function `[func]scaleSVG()` changes icon dimensions.
+
+### resetSVGOrigin()
+
+Function `[func]resetSVGOrigin()` shifts top left corner of `[prop]viewBox` to 0.
+
+### removeFigmaClipPathFromSVG()
+
+Function `[func]removeFigmaClipPathFromSVG()` attempts to remove unnecessary clip paths, which are often added when icon is exported in Figma.
+
+### convertSVGToMask()
+
+Function `[func]convertSVGToMask()` converts icon content to mask.
+
+This is useful if you want to change icon with multiple colors into a monotone icon, using source colors as shades.

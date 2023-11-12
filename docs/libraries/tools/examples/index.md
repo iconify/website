@@ -21,5 +21,6 @@ The following code samples are short, yet complete enough to be usable:
 Several examples for specific icon sets:
 
 - [Export all Iconify icon sets as SVG](./export-svg.md).
+- [Import icon set from Figma, clean it up (also shows how to work with two-tone icons), export as IconifyJSON and SVG](./import-figma.md).
 - [Convert Material Design Icons to Iconify JSON format](./import-mdi.md).
 - [Convert FontAwesome Pro to Iconify JSON format](./import-fa-pro.md).
