@@ -48,9 +48,9 @@ export const contentReplacements = {
     'import-tools2': '@iconify/tools',
   },
   'counters': {
-    'sets': '100',
-    'icons': '150,000',
-    'icons-short': '150k',
+    'sets': '150',
+    'icons': '200,000',
+    'icons-short': '200k',
   },
   'icons': {
     'hash': 'line-md:hash-small',
@@ -58,7 +58,7 @@ export const contentReplacements = {
     'chevron-right': 'line-md:chevron-small-double-right',
   },
   'links': {
-    'iconify': 'https://code.iconify.design/3/3.1.0/iconify.min.js',
+    'iconify': 'https://code.iconify.design/3/3.1.1/iconify.min.js',
     'issues': 'https://github.com/iconify/iconify/issues',
     'sponsor': 'https://github.com/iconify/iconify',
     'figma3-repo': 'https://github.com/iconify/iconify-figma',

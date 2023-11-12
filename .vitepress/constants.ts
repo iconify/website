@@ -7,7 +7,7 @@ export const description = 'All popular icon sets, one framework'
 export const hero = {
   title: 'Freedom to choose icons',
   p1: 'All popular icon sets, one framework.',
-  p2: 'Over 150,000 open source vector icons.',
+  p2: 'Over 200,000 open source vector icons.',
 }
 export const license = {
   title: 'License',
