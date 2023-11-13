@@ -14,3 +14,4 @@ node_modules
 vite.config.ts.timestamp-*
 .vitepress/cache/
 .vitepress/dist/
+/news/*.md
