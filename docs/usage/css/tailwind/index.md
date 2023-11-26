@@ -55,7 +55,7 @@ To install it, add `[npm]@iconify/tailwind` as dev dependency:
 npm i -D @iconify/tailwind
 ```
 
-Then open `[file]tailwind.config.js`, import `[func]addDynamicIconSelectors` from `[npm]@iconify/tailwind` and add it to list of plugins.
+Then open `[file]tailwind.config.js`, import `[func]addDynamicIconSelectors` from `[npm]@iconify/tailwind` and add it to a list of plugins.
 
 Example `[file]tailwind.config.js`:
 
@@ -74,7 +74,9 @@ module.exports = {
 
 ### Icon sets
 
-You also need to install icon sets as dev dependencies. You can install either full package `[npm]@iconify/json` or packages for icon sets you want to use `[npm]@iconify-json/{prefix}`.
+You also need to install icon sets as dev dependencies. 
+You can install either full package `[npm]@iconify/json` or packages for icon sets, 
+you want to use `[npm]@iconify-json/{prefix}`.
 
 See [icon data documentation](/docs/icons/icon-data.md).
 
@@ -96,7 +98,9 @@ Examples:
 
 Make sure prefix and icon name are separated with two hyphens: `[str]--`.
 
-Why such complex syntax? It is because of Tailwind CSS limitations. It can handle dynamic class names only if they are created in format `[str]rule-[value]`.
+Why such a complex syntax?
+It is because of Tailwind CSS limitations.
+It can handle dynamic class names only if they are created in format `[str]rule-[value]`.
 
 ## Issues
 
@@ -123,7 +127,12 @@ First, make sure the class name is correct. If it is correct, most likely Tailwi
 
 To change icon color, change text color. See [how monotone icons work in CSS](../index.md#monotone).
 
-By default, icon's height is set to `[str]1em`. Width can be different, depending on an icon. To change icon size, set `[prop]font-size`.
+By default, icon's height is set to `[str]1em`.
+Width can be different, depending on an icon. 
+To change icon size, set `[prop]font-size`.
+
+You can also set option `[prop]scale` to `[num]0`, which will force plugin to not set any size,
+and use custom size, see [plugin options documentation](./options.md).
 
 ## Advanced usage
 
@@ -137,7 +146,9 @@ The plugin has various options:
 
 See [plugin options documentation](./options.md).
 
-There is also a second plugin included, which behaves a bit differently. Instead of dynamic classes such as `[str]icon-[mdi-light--home]`, it can generate CSS with clean classes, such as `[str]icon--mdi-light--home` and reduce duplication.
+There is also a second plugin included, which behaves a bit differently.
+Instead of dynamic classes such as `[str]icon-[mdi-light--home]`, it can generate CSS with clean classes, 
+such as `[str]icon--mdi-light--home` and reduce duplication.
 
 See [clean classnames documentation](./clean.md).
 
@@ -145,4 +156,5 @@ See [clean classnames documentation](./clean.md).
 
 You can add plugin to the plugin list in Tailwind CSS config multiple times, with different options.
 
-Each `[func]addDynamicIconSelectors()` entry in the plugin list should have different `[prop]prefix` option to avoid conflicts. Default value for `[prop]prefix` is `[str]icon`.
+Each `[func]addDynamicIconSelectors()` entry in the plugin list should have different `[prop]prefix` option 
+to avoid conflicts. The default value for `[prop]prefix` is `[str]icon`.
