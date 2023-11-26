@@ -34,7 +34,7 @@ Option `[prop]prefix` sets prefix for dynamic class names.
 
 Default value is `[str]icon`.
 
-For example, if you set it to `[str]icon-hover`, like in code sample above, you can use icons as `[str]icon-hover-[mdi-ligh--home]`.
+For example, if you set it to `[str]icon-hover`, like in a code sample above, you can use icons as `[str]icon-hover-[mdi-ligh--home]`.
 
 Value must not include `[str]-` at the end. Class names will always have `[str]-` added after prefix. That's how Tailwind CSS dynamic class names work.
 
