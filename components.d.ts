@@ -25,5 +25,7 @@ declare module 'vue' {
     LongArrow: typeof import('./.vitepress/theme/components/LongArrow.vue')['default']
     NamespacesAnimation: typeof import('./.vitepress/theme/components/NamespacesAnimation.vue')['default']
     NamespacesName: typeof import('./.vitepress/theme/components/NamespacesName.vue')['default']
+    VPCarbonAds: typeof import('./.vitepress/theme/components/VPCarbonAds.vue')['default']
+    VPCustomAds: typeof import('./.vitepress/theme/components/VPCustomAds.vue')['default']
   }
 }

@@ -190,3 +190,21 @@
   --vp-code-tab-hover-text-color: var(--vp-c-text-dark-1);
   --vp-code-copy-code-active-text: var(--vp-c-text-dark-2);
 }
+
+/**
+ * Streamline
+ */
+:root {
+  --c-streamline-border: #C8C8C8;
+  --c-streamline-border-hover: #45BD00;
+  --c-streamline-text: #000;
+  --url-streamline: url('/assets/images/streamline-white.gif');
+  --url-streamline-icons: url('/assets/images/streamline-icons.svg');
+}
+
+.dark {
+  --c-streamline-border: #fff;
+  --c-streamline-border-hover: #BFFB4F;
+  --c-streamline-text: #fff;
+  --url-streamline: url('/assets/images/streamline-black.gif');
+}

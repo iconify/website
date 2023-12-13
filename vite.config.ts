@@ -4,6 +4,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import navbar from './plugins/navbar'
 import sidebar from './plugins/sidebar'
 import footer from './plugins/footer'
+import ads from './plugins/ads'
 
 export default defineConfig({
   optimizeDeps: {
@@ -37,5 +38,6 @@ export default defineConfig({
     navbar(),
     sidebar(),
     footer(),
+    ads(),
   ],
 })
