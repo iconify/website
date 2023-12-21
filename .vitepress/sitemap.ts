@@ -18,7 +18,7 @@ export const socialLinks: DefaultTheme.SocialLink[] = [
   { icon: 'twitter', link: 'https://twitter.com/slava_trushkin' },
   { icon: 'github', link: 'https://github.com/iconify' },
   { icon: 'linkedin', link: 'https://www.linkedin.com/in/trushkin/' },
-  { icon: 'youtube', link: 'https://www.youtube.com/@webdevstuff' },
+  // { icon: 'youtube', link: 'https://www.youtube.com/@webdevstuff' },
 ]
 
 interface SitemapEntry {
