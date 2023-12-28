@@ -12,9 +12,13 @@ Function `[func]mergeIconSets()` merges to icon sets, creating new `[type]IconSe
 
 ## Why merge icon sets?
 
-When you update icon set, often old icons are lost. If someone is using an old icon, which no longer exists or was renamed, removing that icon will result in broken UI. This is why icons should never be removed.
+When you update an icon set, often old icons are lost.
+If someone is using an old icon, which no longer exists or was renamed, removing that icon will result in a broken UI.
+This is why icons should never be removed.
 
-Merging new icon set and old icon set ensures that icons are never removed. Merge process adds missing icons, but marks them as hidden, so they are not shown in icons list, but are available to anyone using old icons.
+Merging new icon set and old icon set ensures that icons are never removed.
+Merge process adds missing icons, but marks them as hidden,
+so they are not shown in icons list, but are available to anyone using old icons.
 
 This function attempts to detect renamed icons, creating aliases for those icons.
 

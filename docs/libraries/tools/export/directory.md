@@ -27,9 +27,9 @@ Function is asynchronous. That means you need to handle it as `[class]Promise` i
 
 ### Options
 
-Options object has the following mandatory property:
+The `[prop]options` object has the following mandatory property:
 
-- `[prop]target`, `[type]string`. Target directory. If directory is missing, it will be created.
+- `[prop]target`, `[type]string`. Target directory. If a directory is missing, it will be created.
 
 and the following optional properties:
 

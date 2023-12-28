@@ -13,11 +13,17 @@ This function is part of `[type]IconSet` class in [Iconify Tools](../index.md).
 
 Function `[func]toSVG()` exports icon as `[type]SVG` instance.
 
-It is used to process icon using functions that work with `[type]SVG` instances, then importing it back using `[func]fromSVG()` method.
+It is used to process icon using functions that work with `[type]SVG` instances.
+
+### Important notice
+
+`[type]SVG` instance is not synchronised with an icon set.
+
+After changing icon, you need to update entry in `[type]IconSet` using `[func]fromSVG()` method.
 
 ## Usage
 
-Function has the following parameter:
+The function has the following parameter:
 
 - `[prop]name`, `[type]string`. Icon name.
 

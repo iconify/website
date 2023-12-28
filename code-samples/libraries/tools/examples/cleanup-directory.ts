@@ -15,10 +15,13 @@ import {
 	const target = 'htdocs/assets/test.json';
 
 	// Load icon set
-	const iconSet = await importDirectory(source);
+	const iconSet = await importDirectory(source, {
+		// Set prefix for imported icon set to 'test'
+		prefix
+	});
 
 	// Parse all icons
-	await iconSet.forEach(async (name, type) => {
+	await iconSet.forEach((name, type) => {
 		if (type !== 'icon') {
 			// Do not parse aliases
 			return;
@@ -29,13 +32,13 @@ import {
 
 		// Clean up and validate icon
 		// This will throw an exception if icon is invalid
-		await cleanupSVG(svg);
+		cleanupSVG(svg);
 
 		// Change color to `currentColor`
 		// Skip this step if icon has hardcoded palette
 		const blackColor = stringToColor('black');
 		const whiteColor = stringToColor('white');
-		await parseColors(svg, {
+		parseColors(svg, {
 			defaultColor: 'currentColor',
 			callback: (attr, colorStr, color) => {
 				if (!color) {
@@ -63,10 +66,10 @@ import {
 		});
 
 		// Optimise
-		await runSVGO(svg);
+		runSVGO(svg);
 
 		// Update paths for compatibility with old software
-		await deOptimisePaths(svg);
+		deOptimisePaths(svg);
 
 		// SVG instance is detached from icon set, so changes to
 		// icon are not stored in icon set automatically.

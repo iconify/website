@@ -13,7 +13,9 @@ This function is part of `[type]IconSet` class in [Iconify Tools](../index.md).
 
 Function `[func]forEach()` runs a custom callback for all icons in icon set.
 
-Function supports asynchronous callbacks. If you use asynchronous callback, function is asynchronous as well. If you use synchronous callback, you can treat function as synchronous.
+Function supports asynchronous callbacks. 
+
+If you use synchronous callback, you can treat function as synchronous, or you can use `[func]forEachSync()` alias.
 
 ## Usage
 

@@ -46,7 +46,7 @@ Type `[type]IconSetIconEntry` is a set of 3 types:
 - `[type]IconSetIconAlias` represents alias (`[js]type = 'alias'`).
 - `[type]IconSetIconVariation` represents icon variation (`[js]type = 'variation'`).
 
-To check type, access `[prop]type` property of icon data.
+To check the type, access `[prop]type` property of icon data.
 
 ## Properties
 

@@ -82,7 +82,7 @@ const basePrefix = 'fa-pro-';
 		iconSet.info = info;
 
 		// Validate, clean up, fix palette and optimise
-		await iconSet.forEach(async (name, type) => {
+		iconSet.forEachSync((name, type) => {
 			if (type !== 'icon') {
 				return;
 			}
@@ -98,10 +98,10 @@ const basePrefix = 'fa-pro-';
 			// Clean up and optimise icons
 			try {
 				// Clean up icon code
-				await cleanupSVG(svg);
+				cleanupSVG(svg);
 
 				// Replace color with currentColor, add if missing
-				await parseColors(svg, {
+				parseColors(svg, {
 					defaultColor: 'currentColor',
 					callback: (attr, colorStr, color) => {
 						return !color || isEmptyColor(color) ? colorStr : 'currentColor';
@@ -109,7 +109,7 @@ const basePrefix = 'fa-pro-';
 				});
 
 				// Optimise
-				await runSVGO(svg);
+				runSVGO(svg);
 			} catch (err) {
 				// Invalid icon
 				console.error(`Error parsing ${name}:`, err);

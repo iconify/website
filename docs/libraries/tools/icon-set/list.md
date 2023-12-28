@@ -13,15 +13,13 @@ This function is part of `[type]IconSet` class in [Iconify Tools](../index.md).
 
 Function `[func]list()` lists all icons in an icon set.
 
-It replaces existing icon set data, so it is identical to creating new `[type]IconSet` instance. If you want to merge icon sets instead, see `[func]mergeIconSets()` function.
-
 ## Usage
 
-Function has the following parameter:
+The function has the following parameter:
 
 - `[prop]type`, `[type]string[]`. Optional. Icon types to list, default is `[js]['icon', 'variation']`.
 
-Function returns array of icon names `[type]string[]`.
+Function returns an array of icon names `[type]string[]`.
 
 ## Icon types
 

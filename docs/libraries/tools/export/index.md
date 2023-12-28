@@ -56,7 +56,7 @@ See [exporting icons as SVG](./svg.md) documentation.
 
 There are different types of icon packages published at NPM, there are functions for exporting each type:
 
-- Function `[func]exportIconPackage()` creates NPM package with one file per icon. This is used when user needs only only few icons.
-- Function `[func]exportJSONPackage()` creates NPM package with entire icon set in one file. This is used to get an entire icon set.
+- Function `[func]exportIconPackage()` creates NPM package with one file per icon. This is used when a user needs only a few icons. This method is deprecated, but function is still maintained because some developers use it.
+- Function `[func]exportJSONPackage()` creates NPM package with an entire icon set in one file. This is used to get an entire icon set.
 
 Functions do not publish packages, they only generate contents. Run `[bash]npm publish` to publish generated packages.

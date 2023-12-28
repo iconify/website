@@ -11,9 +11,10 @@ functions:
 
 This property is part of `[type]IconSet` class in [Iconify Tools](../index.md).
 
-Property `[prop]info` contains icon set information in `[type]IconifyInfo` format. It includes icon set name, license, author information and some other data relevant when displaying icon set.
+Property `[prop]info` contains icon set information in `[type]IconifyInfo` format.
+It includes icon set name, license, author information and some other data relevant when displaying an icon set.
 
-If icon set does not have information block, value is `[type]null`.
+If an icon set does not have the information block, value is `[type]null`.
 
 You can write to property directly to update value.
 
@@ -21,4 +22,5 @@ You can write to property directly to update value.
 
 Value is used when exporting icon set using `[func]export()` function.
 
-Number of icon in icon set is automatically updated when running `[func]export()` function, so no need to update it manually.
+Icons count in `[prop]info` property is automatically updated when running `[func]export()` function,
+so no need to update it manually.

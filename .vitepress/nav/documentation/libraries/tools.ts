@@ -63,43 +63,43 @@ export const ToolsSidebar: SidebarItem[] = [
       {
         text: 'entries()',
         link: `${iconSetRoot}entries`,
-      }],
-    }, {
-      text: 'Importing',
-      collapsed: true,
-      items: [{
-        text: 'prefix',
-        link: `${iconSetRoot}prefix`,
       },
       {
         text: 'resolve()',
         link: `${iconSetRoot}resolve`,
-      },
-      {
-        text: 'load()',
-        link: `${iconSetRoot}load`,
-      },
-      {
-        text: 'export()',
-        link: `${iconSetRoot}export`,
-      },
-      {
-        text: 'toSVG()',
-        link: `${iconSetRoot}to-svg`,
-      },
-      {
-        text: 'fromSVG()',
-        link: `${iconSetRoot}from-svg`,
-      },
-      {
-        text: 'toString()',
-        link: `${iconSetRoot}to-string`,
       }],
+    }, {
+      text: 'Import / Export',
+      collapsed: true,
+      items: [
+        {
+          text: 'load()',
+          link: `${iconSetRoot}load`,
+        },
+        {
+          text: 'export()',
+          link: `${iconSetRoot}export`,
+        },
+        {
+          text: 'toSVG()',
+          link: `${iconSetRoot}to-svg`,
+        },
+        {
+          text: 'fromSVG()',
+          link: `${iconSetRoot}from-svg`,
+        },
+        {
+          text: 'toString()',
+          link: `${iconSetRoot}to-string`,
+        }],
     }, {
       text: 'Metadata',
       collapsed: true,
       items: [{
-        text: 'info()',
+        text: 'prefix',
+        link: `${iconSetRoot}prefix`,
+      }, {
+        text: 'info',
         link: `${iconSetRoot}info`,
       },
       {

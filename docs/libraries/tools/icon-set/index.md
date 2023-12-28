@@ -6,6 +6,7 @@ types:
 functions:
   validateIconSet: '../../utils/validate-icon-set.md'
   forEach: './for-each.md'
+  forEachSync: './for-each.md'
 ```
 
 # IconSet class

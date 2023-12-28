@@ -20,6 +20,19 @@ src: icon-components/common/offline.jsx
 
 See [split icon packages documentation](/docs/icons/icons.md) for details.
 
+### Deprecation notice
+
+This function is deprecated, but it is still maintained for developers that do rely on it.
+
+Single icon packages were needed in the early stages of Iconify project. 
+In the modern Node ecosystem, this is no longer needed.
+Tools like Vite can be used to generate content on demand, including single file packages.
+Packages like Unplugin Icons dynamically generate icon components.
+
+Single icon packages are no longer needed and should be avoided.
+If you need to extract data for few icons, 
+do it during the build process of your app as either a custom script or a Vite plugin.
+
 ## Usage
 
 Function has the following parameters:
@@ -33,9 +46,9 @@ Function is asynchronous. That means you need to handle it as `[class]Promise` i
 
 ### Options
 
-Options object has the following mandatory property:
+The `[prop]options` object has the following mandatory property:
 
-- `[prop]target`, `[type]string`. Target directory. If directory is missing, it will be created.
+- `[prop]target`, `[type]string`. Target directory. If a directory is missing, it will be created.
 
 and the following optional properties:
 

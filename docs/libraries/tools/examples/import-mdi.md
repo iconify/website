@@ -33,9 +33,9 @@ Prepared project is available in [Iconify Tools GitHub repository](https://githu
 
 ## How does it work?
 
-There are comments in code above that explain what is going on.
+There are comments in the code above that explain what is going on.
 
-Process is simple:
+The process is simple:
 
 1. `[func]importDirectory()` imports all icons from directory `[str]"svg"` of `[npm]@mdi/svg` package.
 2. `[func]iconSet.forEach()` is used to iterate all icons to:

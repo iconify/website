@@ -10,7 +10,7 @@ functions:
 
 This function is part of `[type]IconSet` class in [Iconify Tools](../index.md).
 
-Function `[func]exists()` checks if icon exists, returns `[type]boolean` value.
+Function `[func]exists()` checks if icon is in icon set, returns `[type]boolean` value.
 
 ## Usage
 

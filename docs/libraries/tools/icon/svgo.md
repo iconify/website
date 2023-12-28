@@ -18,6 +18,12 @@ It is meant to be used on icons that have already been processed with `[func]cle
 This function is used to do advanced stuff that SVGO is good at: converting transformations,
 cleaning up numbers, removing unused SVG elements, and so on.
 
+## Plugins
+
+By default, function uses a pre-configured list of SVGO plugins, which excludes some bugged plugins.
+
+If an icon contains SVG animations, plugins that modify shapes are excluded.
+
 ## Usage
 
 Function has the following parameters:
@@ -49,8 +55,8 @@ runSVGO(svg, {
 
 You can also pick from a preset list of plugins by setting these options:
 
-- `[prop]animated`, `[type]boolean`. If `true`, SVGO plugins that are known to bug out with animated icons are not ran.
-- `[prop]keepShapes`, `[type]boolean`. If `true`, plugins that modify shapes are not ran. This is useful if you need to keep shapes as-is, for example, when animating shapes, but it is not as strict as setting `[prop]animated` option.
+- `[prop]animated`, `[type]boolean`. If `true`, SVGO plugins that are known to bug out with animated icons are not used.
+- `[prop]keepShapes`, `[type]boolean`. If `true`, plugins that modify shapes are not used. This is useful if you need to keep shapes as-is, for example, when animating shapes, but it is not as strict as setting `[prop]animated` option.
 - `[prop]cleanupIDs`, `[type]string | false | function`. Custom prefix for rewriting IDs, `false` to disable plugins that change IDs. Can be a callback that returns new ID based on old ID.
 
 These options cannot be used together with `[prop]plugins` option.

@@ -9,7 +9,7 @@ types:
 
 This function is part of `[type]IconSet` class in [Iconify Tools](../index.md).
 
-Function `[func]remove()` deletes icon.
+Function `[func]remove()` deletes an icon.
 
 ## Usage
 

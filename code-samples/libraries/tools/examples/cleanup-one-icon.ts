@@ -19,13 +19,13 @@ import {
 
 	// Clean up and validate icon
 	// This will throw an exception if icon is invalid
-	await cleanupSVG(svg);
+	cleanupSVG(svg);
 
 	// Change color to `currentColor`
 	// Skip this step if icon has hardcoded palette
 	const blackColor = stringToColor('black');
 	const whiteColor = stringToColor('white');
-	await parseColors(svg, {
+	parseColors(svg, {
 		defaultColor: 'currentColor',
 		callback: (attr, colorStr, color) => {
 			if (!color) {
@@ -53,10 +53,10 @@ import {
 	});
 
 	// Optimise
-	await runSVGO(svg);
+	runSVGO(svg);
 
 	// Update paths for compatibility with old software
-	await deOptimisePaths(svg);
+	deOptimisePaths(svg);
 
 	// Get SVG string. Returned <svg> has dimensions matching viewBox, such as height="24"
 	const newContent = svg.toMinifiedString();

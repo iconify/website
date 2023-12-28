@@ -13,7 +13,7 @@ functions:
   parseColors: '../../icon/colors.md'
   runSVGO: '../../icon/svgo.md'
 ```
-
+ 
 # Importing icons from Figma
 
 This function is part of [import functions](../index.md) in [Iconify Tools](../../index.md).

@@ -21,7 +21,7 @@ functions:
 
 # Iconify Tools
 
-Iconify Tools is a set of reusable functions for importing, exporting and parsing icons.
+Iconify Tools is a set of reusable functions for importing, exporting, and parsing icons.
 
 Library is written in TypeScript, is available as ES modules for modern development and CommonJS for older scripts.
 
@@ -48,7 +48,9 @@ Documentation from importing icons:
 - [Importing all SVG in directory](./import/directory.md).
 - [Importing icons from Figma](./import/figma/index.md).
 
-Before using Iconify Tools, you should be aware that package is opinionated. Certain tags are not allowed and will cause import to fail. See [SVG import limitations](./tags.md).
+Before using Iconify Tools, you should be aware that package is opinionated.
+Certain tags are not allowed and will cause import to fail.
+See [SVG import limitations](./tags.md).
 
 ## Cleanup and validation
 

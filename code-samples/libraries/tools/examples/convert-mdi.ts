@@ -55,7 +55,7 @@ const info: IconifyInfo = {
 	iconSet.info = info;
 
 	// Validate, clean up, fix palette and optimise
-	await iconSet.forEach(async (name, type) => {
+	await iconSet.forEach((name, type) => {
 		if (type !== 'icon') {
 			return;
 		}
@@ -81,10 +81,10 @@ const info: IconifyInfo = {
 		// Clean up and optimise icons
 		try {
 			// Clean up icon code
-			await cleanupSVG(svg);
+			cleanupSVG(svg);
 
 			// Replace color with currentColor, add if missing
-			await parseColors(svg, {
+			parseColors(svg, {
 				defaultColor: 'currentColor',
 				callback: (attr, colorStr, color) => {
 					return !color || isEmptyColor(color) ? colorStr : 'currentColor';
@@ -92,7 +92,7 @@ const info: IconifyInfo = {
 			});
 
 			// Optimise
-			await runSVGO(svg);
+			runSVGO(svg);
 		} catch (err) {
 			// Invalid icon
 			console.error(`Error parsing ${name}:`, err);

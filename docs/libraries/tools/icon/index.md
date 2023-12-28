@@ -22,11 +22,7 @@ optimising code, changing palette.
 
 ## Usage
 
-All functions listed below are asynchronous and work with `[type]SVG` instances.
-
-### Async
-
-`include libraries/tools/async`
+All functions listed below work with `[type]SVG` instances.
 
 ### Working with icon sets
 

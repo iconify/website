@@ -9,7 +9,8 @@ types:
 
 This function is part of `[type]IconSet` class in [Iconify Tools](../index.md).
 
-Function `[func]fromSVG()` imports icon from `[type]SVG` instance to `[type]IconSet` icon set. It can be used to add new icon or replace existing icon.
+Function `[func]fromSVG()` imports icon from `[type]SVG` instance to `[type]IconSet` icon set.
+It can be used to add a new icon or replace an existing icon.
 
 ## Usage
 

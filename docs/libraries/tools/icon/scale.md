@@ -20,8 +20,6 @@ Function has the following parameters:
 - `[prop]svg`, `[type]SVG`. Icon instance.
 - `[prop]scale`, `[type]number`. Amount to multiply icon dimensions by.
 
-Function is asynchronous. That means you need to handle it as `[class]Promise` instance, usually by adding `[js]await` before function call.
-
 ## Example
 
 ```yaml

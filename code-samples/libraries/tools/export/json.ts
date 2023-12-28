@@ -14,7 +14,7 @@ import {
 	});
 
 	// Validate, clean up, fix palette and optimise
-	await iconSet.forEach(async (name, type) => {
+	iconSet.forEach((name, type) => {
 		if (type !== 'icon') {
 			return;
 		}
@@ -29,11 +29,11 @@ import {
 		// Clean up and optimise icons
 		try {
 			// Clean up icon code
-			await cleanupSVG(svg);
+			cleanupSVG(svg);
 
 			// Assume icon is monotone: replace color with currentColor, add if missing
 			// If icon is not monotone, remove this code
-			await parseColors(svg, {
+			parseColors(svg, {
 				defaultColor: 'currentColor',
 				callback: (attr, colorStr, color) => {
 					return !color || isEmptyColor(color) ? colorStr : 'currentColor';
@@ -41,7 +41,7 @@ import {
 			});
 
 			// Optimise
-			await runSVGO(svg);
+			runSVGO(svg);
 		} catch (err) {
 			// Invalid icon
 			console.error(`Error parsing ${name}:`, err);
