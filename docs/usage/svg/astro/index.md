@@ -27,7 +27,7 @@ Astro Icon can inline SVG directly in your HTML:
 
 ```astro
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 ---
 
 <Icon name="mdi:home" />
