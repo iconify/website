@@ -7,7 +7,7 @@ import { isCI } from 'std-env'
 import { ogUrl } from './constants'
 
 export const preconnectLinks: HeadConfig[] = [
-  ['link', { rel: 'preconnect', href: 'https://srv.carbonads.net' }],
+  // ['link', { rel: 'preconnect', href: 'https://srv.carbonads.net' }],
 ]
 
 export const editPageLinkPattern = 'https://github.com/iconify/website/edit/main/:path'
