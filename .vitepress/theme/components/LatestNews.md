@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>29 Jan 2024</span><a href="/news/2024.html#icon-200b1">Iconify Icon 2.0.0-beta.1</a></p>
 <p><span>28 Jan 2024</span><a href="/news/2024.html#icon-sets-website">New website for browsing icons</a></p>
 <p><span>28 Dec 2023</span><a href="/news/2023.html#tools-4">Iconify Tools version 4.0.0</a></p>
 <p><span>25 Dec 2023</span><a href="/news/2023.html#icon-sets-preview">New icon sets website preview</a></p>
 <p><span>25 Nov 2023</span><a href="/news/2023.html#tailwind-scale">Iconify for Tailwind update</a></p>
-<p><span>12 Nov 2023</span><a href="/news/2023.html#new-milestone">New milestone</a></p>
 </div>
