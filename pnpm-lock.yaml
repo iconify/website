@@ -85,6 +85,9 @@ devDependencies:
   https-localhost:
     specifier: ^4.7.1
     version: 4.7.1
+  lite-youtube-embed:
+    specifier: ^0.3.0
+    version: 0.3.0
   markdown-it:
     specifier: ^13.0.2
     version: 13.0.2
@@ -3854,6 +3857,10 @@ packages:
     resolution: {integrity: sha512-C7bfi1UZmoj8+PQx22XyeXCuBlokoyWQL5pWSP+EI6nzRylyThouddufc2c1NDIcP9k5agmN9fLpA7VNJfIiqw==}
     dependencies:
       uc.micro: 1.0.6
+    dev: true
+
+  /lite-youtube-embed@0.3.0:
+    resolution: {integrity: sha512-3DUqE1C4s/+a8PVM4ik8anBsmHOW0zUavPyFQWugBulKyQpbZFE+/268Aq/pDNW7hRQJXkXpk4QjdSCpwf7Cvg==}
     dev: true
 
   /local-pkg@0.4.3:
