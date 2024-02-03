@@ -46,6 +46,8 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: ogImage }],
     ['meta', { name: 'twitter:site', content: '@slava_trushkin' }],
     ['meta', { name: 'twitter:url', content: ogUrl }],
+    ['link', { rel: 'stylesheet', href: '/assets/yt/lite-yt-embed.css' }],
+    ['script', { src: '/assets/yt/lite-yt-embed.js' }],
   ],
   lastUpdated: true,
   cleanUrls: false,
