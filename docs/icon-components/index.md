@@ -85,33 +85,13 @@ Disadvantages:
 
 If these disadvantages are unacceptable for your project, use "SVG framework" or one of UI framework specific components listed below.
 
-### SVG framework {#svg-framework}
-
-SVG framework is an older iteration of web component. It was the first package developed in early stages of Iconify project.
-
-Before end of 2020, web components were not usable because too many users were still using older browsers that do not support them, more specifically MS Edge and various old mobile browsers.
-
-Usage is simple:
-
-```html
-<span class="iconify" data-icon="mdi:home"></span>
-```
-
-SVG framework finds all such elements in HTML and replaces them with `[tag]svg` elements.
-
-This often causes problems with various UI frameworks, so SVG framework is not usable inside React/Vue/Svelte/etc... components.
-
-See [SVG framework documentation](./svg-framework/index.md).
-
 ### UI frameworks {#ui-frameworks}
 
 Iconify offers components native to various UI frameworks:
 
-- [React](./react/index.md) (warning: when using with Next.js, wrap it in client-only component!)
-- [Vue 3](./vue/index.md)
-- [Vue 2](./vue2/index.md)
+- [React](./react/index.md) (warning: when using with Next.js, wrap it in a client-only component or switch to IconifyIcon web component!)
+- [Vue](./vue/index.md)
 - [Svelte](./svelte/index.md)
-- [Ember](./ember/index.md)
 
 Usage is as any other component:
 
@@ -119,7 +99,18 @@ Usage is as any other component:
 <Icon icon="mdi:home" />
 ```
 
-These components behave differently than web component:
+These components behave differently than the web component:
 
-- To avoid SSR errors, icons are rendered only after component is mounted. Otherwise, it breaks hydration.
+- To avoid SSR errors, icons are rendered only after a component is mounted. Otherwise, it breaks hydration.
 - Icons can be rendered without `[prop]width` and `[prop]height` attributes, making it easy to style in CSS.
+
+#### Legacy components
+
+In addition to components listed above, there are several legacy components.
+They were created a long time ago, but no longer relevant in modern development. 
+
+These components are no longer updated, but can be used if you really need it:
+
+- [Vue 2](./vue2/index.md) (Vue 3 was released a long time ago, no point in supporting the old version)
+- [Ember](./ember/index.md) (Ember framework is outdated)
+- [SVG Framework](./svg-framework/index.md) (the oldest of components, has been replaced by the IconifyIcon web component)

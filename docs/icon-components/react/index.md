@@ -31,6 +31,9 @@ functions:
 include: icon-components/components/intro
 ```
 
+Please be aware that this component is not designed for server side rendering.
+If you are using SSR, consider switching to [Iconify Icon web component](/docs/iconify-icon/index.md).
+
 ## Installation
 
 If you are using NPM:

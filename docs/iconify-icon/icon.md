@@ -20,7 +20,8 @@ function renderLeftArrow() {
 }
 ```
 
-Unfortunately same syntax is not available for web component. Attributes in HTML elements cannot be complex objects, making it harder to pass icon data to web component.
+Unfortunately, the same syntax is not available for the web component.
+Attributes in HTML elements cannot be complex objects, making it harder to pass icon data to a web component.
 
 How to solve this?
 

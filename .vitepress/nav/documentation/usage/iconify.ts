@@ -14,6 +14,7 @@ export const IconifyUsageSidebar: SidebarItem[] = [{
   text: 'SVG Framework',
   collapsed: true,
   link: `${root}svg-framework/`,
+  hidden: true,
   items: SVGFrameworkSidebar,
 }, {
   text: 'React',
@@ -21,7 +22,7 @@ export const IconifyUsageSidebar: SidebarItem[] = [{
   link: `${root}react/`,
   items: iconComponentSidebar(`${root}react/`),
 }, {
-  text: 'Vue 3',
+  text: 'Vue',
   collapsed: true,
   link: `${root}vue/`,
   items: iconComponentSidebar(`${root}vue/`),
@@ -29,6 +30,7 @@ export const IconifyUsageSidebar: SidebarItem[] = [{
   text: 'Vue 2',
   collapsed: true,
   link: `${root}vue2/`,
+  hidden: true,
   items: iconComponentSidebar(`${root}vue2/`),
 }, {
   text: 'Svelte',
@@ -39,5 +41,6 @@ export const IconifyUsageSidebar: SidebarItem[] = [{
   text: 'Ember',
   collapsed: true,
   link: `${root}ember/`,
+  hidden: true,
   items: iconComponentSidebar(`${root}ember/`),
 }]
