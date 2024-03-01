@@ -53,6 +53,26 @@ However, some UI frameworks require custom wrappers:
 
 - Solid. See [Iconify icon web component for Solid](./solid.md).
 
+### Layout shift
+
+Web component is not rendered instantly. There could be a few milliseconds delay.
+
+This is caused by:
+- JavaScript. Web component cannot be rendered until it is loaded and registered.
+- Because of web component spec. Rendering is done asynchronously in browser, often causing tiny delay.
+
+This might cause layout shift.
+
+To avoid layout shift, add this to your CSS:
+
+```css
+iconify-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+}
+```
+
 ## Icon data on demand
 
 Instead of embedding an entire icon, all you need to do is provide an icon name in `[prop]icon` attribute.

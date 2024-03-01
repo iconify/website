@@ -38,7 +38,7 @@ Advantages:
 
 - Very easy to use.
 - If you are using many icons on various pages, bundle size is smaller because icon data is loaded only as needed.
-- Can be used with customisable themes, where developer doesn't know which icons theme is using.
+- It can be used with customisable themes, where a developer doesn't know which icons theme is using.
 - Small HTML. Icons are loaded only in browser, not server side rendered.
 
 Disadvantages:
@@ -48,17 +48,21 @@ Disadvantages:
 
 ## Components
 
-There are several options:
+The best option by far is [Web component](#web-component).
+It is usable in HTML with or without UI frameworks.  
 
-- [Web component](#web-component), usable in HTML with or without UI frameworks.
-- ["SVG Framework"](#svg-framework), usable in HTML without UI frameworks.
-- [Components for UI frameworks](#ui-frameworks): React, Vue, Svelte, Ember.
+Additionally, there are [components for UI frameworks](#ui-frameworks): React, Vue, Svelte, Ember.
+
+In future, only `[npm]iconify-icon` web component will be supported. Why?
+- SVG Framework is an old version of the web component, developed many years ago as an experiment when browser did not support web components. It has no place in modern development.
+- Framework-specific components have issue with server side rendering. Web compponent solves those issues.
 
 ### Web component {#web-component}
 
-Best option by far is web component. It is the most modern iteration, works with all UI frameworks and works great with server side rendering.
+The best option by far is web component.
+It is the most modern iteration, works with all UI frameworks and works great with server side rendering.
 
-Usage is very simple:
+Usage is simple:
 
 ```html
 <iconify-icon icon="mdi:home"></iconify-icon>
@@ -68,7 +72,7 @@ See [Iconify icon web component documentation](/docs/iconify-icon/index.md).
 
 #### Shadow DOM
 
-Web component renders icon in Shadow DOM, separating it from main document.
+Web component renders icon in Shadow DOM, separating it from the main document.
 
 That has its advantages and disadvantages over other components.
 
@@ -103,6 +107,10 @@ These components behave differently than the web component:
 
 - To avoid SSR errors, icons are rendered only after a component is mounted. Otherwise, it breaks hydration.
 - Icons can be rendered without `[prop]width` and `[prop]height` attributes, making it easy to style in CSS.
+
+You should consider using the `[npm]iconify-icon` web component instead of components mentioned above.
+Dynamic data loading does not work well with SSR.
+Web component solves those issues.
 
 #### Legacy components
 
