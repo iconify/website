@@ -25,12 +25,12 @@ It includes:
 
 ## Icons
 
-[Icons section of documentation](./icons/index.md) explains the following:
+[Icons section of documentation](./icons/index.md) explains how icons are handled in the Iconify ecosystem:
 
-- [Icon basics](./icons/icon-basics.md): naming rules, types of icons, cleanup.
+- [Icon basics](./icons/icon-basics.md): naming rules, types of icons, cleanup process.
 - [Icon set basics](./icons/icon-set-basics.md): what are icon sets, data format, naming, how to parse them.
 - [Where to get icon data](./icons/icon-data.md) for over 80 open source icon sets.
-- [Building custom icon sets](./icons/custom.md).
+- [Building custom icon sets](./icons/custom.md) if you want to use your icons with Iconify ecosystem.
 
 ## How to use icons
 

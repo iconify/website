@@ -2,6 +2,7 @@
 title: SVG Class
 types:
   IconSet: '../icon-set/index.md'
+  IconifyIcon: '/docs/types/iconify-icon.md'
 functions:
   cleanupSVG: '../icon/cleanup.md'
   runSVGO: '../icon/svgo.md'
@@ -48,6 +49,7 @@ The following methods are available:
 - `[func]toMinifiedString()` export icon as string, but without whitespace.
 - `[func]toPrettyString()` export icon as string, with extra tabs and new lines for readability.
 - `[func]getBody()` export icon's content as string (icon without `[tag]svg` tag).
+- `[func]getIcon()` exports icon as `[type]IconifyIcon` object.
 
 ## Validating and cleaning up icon
 

@@ -6,6 +6,7 @@ types:
 functions:
   getIconData: '../libraries/utils/get-icon-data.md'
   defaultIconProps: '../libraries/utils/default-icon-props.md'
+  getIcon: '../libraries/tools/svg/index.md'
 ```
 
 # IconifyIcon type
@@ -14,20 +15,25 @@ All Iconify libraries share common object structures. They are described as type
 
 For description of types and short explanation of TypeScript see [types documentation](./index.md).
 
-This article describes `[type]IconifyIcon` type.
+This article describes `[type]IconifyIcon` type that contains data for one icon.
 
 ## Usage
 
 Icon data in `[type]IconifyIcon` type is usually extracted from `[type]IconifyJSON` icon set.
 
-To extract icon data in your code, use `[func]getIconData()` function from Iconify Utils.
+To extract icon data in your code, use `[func]getIconData()` function from Iconify Utils. 
+[Iconify Utils](/docs/libraries/utils/index.md) can be used in any environment.
+
+To convert SVG to `[type]IconifyIcon`, you can use `[func]getIcon()` function of `[type]SVG` instance from Iconify Tools.
+[Iconify Tools](/docs/libraries/tools/index.md) is a Node.js package for importing and parsing icons. 
+Make sure you [clean up icon](/docs/libraries/tools/icon/cleanup.md) before exporting it.
 
 ## Structure
 
 Type `[type]IconifyIcon` is a simple object. It has two parts:
 
 - `[prop]body`, `[type]string` contains icon content, mandatory.
-- Optional `[type]IconifyOptional` properties that contain icon dimensions and transformations.
+- Optional `[type]IconifyOptional` properties that contain icon dimensions and basic transformations.
 
 Example of a basic icon:
 
