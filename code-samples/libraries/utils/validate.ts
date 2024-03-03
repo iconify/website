@@ -15,7 +15,7 @@ import { validateIconSet } from '@iconify/utils';
 
 	// Count icons (simple calculation)
 	const count =
-		Object.keys(iconSet).length +
+		Object.keys(iconSet.icons).length +
 		(iconSet.aliases ? Object.keys(iconSet.aliases).length : 0);
 	console.log(`Found ${count} icons`);
 })();
