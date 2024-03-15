@@ -25,7 +25,7 @@ See [Iconify API: Node.js](./hosting-js/index.md) for installation and configura
 
 Iconify public API is hosted on multiple servers that form custom CDN. They are located in different parts of the world, and visitors are always redirected to the closest server.
 
-Host does CDN help? By connecting visitors to the closest server, latency is greatly reduced:
+How does CDN help? By connecting visitors to the closest server, latency is greatly reduced:
 
 - Visitors from US are connected to one of the servers located on different sides of the US.
 - Visitors from Europe are connected to server in the UK or server in Germany.
