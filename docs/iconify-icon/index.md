@@ -131,10 +131,10 @@ As of version 2.0.0 of the web component, icons are rendered only when visible t
 
 For long documents with many icons, this improves the performance of pages by a lot. 
 
-You can opt out of this behavior by adding `[html]observer="false"` to web component's HTML:
+As of version 2.1.0, you can opt out of this behavior by adding `[html]noobserver` attribute to web component's HTML:
 
 ```html
-<iconify-icon icon="mdi:home" observer="false"></iconify-icon>
+<iconify-icon icon="mdi:home" noobserver></iconify-icon>
 ```
 
 ## Why not use icon font? {#icon-font}
