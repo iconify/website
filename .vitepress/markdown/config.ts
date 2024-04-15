@@ -31,7 +31,7 @@ export const contentReplacements = {
     'import': '@iconify/iconify',
   },
   'iconify-icon': {
-    version: '2.0.0',
+    version: '2.1.0',
   },
   'react': {
     import: '@iconify/react',
