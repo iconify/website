@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>19 Apr 2024</span><a href="/news/2024.html#iconify-vue-412">Iconify for Vue 4.1.2</a></p>
+<p><span>18 Apr 2024</span><a href="/news/2024.html#figma-preview">Figma plugin preview</a></p>
 <p><span>15 Apr 2024</span><a href="/news/2024.html#icon-210">Iconify Icon 2.1.0</a></p>
 <p><span>9 Apr 2024</span><a href="/news/2024.html#download-png">Download icons as PNG</a></p>
 <p><span>6 Feb 2024</span><a href="/news/2024.html#icon-sets-stroke">Customise icon stroke width and remove animations</a></p>
-<p><span>4 Feb 2024</span><a href="/news/2024.html#icon-200">Iconify Icon 2.0.0</a></p>
-<p><span>3 Feb 2024</span><a href="/news/2024.html#icon-sets-animations">Customise speed of animated SVGs</a></p>
 </div>

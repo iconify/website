@@ -94,6 +94,20 @@ replacements:
 include: icon-components/functions/set-fetch/bundle
 ```
 
+#### SSR attribute
+
+In version 4.1.2 new boolean attribute was added: `[prop]ssr`.
+
+If enabled, it will render icon immediately:
+
+```vue
+<Icon icon="mdi:home" :ssr="true" />
+```
+
+It is safe to use without SSR because there is no hydration to break.
+
+If you are using SSR, such as Nuxt, make sure icon data is available on both server and client sides.
+
 ## Properties
 
 You can pass any custom properties to component.
