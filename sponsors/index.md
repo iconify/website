@@ -23,6 +23,10 @@ There are several ways to help:
         <iconify-icon icon="tabler:brand-paypal"></iconify-icon>
         <a target="_blank" rel="noreferrer" href="https://paypal.me/cyberalien">You can help out a bit via PayPal.</a>
     </li>
+    <li>
+        <iconify-icon icon="bi:opencollective"></iconify-icon>
+        <a href="https://opencollective.com/iconify" target="_blank" rel="noreferrer">Open Collective</a>
+    </li>
 </ul>
 
 If you represent a company and are willing to help or interested in sponsoring Iconify,
