@@ -20,12 +20,12 @@ There are several ways to help:
         <a href="https://github.com/sponsors/cyberalien" target="_blank" rel="noreferrer">GitHub sponsors</a>
     </li>
     <li>
-        <iconify-icon icon="tabler:brand-paypal"></iconify-icon>
-        <a target="_blank" rel="noreferrer" href="https://paypal.me/cyberalien">You can help out a bit via PayPal.</a>
-    </li>
-    <li>
         <iconify-icon icon="bi:opencollective"></iconify-icon>
         <a href="https://opencollective.com/iconify" target="_blank" rel="noreferrer">Open Collective</a>
+    </li>
+    <li>
+        <iconify-icon icon="tabler:brand-paypal"></iconify-icon>
+        <a target="_blank" rel="noreferrer" href="https://paypal.me/cyberalien">You can help out a bit via PayPal.</a>
     </li>
 </ul>
 
