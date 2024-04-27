@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>27 Apr 2024</span><a href="/news/2024.html#react-500b1">Iconify for React rewrite</a></p>
 <p><span>26 Apr 2024</span><a href="/news/2024.html#iconify-api-310">Iconify API 3.1.0</a></p>
 <p><span>25 Apr 2024</span><a href="/news/2024.html#figma-preview-ready">Figma plugin preview</a></p>
 <p><span>19 Apr 2024</span><a href="/news/2024.html#iconify-vue-412">Iconify for Vue 4.1.2</a></p>
 <p><span>18 Apr 2024</span><a href="/news/2024.html#figma-preview">Figma plugin preview</a></p>
-<p><span>15 Apr 2024</span><a href="/news/2024.html#icon-210">Iconify Icon 2.1.0</a></p>
 </div>
