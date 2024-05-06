@@ -166,18 +166,3 @@ include: icon-components/components/functions-list/api
 ```yaml
 include: icon-components/components/functions-list/internal
 ```
-
-## Server side rendering {#ssr}
-
-```yaml
-include: icon-components/functions/set-fetch/nodejs
-```
-
-How to support API in server side rendering?
-
-```yaml
-include: icon-components/functions/set-fetch/component
-replacements:
-  - search: '@iconify/svelte'
-    replace: '@iconify/ember/components/iconify-icon'
-```

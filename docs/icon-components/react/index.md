@@ -22,7 +22,6 @@ functions:
   addAPIProvider: './add-api-provider.md'
   replaceIDs: './replace-ids.md'
   buildIcon: './build-icon.md'
-  setFetch: './set-fetch.md'
 ```
 
 # Iconify for React
@@ -48,6 +47,20 @@ If you are using Yarn:
 yarn add --dev @iconify/react@2
 ```
 
+### Version 5
+
+Code above will install version 4.
+
+Version 5 beta is also available.
+Component has been redesigned as a modern functional React component.
+It is compatible with Next.js.
+
+You can install version 5 using `[npm]@next` tag:
+
+```bash
+npm install --save-dev @iconify/react@next
+```
+
 ## Usage
 
 Install `[npm]@iconify/react@2` and import `[var]Icon` component from it:
@@ -68,32 +81,16 @@ include: icon-components/components/intro-online
 
 ### Next.js {#ssr}
 
-Component is compatible with Next.js.
+Component version 5 is compatible with the latest Next.js (see installation instructions above).
 
-Component does not retrieve icon data until it is mounted. For server side rendering it means HTML will not include SVGs, they will be dynamically added only when hydrating DOM on client side.
+Version 4 works only with an older version of Next.js.
 
-If you do want to render SVGs on server side, provide icon data as parameter instead of icon name or [use a different icon component](/docs/usage/index.md).
+The component does not retrieve icon data until it is mounted.
+For server side rendering it means generated HTML will not include SVGs,
+icons will be rendered only on the client side after hydration is complete.
 
-#### API support in Next.js {#ssr-api}
-
-If you want to use icon component's functions that load icon data from API in Next.js, you need Fetch API.
-
-```yaml
-include: icon-components/functions/set-fetch/nodejs
-```
-
-How to support API in server side rendering?
-
-```yaml
-include: icon-components/functions/set-fetch/component
-replacements:
-  - search: '@iconify/svelte'
-    replace: '@iconify/react'
-```
-
-```yaml
-include: icon-components/functions/set-fetch/bundle
-```
+If you do want to render SVGs on the server side,
+provide icon data as parameter instead of icon name or [use a different icon component](/docs/usage/index.md).
 
 ## Properties
 

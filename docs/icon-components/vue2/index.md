@@ -68,30 +68,12 @@ Then in template use `[var]Icon` component with icon name as `[prop]icon` parame
 
 Component is compatible with Nuxt.js.
 
-Component does not retrieve icon data until it is mounted. For server side rendering it means HTML will not include SVGs, they will be dynamically added only when hydrating DOM on client side.
+The component does not retrieve icon data until it is mounted.
+For server side rendering it means generated HTML will not include SVGs,
+icons will be rendered only on the client side after hydration is complete.
 
-If you do want to render SVGs on server side, provide icon data as parameter instead of icon name or [use a different icon component](/docs/usage/index.md).
-
-#### API support in Nuxt.js {#ssr-api}
-
-If you want to use icon component's functions that load icon data from API in Nuxt.js, you need Fetch API.
-
-```yaml
-include: icon-components/functions/set-fetch/nodejs
-```
-
-How to support API in server side rendering?
-
-```yaml
-include: icon-components/functions/set-fetch/component
-replacements:
-  - search: '@iconify/svelte'
-    replace: '@iconify/vue2'
-```
-
-```yaml
-include: icon-components/functions/set-fetch/bundle
-```
+If you do want to render SVGs on the server side,
+provide icon data as parameter instead of icon name or [use a different icon component](/docs/usage/index.md).
 
 ## Properties
 
