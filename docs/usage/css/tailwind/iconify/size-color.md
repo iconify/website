@@ -80,9 +80,18 @@ To change icon size, you can change font size:
 <span class="iconify mdi-light--home text-2xl"></span>
 ```
 
-Additionally, you can:
-- Change default size by using `[prop]scale` option.
-- Remove size by setting `[prop]scale` to `[num]0` and use width and height to resize icon.
+Because common selectors, which contain size, are treated as Tailwind components,
+you can also set width/height to resize icon:
+
+```html
+<span class="iconify mdi-light--home w-12 h-12"></span>
+```
+
+Make sure width and height are identical.
+Some browsers (Safari) fail to keep proportions when using SVG as a mask image,
+so using different width and height values might result in unexpected user experience for some users.
+
+Additionally, you can change default size by using `[prop]scale` option.
 
 ### Scaling icon
 
@@ -101,26 +110,10 @@ changes default size to `[num]1.2em` x `[num]1.2em` square.
 
 You can use font size to further resize icons, like in the example above, but icons will be 1.2 times bigger.
 
-### Custom size {#custom}
-
-To use width and height to resize icons, you need to set `[prop]scale` to `[num]0`:
-
-```js
-addIconSelectors({
-    prefixes: ['mdi-light'],
-    scale: 0,
-})
-```
-
-If you do this, icons will not have width and height, so you must set size to each icon:
-
-```html
-<span class="iconify mdi-light--home h-12 w-12"></span>
-```
-
 ### Fixed size
 
-If you want to use fixed size in pixels, such as `[num]24` to render icons that are designed for `[num]24` x `[num]24`,
+If you want to set default icon size to a fixed size in pixels, 
+such as `[num]24` to render icons that are designed for `[num]24` x `[num]24`,
 you can set width and height in pixels using `[prop]extraMaskRules` or `[prop]extraBackgroundRules` options:
 
 ```js
@@ -148,14 +141,6 @@ You can use multiple instances of plugin with different settings and different s
 plugins: [
     // Default options, 1em size
     addIconSelectors(['mdi-light']),
-    // No size
-    addIconSelectors({
-        // Change selectors to avoid conflicts
-        maskSelector: '.iconify-nosize',
-        backgroundSelector: '.iconify-nosize-color',
-        // Disable width and height 
-        scale: 0,
-    }),
     // Fixed size
     addIconSelectors({
         // Set fixed size
@@ -176,11 +161,11 @@ plugins: [
   <span class="iconify mdi-light--home"></span>
 </p>
 <p>
-  Icon without size (using custom width/height): 
-  <span class="iconify-nosize mdi-light--home h-12 w-12"></span>
+  Using custom width/height: 
+  <span class="iconify mdi-light--home h-12 w-12"></span>
 </p>
 <p>
-  24px icon aligned to bottom:
+  24px icon:
   <span class="material-icon mdi-light--home"></span>
 </p>
 ```

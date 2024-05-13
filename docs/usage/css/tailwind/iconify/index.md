@@ -105,9 +105,15 @@ To change icon color and size, use color and size class names like you would for
 <span class="iconify ph--alarm-duotone text-red-600 text-2xl"></span>
 ```
 
-#### No size
+You can also resize an icon using width and height:
 
-You can also use width and height to resize icon instead of font size. 
+```html
+<span class="iconify-color twemoji--cat-face w-12 h-12"></span>
+```
+
+Make sure width and height are the same because
+some browsers (Safari) fail to keep proportions when using SVG as a mask image.
+
 See [size documentation](./size-color.md#custom).
 
 ## Usage
