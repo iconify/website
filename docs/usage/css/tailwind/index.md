@@ -13,11 +13,11 @@ Iconify plugin for Tailwind CSS makes it easy to use icons in Tailwind CSS.
 
 You can use [over 60,000 open source icons](/docs/icons/icon-data.md) and custom icons with minimal code.
 
-## Options
+## Plugins
 
-There are two plugins, developed by different developers:
+There are two plugin packages, developed by different developers:
 
-- [@iconify/tailwind](https://github.com/iconify/iconify/tree/main/plugins/tailwind)
+- [@iconify/tailwind](https://github.com/iconify/iconify/tree/main/plugins/tailwind) (multiple plugins in one package)
 - [@egoist/tailwindcss-icons](https://github.com/egoist/tailwindcss-icons)
 
 Plugins use different syntax, have different options.
@@ -25,19 +25,24 @@ Plugins use different syntax, have different options.
 For example, here is syntax to use `[icon]mdi-light:home` in HTML:
 
 ```yaml
-src: usage/tailwind/syntax-iconify.html
+src: usage/tailwind/syntax-iconify2.html
 hint: 'Usage with @iconify/tailwind'
 extra:
   - src: usage/tailwind/syntax-egoist.html
     hint: 'Usage with @egoist/tailwindcss-icons'
 ```
 
-Both plugins can be used with custom icon sets.
+Both packages also include plugins that can use dynamic selectors, which offer pretty much identical behavior:
 
-The biggest difference is in behavior:
+```yaml
+src: usage/tailwind/syntax-iconify.html
+hint: 'Usage with @iconify/tailwind'
+extra:
+  - src: usage/tailwind/syntax-egoist2.html
+    hint: 'Usage with @egoist/tailwindcss-icons'
+```
 
-- [@iconify/tailwind](https://github.com/iconify/iconify/tree/main/plugins/tailwind) uses dynamic class names, so it generates only CSS for icons Tailwind CSS requests.
-- [@egoist/tailwindcss-icons](https://github.com/egoist/tailwindcss-icons) generates CSS for all icons in icon set, generating thousands of entries, Tailwind CSS chooses which to include in output.
+Prefix for dynamic selectors can be configured in both plugins. The only real difference is the default configuration.
 
 ## Documentation
 
@@ -55,9 +60,25 @@ To install it, add `[npm]@iconify/tailwind` as dev dependency:
 npm i -D @iconify/tailwind
 ```
 
-Then open `[file]tailwind.config.js`, import `[func]addDynamicIconSelectors` from `[npm]@iconify/tailwind` and add it to a list of plugins.
+Then open `[file]tailwind.config.js`, import `[func]addIconSelectors` (main plugin) or 
+`[func]addDynamicIconSelectors` (dynamic selectors) from `[npm]@iconify/tailwind` and add it to a list of plugins.
 
 Example `[file]tailwind.config.js`:
+
+```js
+const { addIconSelectors } = require('@iconify/tailwind');
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ['./src/*.html'],
+    plugins: [
+        // Iconify plugin, requires writing list of icon sets to load
+        addIconSelectors(['mdi', 'mdi-light']),
+    ],
+};
+```
+
+Example `[file]tailwind.config.js` with dynamic selectors:
 
 ```js
 const { addDynamicIconSelectors } = require('@iconify/tailwind');
@@ -82,79 +103,12 @@ See [icon data documentation](/docs/icons/icon-data.md).
 
 For example, if you want to use icon `[icon]mdi-light:home`, install `[npm]@iconify-json/mdi-light` package.
 
-## HTML
+#### Custom icon sets
 
-To use icons in HTML, all you have to do is create `[tag]span` element (or any element) with class name that contains icon.
+Plugins also work with custom icon sets.
 
-Syntax of class names is this: `[str]icon-[{prefix}--{name}]`, where `[str]{prefix}` is icon set prefix, `[str]{name}` is icon name.
+## Usage
 
-Examples:
-
-```html
-<span class="icon-[ph--alarm-duotone]"></span>
-<span class="icon-[fluent-emoji-flat--alarm-clock]"></span>
-<span class="icon-[carbon--edit-off]"></span>
-```
-
-Make sure prefix and icon name are separated with two hyphens: `[str]--`.
-
-Why such a complex syntax?
-It is because of Tailwind CSS limitations.
-It can handle dynamic class names only if they are created in format `[str]rule-[value]`.
-
-## Issues
-
-If everything is done correctly, icons should work.
-
-Possible issues:
-
-### Errors when building CSS
-
-If an icon set is missing or icon is missing, the plugin will throw errors.
-
-See error message. If the plugin cannot find an icon set, install dependency. If the plugin cannot find icon, you are using the wrong icon name.
-
-### Selectors do not work
-
-You have added class names, built your CSS, but icons do not work?
-
-First, make sure the class name is correct. If it is correct, most likely Tailwind CSS is not seeing your class names. If you are familiar with Tailwind CSS, the process of fixing it is exactly the same as any other missing class name:
-
-- You can check if your files are scanned.
-- You can add it to `[prop]safelist` in config.
-
-## Color and size
-
-To change icon color, change text color. See [how monotone icons work in CSS](../index.md#monotone).
-
-By default, icon's height is set to `[str]1em`.
-Width can be different, depending on an icon. 
-To change icon size, set `[prop]font-size`.
-
-You can also set option `[prop]scale` to `[num]0`, which will force plugin to not set any size,
-and use custom size, see [plugin options documentation](./options.md).
-
-## Advanced usage
-
-What else can you do with plugin?
-
-The plugin has various options:
-
-- You can use plugin with custom icon sets.
-- You can change the class name.
-- You can remove duplicate CSS.
-
-See [plugin options documentation](./options.md).
-
-There is also a second plugin included, which behaves a bit differently.
-Instead of dynamic classes such as `[str]icon-[mdi-light--home]`, it can generate CSS with clean classes, 
-such as `[str]icon--mdi-light--home` and reduce duplication.
-
-See [clean classnames documentation](./clean.md).
-
-## Multiple instances
-
-You can add plugin to the plugin list in Tailwind CSS config multiple times, with different options.
-
-Each `[func]addDynamicIconSelectors()` entry in the plugin list should have different `[prop]prefix` option 
-to avoid conflicts. The default value for `[prop]prefix` is `[str]icon`.
+For more details, see documentation for each plugin:
+- [`[func]addIconSelectors()` plugin documentation](./iconify/index.md).
+- [`[func]addDynamicIconSelectors()` plugin documentation](./dynamic/index.md).

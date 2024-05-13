@@ -17,11 +17,44 @@ export const UsageSidebar: SidebarItem[] = [
         link: `${usageRoot}css/tailwind/`,
         collapsed: true,
         items: [{
-          text: 'Plugin Options',
-          link: `${usageRoot}css/tailwind/options`,
+          text: 'Iconify Plugin',
+          link: `${usageRoot}css/tailwind/iconify/`,
+          // collapsed: true,
+          items: [{
+            text: 'Size and Color',
+            link: `${usageRoot}css/tailwind/iconify/size-color`,
+          }, {
+            text: 'Prefixes',
+            link: `${usageRoot}css/tailwind/iconify/prefixes`,
+          }, {
+            text: 'Selectors',
+            link: `${usageRoot}css/tailwind/iconify/selectors`,
+          }, {
+            text: 'Customise',
+            link: `${usageRoot}css/tailwind/iconify/customise`,
+          }],
+        }, {
+          text: 'Dynamic Plugin',
+          link: `${usageRoot}css/tailwind/dynamic/`,
+          // collapsed: true,
+          items: [{
+            text: 'Size',
+            link: `${usageRoot}css/tailwind/dynamic/size`,
+          }, {
+            text: 'Icon Sets',
+            link: `${usageRoot}css/tailwind/dynamic/icon-sets`,
+          }, {
+            text: 'Customise',
+            link: `${usageRoot}css/tailwind/dynamic/customise`,
+          }],
         }, {
           text: 'Clean Class Names',
           link: `${usageRoot}css/tailwind/clean`,
+          hidden: true,
+        }, {
+          text: 'Options',
+          link: `${usageRoot}css/tailwind/options`,
+          hidden: true,
         }],
       }, {
         text: 'UnoCSS',

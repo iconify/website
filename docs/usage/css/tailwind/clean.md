@@ -9,9 +9,16 @@ functions:
 
 # Clean class names for Tailwind CSS
 
-In addition to `[func]addDynamicIconSelectors()`, [Iconify plugin for Tailwind CSS](./index.md) has another function: `[func]addCleanIconSelectors()`.
+[Iconify plugin for Tailwind CSS package](./index.md) has several plugins.
+This documentation covers `[func]addCleanIconSelectors` plugin.
 
 Function `[func]addCleanIconSelectors()` creates icons with clean class names.
+
+## Deprecation notice
+
+This plugin is deprecated!
+
+It has been replaced with [addIconSelectors](./iconify/index.md) plugin.
 
 ## Usage
 
@@ -38,20 +45,12 @@ Example icon with clean class names:
 <span class="icon--mdi-light icon--mdi-light--home"></span>
 ```
 
-Note that element has 2 class names:
+Note that element has two class names:
 
 - `[str]icon--mdi-light` that contains common CSS for all icons from icon set.
 - `[str]icon--mdi-light--home` that contains only SVG for specific icon.
 
 By putting common rules in `[str]icon--mdi-light`, there is less duplicate code in generated CSS, which is much cleaner.
-
-## Differences
-
-Differences from `[func]addDynamicIconSelectors()`:
-
-- It creates cleaner class names.
-- Smaller CSS because reused code is assigned to common class name.
-- Much harder to set up: requires you to know the full list of icons you want to use.
 
 ## Parameters
 
