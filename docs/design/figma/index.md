@@ -9,18 +9,19 @@ replacements:
 
 # Iconify for Figma
 
-With Figma plugin you can:
+With the Iconify plugin for Figma you can:
 
 - Import icons. You can also drag and drop icons from plugin to Figma.
 - Quickly replace selected icon.
-- See code for imported icons for developers.
-- Import custom SVG by pasting code. It also decodes `[str]data:` URI.
 
-It is completely free! Unlike other plugins that offer many icons, but require payment to use SVG, Iconify always imports icons as SVG. Iconify project is open source and offers only open source icon sets.
+It is completely free!
+Unlike other plugins that offer many icons, but require payment to use SVG, Iconify always imports icons as SVG.
+Iconify project is open source and offers only open source icon sets.
 
-Plugin remembers last page you have visited, making it easy to continue searching or browsing icons. You can always reset plugin from options page.
+Plugin remembers the last page you have visited, making it easy to continue searching or browsing icons.
 
-For visitors that have small monitors, plugin offers compact mode. Click menu (3 lines) link, enable compact width option.
+For visitors that have small monitors, the plugin offers compact mode.
+Button to toggle compact mode is in the top right corner of the plugin window.
 
 ## Installation
 
@@ -30,79 +31,70 @@ You can install Iconify for Figma from [Iconify plugin page](https://www.figma.c
 
 In Figma menu select `[str]Plugins`, then select `[str]Iconify`.
 
-Browse or search icons, select any icon, click `[str]Import Icon` button or drag icon to Figma document.
+Browse or search icons, select any icon, click `[str]Import Icon` button or drag icon to the Figma document.
 
-After opening plugin you will see main page:
+After opening the plugin, you will see the main page:
 
-![Iconify for Figma: main page](/assets/images/plugins/figma_index.png)
+![Iconify for Figma: main page](/assets/images/plugins/figma4_index.png)
 
-Click any icon set or search icons. For example, search for "arrow left":
+Click any icon set or search icons.
 
-![Iconify for Figma: icon search results](/assets/images/plugins/figma_search.png)
+When you click an icon set, the plugin will show you all icons in that icon set.
+You can filter icons by categories (if the current icon set has them), search icons.
 
-Buttons above search results show icon sets, in which matching icons are available. By clicking any icon set button, plugin will show only results from that icon set.
+To show more icons, simply scroll the icons list.
 
-You can drag and drop icon directly from search results:
+![Iconify for Figma: icon set](/assets/images/plugins/figma4_solar.png)
 
-![Iconify for Figma: drag and drop](/assets/images/plugins/figma_drag_drop.gif)
+You can also search all icon sets for icons.
+For example, search for "cat":
 
-or you can select icon and scroll to footer, where you will see more options:
+![Iconify for Figma: icon search results](/assets/images/plugins/figma4_cat.png)
 
-![Iconify for Figma: drag and drop](/assets/images/plugins/figma_footer.png)
+The plugin will show you all icons that match your keyword.
 
-When importing from footer you can:
+When you hover any icon, you will see icon details, including information about the author and the license.
 
-- Set icon color (not available for icons with hardcoded palette).
-- Change icon dimensions.
-- Transform or rotate icon.
-- Import icon as component.
-- Get code for icon for developers.
-- Replace previously imported icon (avialable only if previously icon's layer is selected in Figma).
+Select any icon to import it or drag and drop icon from the plugin window to the Figma document.
 
-By default, those options are not available for icons imported via drag and drop. You can change that behavior in plugin options (button on the left of "Import" in plugin menu).
+### Navigating
 
-### Footer options
+If you want to return to the list of icon sets, click the arrow button above search results.
 
-In footer you can get code for selected icon:
+![Iconify for Figma: navigation](/assets/images/plugins/figma4_nav.png)
 
-![Iconify for Figma: icon code](/assets/images/plugins/figma_code.png)
+If you want to see the menu with the search form, click the menu button in the top left corner.
 
-For icons that do not have hardcoded palette, color picker is available, showing recently used colors and document colors:
+![Iconify for Figma: navigation](/assets/images/plugins/figma4_nav2.png)
 
-![Iconify for Figma: color picker](/assets/images/plugins/figma_color_picker.png)
+![Iconify for Figma: navigation](/assets/images/plugins/figma4_nav3.png)
+
+### Advanced import
+
+When you select an icon, it will appear in page footer with options:
+
+![Iconify for Figma: icon code](/assets/images/plugins/figma4_footer.png)
+
+For icons that do not have a hardcoded palette, color picker is available,
+showing recently used colors and available color styles:
+
+![Iconify for Figma: color picker](/assets/images/plugins/figma4_colors.png)
+
+Top option `[str]Show color picker` is a button.
+Click it to see a color picker.
 
 ### Compact mode
 
-If you have limited window space available, you can make plugin smaller.
+If you have limited window space available, you can make the plugin window even smaller.
 
-Click compact window button in top right corner and plugin window will become much smaller:
+Click the compact window button in the top right corner and the plugin window will become much smaller:
 
-![Iconify for Figma: compact mode](/assets/images/plugins/figma_compact.png)
+![Iconify for Figma: compact mode](/assets/images/plugins/figma4_compact_toggle.png)
 
-You can also minimize plugin window by clicking button in top right corner. In minimized window you can restore plugin or close it:
+![Iconify for Figma: compact mode](/assets/images/plugins/figma4_compact.png)
 
-![Iconify for Figma: minimized window](/assets/images/plugins/figma_minimized.png)
+## Support and feedback
 
-When importing an icon, you have option to automatically compact or minimize plugin window, making it easier to work on imported icon without closing plugin:
+Feedback is welcome.
 
-![Iconify for Figma: window options](/assets/images/plugins/figma_minimize.png)
-
-### Recent icons
-
-Plugin remembers recently imported icons. If you have replaced an icon, but decided to go back to old one, you can find previous icon in recent icons list:
-
-![Iconify for Figma: recent icons](/assets/images/plugins/figma_recent.png)
-
-Recent icons are not specific to current document, so you can see icons recently imported in other documents you have edited.
-
-### Options
-
-Plugin has options:
-
-![Iconify for Figma: options](/assets/images/plugins/figma_options.png)
-
-Options are stored in Figma application (or current browser if you are using Figma in browser), so you need to configure plugin only once.
-
-## Support
-
-If you have any questions, support for plugin is available at [Iconify for Figma GitHub repository](https://github.com/iconify/iconify-figma/).
+See `[str]feedback` page in the plugin or visit [support page on website](/support/index.md).

@@ -32,6 +32,11 @@ export const Nav: DefaultTheme.NavItem[] = [
     activeMatch: '^/docs/',
   },
   {
+    text: 'Blog',
+    link: '/blog/',
+    activeMatch: '^/blog/',
+  },
+  {
     text: 'Sponsor',
     link: '/sponsors/',
   },

@@ -4,7 +4,7 @@ title: Articles
 
 # Articles
 
-In addition to documentation, Iconify documentation website has some helpful articles. It is sort of documentation, but on various topics that do not fit in other sections or fit in multiple sections.
+In addition to documentation, Iconify website has some helpful articles.
 
 ## How Iconify works
 
