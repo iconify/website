@@ -88,4 +88,24 @@ export default defineConfig({
       buildFeed(siteConfig),
     ])
   },
+  transformHead: async (context) => {
+    const { head, page } = context
+
+    // Replace image
+    const ogImageMatch = '/assets/og/iconify.png'
+    let newOGImage = ogImageMatch
+    if (page.startsWith('docs/design/figma/'))
+      newOGImage = ogImageMatch.replace('/iconify.png', '/figma4.png')
+    else
+      return head
+
+    // Update head
+    const source = JSON.stringify(head)
+    const modified = source.split(ogImageMatch).join(newOGImage)
+
+    if (source === modified)
+      throw new Error('Failed to replace ogImage')
+
+    return JSON.parse(modified)
+  },
 })
