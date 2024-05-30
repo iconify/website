@@ -30,9 +30,6 @@ functions:
 include: icon-components/components/intro
 ```
 
-Please be aware that this component is not designed for server side rendering.
-If you are using SSR, consider switching to [Iconify Icon web component](/docs/iconify-icon/index.md).
-
 ## Installation
 
 If you are using NPM:
@@ -47,18 +44,15 @@ If you are using Yarn:
 yarn add --dev @iconify/react@2
 ```
 
-### Version 5
+### Version 4
 
-Code above will install version 4.
+As of version 5, the component is a modern functional component that uses React hooks.
 
-Version 5 beta is also available.
-Component has been redesigned as a modern functional React component.
-It is compatible with Next.js.
-
-You can install version 5 using `[npm]@next` tag:
+If you want to use the icon component with an older version of React,
+you can install version 4 using `[npm]@legacy` tag:
 
 ```bash
-npm install --save-dev @iconify/react@next
+npm install --save-dev @iconify/react@legacy
 ```
 
 ## Usage
@@ -81,13 +75,11 @@ include: icon-components/components/intro-online
 
 ### Next.js {#ssr}
 
-Component version 5 is compatible with the latest Next.js (see installation instructions above).
+Component is compatible with the latest Next.js, but it is a client-only component.
 
-Version 4 works only with an older version of Next.js.
-
-The component does not retrieve icon data until it is mounted.
-For server side rendering it means generated HTML will not include SVGs,
-icons will be rendered only on the client side after hydration is complete.
+To avoid hydration errors, component renders SVG only after it is mounted, which can sometimes cause a tiny delay.
+If you are using Next.js or similar framework,
+consider switching to [Iconify Icon web component](/docs/iconify-icon/index.md).
 
 If you do want to render SVGs on the server side,
 provide icon data as parameter instead of icon name or [use a different icon component](/docs/usage/index.md).
