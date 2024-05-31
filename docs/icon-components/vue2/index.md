@@ -73,7 +73,8 @@ For server side rendering it means generated HTML will not include SVGs,
 icons will be rendered only on the client side after hydration is complete.
 
 If you do want to render SVGs on the server side,
-provide icon data as parameter instead of icon name or [use a different icon component](/docs/usage/index.md).
+provide [icon data](/docs/types/iconify-icon.md) as a parameter instead of icon name
+or [use a different icon component](/docs/usage/index.md).
 
 ## Properties
 

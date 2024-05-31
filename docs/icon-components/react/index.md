@@ -82,7 +82,8 @@ If you are using Next.js or similar framework,
 consider switching to [Iconify Icon web component](/docs/iconify-icon/index.md).
 
 If you do want to render SVGs on the server side,
-provide icon data as parameter instead of icon name or [use a different icon component](/docs/usage/index.md).
+provide [icon data](/docs/types/iconify-icon.md) as parameter instead of icon name
+or [use a different icon component](/docs/usage/index.md).
 
 ## Properties
 
