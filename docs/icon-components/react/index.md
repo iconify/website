@@ -75,15 +75,25 @@ include: icon-components/components/intro-online
 
 ### Next.js {#ssr}
 
-Component is compatible with the latest Next.js, but it is a client-only component.
+Component is compatible with the latest Next.js.
 
-To avoid hydration errors, component renders SVG only after it is mounted, which can sometimes cause a tiny delay.
+Unfortunately, Next.js currently does not support `[func]useState` in components,
+making it impossible to use the same stateful components on server and client,
+so the icon component is a client-only component.
+SVG will not be rendered on server.
+
+Additionally, to avoid hydration errors, component renders SVG only after it is mounted,
+which can sometimes cause a tiny delay.
 If you are using Next.js or similar framework,
 consider switching to [Iconify Icon web component](/docs/iconify-icon/index.md).
 
-If you do want to render SVGs on the server side,
+If you do want to render SVGs without a delay,
 provide [icon data](/docs/types/iconify-icon.md) as parameter instead of icon name
-or [use a different icon component](/docs/usage/index.md).
+or use a different way to render icons, such as:
+- [Iconify Icon web component](/docs/iconify-icon/index.md)
+- [Unplugin Icons](/docs/usage/svg/unplugin/index.md)
+- [Tailwind CSS with Iconify plugin](/docs/usage/css/tailwind/iconify/index.md)
+- [UnoCSS with icons preset](/docs/usage/css/unocss/index.md)
 
 ## Properties
 
