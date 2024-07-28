@@ -87,11 +87,28 @@ you can also set width/height to resize icon:
 <span class="iconify mdi-light--home w-12 h-12"></span>
 ```
 
-Make sure width and height are identical.
+Make sure width and height are identical (see `[prop]square` option below).
 Some browsers (Safari) fail to keep proportions when using SVG as a mask image,
 so using different width and height values might result in unexpected user experience for some users.
 
 Additionally, you can change default size by using `[prop]scale` option.
+
+### Non-square icons
+
+By default, all icons are rendered as square icons. This makes it easy to resize icons.
+
+However, if you want to render non-square icons as is, you can disable this
+behavior by changing option `[prop]square` to `false`: 
+
+```js
+addIconSelectors({
+    prefixes: ['fa6-regular'],
+    square: false,
+})
+```
+
+However, be aware that this might make resizing icon a bit more complex.
+If you are setting `[prop]width` and `[prop]height`, make sure width/height ratio matches icon's ratio.
 
 ### Scaling icon
 
@@ -151,7 +168,7 @@ plugins: [
         },
         // Not using background selector for this demo - demo uses monotone icons only
         backgroundSelector: '',
-    })
+    }),
 ]
 ```
 

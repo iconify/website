@@ -114,6 +114,9 @@ You can also resize an icon using width and height:
 Make sure width and height are the same because
 some browsers (Safari) fail to keep proportions when using SVG as a mask image.
 
+If you set option `[prop]square` to `false`, icons are not square, and you are using custom width and height
+classes, make sure width/height ratio matches icon's width/height ratio.
+
 See [size documentation](./size-color.md#custom).
 
 ## Usage
@@ -175,6 +178,8 @@ module.exports = {
             varName: 'svg',
             // Scale icons, which sets width/height in background/mask selectors
             scale: 1,
+            // Make icons square
+            square: true,
             // Extra rules to add to mask and background selectors
             extraMaskRules: {},
             extraBackgroundRules: {},
@@ -197,6 +202,7 @@ Plugin options:
 - `[prop]iconSelector`, `[type]string` - custom icon selector. Must include `[str]{prefix}` and `[str]{name}`.
 - `[prop]varName`, `[type]string` - CSS variable name to use for icon data.
 - `[prop]scale` - scales icons. See below.
+- `[prop]square`, `[type]boolean` - makes icons square. Set to `false` to generate non-square icons.
 - `[prop]extraMaskRules` - extra rules to add to mask selector.
 - `[prop]extraBackgroundRules` - extra rules to add to background selector.
 - `[prop]customise` - callback to customise icon. You can use it to [change stroke width, color](./customise.md) and so on.

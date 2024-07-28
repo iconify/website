@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>28 Jul 2024</span><a href="/news/2024.html#tailwind-square">Iconify for Tailwind CSS update</a></p>
 <p><span>30 May 2024</span><a href="/news/2024.html#react-500">Iconify for React 5.0.0</a></p>
 <p><span>13 May 2024</span><a href="/news/2024.html#tailwind">Iconify for Tailwind CSS major update</a></p>
 <p><span>27 Apr 2024</span><a href="/news/2024.html#react-500b1">Iconify for React rewrite</a></p>
 <p><span>26 Apr 2024</span><a href="/news/2024.html#iconify-api-310">Iconify API 3.1.0</a></p>
-<p><span>25 Apr 2024</span><a href="/news/2024.html#figma-preview-ready">Figma plugin preview</a></p>
 </div>
