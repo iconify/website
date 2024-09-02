@@ -72,7 +72,7 @@ You can use Unplugin Icons with custom icons.
 With [Iconify Tools](/docs/libraries/tools/index.md) you can import,
 clean up and optimise icons and use them with Unplugin Icons.
 
-You can find a working example in [Iconify Tools repository](https://github.com/iconify/tools/tree/main/%40iconify-demo/unplugin-svelte),
-see `[file]vite.config.js` for example of config that loads custom icons.
+You can find a working example in [Iconify Tools repository](https://github.com/iconify/tools/tree/main/%40iconify-demo/unplugin),
+see `[file]vite.config.ts` for example of config that loads custom icons.
 
 Functions are documented in [Iconify Tools](/docs/libraries/tools/index.md) section of this documentation. 
