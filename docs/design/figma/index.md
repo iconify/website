@@ -35,7 +35,7 @@ Browse or search icons, select any icon, click `[str]Import Icon` button or drag
 
 After opening the plugin, you will see the main page:
 
-![Iconify for Figma: main page](/assets/images/plugins/figma4_index.png)
+![Iconify for Figma: main page](/assets/images/plugins/figma41-icon-sets.png)
 
 Click any icon set or search icons.
 
@@ -44,44 +44,37 @@ You can filter icons by categories (if the current icon set has them), search ic
 
 To show more icons, simply scroll the icons list.
 
-![Iconify for Figma: icon set](/assets/images/plugins/figma4_solar.png)
+![Iconify for Figma: icon set](/assets/images/plugins/figma41-icon-set.png)
 
 You can also search all icon sets for icons.
-For example, search for "cat":
+For example, search for "gear":
 
-![Iconify for Figma: icon search results](/assets/images/plugins/figma4_cat.png)
+![Iconify for Figma: icon search results](/assets/images/plugins/figma41-search-compact.png)
 
 The plugin will show you all icons that match your keyword.
 
-When you hover any icon, you will see icon details, including information about the author and the license.
+When you hover any icon, you will see a button to show more information.
 
-Select any icon to import it or drag and drop icon from the plugin window to the Figma document.
+If you hover it, you will see the icon name. If you click it, you will see:
+- Icon size.
+- Author information and license (only in search results).
+- Buttons to quickly import icon as a component or frame.
 
-### Navigating
-
-If you want to return to the list of icon sets, click the arrow button above search results.
-
-![Iconify for Figma: navigation](/assets/images/plugins/figma4_nav.png)
-
-If you want to see the menu with the search form, click the menu button in the top left corner.
-
-![Iconify for Figma: navigation](/assets/images/plugins/figma4_nav2.png)
-
-![Iconify for Figma: navigation](/assets/images/plugins/figma4_nav3.png)
+You can import icon by:
+- Using quick import buttons from icon tooltip.
+- Dragging icon from plugin window to Figma document.
+- Clicking icon to select it, importing it using buttons in plugin window footer.
 
 ### Advanced import
 
 When you select an icon, it will appear in page footer with options:
 
-![Iconify for Figma: icon code](/assets/images/plugins/figma4_footer.png)
+![Iconify for Figma: icon code](/assets/images/plugins/figma41-icon-set-selected2.png)
 
 For icons that do not have a hardcoded palette, color picker is available,
 showing recently used colors and available color styles:
 
-![Iconify for Figma: color picker](/assets/images/plugins/figma4_colors.png)
-
-Top option `[str]Show color picker` is a button.
-Click it to see a color picker.
+![Iconify for Figma: color picker](/assets/images/plugins/figma41-color-picker.png)
 
 ### Compact mode
 
@@ -89,9 +82,7 @@ If you have limited window space available, you can make the plugin window even 
 
 Click the compact window button in the top right corner and the plugin window will become much smaller:
 
-![Iconify for Figma: compact mode](/assets/images/plugins/figma4_compact_toggle.png)
-
-![Iconify for Figma: compact mode](/assets/images/plugins/figma4_compact.png)
+![Iconify for Figma: compact mode](/assets/images/plugins/figma41-icon-sets-compact.png)
 
 ## Support and feedback
 

@@ -8,30 +8,10 @@ Welcome to the new Iconify plugin for Figma.
 
 In 2024, the plugin has been completely rewritten.
 The new version has nothing in common with the old version, so this is a rather radical change, 
-which requires a tutorial. 
+which requires a tutorial.
 
-## Failed redesign
-
-This page shows a failed launch of new UI.
-
-For correct page, see [plugin update, attempt 2](./update-2024-attempt2.md).
-
-### What went wrong?
-
-Idea was good, but implementation was horrible. I focused too much on adding features, forgot about user experience.
-
-What was wrong:
-- Tooltips everywhere were annoying, it was hard to scroll without tooltips popping up everywhere.
-- Bad design for UI elements. Buttons weren't really different from other elements, making them hard to spot.
-- Color overload. Too many shiny colors distracting from content.
-- Some integral functions, such as search form, required multiple clicks to access.
-
-This version of plugin was live for 3 days.
-
-After receiving a lot of negative feedback, plugin was reverted to old version. 
-New version was later [redesigned from ground up](./update-2024-attempt2.md).
-
-... and now back to showing how not to make a release.
+This is a second attempt at rewrite. [First attempt failed miserably](./update-2024.md) because of bad UX.
+New version has been redesigned to vastly improve UX.
 
 ## New UI
 
@@ -39,11 +19,11 @@ The first change you'll notice immediately is the new layout.
 
 Plugin is designed to fit as much content as possible in the smallest possible space.
 
-![Iconify for Figma: main page](/assets/images/plugins/figma4_index.png)
+![Iconify for Figma: main page](/assets/images/plugins/figma41-icon-sets.png)
 
 You can make it even smaller by clicking the button in navigation to toggle compact width.
 
-![Iconify for Figma: compact mode](/assets/images/plugins/figma4_compact_toggle.png)
+![Iconify for Figma: compact mode](/assets/images/plugins/figma41-icon-sets-compact.png)
 
 Due to limited space, the plugin uses tooltips to show additional information.
 
@@ -59,7 +39,7 @@ The new plugin shows attribution requirement and commercial use limitation in va
 - When browsing icon set, it is shown in tooltip for icon set name.
 - When browsing icons, it is shown in tooltip for each icon.
 
-![Iconify for Figma: search results](/assets/images/plugins/figma4_cat.png)
+![Iconify for Figma: search results](/assets/images/plugins/figma41-search-compact.png)
 
 Additionally, you can filter icon sets and search results by license (see below).
 
@@ -76,22 +56,30 @@ You can filter icon sets by:
 - Icon grid
 - Tags (coming very soon)
 
-![Iconify for Figma: advanced filters](/assets/images/plugins/figma4_filters.png)
+![Iconify for Figma: advanced filters](/assets/images/plugins/figma41-filters.png)
+
+You can also use filter input to filter icon sets by all of the above, plus author name (case insensitive):
+
+![Iconify for Figma: advanced filters](/assets/images/plugins/figma41-filters2.png)
 
 ## Favorite icon sets
 
 You can now mark icon sets as favorite.
 
-This can be done by clicking the star button when viewing icon set.
+This can be done by clicking the star button when viewing an icon set page or icon set tooltip.
 
-![Iconify for Figma: star an icon set](/assets/images/plugins/figma4_favorite_toggle.png)
+![Iconify for Figma: star an icon set](/assets/images/plugins/figma41-icon-sets-hint.png)
 
 When browsing the icon sets list, if you have marked some icon sets as favorite,
 you will see the new option to browse only favorite icon sets.
 
-![Iconify for Figma: favorite icon sets](/assets/images/plugins/figma4_favorite.png)
+![Iconify for Figma: favorite icon sets](/assets/images/plugins/figma41-favorite.png)
 
 All lists (favorite and recent icon sets, recent icons) are considered to be private data (stored in Figma) and can be cleared.
+
+### Custom lists
+
+You can also create custom lists of icon sets by clicking a button next to star button shown in screenshots above.
 
 ## Scrollable icons
 
@@ -103,7 +91,7 @@ The new version of the plugin has completely redesigned icons view:
 - Icons list takes all available space, so the bigger plugin window is, the more icons are shown.
 - Pagination is also available if you prefer to use pages.
 
-![Iconify for Figma: icon set](/assets/images/plugins/figma4_solar.png)
+![Iconify for Figma: icon set](/assets/images/plugins/figma41-icon-set.png)
 
 ## Color styles
 
@@ -118,7 +106,7 @@ The plugin has access to:
 So if you have color styles shared from another document, the plugin might not see them.
 To add them to color picker, you need to select any layer that uses that color style.
 
-![Iconify for Figma: color picker](/assets/images/plugins/figma4_colors.png)
+![Iconify for Figma: color picker](/assets/images/plugins/figma41-color-picker.png)
 
 ### Solid colors only
 
@@ -129,7 +117,7 @@ Gradients, patterns, colors with opacity are not supported.
 ## Replacing icons
 
 If you have selected a layer that contains icon, which was previously imported with plugin,
-you will see an option to replace that icon.
+you will see an option to replace that icon (icon with left/right arrows on screenshot below).
 
 Option to replace icon already existed in the previous version of the plugin, but now it has been redesigned.
 
@@ -137,7 +125,11 @@ When replacing an icon, new icon will keep old icon's:
 - Size.
 - Color. Also supports color styles.
 
-![Iconify for Figma: replacing icon](/assets/images/plugins/figma4_replace.png)
+![Iconify for Figma: replacing icon](/assets/images/plugins/figma41-replace.png)
+
+It is available in multiple places:
+- In icon tooltip, if you click it to see more options.
+- In footer, if you have only one icon selected.
 
 ## Animated icons
 
@@ -153,7 +145,7 @@ This allows you to use animated icon in the design.
 In production code, you can copy SVG with full animations from the Iconify website
 or use Iconify icon components. 
 
-![Iconify for Figma: animated icons](/assets/images/plugins/figma4_animations.png)
+![Iconify for Figma: animated icons](/assets/images/plugins/figma41-animated.png)
 
 ## Removed functions
 
