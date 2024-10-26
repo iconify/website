@@ -3,6 +3,10 @@
     <iconify-icon icon="line-md:twitter"></iconify-icon>
     <a target="_blank" rel="noreferrer" href="https://twitter.com/slava_trushkin">Twitter.</a>
   </li>
+   <li>
+    <iconify-icon icon="ri:bluesky-fill"></iconify-icon>
+    <a target="_blank" rel="noreferrer" href="https://bsky.app/profile/cyberalien.dev">BlueSky.</a>
+  </li>
   <li>
     <iconify-icon icon="line-md:mastodon"></iconify-icon>
     <a target="_blank" rel="noreferrer" href="https://fosstodon.org/@cyberalien">Fosstodon (Mastodon for open source software).</a>
