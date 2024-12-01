@@ -5,7 +5,7 @@ export const title = 'Iconify'
 export const description = 'All popular icon sets, one framework'
 
 export const hero = {
-  title: 'Freedom to choose icons',
+  title: 'Home of open source icon sets',
   p1: 'All popular icon sets, one framework.',
   p2: 'Over 200,000 open source vector icons.',
 }

@@ -3,12 +3,12 @@ import type { Plugin } from 'vite'
 
 export default function NavbarFix(): Plugin {
   // Load logo and replace palette
-  const logoPromise = readFile('public/assets/svg/logo-iconify.svg', 'utf8')
+  const logoPromise = readFile('public/assets/svg/logo2-full-light.svg', 'utf8')
     .then(logo => logo
-      .replaceAll('#979797', 'var(--vp-c-brand-gray)')
-      .replaceAll('#AEAEAE', 'var(--vp-c-brand-gray2)')
-      .replaceAll('#307594', 'var(--vp-c-brand)')
-      .replaceAll('#E13E31', 'var(--vp-c-brand-accent-logo)'),
+      .replaceAll('#fff', 'var(--vp-c-bg)')
+      .replaceAll('#898989', 'var(--vp-c-brand-gray)')
+      .replaceAll('#BFBFBF', 'var(--vp-c-brand-gray2)')
+      .replaceAll('#0066C4', 'var(--vp-c-brand)'),
     )
   return {
     name: 'vitepress-sidebar-navbar',

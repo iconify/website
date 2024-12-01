@@ -52,7 +52,7 @@
     "iconify-icon": "^2.1.0",
     "lite-youtube-embed": "^0.3.3",
     "markdown-it": "^14.1.0",
-    "sass": "^1.81.0",
+    "sass": "1.69.7",
     "sitemap": "^8.0.0",
     "std-env": "^3.8.0",
     "taze": "^0.18.0",

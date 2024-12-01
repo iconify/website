@@ -9,7 +9,7 @@ const buttons: HomePageButtonProps[] = [{
   link: '/getting-started/',
   text: 'Getting Started',
   primary: true,
-  icon: 'line-md:iconify1',
+  icon: 'line-md:chevron-right',
 }, {
   link: '/news/#latest-updates',
   text: 'Latest Updates',
