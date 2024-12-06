@@ -1,4 +1,4 @@
-$code-font-family: 'PT Mono', monospace;
+$code-font-family: "PT Mono", monospace;
 $code-font-size: 14px;
 $code-line-height: 22px;
 
@@ -50,7 +50,6 @@ div.code-blocks code {
     }
   }
 
-
   &-title {
     padding: 8px 16px;
     color: var(--vp-c-text-2);
@@ -74,7 +73,6 @@ div.code-blocks code {
   &--demo &-content {
     background: var(--vp-c-bg-alt);
   }
-
 
   &-hint {
     padding: 8px 16px;
@@ -120,8 +118,9 @@ div.code-blocks code {
     transition: opacity 0.4s, transform 0.3s;
     transform-origin: right 4px;
 
-    &:before, &:after {
-      content: '';
+    &:before,
+    &:after {
+      content: "";
       position: absolute;
       top: 0;
       color: var(--c-blue-gray);
@@ -148,15 +147,19 @@ div.code-blocks code {
       transform-origin: left top;
     }
 
-    &--html, &--php {
+    &--html,
+    &--php {
       background: var(--c-green);
-      &:before, &:after {
+      &:before,
+      &:after {
         color: var(--c-green);
       }
     }
-    &--js, &--ts {
+    &--js,
+    &--ts {
       background: var(--c-purple);
-      &:before, &:after {
+      &:before,
+      &:after {
         color: var(--c-purple);
       }
     }
@@ -182,10 +185,11 @@ div.code-blocks code {
     color: var(--vp-c-brand);
     transition: color 0.2s linear;
     &:hover {
-      color: var(--vp-c-brand-accent)
+      color: var(--vp-c-brand-accent);
     }
 
-    .copied, .hidden {
+    .copied,
+    .hidden {
       visibility: hidden;
     }
 
@@ -200,7 +204,8 @@ div.code-blocks code {
     }
   }
 
-  &:hover, &:focus-within {
+  &:hover,
+  &:focus-within {
     .code-block-copy {
       display: block;
     }

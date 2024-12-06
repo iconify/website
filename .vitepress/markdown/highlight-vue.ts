@@ -1,4 +1,4 @@
-import hljs from 'highlight.js'
+import hljs from "highlight.js";
 
 /**
  * Copied from highlightjs-vue: https://github.com/highlightjs/highlightjs-vue
@@ -8,46 +8,46 @@ import hljs from 'highlight.js'
  */
 export function hljsDefineVue() {
   return {
-    subLanguage: 'xml',
+    subLanguage: "xml",
     contains: [
-      hljs.COMMENT('<!--', '-->', {
+      hljs.COMMENT("<!--", "-->", {
         relevance: 10,
       }),
       {
         begin: /^(\s*)(<script>)/gm,
         end: /^(\s*)(<\/script>)/gm,
-        subLanguage: 'javascript',
+        subLanguage: "javascript",
         excludeBegin: true,
         excludeEnd: true,
       },
       {
         begin: /^(\s*)(<script lang=["']ts["']>)/gm,
         end: /^(\s*)(<\/script>)/gm,
-        subLanguage: 'typescript',
+        subLanguage: "typescript",
         excludeBegin: true,
         excludeEnd: true,
       },
       {
         begin: /^(\s*)(<style(\sscoped)?>)/gm,
         end: /^(\s*)(<\/style>)/gm,
-        subLanguage: 'css',
+        subLanguage: "css",
         excludeBegin: true,
         excludeEnd: true,
       },
       {
         begin: /^(\s*)(<style lang=["'](scss|sass)["'](\sscoped)?>)/gm,
         end: /^(\s*)(<\/style>)/gm,
-        subLanguage: 'scss',
+        subLanguage: "scss",
         excludeBegin: true,
         excludeEnd: true,
       },
       {
         begin: /^(\s*)(<style lang=["']stylus["'](\sscoped)?>)/gm,
         end: /^(\s*)(<\/style>)/gm,
-        subLanguage: 'stylus',
+        subLanguage: "stylus",
         excludeBegin: true,
         excludeEnd: true,
       },
     ],
-  }
+  };
 }
