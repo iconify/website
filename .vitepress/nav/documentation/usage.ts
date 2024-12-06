@@ -96,6 +96,9 @@ export const UsageSidebar: SidebarItem[] = [
       text: 'Figma Plugin',
       link: '/docs/design/figma/',
     }, {
+      text: 'Penpot Plugin',
+      link: '/docs/design/penpot/',
+    }, {
       text: 'Sketch Plugin',
       link: '/docs/design/sketch/',
     }],

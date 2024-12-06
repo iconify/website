@@ -1,5 +1,5 @@
 ```yaml
-title: Iconify for Figma
+title: Iconify for Penpot
 replacements:
   - code: "60,000"
     value: "${counters.icons}"
@@ -7,9 +7,9 @@ replacements:
     value: "${counters.sets}+"
 ```
 
-# Iconify for Figma
+# Iconify for Penpot
 
-With the Iconify plugin for Figma you can import over 60,000 vector icons to Figma.
+With the Iconify plugin for Penpot you can import over 60,000 vector icons to Penpot.
 
 It is completely free!
 
@@ -18,24 +18,35 @@ Iconify project is open source and offers only open source icon sets.
 
 Plugin remembers the last page you have visited, making it easy to continue searching or browsing icons.
 
-For visitors that have small monitors, the plugin offers compact mode.
-Button to toggle compact mode is in the top right corner of the plugin window.
-
 ## Installation
 
-You can install Iconify for Figma from [Iconify plugin page](https://www.figma.com/community/plugin/735098390272716381/Iconify).
+Plugin is available at [Iconify for Penpot GitHub repository](https://github.com/iconify/iconify-penpot/).
+
+To install plugin, open plugin manager in Penpot and add the following URL:
+
+```raw
+https://penpot.iconify.design/manifest.json
+```
 
 ## Usage
 
-In Figma menu select `[str]Plugins`, then select `[str]Iconify`.
+In Penpot menu select `[str]Plugins`, then select `[str]Iconify`.
 
-Browse or search icons, select any icon, click `[str]Import Icon` button or drag icon to the Figma document.
+Browse or search icons, select any icon, click `[str]Import Icon` button or drag icon to the Penpot document.
+
+### Themes
+
+Plugin supports both light and dark themes.
+
+To change theme, change theme in Penpot settings.
+
+Screenshots below demonstrate both themes.
 
 ### Detailed instructions
 
 After opening the plugin, you will see the main page:
 
-![Iconify for Figma: main page](/assets/images/plugins/figma41-icon-sets.png)
+![Iconify for Penpot: main page](/assets/images/plugins/penpot-index2-light.png)
 
 Click any icon set or search icons.
 
@@ -44,12 +55,12 @@ You can filter icons by categories (if the current icon set has them), search ic
 
 To show more icons, simply scroll the icons list.
 
-![Iconify for Figma: icon set](/assets/images/plugins/figma41-icon-set.png)
+![Iconify for Penpot: icon set](/assets/images/plugins/penpot-tabler-dark.png)
 
 You can also search all icon sets for icons.
-For example, search for "gear":
+For example, search for "home":
 
-![Iconify for Figma: icon search results](/assets/images/plugins/figma41-search-compact.png)
+![Iconify for Penpot: icon search results](/assets/images/plugins/penpot-home-light.png)
 
 The plugin will show you all icons that match your keyword.
 
@@ -59,32 +70,24 @@ If you hover it, you will see the icon name. If you click it, you will see:
 
 - Icon size.
 - Author information and license (only in search results).
-- Buttons to quickly import icon as a component or frame and to get code sample.
+- Buttons to import icon and to get code sample.
 
 You can import icon by:
 
 - Using quick import buttons from icon tooltip.
-- Dragging icon from plugin window to Figma document.
+- Dragging icon from plugin window to Penpot document.
 - Clicking icon to select it, importing it using buttons in plugin window footer.
 
 ### Advanced import
 
 When you select an icon, it will appear in page footer with options:
 
-![Iconify for Figma: icon code](/assets/images/plugins/figma41-icon-set-selected2.png)
+![Iconify for Penpot: icon code](/assets/images/plugins/penpot-icon-light.png)
 
 For icons that do not have a hardcoded palette, color picker is available,
-showing recently used colors and available color styles:
+showing recently used colors:
 
-![Iconify for Figma: color picker](/assets/images/plugins/figma41-color-picker.png)
-
-### Compact mode
-
-If you have limited window space available, you can make the plugin window even smaller.
-
-Click the compact window button in the top right corner and the plugin window will become much smaller:
-
-![Iconify for Figma: compact mode](/assets/images/plugins/figma41-icon-sets-compact.png)
+![Iconify for Penpot: color picker](/assets/images/plugins/penpot-color-light.png)
 
 ## Support and feedback
 

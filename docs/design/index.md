@@ -9,6 +9,7 @@ For designers, Iconify ecosystem offers several ways to easily import icons in v
 Available options:
 
 - Figma users can install [Iconify plug-in for Figma](./figma/index.md).
+- Penpot users can install [Iconify plug-in for Penpot](./penpot/index.md).
 - Sketch users can install [Iconify plugin-in for Sketch](./sketch/index.md).
 - For other design tools, or if you are experiencing issues with plug-ins listed above, you can copy and paste SVG from one of sources listed below.
 
