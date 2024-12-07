@@ -1,28 +1,30 @@
 ```yaml
 title: Iconify for Vue
 replacements:
-  - code: '60,000'
-    value: '${counters.icons}'
-  - code: '80+'
-    value: '${counters.sets}+'
-  - code: '@iconify/vue@3'
-    value: '${vue.import}'
+  - code: "60,000"
+    value: "${counters.icons}"
+  - code: "80+"
+    value: "${counters.sets}+"
+  - code: "@iconify/vue@3"
+    value: "${vue.import}"
 types:
-  IconifyIcon: '/docs/types/iconify-icon.md'
+  IconifyIcon: "/docs/types/iconify-icon.md"
 functions:
-  addCollection: './add-collection.md'
-  addIcon: './add-icon.md'
-  iconExists: './icon-exists.md'
-  listIcons: './list-icons.md'
-  loadIcons: './load-icons.md'
-  loadIcon: './load-icon.md'
-  getIcon: './get-icon.md'
-  enableCache: './enable-cache.md'
-  disableCache: './disable-cache.md'
-  addAPIProvider: './add-api-provider.md'
-  replaceIDs: './replace-ids.md'
-  buildIcon: './build-icon.md'
-  setFetch: './set-fetch.md'
+  addCollection: "./add-collection.md"
+  addIcon: "./add-icon.md"
+  iconExists: "./icon-exists.md"
+  listIcons: "./list-icons.md"
+  loadIcons: "./load-icons.md"
+  loadIcon: "./load-icon.md"
+  getIcon: "./get-icon.md"
+  enableCache: "./enable-cache.md"
+  disableCache: "./disable-cache.md"
+  addAPIProvider: "./add-api-provider.md"
+  replaceIDs: "./replace-ids.md"
+  buildIcon: "./build-icon.md"
+  setFetch: "./set-fetch.md"
+  setCustomIconLoader: "./custom-loaders.md"
+  setCustomIconsLoader: "./custom-loaders.md"
 ```
 
 # Iconify for Vue
@@ -56,7 +58,7 @@ yarn add --dev @iconify/vue@3
 Install `[npm]@iconify/vue@3` and import component from it (component is exported as named export):
 
 ```js
-import { Icon } from '@iconify/vue';
+import { Icon } from "@iconify/vue";
 ```
 
 Then in template use `[var]Icon` component with icon name as `[prop]icon` parameter:
@@ -74,9 +76,8 @@ For server side rendering it means generated HTML will not include SVGs,
 icons will be rendered only on the client side after hydration is complete.
 
 If you do want to render SVGs on the server side,
-provide [icon data](/docs/types/iconify-icon.md) as a parameter instead of icon name 
+provide [icon data](/docs/types/iconify-icon.md) as a parameter instead of icon name
 or [use a different icon component](/docs/usage/index.md).
-
 
 #### SSR attribute
 
@@ -175,6 +176,12 @@ include: icon-components/components/functions-list/getting-icons
 
 ```yaml
 include: icon-components/components/functions-list/adding-icons
+```
+
+### Custom loaders {#custom-loaders}
+
+```yaml
+include: icon-components/components/functions-list/custom-loaders
 ```
 
 ### Helper functions {#helper}

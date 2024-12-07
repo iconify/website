@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>7 Dec 2024</span><a href="/news/2024.html#components-update-dec">New versions of Iconify icon components, utils and tools</a></p>
 <p><span>6 Dec 2024</span><a href="/news/2024.html#penpot-plugin">Iconify plugin for Penpot</a></p>
 <p><span>1 Dec 2024</span><a href="/news/2024.html#icon-sets-rebrand">New website for browsing icons</a></p>
 <p><span>30 Nov 2024</span><a href="/news/2024.html#rebrand">New logo</a></p>
 <p><span>23 Oct 2024</span><a href="/news/2024.html#figma-31">Figma plugin rewrite</a></p>
-<p><span>22 Oct 2024</span><a href="/news/2024.html#figma-preview2-ready">Figma plugin preview</a></p>
 </div>

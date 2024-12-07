@@ -1,28 +1,30 @@
 ```yaml
 title: Iconify for Svelte
 replacements:
-  - code: '60,000'
-    value: '${counters.icons}'
-  - code: '80+'
-    value: '${counters.sets}+'
-  - code: '@iconify/svelte@2'
-    value: '${svelte.import}'
+  - code: "60,000"
+    value: "${counters.icons}"
+  - code: "80+"
+    value: "${counters.sets}+"
+  - code: "@iconify/svelte@2"
+    value: "${svelte.import}"
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: "../../types/iconify-icon.md"
 functions:
-  addCollection: './add-collection.md'
-  addIcon: './add-icon.md'
-  iconExists: './icon-exists.md'
-  listIcons: './list-icons.md'
-  loadIcons: './load-icons.md'
-  loadIcon: './load-icon.md'
-  getIcon: './get-icon.md'
-  enableCache: './enable-cache.md'
-  disableCache: './disable-cache.md'
-  addAPIProvider: './add-api-provider.md'
-  replaceIDs: './replace-ids.md'
-  buildIcon: './build-icon.md'
-  setFetch: './set-fetch.md'
+  addCollection: "./add-collection.md"
+  addIcon: "./add-icon.md"
+  iconExists: "./icon-exists.md"
+  listIcons: "./list-icons.md"
+  loadIcons: "./load-icons.md"
+  loadIcon: "./load-icon.md"
+  getIcon: "./get-icon.md"
+  enableCache: "./enable-cache.md"
+  disableCache: "./disable-cache.md"
+  addAPIProvider: "./add-api-provider.md"
+  replaceIDs: "./replace-ids.md"
+  buildIcon: "./build-icon.md"
+  setFetch: "./set-fetch.md"
+  setCustomIconLoader: "./custom-loaders.md"
+  setCustomIconsLoader: "./custom-loaders.md"
 ```
 
 # Iconify for Svelte
@@ -56,7 +58,7 @@ yarn add --dev @iconify/svelte@2
 Install `[npm]@iconify/svelte@2` and import component from it (component is exported as default export):
 
 ```js
-import Icon from '@iconify/svelte';
+import Icon from "@iconify/svelte";
 ```
 
 Then in template use `[var]Icon` component with icon name as `[prop]icon` parameter:
@@ -151,6 +153,12 @@ include: icon-components/components/functions-list/getting-icons
 
 ```yaml
 include: icon-components/components/functions-list/adding-icons
+```
+
+### Custom loaders {#custom-loaders}
+
+```yaml
+include: icon-components/components/functions-list/custom-loaders
 ```
 
 ### Helper functions {#helper}

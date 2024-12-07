@@ -1,27 +1,29 @@
 ```yaml
 title: Iconify for React
 replacements:
-  - code: '60,000'
-    value: '${counters.icons}'
-  - code: '80+'
-    value: '${counters.sets}+'
-  - code: '@iconify/react@2'
-    value: '${react.import}'
+  - code: "60,000"
+    value: "${counters.icons}"
+  - code: "80+"
+    value: "${counters.sets}+"
+  - code: "@iconify/react@2"
+    value: "${react.import}"
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: "../../types/iconify-icon.md"
 functions:
-  addCollection: './add-collection.md'
-  addIcon: './add-icon.md'
-  iconExists: './icon-exists.md'
-  listIcons: './list-icons.md'
-  loadIcons: './load-icons.md'
-  loadIcon: './load-icon.md'
-  getIcon: './get-icon.md'
-  enableCache: './enable-cache.md'
-  disableCache: './disable-cache.md'
-  addAPIProvider: './add-api-provider.md'
-  replaceIDs: './replace-ids.md'
-  buildIcon: './build-icon.md'
+  addCollection: "./add-collection.md"
+  addIcon: "./add-icon.md"
+  iconExists: "./icon-exists.md"
+  listIcons: "./list-icons.md"
+  loadIcons: "./load-icons.md"
+  loadIcon: "./load-icon.md"
+  getIcon: "./get-icon.md"
+  enableCache: "./enable-cache.md"
+  disableCache: "./disable-cache.md"
+  addAPIProvider: "./add-api-provider.md"
+  replaceIDs: "./replace-ids.md"
+  buildIcon: "./build-icon.md"
+  setCustomIconLoader: "./custom-loaders.md"
+  setCustomIconsLoader: "./custom-loaders.md"
 ```
 
 # Iconify for React
@@ -60,7 +62,7 @@ npm install --save-dev @iconify/react@legacy
 Install `[npm]@iconify/react@2` and import `[var]Icon` component from it:
 
 ```js
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 ```
 
 Then use `[var]Icon` component with icon name as `[prop]icon` parameter:
@@ -90,6 +92,7 @@ consider switching to [Iconify Icon web component](/docs/iconify-icon/index.md).
 If you do want to render SVGs without a delay,
 provide [icon data](/docs/types/iconify-icon.md) as parameter instead of icon name
 or use a different way to render icons, such as:
+
 - [Iconify Icon web component](/docs/iconify-icon/index.md)
 - [Unplugin Icons](/docs/usage/svg/unplugin/index.md)
 - [Tailwind CSS with Iconify plugin](/docs/usage/css/tailwind/iconify/index.md)
@@ -122,7 +125,7 @@ include: icon-components/components/intro-color
 ```
 
 ```jsx
-<Icon icon="mdi:home" style={{ color: 'red' }} />
+<Icon icon="mdi:home" style={{ color: "red" }} />
 ```
 
 For various ways to set color, see [how to change icon color in Iconify for React](./color.md).
@@ -134,7 +137,7 @@ include: icon-components/components/intro-size
 ```
 
 ```jsx
-<Icon icon="mdi:home" style={{ fontSize: '24px' }} />
+<Icon icon="mdi:home" style={{ fontSize: "24px" }} />
 ```
 
 For various ways to change icon dimensions, see [how to change icon dimensions in Iconify for React](./dimensions.md).
@@ -167,6 +170,12 @@ include: icon-components/components/functions-list/getting-icons
 
 ```yaml
 include: icon-components/components/functions-list/adding-icons
+```
+
+### Custom loaders {#custom-loaders}
+
+```yaml
+include: icon-components/components/functions-list/custom-loaders
 ```
 
 ### Helper functions {#helper}
