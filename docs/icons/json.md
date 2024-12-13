@@ -1,12 +1,14 @@
 ```yaml
 title: Individual Icon Sets
 types:
-  IconifyJSON: '/docs/types/iconify-json.md'
-  IconifyInfo: '/docs/types/iconify-json-metadata.md'
-  IconifyChars: '/docs/types/iconify-json-metadata.md#chars'
-  IconifyMetaData: '/docs/types/iconify-json-metadata.md#iconify-categories'
+  IconifyJSON: "/docs/types/iconify-json.md"
+  IconifyInfo: "/docs/types/iconify-json-metadata.md"
+  IconifyChars: "/docs/types/iconify-json-metadata.md#chars"
+  IconifyMetaData: "/docs/types/iconify-json-metadata.md#iconify-categories"
 functions:
-  exportJSONPackage: '/docs/libraries/tools/export/json-package.md'
+  exportJSONPackage: "/docs/libraries/tools/export/json-package.md"
+  getIconData: "/docs/libraries/utils/get-icon-data.md"
+  getIcons: "/docs/libraries/utils/get-icons.md"
 ```
 
 # Individual icon sets
@@ -31,8 +33,8 @@ Unlike full package, where all data for icon set is stored in one file, individu
 You can import icon set using named import from package, like this:
 
 ```js
-import { icons as mdiIcons } from '@iconify-json/mdi';
-import { icons as mdiLightIcons } from '@iconify-json/mdi-light';
+import { icons as mdiIcons } from "@iconify-json/mdi";
+import { icons as mdiLightIcons } from "@iconify-json/mdi-light";
 ```
 
 Code samples above use JSON modules. It works fine when using bundlers or when using CommonJS. When using ES modules, older versions of Node.js require running script with `[str]--experimental-json-modules` flag.
@@ -40,8 +42,8 @@ Code samples above use JSON modules. It works fine when using bundlers or when u
 If you are using older Node.js and cannot import JSON files, you can use `[func]require()`:
 
 ```js
-const mdiIcons = require('@iconify-json/mdi/icons.json');
-const mdiLightIcons = require('@iconify-json/mdi-light/icons.json');
+const mdiIcons = require("@iconify-json/mdi/icons.json");
+const mdiLightIcons = require("@iconify-json/mdi-light/icons.json");
 ```
 
 ## Creating packages
@@ -64,3 +66,8 @@ For reading icon sets, you can use:
 
 - [Iconify Utils](/docs/libraries/utils/index.md) for JavaScript.
 - [Iconify JSON Tools](https://github.com/iconify/json-tools.php) for PHP (deprecated).
+
+To use icon set packages with Iconify Utils, follow these steps:
+
+- Read icons data. If you are using file system functions that return a string, convert it to `[type]IconifyJSON` object using `[func]JSON.parse()`.
+- Extract data. To extract multiple icons, use `[func]getIcons()`, to extract one icon use `[func]getIconData()`. Click function links for code samples.

@@ -1,20 +1,22 @@
 ```yaml
 title: Iconify Icon Sets Package
 replacements:
-  - code: '60,000'
-    value: '${counters.icons}'
-  - code: '60k'
-    value: '${counters.icons-short}'
-  - code: '80 icon sets'
-    value: '${counters.sets} icon sets'
+  - code: "60,000"
+    value: "${counters.icons}"
+  - code: "60k"
+    value: "${counters.icons-short}"
+  - code: "80 icon sets"
+    value: "${counters.sets} icon sets"
 types:
-  IconifyJSON: '/docs/types/iconify-json.md'
-  IconifyInfo: '/docs/types/iconify-json-metadata.md'
-  LegacyIconifyInfo: '/docs/types/iconify-json-metadata.md'
-  IconifyChars: '/docs/types/iconify-json-metadata.md#chars'
-  IconifyMetaData: '/docs/types/iconify-json-metadata.md#iconify-categories'
+  IconifyJSON: "/docs/types/iconify-json.md"
+  IconifyInfo: "/docs/types/iconify-json-metadata.md"
+  LegacyIconifyInfo: "/docs/types/iconify-json-metadata.md"
+  IconifyChars: "/docs/types/iconify-json-metadata.md#chars"
+  IconifyMetaData: "/docs/types/iconify-json-metadata.md#iconify-categories"
 functions:
-  exportJSONPackage: '/docs/libraries/tools/export/json-package.md'
+  exportJSONPackage: "/docs/libraries/tools/export/json-package.md"
+  getIconData: "/docs/libraries/utils/get-icon-data.md"
+  getIcons: "/docs/libraries/utils/get-icons.md"
 ```
 
 # Iconify icon sets package
@@ -64,6 +66,11 @@ For reading icon sets, you can use:
 
 - [Iconify Utils](/docs/libraries/utils/index.md) for JavaScript.
 - [Iconify JSON Tools](https://github.com/iconify/json-tools.php) for PHP, deprecated and unmaintained.
+
+To use icon set packages with Iconify Utils, follow these steps:
+
+- Read icons data from JSON file for specific icon set. If you are using file system functions that return a string, convert it to `[type]IconifyJSON` object using `[func]JSON.parse()`.
+- Extract data. To extract multiple icons, use `[func]getIcons()`, to extract one icon use `[func]getIconData()`. Click function links for code samples.
 
 ## Helper functions {#helpers}
 
