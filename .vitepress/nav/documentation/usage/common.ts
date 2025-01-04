@@ -93,6 +93,7 @@ export function commonAPIFunctions(root: string): SidebarItem[] {
     // Custom loader
     ...customLoader,
     // Cache management
+    /*
     {
       text: "enableCache()",
       link: `${root}enable-cache`,
@@ -101,5 +102,6 @@ export function commonAPIFunctions(root: string): SidebarItem[] {
       text: "disableCache()",
       link: `${root}disable-cache`,
     },
+    */
   ];
 }

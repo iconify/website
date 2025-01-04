@@ -1,14 +1,16 @@
 ```yaml
-title: 'Iconify for Vue Function: disableCache'
+title: "Iconify for Vue Function: disableCache"
 functions:
-  enableCache: './enable-cache.md'
-  addIcon: './add-icon.md'
-  addCollection: './add-collection.md'
+  enableCache: "./enable-cache.md"
+  addIcon: "./add-icon.md"
+  addCollection: "./add-collection.md"
 ```
 
 # Iconify for Vue function: disableCache
 
 This tutorial is part of [Iconify for Vue functions tutorial](./index.md#functions).
+
+`include icon-components/functions/cache/deprecated`
 
 `include icon-components/functions/cache/intro-disable`
 

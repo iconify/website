@@ -1,14 +1,16 @@
 ```yaml
-title: 'Iconify for React Function: enableCache'
+title: "Iconify for React Function: enableCache"
 functions:
-  disableCache: './disable-cache.md'
-  addIcon: './add-icon.md'
-  addCollection: './add-collection.md'
+  disableCache: "./disable-cache.md"
+  addIcon: "./add-icon.md"
+  addCollection: "./add-collection.md"
 ```
 
 # Iconify for React function: enableCache
 
 This tutorial is part of [Iconify for React functions tutorial](./index.md#functions).
+
+`include icon-components/functions/cache/deprecated`
 
 `include icon-components/functions/cache/intro-enable`
 

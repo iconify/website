@@ -1,14 +1,16 @@
 ```yaml
-title: 'Iconify for Svelte Function: disableCache'
+title: "Iconify for Svelte Function: disableCache"
 functions:
-  enableCache: './enable-cache.md'
-  addIcon: './add-icon.md'
-  addCollection: './add-collection.md'
+  enableCache: "./enable-cache.md"
+  addIcon: "./add-icon.md"
+  addCollection: "./add-collection.md"
 ```
 
 # Iconify for Svelte function: disableCache
 
 This tutorial is part of [Iconify for Svelte functions tutorial](./index.md#functions).
+
+`include icon-components/functions/cache/deprecated`
 
 `include icon-components/functions/cache/intro-disable`
 
