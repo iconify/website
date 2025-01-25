@@ -1,19 +1,20 @@
 <script setup lang="ts">
 export interface HomePageButtonProps {
-  link: string
-  text: string
-  external?: boolean
-  primary?: true
-  icon?: string
+  link: string;
+  text: string;
+  external?: boolean;
+  primary?: true;
+  icon?: string;
+  svg?: string;
 }
 
-const props = defineProps<HomePageButtonProps>()
+const props = defineProps<HomePageButtonProps>();
 
 const classes = computed(() => [
-  'homepage-button',
-  props.primary && 'homepage-button--primary',
-  props.icon && 'homepage-button--with-icon',
-])
+  "homepage-button",
+  props.primary && "homepage-button--primary",
+  props.icon && "homepage-button--with-icon",
+]);
 </script>
 
 <template>
@@ -24,14 +25,18 @@ const classes = computed(() => [
     :class="classes"
   >
     <iconify-icon v-if="props.icon" :icon="props.icon" />
-    {{ props.text }}</a>
+    <span v-if="props.svg" v-html="props.svg" />
+    {{ props.text }}</a
+  >
 </template>
 
 <style lang="scss">
 .homepage-button {
   position: relative;
-  display: inline-block;
-  padding: 8px 20px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding: 8px 16px;
   text-align: center;
   font-weight: 600;
   white-space: nowrap;
@@ -61,7 +66,8 @@ const classes = computed(() => [
       color: inherit;
     }
   }
-  &:hover, &:active {
+  &:hover,
+  &:active {
     border-color: var(--vp-c-brand-accent);
     background-color: var(--vp-c-brand-accent);
     color: var(--vp-c-bg);
