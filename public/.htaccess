@@ -1,0 +1,16 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteRule ^icon-sets/(.*).html$ https://icon-sets.iconify.design/$1/ [R=301,NC,L]
+RewriteRule ^icon-sets/(.*)$ https://icon-sets.iconify.design/$1 [R=301,NC,L]
+RewriteRule ^icon-sets$ https://icon-sets.iconify.design/ [R=301,NC,L]
+RewriteRule ^discord/?$ https://discord.gg/bhEYcgNBUW [R=301,NC,L]
+
+# fixes
+RewriteRule ^docs/(.*)name$ /docs/$1name.html [R=301,NC,L]
+RewriteRule ^docs/(.*)set$ /docs/$1set.html [R=301,NC,L]
+RewriteRule ^docs/usage$ /docs/usage/index.html [R=301,NC,L]
+RewriteRule ^news/(.*).md$ /news/$1.html [R=301,NC,L]
+RewriteRule ^docs/(.*).md$ /docs/$1.html [R=301,NC,L]
+
+ErrorDocument 404 /404.php
