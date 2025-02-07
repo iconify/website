@@ -37,11 +37,12 @@ function scanDir(parent) {
 scanDir("");
 
 // Check all .html files
+let count = 0;
 files.forEach((file) => {
   if (file.endsWith(".html") && !file.endsWith("/index.html")) {
     // Redirect from /file to /file.html by creating /file/index.html
     const newDirectory = file.slice(0, -5);
-    if (dirs.has(newDirectory)) {
+    if (files.has(newDirectory + "/index.html")) {
       return;
     }
 
@@ -52,7 +53,8 @@ files.forEach((file) => {
     }
 
     const redirectFile = newDirectory + "/index.php";
-    console.log('Redirecting from "' + redirectFile + '" to "' + file + '"');
+    // console.log('Redirecting from "' + redirectFile + '" to "' + file + '"');
+    count++;
     writeFileSync(
       distFolder + redirectFile,
       `<?php
@@ -84,3 +86,5 @@ redirect('${file}');
     );
   }
 });
+
+console.log("Added", count, "redirects");
