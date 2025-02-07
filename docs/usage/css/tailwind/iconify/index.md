@@ -1,16 +1,20 @@
 ```yaml
 title: Using Iconify for Tailwind CSS
 types:
-  IconifyJSON: '/docs/types/iconify-json.md'
-  IconifyInfo: '/docs/types/iconify-info.md'
+  IconifyJSON: "/docs/types/iconify-json.md"
+  IconifyInfo: "/docs/types/iconify-info.md"
 functions:
-  addDynamicIconSelectors: '../dynamic/index.md'
+  addDynamicIconSelectors: "../dynamic/index.md"
 ```
 
 # Using Iconify plugin for Tailwind CSS
 
 [Iconify plugin for Tailwind CSS package](../index.md) has several plugins.
 This documentation covers `[func]addIconSelectors` plugin.
+
+This plugin for Tailwind 3, which can also be used with Tailwind 4 but requires creating a config file.
+
+For newer Tailwind 4 plugin, see [Tailwind 4 plugin documentation](../tailwind4/index.md).
 
 ## The Difference
 
@@ -21,11 +25,13 @@ What makes this plugin different from `[func]addDynamicIconSelectors()`?
 - You can use the same icon as mask or background image.
 
 Downsides:
+
 - Requires configuration. You must list icon sets you want to use.
 
 ## HTML
 
 To add icon to HTML, all you have to do is create a `[tag]span` element with two class names:
+
 - Class name to render icon as background or mask image.
 - Class name with icon name (CSS contains icon data).
 
@@ -127,15 +133,15 @@ from `[npm]@iconify/tailwind` and add it to a list of plugins.
 ### Basic usage
 
 ```js
-const { addIconSelectors } = require('@iconify/tailwind');
+const { addIconSelectors } = require("@iconify/tailwind");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/*.html'],
-    plugins: [
-        // Iconify plugin, requires writing list of icon sets to load
-        addIconSelectors(['mdi', 'mdi-light']),
-    ],
+  content: ["./src/*.html"],
+  plugins: [
+    // Iconify plugin, requires writing list of icon sets to load
+    addIconSelectors(["mdi", "mdi-light"]),
+  ],
 };
 ```
 
@@ -157,38 +163,38 @@ The plugin also accepts an object with options as parameter.
 The only required option is `[prop]prefixes`, which is a list of prefixes, same as an array in the example above.
 
 ```js
-const { addIconSelectors } = require('@iconify/tailwind');
+const { addIconSelectors } = require("@iconify/tailwind");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/*.html'],
-    plugins: [
-        // Iconify plugin, requires writing list of icon sets to load
-        addIconSelectors({
-            // List of prefixes, required
-            prefixes: ['mdi', 'mdi-light'],
-            
-            // All other properties below are optional. This example shows default values.
-            // Mask and background selectors 
-            maskSelector: '.iconify-color', 
-            backgroundSelector: '.iconify',
-            // Icon selector, must have "{prefix}" and "{name}" in it
-            iconSelector: '.{prefix}--{name}',
-            // Variable name to use for icon data
-            varName: 'svg',
-            // Scale icons, which sets width/height in background/mask selectors
-            scale: 1,
-            // Make icons square
-            square: true,
-            // Extra rules to add to mask and background selectors
-            extraMaskRules: {},
-            extraBackgroundRules: {},
-            // Callback to customise icons (such as change stroke-width, color, etc...). 
-            // First param is content, second is icon name, third is icon set prefix.
-            // Function should return modified content.
-            customise: (content, name, prefix) => content,            
-        }),
-    ],
+  content: ["./src/*.html"],
+  plugins: [
+    // Iconify plugin, requires writing list of icon sets to load
+    addIconSelectors({
+      // List of prefixes, required
+      prefixes: ["mdi", "mdi-light"],
+
+      // All other properties below are optional. This example shows default values.
+      // Mask and background selectors
+      maskSelector: ".iconify-color",
+      backgroundSelector: ".iconify",
+      // Icon selector, must have "{prefix}" and "{name}" in it
+      iconSelector: ".{prefix}--{name}",
+      // Variable name to use for icon data
+      varName: "svg",
+      // Scale icons, which sets width/height in background/mask selectors
+      scale: 1,
+      // Make icons square
+      square: true,
+      // Extra rules to add to mask and background selectors
+      extraMaskRules: {},
+      extraBackgroundRules: {},
+      // Callback to customise icons (such as change stroke-width, color, etc...).
+      // First param is content, second is icon name, third is icon set prefix.
+      // Function should return modified content.
+      customise: (content, name, prefix) => content,
+    }),
+  ],
 };
 ```
 
@@ -216,6 +222,7 @@ This plugin requires setting a list of icon sets you want to use,
 set as either the only parameter to plugin or as `[prop]prefixes` property in options.
 
 You can use it to:
+
 - Select icon sets you want to use.
 - Filter icons to render only icons that you need, which improves plugin performance.
 - Customise icons.

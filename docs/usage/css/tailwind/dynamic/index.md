@@ -1,10 +1,10 @@
 ```yaml
 title: Using Iconify for Tailwind CSS
 types:
-  IconifyJSON: '/docs/types/iconify-json.md'
-  IconifyInfo: '/docs/types/iconify-info.md'
+  IconifyJSON: "/docs/types/iconify-json.md"
+  IconifyInfo: "/docs/types/iconify-info.md"
 functions:
-  addIconSelectors: '../iconify/index.md'
+  addIconSelectors: "../iconify/index.md"
 ```
 
 # Using Iconify plugin for Tailwind CSS
@@ -12,15 +12,21 @@ functions:
 [Iconify plugin for Tailwind CSS package](../index.md) has several plugins.
 This documentation covers `[func]addDynamicIconSelectors` plugin.
 
+This plugin for Tailwind 3, which can also be used with Tailwind 4 but requires creating a config file.
+
+For newer Tailwind 4 plugin, see [Tailwind 4 plugin documentation](../tailwind4/index.md).
+
 ## The Difference
 
 What makes this plugin different from `[func]addIconSelectors()`?
 
 It is easier to use.
+
 - No need to configure plugin.
 - One class name per icon.
 
 Downsides:
+
 - Less compact CSS.
 - Weird selectors (caused by Tailwind CSS plugin system limitations).
 
@@ -52,15 +58,15 @@ from `[npm]@iconify/tailwind` and add it to a list of plugins.
 ### Basic usage
 
 ```js
-const { addDynamicIconSelectors } = require('@iconify/tailwind');
+const { addDynamicIconSelectors } = require("@iconify/tailwind");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/*.html'],
-    plugins: [
-        // Iconify plugin
-        addDynamicIconSelectors(),
-    ],
+  content: ["./src/*.html"],
+  plugins: [
+    // Iconify plugin
+    addDynamicIconSelectors(),
+  ],
 };
 ```
 
@@ -81,28 +87,28 @@ If you need to, you can create several instances of plugin with different option
 You must use a different value for `[prop]prefix` option for each plugin instance!
 
 ```js
-const { addDynamicIconSelectors } = require('@iconify/tailwind');
+const { addDynamicIconSelectors } = require("@iconify/tailwind");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./src/*.html'],
-    plugins: [
-        // Iconify plugin
-        addDynamicIconSelectors({
-            // Prefix for selectors, must be different for each addDynamicIconSelectors()
-            prefix: 'icon',
-            // Removes redundant rules
-            overrideOnly: false,
-            // Icon height, 0 to disable size
-            scale: 1,
-            // Custom icon sets
-            iconSets: {},
-            // Callback to customise icons (such as change stroke-width, color, etc...). 
-            // First param is content, second is icon name, third is icon set prefix.
-            // Function should return modified content.
-            customise: (content, name, prefix) => content,
-        }),
-    ],
+  content: ["./src/*.html"],
+  plugins: [
+    // Iconify plugin
+    addDynamicIconSelectors({
+      // Prefix for selectors, must be different for each addDynamicIconSelectors()
+      prefix: "icon",
+      // Removes redundant rules
+      overrideOnly: false,
+      // Icon height, 0 to disable size
+      scale: 1,
+      // Custom icon sets
+      iconSets: {},
+      // Callback to customise icons (such as change stroke-width, color, etc...).
+      // First param is content, second is icon name, third is icon set prefix.
+      // Function should return modified content.
+      customise: (content, name, prefix) => content,
+    }),
+  ],
 };
 ```
 
@@ -138,7 +144,7 @@ For example, with configuration in code example above, plugin will generate the 
 
 ```css
 .icon-hover-\[mdi-light--arrow-right\] {
-	--svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4v-1Z'/%3E%3C/svg%3E");
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4v-1Z'/%3E%3C/svg%3E");
 }
 ```
 
@@ -146,10 +152,10 @@ This can be used in combination with default selectors to swap icon on hover wit
 
 ```yaml
 src: usage/tailwind/override.js
-hint: 'tailwind.config.js'
+hint: "tailwind.config.js"
 extra:
   - src: usage/tailwind/override.html
-    title: 'Usage example:'
+    title: "Usage example:"
 ```
 
 ### iconSets
