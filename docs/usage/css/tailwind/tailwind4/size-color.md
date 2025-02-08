@@ -36,6 +36,17 @@ When using clean selectors, you need to specify how you want icon to be rendered
 - `[str]iconify` class name to render icon as a mask image, so icon is rendered with text color.
 - `[str]iconify-color` class name to render icon as a background image.
 
+#### Setting a default rendering mode
+
+Optionally you can set one of these modes as default. The following code allows you to skip adding the
+`[str]iconify` class when using any icon from the `mdi` icon set.
+
+```css
+[class*="mdi--"]:not([class*="iconify-color"]) {
+    @apply iconify;
+  }
+```
+
 #### Monotone icons
 
 To change the color of monotone icons, render them as mask images and change text color:
