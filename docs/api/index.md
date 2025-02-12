@@ -1,16 +1,16 @@
 ```yaml
 replacements:
-  - code: '60k'
-    value: '${counters.icons-short}'
-  - code: '70 icon sets'
-    value: '${counters.sets} icon sets'
-  - code: '70 open source'
-    value: '${counters.sets} open source'
+  - code: "60k"
+    value: "${counters.icons-short}"
+  - code: "70 icon sets"
+    value: "${counters.sets} icon sets"
+  - code: "70 open source"
+    value: "${counters.sets} open source"
 ```
 
 # Iconify API
 
-Iconify API is an open source hosted (or self-hosted) service for developers. 
+Iconify API is an open source hosted (or self-hosted) service for developers.
 
 What is it for?
 
@@ -23,7 +23,7 @@ API can be used to offer hundreds of thousands of icons in website builders or t
 
 ## Hosting API
 
-You can host your own Iconify API service. [API script is open source](https://github.com/iconify/api).
+You can host your own Iconify API service.
 
 By hosting Iconify API yourself you:
 
@@ -31,6 +31,12 @@ By hosting Iconify API yourself you:
 - Can choose which icon sets to host or host your own icon sets.
 
 See [hosting Iconify API](./hosting.md) for more details.
+
+API is available on:
+
+- [GitHub](https://github.com/iconify/api/) - you can customise it before deploying.
+- [NPM](https://www.npmjs.com/package/@iconify/api) - can be embedded in an app without running a full server.
+- [Docker](https://hub.docker.com/r/iconify/api) - for quick deployment.
 
 ## Public API
 
