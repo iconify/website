@@ -12,12 +12,12 @@ Then create file `[file]export-files.mjs` and put this content:
 
 ```yaml
 src: libraries/tools/examples/export-all-files.mjs
-title: 'export-svg.mjs'
+title: 'export-files.mjs'
 ```
 
 Then run that file:
 
 ```bash
-node export-svg.mjs
+node export-files.mjs
 ```
 
