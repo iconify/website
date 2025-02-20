@@ -43,7 +43,7 @@ hint: "Usage with addDynamicIconSelectors"
 ```
 
 ```yaml
-src: usage/tailwind/syntax-iconify.html
+src: usage/tailwind/syntax-iconify2.html
 hint: "Usage with addIconSelectors"
 ```
 
