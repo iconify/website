@@ -1,8 +1,8 @@
 ```yaml
 title: How to use icons in CSS
 functions:
-  getIconsCSS: '/docs/libraries/utils/get-icons-css.md'
-  getIconCSS: '/docs/libraries/utils/get-icon-css.md'
+  getIconsCSS: "/docs/libraries/utils/get-icons-css.md"
+  getIconCSS: "/docs/libraries/utils/get-icon-css.md"
 ```
 
 # How to use icons in CSS
@@ -24,7 +24,7 @@ Advantages:
 However, it also has disadvantages:
 
 - You cannot target elements inside icons, such as changing `[prop]stroke-width`.
-- CSS usually contains all icons, including ones not used on the current page.
+- Cannot use animated icons, except for ones with indefinite looping animations. See below.
 
 ## How icons are rendered
 
@@ -104,3 +104,14 @@ Code samples that should help you:
 - See [Iconify Utils documentation for CSS](./utils/index.md).
 - See `[func]getIconsCSS()` or `[func]getIconCSS()`.
 - Source code for [Iconify for Tailwind CSS](https://github.com/iconify/iconify/tree/main/plugins/tailwind).
+
+## Animated icons
+
+Animated icons should not be used in CSS.
+
+Issue is animation timers.
+
+It would be reasonable to expect animation to start when icon is rendered, but that is not the case in CSS.
+
+In CSS for background and mask images, animation timer starts the first time icon is rendered, then the same timer is used for all instances of icon.
+Animation timer cannot be reset.
