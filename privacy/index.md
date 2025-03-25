@@ -6,13 +6,13 @@ This website is intended for IT professionals who understand how the internet wo
 
 ## Personal data
 
-Iconify website does not store any private data. There is no login or sign up forms, no user accounts.
+Account data is stored only for authenticated users on parts of website that use authentication.
+
+Account data is private, it is not shared with any third parties, it is not used for tracking or analytics.
 
 ## Cookies
 
-Iconify website does not use cookies.
-
-However, some third party services used by website might use cookies:
+Iconify website uses cookies only to manage user sessions for authenticated users.
 
 ### CloudFlare
 
@@ -24,8 +24,10 @@ CloudFlare sometimes does store cookies to improve performance.
 
 Iconify website uses browser storage to store customised settings, such as dark/light mode, color changes when you customise icons, etc...
 
-Data does not contain any personal information, it does not leave your browser, it is not used for tracking or analytics.
+This data does not contain any personal information, it does not leave your browser, it is not used for tracking or analytics.
 
 ## Clearing data
 
 If you want to clear all stored data, simply clear `localStorage` contents in your browser.
+
+If you want to delete your account data, you can do that from account management menu after signing in.
