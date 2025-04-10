@@ -54,6 +54,18 @@ If you are using Yarn:
 yarn add --dev @iconify/svelte@2
 ```
 
+### Svelte 4
+
+Starting with version 6.0.0 of component, it uses Svelte 5 syntax, which is not compatible with Svelte 4.
+
+If you are using Svelte 4, you need to use version 5 of component:
+
+```bash
+npm install --save-dev @iconify/svelte@4
+```
+
+or use a [web component](/docs/iconify-icon/index.md).
+
 ## Usage
 
 Install `[npm]@iconify/svelte@2` and import component from it (component is exported as default export):
@@ -68,9 +80,9 @@ Then in template use `[var]Icon` component with icon name as `[prop]icon` parame
 <Icon icon="mdi-light:home" />
 ```
 
-### Sapper / SvelteKit {#sapper}
+### SvelteKit {#sveltekit}
 
-Component is compatible with Sapper and SvelteKit. Syntax is the same as with Svelte.
+Component is compatible with SvelteKit. Syntax is the same as with Svelte.
 
 The component does not retrieve icon data until it is mounted.
 For server side rendering it means generated HTML will not include SVGs,
