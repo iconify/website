@@ -18,9 +18,3 @@ Articles that explain how some parts of Iconify project work:
 Icons about icon design and usage:
 
 - [Solving SVG animation issues](./svg-animation-issues/index.md).
-
-## Other
-
-Other articles:
-
-- [Avoid vendor lock-in](./vendor-lock-in.md).

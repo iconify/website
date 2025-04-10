@@ -1,15 +1,17 @@
 ```yaml
 title: Vendor lock-in and icons
 replacements:
-  - code: '60k'
-    value: '${counters.icons-short}'
-  - code: '70 icon sets'
-    value: '${counters.sets} icon sets'
+  - code: "60k"
+    value: "${counters.icons-short}"
+  - code: "70 icon sets"
+    value: "${counters.sets} icon sets"
 ```
 
 # Vendor lock-in
 
-What is vendor lock-in? Vendor lock-in is when someone is essentially forced to continue using a product or service regardless of quality, because switching away from that product or service is not practical.
+What is vendor lock-in?
+
+Vendor lock-in is when someone is essentially forced to continue using a product or service regardless of quality, because switching away from that product or service is not practical.
 
 ## Icon sets
 

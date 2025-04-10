@@ -12,7 +12,11 @@ There are various ways to animate icons:
 
 This article is about the last method: animating icons using [SVG animations level 2 spec](https://svgwg.org/specs/animations/).
 
-No, it is not deprecated SMIL animations. It is a modern spec, though it is based on SMIL. Currenly it is supported by all modern browsers.
+## SMIL?
+
+No, it is not the old deprecated SMIL animations.
+
+It is a modern spec, though it is based on SMIL. Currenly it is supported by all modern browsers.
 
 ## Sample
 
@@ -31,45 +35,75 @@ No CSS, no JavaScript, no external dependencies.
 
 See [`[tag]animate` documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate) and [SVG animations level 2 spec](https://svgwg.org/specs/animations/) for more examples, other related tags, attributes.
 
-## Issues
+## Timing
 
-Unfortunately, using animations is not that simple.
+Unfortunately, SVG animations spec has one major downside: animation timing is very tricky to work with.
 
-First of all, there are two ways to render SVGs:
+What exactly does that mean?
+
+There are 2 ways to render SVGs:
 
 - Inline icons using `[tag]svg`.
 - External resources: SVG as URL or background image.
 
-When using inline `[tag]svg`, animations cannot start until document is ready. It might seem like a small thing, but animations not rendering quickly enough can cause bad user experience. This issue can be caused by small things, such as statistics script failing to load or ad code loading slowly. If at least one server that page is loading resources from is unreachable, it might break all animated SVGs on page. Async and defer attributes do not help. Issue can even be caused by script in an iframe.
+Both have different problems with animation timing.
 
-When using icon as URL, there is another issue: browser cache. If image is cached, some browsers do not restart animation.
+### Inline SVG
 
-### Animation delay demo {#delay-demo}
+When using inline `[tag]svg`, animations cannot start until document is ready.
 
-Below is an `[tag]iframe` that shows icon rendering issue. It contains animated icon, rendered as `[tag]svg` and as background image. Both icons render instantly, but animation in `[tag]svg` does not start for few seconds because document is still loading.
+It might seem like a small thing, but animations not rendering quickly enough can cause bad user experience.
 
-`include icon-components/frames/delay-demo-2up`
+This issue can be caused by small things, such as statistics script failing to load or ad code loading slowly. If at least one server that page is loading resources from is unreachable, it might break all animated SVGs on page. Async and defer attributes do not help. Issue can even be caused by script in an iframe.
 
-To make things worse, this demo, which is in `[tag]iframe`, affects the main document. Logo on this page is rendered as `[tag]svg` and it contains animations. Refresh this page to see how slow script in a frame prevents SVG animations in unrelated icons in the main document.
+#### Solution? {#solution-svg}
 
-### Background bug demo {#bg-demo}
+There is none.
 
-Below is an `[tag]iframe` that shows background bug.
+### SVG as URL
 
-Image is rendered as URL. If URL is already in browser cache, Chrome does not restart animation. That means consequent renders of the same animated icons can bug out.
+When using icon as URL, you cannot control animation timing at all.
 
-Move mouse over demo to restart animation to see bug.
+Animation always starts the first time icon is rendered. There is absolutely no way to control that.
 
-`include icon-components/frames/delay-demo-freeze-2up`
+#### Solution? {#solution-css}
 
-## Is there a solution? {#solution}
+The only solution is to generate unique URL for icon each time you need to restart animation.
 
-Solution to timing issue with inline `[tag]svg` is to use background image or mask.
+The easiest way to achieve it is to add a basic HTML comment to icon content, like this:
 
-Cache issue with background images can be solved by adding random content to icon, such as HTML comment with current time stamp before `[tag]</svg>`.
+```css
+.test-icon {
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='20' stroke-dashoffset='20' d='M3 12h17.5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.2s' values='20;0' /%3E%3C/path%3E%3Cpath stroke-dasharray='12' stroke-dashoffset='12' d='M21 12l-7 7M21 12l-7 -7'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.2s' dur='0.2s' values='12;0' /%3E%3C/path%3E%3C/g%3E%3C!-- 1234567890 --%3E%3C/svg%3E");
+  width: 1em;
+  height: 1em;
+  background-color: currentcolor;
+  mask-image: var(--svg);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+```
 
-Below is an `[tag]iframe` that shows solution in action. It includes slowly loading script, which would break animation in inline `[tag]svg`, but does not break background images. Random content is dynamically added to solve Chrome cache issue.
+Notice `[str]%3C!-- 1234567890 --%3E` near end of URL. This is a simple comment with a number to break browser's cache.
 
-Icon is rendered as mask, so icon could use `[prop]currentColor`, though background works too if you need to keep icon's palette.
+Unfortunately, this solution requires JavaScript. It can be used as inline CSS, it cannot be used in CSS file.
 
-`include icon-components/frames/delay-demo-icon-2up`
+## Iconify web component
+
+[Iconify icon web component](/docs/iconify-icon/index.md) renders animated icons as background or mask images and implements randomised URL workaround.
+
+Additionally, it renders icons only when icon is visible. This means CPU is not wasted on animating invisible icons.
+
+## Conclusion
+
+SVG animations spec is promising, but it is hard to use.
+
+CSS animations are a better choice, but at the time of writing this, CSS animations are not fully supported yet by all major browsers (see update below). More specifically, only basic animations like `[prop]stroke-dashoffset` work, animating other attributes is not supported (see update below). This makes animating icons in CSS impossible beyond very basic animations.
+
+### Update
+
+Update for CSS animations: April 2025.
+
+In 2024 all major browsers added support for animating majority of SVG attributes in CSS.
+
+The only exception is `[prop]d` attribute in path, which is actually the most important attribute. Safari 18.4 does not support animating or changing `[prop]d` in CSS, but it is supported in Safari TP, so hopefully support will land in Safari 18.5.
