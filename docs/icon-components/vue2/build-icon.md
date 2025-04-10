@@ -1,12 +1,13 @@
 ```yaml
-title: 'Iconify for Vue 2 Function: renderSVG'
+title: "Iconify for Vue 2 Function: renderSVG"
 types:
-  IconifyIcon: '/docs/types/iconify-icon.md'
+  IconifyIcon: "/docs/types/iconify-icon.md"
 functions:
-  replaceIDs: './replace-ids.md'
-  getIcon: './get-icon.md'
-  loadIcon: './load-icon.md'
-  iconExists: './icon-exists.md'
+  replaceIDs: "./replace-ids.md"
+  getIcon: "./get-icon.md"
+  loadIcon: "./load-icon.md"
+  iconExists: "./icon-exists.md"
+  iconLoaded: "./icon-exists.md"
 ```
 
 # Iconify for Vue 2 function: buildIcon
@@ -38,9 +39,9 @@ For more details about transformations see [icon transformations documentation](
 ```yaml
 src: icon-components/common/build-icon.js
 replacements:
-  - search: '@iconify/svelte'
-    replace: '@iconify/vue2'
+  - search: "@iconify/svelte"
+    replace: "@iconify/vue2"
 extra:
   - src: icon-components/common/build-icon.json
-    title: 'Result:'
+    title: "Result:"
 ```

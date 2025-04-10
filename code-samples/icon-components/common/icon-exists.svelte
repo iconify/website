@@ -1,21 +1,21 @@
-<script>
-	import Icon, { iconExists, loadIcons } from '@iconify/svelte';
+<script lang="ts">
+	import Icon, { iconLoaded, loadIcons, type IconifyIconLoaderAbort } from '@iconify/svelte';
 	import { onDestroy } from 'svelte';
 
-	// Icon to render, string
-	export let icon;
+	// Icon to render and fallback children
+	let { icon, fallback } = $props();
 
 	// Icon status and cleanup function
-	let loaded = false;
-    let cleanup = null;
-    let update = 0;
+	let loaded = $state(false);
+    let cleanup: IconifyIconLoaderAbort | null = null;
+    let update = $state(0);
 
-    $: {
-        // Mention dummy variable to trigger re-running this code from loadIcons() callback
+    $effect(() => {
+        // Mention update to re-run this effect when state changes
         update;
 
         // Get icon data
-        loaded = iconExists(icon);
+        loaded = iconLoaded(icon);
 
         // Cancel previous callback
         if (cleanup) {
@@ -30,7 +30,7 @@
                 update ++;
             });
         }
-    }
+    })
 
     // Cleanup
     onDestroy(() => {
@@ -43,5 +43,5 @@
 {#if loaded}
 	<Icon icon={icon} />
 {:else}
-    <slot />
+    {@render fallback?.()}
 {/if}

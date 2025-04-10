@@ -1,15 +1,16 @@
 ```yaml
-title: 'Iconify SVG Framework Function: buildIcon'
+title: "Iconify SVG Framework Function: buildIcon"
 types:
-  IconifyIcon: '/docs/types/iconify-icon.md'
+  IconifyIcon: "/docs/types/iconify-icon.md"
 functions:
-  renderIcon: './render-icon.md'
-  renderSVG: './render-svg.md'
-  renderHTML: './render-html.md'
-  replaceIDs: './replace-ids.md'
-  getIcon: './get-icon.md'
-  loadIcon: './load-icon.md'
-  iconExists: './icon-exists.md'
+  renderIcon: "./render-icon.md"
+  renderSVG: "./render-svg.md"
+  renderHTML: "./render-html.md"
+  replaceIDs: "./replace-ids.md"
+  getIcon: "./get-icon.md"
+  loadIcon: "./load-icon.md"
+  iconExists: "./icon-exists.md"
+  iconLoaded: "./icon-exists.md"
 ```
 
 # SVG framework function: buildIcon

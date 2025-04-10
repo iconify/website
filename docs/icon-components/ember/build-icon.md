@@ -1,12 +1,13 @@
 ```yaml
-title: 'Iconify for Ember Function: renderSVG'
+title: "Iconify for Ember Function: renderSVG"
 types:
-  IconifyIcon: '../../types/iconify-icon.md'
+  IconifyIcon: "../../types/iconify-icon.md"
 functions:
-  replaceIDs: './replace-ids.md'
-  getIcon: './get-icon.md'
-  loadIcon: './load-icon.md'
-  iconExists: './icon-exists.md'
+  replaceIDs: "./replace-ids.md"
+  getIcon: "./get-icon.md"
+  loadIcon: "./load-icon.md"
+  iconExists: "./icon-exists.md"
+  iconLoaded: "./icon-exists.md"
 ```
 
 # Iconify for Ember function: buildIcon
@@ -38,9 +39,9 @@ For more details about transformations see [icon transformations documentation](
 ```yaml
 src: icon-components/common/build-icon.js
 replacements:
-  - search: '@iconify/svelte'
-    replace: '@iconify/ember/components/iconify-icon'
+  - search: "@iconify/svelte"
+    replace: "@iconify/ember/components/iconify-icon"
 extra:
   - src: icon-components/common/build-icon.json
-    title: 'Result:'
+    title: "Result:"
 ```

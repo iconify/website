@@ -1,12 +1,13 @@
 ```yaml
-title: 'Iconify SVG Framework Function: renderIcon'
+title: "Iconify SVG Framework Function: renderIcon"
 functions:
-  renderSVG: './render-svg.md'
-  renderHTML: './render-html.md'
-  replaceIDs: './replace-ids.md'
-  getIcon: './get-icon.md'
-  loadIcon: './load-icon.md'
-  iconExists: './icon-exists.md'
+  renderSVG: "./render-svg.md"
+  renderHTML: "./render-html.md"
+  replaceIDs: "./replace-ids.md"
+  getIcon: "./get-icon.md"
+  loadIcon: "./load-icon.md"
+  iconExists: "./icon-exists.md"
+  iconLoaded: "./icon-exists.md"
 ```
 
 # SVG framework function: renderIcon
@@ -31,8 +32,8 @@ Function returns `[type]object` containing icon data, `null` if icon is not avai
 ```yaml
 include: icon-components/functions/build-icon/result
 replacements:
-  - search: 'icon component'
-    replace: 'SVG framework'
+  - search: "icon component"
+    replace: "SVG framework"
 ```
 
 ## Change IDs! {#important}
@@ -47,29 +48,29 @@ It will make sure elements inside each icon have unique IDs.
 src: icon-components/iconify/render-icon.js
 extra:
   - src: icon-components/iconify/render-icon.json
-    title: 'Result:'
+    title: "Result:"
 ```
 
 Another example:
 
 ```js
 // Get icon data
-const icon = Iconify.renderIcon('carbon:deploy');
+const icon = Iconify.renderIcon("carbon:deploy");
 
 // Create element
-const svg = document.createElement('svg');
+const svg = document.createElement("svg");
 const svgDefaults: IconifySVGProps = {
-	'xmlns': 'http://www.w3.org/2000/svg',
-	'xmlns:xlink': 'http://www.w3.org/1999/xlink',
-	'aria-hidden': true,
-	'focusable': false,
-	'role': 'img',
+  xmlns: "http://www.w3.org/2000/svg",
+  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+  "aria-hidden": true,
+  focusable: false,
+  role: "img",
 };
 Object.keys(svgDefaults).forEach((attr) => {
-	svg.setAttribute(attr, svgDefaults[attr]);
+  svg.setAttribute(attr, svgDefaults[attr]);
 });
 Object.keys(icon.attributes).forEach((attr) => {
-	svg.setAttribute(attr, icon.attributes[attr]);
+  svg.setAttribute(attr, icon.attributes[attr]);
 });
 
 // Set content

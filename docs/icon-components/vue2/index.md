@@ -1,28 +1,29 @@
 ```yaml
 title: Iconify for Vue 2
 replacements:
-  - code: '60,000'
-    value: '${counters.icons}'
-  - code: '80+'
-    value: '${counters.sets}+'
-  - code: '@iconify/vue2@1'
-    value: '${vue.import-vue2}'
+  - code: "60,000"
+    value: "${counters.icons}"
+  - code: "80+"
+    value: "${counters.sets}+"
+  - code: "@iconify/vue2@1"
+    value: "${vue.import-vue2}"
 types:
-  IconifyIcon: '/docs/types/iconify-icon.md'
+  IconifyIcon: "/docs/types/iconify-icon.md"
 functions:
-  addCollection: './add-collection.md'
-  addIcon: './add-icon.md'
-  iconExists: './icon-exists.md'
-  listIcons: './list-icons.md'
-  loadIcons: './load-icons.md'
-  loadIcon: './load-icon.md'
-  getIcon: './get-icon.md'
-  enableCache: './enable-cache.md'
-  disableCache: './disable-cache.md'
-  addAPIProvider: './add-api-provider.md'
-  replaceIDs: './replace-ids.md'
-  buildIcon: './build-icon.md'
-  setFetch: './set-fetch.md'
+  addCollection: "./add-collection.md"
+  addIcon: "./add-icon.md"
+  iconExists: "./icon-exists.md"
+  iconLoaded: "./icon-exists.md"
+  listIcons: "./list-icons.md"
+  loadIcons: "./load-icons.md"
+  loadIcon: "./load-icon.md"
+  getIcon: "./get-icon.md"
+  enableCache: "./enable-cache.md"
+  disableCache: "./disable-cache.md"
+  addAPIProvider: "./add-api-provider.md"
+  replaceIDs: "./replace-ids.md"
+  buildIcon: "./build-icon.md"
+  setFetch: "./set-fetch.md"
 ```
 
 # Iconify for Vue 2
@@ -55,7 +56,7 @@ yarn add --dev @iconify/vue2@1
 Install `[npm]@iconify/vue2@1` and import component from it (component is exported as named export):
 
 ```js
-import { Icon } from '@iconify/vue2';
+import { Icon } from "@iconify/vue2";
 ```
 
 Then in template use `[var]Icon` component with icon name as `[prop]icon` parameter:

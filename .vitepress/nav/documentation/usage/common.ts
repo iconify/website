@@ -47,7 +47,7 @@ export function commonIconFunctions(root: string): SidebarItem[] {
   return [
     // Getting icons
     {
-      text: "iconExists()",
+      text: "iconLoaded()",
       link: `${root}icon-exists`,
     },
     {

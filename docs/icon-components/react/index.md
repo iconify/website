@@ -12,7 +12,7 @@ types:
 functions:
   addCollection: "./add-collection.md"
   addIcon: "./add-icon.md"
-  iconExists: "./icon-exists.md"
+  iconLoaded: "./icon-exists.md"
   listIcons: "./list-icons.md"
   loadIcons: "./load-icons.md"
   loadIcon: "./load-icon.md"

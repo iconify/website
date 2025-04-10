@@ -3,34 +3,35 @@ title: Iconify SVG Framework Functions
 replacements:
   - code: '"2.0.0"'
     value: '"${svg-framework.version.full}"'
-  - code: '@iconify/iconify@2'
-    value: '${svg-framework.import}'
+  - code: "@iconify/iconify@2"
+    value: "${svg-framework.import}"
 types:
-  IconifyJSON: '../../types/iconify-json.md'
-  IconifyIcon: '../../types/iconify-icon.md'
-  IconifyInfo: '../../types/iconify-json-metadata.md'
+  IconifyJSON: "../../types/iconify-json.md"
+  IconifyIcon: "../../types/iconify-icon.md"
+  IconifyInfo: "../../types/iconify-json-metadata.md"
 functions:
-  addCollection: './add-collection.md'
-  addIcon: './add-icon.md'
-  iconExists: './icon-exists.md'
-  listIcons: './list-icons.md'
-  getIcon: './get-icon.md'
-  renderSVG: './render-svg.md'
-  renderHTML: './render-html.md'
-  renderIcon: './render-icon.md'
-  replaceIDs: './replace-ids.md'
-  scan: './scan.md'
-  observe: './observe.md'
-  stopObserving: './stop-observing.md'
-  pauseObserver: './pause-observer.md'
-  resumeObserver: './resume-observer.md'
-  loadIcons: './load-icons.md'
-  loadIcon: './load-icon.md'
-  enableCache: './enable-cache.md'
-  disableCache: './disable-cache.md'
-  addAPIProvider: './add-api-provider.md'
-  buildIcon: './build-icon.md'
-  fetFetch: './set-fetch.md'
+  addCollection: "./add-collection.md"
+  addIcon: "./add-icon.md"
+  iconExists: "./icon-exists.md"
+  iconLoaded: "./icon-exists.md"
+  listIcons: "./list-icons.md"
+  getIcon: "./get-icon.md"
+  renderSVG: "./render-svg.md"
+  renderHTML: "./render-html.md"
+  renderIcon: "./render-icon.md"
+  replaceIDs: "./replace-ids.md"
+  scan: "./scan.md"
+  observe: "./observe.md"
+  stopObserving: "./stop-observing.md"
+  pauseObserver: "./pause-observer.md"
+  resumeObserver: "./resume-observer.md"
+  loadIcons: "./load-icons.md"
+  loadIcon: "./load-icon.md"
+  enableCache: "./enable-cache.md"
+  disableCache: "./disable-cache.md"
+  addAPIProvider: "./add-api-provider.md"
+  buildIcon: "./build-icon.md"
+  fetFetch: "./set-fetch.md"
 ```
 
 # SVG framework functions
@@ -50,15 +51,14 @@ Examples of using `[func]loadIcon` function:
 
 ```yaml
 src: icon-components/iconify/load-icon-global.html
-title: 'Browser:'
+title: "Browser:"
 replacements:
-  - code: '/2/2.0.0/'
-    value: '/${svg-framework.version.major}/${svg-framework.version.full}/'
+  - code: "/2/2.0.0/"
+    value: "/${svg-framework.version.major}/${svg-framework.version.full}/"
 extra:
   - src: icon-components/iconify/load-icon-promise.js
-    title: 'Node.js:'
+    title: "Node.js:"
 ```
-
 
 Even if you use bundle (method shown in second example), `[var]Iconify` global is also available because SVG framework exports functions and creates a global variable regardless of how you use it. That means you can use method shown in first example regardless of how you import SVG framework.
 
@@ -93,8 +93,8 @@ include: icon-components/components/functions-list/getting-icons
 ```yaml
 include: icon-components/components/functions-list/adding-icons
 replacements:
-  - search: 'component'
-    replace: 'SVG framework'
+  - search: "component"
+    replace: "SVG framework"
 ```
 
 ## Rendering icons {#render}

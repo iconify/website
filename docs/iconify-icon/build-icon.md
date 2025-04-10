@@ -1,11 +1,12 @@
 ```yaml
-title: 'Iconify Icon Web Component Function: buildIcon'
+title: "Iconify Icon Web Component Function: buildIcon"
 types:
-  IconifyIcon: '../types/iconify-icon.md'
+  IconifyIcon: "../types/iconify-icon.md"
 functions:
-  getIcon: './get-icon.md'
-  loadIcon: './load-icon.md'
-  iconExists: './icon-exists.md'
+  getIcon: "./get-icon.md"
+  loadIcon: "./load-icon.md"
+  iconExists: "./icon-exists.md"
+  iconLoaded: "./icon-exists.md"
 ```
 
 # Web component function: buildIcon
@@ -37,9 +38,9 @@ For more details about transformations see [icon transformations documentation](
 ```yaml
 src: icon-components/common/build-icon.js
 replacements:
-  - search: '@iconify/svelte'
-    replace: 'iconify-icon'
+  - search: "@iconify/svelte"
+    replace: "iconify-icon"
 extra:
   - src: icon-components/common/build-icon.json
-    title: 'Result:'
+    title: "Result:"
 ```

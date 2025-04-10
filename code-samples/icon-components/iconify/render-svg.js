@@ -1,3 +1,3 @@
-if (Iconify.iconExists('mdi:home')) {
+if (Iconify.iconLoaded('mdi:home')) {
 	node.appendChild(Iconify.renderSVG('mdi:home'));
 }
