@@ -156,9 +156,9 @@ include: icon-components/components/intro-transform
 
 For more details see [how to transform icon in Iconify for Vue](./transform.md).
 
-## onLoad
+## Load event
 
-`include icon-components/components/onload`
+`include icon-components/components/onload-event`
 
 ## Functions {#functions}
 
