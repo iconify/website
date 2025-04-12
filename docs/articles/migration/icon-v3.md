@@ -4,6 +4,9 @@ title: April 2025 Iconify icon components migration guide
 
 # Icon components migration guide
 
+> Important: this article is not final yet.
+> Versions of packages mentioned below are currently in beta, not yet ready for production.
+
 The following migration guide applies to:
 
 - [Iconify icon web component](/docs/iconify-icon/index.md) version 2 to 3.

@@ -1,8 +1,8 @@
 ```yaml
-title: Solving SVG Animation Issues
+title: "SVG animations level 2 spec: common issues and solutions"
 ```
 
-# Solving SVG animation issues
+# Solving SVG animation spec issues
 
 There are various ways to animate icons:
 
@@ -60,6 +60,8 @@ This issue can be caused by small things, such as statistics script failing to l
 
 There is none.
 
+If you website has a lot of external dependencies that might delay animation, do not use inline SVG for animated icons.
+
 ### SVG as URL
 
 When using icon as URL, you cannot control animation timing at all.
@@ -89,6 +91,8 @@ Notice `[str]%3C!-- 1234567890 --%3E` near end of URL. This is a simple comment 
 Unfortunately, this solution requires JavaScript. It can be used as inline CSS, it cannot be used in CSS file.
 
 ## Iconify web component
+
+A simple solution to issues is to use [Iconify icon web component](/docs/iconify-icon/index.md) web component.
 
 [Iconify icon web component](/docs/iconify-icon/index.md) renders animated icons as background or mask images and implements randomised URL workaround.
 

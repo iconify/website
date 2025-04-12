@@ -1,13 +1,13 @@
 import type { SidebarItem } from "../sidebar-item";
-import { BlogSidebar } from "./blog";
+import { ArticlesSidebar } from "./articles";
 import { IconsSidebar } from "./icons";
 import { UsageSidebar } from "./usage";
 import { LibrariesSidebar } from "./libraries";
 import { APISidebar } from "./api";
 
 export const DocumentationSidebar: SidebarItem[] = [
-  { text: "Icons", collapsed: true, items: IconsSidebar, link: "/docs/icons/" },
   { text: "Usage", collapsed: true, items: UsageSidebar, link: "/docs/usage/" },
+  { text: "Icons", collapsed: true, items: IconsSidebar, link: "/docs/icons/" },
   {
     text: "Libraries",
     collapsed: true,
@@ -18,7 +18,7 @@ export const DocumentationSidebar: SidebarItem[] = [
   {
     text: "Articles / Blog",
     collapsed: true,
-    items: BlogSidebar,
-    link: "/blog/",
+    items: ArticlesSidebar,
+    link: "/docs/articles/",
   },
 ];

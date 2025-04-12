@@ -1,20 +1,27 @@
 ```yaml
-title: Articles
+title: Iconify blog
 ```
 
-# Articles
+# Iconify blog
 
-In addition to documentation, Iconify website has some helpful articles.
+Blog below contains major updates, migration guides and helpful articles related to Iconify project.
 
-## How Iconify works
+## Iconify stuff
 
-Articles that explain how some parts of Iconify project work:
+Articles related to Iconify project that are too long for documentation:
 
 - [How icons are validated and cleaned up in Iconify](./cleaning-up-icons/index.md).
-- [How add icon set to Iconify](./add-icon-set/index.md).
+- [How add an icon set to Iconify](./add-icon-set/index.md).
 
-## Icons
+## Animated icons
 
-Icons about icon design and usage:
+How to work with animated SVG:
 
-- [Solving SVG animation issues](./svg-animation-issues/index.md).
+- [SVG animations level 2 spec: common issues and solutions](./svg-animation-issues/index.md).
+
+## Migration guides
+
+Migration guides for major releases:
+
+- [Iconify icon components April 2025 migration guide](/blog/migration/icon-v3.md).
+- [Iconify plugin for Figma 2024 update](/docs/design/figma/update-2024.md).

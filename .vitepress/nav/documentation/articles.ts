@@ -3,19 +3,20 @@ import type { SidebarItem } from "../sidebar-item";
 const root = "/docs/articles/";
 
 export const ArticlesSidebar: SidebarItem[] = [
+  // Articles
   {
-    text: "SVG: cleanup, validation",
+    text: "Articles",
+    link: `${root}index.md`,
     collapsed: true,
-    hidden: true,
     items: [
       {
-        text: "Cleaning up icons",
-        link: `${root}cleaning-up-icons/`,
-      },
-      {
-        text: "Examples",
+        text: "Cleaning up SVGs",
         collapsed: true,
+        link: `${root}cleaning-up-icons/`,
         items: [
+          {
+            text: "Examples",
+          },
           {
             text: "Bad icon example",
             link: `${root}cleaning-up-icons/cleanup`,
@@ -34,19 +35,31 @@ export const ArticlesSidebar: SidebarItem[] = [
           },
         ],
       },
+      {
+        text: "SVG animations",
+        link: `${root}svg-animation-issues/`,
+      },
+      {
+        text: "Vendor lock-in",
+        link: `${root}vendor-lock-in`,
+        hidden: true,
+      },
     ],
   },
+  // Migration guides
   {
-    text: "Submit icon set to Iconify",
-    link: `${root}add-icon-set/`,
-  },
-  {
-    text: "Animated SVG: issues, solutions",
-    link: `${root}svg-animation-issues/`,
-  },
-  {
-    text: "Vendor lock-in",
-    link: `${root}vendor-lock-in`,
-    hidden: true,
+    text: "Migration guides",
+    link: `${root}migration/index.md`,
+    collapsed: true,
+    items: [
+      {
+        text: "Components 2025",
+        link: `${root}migration/icon-v3.md`,
+      },
+      {
+        text: "Figma 2024",
+        link: "/docs/design/figma/update-2024.md",
+      },
+    ],
   },
 ];

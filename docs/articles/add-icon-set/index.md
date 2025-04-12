@@ -18,22 +18,21 @@ What are the benefits of publishing an icon set to Iconify?
 
 To add an icon set to Iconify, all you need to is [open an issue on Iconify icon sets repository on GitHub](https://github.com/iconify/icon-sets).
 
-In opened issue you:
+In opened issue you need to post:
 
-- Need to post a link to icons. See below.
+- A link to icons. See below.
 - Each icon set has a prefix, such as `[icon]mdi-light`. You can post prefix you want be assigned to your icon set.
-
-In the roadmap for Iconify, publishing icon sets can be done directly from Figma. However, that functionality is in development and it will take a while to complete.
 
 ### Icon set source
 
-Icon sets are automatically updated several times a week. In order to update icon set, icons must be published and maintained by developer on one of the following sources:
+Icon sets are automatically updated several times a week.
+In order to update icon set, icons must be published and maintained by developer on one of the following sources:
 
 - Public git repository (GitHub, GitLab, etc...) containing SVG files.
 - NPM package containing SVG files.
-- Figma document. You need to share file and post link to it. It must be a Figma file, not community resource.
+- Figma document. You need to share the file and post link to it.
 
-Downloading an icon set from a third party website is not an option.
+Updates must be automated, so manually downloading icons from a third party website is not an option.
 
 ### Open source
 

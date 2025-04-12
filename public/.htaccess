@@ -5,6 +5,7 @@ RewriteRule ^icon-sets/(.*).html$ https://icon-sets.iconify.design/$1/ [R=301,NC
 RewriteRule ^icon-sets/(.*)$ https://icon-sets.iconify.design/$1 [R=301,NC,L]
 RewriteRule ^icon-sets$ https://icon-sets.iconify.design/ [R=301,NC,L]
 RewriteRule ^discord/?$ https://discord.gg/bhEYcgNBUW [R=301,NC,L]
+RewriteRule ^docs/blog/(.*)$ /docs/articles/index.html [R=301,NC,L]
 
 # fixes
 RewriteRule ^docs/(.*)name$ /docs/$1name.html [R=301,NC,L]
