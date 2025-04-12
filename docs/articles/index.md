@@ -23,5 +23,5 @@ How to work with animated SVG:
 
 Migration guides for major releases:
 
-- [Iconify icon components April 2025 migration guide](/blog/migration/icon-v3.md).
+- [Iconify icon components April 2025 migration guide](./migration/icon-v3.md).
 - [Iconify plugin for Figma 2024 update](/docs/design/figma/update-2024.md).

@@ -39,7 +39,7 @@ See [how to get icon data](./icon-data.md) for a list of packages and repositori
 
 You can use that data to create your own components, plugins, generate icons in various formats.
 
-Iconify ecosystem offers [different components and plugins to render icons](/docs/usage/index.md) and [tools to work with icons](/docs/tools/index.md).
+Iconify ecosystem offers [different components and plugins to render icons](/docs/usage/index.md) and [tools to work with icons](/docs/libraries/index.md).
 
 ### What makes Iconify different? {#iconify}
 
