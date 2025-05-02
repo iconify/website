@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>1 May 2025</span><a href="/news/2025.html#icon-major-update">Iconify icon components update</a></p>
 <p><span>10 Apr 2025</span><a href="/news/2025.html#svelte-next">Iconify for Svelte update</a></p>
 <p><span>25 Mar 2025</span><a href="/news/2025.html#vue-next">Iconify for Vue update</a></p>
 <p><span>12 Feb 2025</span><a href="/news/2025.html#api-311">Iconify API update</a></p>
 <p><span>7 Feb 2025</span><a href="/news/2025.html#iconify-tailwind4">Iconify plugin for Tailwind CSS 4</a></p>
-<p><span>4 Jan 2025</span><a href="/news/2025.html#components-storage">Iconify components update</a></p>
 </div>
