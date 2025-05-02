@@ -2,7 +2,7 @@
 ## Latest updates
 
 <div class="latest-news">
-<p><span>1 May 2025</span><a href="/news/2025.html#icon-major-update">Iconify icon components update</a></p>
+<p><span>30 Apr 2025</span><a href="/news/2025.html#icon-major-update">Iconify icon components update</a></p>
 <p><span>10 Apr 2025</span><a href="/news/2025.html#svelte-next">Iconify for Svelte update</a></p>
 <p><span>25 Mar 2025</span><a href="/news/2025.html#vue-next">Iconify for Vue update</a></p>
 <p><span>12 Feb 2025</span><a href="/news/2025.html#api-311">Iconify API update</a></p>
