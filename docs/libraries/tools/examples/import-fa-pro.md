@@ -48,7 +48,7 @@ If you are using NodeJs V22.6.0 or later you can run the TypeScript file nativel
 node convert-fa-pro-npm.ts
 ```
 
-If your NodeJs version is lower than v23.6.0 you need to add `--experimental-strip-types` to the command.
+If your NodeJs version is lower than v22.6.0 you need to add `--experimental-strip-types` to the command.
 
 ```bash
 node --experimental-strip-types convert-fa-pro-npm.ts
