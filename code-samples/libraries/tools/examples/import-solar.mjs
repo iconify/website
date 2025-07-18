@@ -4,7 +4,7 @@ import {
     convertSVGToMask,
     importFromFigma,
     isEmptyColor,
-    parseColorsSync,
+    parseColors,
     removeFigmaClipPathFromSVG,
     exportToDirectory,
 } from '@iconify/tools';
@@ -106,7 +106,7 @@ const suffixes = {
         // Check colors
         let hasWhite = false;
         let hasDuotone = false;
-        parseColorsSync(svg, {
+        parseColors(svg, {
             callback: (attr, colorString, color) => {
                 if (color && isEmptyColor(color)) {
                     return color;
