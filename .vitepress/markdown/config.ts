@@ -48,9 +48,9 @@ export const contentReplacements = {
     "import-tools2": "@iconify/tools",
   },
   counters: {
-    sets: "150",
-    icons: "200,000",
-    "icons-short": "200k",
+    sets: "200",
+    icons: "275,000",
+    "icons-short": "275k",
   },
   icons: {
     hash: "line-md:hash-small",

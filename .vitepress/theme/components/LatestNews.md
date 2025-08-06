@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>6 Aug 2025</span><a href="/news/2025.html#cjs-utils">No more CommonJS support</a></p>
+<p><span>23 Jul 2025</span><a href="/news/2025.html#new-milestone">200 icon sets</a></p>
 <p><span>30 Apr 2025</span><a href="/news/2025.html#icon-major-update">Iconify icon components update</a></p>
 <p><span>10 Apr 2025</span><a href="/news/2025.html#svelte-next">Iconify for Svelte update</a></p>
 <p><span>25 Mar 2025</span><a href="/news/2025.html#vue-next">Iconify for Vue update</a></p>
-<p><span>12 Feb 2025</span><a href="/news/2025.html#api-311">Iconify API update</a></p>
-<p><span>7 Feb 2025</span><a href="/news/2025.html#iconify-tailwind4">Iconify plugin for Tailwind CSS 4</a></p>
 </div>
