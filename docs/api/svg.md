@@ -18,7 +18,7 @@ Optional parameters:
 - `[prop]color`, `[type]string`. Icon color. Replaces `[prop]currentColor` with specific color, resulting in icon with hardcoded palette.
 - `[prop]width` and `[prop]height`, `[type]string | number`. Icon dimensions. If only one dimension is specified, such as `[prop]height`, other dimension will be automatically set to match it.
 - `[prop]flip`, `[type]string`. Flip icon.
-- `[prop]rotate`, `[type]string | number`. Rotate icon by 90, 180 or 170 degrees.
+- `[prop]rotate`, `[type]string | number`. Rotate icon by 90, 180 or 270 degrees.
 - `[prop]download`, `[type]boolean`. Forces browser to download file.
 - `[prop]box`, `[type]boolean`. Adds an empty rectangle to SVG that matches `[attr]viewBox`.
 
