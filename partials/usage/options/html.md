@@ -1,3 +1,4 @@
+- [SVG + CSS is the preferred solution, if you can use it](/docs/usage/svg-css/index.md).
 - [You can add icons to CSS](/docs/usage/css/index.md).
 - [You can add SVG to HTML](/docs/usage/svg/index.md).
 - [Iconify offers unique components that render icons on demand](/docs/icon-components/index.md).

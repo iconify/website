@@ -1,10 +1,10 @@
 ```yaml
 title: How to use icons
 replacements:
-  - code: '60,000'
-    value: '${counters.icons}'
-  - code: '60k'
-    value: '${counters.icons-short}'
+  - code: "60,000"
+    value: "${counters.icons}"
+  - code: "60k"
+    value: "${counters.icons-short}"
 ```
 
 # How to use icons
@@ -18,6 +18,18 @@ Iconify ecosystem offers many ways to use icons, for both coders and designers.
 For using icons in HTML, there are several viable options:
 
 `include usage/options/html`
+
+### SVG + CSS {#svg-css}
+
+SVG + CSS is the preferred solution because it:
+
+- Reduces HTML size.
+- Caches icons in CSS.
+- Gives you full power of CSS to manipulate icons.
+
+However, due to complexity and poor browser support, implementation is available only for limited number of frameworks.
+
+See [how to use icons as SVG + CSS](./svg-css/index.md).
 
 ### SVG in CSS {#css}
 

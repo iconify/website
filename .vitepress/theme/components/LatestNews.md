@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>29 Sep 2025</span><a href="/news/2025.html#css-vue-vue">SVG + CSS components for Vue</a></p>
+<p><span>28 Sep 2025</span><a href="/news/2025.html#css-vue-fallback">Fallback components for SVG + CSS</a></p>
 <p><span>6 Aug 2025</span><a href="/news/2025.html#cjs-utils">No more CommonJS support</a></p>
 <p><span>23 Jul 2025</span><a href="/news/2025.html#new-milestone">200 icon sets</a></p>
 <p><span>30 Apr 2025</span><a href="/news/2025.html#icon-major-update">Iconify icon components update</a></p>
-<p><span>10 Apr 2025</span><a href="/news/2025.html#svelte-next">Iconify for Svelte update</a></p>
-<p><span>25 Mar 2025</span><a href="/news/2025.html#vue-next">Iconify for Vue update</a></p>
 </div>

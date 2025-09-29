@@ -5,6 +5,17 @@ const usageRoot = "/docs/usage/";
 
 export const UsageSidebar: SidebarItem[] = [
   {
+    text: "SVG + CSS",
+    collapsed: true,
+    link: `${usageRoot}svg-css/`,
+    items: [
+      {
+        text: "Vue",
+        link: `${usageRoot}svg-css/vue/`,
+      },
+    ],
+  },
+  {
     text: "SVG in CSS",
     collapsed: true,
     link: `${usageRoot}css/`,
