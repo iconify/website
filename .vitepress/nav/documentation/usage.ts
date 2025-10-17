@@ -13,6 +13,10 @@ export const UsageSidebar: SidebarItem[] = [
         text: "Vue",
         link: `${usageRoot}svg-css/vue/`,
       },
+      {
+        text: "Svelte",
+        link: `${usageRoot}svg-css/svelte/`,
+      },
     ],
   },
   {

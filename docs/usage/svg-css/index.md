@@ -77,8 +77,8 @@ rendering methods are very limited and require JavaScript.
 Currently, Iconify provides SVG+CSS solutions for the following frameworks:
 
 - [Vue components](./vue/index.md)
+- [Svelte components](./svelte/index.md)
 
 Currently in development:
 
-- Svelte components
 - Unplugin components (Vue, React, Svelte)

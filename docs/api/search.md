@@ -1,8 +1,8 @@
 ```yaml
 title: Searching icons
 types:
-  IconifyJSON: '../types/iconify-json.md'
-  IconifyInfo: '../types/iconify-info.md'
+  IconifyJSON: "../types/iconify-json.md"
+  IconifyInfo: "../types/iconify-info.md"
 ```
 
 # Searching icons
@@ -45,25 +45,6 @@ There are limits on what you can set `[prop]limit` property to:
 
 You can change limits in API code in `[file]src/http/responses/search.ts`.
 
-### Keywords
-
-Search query can include special keywords. This feature is supported by API since version 3.
-
-For most keywords, keyword and value can be separated by `[str]:` or `[str]=`. It is recommended to use `[str]=` because first syntax can also be treated as icon set prefix.
-
-Keywords with boolean values can have the following values:
-
-- `[str]true` or `[str]1` = `[bool]true`.
-- `[str]false` or `[str]0` = `[bool]false`.
-
-Supported keywords:
-
-- `[prop]palette`, `[type]boolean`. Filter icon sets by palette. Example queries: `[str]home palette=false`, `[str]cat palette=true`.
-- `[prop]style`, `[str]fill` or `[str]stroke`. Filter icons by code. Example queries: `[str]home style=fill`, `[str]cat style=stroke`.
-- `[prop]fill` and `[prop]stroke`, `[type]boolean`. Same as above, but as boolean. Only one of keywords can be set: `[str]home fill=true`.
-- `[prop]prefix`, `[type]string`. Same as `[prop]prefix` property from search query parameters, but in keyword. Overrides parameter.
-- `[prop]prefixes`, `[type]string`. Same as `[prop]prefixes` property from search query parameters, but in keyword. Overrides parameter.
-
 ## Response
 
 Response is a simple object with the following properties:
@@ -93,15 +74,15 @@ If no matches found, search returns object with no icons:
 
 ```json
 {
-	"icons": [],
-	"total": 0,
-	"limit": 64,
-	"start": 0,
-	"collections": {},
-	"request": {
-		"query": "zzzz",
-		"pretty": "1"
-	}
+  "icons": [],
+  "total": 0,
+  "limit": 64,
+  "start": 0,
+  "collections": {},
+  "request": {
+    "query": "zzzz",
+    "pretty": "1"
+  }
 }
 ```
 
@@ -114,25 +95,25 @@ If search engine is disabled, `[url]/search` route is not handled, server return
 Type for API response:
 
 ```ts
-import type { IconifyInfo } from '@iconify/types';
+import type { IconifyInfo } from "@iconify/types";
 
 export interface APIv2SearchResponse {
-	// List of icons, including prefixes
-	icons: string[];
+  // List of icons, including prefixes
+  icons: string[];
 
-	// Number of results. If same as `limit`, more results are available
-	total: number;
+  // Number of results. If same as `limit`, more results are available
+  total: number;
 
-	// Number of results shown
-	limit: number;
+  // Number of results shown
+  limit: number;
 
-	// Index of first result
-	start: number;
+  // Index of first result
+  start: number;
 
-	// Info about icon sets
-	collections: Record<string, IconifyInfo>;
+  // Info about icon sets
+  collections: Record<string, IconifyInfo>;
 
-	// Copy of request, values are string
-	request: Record<keyof APIv2SearchParams, string>;
+  // Copy of request, values are string
+  request: Record<keyof APIv2SearchParams, string>;
 }
 ```
