@@ -42,6 +42,10 @@ export const UsageSidebar: SidebarItem[] = [
                 text: "Size and Color",
                 link: `${usageRoot}css/tailwind/tailwind4/size-color`,
               },
+              {
+                text: "Custom Icons",
+                link: `${usageRoot}css/tailwind/tailwind4/custom-icons`,
+              },
             ],
           },
           {

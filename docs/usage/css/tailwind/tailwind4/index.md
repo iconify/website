@@ -72,6 +72,12 @@ Example of configuration:
 }
 ```
 
+### Custom icons
+
+Plugin supports custom icons and icon sets via `[prop]icon-sets` option.
+
+See [custom icons](./custom-icons.md) documentation.
+
 ### Clean selectors
 
 There are actually 2 plugins in one:
