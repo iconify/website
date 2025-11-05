@@ -23,7 +23,13 @@ npm i -D astro-icon
 
 ## Usage
 
-Astro Icon can inline SVG directly in your HTML:
+After choosing your desired icon set, ensure you install it into your Astro project - preferrably as a dev dependency. For example, let us choose the Material Design iconset.
+
+```sh
+npm i -D @iconify-json/mdi
+```
+
+Astro Icon can now inline SVG directly in your HTML:
 
 ```astro
 ---
