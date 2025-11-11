@@ -30,7 +30,7 @@ export const socialLinks: DefaultTheme.SocialLink[] = [
     link: "https://bsky.app/profile/cyberalien.dev",
   },
   { icon: "mastodon", link: "https://fosstodon.org/@cyberalien" },
-  { icon: "x", link: "https://x.com/slava_trushkin" },
+  { icon: "x", link: "https://x.com/cyberalien_dev" },
   { icon: "github", link: "https://github.com/iconify" },
   { icon: "linkedin", link: "https://www.linkedin.com/in/trushkin/" },
   // { icon: 'youtube', link: 'https://www.youtube.com/@webdevstuff' },

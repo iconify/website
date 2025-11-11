@@ -1,7 +1,7 @@
 <ul class="simple-list">
   <li>
     <iconify-icon icon="line-md:twitter"></iconify-icon>
-    <a target="_blank" rel="noreferrer" href="https://twitter.com/slava_trushkin">Twitter.</a>
+    <a target="_blank" rel="noreferrer" href="https://twitter.com/cyberalien_dev">Twitter.</a>
   </li>
    <li>
     <iconify-icon icon="ri:bluesky-fill"></iconify-icon>
