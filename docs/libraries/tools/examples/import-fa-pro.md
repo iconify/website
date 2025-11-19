@@ -54,4 +54,4 @@ If your NodeJs version is lower than v22.6.0 you need to add `--experimental-str
 node --experimental-strip-types convert-fa-pro-npm.ts
 ```
 
-Alternativly, you can manually remove the types from the code and run it as a JS file instead.
+Alternatively, you can manually remove the types from the code and run it as a JS file instead.
