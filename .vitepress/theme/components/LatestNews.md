@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>27 Nov 2025</span><a href="/news/2025.html#figma-api">Figma update</a></p>
 <p><span>25 Nov 2025</span><a href="/news/2025.html#tools-axios">Iconify Tools removes axios</a></p>
 <p><span>18 Nov 2025</span><a href="/news/2025.html#unplugin">Iconify Unplugin</a></p>
 <p><span>4 Nov 2025</span><a href="/news/2025.html#tailwind-custom-sets">Iconify for Tailwind CSS update</a></p>
 <p><span>3 Nov 2025</span><a href="/news/2025.html#svelte-update">Update for Icon component for Svelte</a></p>
-<p><span>30 Sep 2025</span><a href="/news/2025.html#svg-css-svelte">SVG + CSS components for Svelte</a></p>
 </div>
