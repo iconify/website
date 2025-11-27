@@ -1,11 +1,11 @@
 ```yaml
 title: SVG Class
 types:
-  IconSet: '../icon-set/index.md'
-  IconifyIcon: '/docs/types/iconify-icon.md'
+  IconSet: "../icon-set/index.md"
+  IconifyIcon: "/docs/types/iconify-icon.md"
 functions:
-  cleanupSVG: '../icon/cleanup.md'
-  runSVGO: '../icon/svgo.md'
+  cleanupSVG: "../icon/cleanup.md"
+  runSVGO: "../icon/svgo.md"
 ```
 
 # SVG class
@@ -17,19 +17,19 @@ functions:
 To create an instance, use this code:
 
 ```ts
-import { SVG } from '@iconify/tools';
+import { SVG } from "@iconify/tools";
 
 const svg = new SVG(
-	'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 6v12l10-6z" fill="currentColor"/></svg>'
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 6v12l10-6z" fill="currentColor"/></svg>'
 );
 ```
 
 If you are working with icon sets, use function `[func]toSVG()` of `[type]IconSet` instance to get `[type]SVG` instance:
 
 ```ts
-const svg = iconSet('home');
+const svg = iconSet("home");
 if (!svg) {
-	throw new Error('Icon "home" is not available or invalid');
+  throw new Error('Icon "home" is not available or invalid');
 }
 ```
 
@@ -37,8 +37,8 @@ if (!svg) {
 
 `[type]SVG` instance has several properties, all are initialized when instance is created:
 
-- `[prop]viewBox`, `[type]ViewBox`. Icon's `[attr]viewBox`. It is a simple object with numeric properties `[prop]left`, `[prop]top`, `[prop]width` and `[prop]height`.
-- `[prop]$svg` is a root element of SVG. For parsing XML, Iconify Tools uses `[npm]cheerio` library. This property is an object returned by `[npm]cheerio` after loading icon. You can use it to manipulate content directly.
+- `[prop]viewBox`, `[type]ViewBox`. Icon's `[attr]viewBox`. It is a simple object with numeric properties `[prop]left`, `[prop]top`, `[prop]width` and `[prop]height`. Properties `[prop]left`, `[prop]top` are optional, default value is `[num]0`.
+- `[prop]$svg` is a root element of SVG.
 
 ## Methods
 

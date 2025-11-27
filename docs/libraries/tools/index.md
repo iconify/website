@@ -1,29 +1,29 @@
 ```yaml
 title: Iconify Tools
 replacements:
-  - code: '@iconify/tools@2'
-    value: '${tools.import-tools2}'
+  - code: "@iconify/tools@2"
+    value: "${tools.import-tools2}"
 types:
-  IconifyIcon: '/docs/types/iconify-icon.md'
-  IconifyJSON: '/docs/types/iconify-json.md'
-  IconifyInfo: '/docs/types/iconify-info.md'
-  FullIconifyIcon: '../utils/full-iconify-icon.md'
-  Color: '../utils/color.md'
-  FullIconCustomisations: '../utils/icon-customisations.md'
-  IconCustomisations: '../utils/icon-customisations.md'
-  SVG: './svg/index.md'
-  IconSet: './icon-set/index.md'
+  IconifyIcon: "/docs/types/iconify-icon.md"
+  IconifyJSON: "/docs/types/iconify-json.md"
+  IconifyInfo: "/docs/types/iconify-info.md"
+  FullIconifyIcon: "../utils/full-iconify-icon.md"
+  Color: "../utils/color.md"
+  FullIconCustomisations: "../utils/icon-customisations.md"
+  IconCustomisations: "../utils/icon-customisations.md"
+  SVG: "./svg/index.md"
+  IconSet: "./icon-set/index.md"
 functions:
-  mergeIconSets: './icon-set/merge.md'
-  setIcon: './icon-set/set-icon.md'
-  cleanupSVG: './icon/cleanup.md'
+  mergeIconSets: "./icon-set/merge.md"
+  setIcon: "./icon-set/set-icon.md"
+  cleanupSVG: "./icon/cleanup.md"
 ```
 
 # Iconify Tools
 
 Iconify Tools is a set of reusable functions for importing, exporting, and parsing icons.
 
-Library is written in TypeScript, is available as ES modules for modern development and CommonJS for older scripts.
+Library is written in TypeScript.
 
 ## Installation
 
@@ -31,6 +31,16 @@ To install library run:
 
 ```sh
 npm install @iconify/tools@2 --save
+```
+
+### CommonJS support
+
+The latest version does not support CommonJS.
+
+If you need to use CommonJS, install version 4:
+
+```sh
+npm install @iconify/tools@cjs --save
 ```
 
 ## Classes
