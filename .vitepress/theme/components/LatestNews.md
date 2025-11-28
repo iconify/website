@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>28 Nov 2025</span><a href="/news/2025.html#update-11">Update for multiple packages</a></p>
 <p><span>27 Nov 2025</span><a href="/news/2025.html#tools-5">Iconify Tools update</a></p>
 <p><span>26 Nov 2025</span><a href="/news/2025.html#figma-api">Figma update</a></p>
 <p><span>25 Nov 2025</span><a href="/news/2025.html#tools-axios">Iconify Tools removes axios</a></p>
 <p><span>18 Nov 2025</span><a href="/news/2025.html#unplugin">Iconify Unplugin</a></p>
-<p><span>4 Nov 2025</span><a href="/news/2025.html#tailwind-custom-sets">Iconify for Tailwind CSS update</a></p>
 </div>
