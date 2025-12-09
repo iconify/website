@@ -33,9 +33,8 @@ replacements:
     replace: Ember
 ```
 
-Please be aware that this component is no longer maintained.
-Ember is an outdated framework.
-If you are using Ember, consider switching to [Iconify Icon web component](/docs/iconify-icon/index.md).
+Please be aware that this component is not designed for server side rendering.
+If you are using SSR, consider switching to [Iconify Icon web component](/docs/iconify-icon/index.md).
 
 ## Installation
 
