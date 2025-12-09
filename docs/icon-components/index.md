@@ -120,5 +120,4 @@ They were created a long time ago, but no longer relevant in modern development.
 These components are no longer updated, but can be used if you really need it:
 
 - [Vue 2](./vue2/index.md) (Vue 3 was released a long time ago, no point in supporting the old version)
-- [Ember](./ember/index.md) (Ember framework is outdated)
 - [SVG Framework](./svg-framework/index.md) (the oldest of components, has been replaced by the IconifyIcon web component)
