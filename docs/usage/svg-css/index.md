@@ -20,7 +20,7 @@ See [rendering icon as SVG + CSS article](https://cyberalien.dev/articles/svg-cs
 
 This is an example of SVG + CSS icon code.
 
-SVG contains only minimal amount of code, recuding HTML size:
+SVG contains only minimal amount of code, reducing HTML size:
 
 ```xml
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
