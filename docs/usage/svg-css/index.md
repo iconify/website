@@ -52,12 +52,23 @@ Additionally, you can use the full power of CSS:
 - Use CSS variables for colors.
 - Change shapes and colors on events, for example when hovering an icon.
 
+### Size comparison
+
+The biggest benefit is with animated icons.
+
+Below are links to source code of exactly the same icon in various formats:
+
+- [Static SVG](https://github.com/cyberalien/line-md/blob/main/svg-static/bell-loop.svg?short_path=bebc22d) - 446 bytes
+- [SVG animation](https://github.com/cyberalien/line-md/blob/main/svg/bell-loop.svg?short_path=0d3dc1c) - 1.29 kb
+- [CSS animation with embedded style](https://github.com/cyberalien/line-md/blob/main/svg-style/bell-loop.svg?short_path=c681330) - 1.49 kb total (176 bytes SVG + 1.29 kb CSS)
+
+Icon with CSS animations has much smaller file size, which is a huge advantage: 176 bytes vs 1.29 kb!
+
+This comes at cost of increasing CSS file size (by 1.29 KB in this case), but CSS files are usually shared between pages and are cached in browser.
+
 ## Disadvantages
 
-There are two disadvantages:
-
-- Safari browser support.
-- Complexity of implementing it.
+There is only one disadvantage of using SVG + CSS: Safari browser support.
 
 ### Safari browser
 
@@ -65,9 +76,15 @@ The biggest part of icons is always the path, defined in `[prop]d` property of `
 
 As shown in example above, in CSS it can be used with `[func]path()` function.
 
-However, as of writing this, the latest version of Safari (26.0) does not support it!
+However, currently the latest version of Safari (26.3) does not support it!
 
 Solution: using components to render icon, detect incompatible browsers and use a different rendering method for those browsers.
+
+## Convert icons
+
+You can convert icons using an online script for [converting SVG to SVG+CSS](https://cyberalien.dev/svg-to-css/).
+
+This converter does not do optimisation and clean up, use it with cleaned up SVGs.
 
 ## Icon components
 
@@ -78,7 +95,6 @@ Currently, Iconify provides SVG+CSS solutions for the following frameworks:
 
 - [Vue components](./vue/index.md)
 - [Svelte components](./svelte/index.md)
+- [React components](./react/index.md)
 
-Currently in development:
-
-- Unplugin components (Vue, React, Svelte)
+Additionally, [Iconify Unplugin](https://github.com/iconify/unplugin-iconify) can render icons on demand for all frameworks listed above.

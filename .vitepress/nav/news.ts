@@ -2,6 +2,7 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const NewsSidebar: DefaultTheme.SidebarItem[] = [
+  { text: 'Year 2026', link: '/news/2026.md' },
   { text: 'Year 2025', link: '/news/2025.md' },
   { text: 'Year 2024', link: '/news/2024.md' },
   { text: 'Year 2023', link: '/news/2023.md' },

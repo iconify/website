@@ -1,0 +1,127 @@
+```yaml
+title: SVG + CSS for React
+replacements:
+  - code: "60,000"
+    value: "${counters.icons}"
+  - code: "60k"
+    value: "${counters.icons-short}"
+```
+
+# Using icons as SVG + CSS in React
+
+Iconify provides easy to use components for [rendering icons as SVG + CSS](../index.md).
+
+These components render:
+
+- SVG + CSS for modern browsers
+- Full SVG for Safari browser, loaded on demand from Iconify API
+
+If you want to know more details, see [article on how Safari fallback works](https://cyberalien.dev/articles/safari-svg-path).
+
+## Usage
+
+1. Install a package for an icon set:
+
+```bash
+npm install @iconify-react/material-symbols
+```
+
+2. Import icon in your React component:
+
+```js
+import DraftsIcon from "@iconify-react/material-symbols/drafts";
+```
+
+3. Use icon in your code:
+
+```jsx
+<DraftsIcon />
+```
+
+Replace:
+
+- "material-symbols" with icon set you want to use.
+- "drafts" with name of icon from that icon set.
+- "DraftsIcon" with component name you want to use (you can use anything).
+
+Browse [Iconify icon sets](https://icon-sets.iconify.design/) to see all available icons.
+
+### Next.js
+
+Important: these components are for React, not for Next.js
+
+Next.js uses Turbopack bundler that does not allow import of `[file].css` files in component,
+which makes it unreasonably hard to implement basic component with a stylesheet.
+
+If you are using Next.js, consider switching to [Vinext](https://github.com/cloudflare/vinext), which is a
+fork of Next.js that uses Vite for bundling instead of Turbopack.
+
+## Color
+
+Monotone icons use text color for icon, to change icon color, change text color via CSS (inline or in stylesheet):
+
+```jsx
+<DraftsIcon style={{ color: "red" }} />
+```
+
+## Size
+
+Unlike other components, SVG + CSS components do not set icon size.
+This has advantages and disadvantages.
+
+Disadvantages:
+
+- You need to set size yourself.
+
+Advantages:
+
+- You have full control over icon size.
+
+You can change icon size by:
+
+- Setting `[prop]width` and `[prop]height` properties.
+- Using CSS.
+
+### Properties
+
+All icon components support `[prop]width` and `[prop]height` properties.
+
+Value is a string.
+
+You do not need to set both properties. If you set one property, other property will automatically be calculated from icon's width/height ratio.
+
+Examples:
+
+```jsx
+<DraftsIcon height="1em" />
+<DraftsIcon width="1em" height="1em" />
+<DraftsIcon height="24" />
+```
+
+### CSS
+
+You can control icon size in CSS, like for any other SVG.
+
+```css
+.drafts-icon {
+  width: 1em;
+  height: 1em;
+}
+```
+
+```jsx
+<DraftsIcon className="drafts-icon" />
+```
+
+## Fallback component
+
+For browsers that do not support SVG + CSS, these icon components use a fallback component.
+
+Fallback component detects outdated browsers, loads full icon from [Iconify API](../../../api/index.md) and renders it instead of small SVG.
+
+Fallback icon is loaded on demand, only for visitors that use outdated browsers. Users with modern browsers will not be loading anything from API.
+
+For React, fallback icon component is published in package `[npm]@iconify/css-react`.
+
+In future, when Safari browser will support `[func]path()` function for `[prop]d` property, it will not be required,
+but for now it is bundled with icons.
