@@ -46,16 +46,6 @@ Replace:
 
 Browse [Iconify icon sets](https://icon-sets.iconify.design/) to see all available icons.
 
-### Next.js
-
-Important: these components are for React, not for Next.js
-
-Next.js uses Turbopack bundler that does not allow import of `[file].css` files in component,
-which makes it unreasonably hard to implement basic component with a stylesheet.
-
-If you are using Next.js, consider switching to [Vinext](https://github.com/cloudflare/vinext), which is a
-fork of Next.js that uses Vite for bundling instead of Turbopack.
-
 ## Color
 
 Monotone icons use text color for icon, to change icon color, change text color via CSS (inline or in stylesheet):
