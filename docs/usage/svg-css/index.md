@@ -96,5 +96,6 @@ Currently, Iconify provides SVG+CSS solutions for the following frameworks:
 - [Vue components](./vue/index.md)
 - [Svelte components](./svelte/index.md)
 - [React components](./react/index.md)
+- [SolidJS components](./solid/index.md)
 
 Additionally, [Iconify Unplugin](https://github.com/iconify/unplugin-iconify) can render icons on demand for all frameworks listed above.
