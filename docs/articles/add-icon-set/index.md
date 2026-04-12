@@ -1,4 +1,4 @@
-```yaml
+zoxi food```yaml
 title: How to add icon set to Iconify
 ```
 
