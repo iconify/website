@@ -8,7 +8,7 @@ functions:
 
 This function is part of [Iconify Utils package](./index.md).
 
-Function `[func]replaceIDs()` is used for replacing IDs for icon content with randomly generated strings.
+Function `[func]replaceIDs()` is used for replacing IDs for icon content to avoid conflicts.
 
 All icon components use this function for each rendered icon.
 
@@ -16,18 +16,15 @@ All icon components use this function for each rendered icon.
 
 IDs are used in icon elements, such as reusable paths, masks, animations. They are supposed to be unique.
 
-When you export SVG from image editor, often editors generate IDs based on layer name, so if layer named `[str]Mask`, ID for shape will most likely be `[str]mask`. Icon optimisers, such as SVGO, by default shorten IDs, so icons end up with IDs like `[str]a`.
-
 When icons are linked as external resources, this is not an issue. However, when icons are embedded in document, having multiple elements with the same ID from different icons can and will cause chaos. Even using the same icon in multiple places in document without changing IDs can cause errors.
 
-This is why when embedding icons, it is important for each icon have different IDs for elements that do not exist in other icons.
+This is why when embedding icons, it is important to never repeat the same IDs.
 
 ## Usage
 
-Function has the following parameters:
+Function has the following parameter:
 
 - `[prop]content`, `[type]string`. Icon content.
-- `[prop]prefix`, `[type]string | function`. Optional prefix for generated IDs. Use this option if you want to customise IDs to make them less random.
 
 Function returns content with replaced IDs.
 
@@ -40,75 +37,20 @@ src: libraries/utils/replace-ids.ts
 title: 'example.ts'
 extra:
   - src: libraries/utils/replace-ids.svg
-    title: 'Result:'
+    title: 'Result (first console.log):'
+  - src: libraries/utils/replace-ids2.svg
+    title: 'Result (second console.log):'
 ```
 
-## Prefix
+## Conflicts
 
-For second parameter you can use string, which will be used as prefix.
+Replacement function will use original IDs to generate new IDs by adding numbers after original ID.
 
-If in example above, this code:
+That means if icon has IDs `[str]a`, `[str]b` (for example, for clip paths) and so on, first icon will have IDs unchanged `[str]a`, `[str]b`, second icon will have IDs `[str]a1`, `[str]b1` and so on.
 
-```ts
-const svg = replaceIDs(`<svg ${svgAttributesStr}>${renderData.body}</svg>`);
-```
+In Iconify icon sets, all icons use unique IDs based on hash of their name and prefix, for example, `[str]SVGqdEcMdXs`.
+This ID is used only in one icon.
 
-is replaced with this:
+Because original ID is used to generate new ID, the first time icon is rendered, it will have ID `[str]SVGqdEcMdXs` (no changes), second time `[str]SVGqdEcMdXs1` (`[str]1` appended), third time `[str]SVGqdEcMdXs2` (`[str]2` appended) and so on.
 
-```ts
-const svg = replaceIDs(
-	`<svg ${svgAttributesStr}>${renderData.body}</svg>`,
-	'my-prefix-'
-);
-```
-
-result will contain something like this:
-
-```html
-<svg ...>
-	<linearGradient id="my-prefix-0" x1="4.416" ...>...</linearGradient>
-	<path ... fill="url(#my-prefix-0)" />
-</svg>
-```
-
-Icons will use custom prefix and a number added after it. Counter is not reset, so each icon will have different IDs.
-
-## Callback
-
-You can also use a callback for second parameter. Callback function accepts old ID as parameter and should return new ID:
-
-```ts
-let counter = 0;
-const svg = replaceIDs(
-	`<svg ${svgAttributesStr}>${renderData.body}</svg>`,
-	() => {
-		return 'my-prefix-' + counter++;
-	}
-);
-```
-
-result will be identical to example above that uses prefix string.
-
-Another example:
-
-```ts
-let counter = 0;
-const svg = replaceIDs(
-	`<svg ${svgAttributesStr}>${renderData.body}</svg>`,
-	(id: string) => {
-		switch (id) {
-			case 'a':
-				// Replace id="a" with id="b"
-				return 'b';
-
-			default:
-				// Use 'whatever-' prefix for other IDs
-				return 'whatever-' + counter++;
-		}
-	}
-);
-```
-
-## Notes
-
-Each icon can have any number of elements with IDs. If you are using callback to generate new IDs, make sure callback returns different values on each call.
+This results in unique, but predictable IDs for each rendered icon.
