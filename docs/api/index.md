@@ -1,11 +1,11 @@
 ```yaml
 replacements:
-  - code: "60k"
-    value: "${counters.icons-short}"
-  - code: "70 icon sets"
-    value: "${counters.sets} icon sets"
-  - code: "70 open source"
-    value: "${counters.sets} open source"
+  - code: '60k'
+    value: '${counters.icons-short}'
+  - code: '70 icon sets'
+    value: '${counters.sets} icon sets'
+  - code: '70 open source'
+    value: '${counters.sets} open source'
 ```
 
 # Iconify API
@@ -48,20 +48,13 @@ Public API is available at `[url]https://api.iconify.design`.
 
 It is a public service, servers are free to use, but please do keep in mind that running those servers is not free. If you are using public API or API software, [please consider supporting Iconify](https://iconify.design/sponsors/) to help out with infrastructure, development and maintenance costs.
 
-### Redundancy
+## Limits
 
-Sometimes there are problems with internet connections. It happens. Maybe server has issues, maybe visitor's ISP has issues.
+Public API has limits to prevent abuse and ensure fair usage.
 
-In case main API host cannot be reached, Iconify public API has backup host names:
+Its main use case is for Iconify icon components to load icons on demand. Any other use is a bonus that should not be abused.
 
-- `[url]https://api.simplesvg.com`
-- `[url]https://api.unisvg.com`
-
-Each of backup host names points to half of API servers. For example, in western Europe there are currently 2 servers: in Frankfurt and in London. Main host points to both, one of backup hosts points to server in Frankfurt, another backup host points to server in London. If server in Frankfurt goes down, users that are using that server can be redirected to server in London using one of backup host names.
-
-Redundancy built in Iconify icon components accounts for that. It tries to connect to main host first, then, if there was no response in reasonable time (timeout is 0.75 seconds), it attempts to connect to one of backup hosts, then to another backup host. Small delay caused by check only affects first query, all further API queries are sent to host that responded.
-
-See [building redundant API](./cdn.md) for more details.
+If you want API without limits, you can [host your own Iconify API](./hosting.md).
 
 ## Queries
 

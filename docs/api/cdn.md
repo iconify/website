@@ -77,7 +77,8 @@ Notice there are 3 records for `[str]icons.simplesvg.com` pointing to different 
 
 That's it. When visiting `[url]icons.simplesvg.com`, user will be redirected to one of 3 IPs: 1.2.3.4, 2.3.4.5, 3.4.5.6 depending on which AWS datacenter is the closest. It is precise enough to create a budget custom CDN.
 
+Host name used in this example, `[str]icons.simplesvg.com`, is just an example. It was used at start of this project. It is deprecated and should not be used.
+
 ## Iconify API
 
 This method is used to host Iconify API, hosted at `[url]api.iconify.design`.
-
