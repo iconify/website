@@ -2,9 +2,9 @@
 ## Latest updates
 
 <div class="latest-news">
+<p><span>19 Oct 2026</span><a href="/news/2026.html#new-api">New API servers</a></p>
 <p><span>19 Sep 2026</span><a href="/news/2026.html#api-deployment">API deployment script</a></p>
 <p><span>25 Aug 2026</span><a href="/news/2026.html#ai-search">AI powered icons search</a></p>
 <p><span>20 Aug 2026</span><a href="/news/2026.html#split-packages">Revival of @iconify-icons/ packages</a></p>
 <p><span>10 Jul 2026</span><a href="/news/2026.html#new-milestone">New milestone</a></p>
-<p><span>14 May 2026</span><a href="/news/2026.html#icon-sets-website">New Iconify icon sets website</a></p>
 </div>
