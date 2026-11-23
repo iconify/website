@@ -55,7 +55,7 @@ Additionally, there are [components for UI frameworks](#ui-frameworks): React, V
 
 In future, only `[npm]iconify-icon` web component will be supported. Why?
 - SVG Framework is an old version of the web component, developed many years ago as an experiment when browser did not support web components. It has no place in modern development.
-- Framework-specific components have issue with server side rendering. Web compponent solves those issues.
+- Framework-specific components have issue with server side rendering. Web component solves those issues.
 
 ### Web component {#web-component}
 
