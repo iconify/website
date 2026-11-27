@@ -43,9 +43,6 @@ Iconify solves that by:
 
 Iconify is open source.
 
-However, currently some parts of the project are not yet open-sourced.
-The plan is to fix it by the end of 2022 by cleaning up all old spaghetti code and publishing everything to public repositories.
-
 ## Monetising
 
 Iconify is not monetised.
